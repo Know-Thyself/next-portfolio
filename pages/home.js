@@ -1,13 +1,12 @@
 import { Heading, Text, FontWeight, FontStyle } from 'styled-typography'
 import styles from '../styles/Home.module.css'
 const Home = ({ main, id }) => {
-	console.log(main)
 	return (
 		<header key={id} className={styles.header}>
 			<div className={styles.banner}>
-				{main.map((info) => {
+				{main.map((info, index) => {
 					return (
-						<div className={styles.headlines}>
+						<div key={index} className={styles.headlines}>
 							<div className={styles.name}>
 								<Heading fontWeight={FontWeight.Normal} color='aliceblue'>
 									{info.name}
