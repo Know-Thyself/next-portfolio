@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Lato&family=Source+Sans+Pro&display=swap');
+.section {
+	font-family: 'Lato', sans-serif;
+	background-color: rgb(77, 93, 83);
+	box-sizing: border-box;
+	padding-top: 1rem;
+	height: fit-content;
+	overflow: hidden;
+}
+.header {
+	width: 90%;
+	margin: auto;
+	font-size: 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 4.5rem;
+	color: rgb(21, 34, 29);
+}
+.projectsWrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 300px);
+	grid-template-rows: 1fr;
+	grid-auto-rows: 1fr;
+	place-items: start center;
+	justify-content: center;
+	align-content: flex-start;
+	margin: 2rem auto;
+	gap: 3rem 5rem;
+	width: 90%;
+}
+.projects {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+.title {
+	text-align: center;
+	font-size: 1em;
+	margin: 3px auto;
+	color: rgb(21, 34, 29);
+	background-color: darkseagreen;
+	padding: 5px 0;
+	border-radius: 10px 100px / 120px;
+	width: 100%;
+}
+.images {
+	height: 200px;
+	width: 300px;
+	border-radius: 10% / 50%;
+}
+.imageLink:hover {
+	opacity: 0.5;
+}
+.mouseover {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	opacity: 0.7;
+
+	margin: auto;
+}
+.projects .mouseoverText {
+	visibility: hidden;
+	text-align: center;
+	padding: 5px 3px;
+	background-color: black;
+	flex-wrap: wrap;
+	margin-top: -12rem;
+	transition: 3ms;
+	color: white;
+	border-radius: 6px;
+	position: absolute;
+}
+.center {
+	display: flex;
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+/* .tooltip-container .center .tooltiptext {
+  width: 20%;
+} */
+.projects:hover .tooltiptext {
+	visibility: visible;
+}
+.links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 5px;
+}
+.liveDemo,
+.githubLink {
+	text-decoration: none;
+	color: aquamarine;
+	font-size: 14px;
+	background-color: #005f69;
+	border-style: solid;
+	border-color: aquamarine;
+	border-width: thin;
+	color: rgb(21, 34, 29);
+	color: aquamarine;
+	border-radius: 4px;
+	padding: 5px;
+}
+.fa,
+.fa-github {
+	color: aquamarine;
+	font-size: large;
+}
+.github {
+	background-color: #005f69;
+}
+.liveDemo:hover,
+.githubLink:hover,
+.fa-github:hover {
+	background-color: #00416a;
+}
+#description-title {
+	background-color: darkseagreen;
+	color: rgb(21, 34, 29);
+}
+.modals {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-break: strict;
+	white-space: pre-line;
+	font-size: 0.9rem;
+	background-color: rgb(21, 34, 29);
+	background-color: darkseagreen;
+	border-radius: 10px 100px / 120px;
+	padding: 2.5px 0;
+}
+.content-css,
+.read-more-less {
+	font-family: 'Lato', sans-serif;
+	color: black;
+	white-space: pre-line;
+	text-align: justify;
+	text-justify: inter-word;
+	hyphens: auto;
+	font-size: 1.25;
+	line-break: strict;
+	word-spacing: -2px;
+}
+.my-anchor-css-class {
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+	color: firebrick;
+}
+.github .fa-github {
+	color: white;
+}
+
+.modal-body {
+	border-bottom: darkseagreen outset;
+}
+
+@media screen and (max-width: 1124px) {
+	.projectsWrapper {
+		grid-template-columns: repeat(2, 350px);
+		gap: 2rem 5rem;
+	}
+	.header {
+		font-size: 1.34rem;
+	}
+	.title {
+		font-size: 1.03rem;
+	}
+	.images {
+		height: 200px;
+		width: 350px;
+	}
+}
+@media screen and (max-width: 929px) {
+	.projectsWrapper {
+		grid-template-columns: repeat(2, 300px);
+		gap: 2rem 4rem;
+	}
+	.header {
+		font-size: 1.34rem;
+	}
+	.title {
+		font-size: 1.03rem;
+	}
+	.images {
+		height: 180px;
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 779px) {
+	.projectsWrapper {
+		grid-template-columns: repeat(2, 275px);
+		gap: 2rem 2.5rem;
+	}
+	.header {
+		font-size: 1.34rem;
+	}
+	.title {
+		font-size: 1.03rem;
+	}
+	.images {
+		height: 175px;
+		width: 275px;
+	}
+}
+@media screen and (max-width: 629px) {
+	.projectsWrapper {
+		grid-template-columns: repeat(1, 400px);
+	}
+	.header {
+		font-size: 1.3rem;
+	}
+	.title {
+		font-size: 1.01rem;
+	}
+	.images {
+		height: 250px;
+		width: 400px;
+	}
+}
+@media screen and (max-width: 449px) {
+	.projectsWrapper {
+		grid-template-columns: repeat(1, 300px);
+	}
+	.header {
+		font-size: 1.25rem;
+	}
+	.title {
+		font-size: 1rem;
+	}
+	.images {
+		height: 180px;
+		width: 300px;
+	}
+}
+@media screen and (max-width: 389px) {
+	.projectsWrapper {
+		grid-template-columns: repeat(1, 250px);
+	}
+	.header {
+		font-size: 1rem;
+	}
+	.title {
+		font-size: 0.9rem;
+	}
+	.images {
+		height: 150px;
+		width: 250px;
+	}
+}

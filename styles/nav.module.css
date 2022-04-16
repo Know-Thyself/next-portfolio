@@ -1,0 +1,127 @@
+.menu {
+	position: fixed;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 60px;
+	background: linear-gradient(
+		45deg,
+		darkseagreen,
+		rgb(21, 34, 29),
+		rgb(38, 39, 37) 100%
+	);
+	z-index: 100;
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	color: aliceblue;
+}
+.logo {
+	height: 60px;
+	width: auto;
+}
+.list {
+	list-style-type: none;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.link {
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.smooth-scroll {
+	display: block;
+	text-decoration: none;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: darkseagreen;
+	cursor: pointer;
+}
+.active {
+	margin-right: 20px;
+	text-transform: uppercase;
+	color: mediumseagreen;
+}
+.smooth-scroll:hover {
+	color: mediumseagreen;
+}
+.fas {
+	display: none;
+	position: absolute;
+	right: 20px;
+	top: 7px;
+	padding: 5px;
+	cursor: pointer;
+}
+.single {
+	display: none;
+	width: 100vw;
+}
+
+@media screen and (max-width: 667px) {
+	.wrapper {
+		display: inline;
+	}
+	.list {
+		display: flex;
+		width: calc(100% + 100px);
+		margin: auto;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		height: auto;
+		margin-top: -6px;
+	}
+	.link:nth-child(1),
+	.active:nth-child(1) {
+		border-top: 1px solid rgba(255, 255, 255, 0.555);
+	}
+	.link,
+	.active {
+		width: inherit;
+		border-top: 1px solid rgba(255, 255, 255, 0.555);
+		text-align: center;
+		justify-self: center;
+		padding: 20px;
+		font-size: 14px;
+		background: linear-gradient(45deg, rgb(21, 34, 29), #738678);
+		margin-left: -30px;
+	}
+	.link:hover,
+	.active:hover {
+		background: linear-gradient(45deg, #738678, rgb(21, 34, 29));
+	}
+	.smooth-scroll {
+		width: 100vw;
+		float: left;
+	}
+	.fa-bars {
+		display: block;
+		width: 30px;
+		height: auto;
+		right: 20px;
+		color: rgb(163, 189, 19);
+		position: absolute;
+	}
+}
+
+@media screen and (min-width: 668px) {
+	.list {
+		margin-top: 10px;
+	}
+	.link {
+		margin-right: 20px;
+	}
+	.link:last-child,
+	.active:last-child {
+		margin-right: 50px;
+	}
+}
