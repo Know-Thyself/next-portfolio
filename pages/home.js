@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 const Home = ({ main, id }) => {
 	console.log(main)
 	return (
-		<header id={id} className={styles.header}>
+		<header key={id} className={styles.header}>
 			<div className={styles.banner}>
 				{main.map((info) => {
 					return (
