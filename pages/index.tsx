@@ -6,11 +6,9 @@ import prisma from '../lib/prisma'
 import { GetStaticProps } from 'next'
 import Home from './home'
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
 	const data = await prisma.portfolio.findMany()
-	return {
-		props: { data: data },
-	}
+	return { props: { data } }
 }
 
 const HomePage = ({ data }) => {

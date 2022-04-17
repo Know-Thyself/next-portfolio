@@ -7,7 +7,7 @@ import Image from 'next/image'
 export async function getStaticProps() {
 	const projectsData = await prisma.portfolio.findMany()
 	return {
-		props: { projectsData },
+		props: { projectsData }
 	}
 }
 
