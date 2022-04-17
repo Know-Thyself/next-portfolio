@@ -9,7 +9,7 @@ import Home from './home'
 export async function getStaticProps() {
 	const data = await prisma.portfolio.findMany()
 	return {
-		props: { data },
+		props: { data: data },
 	}
 }
 
