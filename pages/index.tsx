@@ -20,7 +20,6 @@ const HomePage = ({ data }) => {
 				<title>Biruk Web Dev</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			{/* <Home main={main} id={id} /> */}
 			<header key={id} className={styles.header}>
 				<div className={styles.banner}>
 					{main.map((info, index) => {
