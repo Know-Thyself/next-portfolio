@@ -4,11 +4,9 @@ import styles from '../styles/projects.module.css'
 import prisma from '../lib/prisma.ts'
 import Image from 'next/image'
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
 	const projectsData = await prisma.portfolio.findMany()
-	return {
-		props: { projectsData }
-	}
+	return { props: { projectsData } }
 }
 
 const Projects = ({ projectsData }) => {
