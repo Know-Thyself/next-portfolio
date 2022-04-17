@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button'
 import styles from '../styles/projects.module.css'
 import prisma from '../lib/prisma'
 import Image from 'next/image'
+import { GetStaticProps } from 'next'
 
 export const getStaticProps: GetStaticProps = async () => {
 	const projectsData = await prisma.portfolio.findMany()
