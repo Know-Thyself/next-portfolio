@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Button from 'react-bootstrap/Button'
 import styles from '../styles/projects.module.css'
-import prisma from '../lib/prisma.ts'
+import prisma from '../lib/prisma'
 import Image from 'next/image'
 
 export const getStaticProps: GetStaticProps = async () => {
