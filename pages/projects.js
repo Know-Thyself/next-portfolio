@@ -3,7 +3,6 @@ import Button from 'react-bootstrap/Button'
 import styles from '../styles/projects.module.css'
 import prisma from '../lib/prisma.ts'
 import Image from 'next/image'
-import { GetStaticProps } from 'next'
 
 export async function getStaticProps() {
 	const projectsData = await prisma.portfolio.findMany()
@@ -27,7 +26,7 @@ const Projects = ({ projectsData }) => {
 			<h1 className={styles.header}>Checkout some of my projects</h1>
 			<div className={styles.projectsWrapper}>
 				{projects.map((project, index) => {
-					const projectImage = '../images/' + project.image
+					const projectImage = '/images/' + project.image
 					return (
 						<div
 							key={index}
@@ -36,13 +35,17 @@ const Projects = ({ projectsData }) => {
 							// data-aos={randomAnimation}
 						>
 							<h3 className={styles.title}>{project.title}</h3>
-							<a href={project.url} className={styles.imageLink}>
-								<img
-									className={styles.images}
-									src={projectImage}
-									alt={`${project.title}`}
-								/>
-							</a>
+							<div className={styles.images}>
+								<a href={project.url} className={styles.imageLink}>
+									<Image
+										src={projectImage}
+										alt={project.title}
+										className={styles.images}
+										layout='fill'
+										objectFit='cover'
+									/>
+								</a>
+							</div>
 							<div className={styles.mouseover}>
 								<a href={project.url} className={styles.center}>
 									<span

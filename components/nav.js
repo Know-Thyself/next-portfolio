@@ -48,7 +48,7 @@ const Nav = ({projectsData}) => {
 							src='/images/logo.png'
 							alt='Logo of the author'
 							className={styles.logo}
-							width={63}
+							width={66}
 							height={63}
 						/>
 					</a>
