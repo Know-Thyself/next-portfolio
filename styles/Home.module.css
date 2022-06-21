@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Lato&family=Source+Sans+Pro&display=swap');
 
 .hero {
-	background: url('/images/bg-image.jpeg');
+	background: url('/images/bg-image.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100vw;
