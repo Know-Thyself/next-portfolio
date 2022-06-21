@@ -6,60 +6,57 @@
 	width: 100vw;
 	height: 60px;
 	background: linear-gradient(
-		45deg,
-		darkseagreen,
-		rgb(21, 34, 29),
-		rgb(38, 39, 37) 100%
+		180deg,
+		rgba(46, 49, 89, 0.5) 0%,
+		rgba(46, 49, 89, 0) 100%
 	);
 	z-index: 100;
 }
+
 .wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 60px;
 	color: aliceblue;
 }
+
 .logo {
-	height: 60px;
-	width: auto;
+	margin: 0;
+	background: rgba(217, 37, 37, 0.7);
+	background-color: #058355;
 }
+
 .list {
 	list-style-type: none;
 	height: 100%;
 	display: flex;
 	align-items: center;
-	position: relative;
-}
-.link {
-	text-transform: uppercase;
-	cursor: pointer;
+	justify-content: flex-end;
+	width: 100%;
+	margin-right: 30px;
+	font-size: small;
 }
 
-.smooth-scroll {
-	display: block;
-	text-decoration: none;
-	font-size: 1rem;
+.link {
 	text-transform: uppercase;
-	color: darkseagreen;
+	margin-right: 20px;
 	cursor: pointer;
+	color: aliceblue;
 }
+
 .active {
 	margin-right: 20px;
 	text-transform: uppercase;
 	color: mediumseagreen;
 }
-.smooth-scroll:hover {
-	color: mediumseagreen;
-}
+
 .fas {
 	display: none;
 	position: absolute;
 	right: 20px;
-	top: 7px;
-	padding: 5px;
 	cursor: pointer;
 }
+
 .single {
 	display: none;
 	width: 100vw;
@@ -71,57 +68,37 @@
 	}
 	.list {
 		display: flex;
-		width: calc(100% + 100px);
+		width: 100vw;
 		margin: auto;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		background: linear-gradient(45deg, rgb(211, 34, 29), #738678);
 		height: auto;
 		margin-top: -6px;
 	}
-	.link:nth-child(1),
-	.active:nth-child(1) {
-		border-top: 1px solid rgba(255, 255, 255, 0.555);
-	}
 	.link,
 	.active {
-		width: inherit;
-		border-top: 1px solid rgba(255, 255, 255, 0.555);
+		display: inline-block;
+		width: 100vw;
 		text-align: center;
-		justify-self: center;
-		padding: 20px;
-		font-size: 14px;
 		background: linear-gradient(45deg, rgb(21, 34, 29), #738678);
-		margin-left: -30px;
+		margin: 0 auto;
+		padding: 10px 50px;
+		margin-left: -40px;
+		position: relative;
 	}
 	.link:hover,
 	.active:hover {
-		background: linear-gradient(45deg, #738678, rgb(21, 34, 29));
-	}
-	.smooth-scroll {
-		width: 100vw;
-		float: left;
+		background: linear-gradient(45deg, rgb(211, 34, 29), #738678);
 	}
 	.fa-bars {
 		display: block;
-		width: 30px;
+		width: 40px;
 		height: auto;
 		right: 20px;
 		color: rgb(163, 189, 19);
 		position: absolute;
-	}
-}
-
-@media screen and (min-width: 668px) {
-	.list {
-		margin-top: 10px;
-	}
-	.link {
-		margin-right: 20px;
-	}
-	.link:last-child,
-	.active:last-child {
-		margin-right: 50px;
 	}
 }

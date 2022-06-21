@@ -1,18 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Lato&family=Source+Sans+Pro&display=swap');
 
-.header {
-	font-family: 'Lato', sans-serif;
-	background: linear-gradient(45deg, darkseagreen, lightslategray, black 20%);
-	overflow: hidden;
-}
-
-.banner {
-	height: fit-content;
-	margin: auto;
-}
-.headlines {
-	display: table;
+.hero {
 	background: url('/images/bg-image.jpeg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -20,100 +9,61 @@
 	height: 100vh;
 	margin: 0;
 	padding: 0;
-	color: mediumseagreen;
-	color: aquamarine;
-	background-size: contain;
-	background-color: black;
-
-	-o-background-size: contain;
-	-moz-background-size: contain;
-	-webkit-background-size: contain;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	box-sizing: border-box;
+	overflow: hidden;
 }
-.name {
-	font-family: 'Source Sans Pro', sans-serif;
-	/* font-weight: bold; */
-	text-align: center;
-}
-.hello,
-.my-name {
-	color: aquamarine;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: bold;
-}
-.field {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: bold;
-	margin-top: 2rem;
-	text-align: center;
-}
-.subtitle {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: bold;
-}
-.introWrapper {
+.textWrapper {
+	font-family: 'Lato', sans-serif;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	height: fit-content;
-	margin-top: 3rem;
+	width: 50%;
+	height: 65vh;
+	background: linear-gradient(
+		180deg,
+		rgba(217, 37, 37, 0.25) 0%,
+		rgba(217, 37, 37, 0) 100%
+	);
+	position: absolute;
+	top: 60px;
 }
+.banner {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Lato', sans-serif;
+	margin: 1rem 2rem;
+}
+
 .intro {
 	/* white-space: pre-line;
   line-break: strict; */
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: justify;
 	font-size: 1.25rem;
-	/* text-justify: inter-word; */
 	word-spacing: 2px;
 	hyphens: auto;
-}
-.scrolldown .smoothscroll {
+	color: white;
 	position: absolute;
-	bottom: 30px;
-	left: 50%;
-	margin-left: -29px;
-	display: block;
-	height: 42px;
-	width: 42px;
-	font-size: 42px;
-	line-height: 42px;
-	color: darkseagreen;
-	color: aquamarine;
-	background-color: rgb(21, 34, 29);
-	border-radius: 100%;
-	cursor: pointer;
-
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	margin: 4rem 2rem;
 }
-.scrolldown a:hover {
-	color: rgb(21, 34, 29);
-	background-color: darkseagreen;
-	background-color: aquamarine;
-}
-.tooltip .tooltiptext {
-	visibility: hidden;
-	width: 120px;
-	background-color: #39000d;
-	color: #00d4ff;
-	text-align: center;
-	padding: 5px 1px;
-
-	border-radius: 6px;
-	position: absolute;
-	margin-left: 30rem;
-	z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-}
-.fa-chevron-circle-down {
-	margin-top: -1.25rem;
+.more {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+	background-color: #058355;
+	border-style: solid;
+	border-width: thin;
+	color: white;
+	border-radius: 4px;
+	padding: 7px;
+	width: fit-content;
+	position: relative;
+	margin: 2rem;
+	justify-self: flex-end;
+	align-self: flex-end;
 }
 @media only screen and (min-device-width: 1285px) {
 	.header {
@@ -128,39 +78,7 @@
 	.banner {
 		height: 100vh;
 	}
-	.headlines {
-		height: 100vh;
-	}
-	.name {
-		margin-top: 8rem;
-	}
-	/* .name .hello {
-    font-size: 3rem;
-  } */
-	/* .headline-two {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: bold;
-    width: 100%;
-    font-size: 3.5rem;
-    padding: 0 7rem;
-    text-align: center;
-    margin-top: 3rem;
-  } */
-	.introWrapper {
-		width: 60%;
-	}
-	/* .intro {
-    display: block;
-    margin-top: 2rem;
-    font-size: 1.25rem;
-    white-space: pre-line;
-    line-break: strict;
-    font-family: "Source Sans Pro", sans-serif;
-    text-align: justify;
-    text-justify: inter-word;
-    word-spacing: -2px;
-    hyphens: auto;
-  } */
+
 	.tooltip .tooltiptext {
 		visibility: hidden;
 		width: 120px;
@@ -195,19 +113,6 @@
 	.headlines {
 		height: fit-content;
 	}
-	/* .responsive-headline {
-  margin: 5rem 0 1rem 0;
-  font-size: 1.75rem;
- } */
-	/* .responsive-headline .hello {
-  font-size: 3rem;
- } */
-	/* .headline-two {
-    font-size: 1.25rem;
-    padding: 0 25rem;
-    text-align: center;
-    margin-bottom: 2rem;
-  } */
 	.introWrapper {
 		display: flex;
 		justify-content: center;
@@ -223,16 +128,6 @@
 		line-break: strict;
 		font-family: 'Source Sans Pro', sans-serif;
 	}
-	.scrolldown .smoothscroll {
-		margin-bottom: 14rem;
-	}
-	.tooltip .tooltiptext {
-		margin-left: 15rem;
-		margin-top: -3rem;
-	}
-	.tooltip:hover .tooltiptext {
-		visibility: visible;
-	}
 }
 
 @media only screen and (max-device-width: 1124px) {
@@ -243,22 +138,6 @@
 		height: fit-content;
 		overflow: hidden;
 	}
-	.headlines {
-		height: fit-content;
-	}
-	.name {
-		margin: 5rem 0 1rem 0;
-		font-size: 1.75rem;
-	}
-	.name .hello {
-		font-size: 3rem;
-	}
-	/* .headline-two {
-    font-size: 1.25rem;
-    padding: 0 20rem;
-    text-align: center;
-    margin-bottom: 2rem;
-  } */
 	.introWrapper {
 		display: flex;
 		justify-content: center;
@@ -292,27 +171,6 @@
 	.banner {
 		height: fit-content;
 	}
-	.name {
-		margin: 5rem 0 1rem 0;
-		font-size: 1.75rem;
-	}
-	/* .name .hello {
-		font-size: 3rem;
-	} */
-	/* .headline-two {
-    font-size: 1.25rem;
-    padding: 0 13rem;
-    text-align: center;
-  } */
-	.introWrapper {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 80%;
-		margin: auto;
-		height: fit-content;
-		margin: 20px auto;
-	}
 	.intro {
 		white-space: pre-line;
 		font-size: 1.25;
@@ -321,15 +179,6 @@
 		text-justify: inter-word;
 		word-spacing: -2px;
 		font-family: 'Source Sans Pro', sans-serif;
-	}
-	.fa-chevron-circle-down {
-		display: none;
-	}
-	.tooltip .tooltiptext {
-		visibility: hidden;
-	}
-	.scrolldown .smoothscroll {
-		display: none;
 	}
 }
 
@@ -340,112 +189,28 @@
 	.banner {
 		height: fit-content;
 	}
-	.headlines {
-		background-position: center center;
-		height: fit-content;
-	}
-	.name {
-		margin: 5rem 0 0.75rem 0;
-		font-size: 1.5rem;
-		width: 100%;
-	}
-	/* .name .hello {
-		font-size: 3rem;
-	} */
-	/* .headline-two {
-    font-size: 1.2rem;
-    padding: 0 10rem;
-    text-align: center;
-  } */
-	.introWrapper {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 85%;
-		margin: auto;
-		height: fit-content;
-		overflow: hidden;
-		white-space: nowrap;
-		margin: 15px auto;
-	}
 	.intro {
 		height: fit-content;
 		font-size: 1.07rem;
 		padding: 0;
-	}
-	.fa-chevron-circle-down {
-		display: none;
-	}
-	.tooltip .tooltiptext {
-		visibility: hidden;
-		display: none;
 	}
 }
 @media screen and (max-width: 527px) {
 	.header {
 		height: fit-content;
 	}
-	.banner-container {
-		margin: 7rem 0 1rem 0;
-		font-size: 1.25rem;
-		height: fit-content;
-	}
-	.name {
-		font-size: 1.5rem;
-		margin-bottom: 1rem;
-	}
-	/* .name .hello {
-		font-size: 2.2rem;
-	} */
-	.subtitle {
-		font-size: 1.1rem;
-		padding: 0 6rem;
-		text-align: center;
-		margin-bottom: 1rem;
-	}
 	.headlines {
 		background-position: center center;
 		background-attachment: unset;
 		width: 100vw;
 	}
-	.introWrapper {
-		display: flex;
-		width: 90%;
-		margin: 15px auto;
-		height: fit-content;
-		overflow: visible;
-		white-space: nowrap;
-		justify-content: center;
-		align-items: center;
-	}
 	.intro {
 		font-size: 1rem;
 	}
-	.fa-chevron-circle-down {
-		display: none;
-	}
-	.tooltip .tooltiptext {
-		visibility: hidden;
-	}
 }
 @media screen and (max-width: 388px) {
-	/* .name .hello {
-		font-size: 2rem;
-	} */
-	.name {
+	.banner {
 		font-size: 1.25rem;
 		margin-bottom: 1.5rem;
-	}
-	.banner-container {
-		margin: 7rem 0 1rem 0;
-		font-size: 1.25rem;
-		min-height: fit-content;
-	}
-	.subtitle {
-		font-size: 1rem;
-		padding: 0 2rem;
-		text-align: center;
-		margin-top: -1rem;
-		margin-bottom: 2rem;
 	}
 }
