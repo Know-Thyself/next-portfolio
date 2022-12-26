@@ -14,7 +14,8 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const HomePage = ({ data }) => {
 	const id = data.map((portfolio) => portfolio.id).pop()
-	const main = data.map((portfolio) => portfolio.portfolioData.main)
+	// const main = data.map((portfolio) => portfolio.portfolioData.main)
+	const main = data.map((portfolio) => portfolio.content)
 	return (
 		<>
 			<Head>

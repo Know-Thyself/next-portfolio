@@ -12,5 +12,5 @@ datasource db {
 
 model portfolio {
   id            Int  @id @default(autoincrement())
-  portfolioData Json?
+  content Json?
 }

@@ -11,9 +11,10 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 const Projects = ({ projectsData }) => {
+	console.log(projectsData)
 	const id = projectsData.map((portfolio) => portfolio.id).pop()
 	const projects = projectsData
-		.map((portfolio) => portfolio.portfolioData.portfolio.projects)
+		.map((portfolio) => portfolio.content.projects)
 		.flat()
 	return (
 		<section id={id} className={styles.section}>
@@ -21,18 +22,12 @@ const Projects = ({ projectsData }) => {
 				<title>projects</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			{/* <Zoom> */}
 			<h1 className={styles.header}>Checkout some of my projects</h1>
 			<div className={styles.projectsWrapper}>
 				{projects.map((project, index) => {
 					const projectImage = '/images/' + project.image
 					return (
-						<div
-							key={index}
-							id={index}
-							className={styles.projects}
-							// data-aos={randomAnimation}
-						>
+						<div key={index} id={index} className={styles.projects}>
 							<h3 className={styles.title}>{project.title}</h3>
 							<div className={styles.images}>
 								<a href={project.url} className={styles.imageLink}>
@@ -53,14 +48,7 @@ const Projects = ({ projectsData }) => {
 								</a>
 							</div>
 							<div className={styles.modalButtonAndLinks}>
-								<div className={styles.modals}>
-									{/* <ProjectModal
-										title={project.title}
-										description={project.description}
-										live={project.url}
-										github={project.repository}
-									/> */}
-								</div>
+								<div className={styles.modals}></div>
 								<div key='github' className={styles.links}>
 									<Button href={project.url} className={styles.liveDemo}>
 										Live Demo
@@ -78,7 +66,6 @@ const Projects = ({ projectsData }) => {
 					)
 				})}
 			</div>
-			{/* </Zoom> */}
 		</section>
 	)
 }
