@@ -1,6 +1,12 @@
 .home {
   width: 100%;
   text-align: center;
+  position: relative;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .hero {
@@ -11,7 +17,8 @@
   background-size: cover;
   width: 100%;
   min-height: max-content;
-  /* min-height: calc( 100vh - 118px ); */
+  min-height: inherit;
+  min-height: calc( 100vh - 118px );
   resize: both;
   font-family: var(--hero-banner-text);
   font-weight: 900;

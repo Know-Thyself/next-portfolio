@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from '../styles/about.module.css'
-import profileImage from '../public/images/profile-photo.png'
+import profileImage from '../public/images/about.png'
 
 const About = () => {
 
@@ -45,14 +45,15 @@ const About = () => {
 							src='/images/about.png'
 							alt=''
 						/> */}
-						<Image
-							src={profileImage}
+						<img
+							src='/images/about.png'
 							alt='profile image'
 							className={`${styles['about-img']}`}
+							// layout='intrinsic'
 							// layout='fill'
-							// objectFit='cover'
-							width={400}
-							height={600}
+							// objectFit='contain'
+							// width={200}
+							// style={{ width: '200px', height: 'auto' }}
 						/>
 					</div>
 					<div className={styles['about-text-wrapper']}>

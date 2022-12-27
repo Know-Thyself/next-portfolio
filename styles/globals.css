@@ -4,6 +4,14 @@ body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	
+	position: relative;
+		min-height: 100vh;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: var(--primary-background);
 }
 
 a {
@@ -57,8 +65,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-background: #030305;
 	--projects-container-bg: #1A1A1A;
 	--projects-bg: #2e3133;
-	--home-background: url('../public/images/background-home-desktop.jpg');
-	/* --projects-background: url('../images/background-destination-desktop.jpg'); */
+	--home-background: url('/images/background-home-desktop.jpg');
+	--projects-background: url('/images/background-destination-desktop.jpg');
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--home-page-buttons-bg: #1a1a27;

@@ -25,22 +25,17 @@
 } */
 .about-img-wrapper {
   width: fit-content;
+  height: fit-content;
   background: var(--projects-background);
-  /* display: flex;
-	justify-content: center;
-	align-items: center; */
-  margin-right: 2rem;
-  /* margin: 2rem 2rem 2rem 0; */
+  margin-right: 2.5rem;
 }
 
 .about-img {
-  width: 200px;
+  width: 240px;
+  height: auto;
   position: relative;
-  top: 2rem;
-  left: 2rem;
-  /* height: inherit; */
-  /* margin-left: 2rem;
-	margin-bottom: 2rem; */
+  top: 2.5rem;
+  left: 2.5rem;
 }
 
 /* .about-text-wrapper {
