@@ -12,21 +12,18 @@ export const getStaticProps: GetStaticProps = async () => {
 	return { props: { projectsData } }
 }
 
-const Projects = ({ projectsData, project, setProject  }) => {
+const Projects = ({ projectsData, project, setProject }) => {
 	const id = projectsData.map((portfolio) => portfolio.id).pop()
 	const projects = projectsData
 		.map((portfolio) => portfolio.content.projects)
 		.flat()
 	const router = useRouter()
 	const handleClick = (e) => {
-		let selected = projects[e.currentTarget.id]
-		setProject(selected);
-		if (
-			e.target.innerText !== 'Live Demo' &&
-			e.target.innerText !== 'GitHub' &&
-		) {
+		if (e.target.innerText !== 'Live Demo' && e.target.innerText !== 'GitHub') {
+			let selected = projects[e.currentTarget.id]
+			setProject(selected)
 			router.push('/details')
-		} 
+		}
 	}
 
 	const springVariant = {
@@ -126,7 +123,9 @@ const Projects = ({ projectsData, project, setProject  }) => {
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<img src={`/images/${project.image}`} alt='' />
-								<span className={styles.tooltip}>Click to view project details</span>
+								<span className={styles.tooltip}>
+									Click to view project details
+								</span>
 								{/* <div className='read-more-read-less-wrapper'>
 								<ReadMoreLess
 									className='read-more-less content-css'
