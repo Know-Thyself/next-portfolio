@@ -5,28 +5,33 @@ import { motion, AnimatePresence } from 'framer-motion'
 import prisma from '../lib/prisma'
 import Image from 'next/image'
 import { GetStaticProps } from 'next'
+import { useNavigate } from 'react-router-dom'
+import { useRouter } from 'next/router'
 
 export const getStaticProps: GetStaticProps = async () => {
 	const projectsData = await prisma.portfolio.findMany()
 	return { props: { projectsData } }
 }
 
-const Projects = ({ projectsData }) => {
+const Projects = ({ projectsData, project, setProject  }) => {
 	const id = projectsData.map((portfolio) => portfolio.id).pop()
 	const projects = projectsData
 		.map((portfolio) => portfolio.content.projects)
 		.flat()
+	const router = useRouter()
 	const handleClick = (e) => {
 		let selected = projects[e.currentTarget.id]
-		setClickedProject(selected)
-		setReadMore(selected)
+		// setClickedProject(selected)
+		// setReadMore(selected)
+		setProject(selected);
+		console.log(project)
 		if (
 			e.target.innerText !== 'Live Demo' &&
 			e.target.innerText !== 'GitHub' &&
 			e.target.innerText !== 'read more ▼' &&
 			e.target.innerText !== 'read less ▲'
 		) {
-			navigate('/readmore')
+			router.push('/details')
 		} else if (
 			e.target.innerText === 'read more ▼' ||
 			e.target.innerText === 'read less ▲'
@@ -52,7 +57,7 @@ const Projects = ({ projectsData }) => {
 			}
 		}
 	}
-	
+
 	const springVariant = {
 		start: {
 			y: -100,

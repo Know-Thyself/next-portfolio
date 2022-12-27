@@ -1,0 +1,5 @@
+.container {
+  text-align: center;
+  color: var(--text-primary-color);
+  padding-top: 7rem;
+}
