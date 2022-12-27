@@ -1,10 +1,10 @@
 //import Nav from './nav'
 import Header from './header'
 
-const Layout = ({ children, theme, setTheme }) => {
+const Layout = ({ children }) => {
 	return (
 		<>
-			<Header theme={theme} setTheme={setTheme} />
+			<Header />
 			{children}
 		</>
 	)

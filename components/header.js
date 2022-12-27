@@ -7,12 +7,12 @@ import Image from 'next/image'
 // import styled from '@emotion/styled'
 import ThemeToggler from '../components/themes'
 
-const Header = ({ theme, setTheme }) => {
+const Header = () => {
 	const router = useRouter()
 	const [toggleMenu, setToggleMenu] = useState(false)
 	const [isChecked, setIsChecked] = useState(false)
 	const [screenWidth, setScreenWidth] = useState(1348)
-  console.log(router.pathname)
+
 	const toggleNav = () => {
 		setToggleMenu(!toggleMenu)
 		setIsChecked(!isChecked)
@@ -55,12 +55,10 @@ const Header = ({ theme, setTheme }) => {
 					</label>
 					{(toggleMenu || screenWidth > 667) && (
 						<nav className={styles['menu__box']}>
-							<Link
-								href='/home'
-							>
+							<Link href='/'>
 								<a
 									className={
-										router.pathname === '/home'
+										router.pathname === '/'
 											? styles.active
 											: styles['menu__item']
 									}

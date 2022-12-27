@@ -171,7 +171,8 @@
     display: none;
   }
 
-  /* .nav_wrapper {
+  .nav_wrapper {
 		background-color: var(--primary-background);
-	} */
+    margin-right: 2rem;
+	}
 }

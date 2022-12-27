@@ -41,7 +41,7 @@ const About = () => {
 	}
 
 	return (
-		<AnimatePresence exitBeforeEnter>
+		<AnimatePresence mode='wait'>
 			<motion.main
 				className={styles['about-page-main-container']}
 				variants={springVariant}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon } from '@fortawesome/free-solid-svg-icons'
 import styles from '../styles/themes.module.css'
 
 const ThemeToggler = () => {
@@ -32,9 +33,15 @@ const ThemeToggler = () => {
 						onChange={switchTheme}
 					/>
 					<label className={styles['switch-label']} htmlFor='radio-button'>
-						<i
+						{/* <i
 							className={
 								theme === 'dark' ? 'fa-solid fa-moon' : styles['d-none']
+							}
+						/> */}
+						<FontAwesomeIcon
+							icon={faMoon}
+							className={
+								theme === 'dark' ? styles['fa-moon'] : styles['d-none']
 							}
 						/>
 						<span className={styles['switch-button']} />

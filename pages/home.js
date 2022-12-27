@@ -1,5 +1,11 @@
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { faGithub } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 import styles from '../styles/home.module.css'
 
 const Home = () => {
@@ -28,7 +34,7 @@ const Home = () => {
 	}
 
 	return (
-		<AnimatePresence exitBeforeEnter>
+		<AnimatePresence mode='wait'>
 			<motion.div
 				className={styles.home}
 				variants={springVariant}
@@ -66,9 +72,10 @@ const Home = () => {
 								}}
 								whileTap={{ scale: 0.8 }}
 							>
-								<i
-									className={styles['fa-brands fa-github']}
-								></i>
+								<FontAwesomeIcon
+									icon={faGithub}
+									className={styles['fa-github']}
+								/>
 								&nbsp; GitHub
 							</motion.a>
 							<motion.div
@@ -77,8 +84,8 @@ const Home = () => {
 								}}
 								whileTap={{ scale: 0.8 }}
 							>
-								<Link href='/projects' className={styles.link}>
-									Projects
+								<Link href='/projects'>
+									<a className={styles.link}>Projects</a>
 								</Link>
 							</motion.div>
 						</div>
