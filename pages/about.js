@@ -69,9 +69,9 @@ const About = () => {
 							CodeYourFuture! Joining CodeYourFuture has literally transformed
 							my life in many ways and is the best thing ever happened to me in
 							a very long time. <br />
-							I'm currently volunteering as a Teaching Assistant and Technical
-							Mentor at CodeYourFuture to give back to my wonderful community
-							and learn more as I teach trainee developers.
+							I&apos;m currently volunteering as a Teaching Assistant and
+							Technical Mentor at CodeYourFuture to give back to my wonderful
+							community and learn more as I teach trainee developers.
 						</p>
 						<div className={styles['about-section-buttons']}>
 							<button>Contact Me</button>
