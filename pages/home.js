@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//import { faGithub } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 import styles from '../styles/home.module.css'
+import Image from 'next/image'
 
 const Home = () => {
 	const springVariant = {
@@ -45,10 +45,12 @@ const Home = () => {
 				<section className={styles.hero}>
 					<div className={styles['hero-text-container']}>
 						<h1 className={styles['primary-text']}>Hello & Welcome!</h1>
-						<img
+						<Image
 							className={styles['profile-photo']}
 							src='/images/profile-photo.png'
-							alt=''
+							width={200}
+							height={200}
+							alt='Biruk'
 						/>
 						<h3 className={styles.subtext}>
 							Biruk here, I am a Full Stack Web Developer specialized in HTML,

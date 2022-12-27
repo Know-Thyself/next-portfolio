@@ -3,8 +3,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import styles from '../styles/header.module.css'
 import Image from 'next/image'
-// import DarkMode from './mode'
-// import styled from '@emotion/styled'
 import ThemeToggler from '../components/themes'
 
 const Header = () => {
@@ -36,10 +34,12 @@ const Header = () => {
 
 	return (
 		<header className={styles.header}>
-			<img
+			<Image
 				className={styles.logo}
 				src='/images/placeholder-logo.png'
 				alt='logo'
+				width={70}
+				height={70}
 			/>
 			<div className={styles['nav_wrapper']}>
 				<menu className={styles['hamburger-menu']}>

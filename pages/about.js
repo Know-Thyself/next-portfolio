@@ -1,20 +1,9 @@
-import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from '../styles/about.module.css'
 import profileImage from '../public/images/profile-photo.png'
 
 const About = () => {
-	const [bio, setBio] = useState({})
-
-	// useEffect(() => {
-	// 	fetch('/bio')
-	// 		.then((res) => res.json())
-	// 		.then((data) => {
-	// 			setBio(data)
-	// 		})
-	// 		.catch((error) => console.error(error))
-	// }, [])
 
 	const springVariant = {
 		start: {
@@ -91,7 +80,7 @@ const About = () => {
 					</div>
 				</div>
 				<section className={styles['skills-section']}>
-					<div className={styles['tech-stacks skill-set']}>
+					<div className={styles['tech-stacks']}>
 						<div className={styles['skill-card']}></div>
 						<div className={styles['skill-card']}></div>
 						<div className={styles['skill-card']}></div>
