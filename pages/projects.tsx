@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import prisma from '../lib/prisma'
 import Image from 'next/image'
 import { GetStaticProps } from 'next'
-// import { useNavigate } from 'react-router-dom'
 import { useRouter } from 'next/router'
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -21,40 +20,13 @@ const Projects = ({ projectsData, project, setProject  }) => {
 	const router = useRouter()
 	const handleClick = (e) => {
 		let selected = projects[e.currentTarget.id]
-		// setClickedProject(selected)
-		// setReadMore(selected)
 		setProject(selected);
 		if (
 			e.target.innerText !== 'Live Demo' &&
 			e.target.innerText !== 'GitHub' &&
-			e.target.innerText !== 'read more ▼' &&
-			e.target.innerText !== 'read less ▲'
 		) {
 			router.push('/details')
-		} else if (
-			e.target.innerText === 'read more ▼' ||
-			e.target.innerText === 'read less ▲'
-		) {
-			let wrappers = document.querySelectorAll('.project-wrapper')
-			for (let i = 0; i < wrappers.length; i++) {
-				const element = wrappers[i]
-				if (
-					element.id === e.currentTarget.id &&
-					e.target.innerText === 'read more ▼'
-				) {
-					element.style.height = '100%'
-					// navigate('/readmore');
-				} else if (
-					element.id === e.currentTarget.id &&
-					e.target.innerText === 'read less ▲'
-				) {
-					element.style.height = 'fit-content'
-				} else {
-					element.style.height = 'fit-content'
-					element.style.marginTop = '0'
-				}
-			}
-		}
+		} 
 	}
 
 	const springVariant = {
