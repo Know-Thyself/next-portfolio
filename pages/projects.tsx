@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import prisma from '../lib/prisma'
 import Image from 'next/image'
 import { GetStaticProps } from 'next'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 import { useRouter } from 'next/router'
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -24,7 +24,6 @@ const Projects = ({ projectsData, project, setProject  }) => {
 		// setClickedProject(selected)
 		// setReadMore(selected)
 		setProject(selected);
-		console.log(project)
 		if (
 			e.target.innerText !== 'Live Demo' &&
 			e.target.innerText !== 'GitHub' &&
