@@ -11,8 +11,8 @@ const Header = ({ theme, setTheme }) => {
 	const router = useRouter()
 	const [toggleMenu, setToggleMenu] = useState(false)
 	const [isChecked, setIsChecked] = useState(false)
-	const [screenWidth, setScreenWidth] = useState()
-
+	const [screenWidth, setScreenWidth] = useState(1348)
+  console.log(router.pathname)
 	const toggleNav = () => {
 		setToggleMenu(!toggleMenu)
 		setIsChecked(!isChecked)
@@ -60,7 +60,7 @@ const Header = ({ theme, setTheme }) => {
 							>
 								<a
 									className={
-										router.pathname === '/contact'
+										router.pathname === '/home'
 											? styles.active
 											: styles['menu__item']
 									}
@@ -72,7 +72,7 @@ const Header = ({ theme, setTheme }) => {
 							<Link href='/projects'>
 								<a
 									className={
-										router.pathname === '/contact'
+										router.pathname === '/projects'
 											? styles.active
 											: styles['menu__item']
 									}
@@ -84,7 +84,7 @@ const Header = ({ theme, setTheme }) => {
 							<Link href='/about'>
 								<a
 									className={
-										router.pathname === '/contact'
+										router.pathname === '/about'
 											? styles.active
 											: styles['menu__item']
 									}
