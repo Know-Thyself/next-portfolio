@@ -1,3 +1,104 @@
-.main {
-  margin-top: 4.5rem;
+.about-page-main-container {
+  width: 100%;
+  background-color: var(--secondary-background);
+  font-family: var(--secondary-font-family);
+  padding-top: 70px;
+  padding-bottom: 6rem;
+}
+
+.about-page-wrapper {
+  display: flex;
+  /* display: grid;
+	grid-template-columns: repeat(2, 1fr); */
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: var(--text-primary-color);
+  margin: 2rem auto;
+}
+
+/* .about-page-wrapper * {
+	flex: 1;
+} */
+.about-img-wrapper {
+  width: fit-content;
+  background: var(--projects-background);
+  /* display: flex;
+	justify-content: center;
+	align-items: center; */
+  margin-right: 2rem;
+  /* margin: 2rem 2rem 2rem 0; */
+}
+
+.about-img {
+  width: 200px;
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+  /* height: inherit; */
+  /* margin-left: 2rem;
+	margin-bottom: 2rem; */
+}
+
+/* .about-text-wrapper {
+	background-color: #0f0700;
+} */
+
+.skills-section {
+  width: 100%;
+  background-color: var(--primary-background);
+  background-color: #291e2b;
+  padding: 2rem auto;
+}
+
+.tech-stacks {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  place-items: center;
+}
+
+.skill-card {
+  height: 150px;
+  width: 90px;
+  background-color: var(--secondary-background);
+  margin: 2rem auto;
+}
+
+.about-section-buttons {
+  margin-bottom: 2rem;
+}
+
+.about-section-buttons button {
+  background-color: var(--primary-background);
+  color: var(--text-secondary-color);
+  font-family: var(--primary-font-family);
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0.65rem 1.2rem;
+  border-radius: 4px;
+  font-size: 1.12rem;
+  margin-right: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 var(--button-hover-bg);
+  transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.about-section-buttons button:hover {
+  color: var(--text-primary-color);
+  box-shadow: inset 300px 0 0 0 var(--button-hover-bg);
+}
+
+@media screen and (min-width: 667px) {
+  .about-page-wrapper {
+    flex-direction: row;
+    width: 60%;
+    gap: 5rem;
+  }
 }

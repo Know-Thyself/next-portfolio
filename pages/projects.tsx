@@ -11,7 +11,6 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 const Projects = ({ projectsData }) => {
-	console.log(projectsData)
 	const id = projectsData.map((portfolio) => portfolio.id).pop()
 	const projects = projectsData
 		.map((portfolio) => portfolio.content.projects)

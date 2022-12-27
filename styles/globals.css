@@ -11,6 +11,71 @@ a {
 	text-decoration: none;
 }
 
-* {
+/* * {
 	box-sizing: border-box;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+ */
+
+:root {
+	--primary-background: #c5c5c5;
+	--secondary-background: #9297b3;
+	--home-background: #f8f8f8;
+	--projects-container-bg: #b3ae92;
+	--projects-background: #f8f8f8;
+	--projects-bg: #45452d;
+	--hero-banner-text: 'Playfair Display', serif;
+	--primary-font-family: 'Montserrat', sans-serif;
+	--buttons-font-family: 'Poppins', sans-serif;
+	--buttons-color: #f8f8f8;
+	--home-page-buttons-bg: #4c516d;
+	--secondary-font-family: 'Poppins', sans-serif;
+	--text-primary-color: #0f0700;
+	--home-font-weight: 400;
+	--text-secondary-color: #0f0700;
+	--nav-links-color: #2a2b26;
+	--nav-links-color: #240085;
+	--nav-links-font-weight: 500;
+	--active-nav-link-font-weight: 600;
+	--button-hover-bg: #cf6138;
+	--projects-container-hover: #9e9874;
+	--active-nav-link: #141414;
+	--active-nav-link: #240085;
+	--radio-btn-bg: #f8f8f8;
+	--radio-btn-border: #4c516d;
+	--switch-button-bg: #3f00ff;
+}
+
+[data-theme='dark'] {
+	--primary-background: #13191C;
+	--secondary-background: #030305;
+	--projects-container-bg: #1A1A1A;
+	--projects-bg: #2e3133;
+	--home-background: url('../public/images/background-home-desktop.jpg');
+	/* --projects-background: url('../images/background-destination-desktop.jpg'); */
+	--hero-banner-text: 'Playfair Display', serif;
+	--primary-font-family: 'Montserrat', sans-serif;
+	--home-page-buttons-bg: #1a1a27;
+	--buttons-font-family: 'Poppins', sans-serif;
+	--buttons-color: aliceblue;
+	--secondary-font-family: 'Montserrat', sans-serif;
+	--text-primary-color: white;
+	--home-font-weight: 300;
+	--text-secondary-color: #f8f8f8;
+	--button-hover-bg: #309ec7;
+	--button-hover-bg: rgb(46, 39, 46);
+	--projects-container-hover: #343434;
+	--active-nav-link: #c5d4d8;
+	--nav-links-color: #afc1ca;
+	--nav-links-font-weight: 400;
+	--active-nav-link-font-weight: 500;
+	--radio-btn-bg: #969cbd;
+	--radio-btn-border: #afc1ca;
+	--switch-button-bg: #ba0021;
 }

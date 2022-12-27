@@ -1,10 +1,104 @@
+import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
+import { motion, AnimatePresence } from 'framer-motion'
 import styles from '../styles/about.module.css'
+import profileImage from '../public/images/profile-photo.png'
 
 const About = () => {
+	const [bio, setBio] = useState({})
+
+	// useEffect(() => {
+	// 	fetch('/bio')
+	// 		.then((res) => res.json())
+	// 		.then((data) => {
+	// 			setBio(data)
+	// 		})
+	// 		.catch((error) => console.error(error))
+	// }, [])
+
+	const springVariant = {
+		start: {
+			y: -100,
+			opacity: 0,
+		},
+		end: {
+			y: 0,
+			opacity: 1,
+			transition: {
+				type: 'spring',
+				bounce: 0.25,
+				stiffness: 40,
+				damping: 10,
+				restSpeed: 0.5,
+				velocity: 3,
+				restDelta: 0.5,
+			},
+		},
+		exit: {
+			y: 100,
+			opacity: 0,
+		},
+	}
+
 	return (
-		<main className={styles.main}>
-			<h1>A little bit about me </h1>
-		</main>
+		<AnimatePresence exitBeforeEnter>
+			<motion.main
+				className={styles['about-page-main-container']}
+				variants={springVariant}
+				initial='start'
+				animate='end'
+				exit='exit'
+			>
+				<div className={styles['about-page-wrapper']}>
+					<div className={styles['about-img-wrapper']}>
+						{/* <img
+							className={styles['about-img']}
+							src='/images/about.png'
+							alt=''
+						/> */}
+						<Image
+							src={profileImage}
+							alt='profile image'
+							className={`${styles['about-img']}`}
+							// layout='fill'
+							// objectFit='cover'
+							width={400}
+							height={600}
+						/>
+					</div>
+					<div className={styles['about-text-wrapper']}>
+						<h1>About Me</h1>
+						<p>
+							I am a father of two grown up children who are currently studying
+							Computer Science and IT at a university. Although I am not
+							religious anymore, I am from a theological studies background and
+							used to serve as a bishop for nearly two decades in a church.{' '}
+							<br />I also have transferable communication, collaborative,
+							public speaking and leadership skills that could enhance
+							harmonized workflow in a professional environment. <br />I started
+							coding in 2020 when I joined the most amazing coding bootcamp,
+							CodeYourFuture! Joining CodeYourFuture has literally transformed
+							my life in many ways and is the best thing ever happened to me in
+							a very long time. <br />
+							I'm currently volunteering as a Teaching Assistant and Technical
+							Mentor at CodeYourFuture to give back to my wonderful community
+							and learn more as I teach trainee developers.
+						</p>
+						<div className={styles['about-section-buttons']}>
+							<button>Contact Me</button>
+							<button>Resume Download</button>
+						</div>
+					</div>
+				</div>
+				<section className={styles['skills-section']}>
+					<div className={styles['tech-stacks skill-set']}>
+						<div className={styles['skill-card']}></div>
+						<div className={styles['skill-card']}></div>
+						<div className={styles['skill-card']}></div>
+					</div>
+				</section>
+			</motion.main>
+		</AnimatePresence>
 	)
 }
 

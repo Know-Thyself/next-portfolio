@@ -1,0 +1,110 @@
+.home {
+  width: 100%;
+  text-align: center;
+}
+
+.hero {
+  padding-top: 70px;
+  background: var(--home-background);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: max-content;
+  /* min-height: calc( 100vh - 118px ); */
+  resize: both;
+  font-family: var(--hero-banner-text);
+  font-weight: 900;
+  padding-bottom: 6rem;
+}
+
+.hero-text-container {
+  color: var(--text-primary-color);
+  width: 80%;
+  margin: auto;
+}
+
+.primary-text {
+  font-size: 2.5rem;
+}
+
+.profile-photo {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.subtext {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--home-font-weight);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  white-space: 'pre-line';
+  text-align: left;
+}
+
+/* .hero-right {
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 5rem;
+} */
+
+.center-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--home-page-buttons-bg);
+  color: var(--buttons-color);
+  font-family: var(--buttons-font-family);
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0.65rem 1.2rem;
+  border-radius: 4px;
+  font-size: 1.12rem;
+  font-weight: 400;
+}
+
+.fa-github {
+  font-size: 1.25rem;
+  color: var(--buttons-color);
+}
+
+@media screen and (min-width: 667px) {
+  .home {
+    text-align: left;
+  }
+
+  .hero {
+    min-height: max-content;
+    padding-bottom: 5rem;
+  }
+
+  .hero-text-container {
+    margin-left: 4rem;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 924px) {
+  .hero-text-container {
+    margin-left: 5rem;
+    width: 50%;
+  }
+}
