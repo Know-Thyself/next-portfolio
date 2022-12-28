@@ -34,10 +34,8 @@ const ProjectDetail = ({ project }) => {
 							{!showMore
 								? lessText
 								: descriptionLines.map((line, idx) => (
-										<div>
-											<p key={idx} className={styles.description}>
-												{line}
-											</p>
+										<div key={idx}>
+											<p className={styles.description}>{line}</p>
 										</div>
 								  ))}
 							<span key='span' onClick={toggleText}>
@@ -46,10 +44,8 @@ const ProjectDetail = ({ project }) => {
 						</div>
 					) : (
 						descriptionLines.map((line, idx) => (
-							<div>
-								<p key={idx} className={styles.description}>
-									{line}
-								</p>
+							<div key={idx}>
+								<p className={styles.description}>{line}</p>
 							</div>
 						))
 					)}
