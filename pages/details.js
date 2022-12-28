@@ -1,6 +1,11 @@
 //import ReadMoreLess from 'react-show-more-text'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 import styles from '../styles/details.module.css'
 
 const ProjectDetail = ({ project }) => {
@@ -15,6 +20,7 @@ const ProjectDetail = ({ project }) => {
 	return (
 		<motion.main
 			className={styles['main-container']}
+			key='main'
 			initial={{ opacity: 0.5 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0.5 }}
@@ -24,39 +30,58 @@ const ProjectDetail = ({ project }) => {
 				<img src={`/images/${project.image}`} alt='' />
 				<div className={styles['read-more-read-less-wrapper']}>
 					{descriptionLines.join(' ').length > lessText.length ? (
-						<p className={styles.description}>
+						<div key='read-more' className={styles.description}>
 							{!showMore
 								? lessText
-								: descriptionLines.map((line) => (
-										<p className={styles.description}>{line}</p>
+								: descriptionLines.map((line, idx) => (
+										<div>
+											<p key={idx} className={styles.description}>
+												{line}
+											</p>
+										</div>
 								  ))}
-							<span onClick={toggleText}>
+							<span key='span' onClick={toggleText}>
 								{!showMore ? '...read more ▼' : 'read less ▲'}
 							</span>
-						</p>
+						</div>
 					) : (
-						descriptionLines.map((line) => (
-							<p className={styles.description}>{line}</p>
+						descriptionLines.map((line, idx) => (
+							<div>
+								<p key={idx} className={styles.description}>
+									{line}
+								</p>
+							</div>
 						))
 					)}
 				</div>
 				<div className={styles['project-links-wrapper']}>
-					<a
+					<motion.a
 						href={project.repository}
 						target='_blank'
 						rel='noreferrer'
 						className={styles['github-link']}
+						whileHover={{
+							scale: 1.1,
+							backgroundColor: 'var(--button-hover-bg)',
+						}}
+						whileTap={{ scale: 0.9 }}
 					>
-						<i className='fa-brands fa-github'></i>&nbsp; GitHub
-					</a>
-					<a
+						<FontAwesomeIcon icon={faGithub} className={styles['fa-github']} />
+						&nbsp; GitHub
+					</motion.a>
+					<motion.a
 						href={project.url}
 						target='_blank'
 						rel='noreferrer'
 						className={styles['live-demo-link']}
+						whileHover={{
+							scale: 1.1,
+							backgroundColor: 'var(--button-hover-bg)',
+						}}
+						whileTap={{ scale: 0.9 }}
 					>
 						Live Demo
-					</a>
+					</motion.a>
 				</div>
 			</div>
 		</motion.main>

@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import prisma from '../lib/prisma'
 import { GetStaticProps } from 'next'
-import { Heading, Text, FontWeight, FontStyle } from 'styled-typography'
 import Button from 'react-bootstrap/Button'
 import Home from './home.js'
 
@@ -15,7 +14,6 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const HomePage = ({ data }) => {
 	const id = data.map((portfolio) => portfolio.id).pop()
-	// const main = data.map((portfolio) => portfolio.portfolioData.main)
 	const main = data.map((portfolio) => portfolio.content)
 	return (
 		<>
