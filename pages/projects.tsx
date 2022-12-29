@@ -6,6 +6,11 @@ import prisma from '../lib/prisma'
 import Image from 'next/image'
 import { GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 export const getStaticProps: GetStaticProps = async () => {
 	const projectsData = await prisma.portfolio.findMany()
@@ -126,21 +131,6 @@ const Projects = ({ projectsData, project, setProject }) => {
 								<span className={styles.tooltip}>
 									Click to view project details
 								</span>
-								{/* <div className='read-more-read-less-wrapper'>
-								<ReadMoreLess
-									className='read-more-less content-css'
-									lines={3}
-									more='read more ▼'
-									less='read less ▲'
-									truncatedEndingComponent={'... '}
-									anchorClass='anchor-css-class'
-									expanded={false}
-								>
-									{descriptionLines.map((line, idx) => (
-										<p>{line}</p>
-									))}
-								</ReadMoreLess>
-							</div> */}
 								<div className={styles['project-links-wrapper']}>
 									<a
 										href={project.repository}
@@ -148,7 +138,11 @@ const Projects = ({ projectsData, project, setProject }) => {
 										rel='noreferrer'
 										className={styles['github-link']}
 									>
-										<i className='fa-brands fa-github'></i>&nbsp; GitHub
+										<FontAwesomeIcon
+											icon={faGithub}
+											className={styles['fa-github']}
+										/>
+										&nbsp; GitHub
 									</a>
 									<a
 										href={project.url}

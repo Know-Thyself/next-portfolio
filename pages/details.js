@@ -33,22 +33,31 @@ const ProjectDetail = ({ project }) => {
 					<h4 className={styles['project-title']}>{project.title}</h4>
 					<img src={`/images/${project.image}`} alt='' />
 					<div className={styles['read-more-read-less-wrapper']}>
-						{descriptionLines &&
-						descriptionLines.join(' ').length > lessText.length ? (
+						{descriptionLines.join(' ').length >= lessText.length ? (
 							<div key='read-more' className={styles.description}>
-								{!showMore
-									? lessText
-									: descriptionLines.map((line, idx) => (
-											<div key={idx}>
-												<p className={styles.description}>{line}</p>
-											</div>
-									  ))}
-								<span key='span' onClick={toggleText}>
-									{!showMore ? '...read more ▼' : 'read less ▲'}
-								</span>
+								{!showMore ? (
+									<p>
+										{lessText}
+										<span key='span' onClick={toggleText}>
+											{!showMore ? '...read more ▼' : 'read less ▲'}
+										</span>
+									</p>
+								) : (
+									descriptionLines.map((line, idx) => (
+										<div key={idx} className={styles.description}>
+											<p>
+												{line}
+												{idx === descriptionLines.length - 1 && (
+													<span key='span' onClick={toggleText}>
+														&nbsp;{!showMore ? '...read more ▼' : 'read less ▲'}
+													</span>
+												)}
+											</p>
+										</div>
+									))
+								)}
 							</div>
 						) : (
-							descriptionLines &&
 							descriptionLines.map((line, idx) => (
 								<div key={idx}>
 									<p className={styles.description}>{line}</p>

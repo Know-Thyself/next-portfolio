@@ -4,7 +4,6 @@ body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-	
 	position: relative;
 		min-height: 100vh;
 		top: 0;
@@ -62,9 +61,23 @@ font-family: 'Source Sans Pro', sans-serif;
 
 [data-theme='dark'] {
 	--primary-background: #13191C;
+	--primary-background: #1a1b1b;
+	--primary-background: #232420;
+	--primary-background: #00001b;
+	--primary-background: #000012;
+	--primary-background: #333341;
+	--primary-background: #23232d;
+	--primary-background: #1e1e27;
+	--primary-background: #191920;
+	/* --primary-background: #14141A; */
+	/* --primary-background: #011313; */
 	--secondary-background: #030305;
+	--secondary-background: black;
 	--projects-container-bg: #1A1A1A;
+	--projects-container-bg: #191920;
 	--projects-bg: #2e3133;
+	--projects-bg: #3f3f47;
+	--projects-bg: #2f2f3d;
 	--home-background: url('/images/background-home-desktop.jpg');
 	--projects-background: url('/images/background-destination-desktop.jpg');
 	--hero-banner-text: 'Playfair Display', serif;
@@ -72,13 +85,17 @@ font-family: 'Source Sans Pro', sans-serif;
 	--home-page-buttons-bg: #1a1a27;
 	--buttons-font-family: 'Poppins', sans-serif;
 	--buttons-color: aliceblue;
+	--buttons-background: #1c1428;
 	--secondary-font-family: 'Montserrat', sans-serif;
 	--text-primary-color: white;
+	--text-primary-color: #DDE2E0;
 	--home-font-weight: 300;
 	--text-secondary-color: #f8f8f8;
 	--button-hover-bg: #309ec7;
-	--button-hover-bg: rgb(46, 39, 46);
+	--button-hover-bg: #1c1428;
 	--projects-container-hover: #343434;
+	--projects-container-hover: #1c1428;
+	--projects-container-hover: #3f3f47;
 	--active-nav-link: #c5d4d8;
 	--active-nav-link: rgb(110, 232, 248);
 	--nav-links-color: #afc1ca;

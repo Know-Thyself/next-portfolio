@@ -43,11 +43,17 @@
 }
 
 .description {
-  font-family: var(--secondary-font-family);
+  font-family: var(--primary-font-family);
   color: var(--text-primary-color);
-  font-size: 0.85rem;
+  font-size: 0.87rem;
   font-weight: 100;
   line-height: 1.25rem;
+  margin-top: 1rem;
+}
+
+.description span {
+  display: inline-block;
+  color: red;
 }
 
 .project-links-wrapper {
