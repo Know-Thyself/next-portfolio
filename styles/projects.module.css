@@ -339,8 +339,8 @@
 	border-radius: 4px;
 	color: var(--text-secondary-color);
 	font-family: var(--primary-font-family);
-	font-weight: 500;
-	font-size: 1rem;
+	font-weight: 300;
+	font-size: 0.85rem;
 	/* border-bottom: solid 3px var(--projects-container-bg); */
 }
 
@@ -378,10 +378,9 @@
 	transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 	font-family: var(--buttons-font-family);
 	text-transform: capitalize;
-	padding: 0.65rem 1.2rem;
-	padding: 0.45rem 0.75rem;
+	padding: 0.25rem 0.5rem;
 	border-radius: 4px;
-	font-size: 1rem;
+	font-size: 0.75rem;
 	font-weight: 300;
 }
 
@@ -392,8 +391,25 @@
 }
 
 .fa-github {
-	font-size: 1.12rem;
+	font-size: 0.85rem;
 	color: var(--text-secondary-color);
+}
+
+@media screen and (min-width: 467px) {
+	.project-title {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+	.github-link,
+	.live-demo-link {
+		padding: 0.45rem 0.75rem;
+		font-size: 1rem;
+	}
+
+	.fa-github {
+		font-size: 1.12rem;
+	}
 }
 
 @media screen and (min-width: 764px) {
@@ -401,6 +417,7 @@
 		width: 90%;
 		grid-template-columns: repeat(2, 1fr);
 	}
+
 }
 
 @media screen and (min-width: 1224px) {
