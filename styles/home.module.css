@@ -24,14 +24,14 @@
 }
 
 .hero-text-container {
-  color: var(--text-primary-color);
   width: 80%;
   margin: auto;
 }
 
 .primary-text {
   font-family: var(--hero-banner-text);
-  font-weight: 900;
+  color: var(--text-primary-color);
+  font-weight: 600;
   font-size: 2.5rem;
 }
 
@@ -43,9 +43,11 @@
 
 .subtext {
   font-family: var(--secondary-font-family);
-  font-weight: var(--home-font-weight);
+  font-weight: var(--secondary-font-weight);
+  color: var(--text-secondary-color);
   font-size: 1rem;
   line-height: 1.5rem;
+  font-weight: 300;
   /* white-space: 'pre-line'; */
   text-align: left;
 }
@@ -85,11 +87,10 @@
   padding: 0.5rem 1rem;
   border-radius: 4px;
   font-size: 1rem;
-  font-weight: 400;
 }
 
 .link .fa-github {
-  font-size: 1rem;
+  font-size: 1.12rem;
   color: var(--buttons-color);
 }
 
@@ -111,6 +112,7 @@
   .link {
     padding: 0.65rem 1.2rem;
     font-size: 1.12rem;
+    font-weight: 200;
   }
 
   .link .fa-github {
@@ -123,5 +125,9 @@
   .hero-text-container {
     margin-left: 5rem;
     width: 50%;
+  }
+
+  .primary-text {
+    font-weight: 900;
   }
 }

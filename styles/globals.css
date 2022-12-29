@@ -22,7 +22,7 @@ a {
 	box-sizing: border-box;
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 
 /* 
 font-family: 'Lato', sans-serif;
@@ -32,6 +32,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 :root {
 	--primary-background: #c5c5c5;
+	--primary-background: #bababc;
 	--secondary-background: #9297b3;
 	--home-background: #f8f8f8;
 	--projects-container-bg: #b3ae92;
@@ -42,21 +43,25 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
 	--buttons-color: #f8f8f8;
 	--home-page-buttons-bg: #4c516d;
+	--home-page-buttons-bg: #2f2f3d;
 	--secondary-font-family: 'Poppins', sans-serif;
 	--text-primary-color: #0f0700;
-	--home-font-weight: 400;
-	--text-secondary-color: #0f0700;
+	--secondary-font-weight: 600;
+	--text-secondary-color: rgb(4, 0, 8);
 	--nav-links-color: #2a2b26;
-	--nav-links-color: #240085;
+	--nav-links-color: #191920;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 600;
 	--button-hover-bg: #cf6138;
 	--projects-container-hover: #9e9874;
 	--active-nav-link: #141414;
-	--active-nav-link: #240085;
+	/* --active-nav-link: #240085; */
 	--radio-btn-bg: #f8f8f8;
 	--radio-btn-border: #4c516d;
+	--radio-btn-border: rgb(44, 38, 2);
+	--radio-btn-border: #3f3f47;
 	--switch-button-bg: #3f00ff;
+	--switch-button-bg: #2f2f3d;
 }
 
 [data-theme='dark'] {
@@ -89,7 +94,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-font-family: 'Montserrat', sans-serif;
 	--text-primary-color: white;
 	--text-primary-color: #DDE2E0;
-	--home-font-weight: 300;
+	--text-primary-color: #D7D7DF;
+	--secondary-font-weight: 100;
 	--text-secondary-color: #f8f8f8;
 	--button-hover-bg: #309ec7;
 	--button-hover-bg: #1c1428;
@@ -97,11 +103,13 @@ font-family: 'Source Sans Pro', sans-serif;
 	--projects-container-hover: #1c1428;
 	--projects-container-hover: #3f3f47;
 	--active-nav-link: #c5d4d8;
-	--active-nav-link: rgb(110, 232, 248);
-	--nav-links-color: #afc1ca;
+	--active-nav-link: #8FAFF5;
+	--nav-links-color: #AAAAC0;
+	--nav-links-color: #B6B6C8;
 	--nav-links-font-weight: 400;
 	--active-nav-link-font-weight: 500;
 	--radio-btn-bg: #969cbd;
 	--radio-btn-border: #afc1ca;
 	--switch-button-bg: #ba0021;
+	--switch-button-bg: #8FAFF5;
 }
