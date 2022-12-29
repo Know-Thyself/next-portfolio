@@ -315,10 +315,18 @@
 	border-radius: 4px;
 	padding: 5px;
 	position: absolute;
-	z-index: 1;
+	/* z-index: 1; */
 }
 
-.project-wrapper:hover .tooltip {
+.image-tooltip-container {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-tooltip-container:hover .tooltip {
 	visibility: visible;
 }
 

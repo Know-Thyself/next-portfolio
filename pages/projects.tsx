@@ -118,7 +118,6 @@ const Projects = ({ projectsData, project, setProject }) => {
 			>
 				<div className={styles['projects-wrapper']}>
 					{projects.map((project, idx) => {
-						const descriptionLines = project.description.split(/\n/)
 						return (
 							<div
 								key={idx}
@@ -127,10 +126,12 @@ const Projects = ({ projectsData, project, setProject }) => {
 								onClick={handleClick}
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
-								<img src={`/images/${project.image}`} alt='' />
-								<span className={styles.tooltip}>
-									Click to view project details
-								</span>
+								<div className={styles['image-tooltip-container']}>
+									<img src={`/images/${project.image}`} alt='' />
+									<span className={styles.tooltip}>
+										Click to view project details
+									</span>
+								</div>
 								<div className={styles['project-links-wrapper']}>
 									<a
 										href={project.repository}
