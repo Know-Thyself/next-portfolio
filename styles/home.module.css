@@ -71,7 +71,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .link {
@@ -84,7 +84,7 @@
   font-weight: 300;
   text-decoration: none;
   text-transform: capitalize;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 4px;
   font-size: 1rem;
 }
@@ -107,6 +107,10 @@
   .hero-text-container {
     margin-left: 4rem;
     width: 60%;
+  }
+
+  .links-wrapper {
+    gap: 2rem;
   }
 
   .link {

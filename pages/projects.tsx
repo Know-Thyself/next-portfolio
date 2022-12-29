@@ -108,7 +108,7 @@ const Projects = ({ projectsData, project, setProject }) => {
 	// 	</section>
 	// )
 	return (
-		<AnimatePresence exitBeforeEnter>
+		<AnimatePresence mode='wait'>
 			<motion.div
 				className={styles['projects-main-container']}
 				variants={springVariant}

@@ -378,11 +378,11 @@
 	transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 	font-family: var(--buttons-font-family);
 	text-transform: capitalize;
-	padding: 0.25rem 0.5rem;
+	padding: 0.5rem;
 	border-radius: 4px;
 	font-size: 0.75rem;
 	font-weight: 300;
-	width: max-content;
+	width: 25%;
 }
 
 .github-link:hover,
@@ -396,6 +396,13 @@
 	color: var(--text-secondary-color);
 }
 
+@media screen and (max-width: 300px) {
+	.github-link,
+	.live-demo-link {
+		width: 40%;
+	}
+}
+
 @media screen and (min-width: 467px) {
 	.project-title {
 		font-size: 1rem;
@@ -406,6 +413,7 @@
 	.live-demo-link {
 		padding: 0.45rem 0.75rem;
 		font-size: 1rem;
+		width: max-content;
 	}
 
 	.fa-github {
@@ -418,6 +426,11 @@
 		width: 90%;
 		grid-template-columns: repeat(2, 1fr);
 	}
+		.github-link,
+		.live-demo-link {
+			padding: 0.5rem 1rem;
+			font-size: 1rem;
+		}
 
 }
 
