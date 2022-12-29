@@ -44,7 +44,9 @@
 
 .description {
   font-family: var(--primary-font-family);
+  font-family: var(--secondary-font-family);
   color: var(--text-primary-color);
+  color: var(--nav-links-color);
   font-size: 0.87rem;
   font-weight: 100;
   line-height: 1.25rem;
@@ -53,7 +55,7 @@
 
 .description span {
   display: inline-block;
-  color: red;
+  color: var(--active-nav-link);
 }
 
 .project-links-wrapper {
@@ -69,7 +71,11 @@
 .github-link {
   font-family: var(--buttons-font-family);
   color: var(--buttons-color);
-  background-color: var(--primary-background);
+  background-color: var(--switch-button-bg);
+  background-color: #395590;
+  color: #06123C;
+  color: #050E2E;
+  color: #FCFCFD;
   text-decoration: none;
   padding: 0.65rem 1.2rem;
   border-radius: 4px;
@@ -80,6 +86,9 @@
 .fa-github {
   font-size: 1.12rem;
   color: var(--buttons-color);
+  color: #06123C;
+  color: #050E2E;
+  color: #FCFCFD;
 }
 
 /* .live-demo-link {
@@ -90,4 +99,12 @@
   .project-wrapper {
     width: 65%;
   }
+  .description {
+    font-size: 1rem;
+  }
+
+    .live-demo-link,
+    .github-link {
+      font-weight: 400;
+    }
 }

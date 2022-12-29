@@ -5,12 +5,12 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	position: relative;
-		min-height: 100vh;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		background-color: var(--primary-background);
+	min-height: 100vh;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: var(--primary-background);
 }
 
 a {
@@ -91,7 +91,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
 	--buttons-color: aliceblue;
 	--buttons-background: #1c1428;
-	--secondary-font-family: 'Montserrat', sans-serif;
+	--secondary-font-family: 'Source Sans Pro',
+		sans-serif;
 	--text-primary-color: white;
 	--text-primary-color: #DDE2E0;
 	--text-primary-color: #D7D7DF;
@@ -100,8 +101,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--button-hover-bg: #309ec7;
 	--button-hover-bg: #1c1428;
 	--projects-container-hover: #343434;
-	--projects-container-hover: #1c1428;
-	--projects-container-hover: #3f3f47;
+	--projects-container-hover: #395590;
+	/* --projects-container-hover: #3f3f47; */
 	--active-nav-link: #c5d4d8;
 	--active-nav-link: #8FAFF5;
 	--nav-links-color: #AAAAC0;
@@ -110,6 +111,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--active-nav-link-font-weight: 500;
 	--radio-btn-bg: #969cbd;
 	--radio-btn-border: #afc1ca;
+	--radio-btn-border: #B6B6C8;
 	--switch-button-bg: #ba0021;
 	--switch-button-bg: #8FAFF5;
+	--switch-button-bg: #608EF1;
 }

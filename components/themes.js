@@ -33,11 +33,6 @@ const ThemeToggler = () => {
 						onChange={switchTheme}
 					/>
 					<label className={styles['switch-label']} htmlFor='radio-button'>
-						{/* <i
-							className={
-								theme === 'dark' ? 'fa-solid fa-moon' : styles['d-none']
-							}
-						/> */}
 						<FontAwesomeIcon
 							icon={faMoon}
 							className={
