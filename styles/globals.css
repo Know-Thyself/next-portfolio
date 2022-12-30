@@ -10,7 +10,7 @@ body {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: var(--primary-background);
+	background-color: var(--header-background);
 }
 
 a {
@@ -31,53 +31,53 @@ font-family: 'Source Sans Pro', sans-serif;
  */
 
 :root {
-	
-	--primary-background: #bababc;
-	--primary-background: #bcbcba;
-	
-	--primary-background: #b2b2b7;
-	--primary-background: #ededf9;
-	--primary-background: #d5d5e0;
-	--primary-background: #9e9874;
-	/* --primary-background: #89898C; */
-	--secondary-background: #9297b3;
-	--secondary-background: #89898C;
-	--secondary-background: #f8f8f8;
+
+	--header-background: #bababc;
+	--header-background: #bcbcba;
+
+	--header-background: #b2b2b7;
+	--header-background: #ededf9;
+	--header-background: #d5d5e0;
+	--header-background: #9e9874;
+	/* --header-background: #89898C; */
+	--primary-background: #9297b3;
+	--primary-background: #89898C;
+	--primary-background: #f8f8f8;
 	--home-background: #f8f8f8;
-	--projects-container-bg: #b3ae92;
-	--projects-container-bg: #a3a3a5;
-	--projects-container-bg: #707072;
-	--projects-container-bg: #707072;
-	--projects-background: #72789e;
-	--projects-bg: #45452d;
-	--projects-bg: #89898C;
-	--projects-bg: #707072;
-	--projects-bg: #89898C;
-	--projects-bg: #72789e;
+	--project-container-bg: #b3ae92;
+	--project-container-bg: #a3a3a5;
+	--project-container-bg: #707072;
+	--project-container-bg: #707072;
+	--secondary-background: #72789e;
+	--complementary-bg: #45452d;
+	--complementary-bg: #89898C;
+	--complementary-bg: #707072;
+	--complementary-bg: #89898C;
+	--complementary-bg: #72789e;
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
-	--buttons-color: #f8f8f8;
-	--home-page-buttons-bg: #4c516d;
-	--home-page-buttons-bg: #2f2f3d;
+	--secondary-text-color: #f8f8f8;
+	--complementary-bg: #4c516d;
+	--complementary-bg: #2f2f3d;
 	--secondary-font-family: 'Lato',
 		sans-serif;
-	--text-primary-color: #0f0700;
+	--primary-text-color: #0f0700;
 	--secondary-font-weight: 600;
-	--text-secondary-color: rgb(4, 0, 8);
+	--secondary-text-color: rgb(4, 0, 8);
 	--nav-links-color: #2a2b26;
 	--nav-links-color: #191920;
 	--nav-links-color: black;
 	--nav-links-font-weight: 300;
-	
+
 	--active-nav-link-font-weight: 600;
-	--button-hover-bg: #cf6138;
-	--projects-container-hover: #9e9874;
+	/* --button-hover-bg: #cf6138; */
+	--project-container-hover: #9e9874;
 	--active-nav-link: #141414;
 	--active-nav-link: black;
 	/* --active-nav-link: #240085; */
-	--radio-btn-bg: #f8f8f8;
-	--radio-btn-bg: #72789e;
+	/* --radio-btn-bg: #f8f8f8;
+	--radio-btn-bg: #72789e; */
 	--radio-btn-border: #4c516d;
 	--radio-btn-border: rgb(44, 38, 2);
 	--radio-btn-border: #3f3f47;
@@ -86,37 +86,28 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 [data-theme='dark'] {
-	--primary-background: #191920;
-	--secondary-background: #040404;
-	--projects-container-bg: #3d3d2f;
-	--projects-bg: #2d2d3d;
+	--header-background: #191920;
+	--primary-background: #040404;
+	--project-container-bg: #3d3d2f;
+	--complementary-bg: #2d2d3d;
 	--home-background: url('/images/background-home-desktop.jpg');
-	--projects-background: url('/images/background-destination-desktop.jpg');
+	--secondary-background: url('/images/background-destination-desktop.jpg');
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--primary-font-family: 'Lato',
 		sans-serif;
-	--home-page-buttons-bg: #2d2d3d;
 	--buttons-font-family: 'Poppins', sans-serif;
-	--buttons-color: aliceblue;
-	--buttons-color: #f8f8f8;
-	--buttons-background: #1c1428;
 	--secondary-font-family: 'Lato',
 		sans-serif;
-	--text-primary-color: white;
-	--text-primary-color: #DDE2E0;
-	--text-primary-color: #D7D7DF;
+	--primary-text-color: #D7D7DF;
 	--secondary-font-weight: 100;
-	--text-secondary-color: #f8f8f8;
-	--button-hover-bg: #309ec7;
-	--button-hover-bg: #191920;
-	--projects-container-hover: #395590;
-	/* --projects-container-hover: #3f3f47; */
+	--secondary-text-color: #f8f8f8;
+	--project-container-hover: #395590;
 	--active-nav-link: #8FAFF5;
 	--nav-links-color: #B6B6C8;
 	--nav-links-font-weight: 300;
 	--active-nav-link-font-weight: 400;
-	--radio-btn-bg: #191920;
+	/* --radio-btn-bg: #191920; */
 	--radio-btn-border: #B6B6C8;
 	--switch-button-bg: #608EF1;
 }

@@ -73,7 +73,7 @@ const ProjectDetail = ({ project }) => {
 							className={styles['github-link']}
 							whileHover={{
 								scale: 1.1,
-								backgroundColor: 'var(--button-hover-bg)',
+								backgroundColor: 'var(--header-background)',
 							}}
 							whileTap={{ scale: 0.9 }}
 						>
@@ -90,7 +90,7 @@ const ProjectDetail = ({ project }) => {
 							className={styles['live-demo-link']}
 							whileHover={{
 								scale: 1.1,
-								backgroundColor: 'var(--button-hover-bg)',
+								backgroundColor: 'var(--header-background)',
 							}}
 							whileTap={{ scale: 0.9 }}
 						>

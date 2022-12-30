@@ -4,8 +4,8 @@
   left: 0;
   bottom: 0;
   height: 48px;
-  background-color: var(--primary-background);
-  color: var(--text-primary-color);
+  background-color: var(--header-background);
+  color: var(--primary-text-color);
   display: flex;
   justify-content: center;
   align-items: center;

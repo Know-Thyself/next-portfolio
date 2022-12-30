@@ -30,7 +30,7 @@
 
 .primary-text {
   font-family: var(--hero-banner-text);
-  color: var(--text-primary-color);
+  color: var(--primary-text-color);
   font-weight: 600;
   font-size: 2.5rem;
 }
@@ -44,7 +44,7 @@
 .subtext {
   font-family: var(--secondary-font-family);
   font-weight: var(--secondary-font-weight);
-  color: var(--text-secondary-color);
+  color: var(--secondary-text-color);
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
@@ -78,8 +78,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--home-page-buttons-bg);
-  color: var(--buttons-color);
+  background-color: var(--complementary-bg);
+  color: var(--secondary-text-color);
   font-family: var(--buttons-font-family);
   font-weight: 300;
   text-decoration: none;
@@ -91,7 +91,7 @@
 
 .link .fa-github {
   font-size: 1.12rem;
-  color: var(--buttons-color);
+  color: var(--secondary-text-color);
 }
 
 @media screen and (max-width: 400px) {
@@ -133,7 +133,7 @@
 
   .link .fa-github {
     font-size: 1.25rem;
-    color: var(--buttons-color);
+    color: var(--secondary-text-color);
   }
 }
 
