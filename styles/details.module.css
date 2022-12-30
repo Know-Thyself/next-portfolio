@@ -1,6 +1,7 @@
 .main-container {
   width: 100%;
   background: var(--secondary-background);
+  background: var(--project-container-bg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,13 +15,15 @@
   /* margin-top: 0; */
   margin: auto;
   background-color: var(--project-container-bg);
+  background-color: var(--complementary-bg);
+  background-color: var(--header-background);
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  box-shadow: inset 0 0 0 0 var(--project-container-hover);
+  box-shadow: inset 0 0 0 0 var(--switch-button-bg);
   transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
   border-radius: 8px;
 }
@@ -72,10 +75,8 @@
   font-family: var(--buttons-font-family);
   color: var(--secondary-text-color);
   background-color: var(--switch-button-bg);
-  background-color: #395590;
-  color: #06123C;
-  color: #050E2E;
-  color: #FCFCFD;
+  /* background-color: var(--switch-button-bg); */
+  color: var(--secondary-text-color);
   text-decoration: none;
   padding: 0.65rem 1.2rem;
   border-radius: 4px;
@@ -86,9 +87,6 @@
 .fa-github {
   font-size: 1.12rem;
   color: var(--secondary-text-color);
-  color: #06123C;
-  color: #050E2E;
-  color: #FCFCFD;
 }
 
 /* .live-demo-link {

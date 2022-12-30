@@ -72,7 +72,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 	--active-nav-link-font-weight: 600;
 	/* --button-hover-bg: #cf6138; */
-	--project-container-hover: #9e9874;
+	--switch-button-bg: #9e9874;
 	--active-nav-link: #141414;
 	--active-nav-link: black;
 	/* --active-nav-link: #240085; */
@@ -101,8 +101,7 @@ font-family: 'Source Sans Pro', sans-serif;
 		sans-serif;
 	--primary-text-color: #D7D7DF;
 	--secondary-font-weight: 100;
-	--secondary-text-color: #f8f8f8;
-	--project-container-hover: #395590;
+	--secondary-text-color: #FCFCFD;
 	--active-nav-link: #8FAFF5;
 	--nav-links-color: #B6B6C8;
 	--nav-links-font-weight: 300;
@@ -110,4 +109,5 @@ font-family: 'Source Sans Pro', sans-serif;
 	/* --radio-btn-bg: #191920; */
 	--radio-btn-border: #B6B6C8;
 	--switch-button-bg: #608EF1;
+	--switch-button-bg: #395590;
 }

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from '../styles/about.module.css'
 import profileImage from '../public/images/about.png'
@@ -75,7 +76,10 @@ const About = () => {
 							community and learn more as I teach trainee developers.
 						</p>
 						<div className={styles['about-section-buttons']}>
-							<button>Contact Me</button>
+							{/* <button>Contact Me</button> */}
+							<Link href='/contact'>
+								<a className={styles.contact}>Contact Me</a>
+							</Link>
 							<button>Resume Download</button>
 						</div>
 					</div>

@@ -78,8 +78,7 @@
 }
 
 .switch-checkbox:checked+.switch-label {
-  background: var(--home-background);
-  background: var(--header-background);
+  background: var(--primary-background);
 }
 
 .d-none {
