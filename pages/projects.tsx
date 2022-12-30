@@ -24,7 +24,10 @@ const Projects = ({ projectsData, project, setProject }) => {
 		.flat()
 	const router = useRouter()
 	const handleClick = (e) => {
-		if (e.target.innerText !== 'Live Demo' && e.target.innerText !== 'GitHub') {
+		if (
+			!e.target.innerText.includes('Live Demo') &&
+			!e.target.innerText.includes('GitHub')
+		) {
 			let selected = projects[e.currentTarget.id]
 			setProject(selected)
 			router.push('/details')

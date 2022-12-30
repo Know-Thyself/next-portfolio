@@ -88,20 +88,15 @@ font-family: 'Source Sans Pro', sans-serif;
 [data-theme='dark'] {
 	--primary-background: #191920;
 	--secondary-background: #040404;
-	--projects-container-bg: #1A1A1A;
-	--projects-container-bg: #191920;
-	--projects-bg: #2e3133;
-	--projects-bg: #3f3f47;
-	--projects-bg: #2f2f3d;
+	--projects-container-bg: #3d3d2f;
+	--projects-bg: #2d2d3d;
 	--home-background: url('/images/background-home-desktop.jpg');
 	--projects-background: url('/images/background-destination-desktop.jpg');
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--primary-font-family: 'Lato',
 		sans-serif;
-	--home-page-buttons-bg: #1a1a27;
-	--home-page-buttons-bg: #395590;
-	--home-page-buttons-bg: #2f2f3d;
+	--home-page-buttons-bg: #2d2d3d;
 	--buttons-font-family: 'Poppins', sans-serif;
 	--buttons-color: aliceblue;
 	--buttons-color: #f8f8f8;
@@ -114,20 +109,14 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-font-weight: 100;
 	--text-secondary-color: #f8f8f8;
 	--button-hover-bg: #309ec7;
-	--button-hover-bg: #1c1428;
-	--projects-container-hover: #343434;
+	--button-hover-bg: #191920;
 	--projects-container-hover: #395590;
 	/* --projects-container-hover: #3f3f47; */
-	--active-nav-link: #c5d4d8;
 	--active-nav-link: #8FAFF5;
-	--nav-links-color: #AAAAC0;
 	--nav-links-color: #B6B6C8;
 	--nav-links-font-weight: 300;
 	--active-nav-link-font-weight: 400;
-	--radio-btn-bg: #969cbd;
-	--radio-btn-border: #afc1ca;
+	--radio-btn-bg: #191920;
 	--radio-btn-border: #B6B6C8;
-	--switch-button-bg: #ba0021;
-	--switch-button-bg: #8FAFF5;
 	--switch-button-bg: #608EF1;
 }

@@ -79,6 +79,7 @@
 
 .switch-checkbox:checked+.switch-label {
   background: var(--home-background);
+  background: var(--radio-btn-bg);
 }
 
 .d-none {
