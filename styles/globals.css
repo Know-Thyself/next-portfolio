@@ -31,32 +31,53 @@ font-family: 'Source Sans Pro', sans-serif;
  */
 
 :root {
-	--primary-background: #c5c5c5;
+	
 	--primary-background: #bababc;
+	--primary-background: #bcbcba;
+	
+	--primary-background: #b2b2b7;
+	--primary-background: #ededf9;
+	--primary-background: #d5d5e0;
+	--primary-background: #9e9874;
+	/* --primary-background: #89898C; */
 	--secondary-background: #9297b3;
+	--secondary-background: #89898C;
+	--secondary-background: #f8f8f8;
 	--home-background: #f8f8f8;
 	--projects-container-bg: #b3ae92;
-	--projects-background: #f8f8f8;
+	--projects-container-bg: #a3a3a5;
+	--projects-container-bg: #707072;
+	--projects-container-bg: #707072;
+	--projects-background: #72789e;
 	--projects-bg: #45452d;
+	--projects-bg: #89898C;
+	--projects-bg: #707072;
+	--projects-bg: #89898C;
+	--projects-bg: #72789e;
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
 	--buttons-color: #f8f8f8;
 	--home-page-buttons-bg: #4c516d;
 	--home-page-buttons-bg: #2f2f3d;
-	--secondary-font-family: 'Poppins', sans-serif;
+	--secondary-font-family: 'Lato',
+		sans-serif;
 	--text-primary-color: #0f0700;
 	--secondary-font-weight: 600;
 	--text-secondary-color: rgb(4, 0, 8);
 	--nav-links-color: #2a2b26;
 	--nav-links-color: #191920;
-	--nav-links-font-weight: 500;
+	--nav-links-color: black;
+	--nav-links-font-weight: 300;
+	
 	--active-nav-link-font-weight: 600;
 	--button-hover-bg: #cf6138;
 	--projects-container-hover: #9e9874;
 	--active-nav-link: #141414;
+	--active-nav-link: black;
 	/* --active-nav-link: #240085; */
 	--radio-btn-bg: #f8f8f8;
+	--radio-btn-bg: #72789e;
 	--radio-btn-border: #4c516d;
 	--radio-btn-border: rgb(44, 38, 2);
 	--radio-btn-border: #3f3f47;
@@ -65,19 +86,8 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 [data-theme='dark'] {
-	--primary-background: #13191C;
-	--primary-background: #1a1b1b;
-	--primary-background: #232420;
-	--primary-background: #00001b;
-	--primary-background: #000012;
-	--primary-background: #333341;
-	--primary-background: #23232d;
-	--primary-background: #1e1e27;
 	--primary-background: #191920;
-	/* --primary-background: #14141A; */
-	/* --primary-background: #011313; */
-	--secondary-background: #030305;
-	--secondary-background: black;
+	--secondary-background: #040404;
 	--projects-container-bg: #1A1A1A;
 	--projects-container-bg: #191920;
 	--projects-bg: #2e3133;
@@ -87,11 +97,16 @@ font-family: 'Source Sans Pro', sans-serif;
 	--projects-background: url('/images/background-destination-desktop.jpg');
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
+	--primary-font-family: 'Lato',
+		sans-serif;
 	--home-page-buttons-bg: #1a1a27;
+	--home-page-buttons-bg: #395590;
+	--home-page-buttons-bg: #2f2f3d;
 	--buttons-font-family: 'Poppins', sans-serif;
 	--buttons-color: aliceblue;
+	--buttons-color: #f8f8f8;
 	--buttons-background: #1c1428;
-	--secondary-font-family: 'Source Sans Pro',
+	--secondary-font-family: 'Lato',
 		sans-serif;
 	--text-primary-color: white;
 	--text-primary-color: #DDE2E0;
@@ -107,8 +122,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--active-nav-link: #8FAFF5;
 	--nav-links-color: #AAAAC0;
 	--nav-links-color: #B6B6C8;
-	--nav-links-font-weight: 400;
-	--active-nav-link-font-weight: 500;
+	--nav-links-font-weight: 300;
+	--active-nav-link-font-weight: 400;
 	--radio-btn-bg: #969cbd;
 	--radio-btn-border: #afc1ca;
 	--radio-btn-border: #B6B6C8;

@@ -109,7 +109,8 @@
 .active {
   /* display: block; */
   padding: 18px 24px;
-  font-family: var(--primary-font-family);
+  font-family: var(--secondary-font-family);
+  /* font-family: var(--secondary-font-family); */
   color: var(--nav-links-color);
   border-bottom: solid 1px var(--text-primary-color);
   border-bottom: solid 1px var(--nav-links-color);
