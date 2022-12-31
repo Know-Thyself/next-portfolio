@@ -32,56 +32,32 @@ font-family: 'Source Sans Pro', sans-serif;
 
 :root {
 	--header-background: #e4e5f1;
-	--primary-background: #9297b3;
-	--primary-background: #f8f8f8;
 	--primary-background: #fafafa;
+	--project-container-bg: #9394a5;
 	--home-background: #f8f8f8;
-	--project-container-bg: #a3a3a5;
-	--project-container-bg: #707072;
-	--project-container-bg: #9394a5;
-	--project-container-bg: #d2d3db;
-	--project-container-bg: #9394a5;
-	--secondary-background: #72789e;
-	--complementary-bg: #45452d;
-	--complementary-bg: #89898C;
-	--complementary-bg: #707072;
-	--complementary-bg: #89898C;
-	--complementary-bg: #72789e;
+	--about-image-bg: #E4E5F1;
+	--complementary-bg: #d2d3db;
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
 	--secondary-text-color: #f8f8f8;
-	
-	--complementary-bg: #2f2f3d;
-	--complementary-bg: #484b6a;
-	--complementary-bg: #9394a5;
-	--complementary-bg: #d2d3db;
 	--secondary-font-family: 'Lato',
 		sans-serif;
 	--primary-text-color: #0f0700;
 	--secondary-font-weight: 600;
-	--secondary-text-color: rgb(4, 0, 8);
-	--secondary-text-color: #F7F7F7;
 	--secondary-text-color: black;
-	--nav-links-color: #2a2b26;
-	--nav-links-color: #191920;
 	--nav-links-color: #202537;
-	--nav-links-font-weight: 400;
-
-	--active-nav-link-font-weight: 600;
-	/* --button-hover-bg: #cf6138; */
-	--switch-button-bg: #9e9874;
-	--active-nav-link: #141414;
 	--active-nav-link: #282D43;
-	/* --active-nav-link: #240085; */
-	/* --radio-btn-bg: #f8f8f8;
-	--radio-btn-bg: #72789e; */
-	--radio-btn-border: #4c516d;
-	--radio-btn-border: rgb(44, 38, 2);
-	--radio-btn-border: #3f3f47;
-	--switch-button-bg: #3f00ff;
-	--switch-button-bg: #2f2f3d;
+	--nav-links-font-weight: 400;
+	--active-nav-link-font-weight: 600;
+	--buttons-bg-color: #2d2d3d;
+	--buttons-bg-color: #484b6a;
+	--buttons-hover-bg: #e4e5f1;
+	--buttons-color: #FAFAFA;
+	--radio-btn-border: #484b6a;
+	--radio-btn-border: #282D43;
 	--switch-button-bg: #484b6a;
+	/* --switch-button-bg: #008ecc; */
 }
 
 [data-theme='dark'] {
@@ -90,12 +66,15 @@ font-family: 'Source Sans Pro', sans-serif;
 	--project-container-bg: #3d3d2f;
 	--complementary-bg: #2d2d3d;
 	--home-background: url('/images/background-home-desktop.jpg');
-	--secondary-background: url('/images/background-destination-desktop.jpg');
+	--about-image-bg: url('/images/background-destination-desktop.jpg');
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--primary-font-family: 'Lato',
 		sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
+	--buttons-bg-color: #2d2d3d;
+	--buttons-hover-bg: #191920;
+	--buttons-color: #FCFCFD;
 	--secondary-font-family: 'Lato',
 		sans-serif;
 	--primary-text-color: #D7D7DF;

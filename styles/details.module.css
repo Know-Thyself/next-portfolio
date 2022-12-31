@@ -31,6 +31,7 @@
 .project-title {
   font-family: var(--primary-font-family);
   color: var(--primary-text-color);
+  color: var(--nav-links-color);
 }
 
 .project-wrapper img {
@@ -59,6 +60,7 @@
 .description span {
   display: inline-block;
   color: var(--active-nav-link);
+  /* color: var(--switch-button-bg); */
 }
 
 .project-links-wrapper {
@@ -74,9 +76,9 @@
 .github-link {
   font-family: var(--buttons-font-family);
   color: var(--secondary-text-color);
-  background-color: var(--switch-button-bg);
+  background-color: var(--buttons-bg-color);
   /* background-color: var(--switch-button-bg); */
-  color: var(--secondary-text-color);
+  color: var(--buttons-color);
   text-decoration: none;
   padding: 0.65rem 1.2rem;
   border-radius: 4px;
@@ -86,7 +88,7 @@
 
 .fa-github {
   font-size: 1.12rem;
-  color: var(--secondary-text-color);
+  color: var(--buttons-color);
 }
 
 /* .live-demo-link {

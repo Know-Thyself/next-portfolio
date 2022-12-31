@@ -76,11 +76,25 @@ const About = () => {
 							community and learn more as I teach trainee developers.
 						</p>
 						<div className={styles['about-section-buttons']}>
-							{/* <button>Contact Me</button> */}
-							<Link href='/contact'>
-								<a className={styles.contact}>Contact Me</a>
-							</Link>
-							<button>Resume Download</button>
+							<motion.div
+								whileHover={{
+									scale: 1.1,
+								}}
+								whileTap={{ scale: 0.9 }}
+							>
+								<Link href='/contact'>
+									<a className={styles.contact}>Contact Me</a>
+								</Link>
+							</motion.div>
+
+							<motion.button
+								whileHover={{
+									scale: 1.1,
+								}}
+								whileTap={{ scale: 0.9 }}
+							>
+								Resume Download
+							</motion.button>
 						</div>
 					</div>
 				</div>

@@ -78,8 +78,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--complementary-bg);
-  color: var(--secondary-text-color);
+  background-color: var(--buttons-bg-color);
+  color: var(--buttons-color);
   font-family: var(--buttons-font-family);
   font-weight: 300;
   text-decoration: none;
@@ -91,7 +91,7 @@
 
 .link .fa-github {
   font-size: 1.12rem;
-  color: var(--secondary-text-color);
+  color: var(--buttons-color);
 }
 
 @media screen and (max-width: 400px) {
@@ -133,7 +133,7 @@
 
   .link .fa-github {
     font-size: 1.25rem;
-    color: var(--secondary-text-color);
+    /* color: var(--secondary-text-color); */
   }
 }
 

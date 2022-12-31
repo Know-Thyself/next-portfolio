@@ -3,7 +3,7 @@
   background-color: var(--primary-background);
   font-family: var(--secondary-font-family);
   padding-top: 70px;
-  padding-bottom: 6rem;
+  padding-bottom: 48px;
 }
 
 .about-page-wrapper {
@@ -26,7 +26,7 @@
 .about-img-wrapper {
   width: fit-content;
   height: fit-content;
-  background: var(--secondary-background);
+  background: var(--about-image-bg);
   margin-right: 2.5rem;
 }
 
@@ -44,8 +44,8 @@
 
 .skills-section {
   width: 100%;
-  background-color: var(--header-background);
-  background-color: #291e2b;
+  background-color: var(--complementary-bg);
+  /* background-color: #291e2b; */
   padding: 2rem auto;
 }
 
@@ -66,12 +66,17 @@
 }
 
 .about-section-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 2rem;
 }
 
 .contact, .about-section-buttons button {
   background-color: var(--header-background);
+  background-color: var(--buttons-bg-color);
   color: var(--secondary-text-color);
+  color: var(--buttons-color);
   font-family: var(--primary-font-family);
   text-decoration: none;
   text-transform: capitalize;

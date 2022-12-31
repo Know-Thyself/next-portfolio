@@ -389,6 +389,7 @@
 .live-demo-link:hover {
 	color: var(--primary-text-color);
 	box-shadow: inset 200px 0 0 0 var(--header-background);
+	box-shadow: inset 200px 0 0 0 var(--buttons-hover-bg);
 }
 
 .fa-github {
