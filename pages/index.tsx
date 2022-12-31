@@ -18,7 +18,7 @@ const HomePage = ({ data }) => {
 	return (
 		<>
 			<Head>
-				<title>Biruk Web Dev</title>
+				<title>Biruk | Full Stack Web Developer</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<Home />

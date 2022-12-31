@@ -38,10 +38,6 @@
   left: 2.5rem;
 }
 
-/* .about-text-wrapper {
-	background-color: #0f0700;
-} */
-
 .skills-section {
   width: 100%;
   background-color: var(--complementary-bg);
@@ -67,12 +63,15 @@
 
 .about-section-buttons {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-.contact, .about-section-buttons button {
+.contact,
+.about-section-buttons button {
   background-color: var(--header-background);
   background-color: var(--buttons-bg-color);
   color: var(--secondary-text-color);
@@ -96,10 +95,33 @@
   box-shadow: inset 300px 0 0 0 var(--switch-button-bg);
 }
 
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 524px) {
+  .about-section-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about-page-wrapper {
+    flex-direction: row;
+    margin: 2rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .about-page-wrapper {
+    flex-direction: row;
+    width: 70%;
+    gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1348px) {
   .about-page-wrapper {
     flex-direction: row;
     width: 60%;
-    gap: 5rem;
+    gap: 4rem;
   }
 }
