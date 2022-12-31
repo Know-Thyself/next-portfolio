@@ -44,7 +44,7 @@
 .subtext {
   font-family: var(--secondary-font-family);
   font-weight: var(--secondary-font-weight);
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;

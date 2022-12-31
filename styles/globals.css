@@ -31,23 +31,16 @@ font-family: 'Source Sans Pro', sans-serif;
  */
 
 :root {
-
-	--header-background: #bababc;
-	--header-background: #bcbcba;
-
-	--header-background: #b2b2b7;
-	--header-background: #ededf9;
-	--header-background: #d5d5e0;
-	--header-background: #9e9874;
-	/* --header-background: #89898C; */
+	--header-background: #e4e5f1;
 	--primary-background: #9297b3;
-	--primary-background: #89898C;
 	--primary-background: #f8f8f8;
+	--primary-background: #fafafa;
 	--home-background: #f8f8f8;
-	--project-container-bg: #b3ae92;
 	--project-container-bg: #a3a3a5;
 	--project-container-bg: #707072;
-	--project-container-bg: #707072;
+	--project-container-bg: #9394a5;
+	--project-container-bg: #d2d3db;
+	--project-container-bg: #9394a5;
 	--secondary-background: #72789e;
 	--complementary-bg: #45452d;
 	--complementary-bg: #89898C;
@@ -58,23 +51,28 @@ font-family: 'Source Sans Pro', sans-serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
 	--secondary-text-color: #f8f8f8;
-	--complementary-bg: #4c516d;
+	
 	--complementary-bg: #2f2f3d;
+	--complementary-bg: #484b6a;
+	--complementary-bg: #9394a5;
+	--complementary-bg: #d2d3db;
 	--secondary-font-family: 'Lato',
 		sans-serif;
 	--primary-text-color: #0f0700;
 	--secondary-font-weight: 600;
 	--secondary-text-color: rgb(4, 0, 8);
+	--secondary-text-color: #F7F7F7;
+	--secondary-text-color: black;
 	--nav-links-color: #2a2b26;
 	--nav-links-color: #191920;
-	--nav-links-color: black;
-	--nav-links-font-weight: 300;
+	--nav-links-color: #202537;
+	--nav-links-font-weight: 400;
 
 	--active-nav-link-font-weight: 600;
 	/* --button-hover-bg: #cf6138; */
 	--switch-button-bg: #9e9874;
 	--active-nav-link: #141414;
-	--active-nav-link: black;
+	--active-nav-link: #282D43;
 	/* --active-nav-link: #240085; */
 	/* --radio-btn-bg: #f8f8f8;
 	--radio-btn-bg: #72789e; */
@@ -83,6 +81,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-border: #3f3f47;
 	--switch-button-bg: #3f00ff;
 	--switch-button-bg: #2f2f3d;
+	--switch-button-bg: #484b6a;
 }
 
 [data-theme='dark'] {
