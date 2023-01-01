@@ -86,8 +86,10 @@ const Home = () => {
 								}}
 								whileTap={{ scale: 0.8 }}
 							>
-								<Link href='/projects'>
-									<a className={styles.link}>Projects</a>
+								<Link href='/projects' className={styles.link}>
+									{/* <a className={styles.link}> */}
+										Projects
+										{/* </a> */}
 								</Link>
 							</motion.div>
 						</div>

@@ -55,53 +55,83 @@ const Header = () => {
 					</label>
 					{(toggleMenu || screenWidth > 667) && (
 						<nav className={styles['menu__box']}>
-							<Link href='/'>
-								<a
+							<Link
+								href='/'
+								className={
+									router.pathname === '/' ? styles.active : styles['menu__item']
+								}
+								onClick={screenTest}
+							>
+								{/* <a
 									className={
 										router.pathname === '/'
 											? styles.active
 											: styles['menu__item']
 									}
 									onClick={screenTest}
-								>
-									Home
-								</a>
+								> */}
+								Home
+								{/* </a> */}
 							</Link>
-							<Link href='/projects'>
-								<a
+							<Link
+								href='/projects'
+								className={
+									router.pathname === '/projects'
+										? styles.active
+										: styles['menu__item']
+								}
+								onClick={screenTest}
+							>
+								{/* <a
 									className={
 										router.pathname === '/projects'
 											? styles.active
 											: styles['menu__item']
 									}
 									onClick={screenTest}
-								>
-									Projects
-								</a>
+								> */}
+								Projects
+								{/* </a> */}
 							</Link>
-							<Link href='/about'>
-								<a
+							<Link
+								href='/about'
+								className={
+									router.pathname === '/about'
+										? styles.active
+										: styles['menu__item']
+								}
+								onClick={screenTest}
+							>
+								{/* <a
 									className={
 										router.pathname === '/about'
 											? styles.active
 											: styles['menu__item']
 									}
 									onClick={screenTest}
-								>
-									About
-								</a>
+								> */}
+								About
+								{/* </a> */}
 							</Link>
-							<Link href='/contact'>
-								<a
+							<Link
+								href='/contact'
+								className={
+									router.pathname === '/contact'
+										? styles.active
+										: styles['menu__item']
+								}
+								onClick={screenTest}
+							>
+								{/* <a
 									className={
 										router.pathname === '/contact'
 											? styles.active
 											: styles['menu__item']
 									}
 									onClick={screenTest}
-								>
+								> */}
 									Contact
-								</a>
+								{/* </a> */}
 							</Link>
 						</nav>
 					)}

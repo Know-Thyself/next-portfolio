@@ -82,8 +82,10 @@ const About = () => {
 								}}
 								whileTap={{ scale: 0.9 }}
 							>
-								<Link href='/contact'>
-									<a className={styles.contact}>Contact Me</a>
+								<Link href='/contact' className={styles.contact}>
+									{/* <a className={styles.contact}> */}
+										Contact Me
+										{/* </a> */}
 								</Link>
 							</motion.div>
 
