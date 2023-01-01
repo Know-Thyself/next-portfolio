@@ -1,4 +1,4 @@
-//import ReadMoreLess from 'react-show-more-text'
+import Head from 'next/head'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -28,6 +28,10 @@ const ProjectDetail = ({ project }) => {
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0.5 }}
 		>
+			<Head>
+				<title>Project Details</title>
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
 			{descriptionLines && (
 				<div className={styles['project-wrapper']}>
 					<h4 className={styles['project-title']}>{project.title}</h4>

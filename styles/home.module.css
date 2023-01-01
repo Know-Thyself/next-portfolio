@@ -1,5 +1,9 @@
 .home {
   width: 100%;
+  background: var(--home-background);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   position: relative;
   min-height: 100vh;
@@ -11,16 +15,7 @@
 
 .hero {
   padding-top: 70px;
-  background: var(--home-background);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
-  min-height: max-content;
-  min-height: inherit;
-  min-height: calc(100vh - 118px);
-  resize: both;
-  padding-bottom: 6rem;
 }
 
 .hero-text-container {

@@ -112,6 +112,10 @@ const Projects = ({ projectsData, project, setProject }) => {
 	// )
 	return (
 		<AnimatePresence mode='wait'>
+			<Head>
+				<title>Projects</title>
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
 			<motion.div
 				className={styles['projects-main-container']}
 				variants={springVariant}

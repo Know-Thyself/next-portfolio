@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -5,7 +6,6 @@ import styles from '../styles/about.module.css'
 import profileImage from '../public/images/about.png'
 
 const About = () => {
-
 	const springVariant = {
 		start: {
 			y: -100,
@@ -32,6 +32,10 @@ const About = () => {
 
 	return (
 		<AnimatePresence mode='wait'>
+			<Head>
+				<title>About Me</title>
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
 			<motion.main
 				className={styles['about-page-main-container']}
 				variants={springVariant}
@@ -84,8 +88,8 @@ const About = () => {
 							>
 								<Link href='/contact' className={styles.contact}>
 									{/* <a className={styles.contact}> */}
-										Contact Me
-										{/* </a> */}
+									Contact Me
+									{/* </a> */}
 								</Link>
 							</motion.div>
 
