@@ -13,8 +13,8 @@ export default async (req, res) => {
 	//const message = { Name: body.name, Email: body.email, Message: body.message }
 
 	const data = {
-		to: 'biruk.key@gmail.com',
-		from: 'birukwebdev@gmail.com',
+		to: `${process.env.RECEIVER_EMAIL}`,
+		from: `${process.env.SENDER_EMAIL}`,
 		subject: `New message from ${body.name}`,
 		text: message,
 		html: message.replace(/\r\n/g, '<br />'),
