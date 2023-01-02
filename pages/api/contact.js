@@ -13,7 +13,7 @@ const sendEmail = async (req, res) => {
 		await email.send({
 			to: `${process.env.RECEIVER_EMAIL}`,
 			from: `${process.env.SENDER_EMAIL}`,
-			subject: `${body.subject}`,
+			subject: `New message from ${body.name}`,
 			text: message,
 			html: message.replace(/\r\n/g, '<br />'),
 		})
