@@ -5,6 +5,7 @@ import Head from 'next/head'
 import styles from '../styles/contact.module.css'
 // import Box from '@mui/material/Box'
 import Alert from '@mui/material/Alert'
+import TextareaAutosize from 'react-textarea-autosize'
 // import IconButton from '@mui/material/IconButton'
 // import Collapse from '@mui/material/Collapse'
 // import Button from '@mui/material/Button'
@@ -96,11 +97,14 @@ const Contact = () => {
 			<main className={styles.main}>
 				<h1>Getting in touch is easy!</h1>
 				<form onSubmit={handleSubmit} className={styles.form}>
-					<label htmlFor='name'>Name:</label>
+					<label htmlFor='name' className={styles.required}>
+						Name
+					</label>
 					<input
 						id='name'
 						type='text'
 						name='name'
+						placeholder='Enter your name'
 						value={formInputs.name}
 						onChange={handleChange}
 					/>
@@ -116,11 +120,14 @@ const Contact = () => {
 						</Alert>
 					)}
 					<br />
-					<label htmlFor='email'>Email:</label>
+					<label htmlFor='email' className={styles.required}>
+						Email
+					</label>
 					<input
 						id='email'
 						type='email'
 						name='email'
+						placeholder='Enter your email'
 						value={formInputs.email}
 						onChange={handleChange}
 					/>
@@ -136,21 +143,26 @@ const Contact = () => {
 						</Alert>
 					)}
 					<br />
-					<label htmlFor='subject'>Subject:</label>
+					<label htmlFor='subject'>Subject</label>
 					<input
 						id='subject'
 						type='text'
 						name='subject'
+						placeholder='Enter subject'
 						value={formInputs.subject}
 						onChange={handleChange}
 					/>
 					<br />
-					<label htmlFor='message'>Message:</label>
-					<textarea
+					<label htmlFor='message' className={styles.required}>
+						Message
+					</label>
+					<TextareaAutosize
+						minRows='3'
+						maxRows='10'
 						id='message'
 						type='text'
-						rows='4'
 						name='message'
+						placeholder='Enter your message'
 						value={formInputs.message}
 						onChange={handleChange}
 					/>

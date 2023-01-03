@@ -22,10 +22,19 @@
   /* background-color: var(--complementary-bg); */
 }
 
-.form input {
-  font-size: large;
+.form input,
+.form textarea {
+  font-size: 1rem;
   line-height: 2rem;
-  /* border-radius: 4px; */
+  font-family: var(--primary-font-family);
+}
+.form textarea {
+  height: fit-content;
+}
+
+.required:after {
+  content: " *";
+  color: crimson;
 }
 
 .send {
@@ -33,7 +42,8 @@
   color: var(--primary-text-color);
   text-decoration: none;
   border: none;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
+  cursor: pointer;
 }
 
 .error-alert {
