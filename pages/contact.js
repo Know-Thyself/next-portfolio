@@ -22,7 +22,6 @@ const Contact = () => {
 	const [errors, setErrors] = useState({})
 	const [buttonText, setButtonText] = useState('Send')
 	const [showSuccessMessage, setShowSuccessMessage] = useState(false)
-	const [showFailureMessage, setShowFailureMessage] = useState(false)
 
 	const handleChange = (e) => {
 		setFormInputs((values) => ({
@@ -65,7 +64,6 @@ const Contact = () => {
 		e.preventDefault()
 		let isValidated = formValidator()
 		if (!isValidated) {
-			setShowFailureMessage(true)
 			return
 		}
 		const response = await fetch('/api/contact', {
@@ -76,7 +74,6 @@ const Contact = () => {
 		if (error) {
 			console.log(error)
 			setShowSuccessMessage(false)
-			setShowFailureMessage(true)
 			setButtonText('Send')
 			return
 		}
@@ -87,7 +84,6 @@ const Contact = () => {
 			message: '',
 		})
 		setShowSuccessMessage(true)
-		setShowFailureMessage(false)
 		setButtonText('Send')
 	}
 
@@ -108,11 +104,13 @@ const Contact = () => {
 						value={formInputs.name}
 						onChange={handleChange}
 					/>
-					{errors.name && showFailureMessage && (
+					{errors.name && (
 						<Alert
 							className={styles['error-alert']}
 							severity='error'
-							onClose={() => setShowFailureMessage(false)}
+							onClose={() =>
+								setErrors((values) => ({ ...values, ['name']: false }))
+							}
 						>
 							<strong>Failure!</strong> — Name field should not be empty!
 						</Alert>
@@ -126,11 +124,13 @@ const Contact = () => {
 						value={formInputs.email}
 						onChange={handleChange}
 					/>
-					{errors.email && showFailureMessage && (
+					{errors.email && (
 						<Alert
 							className={styles['error-alert']}
 							severity='error'
-							onClose={() => setShowFailureMessage(false)}
+							onClose={() =>
+								setErrors((values) => ({ ...values, ['email']: false }))
+							}
 						>
 							<strong>Failure!</strong> — Email field should not be empty!
 						</Alert>
@@ -154,18 +154,20 @@ const Contact = () => {
 						value={formInputs.message}
 						onChange={handleChange}
 					/>
-					{errors.message && showFailureMessage && (
+					{errors.message && (
 						<Alert
 							className={styles['error-alert']}
 							severity='error'
-							onClose={() => setShowFailureMessage(false)}
+							onClose={() =>
+								setErrors((values) => ({ ...values, ['message']: false }))
+							}
 						>
 							<strong>Failure!</strong> — Message field should not be empty!
 						</Alert>
 					)}
 					<br />
 					<button type='submit' className={styles.send}>
-						Send
+						{buttonText}
 					</button>
 				</form>
 			</main>
