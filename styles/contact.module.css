@@ -21,3 +21,22 @@
   text-align: left;
   /* background-color: var(--complementary-bg); */
 }
+
+.form input {
+  font-size: large;
+  line-height: 2rem;
+  /* border-radius: 4px; */
+}
+
+.send {
+  background-color: var(--complementary-bg);
+  color: var(--primary-text-color);
+  text-decoration: none;
+  border: none;
+  padding: 0.5rem 0;
+}
+
+.error-alert {
+  margin-top: 0.5rem;
+  background-color: darkred;
+}
