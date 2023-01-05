@@ -44,6 +44,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-font-family: 'Lato',
 		sans-serif;
 	--primary-text-color: #0f0700;
+	--helper-text-color: #5e5e5f;
 	--secondary-font-weight: 600;
 	--secondary-text-color: black;
 	--nav-links-color: #202537;
@@ -69,8 +70,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--about-image-bg: url('/images/background-destination-desktop.jpg');
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
-	--primary-font-family: 'Lato',
-		sans-serif;
+	/* --primary-font-family: 'Lato',
+		sans-serif; */
 	--buttons-font-family: 'Poppins', sans-serif;
 	--buttons-bg-color: #2d2d3d;
 	--buttons-hover-bg: #191920;
@@ -82,6 +83,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-text-color: #FCFCFD;
 	--active-nav-link: #8FAFF5;
 	--nav-links-color: #B6B6C8;
+	--helper-text-color: #6e6e70;
 	--nav-links-font-weight: 300;
 	--active-nav-link-font-weight: 400;
 	/* --radio-btn-bg: #191920; */

@@ -1,15 +1,29 @@
 import { useState } from 'react'
 import Head from 'next/head'
 import styles from '../styles/contact.module.css'
-// import Box from '@mui/material/Box'
+import Box from '@mui/material/Box'
 import Alert from '@mui/material/Alert'
 import TextField from '@mui/material/TextField'
-import TextareaAutosize from 'react-textarea-autosize'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
+import { ThemeProvider, createTheme } from '@mui/material/styles'
+export const theme = createTheme({
+	components: {
+		MuiFormLabel: {
+			styleOverrides: {
+				asterisk: {
+					color: '#db3131',
+					'&$error': {
+						color: '#db3131',
+					},
+				},
+			},
+		},
+	},
+})
 
 const Contact = () => {
 	const [formInputs, setFormInputs] = useState({
@@ -47,13 +61,13 @@ const Contact = () => {
 		if (!formInputs.email) {
 			tempErrors['email'] = {
 				isError: true,
-				errorMessage: 'Email field can not be empty',
+				errorMessage: 'Email is required',
 			}
 			isValid = false
 		} else if (!isEmail(formInputs.email)) {
 			tempErrors['email'] = {
 				isError: true,
-				errorMessage: 'Please enter a valid email',
+				errorMessage: 'Invalid email!',
 			}
 			isValid = false
 		}
@@ -106,102 +120,117 @@ const Contact = () => {
 			</Head>
 			<main className={styles.main}>
 				<h1>Getting in touch is easy!</h1>
-				<form onSubmit={handleSubmit} className={styles.form}>
-					<label htmlFor='name' className={styles.required}>
-						Name
-					</label>
-					<input
-						id='name'
-						type='text'
-						name='name'
-						placeholder='Enter your name'
+				<ThemeProvider theme={theme}>
+					<Box
+						className={styles.box}
+						component='form'
+						sx={{
+							'& .MuiTextField-root': {
+								m: 1,
+								width: '60%',
+							},
+						}}
+						noValidate
 						autoComplete='off'
-						value={formInputs.name}
-						onChange={handleChange}
-					/>
-					{errors.name && (
-						<Alert
-							className={styles['error-alert']}
-							severity='error'
-							onClose={() =>
-								setErrors((values) => ({ ...values, ['name']: false }))
+					>
+						<TextField
+							className={styles.textField}
+							required
+							label='Name'
+							variant='filled'
+							name='name'
+							value={formInputs.name}
+							onChange={handleChange}
+							error={errors.name}
+							helperText={
+								errors['name']
+									? 'Name is required - can not be empty'
+									: 'Please enter your name'
 							}
-						>
-							<strong>Failure!</strong> — Name field should not be empty!
-						</Alert>
-					)}
-					<br />
-					<label htmlFor='email' className={styles.required}>
-						Email
-					</label>
-					<input
-						id='email'
-						type='text'
-						name='email'
-						placeholder='Enter your email'
-						autoComplete='off'
-						value={formInputs.email}
-						onChange={handleChange}
-					/>
-					{errors.email && errors.email.isError && (
-						<Alert
-							className={styles['error-alert']}
-							severity='error'
-							onClose={() =>
-								setErrors((values) => ({ ...values, ['email']: false }))
-							}
-						>
-							<strong>Failure!</strong> — {errors.email.errorMessage}!
-						</Alert>
-					)}
-					<br />
-					<label htmlFor='subject'>Subject</label>
-					<input
-						id='subject'
-						type='text'
-						name='subject'
-						placeholder='Enter subject'
-						autoComplete='off'
-						value={formInputs.subject}
-						onChange={handleChange}
-					/>
-					<br />
-					<label htmlFor='message' className={styles.required}>
-						Message
-					</label>
-					<TextareaAutosize
-						className={styles.message}
-						minRows='4'
-						maxRows='8'
-						id='message'
-						type='text'
-						name='message'
-						placeholder='Enter your message'
-						autoComplete='off'
-						value={formInputs.message}
-						onChange={handleChange}
-						style={{ height: 'fit-content' }}
-					/>
-					{errors.message && (
-						<Alert
-							className={styles['error-alert']}
-							severity='error'
-							onClose={() =>
-								setErrors((values) => ({ ...values, ['message']: false }))
-							}
-						>
-							<strong>Failure!</strong> — Message field should not be empty!
-						</Alert>
-					)}
-					<br />
-					<button type='submit' className={styles.send}>
-						{buttonText} &nbsp;
-						<FontAwesomeIcon
-							icon={faPaperPlane}
-							className={styles['fa-paper-plane']}
+							InputProps={{ disableUnderline: true }}
+							sx={{
+								'& .MuiFormHelperText-root': {
+									color: 'var(--helper-text-color)',
+								},
+							}}
 						/>
-					</button>
-				</form>
+						<TextField
+							className={styles.textField}
+							required
+							label='Email'
+							variant='filled'
+							name='email'
+							value={formInputs.email}
+							onChange={handleChange}
+							error={errors.email}
+							helperText={
+								errors['email']
+									? errors.email.errorMessage
+									: 'Please enter your email'
+							}
+							InputProps={{ disableUnderline: true }}
+							sx={{
+								'& .MuiFormHelperText-root': {
+									color: 'var(--helper-text-color)',
+								},
+							}}
+						/>
+						<TextField
+							className={styles.textField}
+							label='Subject'
+							variant='filled'
+							name='subject'
+							value={formInputs.subject}
+							onChange={handleChange}
+							helperText='Please enter the subject'
+							InputProps={{ disableUnderline: true }}
+							sx={{
+								'& .MuiFormHelperText-root': {
+									color: 'var(--helper-text-color)',
+								},
+							}}
+						/>
+						<TextField
+							required
+							className={`${styles.message} ${styles.textField}`}
+							label='Message'
+							variant='filled'
+							multiline
+							rows={4}
+							name='message'
+							value={formInputs.message}
+							onChange={handleChange}
+							error={errors.message}
+							helperText={
+								errors['message']
+									? 'Message is required'
+									: 'Please enter your message'
+							}
+							InputProps={{ disableUnderline: true }}
+							sx={{
+								'& .MuiFormHelperText-root': {
+									color: 'var(--helper-text-color)',
+								},
+								'& .Mui-error': {
+									color: '#f44336',
+								},
+								'& .MuiInputBase-root': {
+									color: 'var(--primary-text-color)',
+									borderBottom: '1px solid var(--primary-text-color)',
+									backgroundColor: 'var(--complementary-bg)',
+								},
+							}}
+						/>
+						<br />
+						<button onClick={handleSubmit} className={styles.send}>
+							{buttonText} &nbsp;
+							<FontAwesomeIcon
+								icon={faPaperPlane}
+								className={styles['fa-paper-plane']}
+							/>
+						</button>
+					</Box>
+				</ThemeProvider>
 			</main>
 		</>
 	)
