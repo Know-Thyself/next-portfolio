@@ -1,16 +1,15 @@
 import { useState } from 'react'
 import Head from 'next/head'
-// import Alert from 'react-bootstrap/Alert'
-// import Button from 'react-bootstrap/Button'
 import styles from '../styles/contact.module.css'
 // import Box from '@mui/material/Box'
 import Alert from '@mui/material/Alert'
+import TextField from '@mui/material/TextField'
 import TextareaAutosize from 'react-textarea-autosize'
-// import IconButton from '@mui/material/IconButton'
-// import Collapse from '@mui/material/Collapse'
-// import Button from '@mui/material/Button'
-// import CloseIcon from '@mui/icons-material/Close'
-// import 'bootstrap/dist/css/bootstrap.min.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 const Contact = () => {
 	const [formInputs, setFormInputs] = useState({
@@ -35,16 +34,27 @@ const Contact = () => {
 		}))
 	}
 
+	const isEmail = (email) =>
+		/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)
+
 	const formValidator = () => {
 		let tempErrors = {}
 		let isValid = true
-
 		if (!formInputs.name) {
 			tempErrors['name'] = true
 			isValid = false
 		}
 		if (!formInputs.email) {
-			tempErrors['email'] = true
+			tempErrors['email'] = {
+				isError: true,
+				errorMessage: 'Email field can not be empty',
+			}
+			isValid = false
+		} else if (!isEmail(formInputs.email)) {
+			tempErrors['email'] = {
+				isError: true,
+				errorMessage: 'Please enter a valid email',
+			}
 			isValid = false
 		}
 		if (!formInputs.subject) {
@@ -63,8 +73,8 @@ const Contact = () => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()
-		let isValidated = formValidator()
-		if (!isValidated) {
+		let isValid = formValidator()
+		if (!isValid) {
 			return
 		}
 		const response = await fetch('/api/contact', {
@@ -105,6 +115,7 @@ const Contact = () => {
 						type='text'
 						name='name'
 						placeholder='Enter your name'
+						autoComplete='off'
 						value={formInputs.name}
 						onChange={handleChange}
 					/>
@@ -125,13 +136,14 @@ const Contact = () => {
 					</label>
 					<input
 						id='email'
-						type='email'
+						type='text'
 						name='email'
 						placeholder='Enter your email'
+						autoComplete='off'
 						value={formInputs.email}
 						onChange={handleChange}
 					/>
-					{errors.email && (
+					{errors.email && errors.email.isError && (
 						<Alert
 							className={styles['error-alert']}
 							severity='error'
@@ -139,7 +151,7 @@ const Contact = () => {
 								setErrors((values) => ({ ...values, ['email']: false }))
 							}
 						>
-							<strong>Failure!</strong> — Email field should not be empty!
+							<strong>Failure!</strong> — {errors.email.errorMessage}!
 						</Alert>
 					)}
 					<br />
@@ -149,6 +161,7 @@ const Contact = () => {
 						type='text'
 						name='subject'
 						placeholder='Enter subject'
+						autoComplete='off'
 						value={formInputs.subject}
 						onChange={handleChange}
 					/>
@@ -157,14 +170,17 @@ const Contact = () => {
 						Message
 					</label>
 					<TextareaAutosize
-						minRows='3'
-						maxRows='10'
+						className={styles.message}
+						minRows='4'
+						maxRows='8'
 						id='message'
 						type='text'
 						name='message'
 						placeholder='Enter your message'
+						autoComplete='off'
 						value={formInputs.message}
 						onChange={handleChange}
+						style={{ height: 'fit-content' }}
 					/>
 					{errors.message && (
 						<Alert
@@ -179,7 +195,11 @@ const Contact = () => {
 					)}
 					<br />
 					<button type='submit' className={styles.send}>
-						{buttonText}
+						{buttonText} &nbsp;
+						<FontAwesomeIcon
+							icon={faPaperPlane}
+							className={styles['fa-paper-plane']}
+						/>
 					</button>
 				</form>
 			</main>
