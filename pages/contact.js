@@ -120,117 +120,125 @@ const Contact = () => {
 			</Head>
 			<main className={styles.main}>
 				<h1>Getting in touch is easy!</h1>
-				<ThemeProvider theme={theme}>
-					<Box
-						className={styles.box}
-						component='form'
-						sx={{
-							'& .MuiTextField-root': {
-								m: 1,
-								width: '80%',
-							},
-						}}
-						noValidate
-						autoComplete='off'
-					>
-						<TextField
-							className={styles.textField}
-							required
-							label='Name'
-							variant='filled'
-							name='name'
-							value={formInputs.name}
-							onChange={handleChange}
-							error={errors.name}
-							helperText={
-								errors['name']
-									? 'Name is required - can not be empty'
-									: 'Please enter your name'
-							}
-							InputProps={{ disableUnderline: true }}
+				<div className={styles.wrapper}>
+					<img src='/images/contact.png' alt='' />
+					<ThemeProvider theme={theme}>
+						<Box
+							className={styles.box}
+							component='form'
 							sx={{
-								'& .MuiFormHelperText-root': {
-									color: 'var(--helper-text-color)',
+								'& .MuiTextField-root': {
+									m: 1,
+									width: '100%',
 								},
 							}}
-						/>
-						<TextField
-							className={styles.textField}
-							required
-							label='Email'
-							variant='filled'
-							name='email'
-							value={formInputs.email}
-							onChange={handleChange}
-							error={errors.email}
-							helperText={
-								errors['email']
-									? errors.email.errorMessage
-									: 'Please enter your email'
-							}
-							InputProps={{ disableUnderline: true }}
-							sx={{
-								'& .MuiFormHelperText-root': {
-									color: 'var(--helper-text-color)',
-								},
-							}}
-						/>
-						<TextField
-							className={styles.textField}
-							label='Subject'
-							variant='filled'
-							name='subject'
-							value={formInputs.subject}
-							onChange={handleChange}
-							helperText='Please enter the subject'
-							InputProps={{ disableUnderline: true }}
-							sx={{
-								'& .MuiFormHelperText-root': {
-									color: 'var(--helper-text-color)',
-								},
-							}}
-						/>
-						<TextField
-							required
-							className={`${styles.message} ${styles.textField}`}
-							label='Message'
-							variant='filled'
-							multiline
-							rows={4}
-							name='message'
-							value={formInputs.message}
-							onChange={handleChange}
-							error={errors.message}
-							helperText={
-								errors['message']
-									? 'Message is required'
-									: 'Please enter your message'
-							}
-							InputProps={{ disableUnderline: true }}
-							sx={{
-								'& .MuiFormHelperText-root': {
-									color: 'var(--helper-text-color)',
-								},
-								'& .Mui-error': {
-									color: '#f44336',
-								},
-								'& .MuiInputBase-root': {
-									color: 'var(--primary-text-color)',
-									borderBottom: '1px solid var(--primary-text-color)',
-									backgroundColor: 'var(--complementary-bg)',
-								},
-							}}
-						/>
-						<br />
-						<button onClick={handleSubmit} className={styles.send}>
-							{buttonText} &nbsp;
-							<FontAwesomeIcon
-								icon={faPaperPlane}
-								className={styles['fa-paper-plane']}
-							/>
-						</button>
-					</Box>
-				</ThemeProvider>
+							noValidate
+							autoComplete='off'
+						>
+							<div className={styles['text-fields']}>
+								<TextField
+									className={styles.textField}
+									required
+									label='Name'
+									variant='filled'
+									name='name'
+									value={formInputs.name}
+									onChange={handleChange}
+									error={errors.name}
+									helperText={
+										errors['name']
+											? 'Name is required - can not be empty'
+											: 'Please enter your name'
+									}
+									InputProps={{ disableUnderline: true }}
+									sx={{
+										'& .MuiFormHelperText-root': {
+											color: 'var(--helper-text-color)',
+										},
+									}}
+								/>
+								<TextField
+									className={styles.textField}
+									required
+									label='Email'
+									variant='filled'
+									name='email'
+									value={formInputs.email}
+									onChange={handleChange}
+									error={errors.email}
+									helperText={
+										errors['email']
+											? errors.email.errorMessage
+											: 'Please enter your email'
+									}
+									InputProps={{ disableUnderline: true }}
+									sx={{
+										'& .MuiFormHelperText-root': {
+											color: 'var(--helper-text-color)',
+										},
+									}}
+								/>
+								<TextField
+									className={styles.textField}
+									label='Subject'
+									variant='filled'
+									name='subject'
+									value={formInputs.subject}
+									onChange={handleChange}
+									helperText='Please enter the subject'
+									InputProps={{ disableUnderline: true }}
+									sx={{
+										'& .MuiFormHelperText-root': {
+											color: 'var(--helper-text-color)',
+										},
+									}}
+								/>
+							</div>
+							<div className={styles['message-wrapper']}>
+								<TextField
+									required
+									className={`${styles.message} ${styles.textField}`}
+									label='Message'
+									variant='filled'
+									multiline
+									minRows={4}
+									maxRows={8}
+									name='message'
+									value={formInputs.message}
+									onChange={handleChange}
+									error={errors.message}
+									helperText={
+										errors['message']
+											? 'Message is required'
+											: 'Please enter your message'
+									}
+									InputProps={{ disableUnderline: true }}
+									sx={{
+										'& .MuiFormHelperText-root': {
+											color: 'var(--helper-text-color)',
+										},
+										'& .Mui-error': {
+											color: '#f44336',
+										},
+										'& .MuiInputBase-root': {
+											color: 'var(--primary-text-color)',
+											borderBottom: '1px solid var(--primary-text-color)',
+											backgroundColor: 'var(--complementary-bg)',
+										},
+									}}
+								/>
+							</div>
+							<br />
+							<button onClick={handleSubmit} className={styles.send}>
+								{buttonText} &nbsp;
+								<FontAwesomeIcon
+									icon={faPaperPlane}
+									className={styles['fa-paper-plane']}
+								/>
+							</button>
+						</Box>
+					</ThemeProvider>
+				</div>
 			</main>
 		</>
 	)
