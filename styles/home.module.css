@@ -15,6 +15,7 @@
 
 .hero {
   padding-top: 70px;
+  padding-bottom: 5rem;
   width: 100%;
 }
 
@@ -105,27 +106,21 @@
   .home {
     text-align: left;
   }
-
   .hero {
     min-height: max-content;
-    padding-bottom: 5rem;
   }
-
   .hero-text-container {
     margin-left: 4rem;
     width: 60%;
   }
-
   .links-wrapper {
     gap: 2rem;
   }
-
   .link {
     padding: 0.65rem 1.2rem;
     font-size: 1.12rem;
     font-weight: 200;
   }
-
   .link .fa-github {
     font-size: 1.25rem;
     /* color: var(--secondary-text-color); */
@@ -137,7 +132,6 @@
     margin-left: 5rem;
     width: 50%;
   }
-
   .primary-text {
     font-weight: 900;
   }
