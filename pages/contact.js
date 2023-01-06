@@ -127,7 +127,7 @@ const Contact = () => {
 						sx={{
 							'& .MuiTextField-root': {
 								m: 1,
-								width: '60%',
+								width: '80%',
 							},
 						}}
 						noValidate

@@ -6,18 +6,22 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 100%;
   padding-top: 70px;
   padding-bottom: 6rem;
   background-color: var(--primary-background);
   color: var(--primary-text-color);
 }
 
+.main h1 {
+  font-family: var(--hero-banner-text);
+  font-size: 1.5rem;
+}
+
 .box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 100%;
   margin: auto;
   background-color: var(--header-background);
   /* background-color: var(--complementary-bg); */
@@ -69,4 +73,22 @@
 .error-alert {
   margin-top: 0.5rem;
   background-color: darkred;
+}
+
+@media screen and (min-width: 667px) {
+  .box {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .box {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .box {
+    width: 60%;
+  }
 }
