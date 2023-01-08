@@ -121,7 +121,7 @@ const Contact = () => {
 			<main className={styles.main}>
 				<h1>Getting in touch is easy!</h1>
 				<div className={styles.wrapper}>
-					<img src='/images/contact.png' alt='' />
+					{/* <img src='/images/contact.png' alt='' /> */}
 					<ThemeProvider theme={theme}>
 						<Box
 							className={styles.box}
@@ -223,7 +223,7 @@ const Contact = () => {
 										'& .MuiInputBase-root': {
 											color: 'var(--primary-text-color)',
 											borderBottom: '1px solid var(--primary-text-color)',
-											backgroundColor: 'var(--complementary-bg)',
+											backgroundColor: 'var(--buttons-hover-bg)',
 										},
 									}}
 								/>

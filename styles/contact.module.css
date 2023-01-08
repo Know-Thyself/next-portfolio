@@ -9,6 +9,8 @@
   padding-top: 70px;
   padding-bottom: 6rem;
   background-color: var(--primary-background);
+  /* background-color: var(--complementary-bg); */
+  /* background-color: #202019; */
   color: var(--primary-text-color);
 }
 
@@ -21,6 +23,7 @@
 }
 .wrapper img {
   background-color: var(--complementary-bg);
+  background: var(--about-image-bg);
   display: none;
 }
 .box {
@@ -30,7 +33,7 @@
   width: 100%;
   margin: auto;
   background-color: var(--header-background);
-  /* background-color: var(--complementary-bg); */
+  background-color: var(--complementary-bg);
   padding: 2rem 0;
 }
 
@@ -52,6 +55,9 @@
   color: var(--primary-text-color);
   border-bottom: 1px solid var(--primary-text-color);
   background-color: var(--complementary-bg);
+  background-color: var(--project-container-bg);
+  background-color: var(--buttons-hover-bg);
+  /* background-color: var(--header-background); */
   font-family: var(--primary-font-family);
 }
 
@@ -60,8 +66,13 @@
   font-family: var(--primary-font-family);
 }
 
+.textField textarea {
+  background-color: var(--buttons-hover-bg);
+}
+
 .send {
   background-color: var(--buttons-bg-color);
+  /* background-color: var(--switch-button-bg); */
   color: var(--buttons-color);
   font-family: var(--primary-font-family);
   text-transform: uppercase;
@@ -78,11 +89,14 @@
 
 .send:hover {
   background-color: var(--buttons-hover-bg);
+  /* background-color: var(--switch-button-bg);
+  background-color: var(--buttons-bg-color); */
+  color: var(--secondary-text-color);
 }
 
 .fa-paper-plane {
   font-size: 1rem;
-  color: var(--buttons-color);
+  /* color: var(--buttons-color); */
 }
 
 .error-alert {
@@ -115,6 +129,7 @@
 @media screen and (min-width: 1240px) {
   .box {
     padding: 4rem 0;
+    width: 70%;
   }
  .text-fields,
  .message-wrapper {
