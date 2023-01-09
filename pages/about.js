@@ -45,14 +45,9 @@ const About = () => {
 			>
 				<div className={styles['about-page-wrapper']}>
 					<div className={styles['about-img-wrapper']}>
-						{/* <img
-							className={styles['about-img']}
-							src='/images/about.png'
-							alt=''
-						/> */}
 						<img
 							src='/images/about.png'
-							alt='profile image'
+							alt='Biruk'
 							className={`${styles['about-img']}`}
 							// layout='intrinsic'
 							// layout='fill'
@@ -64,17 +59,15 @@ const About = () => {
 					<div className={styles['about-text-wrapper']}>
 						<h1>About Me</h1>
 						<p>
-							I am a father of two grown up children who are currently studying
-							Computer Science and IT at a university. Although I am not
-							religious anymore, I am from a theological studies background and
-							used to serve as a bishop for nearly two decades in a church.{' '}
-							<br />I also have transferable communication, collaborative,
-							public speaking and leadership skills that could enhance
-							harmonized workflow in a professional environment. <br />I started
-							coding in 2020 when I joined the most amazing coding bootcamp,
-							CodeYourFuture! Joining CodeYourFuture has literally transformed
-							my life in many ways and is the best thing ever happened to me in
-							a very long time. <br />
+							I am a father of two children who are currently studying
+							Computer Science and IT at a university.
+							<br />
+							<br />
+							I started coding in 2020 when I joined the most amazing
+							coding bootcamp, CodeYourFuture! Joining CodeYourFuture has
+							literally transformed my life in many ways and is the best thing
+							ever happened to me in a very long time. <br />
+							<br />
 							I&apos;m currently volunteering as a Teaching Assistant and
 							Technical Mentor at CodeYourFuture to give back to my wonderful
 							community and learn more as I teach trainee developers.

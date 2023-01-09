@@ -66,14 +66,6 @@ font-family: 'Source Sans Pro', sans-serif;
 	--header-background: #333333;
 	--primary-background: #0c0c0c;
 	--project-container-bg: #5c5c5c;
-
-
-	--complementary-bg: #2F2F3D;
-	--complementary-bg: #2d3041;
-
-	--complementary-bg: #2d2d3d;
-	--complementary-bg: #444862;
-	--complementary-bg: #4C516D;
 	--complementary-bg: #3c4057;
 	--home-background: url('/images/background-home-desktop.jpg');
 	--about-image-bg: url('/images/background-destination-desktop.jpg');
@@ -85,15 +77,15 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #777c87;
 	--buttons-hover-bg: #2d2d3d;
 	--buttons-color: black;
-
 	--secondary-font-family: 'Lato',
 		sans-serif;
 	--primary-text-color: #D7D7DF;
+	--primary-text-color: #9C9C9C;
 	--secondary-font-weight: 100;
 	--secondary-text-color: #E8EBED;
 	--active-nav-link: #8695FE;
-	--nav-links-color: #CBCBD7;
-	--helper-text-color: #6e6e70;
+	--nav-links-color: #CCCCCC;
+	--helper-text-color: #B0B0B0;
 	--nav-links-font-weight: 300;
 	--active-nav-link-font-weight: 400;
 	/* --radio-btn-bg: #191920; */

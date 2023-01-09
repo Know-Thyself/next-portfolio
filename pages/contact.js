@@ -5,7 +5,13 @@ import Box from '@mui/material/Box'
 import Alert from '@mui/material/Alert'
 import TextField from '@mui/material/TextField'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import {
+	faPaperPlane,
+	faPhoneVolume,
+	faEnvelope,
+	faMapLocationDot,
+} from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
@@ -119,9 +125,54 @@ const Contact = () => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<main className={styles.main}>
-				<h1>Getting in touch is easy!</h1>
+				<h1>I would love to hear from you!</h1>
+				<p className={styles.subtext}>
+					If you have any enquiry, would like me to build a web app for you or
+					just to get to know me better, please get in touch using your
+					preferred means of communication from the options provided below.
+				</p>
 				<div className={styles.wrapper}>
-					{/* <img src='/images/contact.png' alt='' /> */}
+					<aside className={styles['contact-info']}>
+						<h1>Contact Info</h1>
+						<p>
+							<FontAwesomeIcon
+								icon={faPhoneVolume}
+								className={styles['fa-phone-volume']}
+							/>
+							&nbsp; +44 7392 976062
+						</p>
+						<p>
+							<FontAwesomeIcon icon={faEnvelope} /> &nbsp; birukwebdev@gmail.com
+						</p>
+						<p>
+							<FontAwesomeIcon icon={faMapLocationDot} /> &nbsp; 63 Sandy Lane,
+							CV1 4EX, West Midlands, Coventry, UK
+						</p>
+						<div className={styles.anchors}>
+							<a
+								href='https://github.com/Know-Thyself'
+								target='_blank'
+								rel='noreferrer'
+								className={styles.link}
+							>
+								<FontAwesomeIcon
+									icon={faGithub}
+									className={styles['fa-brand']}
+								/>
+							</a>
+							<a
+								href='https://www.linkedin.com/in/biruk-kebede-8b44b7209/'
+								target='_blank'
+								rel='noreferrer'
+								className={styles.link}
+							>
+								<FontAwesomeIcon
+									icon={faLinkedin}
+									className={styles['fa-brand']}
+								/>
+							</a>
+						</div>
+					</aside>
 					<ThemeProvider theme={theme}>
 						<Box
 							className={styles.box}
@@ -147,7 +198,7 @@ const Contact = () => {
 									error={errors.name}
 									helperText={
 										errors['name']
-											? 'Name is required - can not be empty'
+											? 'Name is required'
 											: 'Please enter your name'
 									}
 									InputProps={{ disableUnderline: true }}
