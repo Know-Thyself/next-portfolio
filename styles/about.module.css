@@ -2,6 +2,7 @@
   width: 100%;
   background-color: var(--primary-background);
   background-color: var(--complementary-bg);
+  background-color: var(--buttons-hover-bg);
   font-family: var(--secondary-font-family);
   padding-top: 70px;
   padding-bottom: 48px;
@@ -48,26 +49,33 @@
 
 .skills-section {
   width: 100%;
-  background-color: var(--complementary-bg);
+  text-align: center;
+  background-color: var(--project-container-bg);
+  background-color: var(--buttons-hover-bg);
   /* background-color: #291e2b; */
+  color: var(--primary-text-color);
   padding: 2rem auto;
   padding: auto;
 }
 
 .tech-stacks {
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  place-items: center;
+  /* place-items: center; */
 }
 
 .skill-card {
-  height: 150px;
-  width: 90px;
+  width: 350px;
   background-color: var(--primary-background);
+  /* background-color: var(--project-container-bg); */
   margin: 2rem auto;
+  padding-bottom: 1rem;
+}
+.skill-card h2 {
+  height: 40px;
 }
 
 .about-section-buttons {

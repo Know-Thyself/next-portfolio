@@ -4,6 +4,17 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from '../styles/about.module.css'
 import profileImage from '../public/images/about.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+	faPaperPlane,
+	faPhoneVolume,
+	faEnvelope,
+	faMapLocationDot,
+} from '@fortawesome/free-solid-svg-icons'
+import { faHtml5, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 const About = () => {
 	const springVariant = {
@@ -59,14 +70,14 @@ const About = () => {
 					<div className={styles['about-text-wrapper']}>
 						<h1>About Me</h1>
 						<p>
-							I am a father of two children who are currently studying
-							Computer Science and IT at a university.
+							I am a father of two children who are currently studying Computer
+							Science and IT at a university.
 							<br />
 							<br />
-							I started coding in 2020 when I joined the most amazing
-							coding bootcamp, CodeYourFuture! Joining CodeYourFuture has
-							literally transformed my life in many ways and is the best thing
-							ever happened to me in a very long time. <br />
+							I started coding in 2020 when I joined the most amazing coding
+							bootcamp, CodeYourFuture! Joining CodeYourFuture has literally
+							transformed my life in many ways and is the best thing ever
+							happened to me in a very long time. <br />
 							<br />
 							I&apos;m currently volunteering as a Teaching Assistant and
 							Technical Mentor at CodeYourFuture to give back to my wonderful
@@ -98,10 +109,145 @@ const About = () => {
 					</div>
 				</div>
 				<section className={styles['skills-section']}>
+					<h1>
+						Skill Sets I have and Technology Stacks I&apos;m familiar with
+					</h1>
 					<div className={styles['tech-stacks']}>
-						<div className={styles['skill-card']}></div>
-						<div className={styles['skill-card']}></div>
-						<div className={styles['skill-card']}></div>
+						<div className={styles['skill-card']}>
+							<h2>Frontend Technologies</h2>
+							<Image
+								src='/images/frontend.png'
+								alt='HTML5, CSS3 and Javascript'
+								className={styles.logo}
+								// layout='intrinsic'
+								// objectFit='contain'
+								width={300}
+								height={150}
+								// style={{ width: '200px', height: 'auto' }}
+							/>
+							<Image
+								src='/images/react.png'
+								alt='React.js'
+								className={styles.logo}
+								// layout='intrinsic'
+								// layout='fill'
+								// objectFit='contain'
+								width={300}
+								height={150}
+								// style={{ width: '200px', height: 'auto' }}
+							/>
+							<Image
+								src='/images/bootstrap.jpg'
+								alt='Bootstrap'
+								className={styles.logo}
+								// layout='intrinsic'
+								// layout='fill'
+								// objectFit='contain'
+								width={300}
+								height={150}
+								// style={{ width: '200px', height: 'auto' }}
+							/>
+							<Image
+								src='/images/material-ui.png'
+								alt='Material UI'
+								className={styles.logo}
+								// layout='intrinsic'
+								// layout='fill'
+								// objectFit='contain'
+								width={300}
+								height={150}
+								// style={{ width: '200px', height: 'auto' }}
+							/>
+						</div>
+						<div className={styles['skill-card']}>
+							<h2>Collaboration and Design Tools</h2>
+							<Image
+								src='/images/figma.png'
+								alt='Figma'
+								className={styles.logo}
+								// layout='intrinsic'
+								// layout='fill'
+								// objectFit='contain'
+								width={300}
+								height={150}
+								// style={{ width: '200px', height: 'auto' }}
+							/>
+							<Image
+								src='/images/trello.png'
+								alt='Trello'
+								className={styles.logo}
+								// layout='intrinsic'
+								// objectFit='contain'
+								width={300}
+								height={150}
+							/>
+							<Image
+								src='/images/miro.png'
+								alt='Miro logo'
+								className={styles.logo}
+								// layout='intrinsic'
+								// objectFit='contain'
+								width={300}
+								height={150}
+							/>
+							<Image
+								src='/images/slack.jpg'
+								alt='Slack logo'
+								className={styles.logo}
+								// layout='intrinsic'
+								// objectFit='contain'
+								width={300}
+								height={150}
+							/>
+						</div>
+						<div className={styles['skill-card']}>
+							<h2>Backend and Full Stack Technologies</h2>
+							<Image
+								src='/images/node.png'
+								alt='Node.js logo'
+								className={styles.logo}
+								// layout='intrinsic'
+								// objectFit='contain'
+								width={300}
+								height={150}
+							/>
+							<Image
+								src='/images/express.png'
+								alt='Express.js logo'
+								className={styles.logo}
+								// layout='intrinsic'
+								// objectFit='contain'
+								width={300}
+								height={150}
+							/>
+							<Image
+								src='/images/postgresql.jpg'
+								alt='PostgreSQL logo'
+								className={styles.logo}
+								// layout='intrinsic'
+								// objectFit='contain'
+								width={300}
+								height={150}
+							/>
+							<Image
+								src='/images/next.jpg'
+								alt='Next.js logo'
+								className={styles.logo}
+								// layout='intrinsic'
+								// objectFit='contain'
+								width={300}
+								height={150}
+							/>
+							<Image
+								src='/images/prisma.png'
+								alt='Prisma logo'
+								className={styles.logo}
+								// layout='intrinsic'
+								// objectFit='contain'
+								width={300}
+								height={150}
+							/>
+						</div>
 					</div>
 				</section>
 			</motion.main>
