@@ -32,10 +32,11 @@ font-family: 'Source Sans Pro', sans-serif;
 
 :root {
 	--header-background: #e4e5f1;
+	--header-background: #818181;
 	--primary-background: #fafafa;
 	--project-container-bg: #9394a5;
 	--home-background: #f8f8f8;
-	--about-image-bg: #E4E5F1;
+	--about-image-bg: #9394a5;
 	--complementary-bg: #d2d3db;
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
