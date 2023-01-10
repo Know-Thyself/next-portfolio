@@ -110,14 +110,25 @@ const About = () => {
 				</div>
 				<section className={styles['skills-section']}>
 					<h1>
-						Skill Sets I have and Technology Stacks I&apos;m familiar with
+						Some of the powerful Technology Stacks I passionately love and use
+						to build frontend, backend and full stack web applications
 					</h1>
 					<div className={styles['tech-stacks']}>
 						<div className={styles['skill-card']}>
 							<h2>Frontend Technologies</h2>
 							<Image
-								src='/images/frontend.png'
-								alt='HTML5, CSS3 and Javascript'
+								src='/images/html-css.png'
+								alt='HTML5 and CSS3 responsive design'
+								className={styles.logo}
+								// layout='intrinsic'
+								// objectFit='contain'
+								width={300}
+								height={150}
+								// style={{ width: '200px', height: 'auto' }}
+							/>
+							<Image
+								src='/images/javascript.png'
+								alt='JavaScript logo'
 								className={styles.logo}
 								// layout='intrinsic'
 								// objectFit='contain'
@@ -161,6 +172,17 @@ const About = () => {
 						</div>
 						<div className={styles['skill-card']}>
 							<h2>Collaboration and Design Tools</h2>
+							<Image
+								src='/images/git.png'
+								alt='Git and GitHub'
+								className={styles.logo}
+								// layout='intrinsic'
+								// layout='fill'
+								// objectFit='contain'
+								width={300}
+								height={150}
+								// style={{ width: '200px', height: 'auto' }}
+							/>
 							<Image
 								src='/images/figma.png'
 								alt='Figma'
@@ -230,7 +252,7 @@ const About = () => {
 								height={150}
 							/>
 							<Image
-								src='/images/next.jpg'
+								src='/images/next.png'
 								alt='Next.js logo'
 								className={styles.logo}
 								// layout='intrinsic'
