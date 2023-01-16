@@ -48,13 +48,13 @@ const About = () => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<motion.main
-				className={styles['about-page-main-container']}
+				className={styles.main}
 				variants={springVariant}
 				initial='start'
 				animate='end'
 				exit='exit'
 			>
-				<div className={styles['about-page-wrapper']}>
+				<section className={styles['about-section']}>
 					<div className={styles['about-img-wrapper']}>
 						<img
 							src='/images/about.png'
@@ -107,12 +107,16 @@ const About = () => {
 							</motion.button>
 						</div>
 					</div>
-				</div>
+				</section>
 				<section className={styles['skills-section']}>
-					<h1>
-						Some of the powerful Technology Stacks I passionately love and use
-						to build frontend, backend and full stack web applications
-					</h1>
+					<div>
+						<h1>Technology Stacks and Skill Sets</h1>
+						<p>
+							Here&apos;re some of the Technology Stacks I use very
+							competently and passionately to build frontend, backend and full
+							stack web applications
+						</p>
+					</div>
 					<div className={styles['tech-stacks']}>
 						<div className={styles['skill-card']}>
 							<h2>Frontend Technologies</h2>

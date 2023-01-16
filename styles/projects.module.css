@@ -381,13 +381,20 @@
 	padding: 0.5rem;
 	border-radius: 4px;
 	font-size: 0.75rem;
-	font-weight: 300;
+	font-weight: var(--buttons-font-weight);
+	text-rendering: optimizeLegibility;
 	width: 25%;
 }
+/* @media (prefers-color-scheme: dark) {
+	.github-link,
+		.live-demo-link {
+		font-weight: 100;
+	}
+} */
 
 .github-link:hover,
 .live-demo-link:hover {
-	color: var(--primary-text-color);
+	/* color: var(--primary-text-color); */
 	box-shadow: inset 200px 0 0 0 var(--header-background);
 	box-shadow: inset 200px 0 0 0 var(--buttons-hover-bg);
 }

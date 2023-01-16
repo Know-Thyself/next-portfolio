@@ -108,6 +108,7 @@
   background-color: var(--complementary-bg);
   color: var(--secondary-text-color);
   font-family: var(--primary-font-family);
+  font-family: var(--buttons-font-family);
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 300;

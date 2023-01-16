@@ -77,7 +77,7 @@
   background-color: var(--buttons-bg-color);
   color: var(--buttons-color);
   font-family: var(--buttons-font-family);
-  font-weight: 300;
+  font-weight: var(--buttons-font-weight);
   text-decoration: none;
   text-transform: capitalize;
   padding: 0.5rem 0.75rem;
