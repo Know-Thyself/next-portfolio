@@ -43,6 +43,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--header-background: #818181;
 	--primary-background: #fafafa;
 	--project-container-bg: #9394a5;
+	--project-container-hover: #4B4E53;
 	--home-background: #f8f8f8;
 	--about-image-bg: #9394a5;
 	--complementary-bg: #d2d3db;
@@ -78,15 +79,9 @@ font-family: 'Source Sans Pro', sans-serif;
 	--primary-background: #0c0c0c;
 	--secondary-background: #121212;
 	--project-container-bg: #353839;
-	--project-container-bg: #3E424B;
-	--project-container-bg: #A7A6BA;
-	--project-container-bg: #4B4E53;
-	/* Onyx */
-	--complementary-bg: #353839;
-	--complementary-bg: #2E2E2E;
-	--complementary-bg: #262626;
-	/* --complementary-bg: #323334; */
-	--complementary-bg: #353839;
+	--project-container-hover: #4B4E53;
+	--complementary-bg: #202020;
+	/* --complementary-bg: #262626; */
 	--home-background: url('/images/home-background.jpg');
 	--about-image-bg: url('/images/background-destination-desktop.jpg');
 	--hero-banner-text: 'Playfair Display', serif;
@@ -98,7 +93,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 	--buttons-bg-color: #6b78cb;
 	/* --buttons-bg-color: rgb(202, 182, 7); */
-	--buttons-bg-color: #452c63;
+	
 	--buttons-bg-color: #bfdda0;
 	--buttons-bg-color: #D8BFD8;
 	--buttons-bg-color: #ae6f2f;
@@ -109,6 +104,10 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #bb86fc;
 	/* --buttons-bg-color: #9ba5d8; */
 	--buttons-bg-color: #b19cd9;
+	--buttons-bg-color: #A3A3FF;
+	/* --buttons-bg-color: #4681f4;
+	 */
+	/* --buttons-bg-color: #92A8F2; */
 
 	--buttons-color: #0D0D0D;
 	--buttons-color: #BFBFBF;
@@ -116,6 +115,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-color: #3E193E;
 	--buttons-color: #1B122B;
 	--buttons-color: #0F0F0F;
+	--buttons-color: black;
 	--secondary-font-family: 'Lato',
 		sans-serif;
 	--primary-text-color: #D7D7DF;
@@ -124,12 +124,14 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-font-weight: 100;
 	--secondary-text-color: #E8EBED;
 	--secondary-text-color: #C4C4C4;
-	--secondary-text-color: #FFFFFF;
+	--secondary-text-color: #B3B3B3;
 	--active-nav-link: #8695FE;
 	--active-nav-link: #CB81FD;
 	--active-nav-link: #00B0F5;
 	--active-nav-link: #bb86fc;
 	--active-nav-link: #C597FC;
+	--active-nav-link: #A3A3FF;
+	--active-nav-link: #92A8F2;
 	--nav-links-color: #CCCCCC;
 	--nav-links-color: #A1A1A1;
 	--nav-links-color: #D1D1D1;
@@ -141,8 +143,10 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-border: #CBCBD7;
 	--radio-btn-border: #A1A1A1;
 
-	--switch-button-bg: #ae6f2f;
+	
 	--switch-button-bg: #00B0F5;
 	--switch-button-bg: #bb86fc;
 	--switch-button-bg: #C597FC;
+	--switch-button-bg: #A3A3FF;
+	--switch-button-bg: #92A8F2;
 }
