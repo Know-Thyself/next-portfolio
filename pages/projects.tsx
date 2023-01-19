@@ -44,12 +44,12 @@ const Projects = ({ projectsData, project, setProject }) => {
 			opacity: 1,
 			transition: {
 				type: 'spring',
-				bounce: 0.25,
-				stiffness: 40,
-				damping: 10,
-				restSpeed: 0.5,
-				velocity: 3,
-				restDelta: 0.5,
+				// bounce: 0.25,
+				stiffness: 60,
+				// damping: 10,
+				// restSpeed: 0.5,
+				// velocity: 3,
+				// restDelta: 0.5,
 			},
 		},
 		exit: {
