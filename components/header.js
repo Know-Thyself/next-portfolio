@@ -58,7 +58,9 @@ const Header = () => {
 							<Link
 								href='/'
 								className={
-									router.pathname === '/' ? styles.active : styles['menu__item']
+									router.pathname === '/'
+										? styles.active
+										: `${styles['menu__item']} ${styles.home}`
 								}
 								onClick={screenTest}
 							>
@@ -78,7 +80,7 @@ const Header = () => {
 								className={
 									router.pathname === '/projects'
 										? styles.active
-										: styles['menu__item']
+										: `${styles['menu__item']} ${styles.projects}`
 								}
 								onClick={screenTest}
 							>
@@ -98,7 +100,7 @@ const Header = () => {
 								className={
 									router.pathname === '/about'
 										? styles.active
-										: styles['menu__item']
+										: `${styles['menu__item']} ${styles.about}`
 								}
 								onClick={screenTest}
 							>
@@ -118,7 +120,7 @@ const Header = () => {
 								className={
 									router.pathname === '/contact'
 										? styles.active
-										: styles['menu__item']
+										: `${styles['menu__item']} ${styles.contact}`
 								}
 								onClick={screenTest}
 							>
@@ -130,7 +132,7 @@ const Header = () => {
 									}
 									onClick={screenTest}
 								> */}
-									Contact
+								Contact
 								{/* </a> */}
 							</Link>
 						</nav>

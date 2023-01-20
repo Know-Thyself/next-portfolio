@@ -102,8 +102,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #B2BEB5;
 	--buttons-bg-color: #848482;
 	--buttons-bg-color: #54626F;
-	/* gunmetal */
-	--buttons-bg-color: #2A3439;
+	
 	--buttons-bg-color: #6b78cb;
 	
 	/* --buttons-bg-color: rgb(48, 26, 48);
@@ -119,7 +118,40 @@ font-family: 'Source Sans Pro', sans-serif;
 
 	/* --buttons-bg-color: #9181a5; */
 	/* charcoal */
-		/* --buttons-bg-color: #36454F; */
+		--buttons-bg-color: #36454F;
+		/* gunmetal */
+			--buttons-bg-color: #2A3439;
+	/* chocolate cosmos */
+	--buttons-bg-color: #58111A;
+	/* red devil */
+	--buttons-bg-color: #820017;
+	--buttons-bg-color: #990000;
+	--buttons-bg-color: #890000;
+	--buttons-bg-color: #7a0000;
+	--home-link-bg: #7A007A;
+	--home-link-bg: #007aff;
+	--home-link-bg: #675A23;
+	--home-link-bg: #007a7a;
+	--home-link-bg: #233067;
+	--home-link-bg:  #353839;
+	--projects-link-bg: #7a0000;
+	--projects-link-bg: #672352;
+	--projects-link-bg: #007A7A;
+	--projects-link-bg: #7a0000;
+	--projects-link-bg:  #353839;
+	--about-link-bg: #00007a;
+	--about-link-bg: #7a007a;
+	--about-link-bg: #353839;
+	--contact-link-bg: #007a00;
+	--contact-link-bg: #236738;
+	--contact-link-bg:  #353839;
+	/* --contact-link-bg: #4C516D; */
+	/* --buttons-bg-color: #850101;
+	--buttons-bg-color: #820000;
+	--buttons-bg-color: #660000; */
+	/* --buttons-bg-color: #7c0a02; */
+	/* --buttons-bg-color: #6F0013;
+	--buttons-bg-color: #5d0010; */
 		/* cool gray */
 			/* --buttons-bg-color: #9090C0; */
 	/* blue gray */
@@ -155,12 +187,15 @@ font-family: 'Source Sans Pro', sans-serif;
 	
 	
 	
-	--active-nav-link: #C597FC;
+	
 	--active-nav-link: #A3A3FF;
 	--active-nav-link: #92A8F2;
 	--active-nav-link: #C69FC6;
 	--active-nav-link: #CB81FD;
 	--active-nav-link: #bb86fc;
+	--active-nav-link: #D1D1D1;
+	--active-nav-link: #233067;
+	/* --active-nav-link: #2A3439; */
 	
 	--nav-links-color: #CCCCCC;
 	--nav-links-color: #A1A1A1;
@@ -172,10 +207,16 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-border: #B6B6C8;
 	--radio-btn-border: #CBCBD7;
 	--radio-btn-border: #A1A1A1;
+	--radio-btn-border: #D1D1D1;
 
 	
-	--switch-button-bg: #00B0F5;
+	
 	--switch-button-bg: #bb86fc;
+	--switch-button-bg: #2a3439;
+	--switch-button-bg: #58111A;
+	--switch-button-bg: #9c0f22;
+	--switch-button-bg: #b30404;
+	--switch-button-bg: #aa0114;
 	/* --switch-button-bg: #C597FC;
 	--switch-button-bg: #A3A3FF;
 	--switch-button-bg: #92A8F2; */
