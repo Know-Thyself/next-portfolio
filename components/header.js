@@ -16,7 +16,7 @@ const Header = () => {
 		setIsChecked(!isChecked)
 	}
 
-  function screenTest() {
+	function screenTest() {
 		if (window.innerWidth <= 667) {
 			toggleNav()
 		}
@@ -64,16 +64,7 @@ const Header = () => {
 								}
 								onClick={screenTest}
 							>
-								{/* <a
-									className={
-										router.pathname === '/'
-											? styles.active
-											: styles['menu__item']
-									}
-									onClick={screenTest}
-								> */}
 								Home
-								{/* </a> */}
 							</Link>
 							<Link
 								href='/projects'
@@ -84,16 +75,7 @@ const Header = () => {
 								}
 								onClick={screenTest}
 							>
-								{/* <a
-									className={
-										router.pathname === '/projects'
-											? styles.active
-											: styles['menu__item']
-									}
-									onClick={screenTest}
-								> */}
 								Projects
-								{/* </a> */}
 							</Link>
 							<Link
 								href='/about'
@@ -104,16 +86,7 @@ const Header = () => {
 								}
 								onClick={screenTest}
 							>
-								{/* <a
-									className={
-										router.pathname === '/about'
-											? styles.active
-											: styles['menu__item']
-									}
-									onClick={screenTest}
-								> */}
 								About
-								{/* </a> */}
 							</Link>
 							<Link
 								href='/contact'
@@ -124,16 +97,7 @@ const Header = () => {
 								}
 								onClick={screenTest}
 							>
-								{/* <a
-									className={
-										router.pathname === '/contact'
-											? styles.active
-											: styles['menu__item']
-									}
-									onClick={screenTest}
-								> */}
 								Contact
-								{/* </a> */}
 							</Link>
 						</nav>
 					)}

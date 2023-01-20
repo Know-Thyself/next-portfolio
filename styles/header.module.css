@@ -192,7 +192,7 @@
   .projects,
   .about,
   .active {
-    border-right: 2px solid var(--nav-links-color);
+    border-right: 1px solid var(--nav-links-color);
   }
 
   .menu__item:last-child {
@@ -214,9 +214,9 @@
     display: none;
   }
 
-  .nav_wrapper {
+  /* .nav_wrapper {
     margin-right: 2rem;
-  }
+  } */
 
   .menu__item:hover {
     color: var(--nav-links-color);
