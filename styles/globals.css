@@ -113,7 +113,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #4a3564;
 
 	--buttons-bg-color: #6e5d83;
-	--buttons-bg-color: #634F84;
+	
 	/* --buttons-bg-color: #655e86; */
 
 	/* --buttons-bg-color: #9181a5; */
@@ -121,9 +121,9 @@ font-family: 'Source Sans Pro', sans-serif;
 	
 	/* red devil */
 	--buttons-bg-color: #820017;
-	--buttons-bg-color: #990000;
+	
 	--buttons-bg-color: #7a0000;
-	--buttons-bg-color: #00007a;
+	
 	
 	
 	--buttons-bg-color: #5e4c6c;
@@ -138,25 +138,35 @@ font-family: 'Source Sans Pro', sans-serif;
 		--buttons-bg-color: #382d40;
 	/* chocolate cosmos */
 		--buttons-bg-color: #58111A;
-	/* --buttons-bg-color: #353839; */
+	--buttons-bg-color: #353839;
+	--buttons-bg-color: #2d383a;
+	--buttons-bg-color: #00007a;
+	--buttons-bg-color: #233067;
+	--buttons-bg-color: #111833;
+	--buttons-bg-color: #151c3d;
+	--buttons-bg-color: #35344c;
+	--buttons-bg-color: #23213f;
+	--buttons-bg-color: #18172c;
+	--buttons-bg-color: #151427;
+	--buttons-bg-color: #1d1426;
 	--home-link-bg: #7A007A;
 	--home-link-bg: #007aff;
 	--home-link-bg: #675A23;
 	--home-link-bg: #007a7a;
 	--home-link-bg: #233067;
-	--home-link-bg:  #353839;
+	--home-link-bg:  #1d1426;
 	/* --home-link-bg: #2A3439; */
 	--projects-link-bg: #7a0000;
 	--projects-link-bg: #672352;
 	--projects-link-bg: #007A7A;
 	--projects-link-bg: #7a0000;
-	--projects-link-bg:  #353839;
+	--projects-link-bg:  #1d1426;
 	--about-link-bg: #00007a;
 	--about-link-bg: #7a007a;
-	--about-link-bg: #353839;
+	--about-link-bg: #1d1426;
 	--contact-link-bg: #007a00;
 	--contact-link-bg: #236738;
-	--contact-link-bg:  #353839;
+	--contact-link-bg:  #1d1426;
 	/* --contact-link-bg: #4C516D; */
 	/* --buttons-bg-color: #850101;
 	--buttons-bg-color: #820000;
@@ -205,11 +215,12 @@ font-family: 'Source Sans Pro', sans-serif;
 	
 	--active-nav-link: #CB81FD;
 	--active-nav-link: #bb86fc;
-	--active-nav-link: #233067;
+	
 	--active-nav-link: #2F2636;
 	--active-nav-link: #2A3439;
 	--active-nav-link: #2D3626;
 	--active-nav-link: #1F2022;
+	/* --active-nav-link: #58111A; */
 	
 	--nav-links-color: #CCCCCC;
 	--nav-links-color: #A1A1A1;
