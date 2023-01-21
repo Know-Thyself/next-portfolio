@@ -40,13 +40,80 @@ font-family: 'Source Sans Pro', sans-serif;
 
 :root {
 	--header-background: #e4e5f1;
-	--header-background: #818181;
+	--header-background: #c0ccd8;
+	--header-background: #f8f8f8;
+	--header-background: #F2F3F5;
+	/* --header-background: #fafafa; */
+	--nav-links-color: #282524;
+	/* --nav-links-color: white; */
+	--home-link-bg: #37393D;
+	--home-link-bg: #808687;
+	--home-link-bg: #B2BEB5;
+	--home-link-bg: #A7A6BA;
+	/* Gray Cloud */
+	--home-link-bg: #B6B6B4;
+	--home-link-bg: #DCDCDC;
+	--home-link-bg:  #BBBCB6;
+	--home-link-bg: #BCC2C2;
+	--home-link-bg: #C3C7C7;
+	--home-link-bg: #A7A6BA;
+	--home-link-bg:   #B6B3A8;
+	/* --home-link-bg: #2A3439; */
+	--projects-link-bg:    #B6B3A8;
+	--about-link-bg:    #B6B3A8;
+	--contact-link-bg:    #B6B3A8;
+	--active-nav-link: #c0ccd8;
+	--active-nav-link: #f8f8f8;
+	--active-nav-link: #6F6154;
+	--active-nav-link: #F2F3F5;
+	--active-nav-link-text: black;
+
 	--primary-background: #fafafa;
+	--primary-background: #DFDFDF;
+	--primary-background: #ACACAC;
+	--primary-background: #E8E9EB;
+	--primary-background: #CCCDC6;
+	/* platinum */
+	--primary-background: #E5E4E2;
+	--primary-background: #D5D8DF;
 	--project-container-bg: #9394a5;
+	
+	--project-container-bg: #5E716A;
+	--project-container-bg: #616D7E;
+	--project-container-bg: #7A8698;
+	--project-container-bg: #988C7A;
+	--project-container-bg: #989692;
+	--project-container-bg: #A1A1A1;
+	/* graphite */
+	--project-container-bg: #4B4E53;
+	--project-container-bg: #8A868D;
+	
+
+	
+	--project-container-bg: #8A868D;
+	--project-container-bg: #8B8589;
+	--project-container-bg: #616D7E;
+	/* --project-container-bg: #C2BCBC; */
+	/* --project-container-bg: #C7C6CD; */
 	--project-container-hover: #4B4E53;
+	--project-container-hover: #898D86;
+	--project-container-hover: #8A868D;
 	--home-background: #f8f8f8;
+	--home-background: #D5D8DF;
 	--about-image-bg: #9394a5;
 	--complementary-bg: #d2d3db;
+	--complementary-bg: #C6C6C6;
+	--complementary-bg: #C7C6CD;
+	--complementary-bg: #E8E9EB;
+	/* --complementary-bg: #B2BEB5; */
+
+	--complementary-bg: #BCC2C2;
+	--complementary-bg: #AAA1A1;
+	--complementary-bg: #AAA1A1;
+	/* --complementary-bg: #898C87; */
+	--complementary-bg: #B6B6B4;
+	--complementary-bg: #C7C3C3;
+	--complementary-bg: #BBBCB6;
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
@@ -60,8 +127,6 @@ font-family: 'Source Sans Pro', sans-serif;
 	--helper-text-color: #5e5e5f;
 	--secondary-font-weight: 600;
 	--secondary-text-color: black;
-	--nav-links-color: #202537;
-	--active-nav-link: #282D43;
 	--nav-links-font-weight: 400;
 	--active-nav-link-font-weight: 600;
 	--buttons-bg-color: #2d2d3d;
@@ -97,13 +162,13 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #36454F;
 	/* gunmetal */
 	--buttons-bg-color: #2A3439;
-	
-/* outer space */
+
+	/* outer space */
 	--buttons-bg-color: #2d383a;
 	/* onyx */
 	--buttons-bg-color: #353839;
 	/* --buttons-bg-color: #35344c; */
-	
+
 	--buttons-bg-color: #322839;
 	--buttons-bg-color: #382d40;
 	--buttons-bg-color: #1a1a24;
@@ -132,6 +197,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--nav-links-color: #CCCCCC;
 	--nav-links-color: #A1A1A1;
 	--nav-links-color: #D1D1D1;
+	--active-nav-link-text: #D1D1D1;
 	--helper-text-color: #B0B0B0;
 	--nav-links-font-weight: 300;
 	--active-nav-link-font-weight: 400;
@@ -141,8 +207,6 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-border: #A1A1A1;
 	--radio-btn-border: #D1D1D1;
 	--radio-btn-border: #2A3439;
-
-
 
 	--switch-button-bg: #bb86fc;
 	--switch-button-bg: #2a3439;
