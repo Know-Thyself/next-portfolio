@@ -1,6 +1,6 @@
 .home {
   width: 100%;
-  background: var(--home-background);
+  background: var(--home-bg-mobile);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,13 +14,13 @@
 }
 
 .hero {
-  padding-top: 70px;
-  padding-bottom: 5rem;
+  padding-top: 64px;
+  padding-bottom: 20rem;
   width: 100%;
 }
 
 .hero-text-container {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
@@ -105,9 +105,11 @@
 @media screen and (min-width: 667px) {
   .home {
     text-align: left;
+    background: var(--home-background);
   }
   .hero {
     min-height: max-content;
+    padding-bottom: 8rem;
   }
   .hero-text-container {
     margin-left: 4rem;

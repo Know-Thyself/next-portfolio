@@ -114,6 +114,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--complementary-bg: #202020;
 	/* --complementary-bg: #262626; */
 	--home-background: url('/images/home-background.jpg');
+	--home-bg-mobile: url('/images/home-bg-mobile.jpg');
 	--about-image-bg: url('/images/background-destination-desktop.jpg');
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
