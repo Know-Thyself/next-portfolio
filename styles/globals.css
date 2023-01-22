@@ -42,6 +42,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--header-background: #F2F3F5;
 	--nav-links-color: #FCFCFC;
 	--home-link-bg: #4A646C;
+	--home-link-bg: #4A646C;
 	--projects-link-bg: #4A646C;
 	--about-link-bg: #4A646C;
 	--contact-link-bg: #4A646C;
@@ -74,12 +75,32 @@ font-family: 'Source Sans Pro', sans-serif;
 	--active-nav-link-font-weight: 600;
 	--buttons-bg-color: #2d2d3d;
 	--buttons-bg-color: #484b6a;
-	--buttons-hover-bg: #e4e5f1;
+	--buttons-bg-color: #4681f4;
+	--buttons-bg-color: #5783db;
+	--buttons-bg-color: #80669d;
+	--buttons-bg-color: #33b249;
+	--buttons-bg-color: #5dbea3;
+	--buttons-bg-color: #00ad43;
+
+	--buttons-bg-color: #19a44f;
+	
+	--buttons-bg-color: #2111ef;
+	--buttons-bg-color: #1171EF;
+	--buttons-bg-color: #2774d8;
+	--buttons-bg-color: #3226D8;
+	--buttons-bg-color: #4941BD;
+	--buttons-bg-color: #605CA3;
+	--buttons-bg-color: #2e8b57;
+	--buttons-bg-color: #4A646C;
+	--buttons-hover-bg: #5dbea3;
 	--buttons-color: #FAFAFA;
+	/* --buttons-color: #0D0D0D;
+	--buttons-color: black; */
 	--radio-btn-border: #aaaafa;
 	/* --radio-btn-border: #282D43; */
 	--radio-btn-bg: #fa9f1e;
 	--radio-btn-bg: #d5e2f4;
+	--radio-btn-bg: #55c2da;
 	--switch-button-bg: #1F2022;
 	/* --switch-button-bg: #008ecc; */
 }

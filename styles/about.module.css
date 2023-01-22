@@ -83,7 +83,7 @@
 .contact:hover {
   background-color: var(--buttons-hover-bg);
   box-shadow: inset 300px 0 0 0 var(--buttons-hover-bg);
-  color: var(--primary-text-color);
+  color: var(--buttons-color);
   /* opacity: 0.75; */
 }
 
