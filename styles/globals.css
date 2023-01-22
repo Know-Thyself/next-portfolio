@@ -39,81 +39,24 @@ font-family: 'Source Sans Pro', sans-serif;
  */
 
 :root {
-	--header-background: #e4e5f1;
-	--header-background: #c0ccd8;
-	--header-background: #f8f8f8;
 	--header-background: #F2F3F5;
-	/* --header-background: #fafafa; */
-	--nav-links-color: #282524;
-	/* --nav-links-color: white; */
-	--home-link-bg: #37393D;
-	--home-link-bg: #808687;
-	--home-link-bg: #B2BEB5;
-	--home-link-bg: #A7A6BA;
-	/* Gray Cloud */
-	--home-link-bg: #B6B6B4;
-	--home-link-bg: #DCDCDC;
-	--home-link-bg:  #BBBCB6;
-	--home-link-bg: #BCC2C2;
-	--home-link-bg: #C3C7C7;
-	--home-link-bg: #A7A6BA;
-	--home-link-bg:   #B6B3A8;
-	/* --home-link-bg: #2A3439; */
-	--projects-link-bg:    #B6B3A8;
-	--about-link-bg:    #B6B3A8;
-	--contact-link-bg:    #B6B3A8;
-	--active-nav-link: #c0ccd8;
-	--active-nav-link: #f8f8f8;
-	--active-nav-link: #6F6154;
+	--nav-links-color: #FCFCFC;
+	--home-link-bg: #4A646C;
+	--projects-link-bg: #4A646C;
+	--about-link-bg: #4A646C;
+	--contact-link-bg: #4A646C;
 	--active-nav-link: #F2F3F5;
 	--active-nav-link-text: black;
-
-	--primary-background: #fafafa;
-	--primary-background: #DFDFDF;
-	--primary-background: #ACACAC;
-	--primary-background: #E8E9EB;
-	--primary-background: #CCCDC6;
 	/* platinum */
 	--primary-background: #E5E4E2;
 	--primary-background: #D5D8DF;
-	--project-container-bg: #9394a5;
-	
-	--project-container-bg: #5E716A;
-	--project-container-bg: #616D7E;
-	--project-container-bg: #7A8698;
-	--project-container-bg: #988C7A;
-	--project-container-bg: #989692;
-	--project-container-bg: #A1A1A1;
-	/* graphite */
-	--project-container-bg: #4B4E53;
-	--project-container-bg: #8A868D;
-	
-
-	
-	--project-container-bg: #8A868D;
-	--project-container-bg: #8B8589;
-	--project-container-bg: #616D7E;
-	/* --project-container-bg: #C2BCBC; */
-	/* --project-container-bg: #C7C6CD; */
-	--project-container-hover: #4B4E53;
-	--project-container-hover: #898D86;
-	--project-container-hover: #8A868D;
-	--home-background: #f8f8f8;
+	--project-container-bg: #3E424B;
+	--project-container-hover: #4F7DA4;
+	--project-container-hover: #075aaa;
 	--home-background: #D5D8DF;
 	--about-image-bg: #9394a5;
-	--complementary-bg: #d2d3db;
-	--complementary-bg: #C6C6C6;
-	--complementary-bg: #C7C6CD;
-	--complementary-bg: #E8E9EB;
-	/* --complementary-bg: #B2BEB5; */
-
-	--complementary-bg: #BCC2C2;
-	--complementary-bg: #AAA1A1;
-	--complementary-bg: #AAA1A1;
-	/* --complementary-bg: #898C87; */
-	--complementary-bg: #B6B6B4;
-	--complementary-bg: #C7C3C3;
-	--complementary-bg: #BBBCB6;
+	--complementary-bg: #cf9c26;
+	--complementary-bg: #A8A9AD;
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
@@ -133,9 +76,11 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #484b6a;
 	--buttons-hover-bg: #e4e5f1;
 	--buttons-color: #FAFAFA;
-	--radio-btn-border: #484b6a;
-	--radio-btn-border: #282D43;
-	--switch-button-bg: #484b6a;
+	--radio-btn-border: #aaaafa;
+	/* --radio-btn-border: #282D43; */
+	--radio-btn-bg: #fa9f1e;
+	--radio-btn-bg: #d5e2f4;
+	--switch-button-bg: #1F2022;
 	/* --switch-button-bg: #008ecc; */
 }
 

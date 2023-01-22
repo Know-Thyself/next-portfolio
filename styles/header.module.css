@@ -203,6 +203,7 @@
     background-color: var(--header-background);
     background-color: var(--active-nav-link);
     color: var(--active-nav-link-text);
+    border-color: var(--active-nav-link-text);
   }
 
   .active:last-child {
@@ -222,6 +223,7 @@
     /* font-weight: var(--active-nav-link-font-weight); */
     background-color: var(--header-background);
     color: var(--active-nav-link-text);
+    border-color: var(--active-nav-link-text);
     /* background-color: var(--active-nav-link); */
   }
 }
