@@ -51,11 +51,13 @@ font-family: 'Source Sans Pro', sans-serif;
 	/* platinum */
 	--primary-background: #E5E4E2;
 	--primary-background: #D5D8DF;
+	--secondary-background: #B8BDC9;
 	--project-container-bg: #3E424B;
 	--project-container-hover: #4F7DA4;
 	--project-container-hover: #075aaa;
 	--home-background: #D5D8DF;
-	--about-image-bg: #9394a5;
+	--about-image-bg: #cf9c26;
+	--skill-card-bg: #cf9c26;
 	--complementary-bg: #cf9c26;
 	--complementary-bg: #A8A9AD;
 	--hero-banner-text: 'Playfair Display', serif;
@@ -116,6 +118,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--home-background: url('/images/home-background.jpg');
 	--home-bg-mobile: url('/images/home-bg-mobile.jpg');
 	--about-image-bg: url('/images/background-destination-desktop.jpg');
+	--skill-card-bg: #0c0c0c;
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	/* --primary-font-family: 'Lato',

@@ -94,6 +94,7 @@
   background-color: var(--buttons-hover-bg);
   background-color: var(--project-container-bg);
   background-color: var(--secondary-background);
+  /* background: var(--about-image-bg); */
   /* background-color: #291e2b; */
   color: var(--primary-text-color);
   padding: 1rem 0;
@@ -128,7 +129,7 @@
 
 .skill-card {
   width: 100px;
-  background-color: var(--primary-background);
+  background-color: var(--skill-card-bg);
   /* background-color: var(--project-container-bg); */
   margin: 2rem auto;
   padding-bottom: 1rem;
@@ -218,7 +219,7 @@
 @media screen and (min-width: 900px) {
   .about-section {
     flex-direction: row;
-    padding: 2rem 10% 4rem 10%;
+    padding: 3rem 10% 5rem 10%;
   }
 
   .skill-card {
@@ -239,7 +240,7 @@
   .about-section {
     flex-direction: row;
     width: 70%;
-    padding: 2rem 15% 4rem 15%;
+    padding: 4rem 15% 6rem 15%;
     gap: 3rem;
   }
 
@@ -265,7 +266,7 @@
   .about-section {
     flex-direction: row;
     width: 60%;
-    padding: 2rem 20% 4rem 20%;
+    padding: 4rem 20% 6rem 20%;
     gap: 4rem;
   }
 
