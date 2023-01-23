@@ -95,6 +95,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #2e8b57;
 	--buttons-bg-color: #4A646C;
 	--buttons-hover-bg: #5dbea3;
+	--buttons-hover-bg: #2e8b57;
 	--buttons-color: #FAFAFA;
 	/* --buttons-color: #0D0D0D;
 	--buttons-color: black; */
@@ -177,13 +178,6 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-border: #A1A1A1;
 	--radio-btn-border: #D1D1D1;
 	--radio-btn-border: #2A3439;
-
-	--switch-button-bg: #bb86fc;
-	--switch-button-bg: #2a3439;
-	--switch-button-bg: #58111A;
-
-	--switch-button-bg: #b30404;
-	--switch-button-bg: #aa0114;
 	--switch-button-bg: #353839;
 	/* --switch-button-bg: #C597FC;
 	--switch-button-bg: #A3A3FF;

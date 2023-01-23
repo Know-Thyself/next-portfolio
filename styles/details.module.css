@@ -1,7 +1,7 @@
 .main-container {
   width: 100%;
   background: var(--secondary-background);
-  background: var(--project-container-bg);
+  /* background: var(--project-container-bg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,6 +17,7 @@
   background-color: var(--project-container-bg);
   background-color: var(--complementary-bg);
   background-color: var(--header-background);
+  background-color: var(--project-container-hover);
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -60,7 +61,8 @@
 .description span {
   display: inline-block;
   color: var(--active-nav-link);
-  /* color: var(--switch-button-bg); */
+  color: var(--active-nav-link-text);
+  color: var(--nav-links-color);
 }
 
 .project-links-wrapper {
@@ -77,7 +79,8 @@
   font-family: var(--buttons-font-family);
   color: var(--secondary-text-color);
   background-color: var(--buttons-bg-color);
-  /* background-color: var(--switch-button-bg); */
+  background-color: var(--switch-button-bg);
+  background-color: var(--buttons-hover-bg);
   color: var(--buttons-color);
   text-decoration: none;
   padding: 0.65rem 1.2rem;

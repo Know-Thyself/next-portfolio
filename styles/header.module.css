@@ -77,6 +77,7 @@
   height: 3px;
   background-color: var(--nav-links-color);
   background-color: var(--switch-button-bg);
+  background-color: var(--active-nav-link-text);
   transition-duration: 0.25s;
 }
 
@@ -131,7 +132,8 @@
   text-decoration: none;
   /* font-weight: var(--active-nav-link-font-weight); */
   color: var(--active-nav-link);
-  color: var(--active-nav-link);
+  color: var(--active-nav-link-text);
+  background-color: var(--complementary-bg);
 }
 
 @media screen and (min-width: 667px) {
