@@ -85,7 +85,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #00ad43;
 
 	--buttons-bg-color: #19a44f;
-	
+
 	--buttons-bg-color: #2111ef;
 	--buttons-bg-color: #1171EF;
 	--buttons-bg-color: #2774d8;
@@ -110,12 +110,112 @@ font-family: 'Source Sans Pro', sans-serif;
 
 [data-theme='dark'] {
 	--header-background: #1F2022;
+	--home-link-bg: #37393D;
+	--home-link-bg: #353839;
+	/* --home-link-bg: #2A3439; */
+	--projects-link-bg: #353839;
+
+
+	--projects-link-bg: #2A3439;
+	--projects-link-bg: #58111A;
+	--projects-link-bg: #113d59;
+	--projects-link-bg: #2e3530;
+	--projects-link-hover: #58111A;
+	--about-link-bg: #353839;
+	
+	--about-link-bg: #36454F;
+	--about-link-bg: #555555;
+	--about-link-bg: #5C5858;
+	--about-link-bg: #5E716A;
+	--about-link-bg: #504A4B;
+	--about-link-bg: #2A3439;
+
+	--about-link-bg: #343434;
+	--about-link-bg: #4C5866;
+
+	--about-link-bg: #414A4C;
+	--about-link-bg: #4F666A;
+	--about-link-bg: #353839;
+	--about-link-bg: #40404F;
+
+	
+	--about-link-bg: #4B4E53;
+	--about-link-bg: #545851;
+	--about-link-bg: #3E424B;
+
+	--about-link-bg: #4D4D5C;
+	--about-link-bg: #3c353d;
+	--about-link-bg: #2A3439;
+	--contact-link-bg: #353839;
+	--contact-link-bg: #11592d;
+	--contact-link-bg: #333300;
+	--contact-link-bg: #2A3439;
+	--contact-link-bg: #3c353d;
+
+	--primary-background: #a41e35;
+	--primary-background: #9b1c31;
+	--primary-background: #5d101d;
+	--primary-background: #38111c;
+
+	--primary-background: #051a18;
+	--primary-background: #2A3439;
+
+	--primary-background: #115950;
+	--primary-background: #051a18;
+	--primary-background: #031110;
+
+	--primary-background: #58111A;
+	--primary-background: #370911;
+	--primary-background: #551f2f;
+	--primary-background: #121314;
+	
+	/* --primary-background: black; */
+	--primary-background: #202020;
 	--primary-background: #0c0c0c;
+
+
 	--secondary-background: #121212;
 	--project-container-bg: #353839;
+	--project-container-bg: #414A4C;
+	--project-container-bg: #344148;
+	/* --project-container-bg: rgb(31, 40, 43); */
+	--project-container-bg: #4a6461;
+	--project-container-bg: #545851;
+	--project-container-bg: #3E424B;
+
+	--project-container-bg: #333333;
+	--project-container-bg: #353839;
+	--project-container-bg: #2e3530;
+	
+	--project-container-bg: #551f2f;
+	--project-container-bg: #5d101d;
+	--project-container-bg: #121314;
+	--project-container-bg: #202020;
+	--project-container-bg: #58111A;
+	--project-container-bg: #113d59;
+	--project-container-bg: #2e3530;
 	--project-container-hover: #4B4E53;
+	--project-container-hover: #58111A;
+	--complementary-bg: #2A3439;
+
+	--complementary-bg: #113d59;
+	--complementary-bg: #115950;
+	--complementary-bg: #625D5D;
+
+	/* --complementary-bg: #062320; */
+	/* --complementary-bg: #115950; */
+	/*  */
+	--complementary-bg: #262626;
+	
+	--complementary-bg: #121314;
 	--complementary-bg: #202020;
-	/* --complementary-bg: #262626; */
+	--complementary-bg: #58111A;
+	--complementary-bg: #202020;
+	--complementary-bg: #121212;
+	--complementary-bg: #1b1b1b;
+	/* --complementary-bg: #001933;
+	--complementary-bg: #001933;
+	--complementary-bg: #003333; */
 	--home-background: url('/images/home-background.jpg');
 	--home-bg-mobile: url('/images/home-bg-mobile.jpg');
 	--about-image-bg: url('/images/background-destination-desktop.jpg');
@@ -145,12 +245,6 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #1a1a24;
 
 	--buttons-hover-bg: #2d2d3d;
-	--home-link-bg: #37393D;
-	--home-link-bg: #353839;
-	/* --home-link-bg: #2A3439; */
-	--projects-link-bg: #353839;
-	--about-link-bg: #353839;
-	--contact-link-bg: #353839;
 	--buttons-color: #ffffff;
 	--buttons-color: #CCCCCC;
 	/* --buttons-color: black; */
@@ -160,9 +254,11 @@ font-family: 'Source Sans Pro', sans-serif;
 	--primary-text-color: #9C9C9C;
 	--primary-text-color: #9C9C9C;
 	--secondary-font-weight: 100;
-	--secondary-text-color: #E8EBED;
-	--secondary-text-color: #C4C4C4;
+
 	--secondary-text-color: #B3B3B3;
+	--secondary-text-color: #F0F0F0;
+	--secondary-text-color: #ABABAB;
+	--secondary-text-color: #B8B8B8;
 	--active-nav-link: #1F2022;
 
 	--nav-links-color: #CCCCCC;

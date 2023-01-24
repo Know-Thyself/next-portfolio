@@ -1,7 +1,9 @@
 .projects-main-container {
 	width: 100%;
-	background-color: var(--primary-background);
 	/* background-color: var(--secondary-background); */
+	background-color: var(--projects-link-bg);
+	/* background-color: var(--projects-link-hover); */
+	background-color: var(--primary-background);
 	padding-top: 64px;
 	padding-bottom: 4rem;
 	margin-bottom: 0;
@@ -11,7 +13,7 @@
 }
 
 .projects-wrapper {
-	width: 80%;
+	width: 85%;
 	padding: 2rem 0;
 	margin: auto;
 	display: grid;
@@ -98,6 +100,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	/* background-color: var(--projects-link-bg); */
+	/* background-color: var(--primary-background); */
+	border-radius: 7px;
 }
 
 .github-link,

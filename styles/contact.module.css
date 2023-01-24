@@ -9,6 +9,7 @@
   padding-top: 64px;
   padding-bottom: 6rem;
   background-color: var(--primary-background);
+  background-color: var(--contact-link-bg);
   color: var(--primary-text-color);
 }
 

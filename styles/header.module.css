@@ -170,6 +170,8 @@
 
   }
 
+
+
   .home {
     background-color: var(--active-nav-link);
     background-color: var(--home-link-bg);
@@ -179,7 +181,7 @@
     background-color: var(--project-container-bg);
     background-color: var(--projects-link-bg);
   }
-
+  
   .about {
     background-color: var(--buttons-bg-color);
     background-color: var(--about-link-bg);
@@ -229,4 +231,10 @@
     border-color: var(--active-nav-link-text);
     /* background-color: var(--active-nav-link); */
   }
+    .projects:hover {
+      background-color: var(--projects-link-hover);
+    }
+    .active .projects {
+      background-color: var(--projects-link-hover);
+    }
 }

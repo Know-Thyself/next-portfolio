@@ -12,6 +12,8 @@
 
 .about-section {
   background-color: var(--primary-background);
+  /* background-color: var(--secondary-background); */
+  background-color: var(--about-link-bg);
   display: flex;
   /* display: grid;
 	grid-template-columns: repeat(2, 1fr); */
