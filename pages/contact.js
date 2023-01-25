@@ -125,12 +125,14 @@ const Contact = () => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<main className={styles.main}>
-				<h1>I would love to hear from you!</h1>
-				<p className={styles.subtext}>
-					If you have any enquiry, would like me to build a web app for you or
-					just to get to know me better, please get in touch using your
-					preferred means of communication from the options provided below.
-				</p>
+				<section className={styles.intro}>
+					<h1>I would love to hear from you!</h1>
+					<p className={styles.subtext}>
+						If you have any enquiry, would like me to build a web app for you or
+						just to get to know me better, please get in touch using your
+						preferred means of communication from the options provided below.
+					</p>
+				</section>
 				<div className={styles.wrapper}>
 					<aside className={styles['contact-info']}>
 						<h1>Contact Info</h1>
@@ -274,7 +276,7 @@ const Contact = () => {
 										'& .MuiInputBase-root': {
 											color: 'var(--primary-text-color)',
 											borderBottom: '1px solid var(--primary-text-color)',
-											backgroundColor: 'var(--buttons-hover-bg)',
+											backgroundColor: 'var(--complementary-bg)',
 										},
 									}}
 								/>

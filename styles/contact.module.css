@@ -8,12 +8,20 @@
   bottom: 0;
   padding-top: 64px;
   padding-bottom: 6rem;
+  padding-bottom: 48px;
   background-color: var(--primary-background);
-  background-color: var(--contact-link-bg);
   color: var(--primary-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
 }
 
-.main h1 {
+.intro {
+  width: 80%;
+  margin: auto;
+}
+
+.intro h1 {
   font-family: var(--hero-banner-text);
   font-size: 1.5rem;
 }
@@ -31,14 +39,14 @@
 }
 
 .subtext {
-  width: 80%;
-  margin: auto;
-  margin-bottom: 2rem;
+  /* width: 80%;
+  margin: auto; */
+  /* margin-bottom: 2rem; */
   text-align: left;
   font-family: 'Source Sans Pro',
     sans-serif;
   line-height: 1.5rem;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .contact-info h1 {
@@ -72,6 +80,8 @@
   width: 100%;
   margin: auto;
   background-color: var(--project-container-bg);
+  background-color: var(--contact-link-bg);
+  background-color: var(--projects-link-bg);
   padding: 2rem 0;
 }
 
@@ -93,6 +103,7 @@
   color: var(--primary-text-color);
   border-bottom: 1px solid var(--primary-text-color);
   background-color: var(--buttons-hover-bg);
+  background-color: var(--complementary-bg);
   font-family: var(--primary-font-family);
 }
 
@@ -103,10 +114,12 @@
 
 .textField textarea {
   background-color: var(--buttons-hover-bg);
+  background-color: var(--complementary-bg);
 }
 
 .send {
   background-color: var(--complementary-bg);
+  /* background-color: var(--buttons-bg-color); */
   color: var(--secondary-text-color);
   font-family: var(--primary-font-family);
   font-family: var(--buttons-font-family);
@@ -146,9 +159,25 @@
 }
 
 @media screen and (min-width: 900px) {
-  .wrapper {
+
+  .wrapper,
+  .intro {
     width: 80%;
     margin: auto;
+  }
+
+  .intro {
+    background-color: var(--secondary-background);
+    background-color: var(--about-link-bg);
+    background-color: var(--projects-link-bg);
+    background-color: var(--contact-link-bg);
+    margin-bottom: 0;
+  }
+  .wrapper {
+    margin-top: 0;
+  }
+  .intro p {
+    padding: 0 1.5rem;
   }
 
 }
@@ -156,8 +185,19 @@
 @media screen and (min-width: 1240px) {
 
   .wrapper,
-  .subtext {
+  .intro {
     width: 70%;
+  }
+
+  /* .wrapper {
+    position: relative;
+  } */
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.1rem;
   }
 
   .text-fields,
