@@ -231,10 +231,5 @@
     border-color: var(--active-nav-link-text);
     /* background-color: var(--active-nav-link); */
   }
-    .projects:hover {
-      background-color: var(--projects-link-hover);
-    }
-    .active .projects {
-      background-color: var(--projects-link-hover);
-    }
+
 }

@@ -5,6 +5,7 @@
   background-color: var(--buttons-hover-bg);
   background-color: var(--project-container-bg); */
   font-family: var(--secondary-font-family);
+  background-color: var(--about-link-bg);
   padding-top: 64px;
   padding-bottom: 48px;
   min-height: 100vh;
@@ -132,6 +133,7 @@
 .skill-card {
   width: 100px;
   background-color: var(--skill-card-bg);
+  background-color: var(--about-link-bg);
   /* background-color: var(--project-container-bg); */
   margin: 2rem auto;
   padding-bottom: 1rem;

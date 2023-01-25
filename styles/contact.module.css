@@ -22,7 +22,7 @@
 }
 
 .intro h1 {
-  font-family: var(--hero-banner-text);
+  font-family: var(--primary-font-family);
   font-size: 1.5rem;
 }
 
@@ -39,12 +39,8 @@
 }
 
 .subtext {
-  /* width: 80%;
-  margin: auto; */
-  /* margin-bottom: 2rem; */
   text-align: left;
-  font-family: 'Source Sans Pro',
-    sans-serif;
+  font-family: var(--primary-font-family);
   line-height: 1.5rem;
   font-size: 1rem;
 }
@@ -79,9 +75,8 @@
   align-items: center;
   width: 100%;
   margin: auto;
-  background-color: var(--project-container-bg);
-  background-color: var(--contact-link-bg);
-  background-color: var(--projects-link-bg);
+  background-color: var(--about-link-bg);
+  background-color: var(--home-link-bg);
   padding: 2rem 0;
 }
 
@@ -115,10 +110,12 @@
 .textField textarea {
   background-color: var(--buttons-hover-bg);
   background-color: var(--complementary-bg);
+  /* background-color: var(--contact-link-bg); */
 }
 
 .send {
   background-color: var(--complementary-bg);
+  background-color: var(--buttons-bg-color);
   /* background-color: var(--buttons-bg-color); */
   color: var(--secondary-text-color);
   font-family: var(--primary-font-family);
@@ -136,6 +133,7 @@
 }
 
 .send:hover {
+  background-color: var(--buttons-hover-bg);
   background-color: var(--buttons-hover-bg);
 }
 

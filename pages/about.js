@@ -112,9 +112,9 @@ const About = () => {
 					<div>
 						<h1>Technology Stacks and Skill Sets</h1>
 						<p>
-							Here&apos;re some of the Technology Stacks I use very
-							competently and passionately to build frontend, backend and full
-							stack web applications
+							Here&apos;re some of the Technology Stacks I use very competently
+							and passionately to build frontend, backend and full stack web
+							applications
 						</p>
 					</div>
 					<div className={styles['tech-stacks']}>
@@ -238,8 +238,8 @@ const About = () => {
 								height={150}
 							/>
 							<Image
-								src='/images/express.png'
-								alt='Express.js logo'
+								src='/images/postgresql.jpg'
+								alt='PostgreSQL logo'
 								className={styles.logo}
 								// layout='intrinsic'
 								// objectFit='contain'
@@ -247,8 +247,8 @@ const About = () => {
 								height={150}
 							/>
 							<Image
-								src='/images/postgresql.jpg'
-								alt='PostgreSQL logo'
+								src='/images/express.png'
+								alt='Express.js logo'
 								className={styles.logo}
 								// layout='intrinsic'
 								// objectFit='contain'

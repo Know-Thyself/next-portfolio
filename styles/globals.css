@@ -110,47 +110,23 @@ font-family: 'Source Sans Pro', sans-serif;
 
 [data-theme='dark'] {
 	--header-background: #1F2022;
-	--home-link-bg: #37393D;
-	--home-link-bg: #353839;
-	/* --home-link-bg: #2A3439; */
-	--projects-link-bg: #353839;
-
-
-	--projects-link-bg: #2A3439;
-	--projects-link-bg: #58111A;
-	--projects-link-bg: #113d59;
+	/* anchor */
+	--home-link-bg: #3E424B;
+	--home-link-bg: #4D4D5C;
+	--home-link-bg: #4D4D5C;
 	--projects-link-bg: #2e3530;
-	--projects-link-hover: #58111A;
-	--about-link-bg: #353839;
-	
-	--about-link-bg: #36454F;
-	--about-link-bg: #555555;
-	--about-link-bg: #5C5858;
-	--about-link-bg: #5E716A;
-	--about-link-bg: #504A4B;
+	--projects-link-bg: #2c2c37;
 	--about-link-bg: #2A3439;
-
-	--about-link-bg: #343434;
-	--about-link-bg: #4C5866;
-
-	--about-link-bg: #414A4C;
-	--about-link-bg: #4F666A;
-	--about-link-bg: #353839;
-	--about-link-bg: #40404F;
-
-	
-	--about-link-bg: #4B4E53;
-	--about-link-bg: #545851;
-	--about-link-bg: #3E424B;
-
-	--about-link-bg: #4D4D5C;
-	--about-link-bg: #3c353d;
-	--about-link-bg: #2A3439;
+	--about-link-bg: #2d383a;
+	--about-link-bg: #2e3530;
 	--contact-link-bg: #353839;
 	--contact-link-bg: #11592d;
 	--contact-link-bg: #333300;
 	--contact-link-bg: #2A3439;
 	--contact-link-bg: #3c353d;
+	--contact-link-bg: #362f36;
+	--contact-link-bg: #362f36;
+	/* --contact-link-bg: #343434; */
 
 	--primary-background: #a41e35;
 	--primary-background: #9b1c31;
@@ -168,15 +144,16 @@ font-family: 'Source Sans Pro', sans-serif;
 	--primary-background: #370911;
 	--primary-background: #551f2f;
 	--primary-background: #121314;
-	
+
 	/* --primary-background: black; */
 	--primary-background: #202020;
 	--primary-background: #0c0c0c;
+	--primary-background: #090B08;
 
 
 	--secondary-background: #121212;
 	--project-container-bg: #353839;
-	--project-container-bg: #414A4C;
+	--project-container-bg: #2d383a;
 	--project-container-bg: #344148;
 	/* --project-container-bg: rgb(31, 40, 43); */
 	--project-container-bg: #4a6461;
@@ -186,7 +163,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--project-container-bg: #333333;
 	--project-container-bg: #353839;
 	--project-container-bg: #2e3530;
-	
+
 	--project-container-bg: #551f2f;
 	--project-container-bg: #5d101d;
 	--project-container-bg: #121314;
@@ -194,6 +171,12 @@ font-family: 'Source Sans Pro', sans-serif;
 	--project-container-bg: #58111A;
 	--project-container-bg: #113d59;
 	--project-container-bg: #2e3530;
+
+	--project-container-bg: #2c2c37;
+	/* --project-container-bg: #4f0515; */
+	--project-container-bg: #38382b;
+	/* --project-container-bg: #393947; */
+	/* --project-container-bg: #2d383a; */
 	--project-container-hover: #4B4E53;
 	--project-container-hover: #58111A;
 	--complementary-bg: #2A3439;
@@ -206,13 +189,18 @@ font-family: 'Source Sans Pro', sans-serif;
 	/* --complementary-bg: #115950; */
 	/*  */
 	--complementary-bg: #262626;
-	
+
 	--complementary-bg: #121314;
 	--complementary-bg: #202020;
 	--complementary-bg: #58111A;
 	--complementary-bg: #202020;
 	--complementary-bg: #121212;
 	--complementary-bg: #1b1b1b;
+	--complementary-bg: #38382b;
+	--complementary-bg: #2c2c37;
+	/* --complementary-bg: #02a388;
+	--complementary-bg: #015144;
+	--complementary-bg: #064e40; */
 	/* --complementary-bg: #001933;
 	--complementary-bg: #001933;
 	--complementary-bg: #003333; */
@@ -243,16 +231,20 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #322839;
 	--buttons-bg-color: #382d40;
 	--buttons-bg-color: #1a1a24;
+	--buttons-bg-color: #58111A;
 
 	--buttons-hover-bg: #2d2d3d;
+	--buttons-hover-bg: #1a1a24;
 	--buttons-color: #ffffff;
 	--buttons-color: #CCCCCC;
 	/* --buttons-color: black; */
 	--secondary-font-family: 'Lato',
 		sans-serif;
+
+	--primary-text-color: #9C9C9C;
+	--primary-text-color: #9C9C9C;
 	--primary-text-color: #D7D7DF;
-	--primary-text-color: #9C9C9C;
-	--primary-text-color: #9C9C9C;
+	--primary-text-color: #c2c2c5;
 	--secondary-font-weight: 100;
 
 	--secondary-text-color: #B3B3B3;
@@ -266,6 +258,9 @@ font-family: 'Source Sans Pro', sans-serif;
 	--nav-links-color: #D1D1D1;
 	--active-nav-link-text: #D1D1D1;
 	--helper-text-color: #B0B0B0;
+	
+	--helper-text-color: #83A094;
+	--helper-text-color: #BEBEC5;
 	--nav-links-font-weight: 300;
 	--active-nav-link-font-weight: 400;
 	/* --radio-btn-bg: #191920; */
