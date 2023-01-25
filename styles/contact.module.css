@@ -7,13 +7,13 @@
   left: 0;
   bottom: 0;
   padding-top: 64px;
-  padding-bottom: 6rem;
   padding-bottom: 48px;
   background-color: var(--primary-background);
+  background: var(--about-image-bg);
   color: var(--primary-text-color);
   display: flex;
   flex-direction: column;
-  gap: 0rem;
+ 
 }
 
 .intro {
@@ -52,7 +52,7 @@
 
 .contact-info p {
   text-align: left;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   width: 80%;
   margin: auto;
 }
@@ -157,11 +157,13 @@
 }
 
 @media screen and (min-width: 900px) {
-
+  .main {
+    min-height: 100%;
+  }
   .wrapper,
   .intro {
     width: 80%;
-    margin: auto;
+    margin: 1rem auto;
   }
 
   .intro {
@@ -173,6 +175,7 @@
   }
   .wrapper {
     margin-top: 0;
+    /* margin-bottom: 0; */
   }
   .intro p {
     padding: 0 1.5rem;
