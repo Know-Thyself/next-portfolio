@@ -75,8 +75,8 @@
   align-items: center;
   width: 100%;
   margin: auto;
-  background-color: var(--about-link-bg);
   background-color: var(--home-link-bg);
+  background-color: var(--projects-link-bg);
   padding: 2rem 0;
 }
 

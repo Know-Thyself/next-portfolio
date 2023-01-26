@@ -18,6 +18,7 @@
   background-color: var(--complementary-bg);
   background-color: var(--header-background);
   background-color: var(--project-container-hover);
+  background-color: var(--projects-link-bg);
   cursor: pointer;
   display: flex;
   flex-direction: column;
