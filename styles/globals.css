@@ -40,26 +40,57 @@ font-family: 'Source Sans Pro', sans-serif;
 
 :root {
 	--header-background: #F2F3F5;
+	--header-background: #DCDCDC;
 	--nav-links-color: #FCFCFC;
+	--nav-links-color: black;
 	--home-link-bg: #4A646C;
-	--home-link-bg: #4A646C;
-	--projects-link-bg: #4A646C;
-	--about-link-bg: #4A646C;
-	--contact-link-bg: #4A646C;
+	
+	--home-link-bg: #98AFC7;
+	--home-link-bg: #BCC2C2;
+	--home-link-bg: #A8A9AD;
+	--home-link-bg: #CAD4D1;
+	--home-link-bg: #B5BAB6;
+	--home-link-bg: #B9BBB6;
+	
+	
+	--projects-link-bg: #BCC2C2;
+	--projects-link-bg: #A8A9AD;
+	--projects-link-bg: #A5ADAD;
+	
+	
+	
+	--about-link-bg: #A8BDEB;
+	--about-link-bg: #848482;
+	--about-link-bg: #98AFC7;
+
+	--about-link-bg: #5E716A;
+	--about-link-bg: #B5BDA5;
+	
+	--contact-link-bg: #848482;
+	
+	--contact-link-bg: #AFADA9;
+	--contact-link-bg: #ACA79E;
 	--active-nav-link: #F2F3F5;
+	--active-nav-link: #DCDCDC;
 	--active-nav-link-text: black;
 	/* platinum */
 	--primary-background: #E5E4E2;
 	--primary-background: #D5D8DF;
+	--primary-background: #98AFC7;
+	--primary-background: #BCC2C2;
 	--secondary-background: #B8BDC9;
 	--project-container-bg: #3E424B;
+	/* --project-container-bg: #A8A9AD; */
 	--project-container-hover: #4F7DA4;
 	--project-container-hover: #075aaa;
 	--home-background: #D5D8DF;
+	--home-background: #98AFC7;
+	--home-background: #BCC2C2;
 	--about-image-bg: #cf9c26;
 	--skill-card-bg: #cf9c26;
 	--complementary-bg: #cf9c26;
 	--complementary-bg: #A8A9AD;
+	--complementary-bg: #A5ADAD;
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
@@ -70,7 +101,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-font-family: 'Lato',
 		sans-serif;
 	--primary-text-color: #0f0700;
-	--helper-text-color: #5e5e5f;
+	--helper-text-color: #A5AEB6;
 	--secondary-font-weight: 600;
 	--secondary-text-color: black;
 	--nav-links-font-weight: 400;

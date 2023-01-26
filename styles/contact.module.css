@@ -8,8 +8,10 @@
   bottom: 0;
   padding-top: 64px;
   padding-bottom: 48px;
-  background-color: var(--primary-background);
   background: var(--about-image-bg);
+  background: var(--home-link-bg);
+  background: var(--secondary-background);
+  background-color: var(--primary-background);
   color: var(--primary-text-color);
   display: flex;
   flex-direction: column;
@@ -77,6 +79,7 @@
   margin: auto;
   background-color: var(--home-link-bg);
   background-color: var(--projects-link-bg);
+  background-color: var(--project-container-bg);
   padding: 2rem 0;
 }
 
@@ -169,8 +172,9 @@
   .intro {
     background-color: var(--secondary-background);
     background-color: var(--about-link-bg);
-    background-color: var(--projects-link-bg);
-    background-color: var(--contact-link-bg);
+    background-color: var(--buttons-hover-bg);
+    background-color: var(--project-container-hover);
+    background: var(--contact-link-bg);
     margin-bottom: 0;
   }
   .wrapper {
