@@ -10,7 +10,6 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 100%;
 }
 
 .hero {
@@ -103,26 +102,21 @@
 }
 
 @media screen and (min-width: 667px) {
-  .home {
-    text-align: left;
-    background: var(--home-background);
-  }
-  .hero {
-    min-height: max-content;
-    padding-bottom: 8rem;
-  }
   .hero-text-container {
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
     width: 60%;
   }
+
   .links-wrapper {
     gap: 2rem;
   }
+
   .link {
     padding: 0.65rem 1.2rem;
     font-size: 1.12rem;
     font-weight: 200;
   }
+
   .link .fa-github {
     font-size: 1.25rem;
     /* color: var(--secondary-text-color); */
@@ -130,10 +124,21 @@
 }
 
 @media screen and (min-width: 924px) {
+  .home {
+    background: var(--home-background);
+    text-align: left;
+  }
+
+  .hero {
+    min-height: max-content;
+    padding-bottom: 8rem;
+  }
+
   .hero-text-container {
     margin-left: 5rem;
     width: 50%;
   }
+
   .primary-text {
     font-weight: 900;
   }

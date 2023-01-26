@@ -86,7 +86,7 @@
   opacity: 0;
 }
 
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 724px) {
   .theme-icons-and-radio-btn {
     right: 38px;
   }

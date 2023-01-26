@@ -17,7 +17,7 @@ const Header = () => {
 	}
 
 	function screenTest() {
-		if (window.innerWidth <= 667) {
+		if (window.innerWidth <= 724) {
 			toggleNav()
 		}
 	}
@@ -53,7 +53,7 @@ const Header = () => {
 					<label className={styles['menu__btn']} htmlFor='menu__toggle'>
 						<span></span>
 					</label>
-					{(toggleMenu || screenWidth > 667) && (
+					{(toggleMenu || screenWidth > 724) && (
 						<nav className={styles['menu__box']}>
 							<Link
 								href='/'

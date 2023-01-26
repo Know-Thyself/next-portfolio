@@ -136,7 +136,7 @@
   background-color: var(--complementary-bg);
 }
 
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 724px) {
   /* * {
     box-sizing: content-box;
   } */

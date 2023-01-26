@@ -4,8 +4,9 @@
   background-color: var(--complementary-bg);
   background-color: var(--buttons-hover-bg);
   background-color: var(--project-container-bg); */
-  font-family: var(--secondary-font-family);
   background-color: var(--about-link-bg);
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
   padding-top: 64px;
   padding-bottom: 48px;
   min-height: 100vh;
@@ -24,18 +25,10 @@
   padding: 2rem 10%;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  color: var(--primary-text-color);
-  /* margin: 2rem auto; */
+  gap: 3rem;
+  /* margin: 2rem auto 4rem auto; */
 }
 
-/* .about-text-wrapper {
-  background-color: var(--primary-background);
-} */
-
-/* .about-section * {
-	flex: 1;
-} */
 .about-img-wrapper {
   width: fit-content;
   height: fit-content;
@@ -65,7 +58,6 @@
   background-color: var(--header-background);
   background-color: var(--buttons-hover-bg);
   background-color: var(--buttons-bg-color);
-
   color: var(--secondary-text-color);
   color: var(--primary-text-color);
   color: var(--buttons-color);
@@ -85,7 +77,7 @@
 .about-section-buttons button:hover,
 .contact:hover {
   background-color: var(--buttons-hover-bg);
-  box-shadow: inset 300px 0 0 0 var(--buttons-hover-bg);
+  box-shadow: inset 200px 0 0 0 var(--buttons-hover-bg);
   color: var(--buttons-color);
   /* opacity: 0.75; */
 }
@@ -99,26 +91,27 @@
   background-color: var(--secondary-background);
   /* background: var(--about-image-bg); */
   /* background-color: #291e2b; */
-  color: var(--primary-text-color);
   padding: 1rem 0;
 }
 
 .skills-section h1 {
-  font-size: 1rem;
-  text-align: center;
-  font-family: var(--secondary-font-family);
+  /* font-size: 1.25rem; */
+  text-align: left;
+  padding-left: 10%;
   color: var(--buttons-color);
-  color: var(--primary-text-color);
 }
+
 .skills-section p {
   width: 85%;
-  text-align: center;
+  text-align: left;
+  /* text-align: center; */
   color: var(--buttons-color);
   color: var(--primary-text-color);
   /* font-family: var(--primary-font-family); */
   font-size: 1rem;
   opacity: 0.75;
-  margin: 0.5rem auto;
+  /* margin: 0.5rem 10%; */
+  margin-left: 10%;
 }
 
 .tech-stacks {
@@ -189,13 +182,12 @@
 }
 
 @media screen and (min-width: 624px) {
+  /* .skills-section h1 {
+      padding-left: 10%;
+  
+    } */
   .tech-stacks {
     width: 90%;
-  }
-
-  .skills-section h1 {
-    width: 80%;
-    margin: auto;
   }
 
   .skill-card {
@@ -209,7 +201,9 @@
 }
 
 @media screen and (min-width: 724px) {
-
+  .about-img {
+      width: 340px;
+    }
   .skill-card {
     width: 200px;
   }
@@ -226,6 +220,16 @@
     padding: 3rem 10% 5rem 10%;
   }
 
+  .skills-section h1 {
+    text-align: center;
+    padding-left: 0%;
+    
+  }
+
+    .skills-section p {
+      margin-left: 15%;
+    }
+
   .skill-card {
     width: 240px;
   }
@@ -241,13 +245,23 @@
 }
 
 @media screen and (min-width: 1124px) {
+
+  /* .main {
+    background-color: var(--primary-background);
+    background-color: var(--contact-link-bg);
+  } */
   .about-section {
     flex-direction: row;
-    width: 70%;
+    width: 80%;
     padding: 4rem 15% 6rem 15%;
+    padding: 4rem 0% 6rem 0%;
+    /* background-color: var(--secondary-background);
+    background-color: var(--contact-link-bg); */
     gap: 3rem;
   }
-
+  .about-img {
+    width: 300px;
+  }
   .skills-section h1 {
     font-size: 1.75rem;
   }
@@ -269,8 +283,9 @@
 @media screen and (min-width: 1348px) {
   .about-section {
     flex-direction: row;
-    width: 60%;
+    width: 70%;
     padding: 4rem 20% 6rem 20%;
+    padding: 4rem 0% 6rem 0%;
     gap: 4rem;
   }
 
