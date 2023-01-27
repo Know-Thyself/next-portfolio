@@ -42,55 +42,94 @@ font-family: 'Source Sans Pro', sans-serif;
 	--header-background: #F2F3F5;
 	--header-background: #DCDCDC;
 	--nav-links-color: #FCFCFC;
+	--nav-links-font-weight: 400;
+	--active-nav-link-font-weight: 600;
 	--nav-links-color: black;
 	--home-link-bg: #4A646C;
-	
+
 	--home-link-bg: #98AFC7;
 	--home-link-bg: #BCC2C2;
 	--home-link-bg: #A8A9AD;
 	--home-link-bg: #CAD4D1;
 	--home-link-bg: #B5BAB6;
 	--home-link-bg: #B9BBB6;
+
+
 	
-	
-	--projects-link-bg: #BCC2C2;
 	--projects-link-bg: #A8A9AD;
 	--projects-link-bg: #A5ADAD;
+
 	
+	--projects-link-bg: #3363B7;
+	--projects-link-bg: #5b82c5;
+	/* --projects-link-bg: #4D76C0; */
+
+
+
 	
-	
-	--about-link-bg: #A8BDEB;
 	--about-link-bg: #848482;
 	--about-link-bg: #98AFC7;
 
 	--about-link-bg: #5E716A;
 	--about-link-bg: #B5BDA5;
+
 	
+	--about-link-bg: #999e8c;
+	--about-link-bg: #b6c45b;
+
 	--contact-link-bg: #848482;
-	
+
 	--contact-link-bg: #AFADA9;
 	--contact-link-bg: #ACA79E;
+	--contact-link-bg: #c4695b;
+	--contact-link-bg: #B55B4C;
+	--contact-link-bg: #4cb595;
+	--contact-link-bg: #76bf4c;
+	--contact-link-bg: #BF954C;
+	--contact-link-bg: #918c9e;
+
+	/* --contact-link-bg: #999e8c; */
 	--active-nav-link: #F2F3F5;
 	--active-nav-link: #DCDCDC;
 	--active-nav-link-text: black;
+	--home-background: #D5D8DF;
+	--home-background: #98AFC7;
+	--home-background: #BCC2C2;
 	/* platinum */
 	--primary-background: #E5E4E2;
 	--primary-background: #D5D8DF;
 	--primary-background: #98AFC7;
 	--primary-background: #BCC2C2;
 	--secondary-background: #B8BDC9;
-	--project-container-bg: #3E424B;
-	/* --project-container-bg: #A8A9AD; */
+	
+	
+	--project-container-bg: #A56600;
+	--project-container-bg: #147c51;
+	--project-container-bg: #ADA5A5;
+	
+	
+	--project-container-bg: #3363B7;
+	--project-container-bg: #4D76C0;
+	--project-container-bg: #5b82c5;
+
+	/* --project-container-bg: #013ca6; */
 	--project-container-hover: #4F7DA4;
 	--project-container-hover: #075aaa;
-	--home-background: #D5D8DF;
-	--home-background: #98AFC7;
-	--home-background: #BCC2C2;
-	--about-image-bg: #cf9c26;
-	--skill-card-bg: #cf9c26;
+	--project-container-hover: #afbf4c;
+
+
 	--complementary-bg: #cf9c26;
 	--complementary-bg: #A8A9AD;
+	
+	
+	--complementary-bg: #92A500;
+	--complementary-bg: #a51300;
 	--complementary-bg: #A5ADAD;
+	--complementary-bg: #c49e5b;
+	--complementary-bg: #b6c45b;
+	--complementary-bg: #A1AAAA;
+
+	/* --complementary-bg: #82c45b; */
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
@@ -102,10 +141,14 @@ font-family: 'Source Sans Pro', sans-serif;
 		sans-serif;
 	--primary-text-color: #0f0700;
 	--helper-text-color: #A5AEB6;
+	--helper-text-color: #0A0A0A;
 	--secondary-font-weight: 600;
+	
+	--secondary-text-color: white;
 	--secondary-text-color: black;
-	--nav-links-font-weight: 400;
-	--active-nav-link-font-weight: 600;
+
+	--about-image-bg: #cf9c26;
+	--skill-card-bg: #cf9c26;
 	--buttons-bg-color: #2d2d3d;
 	--buttons-bg-color: #484b6a;
 	--buttons-bg-color: #4681f4;
@@ -122,9 +165,11 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #2774d8;
 	--buttons-bg-color: #3226D8;
 	--buttons-bg-color: #4941BD;
-	--buttons-bg-color: #605CA3;
-	--buttons-bg-color: #2e8b57;
+
+
 	--buttons-bg-color: #4A646C;
+	--buttons-bg-color: #2e8b57;
+	--buttons-bg-color: #605CA3;
 	--buttons-hover-bg: #5dbea3;
 	--buttons-hover-bg: #2e8b57;
 	--buttons-color: #FAFAFA;
@@ -146,7 +191,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--home-link-bg: #4D4D5C;
 	--home-link-bg: #58111A;
 	--projects-link-bg: #2e3530;
-	
+
 	--projects-link-bg: #666666;
 	--projects-link-bg: #425563;
 	--projects-link-bg: #2c2c37;
@@ -218,7 +263,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--nav-links-color: #D1D1D1;
 	--active-nav-link-text: #D1D1D1;
 	--helper-text-color: #B0B0B0;
-	
+
 	--helper-text-color: #83A094;
 	--helper-text-color: #BEBEC5;
 	--nav-links-font-weight: 300;
