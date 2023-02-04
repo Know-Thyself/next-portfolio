@@ -9,9 +9,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--header-background);
-  -webkit-box-shadow: 0 4px 6px -6px var(--secondary-background);
+  /* -webkit-box-shadow: 0 4px 6px -6px var(--secondary-background);
   -moz-box-shadow: 0 4px 6px -6px var(--secondary-background);
-  box-shadow: 0 4px 6px -6px var(--secondary-background);
+  box-shadow: 0 4px 6px -6px var(--secondary-background); */
 
   color: var(--secondary-text-color);
   height: 64px;
@@ -112,7 +112,7 @@
   /* display: block; */
   padding: 18px 24px;
   font-family: var(--secondary-font-family);
-  /* font-family: var(--secondary-font-family); */
+  font-family: var(--primary-font-family);
   color: var(--nav-links-color);
   border-bottom: solid 1px var(--primary-text-color);
   border-bottom: solid 1px var(--nav-links-color);
@@ -130,7 +130,7 @@
 
 .active {
   text-decoration: none;
-  /* font-weight: var(--active-nav-link-font-weight); */
+  font-weight: var(--active-nav-link-font-weight);
   color: var(--active-nav-link);
   color: var(--active-nav-link-text);
   background-color: var(--complementary-bg);
@@ -225,8 +225,9 @@
 
   .menu__item:hover {
     /* color: var(--nav-links-color); */
-    /* font-weight: var(--active-nav-link-font-weight); */
+    font-weight: var(--active-nav-link-font-weight);
     background-color: var(--header-background);
+    background-color: var(--active-nav-link);
     color: var(--active-nav-link-text);
     border-color: var(--active-nav-link-text);
     /* background-color: var(--active-nav-link); */

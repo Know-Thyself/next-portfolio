@@ -81,6 +81,7 @@
   background-color: var(--home-link-bg);
   background-color: var(--projects-link-bg);
   background-color: var(--project-container-bg);
+  background-color: var(--complementary-bg);
   padding: 2rem 0;
 }
 
@@ -123,7 +124,7 @@
   background-color: var(--complementary-bg);
   background-color: var(--buttons-bg-color);
   /* background-color: var(--buttons-bg-color); */
-  color: var(--secondary-text-color);
+  color: var(--buttons-color);
   font-family: var(--primary-font-family);
   font-family: var(--buttons-font-family);
   text-transform: uppercase;
