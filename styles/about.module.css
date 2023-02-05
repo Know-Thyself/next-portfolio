@@ -60,9 +60,14 @@
 .contact,
 .about-section-buttons button {
   background-color: var(--header-background);
+  
+  
+  
+  background-color: var(--secondary-background);
+  background-color: var(--active-nav-link);
+  
   background-color: var(--buttons-hover-bg);
   background-color: var(--buttons-bg-color);
-  background-color: var(--active-nav-link);
   color: var(--secondary-text-color);
   color: var(--primary-text-color);
   color: var(--buttons-color);

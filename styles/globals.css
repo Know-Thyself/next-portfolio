@@ -183,7 +183,13 @@ font-family: 'Source Sans Pro', sans-serif;
 	--switch-button-bg: #1F2022;
 	/* --switch-button-bg: #008ecc; */
 }
-
+/* 
+--buttons-bg-color: #556b2f;
+--buttons-bg-color: #445525;
+--buttons-bg-color: #3b4a20;
+--buttons-bg-color: #494421;
+--buttons-bg-color: #4a5d23;
+*/
 [data-theme='dark'] {
 	--header-background: #1F2022;
 	--header-background: #282e34;
@@ -191,6 +197,34 @@ font-family: 'Source Sans Pro', sans-serif;
 	--header-background: #202429;
 	--header-background: #1c2024;
 	--header-background: #1a1e21;
+	--header-background: #1a4751;
+	--header-background: #4a5d23;
+	--header-background: #334118;
+	--header-background: #42531f;
+	--header-background: #301e54;
+	--header-background: #293311;
+
+	--header-background: #451612;
+	--header-background: #1b1811;
+	--header-background: #1a1110;
+	--header-background: #0f1916;
+
+	--header-background: #252d2b;
+	--header-background: #1d2422;
+
+	--header-background: #2a2f23;
+	--header-background: #232b2b;
+	
+	--header-background: #3b3c36;
+	--header-background: #343434;
+
+	--header-background: #353839;
+	--header-background: #39433c;
+	--header-background: #2e3530;
+	--header-background: #5d3a1a;
+	--header-background: #4b5320;
+
+	/* --header-background: #544b1e; */
 	/* anchor */
 	--home-link-bg: #3E424B;
 	--home-link-bg: #073089;
@@ -202,6 +236,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--projects-link-bg: #2c2c37;
 	--projects-link-bg: #2b2d28;
 	--projects-link-bg: #26262f;
+	--projects-link-bg: #333333;
 	/* --projects-link-bg: #1a1e21; */
 
 	/* black olive */
@@ -217,27 +252,61 @@ font-family: 'Source Sans Pro', sans-serif;
 	--primary-background: #0c0c0c;
 	--primary-background: #151517;
 	--primary-background: #121314;
+	--primary-background: #352d33;
+	--primary-background: #352d2f;
+	--primary-background: #1f1b1c;
+	--primary-background: #18161a;
+
+	--primary-background: #251f23;
+	--primary-background: #141114;
+	--primary-background: #120f11;
+	--primary-background: #0f0d0f;
+	--primary-background: #0d0b0c;
+	/* --primary-background: #1f1b1e; */
+	/* --primary-background: #1a1619; */
+
+	/* --primary-background: #141414; */
 	--secondary-background: #121212;
-	--project-container-bg: #333333;
+	
 	--project-container-bg: #3d3b2b;
 	--project-container-bg: #363526;
 	--project-container-bg: #26262f;
 	--project-container-bg: #2d2d26;
+	--project-container-bg: #333A38;
+	--project-container-bg: #30352d;
+	--project-container-bg: #352d33;
+
+	--project-container-bg: #353835;
+	--project-container-bg: #4e524e;
+	--project-container-bg: #383538;
+	
+	--project-container-bg: #544b1e;
+	--project-container-bg: #42531f;
+	--project-container-bg: #42541e;
+	--project-container-bg: #333333;
 	--project-container-hover: #4B4E53;
 	--project-container-hover: #58111A;
 	--project-container-hover: #363526;
 	--project-container-hover: #443003;
 	--project-container-hover: #212119;
-	--complementary-bg: #262626;
+	--project-container-hover: #42541e;
+	
 	--complementary-bg: #38353d;
-	--complementary-bg: #2c2a30;
-	--complementary-bg: #2d3028;
-	--complementary-bg: #1c1f22;
+	/* --complementary-bg: #2c2a30; */
+	/* --complementary-bg: #2d3028; */
+	/* --complementary-bg: #262626;
+	--complementary-bg: #2e2e2e;
+	--complementary-bg: #343434; */
+	/* --complementary-bg: #1c1f22; */
 
-	/* --complementary-bg: #2d2d32; */
-	/* --complementary-bg: #442316;
+	/* --complementary-bg: #353835; */
+	/* --complementary-bg: #333333; */
+	/* --complementary-bg: #42541e; */
+
+	--complementary-bg: #2d2d32;
+	--complementary-bg: #442316;
 	--complementary-bg: #443a16;
-	--complementary-bg: #202020; */
+	--complementary-bg: #202020;
 	/* --complementary-bg: #383838; */
 
 	/* --complementary-bg: #2c2d2d; */
@@ -287,7 +356,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
 	--buttons-font-weight: 100;
 	/* chocolate cosmos */
-	--buttons-bg-color: #58111A;
+	
 	
 	/* charcoal */
 	--buttons-bg-color: #36454F;
@@ -306,24 +375,100 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #003e63;
 	--buttons-bg-color: #062a78;
 
-	/* --buttons-bg-color: #002e63;
+	--buttons-bg-color: #002e63;
 	--buttons-bg-color: #8c8c9c;
 	--buttons-bg-color: #336b87;
 	--buttons-bg-color: #763626;
 	--buttons-bg-color: #a43820;
-	--buttons-bg-color: #598234;
-	--buttons-bg-color: #333382;
-	--buttons-bg-color: #282868;
-	--buttons-bg-color: #1e1e4e;
-	--buttons-bg-color: #50752e;
-	--buttons-bg-color: #aebd38;
-	--buttons-bg-color: #4538bc;
-	--buttons-bg-color: #798427;
-	--buttons-bg-color: #386fbc;
-	--buttons-bg-color: #3263a9;
-	--buttons-bg-color: #2c5896; */
-	/* --buttons-bg-color: #214270; */
-	/* --buttons-bg-color: #233067; */
+	--buttons-bg-color: #ab381f;
+	--buttons-bg-color: #218da3;
+	--buttons-bg-color: #a33621;
+	--buttons-bg-color: #556b2f;
+	--buttons-bg-color: #6b6226;
+	--buttons-bg-color: #445525;
+	--buttons-bg-color: #566b2d;
+	--buttons-bg-color: #3c4a1f;
+	--buttons-bg-color: #444c38;
+	--buttons-bg-color: #354230;
+	--buttons-bg-color: #3d4432;
+	--buttons-bg-color: #363c2c;
+	--buttons-bg-color: #3b3c36;
+	--buttons-bg-color: #38353d;
+	--buttons-bg-color: #353630;
+	--buttons-bg-color: #2f302b;
+	--buttons-bg-color: #292a25;
+	--buttons-bg-color: #322f36;
+	--buttons-bg-color: #282d30;
+	--buttons-bg-color: #1c1f21;
+	--buttons-bg-color: #1d1f20;
+
+	--buttons-bg-color: #232b2b;
+
+	--buttons-bg-color: #1f2626;
+	--buttons-bg-color: #1c2222;
+
+	--buttons-bg-color: #1a2421;
+	--buttons-bg-color: #1f2b2a;
+	/* --buttons-bg-color: #2c2a30; */
+
+
+	/* --buttons-bg-color: brown; */
+	/* --buttons-bg-color: #333382; */
+	/* --buttons-bg-color: #282868; */
+	/* --buttons-bg-color: #1e1e4e; */
+
+	/* --buttons-bg-color: #4538bc; */
+
+	--buttons-bg-color: #233067;
+	--buttons-bg-color: #2e2d88;
+	--buttons-bg-color: #023526;
+	--buttons-bg-color: #2a2f23;
+	--buttons-bg-color: #21251c;
+	--buttons-bg-color: #252a1f;
+	--buttons-bg-color: #191c15;
+	--buttons-bg-color: #012f22;
+	--buttons-bg-color: #012a1e;
+	--buttons-bg-color: #123524;
+	--buttons-bg-color: #382d07;
+	--buttons-bg-color: #242124;
+	--buttons-bg-color: #1b1b1b;
+	--buttons-bg-color: #1c1c1c;
+	--buttons-bg-color: #1a1110;
+	--buttons-bg-color: #0f1619;
+	--buttons-bg-color: #3f4447;
+	--buttons-bg-color: #2c2f31;
+	--buttons-bg-color: #25282a;
+	--buttons-bg-color: #1f2223;
+	--buttons-bg-color: #191b1c;
+	--buttons-bg-color: #b8860b;
+	--buttons-bg-color: #936b08;
+	--buttons-bg-color: #805d07;
+	--buttons-bg-color: #996515;
+	
+	--buttons-bg-color: #996600;
+	--buttons-bg-color: #895b00;
+	--buttons-bg-color: #00895b;
+	--buttons-bg-color: #737000;
+	--buttons-bg-color: #8f8c33;
+	--buttons-bg-color: #807532;
+	--buttons-bg-color: #556b2f;
+	--buttons-bg-color: #445525;
+	--buttons-bg-color: #3b4a20;
+	--buttons-bg-color: #494421;
+	--buttons-bg-color: #4a5d23;
+
+	--buttons-bg-color: #42531f;
+	--buttons-bg-color: #66561e;
+	--buttons-bg-color: #665d1e;
+	--buttons-bg-color: #977a07;
+	--buttons-bg-color: #58111A;
+	--buttons-bg-color: #266675;
+	--buttons-bg-color: #1e515d;
+	--buttons-bg-color: #1a4751;
+	--buttons-bg-color: #42531f;
+	--buttons-bg-color: #301e54;
+	/* --buttons-bg-color: #4b5320; */
+
 
 	--buttons-hover-bg: #2d2d3d;
 	--buttons-hover-bg: #1a1a24;
@@ -346,8 +491,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-text-color: #B8B8B8;
 	--active-nav-link: #58111A;
 	--active-nav-link: #023526;
-	--active-nav-link: #023526;
 	--active-nav-link: #763626;
+	/* --active-nav-link: #023526; */
 
 
 	--nav-links-color: #CCCCCC;
