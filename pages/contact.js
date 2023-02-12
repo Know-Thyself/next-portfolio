@@ -5,6 +5,7 @@ import Box from '@mui/material/Box'
 import Alert from '@mui/material/Alert'
 import TextField from '@mui/material/TextField'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { motion, AnimatePresence } from 'framer-motion'
 import {
 	faPaperPlane,
 	faPhoneVolume,
@@ -118,13 +119,43 @@ const Contact = () => {
 		setButtonText('Send')
 	}
 
+	const springVariant = {
+		start: {
+			y: -100,
+			// opacity: 0,
+		},
+		end: {
+			y: 0,
+			// opacity: 1,
+			transition: {
+				type: 'spring',
+				// bounce: 0.25,
+				stiffness: 50,
+				// damping: 10,
+				// restSpeed: 0.5,
+				// velocity: 3,
+				// restDelta: 0.5,
+			},
+		},
+		exit: {
+			y: 100,
+			// opacity: 0,
+		},
+	}
+
 	return (
-		<>
+		<AnimatePresence mode='wait'>
 			<Head>
 				<title>Contact Me</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main className={styles.main}>
+			<motion.main
+				className={styles.main}
+				variants={springVariant}
+				initial='start'
+				animate='end'
+				exit='exit'
+			>
 				<section className={styles.intro}>
 					<h1>I would love to hear from you!</h1>
 					<p className={styles.subtext}>
@@ -276,7 +307,7 @@ const Contact = () => {
 										'& .MuiInputBase-root': {
 											color: 'var(--primary-text-color)',
 											borderBottom: '1px solid var(--primary-text-color)',
-											backgroundColor: 'var(--about-link-bg)',
+											backgroundColor: 'var(--complementary-bg)',
 										},
 									}}
 								/>
@@ -292,8 +323,8 @@ const Contact = () => {
 						</Box>
 					</ThemeProvider>
 				</div>
-			</main>
-		</>
+			</motion.main>
+		</AnimatePresence>
 	)
 }
 

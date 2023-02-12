@@ -34,8 +34,8 @@
 }
 
 .contact-info {
-  background-color: var(--complementary-bg);
   background-color: var(--about-link-bg);
+  background-color: var(--complementary-bg);
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
@@ -78,10 +78,8 @@
   align-items: center;
   width: 100%;
   margin: auto;
-  background-color: var(--home-link-bg);
-  background-color: var(--projects-link-bg);
-  background-color: var(--project-container-bg);
   background-color: var(--complementary-bg);
+  background-color: var(--about-link-bg);
   padding: 2rem 0;
 }
 
@@ -104,7 +102,7 @@
   border-bottom: 1px solid var(--primary-text-color);
   background-color: var(--buttons-hover-bg);
   background-color: var(--complementary-bg);
-  background-color: var(--about-link-bg);
+  /* background-color: var(--about-link-bg); */
   font-family: var(--primary-font-family);
 }
 
@@ -116,14 +114,14 @@
 .textField textarea {
   background-color: var(--buttons-hover-bg);
   background-color: var(--complementary-bg);
-  background-color: var(--about-link-bg);
+  /* background-color: var(--about-link-bg); */
   /* background-color: var(--contact-link-bg); */
 }
 
 .send {
   background-color: var(--complementary-bg);
   background-color: var(--buttons-bg-color);
-  background-color: var(--contact-link-bg);
+  /* background-color: var(--contact-link-bg); */
   /* background-color: var(--buttons-bg-color); */
   color: var(--buttons-color);
   font-family: var(--primary-font-family);

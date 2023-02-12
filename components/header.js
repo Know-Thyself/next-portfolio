@@ -36,7 +36,7 @@ const Header = () => {
 		<header className={styles.header}>
 			<Image
 				className={styles.logo}
-				src='/images/placeholder-logo.png'
+				src='/images/logo.png'
 				alt='logo'
 				width={70}
 				height={70}

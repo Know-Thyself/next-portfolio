@@ -112,6 +112,7 @@
   text-align: left;
   padding-left: 10%;
   color: var(--buttons-color);
+  color: var(--primary-text-color);
 }
 
 .skills-section p {
