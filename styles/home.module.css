@@ -25,7 +25,7 @@
 
 .primary-text {
   font-family: var(--hero-banner-text);
-  color: var(--primary-text-color);
+  color: var(--home-text-color);
   font-weight: 600;
   font-size: 2.5rem;
 }
@@ -39,7 +39,7 @@
 .subtext {
   font-family: var(--secondary-font-family);
   font-weight: var(--secondary-font-weight);
-  color: var(--primary-text-color);
+  color: var(--home-text-color);
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
