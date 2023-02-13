@@ -98,6 +98,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-text-color: black;
 
 	--about-image-bg: #cf9c26;
+	--menu-box-bg: #cf9c26;
 	--skill-card-bg: #cf9c26;
 	--buttons-bg-color: #14813a;
 	--buttons-hover-bg: #116f32;
@@ -105,12 +106,15 @@ font-family: 'Source Sans Pro', sans-serif;
 	/* --buttons-color: #0D0D0D;
 	--buttons-color: black; */
 	--radio-btn-border: #aaaafa;
-	/* --radio-btn-border: #282D43; */
+	--radio-btn-border: #676767;
+	--radio-btn-border: #3d3d3d;
 	--radio-btn-bg: #fa9f1e;
 	--radio-btn-bg: #d5e2f4;
 	--radio-btn-bg: #55c2da;
+	--radio-btn-bg: #55c2da;
 	--switch-button-bg: #1F2022;
-	/* --switch-button-bg: #008ecc; */
+	--switch-button-bg: #008ecc;
+	--switch-button-bg: #1db954;
 }
 
 /* 
@@ -123,6 +127,8 @@ font-family: 'Source Sans Pro', sans-serif;
 [data-theme='dark'] {
 	--header-background: #2e3530;
 	--header-background: #141c1e;
+	--header-background: #1f262a;
+	--header-background: #1a2421;
 	/* anchor */
 	--home-link-bg: #3E424B;
 	--home-link-bg: #003e63;
@@ -131,12 +137,20 @@ font-family: 'Source Sans Pro', sans-serif;
 	--about-link-bg: #3b3c36;
 	--about-link-bg: #3b2f2f;
 	--contact-link-bg: #2d3a3a;
+	--menu-box-bg: #58111A;
 	--primary-background: #101416;
 	--secondary-background: #121212;
 	--project-container-bg: #352d33;
+	/* --project-container-bg: #483c32; */
 	--project-container-hover: #2d2d3a;
 	--complementary-bg: #38353d;
 	--complementary-bg: #192024;
+	--complementary-bg: #232627;
+	--complementary-bg: #231921;
+	--complementary-bg: #231c19;
+	--complementary-bg: #181818;
+	--complementary-bg: #192123;
+	/* --complementary-bg: #192024; */
 	--home-background: url('/images/home-background.jpg');
 	--home-background: url('/images/background-home-desktop.jpg');
 	--home-bg-mobile: url('/images/home-bg-mobile.jpg');
@@ -192,6 +206,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-border: #D1D1D1;
 	--radio-btn-border: #2A3439;
 	--switch-button-bg: #353839;
+	--switch-button-bg: #473c3a;
+	--switch-button-bg: #483c32;
 	/* --switch-button-bg: #C597FC;
 	--switch-button-bg: #A3A3FF;
 	--switch-button-bg: #92A8F2; */

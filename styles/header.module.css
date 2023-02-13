@@ -78,6 +78,7 @@
   background-color: var(--nav-links-color);
   background-color: var(--switch-button-bg);
   background-color: var(--active-nav-link-text);
+  background-color: var(--buttons-bg-color);
   transition-duration: 0.25s;
 }
 
@@ -102,6 +103,7 @@
   margin: 0;
   padding: 0;
   background-color: var(--buttons-bg-color);
+  background: var(--menu-box-bg);
   box-shadow: 2px 2px 6px var(--nav-links-color);
   transition-duration: 0.25s;
   text-align: center;
