@@ -79,7 +79,7 @@
 }
 
 .switch-checkbox:checked+.switch-label {
-  background: var(--primary-background);
+  /* background: var(--primary-background); */
   background-color: var(--radio-btn-bg);
   /* background: var(--header-background);
   background: var(--complementary-bg); */
