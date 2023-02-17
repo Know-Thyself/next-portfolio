@@ -60,8 +60,13 @@ const Home = () => {
 							<br />
 							If you are looking to hire a passionate, problem solver, team
 							player, effective communicator and skillful Software Engineer for
-							a frontend, backend or full stack web development role, you have
+							a Frontend, Backend or Full Stack Web Development role, you have
 							come to the right place!
+							<br />
+							<br />
+							Please feel free to explore my projects, view live demos and
+							checkout my GitHub repositories to see all the source codes I've written to build a variety of
+							Frontend, Backend and Full Stack Web Applications.
 						</h3>
 						<div className={styles['links-wrapper']}>
 							<motion.a
@@ -88,8 +93,8 @@ const Home = () => {
 							>
 								<Link href='/projects' className={styles.link}>
 									{/* <a className={styles.link}> */}
-										Projects
-										{/* </a> */}
+									Projects
+									{/* </a> */}
 								</Link>
 							</motion.div>
 						</div>

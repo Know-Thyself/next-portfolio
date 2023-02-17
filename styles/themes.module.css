@@ -31,7 +31,8 @@
   width: 50px;
   height: 22px;
   /* height: max-content; */
-  background: var(--primary-background);
+  /* background: var(--primary-background); */
+  background-color: var(--radio-btn-bg);
   /* background: var(--radio-btn-bg); */
   border-radius: 100px;
   border: 3px solid var(--radio-btn-border);
@@ -79,7 +80,9 @@
 
 .switch-checkbox:checked+.switch-label {
   background: var(--primary-background);
-  /* background: var(--header-background); */
+  background-color: var(--radio-btn-bg);
+  /* background: var(--header-background);
+  background: var(--complementary-bg); */
 }
 
 .d-none {

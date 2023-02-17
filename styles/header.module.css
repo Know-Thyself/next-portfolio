@@ -172,8 +172,6 @@
 
   }
 
-
-
   .home {
     background-color: var(--active-nav-link);
     background-color: var(--home-link-bg);
@@ -197,24 +195,31 @@
   .home,
   .projects,
   .about,
+  .contact,
   .active {
     border-right: 1px solid var(--nav-links-color);
   }
 
-  .menu__item:last-child {
+  /* .menu__item:last-child {
     border-right: none;
     height: 100%;
-  }
+  } */
 
   .active {
     background-color: var(--header-background);
     background-color: var(--active-nav-link);
     color: var(--active-nav-link-text);
     border-color: var(--active-nav-link-text);
+    border-color: var(--nav-links-color);
+    cursor: default;
   }
 
-  .active:last-child {
+  /* .active:last-child {
     border-right: none;
+  } */
+  .home,
+  .active:first-child {
+    border-left: 1px solid var(--nav-links-color);
   }
 
   .menu__btn {
@@ -232,6 +237,7 @@
     background-color: var(--active-nav-link);
     color: var(--active-nav-link-text);
     border-color: var(--active-nav-link-text);
+    border-color: var(--nav-links-color);
     /* background-color: var(--active-nav-link); */
   }
 
