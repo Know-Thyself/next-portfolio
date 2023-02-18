@@ -54,7 +54,7 @@ const Projects = ({ projectsData, project, setProject }) => {
 	}
 
 	return (
-		<AnimatePresence mode='wait'>
+		<AnimatePresence>
 			<Head>
 				<title>Projects</title>
 				<link rel='icon' href='/favicon.ico' />
@@ -65,12 +65,13 @@ const Projects = ({ projectsData, project, setProject }) => {
 				initial='start'
 				animate='end'
 				exit='exit'
+				key='projects'
 			>
 				<div className={styles['projects-wrapper']}>
 					{projects.map((project, idx) => {
 						return (
 							<div
-								key={idx}
+								key={project.title}
 								id={idx}
 								className={styles['project-wrapper']}
 								onClick={handleClick}

@@ -37,7 +37,7 @@
 }
 
 .subtext {
-  font-family: var(--secondary-font-family);
+  font-family: var(--primary-font-family);
   font-weight: var(--secondary-font-weight);
   color: var(--home-text-color);
   font-size: 1rem;
@@ -45,6 +45,7 @@
   font-weight: 300;
   /* white-space: 'pre-line'; */
   text-align: left;
+  letter-spacing: 0.25px;
 }
 
 /* .hero-right {

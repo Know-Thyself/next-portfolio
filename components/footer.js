@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const Footer = () => {
 	return (
-		<AnimatePresence mode='wait'>
+		<AnimatePresence>
 			<motion.div
 				className={styles.footer}
 				initial={{ y: 10, opacity: 0 }}

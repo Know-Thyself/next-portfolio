@@ -144,7 +144,7 @@ const Contact = () => {
 	}
 
 	return (
-		<AnimatePresence mode='wait'>
+		<AnimatePresence>
 			<Head>
 				<title>Contact Me</title>
 				<link rel='icon' href='/favicon.ico' />
@@ -155,11 +155,12 @@ const Contact = () => {
 				initial='start'
 				animate='end'
 				exit='exit'
+				key='contact'
 			>
 				<section className={styles.intro}>
 					<h1>I would love to hear from you!</h1>
 					<p className={styles.subtext}>
-						If you have any enquiry, would like me to build a web app for you or
+						If you are an employer or recruiter looking for a developer and think I could be a good candidate for the vacant role you have, or if you run a charity organisation and would like me to build a website for your organisation which I am happy to do for free or
 						just to get to know me better, please get in touch using your
 						preferred means of communication from the options provided below.
 					</p>
@@ -285,8 +286,8 @@ const Contact = () => {
 									label='Message'
 									variant='filled'
 									multiline
-									minRows={4}
-									maxRows={8}
+									minRows={5}
+									maxRows={10}
 									name='message'
 									value={formInputs.message}
 									onChange={handleChange}

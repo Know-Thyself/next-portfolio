@@ -10,7 +10,7 @@
 }
 
 .project-wrapper {
-  width: 80%;
+  width: 90%;
   height: fit-content;
   /* margin-top: 0; */
   margin: auto;
@@ -53,10 +53,12 @@
   font-family: var(--secondary-font-family);
   color: var(--primary-text-color);
   color: var(--nav-links-color);
-  font-size: 0.87rem;
+  font-size: 1.1rem;
   font-weight: 100;
   line-height: 1.25rem;
   margin-top: 1rem;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
 }
 
 .description span {
@@ -102,15 +104,21 @@
 
 @media screen and (min-width: 667px) {
   .project-wrapper {
-    width: 65%;
+    width: 85%;
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 1.175rem;
   }
 
   .live-demo-link,
   .github-link {
     font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .project-wrapper {
+    width: 80%;
   }
 }

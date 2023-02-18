@@ -42,7 +42,7 @@ const About = () => {
 	}
 
 	return (
-		<AnimatePresence mode='wait'>
+		<AnimatePresence>
 			<Head>
 				<title>About Me</title>
 				<link rel='icon' href='/favicon.ico' />
@@ -53,6 +53,7 @@ const About = () => {
 				initial='start'
 				animate='end'
 				exit='exit'
+				key='about'
 			>
 				<section className={styles['about-section']}>
 					<div className={styles['about-img-wrapper']}>
@@ -112,8 +113,8 @@ const About = () => {
 					<div>
 						<h1>Technology Stacks and Skill Sets</h1>
 						<p>
-							Here&apos;re some of the Technology Stacks I use very competently
-							and passionately to build frontend, backend and full stack web
+							Here&apos;re some images of the Technology Stacks I use
+							proficiently to build frontend, backend and full stack web
 							applications
 						</p>
 					</div>

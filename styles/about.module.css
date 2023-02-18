@@ -1,21 +1,18 @@
 .main {
 	width: 100%;
-	/* background-color: var(--primary-background);
-  background-color: var(--complementary-bg);
-  background-color: var(--buttons-hover-bg);
-  background-color: var(--project-container-bg); */
 	background-color: var(--about-link-bg);
 	font-family: var(--primary-font-family);
-	color: var(--primary-text-color);
+	/* font-family: var(--secondary-font-family); */
+	color: var(--secondary-text-color);
 	padding-top: 64px;
 	padding-bottom: 48px;
 	min-height: 100vh;
+	letter-spacing: 0.65px;
 }
 
 .about-section {
-	background-color: var(--primary-background);
-	/* background-color: var(--secondary-background); */
 	background-color: var(--about-link-bg);
+	/* font-family: var(--secondary-font-family); */
 	display: flex;
 	/* display: grid;
 	grid-template-columns: repeat(2, 1fr); */
@@ -26,6 +23,7 @@
 	justify-content: center;
 	align-items: center;
 	gap: 3rem;
+	
 	/* margin: 2rem auto 4rem auto; */
 }
 
@@ -123,7 +121,7 @@
 	color: var(--buttons-color);
 	color: var(--primary-text-color);
 	/* font-family: var(--primary-font-family); */
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	opacity: 0.75;
 	/* margin: 0.5rem 10%; */
 	margin-left: 10%;
@@ -290,7 +288,7 @@
 	}
 
 	.skill-card h2 {
-		font-size: 1rem;
+		font-size: 1.075rem;
 	}
 
 	.logo {
@@ -306,8 +304,16 @@
 		padding: 4rem 20% 6rem 20%;
 		padding: 2rem 0% 4rem 0%;
 		gap: 2.5rem;
+		font-size: 1.075rem;
 	}
-
+  .main {
+		font-size: 1.075rem;
+	}
+	.skills-section p {
+		font-family: var(--secondary-font-family);
+		font-size: 1.25rem;
+		opacity: 0.5;
+	}
 	.about-img {
 		width: 240px;
 	}

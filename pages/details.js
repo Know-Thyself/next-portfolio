@@ -63,7 +63,7 @@ const ProjectDetail = ({ project }) => {
 							</div>
 						) : (
 							descriptionLines.map((line, idx) => (
-								<div key={idx}>
+								<div key={project.title}>
 									<p className={styles.description}>{line}</p>
 								</div>
 							))

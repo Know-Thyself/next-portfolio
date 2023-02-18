@@ -34,7 +34,7 @@ const Home = () => {
 	}
 
 	return (
-		<AnimatePresence mode='wait'>
+		<AnimatePresence>
 			<motion.div
 				className={styles.home}
 				variants={springVariant}

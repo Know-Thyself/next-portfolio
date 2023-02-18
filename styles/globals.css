@@ -30,10 +30,15 @@ a {
 	-webkit-font-smoothing: grayscale;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Lato:wght@300;400;700&family=Merriweather:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Noto+Serif+Georgian:wght@300;400&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
 
 /* 
+font-family: 'Alegreya',
+serif;
 font-family: 'Lato', sans-serif;
+font-family: 'Merriweather',
+serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
  */
@@ -111,6 +116,10 @@ font-family: 'Source Sans Pro', sans-serif;
 
 	--secondary-font-family: 'Lato',
 		sans-serif;
+	--secondary-font-family: 'Alegreya',
+		serif;
+	/* --secondary-font-family: 'Merriweather',
+		serif; */
 	--primary-text-color: #0f0700;
 	--primary-text-color: #000000;
 	--home-text-color: #c2c2c5;
@@ -195,16 +204,21 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-color: #F4F8FB;
 	--secondary-font-family: 'Lato',
 		sans-serif;
+	--secondary-font-family: 'Alegreya',
+		serif;
+	/* --secondary-font-family: 'Merriweather',
+		serif; */
 	--primary-text-color: #9C9C9C;
 	--primary-text-color: #9C9C9C;
 	--primary-text-color: #D7D7DF;
 	--home-text-color: #D7D7DF;
 	/* --primary-text-color: white; */
 	--secondary-font-weight: 100;
-	--secondary-text-color: #B3B3B3;
-	--secondary-text-color: #F0F0F0;
 	--secondary-text-color: #ABABAB;
 	--secondary-text-color: #B8B8B8;
+	--secondary-text-color: #BAC9C8;
+	--secondary-text-color: #B4C5C4;
+	--secondary-text-color: #B1C3C2;
 	--active-nav-link: #333366;
 	--active-nav-link: #333366;
 	--nav-links-color: #CCCCCC;
@@ -212,8 +226,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--nav-links-color: #D1D1D1;
 	--active-nav-link-text: #D1D1D1;
 	--helper-text-color: #B0B0B0;
-	--helper-text-color: #83A094;
-	--helper-text-color: #BEBEC5;
+	--helper-text-color: #717198;
+	--helper-text-color: #8484A4;
 	--nav-links-font-weight: 300;
 	--active-nav-link-font-weight: 400;
 	--radio-btn-border: #2A3439;
@@ -222,12 +236,17 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-border: #2a2f23;
 	--radio-btn-border: #2d2823;
 	--radio-btn-border: #2d2d2d;
+	--radio-btn-border: #474747;
 	/* --radio-btn-border: #1c1c25; */
 	/* --radio-btn-border: #2c2a2b; */
 	--radio-btn-bg: #ee5622;
 	--radio-btn-bg: #1f2022;
 	--radio-btn-bg: #2c2a2b;
 	--radio-btn-bg: #1c1c25;
+	--radio-btn-bg: #1e1e27;
+	--radio-btn-bg: #202029;
+	/* --radio-btn-bg: #283333; */
+	/* --radio-btn-bg: #23232e; */
 	/* --radio-btn-bg: #23232d; */
 	--switch-button-bg: #353839;
 	--switch-button-bg: #473c3a;
