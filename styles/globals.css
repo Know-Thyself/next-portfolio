@@ -191,8 +191,28 @@ font-family: 'Source Sans Pro', sans-serif;
 	--nav-links-font-weight: 300;
 	--active-nav-link-font-weight: 400;
 	/* --radio-btn-bg: #191920; */
-	--radio-btn-border: #2c2a2b;
+	--radio-btn-border: #B6B6C8;
+	--radio-btn-border: #CBCBD7;
+	--radio-btn-border: #A1A1A1;
+	--radio-btn-border: #D1D1D1;
+	--radio-btn-border: #2A3439;
+	--radio-btn-border: #282830;
+	--radio-btn-border: #1b1b20;
+	--radio-btn-border: #2a2f23;
+	--radio-btn-border: #2d2823;
+	--radio-btn-border: #2d2d2d;
+	/* --radio-btn-border: #1c1c25; */
+	/* --radio-btn-border: #2c2a2b; */
+	--radio-btn-bg: #ee5622;
 	--radio-btn-bg: #1f2022;
+	--radio-btn-bg: #2c2a2b;
+	--radio-btn-bg: #1c1c25;
+	/* --radio-btn-bg: #23232d; */
+	--switch-button-bg: #353839;
+	--switch-button-bg: #473c3a;
 	--switch-button-bg: #483c32;
 	--switch-button-bg: #ee5622;
+	/* --switch-button-bg: #C597FC;
+	--switch-button-bg: #A3A3FF;
+	--switch-button-bg: #92A8F2; */
 }

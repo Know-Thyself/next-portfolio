@@ -81,7 +81,8 @@
 	background-color: var(--complementary-bg);
 	background-color: var(--about-link-bg);
 	background-color: var(--secondary-background);
-	background-color: var(--radio-btn-border);
+	background-color: var(--radio-btn-bg);
+	/* background-color: var(--radio-btn-border); */
 	padding: 2rem 0;
 }
 

@@ -62,7 +62,7 @@
 .description span {
   display: inline-block;
   color: var(--active-nav-link);
-  color: var(--buttons-bg-color);
+  color: var(--switch-button-bg);
   /* color: var(--active-nav-link-text);
   color: var(--nav-links-color); */
 }

@@ -43,7 +43,7 @@ const ProjectDetail = ({ project }) => {
 							<div key='read-more' className={styles.description}>
 								{!showMore ? (
 									<p>
-										{lessText.replace("''", "'")}
+										{lessText}
 										<span key='span' onClick={toggleText}>
 											{!showMore ? '...read more ▼' : 'read less ▲'}
 										</span>
@@ -52,7 +52,7 @@ const ProjectDetail = ({ project }) => {
 									descriptionLines.map((line, idx) => (
 										<div key={idx} className={styles.description}>
 											<p>
-												{line.replace("''", "'")}
+												{line}
 												{idx === descriptionLines.length - 1 && (
 													<span key='span' onClick={toggleText}>
 														&nbsp;{!showMore ? '...read more ▼' : 'read less ▲'}
