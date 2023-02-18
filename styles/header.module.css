@@ -77,8 +77,8 @@
   height: 3px;
   background-color: var(--nav-links-color);
   background-color: var(--switch-button-bg);
-  background-color: var(--active-nav-link-text);
-  background-color: var(--buttons-bg-color);
+  /* background-color: var(--active-nav-link-text); */
+  /* background-color: var(--buttons-bg-color); */
   transition-duration: 0.25s;
 }
 
