@@ -65,8 +65,9 @@ const Home = () => {
 							<br />
 							<br />
 							Please feel free to explore my projects, view live demos and
-							checkout my GitHub repositories to see all the source codes I've written to build a variety of
-							Frontend, Backend and Full Stack Web Applications.
+							checkout my GitHub repositories to see all the source codes
+							I&apos;ve written to build a variety of Frontend, Backend and Full
+							Stack Web Applications.
 						</h3>
 						<div className={styles['links-wrapper']}>
 							<motion.a

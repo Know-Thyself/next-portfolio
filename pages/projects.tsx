@@ -44,12 +44,7 @@ const Projects = ({ projectsData, project, setProject }) => {
 			opacity: 1,
 			transition: {
 				type: 'spring',
-				// bounce: 0.25,
 				stiffness: 60,
-				// damping: 10,
-				// restSpeed: 0.5,
-				// velocity: 3,
-				// restDelta: 0.5,
 			},
 		},
 		exit: {
@@ -58,58 +53,6 @@ const Projects = ({ projectsData, project, setProject }) => {
 		},
 	}
 
-	// return (
-	// 	<section id={id} className={styles.section}>
-	// 		<Head>
-	// 			<title>projects</title>
-	// 			<link rel='icon' href='/favicon.ico' />
-	// 		</Head>
-	// 		<h1 className={styles.header}>Checkout some of my projects</h1>
-	// 		<div className={styles.projectsWrapper}>
-	// 			{projects.map((project, index) => {
-	// 				const projectImage = '/images/' + project.image
-	// 				return (
-	// 					<div key={index} id={index} className={styles.projects}>
-	// 						<h3 className={styles.title}>{project.title}</h3>
-	// 						<div className={styles.images}>
-	// 							<a href={project.url} className={styles.imageLink}>
-	// 								<Image
-	// 									src={projectImage}
-	// 									alt={project.title}
-	// 									className={styles.images}
-	// 									layout='fill'
-	// 									objectFit='cover'
-	// 								/>
-	// 							</a>
-	// 						</div>
-	// 						<div className={styles.mouseover}>
-	// 							<a href={project.url} className={styles.center}>
-	// 								<span
-	// 									className={styles.mouseoverText}
-	// 								>{`Click to view live demo of ${project.title}`}</span>
-	// 							</a>
-	// 						</div>
-	// 						<div className={styles.modalButtonAndLinks}>
-	// 							<div className={styles.modals}></div>
-	// 							<div key='github' className={styles.links}>
-	// 								<Button href={project.url} className={styles.liveDemo}>
-	// 									Live Demo
-	// 								</Button>
-	// 								<Button
-	// 									href={project.repository}
-	// 									className={styles.githubLink}
-	// 								>
-	// 									<i className='fa fa-github github' aria-hidden='true'></i>
-	// 									&nbsp;GitHub
-	// 								</Button>
-	// 							</div>
-	// 						</div>
-	// 					</div>
-	// 				)
-	// 			})}
-	// 		</div>
-	// 	</section>
-	// )
 	return (
 		<AnimatePresence mode='wait'>
 			<Head>

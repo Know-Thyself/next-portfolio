@@ -13,8 +13,6 @@ const ProjectDetail = ({ project }) => {
 	let descriptionLines, lessText
 	if (project.description) {
 		descriptionLines = project.description.split(/\n/)
-		console.log(descriptionLines.join())
-		// descriptionLines.replace("''", "'");
 		lessText = descriptionLines.join(' ').slice(0, 300)
 	}
 
@@ -43,7 +41,7 @@ const ProjectDetail = ({ project }) => {
 							<div key='read-more' className={styles.description}>
 								{!showMore ? (
 									<p>
-										{lessText}
+										{lessText.replace("''", "'")}
 										<span key='span' onClick={toggleText}>
 											{!showMore ? '...read more ▼' : 'read less ▲'}
 										</span>
@@ -52,7 +50,7 @@ const ProjectDetail = ({ project }) => {
 									descriptionLines.map((line, idx) => (
 										<div key={idx} className={styles.description}>
 											<p>
-												{line}
+												{line.replace("''", "'")}
 												{idx === descriptionLines.length - 1 && (
 													<span key='span' onClick={toggleText}>
 														&nbsp;{!showMore ? '...read more ▼' : 'read less ▲'}
