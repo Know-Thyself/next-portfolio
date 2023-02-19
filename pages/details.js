@@ -50,6 +50,9 @@ const ProjectDetail = ({ project }) => {
 								<div key='read-more' className={styles.description}>
 									{!showMore ? (
 										<p>
+											<b style={{ fontWeight: 'bold' }}>
+												{project.title}&nbsp;
+											</b>
 											{lessText.replace("''", "'")}
 											<span key='span' onClick={toggleText}>
 												{!showMore ? '...read more ▼' : 'read less ▲'}
@@ -59,10 +62,13 @@ const ProjectDetail = ({ project }) => {
 										descriptionLines.map((line, idx) => (
 											<div key={idx} className={styles.description}>
 												<p>
+													<b style={{ fontWeight: 'bold' }}>
+														{project.title}&nbsp;
+													</b>
 													{line.replace("''", "'")}
 													{idx === descriptionLines.length - 1 && (
 														<span key='span' onClick={toggleText}>
-															&nbsp;
+															{/* &nbsp; */}
 															{!showMore ? '...read more ▼' : 'read less ▲'}
 														</span>
 													)}

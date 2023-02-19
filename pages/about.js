@@ -111,7 +111,7 @@ const About = () => {
 				</section>
 				<section className={styles['skills-section']}>
 					<div>
-						<h1>Technology Stacks and Skill Sets</h1>
+						<h1>Technology Stacks & Skill Sets</h1>
 						<p>
 							Here&apos;re some images of the Technology Stacks I use
 							proficiently to build frontend, backend and full stack web
@@ -153,8 +153,8 @@ const About = () => {
 								// style={{ width: '200px', height: 'auto' }}
 							/>
 							<Image
-								src='/images/bootstrap.jpg'
-								alt='Bootstrap'
+								src='/images/material-ui.png'
+								alt='Material UI'
 								className={styles.logo}
 								// layout='intrinsic'
 								// layout='fill'
@@ -164,8 +164,8 @@ const About = () => {
 								// style={{ width: '200px', height: 'auto' }}
 							/>
 							<Image
-								src='/images/material-ui.png'
-								alt='Material UI'
+								src='/images/bootstrap.jpg'
+								alt='Bootstrap'
 								className={styles.logo}
 								// layout='intrinsic'
 								// layout='fill'
