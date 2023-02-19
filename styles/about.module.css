@@ -146,7 +146,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border-bottom: 4px solid var(--switch-button-bg);
+	border-bottom: 2px solid var(--switch-button-bg);
 }
 
 .skill-card h6 {
@@ -154,7 +154,7 @@
 	font-size: 0.65rem;
 	background-color: black;
 	background-color: var(--primary-background);
-	border-bottom: 4px solid var(--switch-button-bg);
+	border-bottom: 2px solid var(--switch-button-bg);
 	margin: auto 1rem;
 	/* height: fit-content; */
 	/* margin-top: 8px; */
@@ -170,7 +170,7 @@
 .logo {
 	width: 80px;
 	height: 40px;
-	border-bottom: 4px solid var(--switch-button-bg);
+	border-bottom: 2px solid var(--switch-button-bg);
 }
 .logo:last-child {
 	border-bottom: none;
