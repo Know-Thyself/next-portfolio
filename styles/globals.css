@@ -62,8 +62,13 @@ font-family: 'Source Sans Pro', sans-serif;
 	--about-link-bg: #546D5F;
 	--about-link-bg: #6A8A78;
 	--about-link-bg: #85a292;
+	--about-link-bg: #8A6A78;
+	--about-link-bg: #6D545F;
 	--contact-link-bg: #738678;
 	--contact-link-bg: #8A6A78;
+	
+	--contact-link-bg: #546D5F;
+	--contact-link-bg: #3E5046;
 
 	/* --contact-link-bg: #999e8c; */
 	--active-nav-link: #F2F3F5;
@@ -172,7 +177,10 @@ font-family: 'Source Sans Pro', sans-serif;
 	/* black coffee */
 	--about-link-bg: #3b2f2f;
 	--about-link-bg: #28332d;
+	--about-link-bg: #33282d;
 	--contact-link-bg: #33282d;
+	--contact-link-bg: #28332d;
+	/* --contact-link-bg: #3E5046; */
 	--menu-box-bg: #58111A;
 	--primary-background: #1e1e24;
 	--primary-background: #1b1b20;
@@ -204,10 +212,12 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-color: #F4F8FB;
 	--secondary-font-family: 'Lato',
 		sans-serif;
-	--secondary-font-family: 'Alegreya',
-		serif;
+	/* --secondary-font-family: 'Alegreya',
+		serif; */
 	/* --secondary-font-family: 'Merriweather',
 		serif; */
+	--secondary-font-family: 'Poppins',
+		sans-serif;
 	--primary-text-color: #9C9C9C;
 	--primary-text-color: #9C9C9C;
 	--primary-text-color: #D7D7DF;

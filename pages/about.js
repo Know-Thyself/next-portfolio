@@ -120,7 +120,7 @@ const About = () => {
 					</div>
 					<div className={styles['tech-stacks']}>
 						<div className={styles['skill-card']}>
-							<h2>Frontend Technologies</h2>
+							<h6>Frontend Technologies</h6>
 							<Image
 								src='/images/html-css.png'
 								alt='HTML5 and CSS3 responsive design'
@@ -176,7 +176,7 @@ const About = () => {
 							/>
 						</div>
 						<div className={styles['skill-card']}>
-							<h2>Collaboration and Design Tools</h2>
+							<h6>Collaboration & Design Tools</h6>
 							<Image
 								src='/images/git.png'
 								alt='Git and GitHub'
@@ -228,7 +228,7 @@ const About = () => {
 							/>
 						</div>
 						<div className={styles['skill-card']}>
-							<h2>Backend and Full Stack Technologies</h2>
+							<h6>Backend & Full-Stack Technologies</h6>
 							<Image
 								src='/images/node.png'
 								alt='Node.js logo'

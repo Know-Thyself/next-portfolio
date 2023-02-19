@@ -1,7 +1,9 @@
 import Head from 'next/head'
-import { useState } from 'react'
+import { useState, ReactElement } from 'react'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -32,75 +34,84 @@ const ProjectDetail = ({ project }) => {
 				<title>Project Details</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			{descriptionLines && (
-				<div className={styles['project-wrapper']}>
-					<h4 className={styles['project-title']}>{project.title}</h4>
-					<img src={`/images/${project.image}`} alt='' />
-					<div className={styles['read-more-read-less-wrapper']}>
-						{descriptionLines.join(' ').length >= lessText.length ? (
-							<div key='read-more' className={styles.description}>
-								{!showMore ? (
-									<p>
-										{lessText.replace("''", "'")}
-										<span key='span' onClick={toggleText}>
-											{!showMore ? '...read more ▼' : 'read less ▲'}
-										</span>
-									</p>
-								) : (
-									descriptionLines.map((line, idx) => (
-										<div key={idx} className={styles.description}>
-											<p>
-												{line.replace("''", "'")}
-												{idx === descriptionLines.length - 1 && (
-													<span key='span' onClick={toggleText}>
-														&nbsp;{!showMore ? '...read more ▼' : 'read less ▲'}
-													</span>
-												)}
-											</p>
-										</div>
-									))
-								)}
-							</div>
-						) : (
-							descriptionLines.map((line, idx) => (
-								<div key={project.title}>
-									<p className={styles.description}>{line}</p>
-								</div>
-							))
-						)}
-					</div>
-					<div className={styles['project-links-wrapper']}>
-						<motion.a
-							href={project.repository}
-							target='_blank'
-							rel='noreferrer'
-							className={styles['github-link']}
-							whileHover={{
-								scale: 1.1,
-							}}
-							whileTap={{ scale: 0.9 }}
-						>
-							<FontAwesomeIcon
-								icon={faGithub}
-								className={styles['fa-github']}
-							/>
-							&nbsp; GitHub
-						</motion.a>
-						<motion.a
-							href={project.url}
-							target='_blank'
-							rel='noreferrer'
-							className={styles['live-demo-link']}
-							whileHover={{
-								scale: 1.1,
-							}}
-							whileTap={{ scale: 0.9 }}
-						>
-							Live Demo
-						</motion.a>
-					</div>
+			<div className={styles.container}>
+				<div>
+					<Link href='/projects' className={styles['back-btn']}>
+						<FontAwesomeIcon className={styles['fa-left']} icon={faArrowLeft} />
+						Back To Projects
+					</Link>
 				</div>
-			)}
+				{descriptionLines && (
+					<div className={styles['project-wrapper']}>
+						<h4 className={styles['project-title']}>{project.title}</h4>
+						<img src={`/images/${project.image}`} alt='' />
+						<div className={styles['read-more-read-less-wrapper']}>
+							{descriptionLines.join(' ').length >= lessText.length ? (
+								<div key='read-more' className={styles.description}>
+									{!showMore ? (
+										<p>
+											{lessText.replace("''", "'")}
+											<span key='span' onClick={toggleText}>
+												{!showMore ? '...read more ▼' : 'read less ▲'}
+											</span>
+										</p>
+									) : (
+										descriptionLines.map((line, idx) => (
+											<div key={idx} className={styles.description}>
+												<p>
+													{line.replace("''", "'")}
+													{idx === descriptionLines.length - 1 && (
+														<span key='span' onClick={toggleText}>
+															&nbsp;
+															{!showMore ? '...read more ▼' : 'read less ▲'}
+														</span>
+													)}
+												</p>
+											</div>
+										))
+									)}
+								</div>
+							) : (
+								descriptionLines.map((line, idx) => (
+									<div key={project.title}>
+										<p className={styles.description}>{line}</p>
+									</div>
+								))
+							)}
+						</div>
+						<div className={styles['project-links-wrapper']}>
+							<motion.a
+								href={project.repository}
+								target='_blank'
+								rel='noreferrer'
+								className={styles['github-link']}
+								whileHover={{
+									scale: 1.1,
+								}}
+								whileTap={{ scale: 0.9 }}
+							>
+								<FontAwesomeIcon
+									icon={faGithub}
+									className={styles['fa-github']}
+								/>
+								&nbsp; GitHub
+							</motion.a>
+							<motion.a
+								href={project.url}
+								target='_blank'
+								rel='noreferrer'
+								className={styles['live-demo-link']}
+								whileHover={{
+									scale: 1.1,
+								}}
+								whileTap={{ scale: 0.9 }}
+							>
+								Live Demo
+							</motion.a>
+						</div>
+					</div>
+				)}
+			</div>
 		</motion.main>
 	)
 }
