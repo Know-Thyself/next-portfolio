@@ -47,9 +47,9 @@ const ProjectDetail = ({ project }) => {
 						<img src={`/images/${project.image}`} alt='' />
 						<div className={styles['read-more-read-less-wrapper']}>
 							{descriptionLines.join(' ').length >= lessText.length ? (
-								<div key='read-more' className={styles.description}>
+								<div key='read-more'>
 									{!showMore ? (
-										<p>
+										<p className={styles.description}>
 											<b style={{ fontWeight: 'bold' }}>
 												{project.title}&nbsp;
 											</b>
@@ -60,8 +60,8 @@ const ProjectDetail = ({ project }) => {
 										</p>
 									) : (
 										descriptionLines.map((line, idx) => (
-											<div key={idx} className={styles.description}>
-												<p>
+											<div key={idx}>
+												<p className={styles.description}>
 													<b style={{ fontWeight: 'bold' }}>
 														{project.title}&nbsp;
 													</b>

@@ -131,9 +131,7 @@
 .send {
 	background-color: var(--complementary-bg);
 	background-color: var(--buttons-bg-color);
-	background-color: var(--contact-link-bg);
 	/* background-color: var(--contact-link-bg); */
-	/* background-color: var(--buttons-bg-color); */
 	color: var(--buttons-color);
 	font-family: var(--primary-font-family);
 	font-family: var(--buttons-font-family);

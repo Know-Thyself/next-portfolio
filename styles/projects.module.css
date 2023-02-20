@@ -46,7 +46,7 @@
 	visibility: hidden;
 	width: max-content;
 	background-color: var(--primary-background);
-	background-color: var(--buttons-hover-bg);
+	/* background-color: var(--buttons-hover-bg); */
 	color: var(--primary-text-color);
 	text-align: center;
 	border-radius: 4px;

@@ -50,6 +50,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--header-background: #999e9f;
 	--header-background: #a6aaab;
 	--header-background: #b2b6b7;
+	--header-background: #989D9E;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #FCFCFC;
@@ -66,12 +67,20 @@ font-family: 'Source Sans Pro', sans-serif;
 	--about-link-bg: #546D5F;
 	--about-link-bg: #6A8A78;
 	--about-link-bg: #85a292;
-	--about-link-bg: #8A6A78;
-	--about-link-bg: #4D464D;
+	
+	
 	--about-link-bg: #685E68;
-	--about-link-bg: #322e32;
+	
 	--about-link-bg: #685E68;
 	--about-link-bg: #837683;
+
+	--about-link-bg: #707070;
+	--about-link-bg: #8d7f75;
+	--about-link-bg: #625D5D;
+	--about-link-bg: #817d7d;
+
+	--about-link-bg: #555555;
+	--about-link-bg: #777777;
 	--contact-link-bg: #738678;
 	--contact-link-bg: #8A6A78;
 	
@@ -79,7 +88,6 @@ font-family: 'Source Sans Pro', sans-serif;
 	--contact-link-bg: #3E5046;
 
 	--contact-link-bg: #566A73;
-	--contact-link-bg: #2a3439;
 	--active-nav-link: #F2F3F5;
 	--active-nav-link: #DCDCDC;
 	--active-nav-link: #794047;
@@ -102,10 +110,19 @@ font-family: 'Source Sans Pro', sans-serif;
 	--primary-background: #78788F;
 	--primary-background: #bbbbc7;
 	--primary-background: #c9c9d2;
+	--primary-background: #78788F;
+	--primary-background: #a0a0b0;
+	--primary-background: #aeaebb;
+
+	--primary-background: #adadad;
 	--secondary-background: #B8BDC9;
 	--secondary-background: #7A7A7A;
 	--secondary-background: #949494;
-	/* --secondary-background: #949494; */
+	--secondary-background: #8F9B8F;
+
+	--secondary-background: #636868;
+	--secondary-background: #5b5b5b;
+	--secondary-background: #949494;
 	--project-container-bg: #676767;
 	--project-container-bg: #54546E;
 	--project-container-bg: #728989;
@@ -116,7 +133,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--project-container-hover: #4F7DA4;
 	--project-container-hover: #075aaa;
 	--project-container-hover: #afbf4c;
-	--project-container-hover: #99746d;
+	--project-container-hover: #8F838F;
 	--complementary-bg: #aaacae;
 	--complementary-bg: #6A6A8B;
 	--complementary-bg: #9696ad;
@@ -152,10 +169,18 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-text-color: black;
 
 	--about-image-bg: #cf9c26;
+	--about-image-bg: #333333;
+	--about-image-bg: #746D69;
+	--about-image-bg: #4B4E53;
+
+	--about-image-bg: #344148;
+	/* --about-image-bg: #1f2022; */
 	--menu-box-bg: #cf9c26;
 	--skill-card-bg: #cf9c26;
 	--buttons-bg-color: #14813a;
 	--buttons-hover-bg: #116f32;
+	--buttons-bg-color: #343a96;
+		--buttons-hover-bg: #2e3485;
 	--buttons-color: #FAFAFA;
 	/* --buttons-color: #0D0D0D;
 	--buttons-color: black; */
@@ -163,12 +188,15 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-border: #676767;
 	--radio-btn-border: #3d3d3d;
 	--radio-btn-border: #959595;
+	--radio-btn-border: #acb0b1;
 	--radio-btn-bg: #fa9f1e;
 	--radio-btn-bg: #d5e2f4;
 	--radio-btn-bg: #767697;
 	--radio-btn-bg: #5E5E7C;
 	--radio-btn-bg: #767697;
 	--radio-btn-bg: #767697;
+	--radio-btn-bg: #626280;
+	--radio-btn-bg: #7B7B9A;
 	--switch-button-bg: #1F2022;
 	--switch-button-bg: #008ecc;
 	--switch-button-bg: #1db954;
@@ -232,7 +260,6 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
 	--buttons-font-weight: 100;
 	--buttons-bg-color: #343a96;
-	--buttons-hover-bg: #2e3485;
 	--buttons-hover-bg: #2e3485;
 	--buttons-color: #ffffff;
 	--buttons-color: #CCCCCC;
