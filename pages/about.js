@@ -71,14 +71,18 @@ const About = () => {
 					<div className={styles['about-text-wrapper']}>
 						<h1>About Me</h1>
 						<p>
-							I am a father of two children who are currently studying Computer
-							Science and IT at a university.
+							I am from theological studies background and I had been a
+							bishop/pastor of a Church for most of my adult life.
 							<br />
 							<br />
-							I started coding in 2020 when I joined the most amazing coding
-							bootcamp, CodeYourFuture! Joining CodeYourFuture has literally
-							transformed my life in many ways and is the best thing ever
-							happened to me in a very long time. <br />
+							I embarked on an adventurous journey of becoming a computer
+							programmer in 2020 when I joined the most amazing coding bootcamp,
+							CodeYourFuture! Joining CodeYourFuture has literally transformed
+							my life in many ways and is the best thing ever happened to me in
+							a very long time.
+							<br />
+							<br />I am also a father of two children who are currently
+							studying Computer Science and IT at a university. <br />
 							<br />
 							I&apos;m currently volunteering as a Teaching Assistant and
 							Technical Mentor at CodeYourFuture to give back to my wonderful

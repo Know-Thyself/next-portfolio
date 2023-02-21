@@ -118,6 +118,9 @@
   color: var(--buttons-hover-bg);
   color: var(--home-link-bg);
   color: firebrick;
+  color: var(--switch-button-bg);
+  color: var(--menu-box-bg);
+  color: var(--read-more);
   cursor: pointer;
 }
 

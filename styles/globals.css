@@ -230,6 +230,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--about-image-bg: #4B4E53;
 
 	--about-image-bg: #344148;
+	--about-image-bg: #57575e;
+	--about-image-bg: url('/images/background-destination-desktop.jpg');
 	/* --about-image-bg: #1f2022; */
 	--menu-box-bg: #cf9c26;
 	--menu-box-bg: #6167b8;
@@ -265,6 +267,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--switch-button-bg: #008ecc;
 	--switch-button-bg: #1db954;
 	--switch-button-bg: #ee5622;
+	--read-more: #8e3314;
 }
 
 /* 
@@ -317,6 +320,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--menu-box-bg: #a63c17;
 	--menu-box-bg: #58111A;
 	--menu-box-bg: #1b364a;
+	/* --read-more:  */
 	/* --menu-box-bg: #8e3314; */
 	--primary-background: #1e1e24;
 	--primary-background: #1b1b20;
@@ -437,4 +441,5 @@ font-family: 'Source Sans Pro', sans-serif;
 	--switch-button-bg: #ee5622;
 	--switch-button-bg: #3a9bdc;
 	--switch-button-bg: #5cb6f9;
+	--read-more: #3a9bdc;
 }

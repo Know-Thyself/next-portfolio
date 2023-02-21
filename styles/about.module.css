@@ -324,7 +324,7 @@
 @media screen and (min-width: 1348px) {
 	.about-section {
 		flex-direction: row;
-		width: 60%;
+		width: 70%;
 		padding: 4rem 20% 6rem 20%;
 		padding: 2rem 0% 4rem 0%;
 		padding: 2rem 5% 4rem 5%;
@@ -343,7 +343,7 @@
 	}
 
 	.about-img {
-		width: 240px;
+		width: 340px;
 	}
 
 	.logo {
