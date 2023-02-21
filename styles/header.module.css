@@ -102,7 +102,7 @@
   padding: 0;
   background-color: var(--buttons-bg-color);
   background: var(--menu-box-bg);
-  box-shadow: 2px 2px 6px var(--nav-links-color);
+  /* box-shadow: 2px 2px 6px var(--nav-links-color); */
   transition-duration: 0.25s;
   text-align: center;
 }
@@ -134,6 +134,7 @@
   color: var(--active-nav-link);
   color: var(--active-nav-link-text);
   background-color: var(--complementary-bg);
+  background-color: var(--projects-link-bg);
 }
 
 @media screen and (min-width: 724px) {
