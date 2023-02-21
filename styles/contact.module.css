@@ -9,6 +9,7 @@
 	padding-top: 64px;
 	/* padding-top: 7rem; */
 	padding-bottom: 48px;
+	padding-bottom: 18rem;
 	background: var(--about-image-bg);
 	background: var(--home-link-bg);
 	background: var(--secondary-background);
@@ -172,9 +173,10 @@
 	}
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 929px) {
 	.main {
 		min-height: 100%;
+		padding-bottom: 7rem;
 	}
 
 	.wrapper,

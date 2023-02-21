@@ -36,7 +36,7 @@ const Header = () => {
 		<header className={styles.header}>
 			<Image
 				className={styles.logo}
-				src='/images/next-logo.png'
+				src='/images/temp-logo.png'
 				alt='logo'
 				width={70}
 				height={70}

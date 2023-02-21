@@ -6,6 +6,7 @@
 	color: var(--secondary-text-color);
 	padding-top: 64px;
 	padding-bottom: 48px;
+	padding-bottom: 16rem;
 	min-height: 100vh;
 	letter-spacing: 0.65px;
 }
@@ -268,6 +269,12 @@
 
 	.skill-card h6 {
 		font-size: 0.85rem;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.main {
+		padding-bottom: 7rem;
 	}
 }
 

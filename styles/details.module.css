@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  padding: 5rem 0;
+  padding: 5rem 0 18rem 0;
 }
 
 .container {
@@ -168,6 +168,11 @@
   .live-demo-link,
   .github-link {
     font-weight: 400;
+  }
+}
+@media screen and (min-width: 1124px) {
+  .main-container {
+    padding-bottom: 10rem;
   }
 }
 

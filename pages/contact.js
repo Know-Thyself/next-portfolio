@@ -160,7 +160,7 @@ const Contact = () => {
 				<section className={styles.intro}>
 					<h1>I would love to hear from you!</h1>
 					<p className={styles.subtext}>
-						If you are an employer or recruiter looking for a developer and think I could be a good candidate for the vacant role you have, or if you run a charity organisation and would like me to build a website for your organisation which I am happy to do for free or
+						If you are an employer or recruiter looking for a developer or if you run a charity organisation and would like me to build a website for your organisation which I am happy to do for free or
 						just to get to know me better, please get in touch using your
 						preferred means of communication from the options provided below.
 					</p>

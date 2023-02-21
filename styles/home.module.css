@@ -14,7 +14,7 @@
 
 .hero {
   padding-top: 64px;
-  padding-bottom: 20rem;
+  padding-bottom: 25rem;
   width: 100%;
 }
 
@@ -124,7 +124,7 @@
   }
 }
 
-@media screen and (min-width: 924px) {
+@media screen and (min-width: 929px) {
   .home {
     background: var(--home-background);
     text-align: left;
@@ -132,7 +132,7 @@
 
   .hero {
     min-height: max-content;
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
   }
 
   .hero-text-container {

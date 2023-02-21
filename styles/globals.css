@@ -316,6 +316,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--menu-box-bg: #be441b;
 	--menu-box-bg: #a63c17;
 	--menu-box-bg: #58111A;
+	--menu-box-bg: #1b364a;
 	/* --menu-box-bg: #8e3314; */
 	--primary-background: #1e1e24;
 	--primary-background: #1b1b20;
@@ -434,4 +435,6 @@ font-family: 'Source Sans Pro', sans-serif;
 	--switch-button-bg: #473c3a;
 	--switch-button-bg: #483c32;
 	--switch-button-bg: #ee5622;
+	--switch-button-bg: #3a9bdc;
+	--switch-button-bg: #5cb6f9;
 }
