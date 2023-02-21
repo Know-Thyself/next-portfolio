@@ -7,6 +7,7 @@
 	left: 0;
 	bottom: 0;
 	padding-top: 64px;
+	/* padding-top: 7rem; */
 	padding-bottom: 48px;
 	background: var(--about-image-bg);
 	background: var(--home-link-bg);
@@ -25,7 +26,7 @@
 }
 
 .intro h1 {
-	font-family: var(--primary-font-family);
+	font-family: var(--secondary-font-family);
 	font-size: 1.5rem;
 	letter-spacing: 0.25px;
 	margin: 0 auto 0.5rem auto;
@@ -179,7 +180,7 @@
 	.wrapper,
 	.intro {
 		width: 80%;
-		margin: 1rem auto;
+		margin: auto;
 	}
 
 	.intro {
@@ -194,11 +195,13 @@
 	.wrapper {
 		margin-top: 0;
 		/* margin-bottom: 0; */
+		/* margin-bottom: 2rem; */
 	}
 
 	.intro p {
 		padding: 0 2.5rem;
 	}
+
 
 }
 
@@ -210,9 +213,9 @@
 		width: 80%;
 	}
 
-	.wrapper {
+	/* .wrapper {
     gap: 1rem;
-  }
+  } */
 	.intro h1 {
 		font-size: 2.5rem;
 	}

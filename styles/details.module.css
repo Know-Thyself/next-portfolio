@@ -20,13 +20,14 @@
 }
 
 .back-btn {
-  background-color: var(--projects-link-bg);
-  color: var(--nav-links-color);
+  background-color: var(--buttons-hover-bg);
+    color: var(--buttons-color);
+  /* color: var(--nav-links-color); */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   /* font-size: 1.25rem; */
   border-radius: 4px;
 }
@@ -41,7 +42,6 @@
   background-color: var(--header-background);
   background-color: var(--project-container-hover);
   background-color: var(--projects-link-bg);
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,14 +54,15 @@
 
 .project-title {
   font-family: var(--primary-font-family);
+  font-size: 1.25rem;
   color: var(--primary-text-color);
-  color: var(--nav-links-color);
+  color: var(--secondary-text-color);
+  /* color: var(--nav-links-color); */
 }
 
 .project-wrapper img {
   width: 90%;
   margin: auto;
-  cursor: default;
 }
 
 .read-more-read-less-wrapper {
@@ -79,7 +80,7 @@
 
 .description {
   font-family: var(--primary-font-family);
-  font-family: var(--secondary-font-family);
+  /* font-family: var(--secondary-font-family); */
   color: var(--secondary-text-color);
   width: 90%;
   margin: 1rem auto;
@@ -110,6 +111,7 @@
   color: var(--buttons-hover-bg);
   color: var(--home-link-bg);
   color: firebrick;
+  cursor: pointer;
 }
 
 .project-links-wrapper {

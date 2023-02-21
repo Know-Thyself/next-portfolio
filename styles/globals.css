@@ -30,13 +30,17 @@ a {
 	-webkit-font-smoothing: grayscale;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Lato:wght@300;400;700&family=Merriweather:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Noto+Serif+Georgian:wght@300;400&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Courgette&family=Lato:wght@300;400;700&family=Libre+Baskerville&family=Merriweather:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Noto+Serif+Georgian:wght@300;400&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 
 
 /* 
 font-family: 'Alegreya',
 serif;
+font-family: 'Courgette',
+cursive;
 font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville',
+serif;
 font-family: 'Merriweather',
 serif;
 font-family: 'Poppins', sans-serif;
@@ -51,26 +55,32 @@ font-family: 'Source Sans Pro', sans-serif;
 	--header-background: #a6aaab;
 	--header-background: #b2b6b7;
 	--header-background: #989D9E;
+	--header-background: #b6babb;
+	--header-background: #acb0b1;
+	--header-background: #acb0b1;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #FCFCFC;
+	--nav-links-color: black;
+	--nav-links-color: orange;
 	--home-link-bg: #336482;
 	--home-link-bg: #1E7D79;
 	--projects-link-bg: #676767;
 	--projects-link-bg: #54546E;
+	--projects-link-bg: #6A6A8B;
 	/* --projects-link-bg: #282834; */
 	/* --projects-link-bg: #54546E;
 	--projects-link-bg: #8787a2;
 	--projects-link-bg: #6A6A8B; */
-	
+
 	--about-link-bg: #3E5046;
 	--about-link-bg: #546D5F;
 	--about-link-bg: #6A8A78;
 	--about-link-bg: #85a292;
-	
-	
+
+
 	--about-link-bg: #685E68;
-	
+
 	--about-link-bg: #685E68;
 	--about-link-bg: #837683;
 
@@ -81,9 +91,12 @@ font-family: 'Source Sans Pro', sans-serif;
 
 	--about-link-bg: #555555;
 	--about-link-bg: #777777;
+
+	--about-link-bg: #808080;
+	--about-link-bg: #818181;
 	--contact-link-bg: #738678;
 	--contact-link-bg: #8A6A78;
-	
+
 	--contact-link-bg: #546D5F;
 	--contact-link-bg: #3E5046;
 
@@ -115,6 +128,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--primary-background: #aeaebb;
 
 	--primary-background: #adadad;
+	--primary-background: #c5c5c5;
 	--secondary-background: #B8BDC9;
 	--secondary-background: #7A7A7A;
 	--secondary-background: #949494;
@@ -123,17 +137,22 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-background: #636868;
 	--secondary-background: #5b5b5b;
 	--secondary-background: #949494;
+	--secondary-background: #b4b4b4;
 	--project-container-bg: #676767;
 	--project-container-bg: #54546E;
 	--project-container-bg: #728989;
 	--project-container-bg: #5A525A;
 	--project-container-bg: #756A75;
 
+	--project-container-bg: #aaaaaa;
+	/* --project-container-bg: #999999; */
+
 	/* --project-container-bg: #013ca6; */
 	--project-container-hover: #4F7DA4;
 	--project-container-hover: #075aaa;
 	--project-container-hover: #afbf4c;
 	--project-container-hover: #8F838F;
+	--project-container-hover: #999999;
 	--complementary-bg: #aaacae;
 	--complementary-bg: #6A6A8B;
 	--complementary-bg: #9696ad;
@@ -180,7 +199,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #14813a;
 	--buttons-hover-bg: #116f32;
 	--buttons-bg-color: #343a96;
-		--buttons-hover-bg: #2e3485;
+	--buttons-hover-bg: #2e3485;
 	--buttons-color: #FAFAFA;
 	/* --buttons-color: #0D0D0D;
 	--buttons-color: black; */
@@ -189,6 +208,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-border: #3d3d3d;
 	--radio-btn-border: #959595;
 	--radio-btn-border: #acb0b1;
+	--radio-btn-border: #c4c7c8;
 	--radio-btn-bg: #fa9f1e;
 	--radio-btn-bg: #d5e2f4;
 	--radio-btn-bg: #767697;
@@ -217,6 +237,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--header-background: #2e312b;
 	--header-background: #2f383b;
 	--header-background: #353839;
+
+	--header-background: #4E5253;
 	--home-link-bg: #145451;
 	--projects-link-bg: #282834;
 	/* --projects-link-bg: #3f3a3f; */
@@ -227,6 +249,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--about-link-bg: #33282d;
 	/* --about-link-bg: #3f3a3f; */
 	--about-link-bg: #322e32;
+
+	--about-link-bg: #333333;
 	--contact-link-bg: #33282d;
 	--contact-link-bg: #28332d;
 	--contact-link-bg: #2d383a;
@@ -243,6 +267,15 @@ font-family: 'Source Sans Pro', sans-serif;
 	--project-container-bg: #3b3c36;
 	--project-container-bg: #3c4036;
 	--project-container-bg: #3f3a3f;
+
+	--project-container-bg: #594d5b;
+	--project-container-bg: #564c4d;
+
+	--project-container-bg: #59515e;
+	--project-container-bg: #655967;
+	--project-container-bg: #625D5D;
+
+	--project-container-bg: #555555;
 	--project-container-hover: #4b5144;
 	--project-container-hover: #5b545b;
 	--project-container-hover: #656165;
@@ -266,12 +299,16 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-color: #F4F8FB;
 	--secondary-font-family: 'Lato',
 		sans-serif;
-	/* --secondary-font-family: 'Alegreya',
-		serif; */
 	/* --secondary-font-family: 'Merriweather',
 		serif; */
 	--secondary-font-family: 'Poppins',
 		sans-serif;
+	/* --secondary-font-family: 'Courgette',
+		cursive; */
+	/* --secondary-font-family: 'Libre Baskerville',
+		serif;
+	--secondary-font-family: 'Alegreya',
+		serif; */
 	--primary-text-color: #9C9C9C;
 	--primary-text-color: #9C9C9C;
 	--primary-text-color: #D7D7DF;
@@ -281,9 +318,10 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-text-color: #ABABAB;
 	--secondary-text-color: #B8B8B8;
 	--secondary-text-color: #BAC9C8;
-	
+
 	--secondary-text-color: #B1C3C2;
 	--secondary-text-color: #A2B9B8;
+	--secondary-text-color: #C4C4C4;
 	--active-nav-link: #333366;
 	--active-nav-link: #333366;
 	--nav-links-color: #CCCCCC;
@@ -302,6 +340,9 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-border: #2d2823;
 	--radio-btn-border: #2d2d2d;
 	--radio-btn-border: #474747;
+	--radio-btn-border: #949797;
+	--radio-btn-border: #838586;
+	--radio-btn-border: #717475;
 	/* --radio-btn-border: #1c1c25; */
 	/* --radio-btn-border: #2c2a2b; */
 	--radio-btn-bg: #ee5622;

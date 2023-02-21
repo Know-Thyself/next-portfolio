@@ -12,16 +12,51 @@ import styles from '../styles/details.module.css'
 
 const ProjectDetail = ({ project }) => {
 	const [showMore, setShowMore] = useState(false)
-	let descriptionLines, lessText
+	let descriptionLines, lessText, url
 	if (project.description) {
-		descriptionLines = project.description.split(/\n/)
-		lessText = descriptionLines.join(' ').slice(0, 300)
+		let urlified = urlFinder(project.description)
+		// if(urlified) {
+		// 	console.log(urlified[0])
+		// 	url = urlified[0]
+		// }
+			descriptionLines = urlified.split(/\n/)
+			lessText = descriptionLines.join(' ').slice(0, 300)
 	}
-
+  console.log(descriptionLines)
 	const toggleText = () => {
 		setShowMore(!showMore)
 	}
+	function urlFinder(text) {
+		let urlRegex = /(https?:\/\/[^\s]+)/g
+		// return text.replace(urlRegex, function (url) {
+		// 	return '<Link href="' + url + '">' + url + '</Link>'
+		// })
+		// or alternatively
+		return text.replace(urlRegex, '<Link href="$1">$1</Link>')
+	}
+	function replaceURLs(message) {
+		if (!message) return
 
+		var urlRegex = /(((https?:\/\/)|(www\.))[^\s]+)/g
+		return message.replace(urlRegex, function (url) {
+			var hyperlink = url
+			if (!hyperlink.match('^https?://')) {
+				hyperlink = 'http://' + hyperlink
+			}
+			return (
+				'<a href="' +
+				hyperlink +
+				'" target="_blank" rel="noopener noreferrer">' +
+				url +
+				'</a>'
+			)
+		})
+	}
+
+	function detectURLs(message) {
+		var urlRegex = /(((https?:\/\/)|(www\.))[^\s]+)/g
+		return message.match(urlRegex)
+	}
 	return (
 		<motion.main
 			className={styles['main-container']}
@@ -54,6 +89,17 @@ const ProjectDetail = ({ project }) => {
 												{project.title}&nbsp;
 											</b>
 											{lessText.replace("''", "'")}
+											{/* {lessText.replace(
+												`${url}`,
+												`<Link
+													href={url}
+													target='_blank'
+													rel='noopener noreferrer'
+													dangerouslySetInnerHTML={{ __html: url }}
+												>
+													<a>{url}</a>
+												</Link>`
+											)} */}
 											<span key='span' onClick={toggleText}>
 												{!showMore ? '...read more ▼' : 'read less ▲'}
 											</span>
@@ -62,9 +108,11 @@ const ProjectDetail = ({ project }) => {
 										descriptionLines.map((line, idx) => (
 											<div key={idx}>
 												<p className={styles.description}>
-													<b style={{ fontWeight: 'bold' }}>
-														{project.title}&nbsp;
-													</b>
+													{idx === 0 && (
+														<b style={{ fontWeight: 'bold' }}>
+															{project.title}&nbsp;
+														</b>
+													)}
 													{line.replace("''", "'")}
 													{idx === descriptionLines.length - 1 && (
 														<span key='span' onClick={toggleText}>
