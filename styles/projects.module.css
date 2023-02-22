@@ -225,7 +225,7 @@
 @media screen and (min-width: 1548px) {
 	.projects-wrapper {
 		grid-template-columns: repeat(4, 1fr);
-		width: 94%;
+		width: 90%;
 		padding: 3% 0;
 	}
 }

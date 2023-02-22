@@ -107,6 +107,7 @@ const About = () => {
 									scale: 1.1,
 								}}
 								whileTap={{ scale: 0.9 }}
+								onClick={() => alert('Apologies! Resume download is currently unavailable.')}
 							>
 								Resume Download
 							</motion.button>
