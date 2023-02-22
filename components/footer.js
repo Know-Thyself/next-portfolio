@@ -22,10 +22,29 @@ const Footer = () => {
 				exit={{ y: -10, opacity: 0 }}
 				transition={{ duration: 0.2 }}
 			>
-				<p>
-					<FontAwesomeIcon icon={faCopyright} className={styles.copyright} /> Biruk Kebede 2023
-				</p>
-				<aside className={styles['contact-info']}>
+				<div className={styles.anchors}>
+					<p>
+						<FontAwesomeIcon icon={faCopyright} className={styles.copyright} />{' '}
+						Biruk Kebede 2023
+					</p>
+					<a
+						href='https://github.com/Know-Thyself'
+						target='_blank'
+						rel='noreferrer'
+						className={styles.link}
+					>
+						<FontAwesomeIcon icon={faGithub} className={styles['fa-brand']} />
+					</a>
+					<a
+						href='https://www.linkedin.com/in/biruk-kebede-8b44b7209/'
+						target='_blank'
+						rel='noreferrer'
+						className={styles.link}
+					>
+						<FontAwesomeIcon icon={faLinkedin} className={styles['fa-brand']} />
+					</a>
+				</div>
+				<section className={styles['contact-info']}>
 					{/* <h3>Contact Info</h3> */}
 					<p>
 						<FontAwesomeIcon
@@ -41,28 +60,7 @@ const Footer = () => {
 						<FontAwesomeIcon icon={faMapLocationDot} /> &nbsp; 63 Sandy Lane,
 						CV1 4EX, West Midlands, Coventry, UK
 					</p>
-					<div className={styles.anchors}>
-						<a
-							href='https://github.com/Know-Thyself'
-							target='_blank'
-							rel='noreferrer'
-							className={styles.link}
-						>
-							<FontAwesomeIcon icon={faGithub} className={styles['fa-brand']} />
-						</a>
-						<a
-							href='https://www.linkedin.com/in/biruk-kebede-8b44b7209/'
-							target='_blank'
-							rel='noreferrer'
-							className={styles.link}
-						>
-							<FontAwesomeIcon
-								icon={faLinkedin}
-								className={styles['fa-brand']}
-							/>
-						</a>
-					</div>
-				</aside>
+				</section>
 			</motion.div>
 		</AnimatePresence>
 	)

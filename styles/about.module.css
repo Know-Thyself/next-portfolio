@@ -6,7 +6,7 @@
 	color: var(--secondary-text-color);
 	padding-top: 64px;
 	padding-bottom: 48px;
-	padding-bottom: 16rem;
+	padding-bottom: 12rem;
 	min-height: 100vh;
 	letter-spacing: 0.65px;
 }
@@ -272,9 +272,9 @@
 	}
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 929px) {
 	.main {
-		padding-bottom: 7rem;
+		padding-bottom: 6rem;
 	}
 }
 
