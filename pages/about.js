@@ -76,7 +76,7 @@ const About = () => {
 							<br />
 							<br />
 							I embarked on an adventurous journey of becoming a computer
-							programmer in 2020 when I joined the most amazing coding bootcamp,
+							programmer in 2020 when I joined the most amazing coding boot camp,
 							CodeYourFuture! Joining CodeYourFuture has literally transformed
 							my life in many ways and is the best thing ever happened to me in
 							a very long time.
