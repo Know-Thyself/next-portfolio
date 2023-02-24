@@ -9,7 +9,7 @@
 	padding-top: 64px;
 	/* padding-top: 7rem; */
 	padding-bottom: 48px;
-	padding-top: 6rem;
+	padding-top: 5rem;
 	padding-bottom: 14rem;
 	background: var(--about-image-bg);
 	background: var(--home-link-bg);
@@ -178,7 +178,7 @@
 	.main {
 		min-height: 100%;
 		padding-bottom: 7rem;
-		padding-bottom: 8rem;
+		/* padding-bottom: 8rem; */
 	}
 
 	.wrapper,
