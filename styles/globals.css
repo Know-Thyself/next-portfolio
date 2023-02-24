@@ -441,5 +441,13 @@ font-family: 'Source Sans Pro', sans-serif;
 	--switch-button-bg: #ee5622;
 	--switch-button-bg: #3a9bdc;
 	--switch-button-bg: #5cb6f9;
+	--switch-button-bg: #7fb4c9;
+	--switch-button-bg: #99c3d4;
+	/* --switch-button-bg: #6ca0dc;
+	--switch-button-bg: #6495ed;
+	--switch-button-bg: #7cb9e8;
+	--switch-button-bg: #93ccea;
+	--switch-button-bg: #a5a8b6;
+	--switch-button-bg: #9b98b7; */
 	--read-more: #3a9bdc;
 }
