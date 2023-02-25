@@ -65,17 +65,17 @@ font-family: 'Source Sans Pro', sans-serif;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #FCFCFC;
-	--nav-links-color: black;
 	--nav-links-color: orange;
 	--nav-links-color: #ffffff;
 	--nav-links-color: #121212;
+	--nav-links-color: black;
 	--home-link-bg: #336482;
 	--home-link-bg: #1E7D79;
 	--home-link-bg: #A5CBC9;
 	--home-link-bg: #8EBEBC;
 	--projects-link-bg: #676767;
 	--projects-link-bg: #54546E;
-	--projects-link-bg: #6A6A8B;
+	
 	--projects-link-bg: #ababae;
 	--projects-link-bg: #818186;
 	--projects-link-bg: #96969a;
@@ -91,7 +91,15 @@ font-family: 'Source Sans Pro', sans-serif;
 
 	--projects-link-bg: #8c92ac;
 	--projects-link-bg: #9a9acf;
-	/* --projects-link-bg: #928788; */
+	--projects-link-bg: #98b3ce;
+
+	--projects-link-bg: #BCC2C2;
+	--projects-link-bg: #C4C3D0;
+	--projects-link-bg: #BEC3C6;
+	--projects-link-bg: #B1B9B9;
+
+	--projects-link-bg: #A4A4B9;
+	--projects-link-bg: #B1B1C3;
 	/* --projects-link-bg: #54546E;
 	--projects-link-bg: #8787a2;
 	--projects-link-bg: #6A6A8B; */
@@ -153,13 +161,24 @@ font-family: 'Source Sans Pro', sans-serif;
 	--contact-link-bg: #969B9C;
 	--contact-link-bg: #969C92;
 	--contact-link-bg: #95978A;
-	/* --contact-link-bg: #5E716A; */
+
+	--contact-link-bg: #B2CE98;
+	--contact-link-bg: #98CE99;
+	--contact-link-bg: #7E8D87;
+	--contact-link-bg: #8E9B96;
+
+	/* --contact-link-bg: #B5BDA5; */
+
 	--active-nav-link: #F2F3F5;
 	--active-nav-link: #DCDCDC;
 	--active-nav-link: #794047;
 	--active-nav-link: #444488;
 	--active-nav-link: #5555AA;
 	--active-nav-link: #FF8733;
+	--active-nav-link: #92A1CF;
+	--active-nav-link: #DCDCDC;
+	--active-nav-link: #E5E4E2;
+	--active-nav-link: #E8E9EB;
 	/* --active-nav-link: #ff6a00; */
 	--active-nav-link-text: black;
 	/* --active-nav-link-text: #F7F7F7; */
@@ -243,6 +262,8 @@ font-family: 'Source Sans Pro', sans-serif;
 
 	--project-container-bg: #b7a9ab;
 
+	/* --project-container-bg: #CEB498; */
+
 	/* --project-container-bg: #e5c8aa; */
 	/* --project-container-bg: #ab9a9d; */
 	/* --project-container-bg: #9f8c8f; */
@@ -280,7 +301,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 	--complementary-bg: #88ace0;
 	--complementary-bg: #d7e087;
-	--complementary-bg: #e09087;
+	
 	--complementary-bg: #e0bb87;
 	--complementary-bg: #e6be8a;
 	--complementary-bg: #87ade0;
@@ -312,11 +333,23 @@ font-family: 'Source Sans Pro', sans-serif;
 	--complementary-bg: #acace6;
 
 	--complementary-bg: #9A9ACF;
-	/* --complementary-bg: #d85a00; */
+	--complementary-bg: #98b3ce;
 
-	/* --complementary-bg: #707287; */
+	--complementary-bg: #BCC2C2;
+	--complementary-bg: #d85a00;
 
-	/* --complementary-bg: #818186; */
+	--complementary-bg: #707287;
+
+	--complementary-bg: #BEC3C6;
+	--complementary-bg: #a5adad;
+	--complementary-bg: #A8A9AD;
+
+	--complementary-bg: #CAD4D1;
+	--complementary-bg: #7E7D9C;
+	--complementary-bg: #9797AF;
+	--complementary-bg: #A4A4B9;
+	--complementary-bg: #B1B1C3;
+	/* --complementary-bg: #B1B9B9; */
 	/* --complementary-bg: #6c6c72; */
 	/* --complementary-bg: #ababae; */
 
@@ -383,6 +416,9 @@ font-family: 'Source Sans Pro', sans-serif;
 
 	--menu-box-bg: #0BDA51;
 	--menu-box-bg: #A2A2D0;
+
+	--menu-box-bg: #8EA9C2;
+	/* --menu-box-bg: #9EB4C0; */
 	/* --menu-box-bg: #EC8430; */
 		/* --menu-box-bg: #20245c; */
 	--skill-card-bg: #cf9c26;
@@ -421,6 +457,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-bg: #8989b8;
 
 	--radio-btn-bg: #808080;
+	--radio-btn-bg: #CEB498;
+	--radio-btn-bg: #5B6B7B;
 	/* --radio-btn-bg: #b4b4b5; */
 
 	/* --radio-btn-bg: #9E91AF; */
