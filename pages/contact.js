@@ -160,9 +160,11 @@ const Contact = () => {
 				<section className={styles.intro}>
 					<h1>I would love to hear from you!</h1>
 					<p className={styles.subtext}>
-						If you are an employer or recruiter looking for a developer or if you run a charity organisation and would like me to build a website for your organisation which I am happy to do for free or
-						just to get to know me better, please get in touch using your
-						preferred means of communication from the options provided below.
+						If you are an employer or recruiter looking for a developer or if
+						you run a charity organisation and would like me to build a website
+						for your organisation which I am happy to do for free or just to get
+						to know me better, please get in touch using your preferred means of
+						communication from the options provided below.
 					</p>
 				</section>
 				<div className={styles.wrapper}>
@@ -308,7 +310,7 @@ const Contact = () => {
 										'& .MuiInputBase-root': {
 											color: 'var(--primary-text-color)',
 											borderBottom: '1px solid var(--primary-text-color)',
-											backgroundColor: 'var(--complementary-bg)',
+											backgroundColor: 'var(--about-link-bg)',
 										},
 									}}
 								/>

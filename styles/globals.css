@@ -100,6 +100,11 @@ font-family: 'Source Sans Pro', sans-serif;
 
 	--projects-link-bg: #A4A4B9;
 	--projects-link-bg: #B1B1C3;
+
+	--projects-link-bg: #8EA9C2;
+	--projects-link-bg: #8BA0B4;
+	/* --projects-link-bg: #A4BACE; */
+
 	/* --projects-link-bg: #54546E;
 	--projects-link-bg: #8787a2;
 	--projects-link-bg: #6A6A8B; */
@@ -166,6 +171,11 @@ font-family: 'Source Sans Pro', sans-serif;
 	--contact-link-bg: #98CE99;
 	--contact-link-bg: #7E8D87;
 	--contact-link-bg: #8E9B96;
+
+	--contact-link-bg: #545851;
+	--contact-link-bg: #788787;
+	--contact-link-bg: #738678;
+	--contact-link-bg: #8F9E93;
 
 	/* --contact-link-bg: #B5BDA5; */
 
@@ -261,6 +271,9 @@ font-family: 'Source Sans Pro', sans-serif;
 	--project-container-bg: #887074;
 
 	--project-container-bg: #b7a9ab;
+	--project-container-bg: #A49899;
+	/* --project-container-bg: #C1A88E; */
+	/* --project-container-bg: #C18E8E; */
 
 	/* --project-container-bg: #CEB498; */
 
@@ -349,11 +362,14 @@ font-family: 'Source Sans Pro', sans-serif;
 	--complementary-bg: #9797AF;
 	--complementary-bg: #A4A4B9;
 	--complementary-bg: #B1B1C3;
-	/* --complementary-bg: #B1B9B9; */
+	--complementary-bg: #B1B9B9;
 	/* --complementary-bg: #6c6c72; */
 	/* --complementary-bg: #ababae; */
 
-	/* --complementary-bg: #82c45b; */
+	--complementary-bg: #82c45b;
+	--complementary-bg: #8EA9C2;
+	--complementary-bg: #8BA0B4;
+	/* --complementary-bg: #A4BACE; */
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
@@ -456,9 +472,11 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-bg: #7878a1;
 	--radio-btn-bg: #8989b8;
 
-	--radio-btn-bg: #808080;
+	
 	--radio-btn-bg: #CEB498;
 	--radio-btn-bg: #5B6B7B;
+	--radio-btn-bg: #808080;
+	--radio-btn-bg: #676767;
 	/* --radio-btn-bg: #b4b4b5; */
 
 	/* --radio-btn-bg: #9E91AF; */
