@@ -135,6 +135,8 @@
   color: var(--active-nav-link-text);
   background-color: var(--complementary-bg);
   background-color: var(--projects-link-bg);
+  background-color: var(--radio-btn-bg);
+  background-color: var(--project-container-hover);
 }
 
 @media screen and (min-width: 724px) {

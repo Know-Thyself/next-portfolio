@@ -361,6 +361,29 @@ font-family: 'Source Sans Pro', sans-serif;
 	--menu-box-bg: #3a41a7;
 	--menu-box-bg: #282d74;
 	--menu-box-bg: #58111A;
+	--menu-box-bg: #F99245;
+	--menu-box-bg: #FF6D3A;
+	--menu-box-bg: #FF3A6B;
+	--menu-box-bg: #FF5A36;
+	--menu-box-bg: #FF756D;
+
+	--menu-box-bg: #FA8072;
+	--menu-box-bg: #FA6E79;
+	--menu-box-bg: #FE6F5E;
+	--menu-box-bg: #E97451;
+
+	--menu-box-bg: #F37042;
+	--menu-box-bg: #FF6E4A;
+	--menu-box-bg: #DD7861;
+	--menu-box-bg: #E57B67;
+	--menu-box-bg: #D9766C;
+	--menu-box-bg: #DD877E;
+	--menu-box-bg: #F9717A;
+	--menu-box-bg: #66B032;
+
+	--menu-box-bg: #0BDA51;
+	--menu-box-bg: #A2A2D0;
+	/* --menu-box-bg: #EC8430; */
 		/* --menu-box-bg: #20245c; */
 	--skill-card-bg: #cf9c26;
 	--buttons-bg-color: #14813a;
@@ -398,6 +421,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-bg: #8989b8;
 
 	--radio-btn-bg: #808080;
+	/* --radio-btn-bg: #b4b4b5; */
 
 	/* --radio-btn-bg: #9E91AF; */
 	/* --radio-btn-bg: #bfbfc0; */
@@ -405,7 +429,17 @@ font-family: 'Source Sans Pro', sans-serif;
 	--switch-button-bg: #1F2022;
 	--switch-button-bg: #008ecc;
 	--switch-button-bg: #1db954;
+	--switch-button-bg: #00A86B;
+	--switch-button-bg: #03C03C;
+	--switch-button-bg: #32CD32;
+
+	--switch-button-bg: #0BDA51;
+
+	--switch-button-bg: #139B42;
+	--switch-button-bg: #00AB66;
 	--switch-button-bg: #ee5622;
+	/* --switch-button-bg: #F9717A;
+	--switch-button-bg: #FC6C85; */
 	--read-more: #8e3314;
 }
 
