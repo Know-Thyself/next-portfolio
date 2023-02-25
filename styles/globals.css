@@ -103,6 +103,8 @@ font-family: 'Source Sans Pro', sans-serif;
 
 	--projects-link-bg: #8EA9C2;
 	--projects-link-bg: #8BA0B4;
+
+	--projects-link-bg: #99959B;
 	/* --projects-link-bg: #A4BACE; */
 
 	/* --projects-link-bg: #54546E;
@@ -272,6 +274,10 @@ font-family: 'Source Sans Pro', sans-serif;
 
 	--project-container-bg: #b7a9ab;
 	--project-container-bg: #A49899;
+
+	--project-container-bg: #B3B3B3;
+	--project-container-bg: #A3A3A3;
+	--project-container-bg: #B6B5AB;
 	/* --project-container-bg: #C1A88E; */
 	/* --project-container-bg: #C18E8E; */
 
@@ -298,6 +304,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--project-container-hover: #887074;
 	--project-container-hover: #a49899;
 	--project-container-hover: #928788;
+
+	--project-container-hover: #919088;
 	--complementary-bg: #aaacae;
 	--complementary-bg: #6A6A8B;
 	--complementary-bg: #9696ad;
@@ -369,6 +377,9 @@ font-family: 'Source Sans Pro', sans-serif;
 	--complementary-bg: #82c45b;
 	--complementary-bg: #8EA9C2;
 	--complementary-bg: #8BA0B4;
+
+	--complementary-bg: #99959B;
+	/* --complementary-bg: #857F87; */
 	/* --complementary-bg: #A4BACE; */
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
@@ -520,6 +531,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--projects-link-bg: #282834;
 	--projects-link-bg: #353839;
 	--projects-link-bg: #2d2d36;
+
+	--projects-link-bg: #342B38;
 	/* --projects-link-bg: #3f3a3f; */
 	/* --projects-link-bg: #1c1c25; */
 	/* black coffee */
@@ -570,6 +583,34 @@ font-family: 'Source Sans Pro', sans-serif;
 	--project-container-bg: #696969;
 	--project-container-bg: #61575a;
 
+	--project-container-bg: #3f4f42;
+	--project-container-bg: #2B382D;
+	--project-container-bg: #35382B;
+	--project-container-bg: #5E5F55;
+
+	--project-container-bg: #4D5D53;
+	--project-container-bg: #676767;
+	--project-container-bg: #555555;
+	--project-container-bg: #595F55;
+	--project-container-bg: #6E736A;
+
+	--project-container-bg: #6B726C;
+
+	--project-container-bg: #696969;
+	--project-container-bg: #545454;
+	/* --project-container-bg: #494949; */
+	/* --project-container-bg: #3F3F3F; */
+
+	/* --project-container-bg: #2D383A;
+	--project-container-bg: #414A4C; */
+
+	--project-container-bg: #3A4244;
+	--project-container-bg: #676767;
+
+	/* --project-container-bg: #5E5F55;
+	--project-container-bg: #555F56;
+	--project-container-bg: #6A736B; */
+
 	/* --project-container-bg: #3f3a3f; */
 
 	/* --project-container-bg: #594d5b; */
@@ -584,6 +625,10 @@ font-family: 'Source Sans Pro', sans-serif;
 	--project-container-hover: #5b545b;
 	--project-container-hover: #656165;
 	--project-container-hover: #574e51;
+
+	--project-container-hover: #545454;
+	--project-container-hover: #525255;
+	/* --project-container-hover: #484848; */
 	--complementary-bg: #2a2a33;
 	--complementary-bg: #282834;
 	--complementary-bg: #2b2b38;
@@ -594,6 +639,11 @@ font-family: 'Source Sans Pro', sans-serif;
 	--complementary-bg: #4b4b4f;
 
 	--complementary-bg: #2d2d36;
+	--complementary-bg: #2b373f;
+	--complementary-bg: #50404d;
+	--complementary-bg: #382c35;
+	--complementary-bg: #342B38;
+	/* --complementary-bg: #3d325d; */
 	--home-background: url('/images/home-background.jpg');
 	--home-background: url('/images/background-home-desktop.jpg');
 	--home-bg-mobile: url('/images/home-bg-mobile.jpg');
