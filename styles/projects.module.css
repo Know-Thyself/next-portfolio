@@ -152,6 +152,8 @@
 .fa-github {
 	font-size: 0.85rem;
 	color: var(--primary-text-color);
+	box-shadow: inset 0 0 0 0 var(--buttons-hover-bg);
+		transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
 }
 
 @media screen and (max-width: 300px) {
