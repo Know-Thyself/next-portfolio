@@ -56,8 +56,9 @@ const About = () => {
 				key='about'
 			>
 				<section className={styles['about-section']}>
+					<div className={styles['about-img-wrapper-container']}></div>
 					<div className={styles['about-img-wrapper']}>
-						<img
+						{/* <img
 							src='/images/about.png'
 							alt='Biruk'
 							className={`${styles['about-img']}`}
@@ -66,6 +67,19 @@ const About = () => {
 							// objectFit='contain'
 							// width={200}
 							// style={{ width: '200px', height: 'auto' }}
+						/> */}
+						<Image
+							src='/images/about.png'
+							alt='Picture of the author'
+							className={`${styles['about-img']}`}
+							width={240}
+							height={340}
+							// layout='intrinsic'
+							// layout='fill'
+							objectFit='contain'
+							sizes='(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw'
 						/>
 					</div>
 					<div className={styles['about-text-wrapper']}>
@@ -76,10 +90,10 @@ const About = () => {
 							<br />
 							<br />
 							I embarked on an adventurous journey of becoming a computer
-							programmer in 2020 when I joined the most amazing coding boot camp,
-							CodeYourFuture! Joining CodeYourFuture has literally transformed
-							my life in many ways and is the best thing ever happened to me in
-							a very long time.
+							programmer in 2020 when I joined the most amazing coding boot
+							camp, CodeYourFuture! Joining CodeYourFuture has literally
+							transformed my life in many ways and is the best thing ever
+							happened to me in a very long time.
 							<br />
 							<br />I am also a father of two children who are currently
 							studying Computer Science and IT at a university. <br />
@@ -107,7 +121,9 @@ const About = () => {
 									scale: 1.1,
 								}}
 								whileTap={{ scale: 0.9 }}
-								onClick={() => alert('Apologies! Resume download is currently unavailable.')}
+								onClick={() =>
+									alert('Apologies! Resume download is currently unavailable.')
+								}
 							>
 								Resume Download
 							</motion.button>
