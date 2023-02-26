@@ -15,7 +15,7 @@
 	background: var(--home-link-bg);
 	background: var(--secondary-background);
 	background-color: var(--primary-background);
-	color: var(--primary-text-color);
+	color: var(--secondary-text-color);
 	display: flex;
 	flex-direction: column;
 
@@ -52,6 +52,7 @@
 
 .contact-info {
 	background-color: var(--about-link-bg);
+	background-color: var(--about-section-bg);
 	/* background-color: var(--complementary-bg); */
 	display: flex;
 	flex-direction: column;
@@ -111,17 +112,18 @@
 }
 
 .textField input {
-	color: var(--primary-text-color);
+	color: var(--secondary-text-color);
 	border-bottom: 1px solid var(--primary-text-color);
 	background-color: var(--buttons-hover-bg);
 	background-color: var(--complementary-bg);
 	background-color: var(--about-link-bg);
+	background-color: var(--about-section-bg);
 	/* background-color: var(--about-link-bg); */
 	font-family: var(--primary-font-family);
 }
 
 .textField label {
-	color: var(--primary-text-color);
+	color: var(--secondary-text-color);
 	font-family: var(--primary-font-family);
 }
 
@@ -129,6 +131,7 @@
 	background-color: var(--buttons-hover-bg);
 	background-color: var(--complementary-bg);
 	background-color: var(--about-link-bg);
+	background-color: var(--about-section-bg);
 	/* background-color: var(--contact-link-bg); */
 }
 
