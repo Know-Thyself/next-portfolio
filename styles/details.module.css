@@ -2,9 +2,6 @@
   width: 100%;
   background: var(--secondary-background);
   background: var(--primary-background);
-  /* background: var(--projects-link-bg); */
-  /* background: var(--radio-btn-bg); */
-  /* background: var(--project-container-bg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,12 +37,7 @@
   height: fit-content;
   /* margin-top: 0; */
   margin: auto;
-  background-color: var(--project-container-bg);
-  /* background-color: var(--complementary-bg); */
-  background-color: var(--header-background);
-  background-color: var(--project-container-hover);
-  background-color: var(--projects-link-bg);
-  /* background-color: var(--complementary-bg); */
+  background-color: var(--complementary-bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,11 +53,7 @@
   font-size: 1.25rem;
   color: var(--primary-text-color);
   color: var(--secondary-text-color);
-  background-color: var(--radio-btn-border);
-  background-color: var(--secondary-background);
-  /* background-color: var(--project-container-hover);
-  background-color: var(--complementary-bg); */
-  /* color: var(--nav-links-color); */
+  background-color: var(--primary-background);
   width: 90%;
   /* height: 80%; */
   margin: 1rem auto;
@@ -82,9 +70,6 @@
 
 .read-more-read-less-wrapper {
   background-color: var(--primary-background);
-  background-color: var(--secondary-background);
-  /* background-color: var(--project-container-hover);
-  background-color: var(--complementary-bg); */
   /* padding: 0 1rem; */
   width: 90%;
   margin-top: 1rem;

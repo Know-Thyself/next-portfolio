@@ -141,6 +141,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--about-section-bg: #333333;
 	--contact-link-bg: #2a3439;
 	--contact-link-bg: #2d383a;
+	/* --contact-link-bg: #2b3038; */
 	--contact-section-bg: #2d383a;
 	--menu-box-bg: #58111A;
 	--menu-box-bg: #1b364a;
@@ -195,6 +196,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--nav-links-font-weight: 300;
 	--active-nav-link-font-weight: 400;
 	--radio-btn-border: #717475;
+	--radio-btn-border: #8B8D8E;
 	--radio-btn-bg: #242427;
 	--switch-button-bg: #5cb6f9;
 	--read-more: #3a9bdc;
