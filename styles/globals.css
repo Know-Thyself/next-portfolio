@@ -49,12 +49,13 @@ font-family: 'Source Sans Pro', sans-serif;
 
 :root {
 	--header-background: #B5B7B7;
+	--header-background: #A2A4A4;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #ffffff;
 	--home-link-bg: #1E7D79;
 	--projects-link-bg: #4F4155;
-	--projects-link-bg: #6A5772;
+	/* --projects-link-bg: #6A5772; */
 	--about-link-bg: #6C7256;
 	--about-link-bg: #4D4D4D;
 	--about-section-bg: #858585;
@@ -67,14 +68,23 @@ font-family: 'Source Sans Pro', sans-serif;
 	--home-background: url('/images/home-background.jpg');
 	--home-background: url('/images/background-home-desktop.jpg');
 	--home-bg-mobile: url('/images/home-bg-mobile.jpg');
-	/* platinum */
-	--primary-background: #E5E4E2;
-	--primary-background: #e4e4e9;
-	--secondary-background: #cdcdcd;
-	--project-container-bg: #888888;
+	--primary-background: #C5C6D0;
+	--primary-background: #BDBABB;
+	--primary-background: #CBC9C9;
+	/* --primary-background: #AAAFAA;
+	--primary-background: #abb0ac; */
+/* similar to Reflection */
+	/* --primary-background: #D4D7D4; */
+	/* GREEN TRANCE */
+	/* --primary-background: #DBE4DC; */
+	--secondary-background: #D7D7D7;
 	--project-container-hover: #6E6E6E;
-	--complementary-bg: #4F4155;
 	--complementary-bg: #6A5772;
+	--complementary-bg: #4F4155;
+	--project-container-bg: #888888;
+	--project-container-bg: #8A8F6D;
+	--project-container-hover: #525255;
+	--project-container-hover: #6E7257;
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
@@ -137,8 +147,11 @@ font-family: 'Source Sans Pro', sans-serif;
 	--primary-background: #1e1e24;
 	--secondary-background: #070707;
 	--project-container-bg: #676767;
+	--project-container-bg: #6E7257;
 	--project-container-hover: #525255;
+	--project-container-hover: #585B45;
 	--complementary-bg: #342B38;
+	/* --complementary-bg: #382B36; */
 	--home-background: url('/images/home-background.jpg');
 	--home-background: url('/images/background-home-desktop.jpg');
 	--home-bg-mobile: url('/images/home-bg-mobile.jpg');
