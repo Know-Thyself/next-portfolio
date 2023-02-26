@@ -32,8 +32,9 @@
 	font-size: 1.5rem;
 	letter-spacing: 0.25px;
 	margin: 0 auto 0.5rem auto;
-	
+	text-align: left;
 }
+
 .subtext {
 	text-align: left;
 	font-family: var(--secondary-font-family);
@@ -171,6 +172,10 @@
 @media screen and (min-width: 714px) {
 	.wrapper {
 		flex-direction: row-reverse;
+	}
+
+	.intro h1 {
+		text-align: center;
 	}
 
 	.contact-info p {
