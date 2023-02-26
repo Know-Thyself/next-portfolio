@@ -75,7 +75,7 @@ const About = () => {
 							height={340}
 							// layout='intrinsic'
 							// layout='fill'
-							objectFit='contain'
+							// objectFit='contain'
 							sizes='(max-width: 724px) 100vw,
               (max-width: 1200px) 50vw,
               33vw'

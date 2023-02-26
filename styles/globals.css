@@ -133,18 +133,48 @@ font-family: 'Source Sans Pro', sans-serif;
 [data-theme='dark'] {
 	--header-background: #626364;
 	--home-link-bg: #145451;
+	--home-link-bg: #4D5198;
+	--home-link-bg: #545AA7;
+	--home-link-bg: #434887;
+	--home-link-bg: #36396C;
 	--projects-link-bg: #2d2d36;
 	--projects-link-bg: #342B38;
+	--projects-link-bg: #473A4C;
+	--projects-link-bg: #3F3444;
+	--projects-link-bg: #443341;
 	/* black coffee */
 	--about-link-bg: #3b2f2f;
 	--about-link-bg: #333333;
+	/* --about-link-bg: #3B2F2F; */
+	/* --about-link-bg: #333F44;
+	--about-link-bg: #2a3439;
+	--about-link-bg: #283335; */
 	--about-section-bg: #333333;
+	/* --about-section-bg: #6B3538; */
+	/* --about-section-bg: #3B2F2F; */
+
+	/* --about-section-bg: #333F44;
+	--about-section-bg: #283236; */
+	/* --about-section-bg: #66342E; */
+	/* --about-section-bg: #2D4566; */
 	--contact-link-bg: #2a3439;
 	--contact-link-bg: #2d383a;
+	--contact-link-bg: #035A57;
+	--contact-link-bg: #8E4941;
+	--contact-link-bg: #66342E;
+	--contact-link-bg: #264348;
+	
 	/* --contact-link-bg: #2b3038; */
 	--contact-section-bg: #2d383a;
+	--contact-section-bg: #035A57;
+	--contact-section-bg: #8E4941;
+	--contact-section-bg: #7F413A;
+	--contact-section-bg: #723A34;
+	--contact-section-bg: #66342E;
+	--contact-section-bg: #264348;
 	--menu-box-bg: #58111A;
 	--menu-box-bg: #1b364a;
+	--menu-box-bg: #36396C;
 	--primary-background: #1e1e24;
 	--secondary-background: #070707;
 	--project-container-bg: #676767;
@@ -190,6 +220,18 @@ font-family: 'Source Sans Pro', sans-serif;
 	--secondary-text-color: #C4C4C4;
 	--active-nav-link: #333366;
 	--active-nav-link: #333366;
+	--active-nav-link: #D2601A;
+	--active-nav-link: #4D5198;
+	--active-nav-link: #097770;
+	--active-nav-link: #1B6535;
+	--active-nav-link: #B85042;
+	--active-nav-link: #8E4941;
+	--active-nav-link: #035A57;
+	--active-nav-link: #283E5B;
+	--active-nav-link: #283E5B;
+
+	--active-nav-link: #36396C;
+	--active-nav-link: #6B3538;
 	--nav-links-color: #D1D1D1;
 	--active-nav-link-text: #D1D1D1;
 	--helper-text-color: #808094;
@@ -198,6 +240,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-border: #717475;
 	--radio-btn-border: #8B8D8E;
 	--radio-btn-bg: #242427;
+	--radio-btn-bg: #1F2022;
+	--radio-btn-bg: #2A2A2D;
 	--switch-button-bg: #5cb6f9;
 	--read-more: #3a9bdc;
 }
