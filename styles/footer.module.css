@@ -6,7 +6,7 @@
   height: 12rem;
   background-color: var(--header-background);
   /* background-color: var(--complementary-bg); */
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
   display: flex;
   flex-direction: column;
   justify-content: center;

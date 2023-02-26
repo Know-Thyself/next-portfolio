@@ -193,7 +193,7 @@
 		background-color: var(--about-link-bg);
 		background-color: var(--buttons-hover-bg);
 		background-color: var(--project-container-hover);
-		background: var(--contact-link-bg);
+		background: var(--contact-section-bg);
 		/* margin-bottom: 0; */
 	}
 
