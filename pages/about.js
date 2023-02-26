@@ -56,7 +56,6 @@ const About = () => {
 				key='about'
 			>
 				<section className={styles['about-section']}>
-					<div className={styles['about-img-wrapper-container']}></div>
 					<div className={styles['about-img-wrapper']}>
 						{/* <img
 							src='/images/about.png'
@@ -77,7 +76,7 @@ const About = () => {
 							// layout='intrinsic'
 							// layout='fill'
 							objectFit='contain'
-							sizes='(max-width: 768px) 100vw,
+							sizes='(max-width: 724px) 100vw,
               (max-width: 1200px) 50vw,
               33vw'
 						/>
