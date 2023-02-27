@@ -54,14 +54,21 @@ font-family: 'Source Sans Pro', sans-serif;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #ffffff;
 	--home-link-bg: #1E7D79;
+	--home-link-bg: #444488;
 	--projects-link-bg: #4F4155;
 	/* --projects-link-bg: #6A5772; */
 	--about-link-bg: #6C7256;
 	--about-link-bg: #4D4D4D;
+	--about-link-bg: #4A5159;
 	--about-section-bg: #858585;
+	--about-section-bg: #798390;
 	--contact-link-bg: #435457;
+	--contact-link-bg: #3B5273;
 	--contact-section-bg: #8F9E93;
+	--contact-section-bg: #4C6A95;
+	--contact-section-bg: #6483b0;
 	--active-nav-link: #4c516d;
+	--active-nav-link: #356A6A;
 	/* --active-nav-link: #ff6a00; */
 	--active-nav-link-text: #FFFFF0;
 	--active-nav-link-text: #FAF9F6;
@@ -73,7 +80,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--primary-background: #CBC9C9;
 	/* --primary-background: #AAAFAA;
 	--primary-background: #abb0ac; */
-/* similar to Reflection */
+	/* similar to Reflection */
 	/* --primary-background: #D4D7D4; */
 	/* GREEN TRANCE */
 	/* --primary-background: #DBE4DC; */
@@ -118,6 +125,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--menu-box-bg: #0BDA51;
 	--menu-box-bg: #8EA9C2;
 	--menu-box-bg: #4c516d;
+	--menu-box-bg: #66342E;
 	--skill-card-bg: #cf9c26;
 	--buttons-bg-color: #14813a;
 	--buttons-hover-bg: #116f32;
@@ -125,57 +133,32 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-hover-bg: #2e3485;
 	--buttons-color: #FAFAFA;
 	--radio-btn-border: #e5e7e7;
+	--radio-btn-border: #cecfcf;
 	--radio-btn-bg: #676767;
+	--radio-btn-bg: #545b64;
 	--switch-button-bg: #ee5622;
 	--read-more: #8e3314;
 }
 
 [data-theme='dark'] {
 	--header-background: #626364;
-	--home-link-bg: #145451;
-	--home-link-bg: #4D5198;
-	--home-link-bg: #545AA7;
-	--home-link-bg: #434887;
-	--home-link-bg: #36396C;
-	--projects-link-bg: #2d2d36;
+	--header-background: #58595a;
+	--home-link-bg: #3d325d;
+	--home-link-bg: #333366;
 	--projects-link-bg: #342B38;
-	--projects-link-bg: #473A4C;
 	--projects-link-bg: #3F3444;
-	--projects-link-bg: #443341;
 	/* black coffee */
 	--about-link-bg: #3b2f2f;
 	--about-link-bg: #333333;
-	/* --about-link-bg: #3B2F2F; */
-	/* --about-link-bg: #333F44;
-	--about-link-bg: #2a3439;
-	--about-link-bg: #283335; */
-	--about-section-bg: #333333;
-	/* --about-section-bg: #6B3538; */
-	/* --about-section-bg: #3B2F2F; */
+	--about-link-bg: #33383d;
+	--about-section-bg: #33383d;
 
-	/* --about-section-bg: #333F44;
-	--about-section-bg: #283236; */
-	/* --about-section-bg: #66342E; */
-	/* --about-section-bg: #2D4566; */
-	--contact-link-bg: #2a3439;
-	--contact-link-bg: #2d383a;
-	--contact-link-bg: #035A57;
-	--contact-link-bg: #8E4941;
-	--contact-link-bg: #66342E;
-	--contact-link-bg: #264348;
-	
-	/* --contact-link-bg: #2b3038; */
-	--contact-section-bg: #2d383a;
-	--contact-section-bg: #035A57;
-	--contact-section-bg: #8E4941;
-	--contact-section-bg: #7F413A;
-	--contact-section-bg: #723A34;
-	--contact-section-bg: #66342E;
-	--contact-section-bg: #264348;
+	--contact-link-bg: #2a3a51;
+	--contact-section-bg: #2f415b;
+	--contact-section-bg: #2a3a51;
 	--menu-box-bg: #58111A;
-	--menu-box-bg: #1b364a;
-	--menu-box-bg: #36396C;
-	--menu-box-bg: #66342E;
+	/* --menu-box-bg: #36396C; */
+	/* --menu-box-bg: #66342E; */
 	--primary-background: #1e1e24;
 	--secondary-background: #070707;
 	--project-container-bg: #676767;
@@ -196,6 +179,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
 	--buttons-font-weight: 100;
 	--buttons-bg-color: #343a96;
+	--buttons-bg-color: #1d2951;
 	--buttons-hover-bg: #2e3485;
 	--buttons-color: #ffffff;
 	--buttons-color: #CCCCCC;
@@ -219,20 +203,10 @@ font-family: 'Source Sans Pro', sans-serif;
 	/* --primary-text-color: white; */
 	--secondary-font-weight: 100;
 	--secondary-text-color: #C4C4C4;
-	--active-nav-link: #333366;
-	--active-nav-link: #333366;
-	--active-nav-link: #D2601A;
-	--active-nav-link: #4D5198;
-	--active-nav-link: #097770;
-	--active-nav-link: #1B6535;
-	--active-nav-link: #B85042;
-	--active-nav-link: #8E4941;
-	--active-nav-link: #035A57;
 	--active-nav-link: #283E5B;
-	--active-nav-link: #283E5B;
-
 	--active-nav-link: #36396C;
-	--active-nav-link: #6B3538;
+	--active-nav-link: #3d325d;
+	--active-nav-link: #244848;
 	--nav-links-color: #D1D1D1;
 	--active-nav-link-text: #D1D1D1;
 	--helper-text-color: #808094;
@@ -244,10 +218,6 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-bg: #1F2022;
 	--radio-btn-bg: #2A2A2D;
 	--switch-button-bg: #5cb6f9;
-	/* --switch-button-bg: #5C67F9;
-	--switch-button-bg: #B6F95C; */
-	/* --switch-button-bg: #F95CB6;
-	--switch-button-bg: #67F95C; */
-	/* --switch-button-bg: #6B3538; */
+	/* --switch-button-bg: #ee5622; */
 	--read-more: #3a9bdc;
 }
