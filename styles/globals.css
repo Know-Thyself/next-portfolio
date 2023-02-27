@@ -175,6 +175,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	--menu-box-bg: #58111A;
 	--menu-box-bg: #1b364a;
 	--menu-box-bg: #36396C;
+	--menu-box-bg: #66342E;
 	--primary-background: #1e1e24;
 	--secondary-background: #070707;
 	--project-container-bg: #676767;
@@ -243,5 +244,10 @@ font-family: 'Source Sans Pro', sans-serif;
 	--radio-btn-bg: #1F2022;
 	--radio-btn-bg: #2A2A2D;
 	--switch-button-bg: #5cb6f9;
+	/* --switch-button-bg: #5C67F9;
+	--switch-button-bg: #B6F95C; */
+	/* --switch-button-bg: #F95CB6;
+	--switch-button-bg: #67F95C; */
+	/* --switch-button-bg: #6B3538; */
 	--read-more: #3a9bdc;
 }
