@@ -146,6 +146,7 @@ font-family: 'Source Sans Pro', sans-serif;
 [data-theme='dark'] {
 	--header-background: #626364;
 	--header-background: #58595a;
+	--footer-background: black;
 	--home-link-bg: #3d325d;
 	--home-link-bg: #333366;
 	--projects-link-bg: #342B38;

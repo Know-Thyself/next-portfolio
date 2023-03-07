@@ -4,14 +4,14 @@
   left: 0;
   bottom: 0;
   height: 12rem;
-  background-color: var(--header-background);
-  /* background-color: var(--complementary-bg); */
-  color: var(--secondary-text-color);
+  font-family: var(--secondary-font-family);
+  background-color: var(--complementary-bg);
+  /* background-color: var(--contact-link-bg); */
+  color: var(--primary-text-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 1rem 0; */
 }
 
 .contact-info {
