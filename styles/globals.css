@@ -50,6 +50,8 @@ font-family: 'Source Sans Pro', sans-serif;
 :root {
 	--header-background: #B5B7B7;
 	--header-background: #A2A4A4;
+	--header-background: #727A6D;
+	--footer-background: #454A42;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #ffffff;
@@ -146,7 +148,10 @@ font-family: 'Source Sans Pro', sans-serif;
 [data-theme='dark'] {
 	--header-background: #626364;
 	--header-background: #58595a;
-	--footer-background: black;
+
+	--header-background: #3B444B;
+	--header-background: #595F55;
+	--footer-background: #2C2F2A;
 	--home-link-bg: #3d325d;
 	--home-link-bg: #333366;
 	--projects-link-bg: #342B38;

@@ -7,6 +7,8 @@
   font-family: var(--secondary-font-family);
   background-color: var(--complementary-bg);
   /* background-color: var(--contact-link-bg); */
+  background-color: #2C2F2A;
+  background-color: var(--footer-background);
   color: var(--primary-text-color);
   display: flex;
   flex-direction: column;
