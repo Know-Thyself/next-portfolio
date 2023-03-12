@@ -1,18 +1,14 @@
 /* header */
 .header {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   display: flex;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: var(--header-background);
-  /* -webkit-box-shadow: 0 4px 6px -6px var(--secondary-background);
-  -moz-box-shadow: 0 4px 6px -6px var(--secondary-background);
-  box-shadow: 0 4px 6px -6px var(--secondary-background); */
-
   color: var(--secondary-text-color);
   height: 64px;
   z-index: 2;
