@@ -48,54 +48,32 @@ font-family: 'Source Sans Pro', sans-serif;
  */
 
 :root {
-	--header-background: #B5B7B7;
-	--header-background: #A2A4A4;
-	--header-background: #727A6D;
-	--footer-background: #454A42;
+	--header-background: #6A7881;
+	--footer-background: #6B6C82;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #ffffff;
-	--home-link-bg: #1E7D79;
-	--home-link-bg: #444488;
-	--projects-link-bg: #4F4155;
-	/* --projects-link-bg: #6A5772; */
-	--about-link-bg: #6C7256;
-	--about-link-bg: #4D4D4D;
-	--about-link-bg: #4A5159;
-	--about-section-bg: #858585;
-	--about-section-bg: #798390;
-	--about-section-bg: #757c84;
-	--about-section-bg: #848b95;
-	--contact-link-bg: #435457;
-	--contact-link-bg: #3B5273;
-	--contact-section-bg: #8F9E93;
-	--contact-section-bg: #4C6A95;
-	--contact-section-bg: #6483b0;
+	--home-link-bg: #49529F;
+	--projects-link-bg: #4C3F4C;
+	--about-link-bg: #574646;
+	--about-section-bg: #A29DA0;
+	--about-section-bg: #989692;
+	--contact-link-bg: #435757;
+	--contact-section-bg: #597474;
 	--active-nav-link: #4c516d;
 	--active-nav-link: #356A6A;
+	--active-nav-link: #803B3C;
 	/* --active-nav-link: #ff6a00; */
 	--active-nav-link-text: #FFFFF0;
 	--active-nav-link-text: #FAF9F6;
 	--home-background: url('/images/home-background.jpg');
 	--home-background: url('/images/background-home-desktop.jpg');
 	--home-bg-mobile: url('/images/home-bg-mobile.jpg');
-	--primary-background: #C5C6D0;
-	--primary-background: #BDBABB;
-	--primary-background: #CBC9C9;
-	/* --primary-background: #AAAFAA;
-	--primary-background: #abb0ac; */
-	/* similar to Reflection */
-	/* --primary-background: #D4D7D4; */
-	/* GREEN TRANCE */
-	/* --primary-background: #DBE4DC; */
-	--secondary-background: #D7D7D7;
-	--project-container-hover: #6E6E6E;
-	--complementary-bg: #6A5772;
-	--complementary-bg: #4F4155;
-	--project-container-bg: #888888;
-	--project-container-bg: #8A8F6D;
-	--project-container-hover: #525255;
-	--project-container-hover: #6E7257;
+	--primary-background: #A8A8A8;
+	--secondary-background: #828789;
+	--complementary-bg: #4C3F4C;
+	--project-container-bg: #687064;
+	--project-container-hover: #5d645a;
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
 	--buttons-font-family: 'Poppins', sans-serif;
@@ -126,56 +104,52 @@ font-family: 'Source Sans Pro', sans-serif;
 	--about-image-bg: #344148;
 	--about-image-bg: #57575e;
 	--about-image-bg: url('/images/background-destination-desktop.jpg');
-	--menu-box-bg: #0BDA51;
-	--menu-box-bg: #8EA9C2;
-	--menu-box-bg: #4c516d;
-	--menu-box-bg: #66342E;
+	--menu-box-bg: #962715;
 	--skill-card-bg: #cf9c26;
 	--buttons-bg-color: #14813a;
 	--buttons-hover-bg: #116f32;
 	--buttons-bg-color: #343a96;
 	--buttons-hover-bg: #2e3485;
 	--buttons-color: #FAFAFA;
-	--radio-btn-border: #e5e7e7;
-	--radio-btn-border: #cecfcf;
-	--radio-btn-bg: #676767;
-	--radio-btn-bg: #545b64;
-	--radio-btn-bg: #666c74;
-	--switch-button-bg: #ee5622;
-	--read-more: #8e3314;
+	--radio-btn-border: #6A7881;
+	--radio-btn-border: #84919A;
+	--radio-btn-bg: #4C565C;
+	--switch-button-bg: #EE5622;
+	--read-more: #BD1A43;
 }
 
 [data-theme='dark'] {
 	--header-background: #626364;
 	--header-background: #58595a;
-
-	--header-background: #3B444B;
-	--header-background: #595F55;
-	--footer-background: #2C2F2A;
-	--home-link-bg: #3d325d;
-	--home-link-bg: #333366;
-	--projects-link-bg: #342B38;
-	--projects-link-bg: #3F3444;
+	--header-background: #252a2d;
+	--footer-background: #27262d;
+	--footer-background: #262c2d;
+	--home-link-bg: #2B435B;
+	--home-link-bg: #165b7e;
+	--home-link-bg: #444c95;
+	--home-link-bg: #39407c;
+	--projects-link-bg: #373238;
+	--projects-link-bg: #302830;
 	/* black coffee */
-	--about-link-bg: #3b2f2f;
-	--about-link-bg: #333333;
-	--about-link-bg: #33383d;
-	--about-section-bg: #33383d;
-
-	--contact-link-bg: #2a3a51;
-	--contact-section-bg: #2f415b;
-	--contact-section-bg: #2a3a51;
+	--about-link-bg: #3B2F2F;
+	--about-section-bg: #3B2F2F;
+	--contact-link-bg: #2D3A3A;
+	--contact-section-bg: #2D3A3A;
 	--menu-box-bg: #58111A;
-	/* --menu-box-bg: #36396C; */
-	/* --menu-box-bg: #66342E; */
+	--menu-box-bg: #962715;
+	--menu-box-bg: #444c95;
+	--menu-box-bg: #39407c;
 	--primary-background: #1e1e24;
+	--primary-background: #1f2022;
+
+	--primary-background: #1f1b1a;
+	--primary-background: #1b1b1b;
 	--secondary-background: #070707;
-	--project-container-bg: #676767;
-	--project-container-bg: #6E7257;
-	--project-container-hover: #525255;
-	--project-container-hover: #585B45;
-	--complementary-bg: #342B38;
-	/* --complementary-bg: #382B36; */
+	--secondary-background: #1F2428;
+	--secondary-background: #1B1F22;
+	--project-container-bg: #4f554c;
+	--project-container-hover: #464c44;
+	--complementary-bg: #302830;
 	--home-background: url('/images/home-background.jpg');
 	--home-background: url('/images/background-home-desktop.jpg');
 	--home-bg-mobile: url('/images/home-bg-mobile.jpg');
@@ -212,10 +186,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	/* --primary-text-color: white; */
 	--secondary-font-weight: 100;
 	--secondary-text-color: #C4C4C4;
-	--active-nav-link: #283E5B;
-	--active-nav-link: #36396C;
-	--active-nav-link: #3d325d;
-	--active-nav-link: #244848;
+	--active-nav-link: #5D2B2C;
 	--nav-links-color: #D1D1D1;
 	--active-nav-link-text: #D1D1D1;
 	--helper-text-color: #808094;
@@ -223,10 +194,9 @@ font-family: 'Source Sans Pro', sans-serif;
 	--active-nav-link-font-weight: 400;
 	--radio-btn-border: #717475;
 	--radio-btn-border: #8B8D8E;
-	--radio-btn-bg: #242427;
+	--radio-btn-border: #505457;
 	--radio-btn-bg: #1F2022;
-	--radio-btn-bg: #2A2A2D;
-	--switch-button-bg: #5cb6f9;
-	/* --switch-button-bg: #ee5622; */
+	--radio-btn-bg: #1e2224;
+	--switch-button-bg: #7280f9;
 	--read-more: #3a9bdc;
 }

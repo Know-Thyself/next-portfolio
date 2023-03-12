@@ -5,11 +5,11 @@
 	/* background-color: var(--projects-link-hover); */
 	background-color: var(--primary-background);
 	padding-top: 64px;
-	padding-bottom: 13rem;
+	padding-bottom: 12.25rem;
 	margin-bottom: 0;
 	position: relative;
 	top: 0;
-	bottom: 48px;
+	/* bottom: 48px; */
 }
 
 .projects-wrapper {
@@ -84,7 +84,12 @@
 	/* border-bottom: solid 3px var(--project-container-bg); */
 }
 
-.project-wrapper img {
+/* .project-wrapper img {
+	width: 90%;
+	height: auto;
+} */
+
+.project-img {
 	width: 90%;
 	height: auto;
 }
@@ -213,11 +218,16 @@
 
 @media screen and (min-width: 929px) {
 	.projects-main-container {
-		padding-bottom: 7rem;
+		padding-bottom: 6.5rem;
 	}
 }
 
 @media screen and (min-width: 1224px) {
+	.projects-main-container {
+			padding-top: 54px;
+			padding-bottom: 5.75rem;
+		}
+		
 	.projects-wrapper {
 		grid-template-columns: repeat(3, 1fr);
 		width: 94%;

@@ -140,7 +140,7 @@
 
 @media screen and (min-width: 929px) {
   .home {
-    background: var(--home-background) no-repeat center center fixed;
+    background: var(--home-background) no-repeat center center;
     text-align: left;
     padding-bottom: 17rem;
   }

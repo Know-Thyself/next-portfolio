@@ -22,7 +22,6 @@ const ProjectDetail = ({ project }) => {
 			descriptionLines = urlified.split(/\n/)
 			lessText = descriptionLines.join(' ').slice(0, 300)
 	}
-  console.log(descriptionLines)
 	const toggleText = () => {
 		setShowMore(!showMore)
 	}

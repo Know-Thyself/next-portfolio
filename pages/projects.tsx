@@ -78,7 +78,14 @@ const Projects = ({ projectsData, project, setProject }) => {
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<div className={styles['image-tooltip-container']}>
-									<img src={`/images/${project.image}`} alt='' />
+									<Image
+										src={`/images/${project.image}`}
+										alt={project.title}
+										className={styles['project-img']}
+										width={340}
+										height={240}
+										sizes='(min-width: 300px) 100vw'
+									/>
 									<span className={styles.tooltip}>
 										Click to view project details
 									</span>

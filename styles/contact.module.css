@@ -54,6 +54,8 @@
 .contact-info {
 	background-color: var(--about-link-bg);
 	background-color: var(--about-section-bg);
+	background-color: var(--radio-btn-bg);
+	background-color: var(--header-background);
 	/* background-color: var(--complementary-bg); */
 	display: flex;
 	flex-direction: column;
@@ -91,10 +93,13 @@
 	width: 100%;
 	margin: auto;
 	background-color: var(--complementary-bg);
-	background-color: var(--about-link-bg);
-	background-color: var(--secondary-background);
-	background-color: var(--radio-btn-bg);
+	/* background-color: var(--about-link-bg);
+	background-color: var(--secondary-background); */
+	/* background-color: var(--radio-btn-bg);
+	background-color: var(--about-section-bg); */
 	/* background-color: var(--radio-btn-border); */
+	background-color: var(--header-background);
+	background-color: var(--radio-btn-bg);
 	padding: 2rem 0;
 }
 
@@ -119,6 +124,8 @@
 	background-color: var(--complementary-bg);
 	background-color: var(--about-link-bg);
 	background-color: var(--about-section-bg);
+	background-color: var(--radio-btn-bg);
+	background-color: var(--header-background);
 	/* background-color: var(--about-link-bg); */
 	font-family: var(--primary-font-family);
 }
@@ -133,6 +140,8 @@
 	background-color: var(--complementary-bg);
 	background-color: var(--about-link-bg);
 	background-color: var(--about-section-bg);
+	background-color: var(--radio-btn-bg);
+	background-color: var(--header-background);
 	/* background-color: var(--contact-link-bg); */
 }
 

@@ -88,7 +88,6 @@ const Contact = () => {
 		}
 
 		setErrors({ ...tempErrors })
-		console.log('errors', errors)
 		return isValid
 	}
 
@@ -310,7 +309,7 @@ const Contact = () => {
 										'& .MuiInputBase-root': {
 											color: 'var(--primary-text-color)',
 											borderBottom: '1px solid var(--primary-text-color)',
-											backgroundColor: 'var(--about-section-bg)',
+											backgroundColor: 'var(--header-background)',
 										},
 									}}
 								/>
