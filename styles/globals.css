@@ -49,7 +49,9 @@ font-family: 'Source Sans Pro', sans-serif;
 
 :root {
 	--header-background: #6A7881;
-	--footer-background: #6B6C82;
+	--header-background: #7C7F81;
+	--footer-background: #7C8282;
+	--footer-background: #7C7C82;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #ffffff;
@@ -111,16 +113,14 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-bg-color: #343a96;
 	--buttons-hover-bg: #2e3485;
 	--buttons-color: #FAFAFA;
-	--radio-btn-border: #6A7881;
-	--radio-btn-border: #84919A;
-	--radio-btn-bg: #4C565C;
+	--radio-btn-border: #9CA7AE;
+	--radio-btn-border: #B6B6B4;
+	--radio-btn-bg: #565759;
 	--switch-button-bg: #EE5622;
 	--read-more: #BD1A43;
 }
 
 [data-theme='dark'] {
-	--header-background: #626364;
-	--header-background: #58595a;
 	--header-background: #252a2d;
 	--footer-background: #27262d;
 	--footer-background: #262c2d;
