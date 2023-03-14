@@ -45,7 +45,6 @@ const Footer = () => {
 					</a>
 				</div>
 				<section className={styles['contact-info']}>
-					{/* <h3>Contact Info</h3> */}
 					<p>
 						<FontAwesomeIcon
 							icon={faPhoneVolume}

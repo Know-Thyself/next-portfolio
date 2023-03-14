@@ -1,9 +1,5 @@
 .home {
   width: 100%;
-  /* background-image: var(--home-bg-mobile);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   background: var(--home-bg-mobile) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22,7 +18,6 @@
 
 .hero {
   padding-top: 64px;
-  /* padding-bottom: 29rem; */
   width: 100%;
   height: 100%;
 }
@@ -46,24 +41,14 @@
 }
 
 .subtext {
-  font-family: var(--primary-font-family);
   font-weight: var(--secondary-font-weight);
   color: var(--home-text-color);
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
-  /* white-space: 'pre-line'; */
   text-align: left;
   letter-spacing: 0.25px;
 }
-
-/* .hero-right {
-	height: inherit;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 5rem;
-} */
 
 .center-link {
   display: flex;
@@ -112,13 +97,7 @@
 }
 
 @media screen and (min-width: 667px) {
-
-  /* .home {
-    min-height: 100%;
-    height: 100%;
-  } */
   .hero-text-container {
-    /* margin-left: 4rem; */
     width: 75%;
   }
 
@@ -134,22 +113,15 @@
 
   .link .fa-github {
     font-size: 1.25rem;
-    /* color: var(--secondary-text-color); */
   }
 }
 
 @media screen and (min-width: 929px) {
   .home {
-    background: var(--home-background) no-repeat center center;
+    background: var(--home-background) no-repeat center center fixed;
     text-align: left;
     padding-bottom: 17rem;
   }
-
-  /* .hero {
-    min-height: max-content;
-    min-height: 100%;
-    padding-bottom: 12rem;
-  } */
 
   .hero-text-container {
     margin-left: 5rem;

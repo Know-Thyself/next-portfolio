@@ -1,6 +1,5 @@
 .main-container {
   width: 100%;
-  background: var(--secondary-background);
   background: var(--primary-background);
   background-position: center;
   background-repeat: no-repeat;
@@ -21,21 +20,18 @@
 
 .back-btn {
   background-color: var(--buttons-hover-bg);
-    color: var(--buttons-color);
-  /* color: var(--nav-links-color); */
+  color: var(--buttons-color);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1rem;
-  /* font-size: 1.25rem; */
   border-radius: 4px;
 }
 
 .project-wrapper {
   width: 100%;
   height: fit-content;
-  /* margin-top: 0; */
   margin: auto;
   background-color: var(--complementary-bg);
   display: flex;
@@ -51,11 +47,9 @@
 .project-title {
   font-family: var(--primary-font-family);
   font-size: 1.25rem;
-  color: var(--primary-text-color);
   color: var(--secondary-text-color);
   background-color: var(--primary-background);
   width: 90%;
-  /* height: 80%; */
   margin: 1rem auto;
   padding: 1rem 0;
   text-align: center;
@@ -70,53 +64,25 @@
 
 .read-more-read-less-wrapper {
   background-color: var(--primary-background);
-  /* padding: 0 1rem; */
   width: 90%;
   margin-top: 1rem;
   text-align: left;
   border-radius: 4px;
 }
 
-/* .read-more-read-less-wrapper div {
-  margin-top: 0;
-  padding: 2rem;
-} */
-
 .description {
   font-family: var(--primary-font-family);
-  /* font-family: var(--secondary-font-family); */
   color: var(--secondary-text-color);
   width: 90%;
   margin: 1rem auto;
-  
-  
-  /* color: var(--nav-links-color); */
-  /* font-size: 1rem; */
   font-weight: 300;
   line-height: 1.25rem;
-  
   letter-spacing: 0.5px;
   border-radius: 4px;
-  /* padding: 0 1rem; */
-  /* width: 95%;
-  margin: auto; */
-  /* margin: auto 1rem; */
-
-  /* opacity: 0.9; */
-  /* padding-left: 8px; */
 }
 
 .description span {
   display: inline-block;
-  color: var(--active-nav-link);
-  /* color: var(--switch-button-bg); */
-  color: var(--active-nav-link-text);
-  
-  color: var(--buttons-hover-bg);
-  color: var(--home-link-bg);
-  color: firebrick;
-  color: var(--switch-button-bg);
-  color: var(--menu-box-bg);
   color: var(--read-more);
   cursor: pointer;
 }
@@ -134,8 +100,6 @@
 .github-link {
   font-family: var(--buttons-font-family);
   color: var(--secondary-text-color);
-  background-color: var(--buttons-bg-color);
-  background-color: var(--switch-button-bg);
   background-color: var(--buttons-hover-bg);
   color: var(--buttons-color);
   text-decoration: none;
@@ -149,12 +113,6 @@
   font-size: 1.12rem;
   color: var(--buttons-color);
 }
-
-/* .live-demo-link {
-  text-transform: uppercase;
-} */
-
-
 
 @media screen and (min-width: 667px) {
   .container {
@@ -170,6 +128,7 @@
     font-weight: 400;
   }
 }
+
 @media screen and (min-width: 929px) {
   .main-container {
     padding-bottom: 10rem;

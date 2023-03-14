@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from '../styles/about.module.css'
 import profileImage from '../public/images/about.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faPaperPlane,
 	faPhoneVolume,
@@ -20,24 +19,16 @@ const About = () => {
 	const springVariant = {
 		start: {
 			y: -100,
-			// opacity: 0,
 		},
 		end: {
 			y: 0,
-			// opacity: 1,
 			transition: {
 				type: 'spring',
-				// bounce: 0.25,
 				stiffness: 60,
-				// damping: 10,
-				// restSpeed: 0.5,
-				// velocity: 3,
-				// restDelta: 0.5,
 			},
 		},
 		exit: {
 			y: 100,
-			// opacity: 0,
 		},
 	}
 
@@ -57,25 +48,12 @@ const About = () => {
 			>
 				<section className={styles['about-section']}>
 					<div className={styles['about-img-wrapper']}>
-						{/* <img
-							src='/images/about.png'
-							alt='Biruk'
-							className={`${styles['about-img']}`}
-							// layout='intrinsic'
-							// layout='fill'
-							// objectFit='contain'
-							// width={200}
-							// style={{ width: '200px', height: 'auto' }}
-						/> */}
 						<Image
 							src='/images/about.png'
 							alt='Picture of the author'
 							className={`${styles['about-img']}`}
 							width={240}
 							height={340}
-							// layout='intrinsic'
-							// layout='fill'
-							// objectFit='contain'
 							sizes='(max-width: 724px) 100vw,
               (max-width: 1200px) 50vw,
               33vw'
@@ -109,9 +87,7 @@ const About = () => {
 								whileTap={{ scale: 0.9 }}
 							>
 								<Link href='/contact' className={styles.contact}>
-									{/* <a className={styles.contact}> */}
 									Contact Me
-									{/* </a> */}
 								</Link>
 							</motion.div>
 
@@ -145,54 +121,36 @@ const About = () => {
 								src='/images/html-css.png'
 								alt='HTML5 and CSS3 responsive design'
 								className={styles.logo}
-								// layout='intrinsic'
-								// objectFit='contain'
 								width={300}
 								height={150}
-								// style={{ width: '200px', height: 'auto' }}
 							/>
 							<Image
 								src='/images/javascript.png'
 								alt='JavaScript logo'
 								className={styles.logo}
-								// layout='intrinsic'
-								// objectFit='contain'
 								width={300}
 								height={150}
-								// style={{ width: '200px', height: 'auto' }}
 							/>
 							<Image
 								src='/images/react.png'
 								alt='React.js'
 								className={styles.logo}
-								// layout='intrinsic'
-								// layout='fill'
-								// objectFit='contain'
 								width={300}
 								height={150}
-								// style={{ width: '200px', height: 'auto' }}
 							/>
 							<Image
 								src='/images/material-ui.png'
 								alt='Material UI'
 								className={styles.logo}
-								// layout='intrinsic'
-								// layout='fill'
-								// objectFit='contain'
 								width={300}
 								height={150}
-								// style={{ width: '200px', height: 'auto' }}
 							/>
 							<Image
 								src='/images/bootstrap.jpg'
 								alt='Bootstrap'
 								className={styles.logo}
-								// layout='intrinsic'
-								// layout='fill'
-								// objectFit='contain'
 								width={300}
 								height={150}
-								// style={{ width: '200px', height: 'auto' }}
 							/>
 						</div>
 						<div className={styles['skill-card']}>
@@ -201,30 +159,20 @@ const About = () => {
 								src='/images/git.png'
 								alt='Git and GitHub'
 								className={styles.logo}
-								// layout='intrinsic'
-								// layout='fill'
-								// objectFit='contain'
 								width={300}
 								height={150}
-								// style={{ width: '200px', height: 'auto' }}
 							/>
 							<Image
 								src='/images/figma.png'
 								alt='Figma'
 								className={styles.logo}
-								// layout='intrinsic'
-								// layout='fill'
-								// objectFit='contain'
 								width={300}
 								height={150}
-								// style={{ width: '200px', height: 'auto' }}
 							/>
 							<Image
 								src='/images/trello.png'
 								alt='Trello'
 								className={styles.logo}
-								// layout='intrinsic'
-								// objectFit='contain'
 								width={300}
 								height={150}
 							/>
@@ -232,8 +180,6 @@ const About = () => {
 								src='/images/miro.png'
 								alt='Miro logo'
 								className={styles.logo}
-								// layout='intrinsic'
-								// objectFit='contain'
 								width={300}
 								height={150}
 							/>
@@ -241,8 +187,6 @@ const About = () => {
 								src='/images/slack.jpg'
 								alt='Slack logo'
 								className={styles.logo}
-								// layout='intrinsic'
-								// objectFit='contain'
 								width={300}
 								height={150}
 							/>
@@ -253,8 +197,6 @@ const About = () => {
 								src='/images/node.png'
 								alt='Node.js logo'
 								className={styles.logo}
-								// layout='intrinsic'
-								// objectFit='contain'
 								width={300}
 								height={150}
 							/>
@@ -262,8 +204,6 @@ const About = () => {
 								src='/images/postgresql.jpg'
 								alt='PostgreSQL logo'
 								className={styles.logo}
-								// layout='intrinsic'
-								// objectFit='contain'
 								width={300}
 								height={150}
 							/>
@@ -271,8 +211,6 @@ const About = () => {
 								src='/images/express.png'
 								alt='Express.js logo'
 								className={styles.logo}
-								// layout='intrinsic'
-								// objectFit='contain'
 								width={300}
 								height={150}
 							/>
@@ -280,8 +218,6 @@ const About = () => {
 								src='/images/next.png'
 								alt='Next.js logo'
 								className={styles.logo}
-								// layout='intrinsic'
-								// objectFit='contain'
 								width={300}
 								height={150}
 							/>
@@ -289,8 +225,6 @@ const About = () => {
 								src='/images/prisma.png'
 								alt='Prisma logo'
 								className={styles.logo}
-								// layout='intrinsic'
-								// objectFit='contain'
 								width={300}
 								height={150}
 							/>

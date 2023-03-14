@@ -30,27 +30,10 @@ a {
 	-webkit-font-smoothing: grayscale;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Courgette&family=Lato:wght@300;400;700&family=Libre+Baskerville&family=Merriweather:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Noto+Serif+Georgian:wght@300;400&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
-
-
-/* 
-font-family: 'Alegreya',
-serif;
-font-family: 'Courgette',
-cursive;
-font-family: 'Lato', sans-serif;
-font-family: 'Libre Baskerville',
-serif;
-font-family: 'Merriweather',
-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 
 :root {
-	--header-background: #6A7881;
 	--header-background: #7C7F81;
-	--footer-background: #7C8282;
 	--footer-background: #7C7C82;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
@@ -58,15 +41,10 @@ font-family: 'Source Sans Pro', sans-serif;
 	--home-link-bg: #49529F;
 	--projects-link-bg: #4C3F4C;
 	--about-link-bg: #574646;
-	--about-section-bg: #A29DA0;
 	--about-section-bg: #989692;
 	--contact-link-bg: #435757;
 	--contact-section-bg: #597474;
-	--active-nav-link: #4c516d;
-	--active-nav-link: #356A6A;
 	--active-nav-link: #803B3C;
-	/* --active-nav-link: #ff6a00; */
-	--active-nav-link-text: #FFFFF0;
 	--active-nav-link-text: #FAF9F6;
 	--home-background: url('/images/home-background.jpg');
 	--home-background: url('/images/background-home-desktop.jpg');
@@ -78,33 +56,17 @@ font-family: 'Source Sans Pro', sans-serif;
 	--project-container-hover: #5d645a;
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
-	--buttons-font-family: 'Poppins', sans-serif;
 	--buttons-font-family: 'Montserrat',
 		sans-serif;
 	--secondary-text-color: #f8f8f8;
-
 	--secondary-font-family: 'Lato',
 		sans-serif;
-	--primary-text-color: #0f0700;
-	--primary-text-color: #000000;
-	--primary-text-color: #080808;
 	--primary-text-color: #121212;
 	--primary-text-color: white;
 	--home-text-color: #c2c2c5;
-	--helper-text-color: #A5AEB6;
 	--helper-text-color: #0A0A0A;
 	--secondary-font-weight: 600;
-
-	--secondary-text-color: white;
 	--secondary-text-color: black;
-
-	--about-image-bg: #cf9c26;
-	--about-image-bg: #333333;
-	--about-image-bg: #746D69;
-	--about-image-bg: #4B4E53;
-
-	--about-image-bg: #344148;
-	--about-image-bg: #57575e;
 	--about-image-bg: url('/images/background-destination-desktop.jpg');
 	--menu-box-bg: #962715;
 	--skill-card-bg: #cf9c26;
@@ -112,8 +74,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	--buttons-hover-bg: #116f32;
 	--buttons-bg-color: #343a96;
 	--buttons-hover-bg: #2e3485;
+	--about-page-btn: #273037;
 	--buttons-color: #FAFAFA;
-	--radio-btn-border: #9CA7AE;
 	--radio-btn-border: #B6B6B4;
 	--radio-btn-bg: #565759;
 	--switch-button-bg: #EE5622;
@@ -122,7 +84,6 @@ font-family: 'Source Sans Pro', sans-serif;
 
 [data-theme='dark'] {
 	--header-background: #252a2d;
-	--footer-background: #27262d;
 	--footer-background: #262c2d;
 	--home-link-bg: #2B435B;
 	--home-link-bg: #165b7e;
@@ -130,7 +91,6 @@ font-family: 'Source Sans Pro', sans-serif;
 	--home-link-bg: #39407c;
 	--projects-link-bg: #373238;
 	--projects-link-bg: #302830;
-	/* black coffee */
 	--about-link-bg: #3B2F2F;
 	--about-section-bg: #3B2F2F;
 	--contact-link-bg: #2D3A3A;
@@ -141,7 +101,6 @@ font-family: 'Source Sans Pro', sans-serif;
 	--menu-box-bg: #39407c;
 	--primary-background: #1e1e24;
 	--primary-background: #1f2022;
-
 	--primary-background: #1f1b1a;
 	--primary-background: #1b1b1b;
 	--secondary-background: #070707;
@@ -157,33 +116,18 @@ font-family: 'Source Sans Pro', sans-serif;
 	--skill-card-bg: #0c0c0c;
 	--hero-banner-text: 'Playfair Display', serif;
 	--primary-font-family: 'Montserrat', sans-serif;
-	/* --primary-font-family: 'Lato',
-		sans-serif; */
 	--buttons-font-family: 'Poppins', sans-serif;
 	--buttons-font-weight: 100;
 	--buttons-bg-color: #343a96;
-	--buttons-bg-color: #1d2951;
-	--buttons-hover-bg: #2e3485;
-	--buttons-color: #ffffff;
-	--buttons-color: #CCCCCC;
-	--buttons-color: #F4F8FB;
+	--buttons-hover-bg: #2e3487;
+	--about-page-btn: #121619;
+	--buttons-color: #F8F8FC;
 	--secondary-font-family: 'Lato',
 		sans-serif;
-	/* --secondary-font-family: 'Merriweather',
-		serif; */
 	--secondary-font-family: 'Poppins',
 		sans-serif;
-	/* --secondary-font-family: 'Courgette',
-		cursive; */
-	/* --secondary-font-family: 'Libre Baskerville',
-		serif;
-	--secondary-font-family: 'Alegreya',
-		serif; */
-	--primary-text-color: #9C9C9C;
-	--primary-text-color: #9C9C9C;
 	--primary-text-color: #D7D7DF;
 	--home-text-color: #D7D7DF;
-	/* --primary-text-color: white; */
 	--secondary-font-weight: 100;
 	--secondary-text-color: #C4C4C4;
 	--active-nav-link: #5D2B2C;
@@ -192,8 +136,6 @@ font-family: 'Source Sans Pro', sans-serif;
 	--helper-text-color: #808094;
 	--nav-links-font-weight: 300;
 	--active-nav-link-font-weight: 400;
-	--radio-btn-border: #717475;
-	--radio-btn-border: #8B8D8E;
 	--radio-btn-border: #505457;
 	--radio-btn-bg: #1F2022;
 	--radio-btn-bg: #1e2224;

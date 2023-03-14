@@ -121,24 +121,16 @@ const Contact = () => {
 	const springVariant = {
 		start: {
 			y: -100,
-			// opacity: 0,
 		},
 		end: {
 			y: 0,
-			// opacity: 1,
 			transition: {
 				type: 'spring',
-				// bounce: 0.25,
 				stiffness: 50,
-				// damping: 10,
-				// restSpeed: 0.5,
-				// velocity: 3,
-				// restDelta: 0.5,
 			},
 		},
 		exit: {
 			y: 100,
-			// opacity: 0,
 		},
 	}
 

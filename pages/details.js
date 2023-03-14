@@ -12,50 +12,16 @@ import styles from '../styles/details.module.css'
 
 const ProjectDetail = ({ project }) => {
 	const [showMore, setShowMore] = useState(false)
-	let descriptionLines, lessText, url
+	let descriptionLines, lessText
 	if (project.description) {
-		let urlified = urlFinder(project.description)
-		// if(urlified) {
-		// 	console.log(urlified[0])
-		// 	url = urlified[0]
-		// }
-			descriptionLines = urlified.split(/\n/)
-			lessText = descriptionLines.join(' ').slice(0, 300)
+		descriptionLines = project.description.split(/\n/)
+		lessText = descriptionLines.join(' ').slice(0, 300)
 	}
+
 	const toggleText = () => {
 		setShowMore(!showMore)
 	}
-	function urlFinder(text) {
-		let urlRegex = /(https?:\/\/[^\s]+)/g
-		// return text.replace(urlRegex, function (url) {
-		// 	return '<Link href="' + url + '">' + url + '</Link>'
-		// })
-		// or alternatively
-		return text.replace(urlRegex, '<Link href="$1">$1</Link>')
-	}
-	function replaceURLs(message) {
-		if (!message) return
 
-		var urlRegex = /(((https?:\/\/)|(www\.))[^\s]+)/g
-		return message.replace(urlRegex, function (url) {
-			var hyperlink = url
-			if (!hyperlink.match('^https?://')) {
-				hyperlink = 'http://' + hyperlink
-			}
-			return (
-				'<a href="' +
-				hyperlink +
-				'" target="_blank" rel="noopener noreferrer">' +
-				url +
-				'</a>'
-			)
-		})
-	}
-
-	function detectURLs(message) {
-		var urlRegex = /(((https?:\/\/)|(www\.))[^\s]+)/g
-		return message.match(urlRegex)
-	}
 	return (
 		<motion.main
 			className={styles['main-container']}
@@ -88,17 +54,6 @@ const ProjectDetail = ({ project }) => {
 												{project.title}&nbsp;
 											</b>
 											{lessText.replace("''", "'")}
-											{/* {lessText.replace(
-												`${url}`,
-												`<Link
-													href={url}
-													target='_blank'
-													rel='noopener noreferrer'
-													dangerouslySetInnerHTML={{ __html: url }}
-												>
-													<a>{url}</a>
-												</Link>`
-											)} */}
 											<span key='span' onClick={toggleText}>
 												{!showMore ? '...read more ▼' : 'read less ▲'}
 											</span>
@@ -115,7 +70,6 @@ const ProjectDetail = ({ project }) => {
 													{line.replace("''", "'")}
 													{idx === descriptionLines.length - 1 && (
 														<span key='span' onClick={toggleText}>
-															{/* &nbsp; */}
 															{!showMore ? '...read more ▼' : 'read less ▲'}
 														</span>
 													)}

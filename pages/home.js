@@ -42,7 +42,7 @@ const Home = () => {
 							src='/images/profile-photo.png'
 							width={200}
 							height={200}
-							alt='Biruk'
+							alt='Author'
 						/>
 						<h3 className={styles.subtext}>
 							Biruk here, I am a Full Stack Web Developer specialized in HTML,
@@ -85,16 +85,11 @@ const Home = () => {
 								whileTap={{ scale: 0.8 }}
 							>
 								<Link href='/projects' className={styles.link}>
-									{/* <a className={styles.link}> */}
 									Projects
-									{/* </a> */}
 								</Link>
 							</motion.div>
 						</div>
 					</div>
-					{/* <div className='hero-right'>
-					<h3>Some content here</h3>
-				</div> */}
 				</section>
 			</motion.div>
 		</AnimatePresence>

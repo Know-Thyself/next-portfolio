@@ -7,13 +7,9 @@
 	left: 0;
 	bottom: 0;
 	padding-top: 64px;
-	/* padding-top: 7rem; */
 	padding-bottom: 48px;
 	padding-top: 5rem;
 	padding-bottom: 14rem;
-	background: var(--about-image-bg);
-	background: var(--home-link-bg);
-	background: var(--secondary-background);
 	background-color: var(--primary-background);
 	color: var(--secondary-text-color);
 	display: flex;
@@ -42,8 +38,6 @@
 	line-height: 1.5rem;
 	font-size: 1.1rem;
 	letter-spacing: 0.25px;
-	/* margin: 0 auto; */
-	/* opacity: 0.85; */
 }
 
 .wrapper {
@@ -52,11 +46,7 @@
 }
 
 .contact-info {
-	background-color: var(--about-link-bg);
-	background-color: var(--about-section-bg);
-	background-color: var(--radio-btn-bg);
 	background-color: var(--header-background);
-	/* background-color: var(--complementary-bg); */
 	display: flex;
 	flex-direction: column;
 	padding-bottom: 1rem;
@@ -69,7 +59,6 @@
 
 .contact-info p {
 	text-align: left;
-	/* margin-left: 1rem; */
 	width: 80%;
 	margin: auto;
 }
@@ -92,13 +81,6 @@
 	align-items: center;
 	width: 100%;
 	margin: auto;
-	background-color: var(--complementary-bg);
-	/* background-color: var(--about-link-bg);
-	background-color: var(--secondary-background); */
-	/* background-color: var(--radio-btn-bg);
-	background-color: var(--about-section-bg); */
-	/* background-color: var(--radio-btn-border); */
-	background-color: var(--header-background);
 	background-color: var(--radio-btn-bg);
 	padding: 2rem 0;
 }
@@ -120,13 +102,7 @@
 .textField input {
 	color: var(--secondary-text-color);
 	border-bottom: 1px solid var(--primary-text-color);
-	background-color: var(--buttons-hover-bg);
-	background-color: var(--complementary-bg);
-	background-color: var(--about-link-bg);
-	background-color: var(--about-section-bg);
-	background-color: var(--radio-btn-bg);
 	background-color: var(--header-background);
-	/* background-color: var(--about-link-bg); */
 	font-family: var(--primary-font-family);
 }
 
@@ -136,21 +112,12 @@
 }
 
 .textField textarea {
-	background-color: var(--buttons-hover-bg);
-	background-color: var(--complementary-bg);
-	background-color: var(--about-link-bg);
-	background-color: var(--about-section-bg);
-	background-color: var(--radio-btn-bg);
 	background-color: var(--header-background);
-	/* background-color: var(--contact-link-bg); */
 }
 
 .send {
-	background-color: var(--complementary-bg);
 	background-color: var(--buttons-bg-color);
-	/* background-color: var(--contact-link-bg); */
 	color: var(--buttons-color);
-	font-family: var(--primary-font-family);
 	font-family: var(--buttons-font-family);
 	text-transform: uppercase;
 	font-size: 1rem;
@@ -165,7 +132,6 @@
 }
 
 .send:hover {
-	background-color: var(--buttons-hover-bg);
 	background-color: var(--buttons-hover-bg);
 }
 
@@ -196,7 +162,6 @@
 	.main {
 		min-height: 100%;
 		padding-bottom: 7rem;
-		/* padding-bottom: 8rem; */
 	}
 
 	.wrapper,
@@ -206,24 +171,16 @@
 	}
 
 	.intro {
-		background-color: var(--secondary-background);
-		background-color: var(--about-link-bg);
-		background-color: var(--buttons-hover-bg);
-		background-color: var(--project-container-hover);
 		background: var(--contact-section-bg);
-		/* margin-bottom: 0; */
 	}
 
 	.wrapper {
 		margin-top: 0;
-		/* margin-bottom: 0; */
-		/* margin-bottom: 2rem; */
 	}
 
 	.intro p {
 		padding: 0 2.5rem;
 	}
-
 
 }
 
@@ -235,9 +192,6 @@
 		width: 80%;
 	}
 
-	/* .wrapper {
-    gap: 1rem;
-  } */
 	.intro h1 {
 		font-size: 2.5rem;
 	}
