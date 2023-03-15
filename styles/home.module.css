@@ -1,6 +1,7 @@
 .home {
   width: 100%;
   background: var(--home-bg-mobile) no-repeat center center fixed;
+  color: var(--home-text-color);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -29,9 +30,14 @@
 
 .primary-text {
   font-family: var(--hero-banner-text);
-  color: var(--home-text-color);
   font-weight: 600;
   font-size: 2.5rem;
+}
+
+.hero-text-container h3 {
+  font-family: var(--secondary-font-family);
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 .profile-photo {
@@ -40,12 +46,11 @@
   border-radius: 50%;
 }
 
-.subtext {
+.intro {
+  font-family: var(--primary-font-family);
   font-weight: var(--secondary-font-weight);
-  color: var(--home-text-color);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 300;
   text-align: left;
   letter-spacing: 0.25px;
 }
@@ -62,6 +67,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .link {
@@ -85,7 +91,6 @@
 }
 
 @media screen and (max-width: 400px) {
-
   .link {
     font-size: 0.85rem;
   }
@@ -125,7 +130,7 @@
 
   .hero-text-container {
     margin-left: 5rem;
-    width: 65%;
+    width: 54%;
   }
 
   .primary-text {
@@ -135,6 +140,10 @@
 
 @media screen and (min-width: 1124px) {
   .hero-text-container {
-    width: 50%;
+    width: 48%;
+  }
+
+  .hero-text-container h3 {
+    font-size: 1.5rem;
   }
 }

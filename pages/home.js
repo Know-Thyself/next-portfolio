@@ -7,8 +7,9 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 import styles from '../styles/home.module.css'
 import Image from 'next/image'
+import { Fragment } from 'react'
 
-const Home = () => {
+const Home = ({ intro }) => {
 	const springVariant = {
 		start: {
 			y: -100,
@@ -24,6 +25,14 @@ const Home = () => {
 			y: 100,
 		},
 	}
+
+	const str = intro[0]
+	const lines = str.split(/\n/)
+	const withBreaks = lines.flatMap((line, index) =>
+		index > 0
+			? [<br key={`br-${index}`} />, <Fragment key={index}>{line}</Fragment>]
+			: [line]
+	)
 
 	return (
 		<AnimatePresence>
@@ -44,23 +53,8 @@ const Home = () => {
 							height={200}
 							alt='Author'
 						/>
-						<h3 className={styles.subtext}>
-							Biruk here, I am a Full Stack Web Developer specialized in HTML,
-							CSS, JavaScript, React.js, Next.js, Node.js and PostgreSQL
-							Database along with related Frameworks and Libraries.
-							<br />
-							<br />
-							If you are looking to hire a passionate, problem solver, team
-							player, effective communicator and skillful Software Engineer for
-							a Frontend, Backend or Full Stack Web Development role, you have
-							come to the right place!
-							<br />
-							<br />
-							Please feel free to explore my projects, view live demos and
-							checkout my GitHub repositories to see all the source codes
-							I&apos;ve written to build a variety of Frontend, Backend and Full
-							Stack Web Applications.
-						</h3>
+						<h3>Thank you for visiting my portfolio website!</h3>
+						<h4 className={styles.intro}>{withBreaks}</h4>
 						<div className={styles['links-wrapper']}>
 							<motion.a
 								href='https://github.com/Know-Thyself'

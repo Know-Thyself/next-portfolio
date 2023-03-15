@@ -14,14 +14,14 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const HomePage = ({ data }) => {
 	const id = data.map((portfolio) => portfolio.id).pop()
-	const main = data.map((portfolio) => portfolio.content)
+	const intro = data.map((portfolio) => portfolio.content.about.intro)
 	return (
 		<>
 			<Head>
 				<title>Biruk | Full Stack Web Developer</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Home />
+			<Home intro={intro} />
 		</>
 	)
 }
