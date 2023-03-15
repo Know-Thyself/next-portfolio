@@ -26,7 +26,9 @@ const Home = ({ about }) => {
 		},
 	}
 
-	const str = about[0].intro
+	// const str = about[0].intro
+	let str;
+	about.forEach(val => str = val.intro)
 	const image = about[0].image
 	const lines = str.split(/\n/)
 	const withBreaks = lines.flatMap((line, index) =>

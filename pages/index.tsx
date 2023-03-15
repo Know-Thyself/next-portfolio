@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import prisma from '../lib/prisma'
 import { GetStaticProps } from 'next'
-import Home from './home.tsx'
+import Home from './home'
 
 export const getStaticProps: GetStaticProps = async () => {
 	const data = await prisma.portfolio.findMany()
