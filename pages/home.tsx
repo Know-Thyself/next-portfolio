@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import prisma from '../lib/prisma'
+import { GetStaticProps } from 'next'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -9,7 +11,14 @@ import styles from '../styles/home.module.css'
 import Image from 'next/image'
 import { Fragment } from 'react'
 
-const Home = ({ about }) => {
+export const getStaticProps: GetStaticProps = async () => {
+	const data = await prisma.portfolio.findMany()
+	return { props: { data } }
+}
+
+const Home = ({ data }) => {
+	const id = data.map((portfolio) => portfolio.id).pop()
+	const about = data.map((portfolio) => portfolio.content.about)
 	const springVariant = {
 		start: {
 			y: -100,
@@ -26,9 +35,7 @@ const Home = ({ about }) => {
 		},
 	}
 
-	// const str = about[0].intro
-	let str;
-	about.forEach(val => str = val.intro)
+	const str = about[0].intro
 	const image = about[0].image
 	const lines = str.split(/\n/)
 	const withBreaks = lines.flatMap((line, index) =>
