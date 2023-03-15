@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useState, ReactElement } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
@@ -44,7 +45,14 @@ const ProjectDetail = ({ project }) => {
 				{descriptionLines && (
 					<div className={styles['project-wrapper']}>
 						<h4 className={styles['project-title']}>{project.title}</h4>
-						<img src={`/images/${project.image}`} alt='' />
+						<Image
+							src={`/images/${project.image}`}
+							alt={project.title}
+							className={styles['project-img']}
+							width={340}
+							height={280}
+							sizes='(min-width: 300px) 100vw'
+						/>
 						<div className={styles['read-more-read-less-wrapper']}>
 							{descriptionLines.join(' ').length >= lessText.length ? (
 								<div key='read-more'>

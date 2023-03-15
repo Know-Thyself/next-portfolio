@@ -1,11 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
 import prisma from '../lib/prisma'
 import { GetStaticProps } from 'next'
-import Button from 'react-bootstrap/Button'
-import Home from './home.js'
+import Home from './home.tsx'
 
 export const getStaticProps: GetStaticProps = async () => {
 	const data = await prisma.portfolio.findMany()
