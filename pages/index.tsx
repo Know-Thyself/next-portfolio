@@ -33,26 +33,29 @@ const HomePage = ({ data }) => {
 
 	const springVariant = {
 		start: {
-			y: -100,
+			// y: -100,
+			opacity: 0,
 		},
 		end: {
-			y: 0,
+			// y: 0,
 			transition: {
 				type: 'spring',
 				stiffness: 50,
+				duration: 1,
 			},
+			opacity: 1,
 		},
 		exit: {
-			y: 100,
+			// y: 100,
+			opacity: 0,
 		},
 	}
 	return (
-		<AnimatePresence>
+		<AnimatePresence initial={false}>
 			<Head>
 				<title>Biruk | Full Stack Web Developer</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			{/* <Home about={about} /> */}
 			<motion.div
 				className={styles.home}
 				variants={springVariant}
