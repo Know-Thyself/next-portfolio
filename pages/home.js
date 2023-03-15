@@ -9,7 +9,7 @@ import styles from '../styles/home.module.css'
 import Image from 'next/image'
 import { Fragment } from 'react'
 
-const Home = ({ intro }) => {
+const Home = ({ about }) => {
 	const springVariant = {
 		start: {
 			y: -100,
@@ -26,7 +26,8 @@ const Home = ({ intro }) => {
 		},
 	}
 
-	const str = intro[0]
+	const str = about[0].intro
+	const image = about[0].image
 	const lines = str.split(/\n/)
 	const withBreaks = lines.flatMap((line, index) =>
 		index > 0
@@ -48,7 +49,7 @@ const Home = ({ intro }) => {
 						<h1 className={styles['primary-text']}>Hello & Welcome!</h1>
 						<Image
 							className={styles['profile-photo']}
-							src='/images/profile-photo.png'
+							src={`/images/${image}`}
 							width={200}
 							height={200}
 							alt='Author'
