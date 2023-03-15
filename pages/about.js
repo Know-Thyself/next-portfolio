@@ -136,117 +136,222 @@ const About = () => {
 					<div className={styles['tech-stacks']}>
 						<div className={styles['skill-card']}>
 							<h6>Frontend Technologies</h6>
-							<Image
-								src='/images/html-css.png'
-								alt='HTML5 and CSS3 responsive design'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
-							<Image
-								src='/images/javascript.png'
-								alt='JavaScript logo'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
-							<Image
-								src='/images/react.png'
-								alt='React.js'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
-							<Image
-								src='/images/material-ui.png'
-								alt='Material UI'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
-							<Image
-								src='/images/bootstrap.jpg'
-								alt='Bootstrap'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
+							<Link
+								href='https://www.w3.org/standards/webdesign/htmlcss'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/html-css.png'
+									alt='HTML5 and CSS3 responsive design'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
+							<Link
+								href='https://www.javascript.com/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/javascript.png'
+									alt='JavaScript logo'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
+							<Link
+								href='https://reactjs.org/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/react.png'
+									alt='React.js'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
+							<Link
+								href='https://mui.com/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/material-ui.png'
+									alt='Material UI'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
+							<Link
+								href='https://getbootstrap.com/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/bootstrap.jpg'
+									alt='Bootstrap'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
 						</div>
 						<div className={styles['skill-card']}>
 							<h6>Collaboration & Design Tools</h6>
-							<Image
-								src='/images/git.png'
-								alt='Git and GitHub'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
-							<Image
-								src='/images/figma.png'
-								alt='Figma'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
-							<Image
-								src='/images/trello.png'
-								alt='Trello'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
-							<Image
-								src='/images/miro.png'
-								alt='Miro logo'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
-							<Image
-								src='/images/slack.jpg'
-								alt='Slack logo'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
+							<Link
+								href='https://github.com/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/git.png'
+									alt='Git and GitHub'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
+							<Link
+								href='https://www.figma.com/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/figma.png'
+									alt='Figma'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
+							<Link
+								href='https://trello.com/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/trello.png'
+									alt='Trello'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
+							<Link
+								href='https://miro.com/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/miro.png'
+									alt='Miro logo'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
+							<Link
+								href='https://slack.com/intl/en-gb'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/slack.jpg'
+									alt='Slack logo'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
 						</div>
 						<div className={styles['skill-card']}>
 							<h6>Backend & Full-Stack Technologies</h6>
-							<Image
-								src='/images/node.png'
-								alt='Node.js logo'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
-							<Image
-								src='/images/postgresql.jpg'
-								alt='PostgreSQL logo'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
-							<Image
-								src='/images/express.png'
-								alt='Express.js logo'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
-							<Image
-								src='/images/next.png'
-								alt='Next.js logo'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
-							<Image
-								src='/images/prisma.png'
-								alt='Prisma logo'
-								className={styles.logo}
-								width={300}
-								height={150}
-							/>
+							<Link
+								href='https://nodejs.org/en/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/node.png'
+									alt='Node.js logo'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
+							<Link
+								href='https://www.postgresql.org/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/postgresql.jpg'
+									alt='PostgreSQL logo'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
+							<Link
+								href='https://expressjs.com/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/express.png'
+									alt='Express.js logo'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
+							<Link
+								href='https://nextjs.org/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/next.png'
+									alt='Next.js logo'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
+							<Link
+								href='https://www.prisma.io/'
+								className={styles.link}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Image
+									src='/images/prisma.png'
+									alt='Prisma logo'
+									className={styles.logo}
+									width={300}
+									height={150}
+								/>
+							</Link>
 						</div>
 					</div>
 				</section>
