@@ -46,7 +46,7 @@
 }
 
 .contact,
-.about-section-buttons button {
+.download {
 	background-color: var(--about-page-btn);
 	color: var(--buttons-color);
 	color: var(--primary-text-color);

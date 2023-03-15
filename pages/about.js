@@ -91,13 +91,32 @@ const About = () => {
 								</Link>
 							</motion.div>
 
+							{/* <motion.div
+								className={styles.download}
+								whileHover={{
+									scale: 1.1,
+								}}
+								whileTap={{ scale: 0.9 }}
+							>
+								<Link
+									download
+									href='/assets/resume.pdf'
+									alt='alt text'
+									target='_blank'
+									rel='noopener noreferrer'
+									locale={false}
+								>
+									Resume Download
+								</Link>
+							</motion.div> */}
 							<motion.button
+								className={styles.download}
 								whileHover={{
 									scale: 1.1,
 								}}
 								whileTap={{ scale: 0.9 }}
 								onClick={() =>
-									alert('Apologies! Resume download is currently unavailable.')
+									alert('Resume download is currently unavailable.')
 								}
 							>
 								Resume Download
