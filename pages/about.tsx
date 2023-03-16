@@ -68,6 +68,7 @@ const About = ({ data }) => {
 						<Image
 							src='/images/about.png'
 							alt='Picture of the author'
+							priority={true}
 							className={`${styles['about-img']}`}
 							width={240}
 							height={340}
@@ -126,10 +127,7 @@ const About = ({ data }) => {
 				<section className={styles['skills-section']}>
 					<div>
 						<h1>Technology Stacks & Skill Sets</h1>
-						<p>
-							Technologies I love and use
-							proficiently
-						</p>
+						<p>Technologies I love and use proficiently</p>
 					</div>
 					<div className={styles['tech-stacks']}>
 						<div className={styles['skill-card']}>
@@ -143,6 +141,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/html-css.png'
 									alt='HTML5 and CSS3 responsive design'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -157,6 +156,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/javascript.png'
 									alt='JavaScript logo'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -171,6 +171,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/react.png'
 									alt='React.js'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -185,6 +186,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/material-ui.png'
 									alt='Material UI'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -199,6 +201,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/bootstrap.jpg'
 									alt='Bootstrap'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -216,6 +219,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/git.png'
 									alt='Git and GitHub'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -230,6 +234,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/figma.png'
 									alt='Figma'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -244,6 +249,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/trello.png'
 									alt='Trello'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -258,6 +264,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/miro.png'
 									alt='Miro logo'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -272,6 +279,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/slack.jpg'
 									alt='Slack logo'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -289,6 +297,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/node.png'
 									alt='Node.js logo'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -303,6 +312,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/postgresql.jpg'
 									alt='PostgreSQL logo'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -317,6 +327,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/express.png'
 									alt='Express.js logo'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -331,6 +342,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/next.png'
 									alt='Next.js logo'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -345,6 +357,7 @@ const About = ({ data }) => {
 								<Image
 									src='/images/prisma.png'
 									alt='Prisma logo'
+									priority={true}
 									className={styles.logo}
 									width={300}
 									height={150}

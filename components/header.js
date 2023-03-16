@@ -37,6 +37,7 @@ const Header = () => {
 			<Image
 				className={styles.logo}
 				src='/images/logo.png'
+				priority={true}
 				alt='logo'
 				width={70}
 				height={70}

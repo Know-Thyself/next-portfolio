@@ -48,6 +48,7 @@ const ProjectDetail = ({ project }) => {
 						<Image
 							src={`/images/${project.image}`}
 							alt={project.title}
+							priority={true}
 							className={styles['project-img']}
 							width={340}
 							height={280}
