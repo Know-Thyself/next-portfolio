@@ -42,6 +42,7 @@ a {
 	--home-link-bg: #49529F;
 	--projects-link-bg: #4C3F4C;
 	--about-link-bg: #574646;
+	--about-link-bg: #564c4d;
 	--about-section-bg: #989692;
 	--about-section-bg: #888783;
 	--about-section-bg: #878681;
@@ -72,7 +73,7 @@ a {
 	--primary-text-color: white;
 	--home-text-color: #c2c2c5;
 	--helper-text-color: #0A0A0A;
-	--secondary-font-weight: 600;
+	--secondary-font-weight: 300;
 	--secondary-text-color: black;
 	--about-image-bg: url('/images/background-destination-desktop.jpg');
 	--menu-box-bg: #962715;
