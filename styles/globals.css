@@ -55,6 +55,8 @@ a {
 	--home-bg-mobile: url('/images/home-bg-mobile.jpg');
 	--primary-background: #A8A8A8;
 	--primary-background: #B9B9B9;
+
+	--primary-background: #ABABAB;
 	--secondary-background: #828789;
 	--secondary-background: #9b9fa0;
 	--secondary-background: #a7abac;
@@ -111,6 +113,8 @@ a {
 	--primary-background: #1f2022;
 	--primary-background: #1f1b1a;
 	--primary-background: #1b1b1b;
+	--primary-background: #161b19;
+	--primary-background: #141414;
 	--secondary-background: #070707;
 	--secondary-background: #1F2428;
 	--secondary-background: #1B1F22;
