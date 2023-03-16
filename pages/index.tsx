@@ -30,35 +30,33 @@ const HomePage = ({ data }) => {
 			? [<br key={`br-${index}`} />, <Fragment key={index}>{line}</Fragment>]
 			: [line]
 	)
-
-	const springVariant = {
+	const variants = {
 		start: {
-			// y: -100,
 			opacity: 0,
 		},
 		end: {
-			// y: 0,
+			opacity: 1,
 			transition: {
 				type: 'spring',
-				stiffness: 50,
-				duration: 1,
+				stiffness: 60,
+				duration: 0.5,
+				delay: 0.5,
 			},
-			opacity: 1,
 		},
 		exit: {
-			// y: 100,
 			opacity: 0,
 		},
 	}
+
 	return (
-		<AnimatePresence initial={false}>
+		<AnimatePresence>
 			<Head>
-				<title>Biruk | Full Stack Web Developer</title>
+				<title>Biruk | Full-Stack Developer</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<motion.div
 				className={styles.home}
-				variants={springVariant}
+				variants={variants}
 				initial='start'
 				animate='end'
 				exit='exit'
