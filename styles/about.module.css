@@ -20,7 +20,8 @@
 	justify-content: center;
 	align-items: center;
 	gap: 3rem;
-	padding-bottom: 2rem;
+	/* padding-bottom: auto; */
+	/* padding-bottom: 2rem; */
 }
 
 .about-img-wrapper {
@@ -42,7 +43,7 @@
 	justify-content: center;
 	align-items: flex-start;
 	gap: 1.5rem;
-	margin-top: 2rem;
+	margin: 2rem 0;
 }
 
 .contact,
@@ -159,10 +160,23 @@
 }
 
 @media screen and (min-width: 524px) {
+	.main {
+		background-color: var(--secondary-background);
+	}
+
 	.about-section-buttons {
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
+	}
+
+	.about-section {
+		width: 90%;
+		/* padding: 0 1rem; */
+	}
+
+	.about-text-wrapper {
+		padding: 0 1.5rem;
 	}
 
 	.tech-stacks {
@@ -202,13 +216,9 @@
 		background-color: var(--secondary-background);
 	}
 
-	.about-section {
-		width: 90%;
-		/* padding: 0 1rem; */
-	}
-
-	.about-text-wrapper {
-		padding: 0 1.5rem;
+	.about-img {
+		height: 400px;
+		width: auto;
 	}
 
 	.logo {
@@ -222,11 +232,18 @@
 		justify-content: center;
 		align-items: center;
 		margin: auto;
-		/* gap: 3rem; */
+		gap: 3rem;
+		/* padding-bottom: auto; */
 	}
 
 	.about-img-wrapper {
 		margin-right: 2rem;
+	}
+
+	.about-img {
+		height: 430px;
+		width: auto;
+
 	}
 
 	.about-text-wrapper {
@@ -278,11 +295,9 @@
 }
 
 @media screen and (min-width: 1069px) {
-	.about-section {
-		width: 80%;
-		width: 90%;
-	}
-
+	/* .about-section {
+		padding-bottom: 1.75rem;
+	} */
 	.skills-section h1 {
 		font-size: 1.75rem;
 	}
@@ -309,11 +324,10 @@
 @media screen and (min-width: 1348px) {
 	.about-section {
 		flex-direction: row;
-		width: 90%;
 		font-size: 1.075rem;
 		font-size: 1.075rem;
 		font-weight: 300;
-		background-color: var(--about-section-bg);
+		/* padding-bottom: 2.75rem; */
 	}
 
 	.tech-stacks {
@@ -326,5 +340,10 @@
 
 	.logo {
 		height: 140px;
+	}
+
+	.about-img {
+		height: 500px;
+		width: auto;
 	}
 }
