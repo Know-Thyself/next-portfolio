@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import prisma from '../lib/prisma'
+import { GetStaticProps } from 'next'
+import { Fragment } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from '../styles/about.module.css'
-import profileImage from '../public/images/about.png'
+import profileImage from '/images/about.png'
 import {
 	faPaperPlane,
 	faPhoneVolume,
@@ -15,7 +18,21 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
-const About = () => {
+export const getStaticProps: GetStaticProps = async () => {
+	const data = await prisma.portfolio.findMany()
+	return { props: { data } }
+}
+
+const About = ({ data }) => {
+	const about = data.map((portfolio) => portfolio.content.about)
+	const str = about[0].bio
+	// const image = about[0].image
+	const lines = str.split(/\n/)
+	const withBreaks = lines.flatMap((line, index) =>
+		index > 0
+			? [<br key={`br-${index}`} />, <Fragment key={index}>{line}</Fragment>]
+			: [line]
+	)
 	const springVariant = {
 		start: {
 			y: -100,
@@ -61,24 +78,7 @@ const About = () => {
 					</div>
 					<div className={styles['about-text-wrapper']}>
 						<h1>About Me</h1>
-						<p>
-							I am from theological studies background and I had been a
-							bishop/pastor of a Church for most of my adult life.
-							<br />
-							<br />
-							I embarked on an adventurous journey of becoming a computer
-							programmer in 2020 when I joined the most amazing coding boot
-							camp, CodeYourFuture! Joining CodeYourFuture has literally
-							transformed my life in many ways and is the best thing ever
-							happened to me in a very long time.
-							<br />
-							<br />I am also a father of two children who are currently
-							studying Computer Science and IT at a university. <br />
-							<br />
-							I&apos;m currently volunteering as a Teaching Assistant and
-							Technical Mentor at CodeYourFuture to give back to my wonderful
-							community and learn more as I teach trainee developers.
-						</p>
+						<p>{withBreaks}</p>
 						<div className={styles['about-section-buttons']}>
 							<motion.div
 								whileHover={{
@@ -90,7 +90,6 @@ const About = () => {
 									Contact Me
 								</Link>
 							</motion.div>
-
 							{/* <motion.div
 								className={styles.download}
 								whileHover={{

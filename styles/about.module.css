@@ -198,6 +198,19 @@
 }
 
 @media screen and (min-width: 724px) {
+	.main {
+		background-color: var(--secondary-background);
+	}
+
+	.about-section {
+		width: 90%;
+		/* padding: 0 1rem; */
+	}
+
+	.about-text-wrapper {
+		padding: 0 1.5rem;
+	}
+
 	.logo {
 		height: 90px;
 	}
@@ -208,9 +221,8 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		width: 90%;
 		margin: auto;
-		gap: 3rem;
+		/* gap: 3rem; */
 	}
 
 	.about-img-wrapper {
@@ -218,7 +230,7 @@
 	}
 
 	.about-text-wrapper {
-		width: 60%;
+		padding: 0 2rem 0 0;
 	}
 
 	.about-section-buttons {
@@ -268,6 +280,7 @@
 @media screen and (min-width: 1069px) {
 	.about-section {
 		width: 80%;
+		width: 90%;
 	}
 
 	.skills-section h1 {
@@ -296,10 +309,11 @@
 @media screen and (min-width: 1348px) {
 	.about-section {
 		flex-direction: row;
-		width: 60%;
+		width: 90%;
 		font-size: 1.075rem;
 		font-size: 1.075rem;
 		font-weight: 300;
+		background-color: var(--about-section-bg);
 	}
 
 	.tech-stacks {
