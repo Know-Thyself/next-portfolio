@@ -82,6 +82,7 @@ const Projects = ({ projectsData, project, setProject }) => {
 										src={`/images/${project.image}`}
 										alt={project.title}
 										priority={true}
+										loading='eager'
 										className={styles['project-img']}
 										width={340}
 										height={240}

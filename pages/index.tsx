@@ -67,6 +67,8 @@ const HomePage = ({ data }) => {
 						<Image
 							className={styles['profile-photo']}
 							src={`/images/${image}`}
+							priority={true}
+							loading='eager'
 							width={200}
 							height={200}
 							alt='Author'

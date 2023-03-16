@@ -69,6 +69,7 @@ const About = ({ data }) => {
 							src='/images/about.png'
 							alt='Picture of the author'
 							priority={true}
+							loading='eager'
 							className={`${styles['about-img']}`}
 							width={240}
 							height={340}
@@ -142,6 +143,7 @@ const About = ({ data }) => {
 									src='/images/html-css.png'
 									alt='HTML5 and CSS3 responsive design'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -157,6 +159,7 @@ const About = ({ data }) => {
 									src='/images/javascript.png'
 									alt='JavaScript logo'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -172,6 +175,7 @@ const About = ({ data }) => {
 									src='/images/react.png'
 									alt='React.js'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -187,6 +191,7 @@ const About = ({ data }) => {
 									src='/images/material-ui.png'
 									alt='Material UI'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -202,6 +207,7 @@ const About = ({ data }) => {
 									src='/images/bootstrap.jpg'
 									alt='Bootstrap'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -220,6 +226,7 @@ const About = ({ data }) => {
 									src='/images/git.png'
 									alt='Git and GitHub'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -235,6 +242,7 @@ const About = ({ data }) => {
 									src='/images/figma.png'
 									alt='Figma'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -250,6 +258,7 @@ const About = ({ data }) => {
 									src='/images/trello.png'
 									alt='Trello'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -265,6 +274,7 @@ const About = ({ data }) => {
 									src='/images/miro.png'
 									alt='Miro logo'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -280,6 +290,7 @@ const About = ({ data }) => {
 									src='/images/slack.jpg'
 									alt='Slack logo'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -298,6 +309,7 @@ const About = ({ data }) => {
 									src='/images/node.png'
 									alt='Node.js logo'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -313,6 +325,7 @@ const About = ({ data }) => {
 									src='/images/postgresql.jpg'
 									alt='PostgreSQL logo'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -328,6 +341,7 @@ const About = ({ data }) => {
 									src='/images/express.png'
 									alt='Express.js logo'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -343,6 +357,7 @@ const About = ({ data }) => {
 									src='/images/next.png'
 									alt='Next.js logo'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
@@ -358,6 +373,7 @@ const About = ({ data }) => {
 									src='/images/prisma.png'
 									alt='Prisma logo'
 									priority={true}
+									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}

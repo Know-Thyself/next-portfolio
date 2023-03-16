@@ -38,6 +38,7 @@ const Header = () => {
 				className={styles.logo}
 				src='/images/logo.png'
 				priority={true}
+				loading='eager'
 				alt='logo'
 				width={70}
 				height={70}
