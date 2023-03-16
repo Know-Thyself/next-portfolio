@@ -127,9 +127,8 @@ const About = ({ data }) => {
 					<div>
 						<h1>Technology Stacks & Skill Sets</h1>
 						<p>
-							Here&apos;re some images of the Technology Stacks I use
-							proficiently to build frontend, backend and full stack web
-							applications
+							Technologies I love and use
+							proficiently
 						</p>
 					</div>
 					<div className={styles['tech-stacks']}>

@@ -34,6 +34,7 @@ a {
 
 :root {
 	--header-background: #7C7F81;
+	--header-background: #96989A;
 	--footer-background: #7C7C82;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
@@ -42,6 +43,8 @@ a {
 	--projects-link-bg: #4C3F4C;
 	--about-link-bg: #574646;
 	--about-section-bg: #989692;
+	--about-section-bg: #888783;
+	--about-section-bg: #878681;
 	--contact-link-bg: #435757;
 	--contact-section-bg: #597474;
 	--active-nav-link: #803B3C;
@@ -50,7 +53,11 @@ a {
 	--home-background: url('/images/background-home-desktop.jpg');
 	--home-bg-mobile: url('/images/home-bg-mobile.jpg');
 	--primary-background: #A8A8A8;
+	--primary-background: #B9B9B9;
 	--secondary-background: #828789;
+	--secondary-background: #9b9fa0;
+	--secondary-background: #a7abac;
+	--secondary-background: #B4B7B8;
 	--complementary-bg: #4C3F4C;
 	--project-container-bg: #687064;
 	--project-container-hover: #5d645a;
