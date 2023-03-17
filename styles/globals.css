@@ -34,12 +34,9 @@ a {
 
 :root {
 	--header-background: #7C7F81;
-	/* --header-background: #96989A; */
-	--footer-background: #7C7C82;
-	--footer-background: #B0BCD4;
-	--footer-background: #9CA4B2;
-	--footer-background: #B7B6B4;
-	/* --footer-background: #A1AABA; */
+	--header-background: #96989A;
+	--footer-background: #797e88;
+	--footer-background: #93979f;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #ffffff;
@@ -47,9 +44,8 @@ a {
 	--projects-link-bg: #4C3F4C;
 	--about-link-bg: #574646;
 	--about-link-bg: #564c4d;
-	--about-section-bg: #989692;
-	--about-section-bg: #888783;
-	--about-section-bg: #878681;
+	--about-section-bg: #655967;
+	--about-section-bg: #847a7f;
 	--contact-link-bg: #435757;
 	--contact-section-bg: #597474;
 	--active-nav-link: #803B3C;
@@ -59,7 +55,6 @@ a {
 	--home-bg-mobile: url('/images/home-bg-mobile.jpg');
 	--primary-background: #A8A8A8;
 	--primary-background: #B9B9B9;
-
 	--primary-background: #ABABAB;
 	/* --primary-background: #999999; */
 	--secondary-background: #828789;
@@ -94,19 +89,16 @@ a {
 	--buttons-color: #FAFAFA;
 	--radio-btn-border: #B6B6B4;
 	--radio-btn-bg: #565759;
+	--radio-btn-bg: #565759;
 	--radio-btn-bg: #77787A;
-	--radio-btn-bg: #88898A;
+	--radio-btn-bg: #6B6C6D;
+	/* --radio-btn-bg: #88898A; */
 	--switch-button-bg: #EE5622;
 	--read-more: #BD1A43;
 }
 
 [data-theme='dark'] {
 	--header-background: #252a2d;
-	--footer-background: #262c2d;
-	--footer-background: #27262d;
-	--footer-background: #1b2225;
-	--footer-background: #161821;
-	--footer-background: #1c2332;
 	--footer-background: #161c28;
 	--home-link-bg: #2B435B;
 	--home-link-bg: #165b7e;
