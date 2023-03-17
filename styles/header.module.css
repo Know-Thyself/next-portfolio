@@ -173,7 +173,7 @@
   .about,
   .contact,
   .active {
-    border-right: 2px solid var(--switch-button-bg);
+    border-right: 2px solid var(--radio-btn-border);
   }
 
   .active {
@@ -184,7 +184,7 @@
 
   .home,
   .active:first-child {
-    border-left: 2px solid var(--switch-button-bg);
+    border-left: 2px solid var(--radio-btn-border);
   }
 
   .menu__btn {

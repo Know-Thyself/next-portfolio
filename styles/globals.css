@@ -37,6 +37,7 @@ a {
 	--header-background: #96989A;
 	--footer-background: #797e88;
 	--footer-background: #93979f;
+	--footer-background: #707c94;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #ffffff;
@@ -46,6 +47,9 @@ a {
 	--about-link-bg: #564c4d;
 	--about-section-bg: #655967;
 	--about-section-bg: #847a7f;
+	--about-section-bg: #848482;
+	--about-section-bg: #918d8d;
+	--about-section-bg: #918c8e;
 	--contact-link-bg: #435757;
 	--contact-section-bg: #597474;
 	--active-nav-link: #803B3C;
