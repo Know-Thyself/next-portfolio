@@ -9,7 +9,7 @@
 	padding-top: 64px;
 	padding-bottom: 48px;
 	padding-top: 5rem;
-	padding-bottom: 14rem;
+	padding-bottom: 12rem;
 	background-color: var(--primary-background);
 	color: var(--secondary-text-color);
 	display: flex;
@@ -18,7 +18,7 @@
 }
 
 .intro {
-	width: 80%;
+	width: 85%;
 	margin: auto;
 	padding: 1rem 0;
 }
@@ -36,7 +36,7 @@
 	font-family: var(--secondary-font-family);
 	color: var(--secondary-text-color);
 	line-height: 1.5rem;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	letter-spacing: 0.25px;
 }
 
@@ -47,7 +47,8 @@
 
 .contact-info {
 	background-color: var(--header-background);
-	display: flex;
+	/* background-color: var(--secondary-background); */
+	display: none;
 	flex-direction: column;
 	padding-bottom: 1rem;
 }
@@ -82,6 +83,7 @@
 	width: 100%;
 	margin: auto;
 	background-color: var(--radio-btn-bg);
+	/* background-color: var(--secondary-background); */
 	padding: 2rem 0;
 }
 
@@ -145,12 +147,19 @@
 }
 
 @media screen and (min-width: 714px) {
+	.intro {
+		width: 90%;
+	}
 	.wrapper {
 		flex-direction: row-reverse;
 	}
 
 	.intro h1 {
 		text-align: center;
+	}
+
+	.contact-info {
+		display: flex;
 	}
 
 	.contact-info p {
@@ -178,14 +187,15 @@
 		margin-top: 0;
 	}
 
-	.intro p {
+	.subtext {
+		font-size: 1.075rem;
+		line-height: 1.65rem;
 		padding: 0 2.5rem;
 	}
 
 }
 
 @media screen and (min-width: 1240px) {
-
 	.wrapper,
 	.intro {
 		width: 70%;
@@ -194,10 +204,6 @@
 
 	.intro h1 {
 		font-size: 2.5rem;
-	}
-
-	.subtext {
-		font-size: 1.075rem;
 	}
 
 	.text-fields,

@@ -34,8 +34,12 @@ a {
 
 :root {
 	--header-background: #7C7F81;
-	--header-background: #96989A;
+	/* --header-background: #96989A; */
 	--footer-background: #7C7C82;
+	--footer-background: #B0BCD4;
+	--footer-background: #9CA4B2;
+	--footer-background: #B7B6B4;
+	/* --footer-background: #A1AABA; */
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #ffffff;
@@ -57,10 +61,12 @@ a {
 	--primary-background: #B9B9B9;
 
 	--primary-background: #ABABAB;
+	/* --primary-background: #999999; */
 	--secondary-background: #828789;
 	--secondary-background: #9b9fa0;
 	--secondary-background: #a7abac;
 	--secondary-background: #B4B7B8;
+	--secondary-background: #A2A4A5;
 	--complementary-bg: #4C3F4C;
 	--project-container-bg: #687064;
 	--project-container-hover: #5d645a;
@@ -88,6 +94,8 @@ a {
 	--buttons-color: #FAFAFA;
 	--radio-btn-border: #B6B6B4;
 	--radio-btn-bg: #565759;
+	--radio-btn-bg: #77787A;
+	--radio-btn-bg: #88898A;
 	--switch-button-bg: #EE5622;
 	--read-more: #BD1A43;
 }
@@ -95,6 +103,11 @@ a {
 [data-theme='dark'] {
 	--header-background: #252a2d;
 	--footer-background: #262c2d;
+	--footer-background: #27262d;
+	--footer-background: #1b2225;
+	--footer-background: #161821;
+	--footer-background: #1c2332;
+	--footer-background: #161c28;
 	--home-link-bg: #2B435B;
 	--home-link-bg: #165b7e;
 	--home-link-bg: #444c95;
