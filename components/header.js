@@ -66,7 +66,7 @@ const Header = () => {
 								}
 								onClick={screenTest}
 							>
-								Home
+								<span>Home</span>
 							</Link>
 							<Link
 								href='/projects'
@@ -77,7 +77,7 @@ const Header = () => {
 								}
 								onClick={screenTest}
 							>
-								Projects
+								<span>Projects</span>
 							</Link>
 							<Link
 								href='/about'
@@ -88,7 +88,7 @@ const Header = () => {
 								}
 								onClick={screenTest}
 							>
-								About
+								<span>About</span>
 							</Link>
 							<Link
 								href='/contact'
@@ -99,7 +99,7 @@ const Header = () => {
 								}
 								onClick={screenTest}
 							>
-								Contact
+								<span>Contact</span>
 							</Link>
 						</nav>
 					)}
