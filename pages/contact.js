@@ -301,7 +301,7 @@ const Contact = () => {
 										'& .MuiInputBase-root': {
 											color: 'var(--primary-text-color)',
 											borderBottom: '1px solid var(--primary-text-color)',
-											backgroundColor: 'var(--header-background)',
+											backgroundColor: 'var(--footer-background)',
 										},
 									}}
 								/>

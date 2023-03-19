@@ -184,10 +184,15 @@
       border-left: solid 1px var(--nav-links-color);
   }
 
-  /* .contact,
+  .contact,
   .active:last-child {
     border-right: 2px solid var(--nav-links-color);
-  } */
+  }
+
+    .home,
+    .active:first-child {
+      border-left: 2px solid var(--nav-links-color);
+    }
 
   /* span {
     display: flex;

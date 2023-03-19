@@ -47,6 +47,15 @@ a {
 	--footer-background: #737d90;
 	--footer-background: #737d90;
 	--footer-background: #65686f;
+	--footer-background: #7E8189;
+
+	--footer-background: #6178a9;
+	--footer-background: #737d90;
+	--footer-background: #8f97a6;
+
+	--footer-background: #8f93a1;
+	--footer-background: #6b8299;
+	--footer-background: #889bad;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #ffffff;
@@ -61,6 +70,10 @@ a {
 	--about-section-bg: #918c8e;
 	--contact-link-bg: #435757;
 	--contact-section-bg: #597474;
+	--contact-section-bg: #738678;
+	--contact-section-bg: #6C9883;
+
+	--contact-section-bg: #6b9999;
 	--active-nav-link: #803B3C;
 	--active-nav-link-text: #FAF9F6;
 	--home-background: url('/images/home-background.jpg');
@@ -105,7 +118,12 @@ a {
 	--radio-btn-bg: #565759;
 	--radio-btn-bg: #77787A;
 	--radio-btn-bg: #6B6C6D;
-	/* --radio-btn-bg: #88898A; */
+
+	--radio-btn-bg: #727884;
+	--radio-btn-bg: #7c666c;
+	--radio-btn-bg: #7b6067;
+
+	--radio-btn-bg: #996b6b;
 	--switch-button-bg: #EE5622;
 	--read-more: #BD1A43;
 
@@ -128,7 +146,13 @@ a {
 	--about-link-bg: #3B2F2F;
 	--about-section-bg: #3B2F2F;
 	--contact-link-bg: #2D3A3A;
+	--contact-link-bg: #223D43;
+	--contact-link-bg: #1b3036;
 	--contact-section-bg: #2D3A3A;
+	--contact-section-bg: #111e21;
+	--contact-section-bg: #223D43;
+	--contact-section-bg: #1e363c;
+	--contact-section-bg: #1b3036;
 	--menu-box-bg: #58111A;
 	--menu-box-bg: #962715;
 	--menu-box-bg: #444c95;
@@ -170,8 +194,14 @@ a {
 	--nav-links-font-weight: 300;
 	--active-nav-link-font-weight: 400;
 	--radio-btn-border: #505457;
-	--radio-btn-bg: #1F2022;
+	/* --radio-btn-bg: #1F2022;
 	--radio-btn-bg: #1e2224;
+	--radio-btn-bg: #0f131c;
+	--radio-btn-bg: #111620;
+	--radio-btn-bg: #0f131c; */
+
+	--radio-btn-bg: #352d1c;
+	--radio-btn-bg: #351c23;
 	--switch-button-bg: #7280f9;
 	--read-more: #3a9bdc;
 }
