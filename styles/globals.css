@@ -38,24 +38,14 @@ a {
 	--header-background: #535E65;
 	--header-background: #505457;
 	--header-background: #414A4C;
-	/* --header-background: #545566;
-	--header-background: #555555;
-	--header-background: #555d50; */
-	--footer-background: #797e88;
-	--footer-background: #93979f;
-	--footer-background: #707c94;
-	--footer-background: #737d90;
-	--footer-background: #737d90;
-	--footer-background: #65686f;
 	--footer-background: #7E8189;
-
-	--footer-background: #6178a9;
-	--footer-background: #737d90;
 	--footer-background: #8f97a6;
-
-	--footer-background: #8f93a1;
 	--footer-background: #6b8299;
 	--footer-background: #889bad;
+	
+	--footer-background: #8093BA;
+	--footer-background: #7384A7;
+	--footer-background: #75839F;
 	--nav-links-font-weight: 500;
 	--active-nav-link-font-weight: 500;
 	--nav-links-color: #ffffff;
@@ -74,6 +64,10 @@ a {
 	--contact-section-bg: #6C9883;
 
 	--contact-section-bg: #6b9999;
+	--contact-section-bg: #7f8c83;
+
+	--contact-section-bg: #468171;
+	/* --contact-section-bg: #529885; */
 	--active-nav-link: #803B3C;
 	--active-nav-link-text: #FAF9F6;
 	--home-background: url('/images/home-background.jpg');
@@ -114,16 +108,14 @@ a {
 	--about-page-btn: #273037;
 	--buttons-color: #FAFAFA;
 	--radio-btn-border: #B6B6B4;
-	--radio-btn-bg: #565759;
+	--radio-btn-border: #7a8081;
+	--radio-btn-border: #8D9293;
 	--radio-btn-bg: #565759;
 	--radio-btn-bg: #77787A;
 	--radio-btn-bg: #6B6C6D;
-
-	--radio-btn-bg: #727884;
-	--radio-btn-bg: #7c666c;
-	--radio-btn-bg: #7b6067;
-
-	--radio-btn-bg: #996b6b;
+	--radio-btn-bg: #8A7F8D;
+	--radio-btn-bg: #596567;
+	--contact-box-bg: #985265;
 	--switch-button-bg: #EE5622;
 	--read-more: #BD1A43;
 
@@ -131,6 +123,7 @@ a {
 	--projects-link-bg: #302830;
 	--about-link-bg: #3B2F2F;
 	--contact-link-bg: #2D3A3A;
+	--contact-link-bg: #1C352E;
 	--active-nav-link: #5D2B2C;
 }
 
@@ -148,11 +141,13 @@ a {
 	--contact-link-bg: #2D3A3A;
 	--contact-link-bg: #223D43;
 	--contact-link-bg: #1b3036;
+	--contact-link-bg: #1C352E;
 	--contact-section-bg: #2D3A3A;
 	--contact-section-bg: #111e21;
 	--contact-section-bg: #223D43;
 	--contact-section-bg: #1e363c;
 	--contact-section-bg: #1b3036;
+	--contact-section-bg: #1C352E;
 	--menu-box-bg: #58111A;
 	--menu-box-bg: #962715;
 	--menu-box-bg: #444c95;
@@ -201,7 +196,8 @@ a {
 	--radio-btn-bg: #0f131c; */
 
 	--radio-btn-bg: #352d1c;
-	--radio-btn-bg: #351c23;
+	--radio-btn-bg: #30363A;
+	--contact-box-bg: #351c23;
 	--switch-button-bg: #7280f9;
 	--read-more: #3a9bdc;
 }
