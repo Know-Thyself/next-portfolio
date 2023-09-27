@@ -18,8 +18,9 @@ const Navbar = () => {
 	}
 
 	function screenTest() {
-		if (window.innerWidth <= 667) {
+		if (window.innerWidth <= 767) {
 			toggleNav()
+			setScreenWidth(window.innerWidth)
 		}
 	}
 
@@ -42,7 +43,7 @@ const Navbar = () => {
 			}`}
 			data-bs-theme={theme}
 		>
-			<div class='container-fluid'>
+			<div className='container-fluid'>
 				<Link className='navbar-brand border-0 mx-3' href='/'>
 					<Image
 						className={`${styles.logo}`}
@@ -77,9 +78,9 @@ const Navbar = () => {
 				</button>
 
 				<nav
-					className={`collapse navbar-collapse text-center me-auto me-md-5`}
-					data-toggle='collapse'
-					data-target='.navbar-collapse'
+					className='collapse navbar-collapse text-center me-auto me-md-5'
+					data-bs-toggle='collapse'
+					data-bs-target='.navbar-collapse'
 					id='navbarNavDropdown'
 				>
 					<ul className='navbar-nav ms-auto border-0 fs-6 fw-semibold me-md-5 pe-md-5'>
@@ -89,11 +90,11 @@ const Navbar = () => {
 								className={`btn nav-link px-3 ${
 									router.pathname === '/' ? 'active border-0' : ''
 								} ${theme === 'light' ? 'text-light' : 'text-body-secondary'}`}
-								// onClick={screenTest}
+								onClick={screenTest}
 							>
 								<span
-									data-bs-target='#navbarNavDropdown'
-									data-bs-toggle={`${screenWidth <= 768 ? 'collapse' : ''}`}
+									data-bs-target='.navbar-collapse'
+									data-bs-toggle={`${screenWidth <= 767 ? 'collapse' : ''}`}
 								>
 									Home
 								</span>
@@ -105,11 +106,11 @@ const Navbar = () => {
 								className={`btn nav-link px-3 ${
 									router.pathname === '/projects' ? 'active border-0' : ''
 								} ${theme === 'light' ? 'text-light' : 'text-body-secondary'}`}
-								// onClick={screenTest}
+								onClick={screenTest}
 							>
 								<span
-									data-bs-target='#navbarNavDropdown'
-									data-bs-toggle={`${screenWidth <= 768 ? 'collapse' : ''}`}
+									data-bs-target='.navbar-collapse'
+									data-bs-toggle={`${screenWidth <= 767 ? 'collapse' : ''}`}
 								>
 									Projects
 								</span>
@@ -121,11 +122,11 @@ const Navbar = () => {
 								className={`btn nav-link px-3 ${
 									router.pathname === '/about' ? 'active border-0' : ''
 								} ${theme === 'light' ? 'text-light' : 'text-body-secondary'}`}
-								// onClick={screenTest}
+								onClick={screenTest}
 							>
 								<span
-									data-bs-target='#navbarNavDropdown'
-									data-bs-toggle={`${screenWidth <= 768 ? 'collapse' : ''}`}
+									data-bs-target='.navbar-collapse'
+									data-bs-toggle={`${screenWidth <= 767 ? 'collapse' : ''}`}
 								>
 									About
 								</span>
@@ -137,11 +138,11 @@ const Navbar = () => {
 								className={`btn nav-link px-3 ${
 									router.pathname === '/contact' ? 'active border-0' : ''
 								} ${theme === 'light' ? 'text-light' : 'text-body-secondary'}`}
-								// onClick={screenTest}
+								onClick={screenTest}
 							>
 								<span
-									data-bs-target='#navbarNavDropdown'
-									data-bs-toggle={`${screenWidth <= 768 ? 'collapse' : ''}`}
+									data-bs-target='.navbar-collapse'
+									data-bs-toggle={`${screenWidth <= 767 ? 'collapse' : ''}`}
 								>
 									Contact
 								</span>
