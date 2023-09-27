@@ -18,7 +18,7 @@ const Navbar = () => {
 	}
 
 	function screenTest() {
-		if (window.innerWidth <= 724) {
+		if (window.innerWidth <= 667) {
 			toggleNav()
 		}
 	}
@@ -63,7 +63,17 @@ const Navbar = () => {
 					aria-expanded='false'
 					aria-label='Toggle navigation'
 				>
-					<span className='navbar-toggler-icon'></span>
+					{/* <span className='navbar-toggler-icon'></span> */}
+					<input
+						id='menu__toggle'
+						className={styles['menu__toggle']}
+						type='checkbox'
+						checked={isChecked}
+						onChange={toggleNav}
+					/>
+					<label className={styles['menu__btn']} htmlFor='menu__toggle'>
+						<span></span>
+					</label>
 				</button>
 
 				<nav
@@ -83,7 +93,7 @@ const Navbar = () => {
 							>
 								<span
 									data-bs-target='#navbarNavDropdown'
-									data-bs-toggle={`${screenWidth <= 667 ? 'collapse' : ''}`}
+									data-bs-toggle={`${screenWidth <= 768 ? 'collapse' : ''}`}
 								>
 									Home
 								</span>
@@ -99,7 +109,7 @@ const Navbar = () => {
 							>
 								<span
 									data-bs-target='#navbarNavDropdown'
-									data-bs-toggle={`${screenWidth <= 667 ? 'collapse' : ''}`}
+									data-bs-toggle={`${screenWidth <= 768 ? 'collapse' : ''}`}
 								>
 									Projects
 								</span>
@@ -115,7 +125,7 @@ const Navbar = () => {
 							>
 								<span
 									data-bs-target='#navbarNavDropdown'
-									data-bs-toggle={`${screenWidth <= 667 ? 'collapse' : ''}`}
+									data-bs-toggle={`${screenWidth <= 768 ? 'collapse' : ''}`}
 								>
 									About
 								</span>
@@ -131,7 +141,7 @@ const Navbar = () => {
 							>
 								<span
 									data-bs-target='#navbarNavDropdown'
-									data-bs-toggle={`${screenWidth <= 667 ? 'collapse' : ''}`}
+									data-bs-toggle={`${screenWidth <= 768 ? 'collapse' : ''}`}
 								>
 									Contact
 								</span>

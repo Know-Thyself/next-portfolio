@@ -85,7 +85,7 @@ const Projects = ({ projectsData, project, setProject }) => {
 										loading='eager'
 										className={styles['project-img']}
 										width={340}
-										height={240}
+                                        height={240}
 										sizes='(min-width: 300px) 100vw'
 									/>
 									<span className={styles.tooltip}>

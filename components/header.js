@@ -55,7 +55,7 @@ const Header = () => {
 					<label className={styles['menu__btn']} htmlFor='menu__toggle'>
 						<span></span>
 					</label>
-					{(toggleMenu || screenWidth > 724) && (
+					{(toggleMenu || screenWidth > 667) && (
 						<nav className={styles['menu__box']}>
 							<Link
 								href='/'

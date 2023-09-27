@@ -65,7 +65,7 @@
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	top: 19px;
+	top: 32px;
 	right: 24px;
 	width: 26px;
 	height: 26px;
@@ -134,7 +134,7 @@
 	background-color: var(--radio-btn-bg);
 }
 
-@media screen and (min-width: 724px) {
+@media screen and (min-width: 768px) {
 	.menu__box {
 		flex-direction: row;
 		width: max-content;
@@ -248,9 +248,12 @@
 
 }
 
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 767px) {
 	.custom-nav-item {
 		background-color: var(--menu-box-bg);
         border-bottom: solid 2px var(--radio-btn-bg);
 	}
+    .menu__btn {
+        margin-left: 2rem;
+    }
 }
