@@ -6,9 +6,8 @@
 	top: 0;
 	left: 0;
 	bottom: 0;
-	padding-top: 64px;
+	padding-top: 84px;
 	padding-bottom: 48px;
-	padding-top: 5rem;
 	padding-bottom: 12rem;
 	background-color: var(--primary-background);
 	color: var(--secondary-text-color);
@@ -153,6 +152,7 @@
 	.intro {
 		width: 90%;
 	}
+
 	.wrapper {
 		flex-direction: row-reverse;
 	}
@@ -199,6 +199,7 @@
 }
 
 @media screen and (min-width: 1240px) {
+
 	.wrapper,
 	.intro {
 		width: 70%;

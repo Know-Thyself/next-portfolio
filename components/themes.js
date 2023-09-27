@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon } from '@fortawesome/free-solid-svg-icons'
 import styles from '../styles/themes.module.css'
 
-const ThemeToggler = () => {
-	const [theme, setTheme] = useState('dark')
+const ThemeToggler = ({ theme, setTheme }) => {
+	// const [theme, setTheme] = useState('dark')
 	const [isChecked, setIsChecked] = useState(() =>
 		theme === 'dark' ? true : false
 	)

@@ -12,6 +12,7 @@ config.autoAddCss = false
 import styles from '../styles/home.module.css'
 import Image from 'next/image'
 import { Fragment } from 'react'
+import 'bootswatch/dist/slate/bootstrap.min.css'
 
 export const getStaticProps: GetStaticProps = async () => {
 	const data = await prisma.portfolio.findMany()

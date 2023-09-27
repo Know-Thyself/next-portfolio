@@ -24,7 +24,7 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 const About = ({ data }) => {
-	const about = data.map((portfolio) => portfolio.content.about)
+	const about = data.map(portfolio => portfolio.content.about)
 	const str = about[0].bio
 	// const image = about[0].image
 	const lines = str.split(/\n/)

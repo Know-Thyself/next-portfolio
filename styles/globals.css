@@ -10,7 +10,7 @@ body {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: var(--primary-background);
+	/* background-color: var(--primary-background); */
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	-o-font-smoothing: antialiased;
@@ -42,7 +42,7 @@ a {
 	--footer-background: #8f97a6;
 	--footer-background: #6b8299;
 	--footer-background: #889bad;
-	
+
 	--footer-background: #8093BA;
 	--footer-background: #7384A7;
 	--footer-background: #75839F;
@@ -76,7 +76,7 @@ a {
 	--primary-background: #A8A8A8;
 	--primary-background: #B9B9B9;
 	--primary-background: #ABABAB;
-	/* --primary-background: #999999; */
+	--primary-background: #6c757d;
 	--secondary-background: #828789;
 	--secondary-background: #9b9fa0;
 	--secondary-background: #a7abac;
@@ -155,6 +155,7 @@ a {
 	--primary-background: #1f2022;
 	--primary-background: #1b1b1b;
 	--primary-background: #0b0c0d;
+    --primary-background: #212529;
 	--secondary-background: #070707;
 	--secondary-background: #1F2428;
 	--secondary-background: #1B1F22;
