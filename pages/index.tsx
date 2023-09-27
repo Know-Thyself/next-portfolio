@@ -31,22 +31,23 @@ function HomePage({ data }): JSX.Element {
         : [line]
     )
     const variants = {
-        start: {
-            opacity: 0,
-        },
-        end: {
-            opacity: 1,
-            transition: {
-                type: 'spring',
-                stiffness: 60,
-                duration: 0.5,
-                delay: 0.5,
-            },
-        },
-        exit: {
-            opacity: 0,
-        },
-    }
+			start: {
+				y: -100,
+				opacity: 0,
+			},
+			end: {
+				y: 0,
+				opacity: 1,
+				transition: {
+					type: 'spring',
+					stiffness: 60,
+				},
+			},
+			exit: {
+				y: 100,
+				opacity: 0,
+			},
+		}
 
     return (
         <AnimatePresence>

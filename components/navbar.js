@@ -11,6 +11,7 @@ const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false)
 	const [isChecked, setIsChecked] = useState(false)
 	const [screenWidth, setScreenWidth] = useState(1348)
+	const [collapse, setCollapse] = useState('')
 
 	const toggleNav = () => {
 		setToggleMenu(!toggleMenu)
@@ -18,9 +19,12 @@ const Navbar = () => {
 	}
 
 	function screenTest() {
+		console.log(window.innerWidth);
 		if (window.innerWidth <= 767) {
 			toggleNav()
-			setScreenWidth(window.innerWidth)
+			setCollapse('collapse')
+		} else {
+			setCollapse('')
 		}
 	}
 
@@ -33,15 +37,16 @@ const Navbar = () => {
 			window.removeEventListener('resize', changeWidth)
 		}
 	}, [])
-
+	
 	return (
 		<header
 			className={`${
 				styles['custom-header']
-			} navbar navbar-expand-md border-0 fixed-bottom ${
-				theme === 'dark' ? 'bg-dark' : 'bg-primary'
+			} navbar navbar-expand-md border-0 fixed-top ${
+				theme === 'dark' ? 'bg-primary' : 'bg-secondary'
 			}`}
 			data-bs-theme={theme}
+			role='navigation'
 		>
 			<div className='container-fluid'>
 				<Link className='navbar-brand border-0 mx-3' href='/'>
@@ -59,8 +64,8 @@ const Navbar = () => {
 					className='navbar-toggler border-0'
 					type='button'
 					data-bs-toggle='collapse'
-					data-bs-target='#navbarNavDropdown'
-					aria-controls='navbarNavDropdown'
+					data-bs-target='#responsiveNavbar'
+					aria-controls='responsiveNavbar'
 					aria-expanded='false'
 					aria-label='Toggle navigation'
 				>
@@ -80,8 +85,8 @@ const Navbar = () => {
 				<nav
 					className='collapse navbar-collapse text-center me-auto me-md-5'
 					data-bs-toggle='collapse'
-					data-bs-target='.navbar-collapse'
-					id='navbarNavDropdown'
+					data-bs-target='#responsiveNavbar'
+					id='responsiveNavbar'
 				>
 					<ul className='navbar-nav ms-auto border-0 fs-6 fw-semibold me-md-5 pe-md-5'>
 						<li className={`nav-item rounded ${styles['custom-nav-item']}`}>
@@ -89,12 +94,12 @@ const Navbar = () => {
 								href='/'
 								className={`btn nav-link px-3 ${
 									router.pathname === '/' ? 'active border-0' : ''
-								} ${theme === 'light' ? 'text-light' : 'text-body-secondary'}`}
+								} ${theme === 'light' ? 'text-primary-emphasis' : 'text-body-secondary'}`}
 								onClick={screenTest}
 							>
 								<span
-									data-bs-target='.navbar-collapse'
-									data-bs-toggle={`${screenWidth <= 767 ? 'collapse' : ''}`}
+									data-bs-target='#responsiveNavbar'
+									data-bs-toggle={collapse}
 								>
 									Home
 								</span>
@@ -105,12 +110,12 @@ const Navbar = () => {
 								href='/projects'
 								className={`btn nav-link px-3 ${
 									router.pathname === '/projects' ? 'active border-0' : ''
-								} ${theme === 'light' ? 'text-light' : 'text-body-secondary'}`}
+								} ${theme === 'light' ? 'text-primary-emphasis' : 'text-body-secondary'}`}
 								onClick={screenTest}
 							>
 								<span
-									data-bs-target='.navbar-collapse'
-									data-bs-toggle={`${screenWidth <= 767 ? 'collapse' : ''}`}
+									data-bs-target='#responsiveNavbar'
+									data-bs-toggle={collapse}
 								>
 									Projects
 								</span>
@@ -121,12 +126,12 @@ const Navbar = () => {
 								href='/about'
 								className={`btn nav-link px-3 ${
 									router.pathname === '/about' ? 'active border-0' : ''
-								} ${theme === 'light' ? 'text-light' : 'text-body-secondary'}`}
+								} ${theme === 'light' ? 'text-primary-emphasis' : 'text-body-secondary'}`}
 								onClick={screenTest}
 							>
 								<span
-									data-bs-target='.navbar-collapse'
-									data-bs-toggle={`${screenWidth <= 767 ? 'collapse' : ''}`}
+									data-bs-target='#responsiveNavbar'
+									data-bs-toggle={collapse}
 								>
 									About
 								</span>
@@ -137,12 +142,12 @@ const Navbar = () => {
 								href='/contact'
 								className={`btn nav-link px-3 ${
 									router.pathname === '/contact' ? 'active border-0' : ''
-								} ${theme === 'light' ? 'text-light' : 'text-body-secondary'}`}
+								} ${theme === 'light' ? 'text-primary-emphasis' : 'text-body-secondary'}`}
 								onClick={screenTest}
 							>
 								<span
-									data-bs-target='.navbar-collapse'
-									data-bs-toggle={`${screenWidth <= 767 ? 'collapse' : ''}`}
+									data-bs-target='#responsiveNavbar'
+									data-bs-toggle={collapse}
 								>
 									Contact
 								</span>
