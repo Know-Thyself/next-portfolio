@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Button from 'react-bootstrap/Button'
 import styles from '../styles/projects.module.css'
 import { motion, AnimatePresence } from 'framer-motion'
 import prisma from '../lib/prisma'
