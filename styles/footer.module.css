@@ -1,46 +1,46 @@
 .footer {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  height: 12rem;
-  font-family: var(--secondary-font-family);
-  background-color: var(--footer-background);
-  color: var(--secondary-text-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	height: 12rem;
+	font-family: var(--secondary-font-family);
+	background-color: var(--footer-background);
+	color: var(--secondary-text-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact-info {
-  display: block;
-  width: 90%;
-  margin: 0;
-  padding: 0;
-  margin-top: -1rem;
+	display: block;
+	width: 90%;
+	margin: 0;
+	padding: 0;
+	margin-top: -1rem;
 }
 
 .anchors {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
 }
 
 .fa-brand {
-  font-size: 1.15rem;
+	font-size: 1.15rem;
 }
 
 @media screen and (min-width: 929px) {
-  .footer {
-    height: 6rem;
-  }
+	.footer {
+		height: 6rem;
+	}
 
-  .contact-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+	.contact-info {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
 
 }

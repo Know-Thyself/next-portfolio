@@ -1,152 +1,152 @@
 .home {
-  width: 100%;
-  min-height: 100%;
-  margin: 0;
-  background: var(--home-bg-mobile) no-repeat center center fixed;
-  color: var(--home-text-color);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  text-align: center;
-  position: relative;
-  top: 0;
-  left: 0;
-  /* bottom: 0; */
-  padding-top: 64px;
-  padding-bottom: 4rem;
-  padding-bottom: 33rem;
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	background: var(--home-bg-mobile) no-repeat center center fixed;
+	color: var(--home-text-color);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+	top: 0;
+	left: 0;
+	/* bottom: 0; */
+	padding-top: 88px;
+	padding-bottom: 4rem;
+	padding-bottom: 33rem;
 
 }
 
 .hero {
-  /* padding-top: 64px; */
-  width: 100%;
-  min-height: 100vh;
-  /* height: 100%; */
+	/* padding-top: 64px; */
+	width: 100%;
+	min-height: 100vh;
+	/* height: 100%; */
 }
 
 .hero-text-container {
-  width: 85%;
-  margin: auto;
+	width: 85%;
+	margin: auto;
 }
 
 .primary-text {
-  font-family: var(--hero-banner-text);
-  font-weight: 600;
-  font-size: 2.5rem;
+	font-family: var(--hero-banner-text);
+	font-weight: 600;
+	font-size: 2.5rem;
 }
 
 .hero-text-container h3 {
-  font-family: var(--secondary-font-family);
-  font-weight: 600;
-  font-size: 1.25rem;
+	font-family: var(--secondary-font-family);
+	font-weight: 600;
+	font-size: 1.25rem;
 }
 
 .profile-photo {
-  height: 200px;
-  width: auto;
-  border-radius: 50%;
+	height: 200px;
+	width: auto;
+	border-radius: 50%;
 }
 
 .intro {
-  font-family: var(--primary-font-family);
-  font-weight: var(--secondary-font-weight);
-  font-size: 1rem;
-  line-height: 1.5rem;
-  text-align: left;
-  letter-spacing: 0.25px;
+	font-family: var(--primary-font-family);
+	font-weight: var(--secondary-font-weight);
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: left;
+	letter-spacing: 0.25px;
 }
 
 .center-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .links-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 2rem;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 2rem;
 }
 
 .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--buttons-bg-color);
-  color: var(--buttons-color);
-  font-family: var(--buttons-font-family);
-  font-weight: var(--buttons-font-weight);
-  text-decoration: none;
-  text-transform: capitalize;
-  padding: 0.5rem 0.75rem;
-  border-radius: 4px;
-  font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--buttons-bg-color);
+	color: var(--buttons-color);
+	font-family: var(--buttons-font-family);
+	font-weight: var(--buttons-font-weight);
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 0.5rem 0.75rem;
+	border-radius: 4px;
+	font-size: 1rem;
 }
 
 .link .fa-github {
-  font-size: 1.12rem;
-  color: var(--buttons-color);
+	font-size: 1.12rem;
+	color: var(--buttons-color);
 }
 
 @media screen and (max-width: 400px) {
-  .link {
-    font-size: 0.85rem;
-  }
+	.link {
+		font-size: 0.85rem;
+	}
 
-  .link .fa-github {
-    font-size: 0.9rem;
+	.link .fa-github {
+		font-size: 0.9rem;
 
-  }
+	}
 }
 
 @media screen and (min-width: 667px) {
-  .hero-text-container {
-    width: 75%;
-  }
+	.hero-text-container {
+		width: 75%;
+	}
 
-  .links-wrapper {
-    gap: 2rem;
-  }
+	.links-wrapper {
+		gap: 2rem;
+	}
 
-  .link {
-    padding: 0.65rem 1.2rem;
-    font-size: 1.12rem;
-    font-weight: 200;
-  }
+	.link {
+		padding: 0.65rem 1.2rem;
+		font-size: 1.12rem;
+		font-weight: 200;
+	}
 
-  .link .fa-github {
-    font-size: 1.25rem;
-  }
+	.link .fa-github {
+		font-size: 1.25rem;
+	}
 }
 
 @media screen and (min-width: 929px) {
-  .home {
-    background: var(--home-background) no-repeat center center fixed;
-    text-align: left;
-    padding-bottom: 17rem;
-  }
+	.home {
+		background: var(--home-background) no-repeat center center fixed;
+		text-align: left;
+		padding-bottom: 17rem;
+	}
 
-  .hero-text-container {
-    margin-left: 5rem;
-    width: 54%;
-  }
+	.hero-text-container {
+		margin-left: 5rem;
+		width: 54%;
+	}
 
-  .primary-text {
-    font-weight: 900;
-  }
+	.primary-text {
+		font-weight: 900;
+	}
 }
 
 @media screen and (min-width: 1124px) {
-  .hero-text-container {
-    width: 48%;
-  }
+	.hero-text-container {
+		width: 48%;
+	}
 
-  .hero-text-container h3 {
-    font-size: 1.5rem;
-  }
+	.hero-text-container h3 {
+		font-size: 1.5rem;
+	}
 }
