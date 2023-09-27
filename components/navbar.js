@@ -11,7 +11,6 @@ const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false)
 	const [isChecked, setIsChecked] = useState(false)
 	const [screenWidth, setScreenWidth] = useState(1348)
-	const [collapse, setCollapse] = useState('')
 
 	const toggleNav = () => {
 		setToggleMenu(!toggleMenu)
@@ -19,12 +18,8 @@ const Navbar = () => {
 	}
 
 	function screenTest() {
-		console.log(window.innerWidth);
 		if (window.innerWidth <= 767) {
 			toggleNav()
-			setCollapse('collapse')
-		} else {
-			setCollapse('')
 		}
 	}
 
@@ -37,7 +32,7 @@ const Navbar = () => {
 			window.removeEventListener('resize', changeWidth)
 		}
 	}, [])
-	
+
 	return (
 		<header
 			className={`${
@@ -46,9 +41,8 @@ const Navbar = () => {
 				theme === 'dark' ? 'bg-primary' : 'bg-secondary'
 			}`}
 			data-bs-theme={theme}
-			role='navigation'
 		>
-			<div className='container-fluid'>
+			<div class='container-fluid'>
 				<Link className='navbar-brand border-0 mx-3' href='/'>
 					<Image
 						className={`${styles.logo}`}
@@ -60,101 +54,92 @@ const Navbar = () => {
 						height={70}
 					/>
 				</Link>
-				<button
-					className='navbar-toggler border-0'
-					type='button'
-					data-bs-toggle='collapse'
-					data-bs-target='#responsiveNavbar'
-					aria-controls='responsiveNavbar'
-					aria-expanded='false'
-					aria-label='Toggle navigation'
-				>
-					{/* <span className='navbar-toggler-icon'></span> */}
-					<input
-						id='menu__toggle'
-						className={styles['menu__toggle']}
-						type='checkbox'
-						checked={isChecked}
-						onChange={toggleNav}
-					/>
-					<label className={styles['menu__btn']} htmlFor='menu__toggle'>
-						<span></span>
-					</label>
-				</button>
-
-				<nav
-					className='collapse navbar-collapse text-center me-auto me-md-5'
-					data-bs-toggle='collapse'
-					data-bs-target='#responsiveNavbar'
-					id='responsiveNavbar'
-				>
-					<ul className='navbar-nav ms-auto border-0 fs-6 fw-semibold me-md-5 pe-md-5'>
-						<li className={`nav-item rounded ${styles['custom-nav-item']}`}>
-							<Link
-								href='/'
-								className={`btn nav-link px-3 ${
-									router.pathname === '/' ? 'active border-0' : ''
-								} ${theme === 'light' ? 'text-primary-emphasis' : 'text-body-secondary'}`}
-								onClick={screenTest}
-							>
-								<span
-									data-bs-target='#responsiveNavbar'
-									data-bs-toggle={collapse}
+				<input
+					id='menu__toggle'
+					className={styles['menu__toggle']}
+					type='checkbox'
+					checked={isChecked}
+					onChange={toggleNav}
+				/>
+				<label className={styles['menu__btn']} htmlFor='menu__toggle'>
+					<span></span>
+				</label>
+				{(toggleMenu || screenWidth > 767) && (
+					<nav className={`text-center me-auto me-md-5 ${styles['menu__box']}`}>
+						<ul
+							className={`navbar-nav ms-auto border-0 fs-6 fw-semibold me-md-5 pe-md-5 ${styles['menu__box__ul']}`}
+						>
+							<li className={`nav-item ${styles['custom-nav-item']}`}>
+								<Link
+									href='/'
+									className={`btn nav-link px-3 ${
+										router.pathname === '/'
+											? 'active border-0'
+											: styles['menu__item']
+									} ${
+										theme === 'light'
+											? 'text-primary-emphasis'
+											: 'text-body-secondary'
+									}`}
+									onClick={screenTest}
 								>
-									Home
-								</span>
-							</Link>
-						</li>
-						<li className={`nav-item rounded ${styles['custom-nav-item']}`}>
-							<Link
-								href='/projects'
-								className={`btn nav-link px-3 ${
-									router.pathname === '/projects' ? 'active border-0' : ''
-								} ${theme === 'light' ? 'text-primary-emphasis' : 'text-body-secondary'}`}
-								onClick={screenTest}
-							>
-								<span
-									data-bs-target='#responsiveNavbar'
-									data-bs-toggle={collapse}
+									<span className='text-uppercase'>Home</span>
+								</Link>
+							</li>
+							<li className={`nav-item ${styles['custom-nav-item']}`}>
+								<Link
+									href='/projects'
+									className={`btn nav-link px-3 ${
+										router.pathname === '/projects'
+											? 'active border-0'
+											: styles['menu__item']
+									} ${
+										theme === 'light'
+											? 'text-primary-emphasis'
+											: 'text-body-secondary'
+									}`}
+									onClick={screenTest}
 								>
-									Projects
-								</span>
-							</Link>
-						</li>
-						<li className={`nav-item rounded ${styles['custom-nav-item']}`}>
-							<Link
-								href='/about'
-								className={`btn nav-link px-3 ${
-									router.pathname === '/about' ? 'active border-0' : ''
-								} ${theme === 'light' ? 'text-primary-emphasis' : 'text-body-secondary'}`}
-								onClick={screenTest}
-							>
-								<span
-									data-bs-target='#responsiveNavbar'
-									data-bs-toggle={collapse}
+									<span className='text-uppercase'>Projects</span>
+								</Link>
+							</li>
+							<li className={`nav-item ${styles['custom-nav-item']}`}>
+								<Link
+									href='/about'
+									className={`btn nav-link px-3 ${
+										router.pathname === '/about'
+											? 'active border-0'
+											: styles['menu__item']
+									} ${
+										theme === 'light'
+											? 'text-primary-emphasis'
+											: 'text-body-secondary'
+									}`}
+									onClick={screenTest}
 								>
-									About
-								</span>
-							</Link>
-						</li>
-						<li className={`nav-item rounded ${styles['custom-nav-item']}`}>
-							<Link
-								href='/contact'
-								className={`btn nav-link px-3 ${
-									router.pathname === '/contact' ? 'active border-0' : ''
-								} ${theme === 'light' ? 'text-primary-emphasis' : 'text-body-secondary'}`}
-								onClick={screenTest}
-							>
-								<span
-									data-bs-target='#responsiveNavbar'
-									data-bs-toggle={collapse}
+									<span className='text-uppercase'>About</span>
+								</Link>
+							</li>
+							<li className={`nav-item ${styles['custom-nav-item']}`}>
+								<Link
+									href='/contact'
+									className={`btn nav-link px-3 ${
+										router.pathname === '/contact'
+											? 'active border-0'
+											: styles['menu__item']
+									} ${
+										theme === 'light'
+											? 'text-primary-emphasis'
+											: 'text-body-secondary'
+									}`}
+									onClick={screenTest}
 								>
-									Contact
-								</span>
-							</Link>
-						</li>
-					</ul>
-				</nav>
+									<span className='text-uppercase'>Contact</span>
+								</Link>
+							</li>
+						</ul>
+					</nav>
+				)}
 				<ThemeToggler theme={theme} setTheme={setTheme} />
 			</div>
 		</header>
