@@ -35,3 +35,4 @@ yarn-error.log*
 
 portfolio.json
 .vscode/
+package-lock.json
