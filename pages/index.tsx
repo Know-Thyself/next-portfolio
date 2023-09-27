@@ -12,18 +12,15 @@ config.autoAddCss = false
 import styles from '../styles/home.module.css'
 import Image from 'next/image'
 import { Fragment } from 'react'
-import 'bootswatch/dist/slate/bootstrap.min.css'
 
 export const getStaticProps: GetStaticProps = async () => {
 	const data = await prisma.portfolio.findMany()
 	return { props: { data } }
 }
 
-function HomePage({ data }): JSX.Element {
-	const id = data.map((portfolio: { id: any }) => portfolio.id).pop()
-	const about = data.map(
-		(portfolio: { content: { about: any } }) => portfolio.content.about
-	)
+const HomePage = ({ data }) => {
+	const id = data.map((portfolio) => portfolio.id).pop()
+	const about = data.map((portfolio) => portfolio.content.about)
 
 	const str = about[0].intro
 	const image = about[0].image
