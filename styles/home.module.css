@@ -1,152 +1,183 @@
 .home {
-	width: 100%;
-	min-height: 100%;
-	margin: 0;
-	background: var(--home-bg-mobile) no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* background: var(--home-bg-mobile) no-repeat center center fixed;
 	color: var(--home-text-color);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
-	text-align: center;
-	position: relative;
-	top: 0;
-	left: 0;
-	/* bottom: 0; */
-	padding-top: 88px;
-	padding-bottom: 4rem;
-	padding-bottom: 33rem;
+	background-size: cover; */
+    background-color: var(--primary-background);
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* bottom: 0; */
+    padding-top: 88px;
+    padding-bottom: 14rem;
+    /* padding-bottom: 33rem; */
 
 }
 
 .hero {
-	/* padding-top: 64px; */
-	width: 100%;
-	min-height: 100vh;
-	/* height: 100%; */
+    /* padding-top: 64px; */
+    width: 85%;
+    min-height: 100vh;
+    margin: auto;
+    /* height: 100%; */
 }
 
-.hero-text-container {
-	width: 85%;
-	margin: auto;
+/* .hero-text-container {
+    width: 85%;
+    margin: auto;
+} */
+
+.banner {
+    font-family: var(--hero-banner-text);
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 1rem 0;
 }
 
-.primary-text {
-	font-family: var(--hero-banner-text);
-	font-weight: 600;
-	font-size: 2.5rem;
-}
-
-.hero-text-container h3 {
-	font-family: var(--secondary-font-family);
-	font-weight: 600;
-	font-size: 1.25rem;
-}
+/* .hero-text-container h3 {
+    font-family: var(--secondary-font-family);
+    font-weight: 600;
+    font-size: 1.25rem;
+} */
 
 .profile-photo {
-	height: 200px;
-	width: auto;
-	border-radius: 50%;
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
 }
 
 .intro {
-	font-family: var(--primary-font-family);
-	font-weight: var(--secondary-font-weight);
-	font-size: 1rem;
-	line-height: 1.5rem;
-	text-align: left;
-	letter-spacing: 0.25px;
+    font-family: var(--primary-font-family);
+    font-weight: var(--secondary-font-weight);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    letter-spacing: 0.25px;
+    margin-top: 1rem;
 }
 
 .center-link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .links-wrapper {
-	width: 100%;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 1rem;
-	margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--buttons-bg-color);
-	color: var(--buttons-color);
-	font-family: var(--buttons-font-family);
-	font-weight: var(--buttons-font-weight);
-	text-decoration: none;
-	text-transform: capitalize;
-	padding: 0.5rem 0.75rem;
-	border-radius: 4px;
-	font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--buttons-bg-color);
+    color: var(--buttons-color);
+    font-family: var(--buttons-font-family);
+    font-weight: var(--buttons-font-weight);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
 .link .fa-github {
-	font-size: 1.12rem;
-	color: var(--buttons-color);
+    font-size: 1.12rem;
+    color: var(--buttons-color);
 }
 
 @media screen and (max-width: 400px) {
-	.link {
-		font-size: 0.85rem;
-	}
+    .link {
+        font-size: 0.85rem;
+    }
 
-	.link .fa-github {
-		font-size: 0.9rem;
+    .link .fa-github {
+        font-size: 0.9rem;
 
-	}
+    }
 }
 
 @media screen and (min-width: 667px) {
-	.hero-text-container {
-		width: 75%;
-	}
+    .hero {
+        width: 75%;
+    }
 
-	.links-wrapper {
-		gap: 2rem;
-	}
+    .banner {
+        text-align: left;
+        margin: 1.5rem 0;
+    }
 
-	.link {
-		padding: 0.65rem 1.2rem;
-		font-size: 1.12rem;
-		font-weight: 200;
-	}
+    .profile-photo {
+        float: left;
+        shape-outside: circle();
+        margin-right: 1rem;
+    }
 
-	.link .fa-github {
-		font-size: 1.25rem;
-	}
+    .intro {
+        text-align: justify;
+    }
+
+    .links-wrapper {
+        gap: 2rem;
+    }
+
+    .link {
+        padding: 0.65rem 1.2rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .link .fa-github {
+        font-size: 1.25rem;
+    }
 }
 
 @media screen and (min-width: 929px) {
-	.home {
-		background: var(--home-background) no-repeat center center fixed;
-		text-align: left;
-		padding-bottom: 17rem;
-	}
+    .home {
+        padding-bottom: 7rem;
+    }
+    .hero {
+        width: 70%;
+    }
 
-	.hero-text-container {
-		margin-left: 5rem;
-		width: 54%;
-	}
-
-	.primary-text {
-		font-weight: 900;
-	}
+    .banner {
+        font-weight: 900;
+    }
 }
 
 @media screen and (min-width: 1124px) {
-	.hero-text-container {
-		width: 48%;
-	}
+    .hero {
+        width: 80%;
+        margin: auto;
+        border-radius: 20%;
+        background-color: var(--secondary-background);
+        padding: 2rem 10rem;
+    }
+    .banner {
+        margin: 2rem 0;
+    }
 
-	.hero-text-container h3 {
-		font-size: 1.5rem;
-	}
+    .profile-photo {
+        margin-right: 1.5rem;
+        height: 240px;
+    }
+
+    .hero-text-container h4 {
+        font-size: 1.5rem;
+    }
+
+    .links-wrapper {
+        margin-top: 2.5rem;
+    }
 }

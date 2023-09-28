@@ -6,7 +6,7 @@
 	height: 12rem;
 	font-family: var(--secondary-font-family);
 	background-color: var(--footer-background);
-    font-size: 0.78rem;
+    font-size: 0.87rem;
 	color: var(--secondary-text-color);
 	display: flex;
 	flex-direction: column;
@@ -37,6 +37,7 @@
 @media screen and (min-width: 929px) {
 	.footer {
 		height: 7rem;
+        font-size: 1rem;
 	}
 
 	.contact-info {
