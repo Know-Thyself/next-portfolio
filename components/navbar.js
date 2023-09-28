@@ -70,7 +70,7 @@ const Navbar = () => {
 									href='/'
 									className={`nav-link px-4 border-end-0 ${
 										router.pathname === '/'
-											? `${styles.active} border-0`
+											? styles.active
 											: styles['menu__item']
 									} ${
 										theme === 'light'
@@ -87,7 +87,7 @@ const Navbar = () => {
 									href='/projects'
 									className={`nav-link px-4 border-end-0 ${
 										router.pathname === '/projects'
-											? `${styles.active} border-0`
+											? styles.active
 											: styles['menu__item']
 									} ${
 										theme === 'light'
@@ -104,7 +104,7 @@ const Navbar = () => {
 									href='/about'
 									className={`nav-link px-4 border-end-0 ${
 										router.pathname === '/about'
-											? `${styles.active} border-0`
+											? styles.active
 											: styles['menu__item']
 									} ${
 										theme === 'light'
@@ -121,7 +121,7 @@ const Navbar = () => {
 									href='/contact'
 									className={`nav-link px-4 ${
 										router.pathname === '/contact'
-											? `${styles.active} border-0 `
+											? styles.active
 											: styles['menu__item']
 									} ${
 										theme === 'light'

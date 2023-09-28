@@ -70,7 +70,7 @@ const Home = ({ data }) => {
 								href='https://github.com/Know-Thyself'
 								target='_blank'
 								rel='noreferrer'
-								className={styles.link}
+								className={`btn btn-primary ${styles.link}`}
 								whileHover={{
 									scale: 1.2,
 								}}
@@ -88,7 +88,10 @@ const Home = ({ data }) => {
 								}}
 								whileTap={{ scale: 0.8 }}
 							>
-								<Link href='/projects' className={styles.link}>
+								<Link
+									href='/projects'
+									className={`btn btn-primary ${styles.link}`}
+								>
 									Projects
 								</Link>
 							</motion.div>

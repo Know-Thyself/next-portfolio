@@ -10,7 +10,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--primary-background);
+    background-color: var(--primary-bg);
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
@@ -33,18 +33,18 @@ a {
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 
 :root {
-    --header-background: #afb3ac;
-    --header-background: #c1c4bf;
-    --header-background: #E5E4E2;
-    --header-background: #E8E9EB;
-    --footer-background: #7E8189;
-    --footer-background: #8f97a6;
-    --footer-background: #6b8299;
-    --footer-background: #889bad;
+    --header-bg: #afb3ac;
+    --header-bg: #c1c4bf;
+    --header-bg: #E5E4E2;
+    --header-bg: #E8E9EB;
+    --footer-bg: #7E8189;
+    --footer-bg: #8f97a6;
+    --footer-bg: #6b8299;
+    --footer-bg: #889bad;
 
-    --footer-background: #8093BA;
-    --footer-background: #7384A7;
-    --footer-background: #848482;
+    --footer-bg: #8093BA;
+    --footer-bg: #7384A7;
+    --footer-bg: #848482;
     --nav-links-font-weight: 500;
     --active-nav-link-font-weight: 500;
     --nav-links-color: #ffffff;
@@ -72,23 +72,27 @@ a {
     --home-background: url('/images/home-background.jpg');
     --home-background: url('/images/background-home-desktop.jpg');
     --home-bg-mobile: url('/images/home-bg-mobile.jpg');
-    --primary-background: #a8a8a7;
-    --primary-background: #CCCDC6;
-    --primary-background: #DBD7D2;
-    --primary-background: #D3D3D3;
-    --primary-background: #DCDCDC;
-    --secondary-background: white;
-    --tertiary-background: #4d4f50;
-    --complementary-bg: #4C3F4C;
-    --project-container-bg: #687064;
+    --primary-bg: #CCCDC6;
+    --primary-bg: #DBD7D2;
+    --primary-bg: white;
+    --primary-bg: #DCDCDC;
+    --primary-bg: #D3D3D3;
+    --primary-bg: #F5F5F5;
+    --secondary-bg: #BEC3C6;
+    --secondary-bg: #B2B1AE;
+    --secondary-bg: #B0B7BA;
+    --complementary-bg: #A8A9AD;
+    --tertiary-bg: #B0B7BA;
+    --tertiary-bg: #B0B6BA;
+    --tertiary-bg: #DADADA;
     --project-container-hover: #5d645a;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --buttons-font-family: 'Montserrat',
-    sans-serif;
+        sans-serif;
     --secondary-text-color: #f8f8f8;
     --secondary-font-family: 'Lato',
-    sans-serif;
+        sans-serif;
     --primary-text-color: #313030;
     --home-text-color: #c2c2c5;
     --helper-text-color: #0A0A0A;
@@ -114,7 +118,7 @@ a {
     --contact-box-bg: #985265;
     --switch-button-bg: #EE5622;
     --read-more: #BD1A43;
-    
+
     --home-link-bg: #39407c;
     --projects-link-bg: #302830;
     --about-link-bg: #3B2F2F;
@@ -124,10 +128,10 @@ a {
 }
 
 [data-theme='dark'] {
-    --header-background: #252a2d;
-    --header-background: #2a2f33;
-    --footer-background: #161c28;
-    --footer-background: #2a2f33;
+    --header-bg: #252a2d;
+    --header-bg: #2a2f33;
+    --footer-bg: #161c28;
+    --footer-bg: #2a2f33;
     --home-link-bg: #2B435B;
     --home-link-bg: #165b7e;
     --home-link-bg: #444c95;
@@ -151,24 +155,37 @@ a {
     --menu-box-bg: #962715;
     --menu-box-bg: #444c95;
     --menu-box-bg: #39407c;
-    --primary-background: #0b0c0d;
-    --primary-background: #212529;
-    --primary-background: #212121;
-    --primary-background: #1f2022;
-    --primary-background: #1b1b1b;
-    --primary-background: #2a3132;
-    --primary-background: #1B1F22;
-    --secondary-background: #070707;
-    --secondary-background: #1F2428;
-    --secondary-background: #1B1F22;
-    --secondary-background: #1e1f26;
-    --tertiary-background: #1a1a1a;
-    --tertiary-background: #32393E;
-    --project-container-bg: #4f554c;
+    --primary-bg: #0b0c0d;
+    --primary-bg: #212529;
+    --primary-bg: #212121;
+    --primary-bg: #1f2022;
+    --primary-bg: #1b1b1b;
+    --primary-bg: #2a3132;
+    --primary-bg: #1B1F22;
+    --secondary-bg: #070707;
+    --secondary-bg: #1F2428;
+    --secondary-bg: #1B1F22;
+    --secondary-bg: #1e1f26;
+    --secondary-bg: #A59E88;
+    --secondary-bg: #8E866C;
+    --secondary-bg: #30363A;
+    --tertiary-bg: #1a1a1a;
+    --tertiary-bg: #32393E;
+    --tertiary-bg: #4f554c;
+    
+    --tertiary-bg: #32393E;
+    --tertiary-bg: #2E3438;
+    --tertiary-bg: #272A30;
     --project-container-hover: #464c44;
     --complementary-bg: #302830;
     --complementary-bg: #41494F;
+    --complementary-bg: #727B78;
     --complementary-bg: #32393E;
+    --complementary-bg: #4f554c;
+    --complementary-bg: #717184;
+    --complementary-bg: #4F4F5A;
+
+    --complementary-bg: #4E4E5A;
     --home-background: url('/images/home-background.jpg');
     --home-background: url('/images/background-home-desktop.jpg');
     --home-bg-mobile: url('/images/home-bg-mobile.jpg');

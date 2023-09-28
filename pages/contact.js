@@ -44,18 +44,18 @@ const Contact = () => {
 	const [buttonText, setButtonText] = useState('Send')
 	const [showSuccessMessage, setShowSuccessMessage] = useState(false)
 
-	const handleChange = (e) => {
-		setFormInputs((values) => ({
+	const handleChange = e => {
+		setFormInputs(values => ({
 			...values,
 			[e.target.name]: e.target.value,
 		}))
-		setErrors((values) => ({
+		setErrors(values => ({
 			...values,
 			[e.target.name]: false,
 		}))
 	}
 
-	const isEmail = (email) =>
+	const isEmail = email =>
 		/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)
 
 	const formValidator = () => {
@@ -91,7 +91,7 @@ const Contact = () => {
 		return isValid
 	}
 
-	const handleSubmit = async (e) => {
+	const handleSubmit = async e => {
 		e.preventDefault()
 		let isValid = formValidator()
 		if (!isValid) {
@@ -307,7 +307,10 @@ const Contact = () => {
 								/>
 							</div>
 							<br />
-							<button onClick={handleSubmit} className={styles.send}>
+							<button
+								onClick={handleSubmit}
+								className={`btn btn-primary ${styles.send}`}
+							>
 								{buttonText} &nbsp;
 								<FontAwesomeIcon
 									icon={faPaperPlane}

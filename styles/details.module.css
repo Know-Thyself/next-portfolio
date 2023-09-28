@@ -1,143 +1,143 @@
 .main-container {
-	width: 100%;
-	background: var(--primary-background);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 100vh;
-	padding: 5rem 0 13rem 0;
+    width: 100%;
+    background: var(--primary-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 5rem 0 13rem 0;
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	width: 90%;
-	margin: auto;
-	gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
 }
 
 .back-btn {
-	background-color: var(--buttons-hover-bg);
-	color: var(--buttons-color);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 0.5rem;
-	padding: 0.75rem 1rem;
-	border-radius: 4px;
+    background-color: var(--buttons-hover-bg);
+    color: var(--buttons-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
 }
 
 .project-wrapper {
-	width: 100%;
-	height: fit-content;
-	margin: auto;
-	background-color: var(--complementary-bg);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	box-shadow: inset 0 0 0 0 var(--switch-button-bg);
-	transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
-	border-radius: 4px;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    background-color: var(--complementary-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 var(--switch-button-bg);
+    transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+    border-radius: 4px;
 }
 
 .project-title {
-	font-family: var(--primary-font-family);
-	font-size: 1.25rem;
-	color: var(--secondary-text-color);
-	background-color: var(--primary-background);
-	width: 90%;
-	margin: 1rem auto;
-	padding: 1rem 0;
-	text-align: center;
-	border-radius: 4px;
+    font-family: var(--primary-font-family);
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    background-color: var(--primary-bg);
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 4px;
 }
 
 .project-img {
-	width: 90%;
-	height: auto;
-	margin: auto;
-	border-radius: 4px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 4px;
 }
 
 .read-more-read-less-wrapper {
-	background-color: var(--primary-background);
-	width: 90%;
-	margin-top: 1rem;
-	text-align: left;
-	border-radius: 4px;
+    background-color: var(--primary-bg);
+    width: 90%;
+    margin-top: 1rem;
+    text-align: left;
+    border-radius: 4px;
 }
 
 .description {
-	font-family: var(--primary-font-family);
-	color: var(--secondary-text-color);
-	width: 90%;
-	margin: 1rem auto;
-	font-weight: 300;
-	line-height: 1.25rem;
-	letter-spacing: 0.5px;
-	border-radius: 4px;
+    font-family: var(--primary-font-family);
+    color: var(--secondary-text-color);
+    width: 90%;
+    margin: 1rem auto;
+    font-weight: 300;
+    line-height: 1.25rem;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
 }
 
 .description span {
-	display: inline-block;
-	color: var(--read-more);
-	cursor: pointer;
+    display: inline-block;
+    color: var(--read-more);
+    cursor: pointer;
 }
 
 .project-links-wrapper {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	margin: 1rem auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem auto;
 }
 
 .live-demo-link,
 .github-link {
-	font-family: var(--buttons-font-family);
-	color: var(--secondary-text-color);
-	background-color: var(--buttons-hover-bg);
-	color: var(--buttons-color);
-	text-decoration: none;
-	padding: 0.65rem 1.2rem;
-	border-radius: 4px;
-	font-size: 1rem;
-	font-weight: var(--buttons-font-weight);
+    font-family: var(--buttons-font-family);
+    color: var(--secondary-text-color);
+    background-color: var(--buttons-hover-bg);
+    color: var(--buttons-color);
+    text-decoration: none;
+    padding: 0.65rem 1.2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: var(--buttons-font-weight);
 }
 
 .fa-github {
-	font-size: 1.12rem;
-	color: var(--buttons-color);
+    font-size: 1.12rem;
+    color: var(--buttons-color);
 }
 
 @media screen and (min-width: 667px) {
-	.container {
-		width: 85%;
-	}
+    .container {
+        width: 85%;
+    }
 
-	.description {
-		font-size: 1.075rem;
-	}
+    .description {
+        font-size: 1.075rem;
+    }
 
-	.live-demo-link,
-	.github-link {
-		font-weight: 400;
-	}
+    .live-demo-link,
+    .github-link {
+        font-weight: 400;
+    }
 }
 
 @media screen and (min-width: 929px) {
-	.main-container {
-		padding-bottom: 10rem;
-	}
+    .main-container {
+        padding-bottom: 10rem;
+    }
 }
 
 @media screen and (min-width: 1124px) {
-	.container {
-		width: 80%;
-	}
+    .container {
+        width: 80%;
+    }
 }

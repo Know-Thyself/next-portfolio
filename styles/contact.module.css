@@ -1,226 +1,227 @@
 .main {
-	width: 100%;
-	text-align: center;
-	position: relative;
-	min-height: 100vh;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	padding-top: 84px;
-	padding-bottom: 12rem;
-	background-color: var(--primary-background);
-    background-color: var(--secondary-background);
-	color: var(--secondary-text-color);
-	display: flex;
-	flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 84px;
+    padding-bottom: 12rem;
+    background-color: var(--secondary-bg);
+    background-color: var(--primary-bg);
+    color: var(--secondary-text-color);
+    display: flex;
+    flex-direction: column;
 
 }
 
 .intro {
-	width: 85%;
-	margin: auto;
-	padding: 1rem 0;
+    width: 85%;
+    margin: auto;
+    padding: 1rem 0;
 }
 
 .intro h1 {
-	font-family: var(--secondary-font-family);
-	font-size: 1.5rem;
-	letter-spacing: 0.25px;
-	margin: 0 auto 0.5rem auto;
-	text-align: left;
+    font-family: var(--secondary-font-family);
+    font-size: 1.5rem;
+    letter-spacing: 0.25px;
+    margin: 0 auto 0.5rem auto;
+    text-align: left;
 }
 
 .subtext {
-	text-align: left;
-	font-family: var(--secondary-font-family);
-	color: var(--secondary-text-color);
-	line-height: 1.5rem;
-	font-size: 1rem;
-	letter-spacing: 0.25px;
+    text-align: left;
+    font-family: var(--secondary-font-family);
+    color: var(--secondary-text-color);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.25px;
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .contact-info {
-    background-color: var(--footer-background);
-	background-color: var(--header-background);
+    background-color: var(--footer-bg);
+    background-color: var(--header-bg);
     background-color: var(--complementary-bg);
-	display: none;
-	flex-direction: column;
-	padding-bottom: 1rem;
+    display: none;
+    flex-direction: column;
+    padding-bottom: 1rem;
 }
 
 .contact-info h1 {
-	width: 100%;
-	margin: 1rem auto;
+    width: 100%;
+    margin: 1rem auto;
 }
 
 .contact-info p {
-	text-align: left;
-	width: 80%;
-	margin: auto;
+    text-align: left;
+    width: 80%;
+    margin: auto;
 }
 
 .anchors {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .fa-brand {
-	font-size: 1.35rem;
+    font-size: 1.35rem;
 }
 
 .box {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	margin: auto;
-	background-color: var(--contact-box-bg);
-	background-color: var(--secondary-background);
-	background-color: var(--primary-background);
-    background-color: var(--project-container-bg);
-	padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: var(--contact-box-bg);
+    background-color: var(--secondary-bg);
+    background-color: var(--primary-bg);
+    background-color: var(--tertiary-bg);
+    padding: 2rem 0;
 }
 
 .text-fields,
 .message-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
 }
 
 
 .required:after {
-	content: " *";
-	color: crimson;
+    content: " *";
+    color: crimson;
 }
 
 .textField input {
-	color: var(--secondary-text-color);
-	border-bottom: 1px solid var(--primary-text-color);
-	background-color: var(--header-background);
-	background-color: var(--footer-background);
+    color: var(--secondary-text-color);
+    border-bottom: 1px solid var(--primary-text-color);
+    background-color: var(--header-bg);
+    background-color: var(--footer-bg);
     background-color: var(--complementary-bg);
-	font-family: var(--primary-font-family);
+    font-family: var(--primary-font-family);
 }
 
 .textField label {
-	color: var(--secondary-text-color);
-	font-family: var(--primary-font-family);
+    color: var(--secondary-text-color);
+    font-family: var(--primary-font-family);
 }
 
 .textField textarea {
-	background-color: var(--header-background);
-	background-color: var(--footer-background);
+    background-color: var(--header-bg);
+    background-color: var(--footer-bg);
     background-color: var(--complementary-bg);
 }
 
 .send {
-	background-color: var(--buttons-bg-color);
-	color: var(--buttons-color);
-	font-family: var(--buttons-font-family);
-	text-transform: uppercase;
-	font-size: 1rem;
-	font-weight: 300;
-	text-decoration: none;
-	border: none;
-	width: max-content;
-	margin: auto;
-	padding: 0.75rem 1.25rem;
-	cursor: pointer;
-	border-radius: 4px;
+    background-color: var(--buttons-bg-color);
+    color: var(--buttons-color);
+    font-family: var(--buttons-font-family);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    border: none;
+    width: max-content;
+    margin: auto;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 .send:hover {
-	background-color: var(--buttons-hover-bg);
+    background-color: var(--buttons-hover-bg);
 }
 
 .fa-paper-plane {
-	font-size: 1rem;
+    font-size: 1rem;
 }
 
 .error-alert {
-	margin-top: 0.5rem;
-	background-color: darkred;
+    margin-top: 0.5rem;
+    background-color: darkred;
 }
 
 @media screen and (min-width: 714px) {
-	.intro {
-		width: 90%;
-	}
+    .intro {
+        width: 90%;
+    }
 
-	.wrapper {
-		flex-direction: row-reverse;
-	}
+    .wrapper {
+        flex-direction: row-reverse;
+    }
 
-	.intro h1 {
-		text-align: center;
-	}
+    .intro h1 {
+        text-align: center;
+    }
 
-	.contact-info {
-		display: flex;
-	}
+    .contact-info {
+        display: flex;
+    }
 
-	.contact-info p {
-		margin: 1rem auto;
-	}
+    .contact-info p {
+        margin: 1rem auto;
+    }
 }
 
 @media screen and (min-width: 929px) {
-	.main {
-		min-height: 100%;
+    .main {
+        min-height: 100%;
         padding-top: 8rem;
-		padding-bottom: 10rem;
-	}
+        padding-bottom: 10rem;
+    }
 
-	.wrapper,
-	.intro {
-		width: 80%;
-		margin: auto;
-	}
+    .wrapper,
+    .intro {
+        width: 80%;
+        margin: auto;
+    }
 
-	.intro {
-		background: var(--contact-section-bg);
+    .intro {
+        background: var(--contact-section-bg);
         background-color: var(--complementary-bg);
         background-color: var(--radio-btn-bg);
-	}
+        background-color: var(--secondary-bg);
+    }
 
-	.wrapper {
-		margin-top: 0;
-	}
+    .wrapper {
+        margin-top: 0;
+    }
 
-	.subtext {
-		font-size: 1.075rem;
-		line-height: 1.65rem;
-		padding: 0 2.5rem;
-	}
+    .subtext {
+        font-size: 1.075rem;
+        line-height: 1.65rem;
+        padding: 0 2.5rem;
+    }
 
 }
 
 @media screen and (min-width: 1240px) {
 
-	.wrapper,
-	.intro {
-		width: 70%;
-		width: 80%;
-	}
+    .wrapper,
+    .intro {
+        width: 70%;
+        width: 80%;
+    }
 
-	.intro h1 {
-		font-size: 2.5rem;
-	}
+    .intro h1 {
+        font-size: 2.5rem;
+    }
 
-	.text-fields,
-	.message-wrapper {
-		flex-direction: row;
-		width: 90%;
-		justify-content: space-between;
-	}
+    .text-fields,
+    .message-wrapper {
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+    }
 }

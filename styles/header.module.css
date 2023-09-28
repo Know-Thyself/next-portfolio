@@ -5,7 +5,7 @@
     width: 100%;
     height: 84px;
     z-index: 3;
-    background-color: var(--header-background);
+    background-color: var(--header-bg);
 }
 
 .logo {
@@ -57,7 +57,7 @@
     width: 100%;
     height: 3px;
     background-color: var(--switch-button-bg);
-    background-color: var(--project-container-bg);
+    background-color: var(--tertiary-bg);
     background-color: var(--radio-btn-border);
     transition-duration: 0.25s;
 }
@@ -95,16 +95,17 @@
     padding: 18px 24px;
     font-family: var(--primary-font-family);
     color: var(--nav-links-color);
-    border-bottom: solid 1px var(--primary-background);
+    border-bottom: solid 1px var(--primary-bg);
     font-size: 1rem;
     font-weight: var(--nav-links-font-weight);
     text-decoration: none;
     transition-duration: 0.25s;
-    border-bottom: 0px solid var(--header-background);
+    border-bottom: 0px solid var(--header-bg);
 }
 
 .menu__item:hover {
-    background-color: var(--primary-background);
+    background-color: var(--primary-bg);
+    background-color: var(--complementary-bg);
 }
 
 /* .menu__item:hover {
@@ -116,11 +117,13 @@
     /* text-decoration: none;
     font-weight: var(--active-nav-link-font-weight); */
     /* color: var(--active-nav-link-text); */
-    background-color: var(--primary-background) !important;
+    background-color: var(--primary-bg) !important;
+    background-color: var(--complementary-bg) !important;
 }
 
 .active:hover {
-    background-color: var(--primary-background);
+    background-color: var(--primary-bg);
+    background-color: var(--complementary-bg);
 }
 
 @media screen and (min-width: 768px) {
@@ -146,7 +149,7 @@
 @media screen and (max-width: 767px) {
     .custom-nav-item {
         border-bottom: solid 2px var(--radio-btn-bg);
-        border-bottom: solid 1px var(--project-container-bg);
+        border-bottom: solid 1px var(--tertiary-bg);
     }
 
     .menu__btn {

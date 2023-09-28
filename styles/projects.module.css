@@ -1,212 +1,214 @@
 .projects-main-container {
-	width: 100%;
-	background-color: var(--primary-background);
-	background-color: var(--secondary-background);
-	padding-top: 84px;
-	padding-bottom: 12.25rem;
-	margin-bottom: 0;
-	position: relative;
-	top: 0;
+    width: 100%;
+    background-color: var(--secondary-bg);
+    background-color: var(--primary-bg);
+    padding-top: 84px;
+    padding-bottom: 12.25rem;
+    margin-bottom: 0;
+    position: relative;
+    top: 0;
 }
 
 .projects-wrapper {
-	width: 85%;
-	padding: 2rem 0;
-	margin: auto;
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	align-content: flex-start;
-	justify-content: center;
-	grid-auto-rows: auto;
-	grid-auto-columns: auto;
-	gap: 2rem;
+    width: 85%;
+    padding: 2rem 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: flex-start;
+    justify-content: center;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    gap: 2rem;
 }
 
 .project-wrapper {
-	width: 100%;
-	height: fit-content;
-	margin-top: 0;
-	background-color: var(--project-container-bg);
-	cursor: pointer;
-	display: flex;
-	position: relative;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	box-shadow: inset 0 0 0 0 var(--project-container-hover);
-	transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
-	border-radius: 8px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 0;
+    background-color: var(--complementary-bg);
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 var(--project-container-hover);
+    transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+    border-radius: 8px;
 }
 
 .tooltip {
-	visibility: hidden;
-	width: max-content;
-	background-color: var(--primary-background);
-	color: var(--secondary-text-color);
-	text-align: center;
-	border-radius: 4px;
-	padding: 6px 12px;
-	position: absolute;
+    visibility: hidden;
+    width: max-content;
+    background-color: var(--primary-bg);
+    color: var(--secondary-text-color);
+    text-align: center;
+    border-radius: 4px;
+    padding: 6px 12px;
+    position: absolute;
 }
 
 .image-tooltip-container {
-	display: flex;
-	position: relative;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-tooltip-container:hover .tooltip {
-	visibility: visible;
+    visibility: visible;
 }
 
 .project-title {
-	width: 100%;
-	background-color: var(--complementary-bg);
-	margin: 0 auto;
-	text-align: center;
-	padding: 0.5rem 0;
-	border-radius: 4px;
-	color: var(--primary-text-color);
-	font-family: var(--primary-font-family);
-	font-weight: 300;
-	font-size: 0.85rem;
+    width: 100%;
+    background-color: var(--complementary-bg);
+    background-color: var(--tertiary-bg);
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 4px;
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-family);
+    font-weight: 300;
+    font-size: 0.85rem;
 }
 
 .project-img {
-	width: 90%;
-	height: auto;
+    width: 90%;
+    height: auto;
 }
 
 .read-more-read-less-wrapper {
-	width: 90%;
-	margin: 0.5rem auto;
-	color: var(--secondary-text-color);
+    width: 90%;
+    margin: 0.5rem auto;
+    color: var(--secondary-text-color);
 }
 
 .project-links-wrapper {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-radius: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
 }
 
 .github-link,
 .live-demo-link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	background-color: var(--complementary-bg);
-	color: var(--primary-text-color);
-	box-shadow: inset 0 0 0 0 var(--buttons-hover-bg);
-	transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
-	font-family: var(--buttons-font-family);
-	text-transform: capitalize;
-	padding: 0.5rem;
-	border-radius: 4px;
-	font-size: 0.75rem;
-	font-weight: var(--buttons-font-weight);
-	text-rendering: optimizeLegibility;
-	width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--complementary-bg);
+    background-color: var(--tertiary-bg);
+    color: var(--primary-text-color);
+    box-shadow: inset 0 0 0 0 var(--buttons-hover-bg);
+    transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+    font-family: var(--buttons-font-family);
+    text-transform: capitalize;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: var(--buttons-font-weight);
+    text-rendering: optimizeLegibility;
+    width: 25%;
 }
 
 .github-link:hover .fa-github {
-	color: var(--buttons-color);
+    color: var(--buttons-color);
 }
 
 .github-link:hover .project-wrapper {
-	box-shadow: inset 1000px 0 0 0 var(--project-container-bg);
-	background-color: var(--project-container-bg);
+    box-shadow: inset 1000px 0 0 0 var(--tertiary-bg);
+    background-color: var(--tertiary-bg);
 }
 
 .fa-github {
-	font-size: 0.85rem;
-	color: var(--primary-text-color);
-	box-shadow: inset 0 0 0 0 var(--buttons-hover-bg);
-	transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+    font-size: 0.85rem;
+    color: var(--primary-text-color);
+    box-shadow: inset 0 0 0 0 var(--buttons-hover-bg);
+    transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
 }
 
 @media screen and (max-width: 300px) {
 
-	.github-link,
-	.live-demo-link {
-		width: 40%;
-	}
+    .github-link,
+    .live-demo-link {
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 467px) {
-	.project-title {
-		font-size: 1rem;
-		font-weight: 400;
-	}
+    .project-title {
+        font-size: 1rem;
+        font-weight: 400;
+    }
 
-	.github-link,
-	.live-demo-link {
-		padding: 0.45rem 0.75rem;
-		font-size: 1rem;
-		width: max-content;
-	}
+    .github-link,
+    .live-demo-link {
+        padding: 0.45rem 0.75rem;
+        font-size: 1rem;
+        width: max-content;
+    }
 
-	.fa-github {
-		font-size: 1.12rem;
-	}
+    .fa-github {
+        font-size: 1.12rem;
+    }
 }
 
 @media screen and (min-width: 764px) {
-	.projects-wrapper {
-		width: 90%;
-		grid-template-columns: repeat(2, 1fr);
-	}
+    .projects-wrapper {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-	.project-wrapper:hover {
-		color: var(--primary-text-color);
-		box-shadow: inset 1000px 0 0 0 var(--project-container-hover);
-	}
+    .project-wrapper:hover {
+        color: var(--primary-text-color);
+        box-shadow: inset 1000px 0 0 0 var(--project-container-hover);
+    }
 
-	.github-link,
-	.live-demo-link {
-		padding: 0.5rem 1rem;
-		font-size: 1rem;
-	}
+    .github-link,
+    .live-demo-link {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
 
-	.github-link:hover,
-	.live-demo-link:hover {
-		box-shadow: inset 200px 0 0 0 var(--buttons-hover-bg);
-		color: var(--buttons-color);
-	}
+    .github-link:hover,
+    .live-demo-link:hover {
+        box-shadow: inset 200px 0 0 0 var(--buttons-hover-bg);
+        color: var(--buttons-color);
+    }
 
 }
 
 @media screen and (min-width: 929px) {
-	.projects-main-container {
-		padding-bottom: 6.5rem;
-	}
+    .projects-main-container {
+        padding-bottom: 6.5rem;
+    }
 }
 
 @media screen and (min-width: 1224px) {
-	.projects-main-container {
-		/* padding-top: 54px; */
-		padding-bottom: 5.75rem;
-	}
+    .projects-main-container {
+        /* padding-top: 54px; */
+        padding-bottom: 5.75rem;
+    }
 
-	.projects-wrapper {
-		grid-template-columns: repeat(3, 1fr);
-		width: 94%;
-		padding: 3% 0;
-	}
+    .projects-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        width: 94%;
+        padding: 3% 0;
+    }
 
-	.project-wrapper:last-child:nth-child(2n - 2) {
-		grid-column-end: 3;
-	}
+    .project-wrapper:last-child:nth-child(2n - 2) {
+        grid-column-end: 3;
+    }
 }
 
 @media screen and (min-width: 1648px) {
-	.projects-wrapper {
-		grid-template-columns: repeat(4, 1fr);
-		width: 90%;
-	}
+    .projects-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        width: 90%;
+    }
 }
