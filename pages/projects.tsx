@@ -60,7 +60,7 @@ const Projects = ({ projectsData, project, setProject }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<motion.div
-				className={`${styles['projects-main-container']} bg-body`}
+				className={`${styles['projects-main-container']}`}
 				variants={springVariant}
 				initial='start'
 				animate='end'

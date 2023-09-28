@@ -6,6 +6,7 @@
 	height: 12rem;
 	font-family: var(--secondary-font-family);
 	background-color: var(--footer-background);
+    font-size: 0.78rem;
 	color: var(--secondary-text-color);
 	display: flex;
 	flex-direction: column;
@@ -18,7 +19,7 @@
 	width: 90%;
 	margin: 0;
 	padding: 0;
-	margin-top: -1rem;
+	/* margin-top: -1rem; */
 }
 
 .anchors {
@@ -29,12 +30,13 @@
 }
 
 .fa-brand {
-	font-size: 1.15rem;
+	font-size: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 @media screen and (min-width: 929px) {
 	.footer {
-		height: 6rem;
+		height: 7rem;
 	}
 
 	.contact-info {

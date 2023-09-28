@@ -37,13 +37,11 @@ const Navbar = () => {
 		<header
 			className={`${
 				styles['custom-header']
-			} navbar navbar-expand-md border-0 fixed-top ${
-				theme === 'dark' ? 'bg-primary' : 'bg-secondary'
-			}`}
+			} navbar navbar-expand-md border-0 fixed-top`}
 			data-bs-theme={theme}
 		>
-			<div class='container-fluid'>
-				<Link className='navbar-brand border-0 mx-3' href='/'>
+			<div className='container-fluid'>
+				<Link className='navbar-brand border-0 mx-2' href='/'>
 					<Image
 						className={`${styles.logo}`}
 						src='/images/logo.png'
@@ -67,12 +65,12 @@ const Navbar = () => {
 				{(toggleMenu || screenWidth > 767) && (
 					<nav className={`text-center me-auto me-md-5 ${styles['menu__box']}`}>
 						<ul
-							className={`navbar-nav ms-auto border-0 fs-6 fw-semibold me-md-5 pe-md-5 ${styles['menu__box__ul']}`}
+							className={`navbar-nav ms-auto border-0 me-md-5 pe-md-5 ${styles['menu__box__ul']}`}
 						>
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/'
-									className={`btn nav-link px-3 ${
+									className={`btn nav-link px-4 ${
 										router.pathname === '/'
 											? 'active border-0'
 											: styles['menu__item']
@@ -83,13 +81,13 @@ const Navbar = () => {
 									}`}
 									onClick={screenTest}
 								>
-									<span className='text-uppercase'>Home</span>
+									<span>Home</span>
 								</Link>
 							</li>
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/projects'
-									className={`btn nav-link px-3 ${
+									className={`btn nav-link px-4 ${
 										router.pathname === '/projects'
 											? 'active border-0'
 											: styles['menu__item']
@@ -100,13 +98,13 @@ const Navbar = () => {
 									}`}
 									onClick={screenTest}
 								>
-									<span className='text-uppercase'>Projects</span>
+									<span>Projects</span>
 								</Link>
 							</li>
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/about'
-									className={`btn nav-link px-3 ${
+									className={`btn nav-link px-4 ${
 										router.pathname === '/about'
 											? 'active border-0'
 											: styles['menu__item']
@@ -117,13 +115,13 @@ const Navbar = () => {
 									}`}
 									onClick={screenTest}
 								>
-									<span className='text-uppercase'>About</span>
+									<span>About</span>
 								</Link>
 							</li>
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/contact'
-									className={`btn nav-link px-3 ${
+									className={`btn nav-link px-4 ${
 										router.pathname === '/contact'
 											? 'active border-0'
 											: styles['menu__item']
@@ -134,7 +132,7 @@ const Navbar = () => {
 									}`}
 									onClick={screenTest}
 								>
-									<span className='text-uppercase'>Contact</span>
+									<span>Contact</span>
 								</Link>
 							</li>
 						</ul>

@@ -6,14 +6,6 @@ import { GetStaticProps } from 'next'
 import { Fragment } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from '../styles/about.module.css'
-import profileImage from '/images/about.png'
-import {
-	faPaperPlane,
-	faPhoneVolume,
-	faEnvelope,
-	faMapLocationDot,
-} from '@fortawesome/free-solid-svg-icons'
-import { faHtml5, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
