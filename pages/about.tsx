@@ -76,11 +76,15 @@ const About = ({ data }) => {
 						<div className={styles['about-section-buttons']}>
 							<motion.div
 								whileHover={{
-									scale: 1.1,
+                                    scale: 1.1,
+                                    color: 'white',
 								}}
 								whileTap={{ scale: 0.9 }}
 							>
-								<Link href='/contact' className={styles.contact}>
+								<Link
+									href='/contact'
+									className={`btn bg-dark border-0 ${styles.contact}`}
+								>
 									Contact Me
 								</Link>
 							</motion.div>
@@ -103,9 +107,10 @@ const About = ({ data }) => {
 								</Link>
 							</motion.div> */}
 							<motion.button
-								className={styles.download}
+								className={`btn bg-dark border-0 ${styles.download}`}
 								whileHover={{
-									scale: 1.1,
+                                    scale: 1.1,
+                                    color: 'white',
 								}}
 								whileTap={{ scale: 0.9 }}
 								onClick={() =>

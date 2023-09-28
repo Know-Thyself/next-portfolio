@@ -5,7 +5,7 @@
 	bottom: 0;
 	height: 12rem;
 	font-family: var(--secondary-font-family);
-	background-color: var(--footer-background);
+	background-color: var(--header-background);
     font-size: 0.87rem;
 	color: var(--secondary-text-color);
 	display: flex;
@@ -32,6 +32,7 @@
 .fa-brand {
 	font-size: 1rem;
     margin-bottom: 0.75rem;
+    color: var(--secondary-text-color);
 }
 
 @media screen and (min-width: 929px) {

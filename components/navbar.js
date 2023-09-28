@@ -35,9 +35,7 @@ const Navbar = () => {
 
 	return (
 		<header
-			className={`${
-				styles['custom-header']
-			} navbar navbar-expand-md border-0 fixed-top`}
+			className={`${styles['custom-header']} navbar navbar-expand-md border-0 fixed-top`}
 			data-bs-theme={theme}
 		>
 			<div className='container-fluid'>
@@ -70,14 +68,14 @@ const Navbar = () => {
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/'
-									className={`btn nav-link px-4 ${
+									className={`nav-link px-4 border-end-0 ${
 										router.pathname === '/'
-											? 'active border-0'
+											? `${styles.active} border-0`
 											: styles['menu__item']
 									} ${
 										theme === 'light'
-											? 'text-primary-emphasis'
-											: 'text-body-secondary'
+											? 'text-primary border-secondary-subtle'
+											: 'text-body-secondary border-dark-subtle'
 									}`}
 									onClick={screenTest}
 								>
@@ -87,14 +85,14 @@ const Navbar = () => {
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/projects'
-									className={`btn nav-link px-4 ${
+									className={`nav-link px-4 border-end-0 ${
 										router.pathname === '/projects'
-											? 'active border-0'
+											? `${styles.active} border-0`
 											: styles['menu__item']
 									} ${
 										theme === 'light'
-											? 'text-primary-emphasis'
-											: 'text-body-secondary'
+											? 'text-primary border-secondary-subtle'
+											: 'text-body-secondary border-dark-subtle'
 									}`}
 									onClick={screenTest}
 								>
@@ -104,14 +102,14 @@ const Navbar = () => {
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/about'
-									className={`btn nav-link px-4 ${
+									className={`nav-link px-4 border-end-0 ${
 										router.pathname === '/about'
-											? 'active border-0'
+											? `${styles.active} border-0`
 											: styles['menu__item']
 									} ${
 										theme === 'light'
-											? 'text-primary-emphasis'
-											: 'text-body-secondary'
+											? 'text-primary border-secondary-subtle'
+											: 'text-body-secondary border-dark-subtle'
 									}`}
 									onClick={screenTest}
 								>
@@ -121,14 +119,14 @@ const Navbar = () => {
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/contact'
-									className={`btn nav-link px-4 ${
+									className={`nav-link px-4 ${
 										router.pathname === '/contact'
-											? 'active border-0'
+											? `${styles.active} border-0 `
 											: styles['menu__item']
 									} ${
 										theme === 'light'
-											? 'text-primary-emphasis'
-											: 'text-body-secondary'
+											? 'text-primary border-secondary-subtle'
+											: 'text-body-secondary border-dark-subtle'
 									}`}
 									onClick={screenTest}
 								>

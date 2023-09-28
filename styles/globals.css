@@ -33,13 +33,10 @@ a {
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 
 :root {
-    --header-background: #7C7F81;
-    --header-background: #96989A;
-    --header-background: #535E65;
-    --header-background: #505457;
-    --header-background: #414A4C;
-    --header-background: #41494f;
-    --header-background: #616161;
+    --header-background: #afb3ac;
+    --header-background: #c1c4bf;
+    --header-background: #E5E4E2;
+    --header-background: #E8E9EB;
     --footer-background: #7E8189;
     --footer-background: #8f97a6;
     --footer-background: #6b8299;
@@ -47,7 +44,7 @@ a {
 
     --footer-background: #8093BA;
     --footer-background: #7384A7;
-    --footer-background: #75839F;
+    --footer-background: #848482;
     --nav-links-font-weight: 500;
     --active-nav-link-font-weight: 500;
     --nav-links-color: #ffffff;
@@ -75,15 +72,13 @@ a {
     --home-background: url('/images/home-background.jpg');
     --home-background: url('/images/background-home-desktop.jpg');
     --home-bg-mobile: url('/images/home-bg-mobile.jpg');
-    --primary-background: #A8A8A8;
-    --primary-background: #B9B9B9;
-    --primary-background: #ABABAB;
-    --primary-background: #6c757d;
-    --secondary-background: #828789;
-    --secondary-background: #9b9fa0;
-    --secondary-background: #a7abac;
-    --secondary-background: #B4B7B8;
-    --secondary-background: #A2A4A5;
+    --primary-background: #a8a8a7;
+    --primary-background: #CCCDC6;
+    --primary-background: #DBD7D2;
+    --primary-background: #D3D3D3;
+    --primary-background: #DCDCDC;
+    --secondary-background: white;
+    --tertiary-background: #4d4f50;
     --complementary-bg: #4C3F4C;
     --project-container-bg: #687064;
     --project-container-hover: #5d645a;
@@ -94,8 +89,7 @@ a {
     --secondary-text-color: #f8f8f8;
     --secondary-font-family: 'Lato',
     sans-serif;
-    --primary-text-color: #121212;
-    --primary-text-color: white;
+    --primary-text-color: #313030;
     --home-text-color: #c2c2c5;
     --helper-text-color: #0A0A0A;
     --secondary-font-weight: 300;
@@ -163,14 +157,17 @@ a {
     --primary-background: #1f2022;
     --primary-background: #1b1b1b;
     --primary-background: #2a3132;
-    --primary-background: #1e1f26;
+    --primary-background: #1B1F22;
     --secondary-background: #070707;
     --secondary-background: #1F2428;
     --secondary-background: #1B1F22;
+    --secondary-background: #1e1f26;
     --tertiary-background: #1a1a1a;
+    --tertiary-background: #32393E;
     --project-container-bg: #4f554c;
     --project-container-hover: #464c44;
     --complementary-bg: #302830;
+    --complementary-bg: #41494F;
     --complementary-bg: #32393E;
     --home-background: url('/images/home-background.jpg');
     --home-background: url('/images/background-home-desktop.jpg');
@@ -190,6 +187,7 @@ a {
     --secondary-font-family: 'Poppins',
         sans-serif;
     --primary-text-color: #D7D7DF;
+    --primary-text-color: #aaaaac;
     --home-text-color: #D7D7DF;
     --secondary-font-weight: 300;
     --secondary-text-color: #C4C4C4;

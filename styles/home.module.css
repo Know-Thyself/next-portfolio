@@ -3,18 +3,19 @@
     height: 100%;
     margin: 0;
     /* background: var(--home-bg-mobile) no-repeat center center fixed;
-	color: var(--home-text-color);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover; */
-    background-color: var(--primary-background);
+    background-color: var(--secondary-background);
+    /* color: var(--home-text-color); */
+    color: var(--primary-text-color);
     text-align: center;
     position: relative;
     top: 0;
     left: 0;
     /* bottom: 0; */
-    padding-top: 88px;
+    padding-top: 7rem;
     padding-bottom: 14rem;
     /* padding-bottom: 33rem; */
 
@@ -82,7 +83,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--buttons-bg-color);
-    color: var(--buttons-color);
+    /* color: var(--buttons-color); */
     font-family: var(--buttons-font-family);
     font-weight: var(--buttons-font-weight);
     text-decoration: none;
@@ -94,7 +95,7 @@
 
 .link .fa-github {
     font-size: 1.12rem;
-    color: var(--buttons-color);
+    /* color: var(--buttons-color); */
 }
 
 @media screen and (max-width: 400px) {
@@ -145,7 +146,7 @@
 
 @media screen and (min-width: 929px) {
     .home {
-        padding-bottom: 7rem;
+        padding-bottom: 8.5rem;
     }
     .hero {
         width: 70%;
@@ -161,9 +162,10 @@
         width: 80%;
         margin: auto;
         border-radius: 20%;
-        background-color: var(--secondary-background);
+        background-color: var(--primary-background);
         padding: 2rem 10rem;
     }
+
     .banner {
         margin: 2rem 0;
     }
