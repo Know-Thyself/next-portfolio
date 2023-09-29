@@ -40,7 +40,7 @@ const ProjectDetail = ({ project }) => {
 				{descriptionLines && (
 					<div className={styles['project-wrapper']}>
 						<Image
-							src={`/images/${project.image}`}
+							src={`/assets/images/${project.image}`}
 							alt={project.title}
 							priority={true}
 							loading='eager'

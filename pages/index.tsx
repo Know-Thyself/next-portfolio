@@ -70,7 +70,7 @@ function HomePage({ data }): JSX.Element {
 					<div className={styles['hero-text-container']}>
 						<Image
 							className={styles['profile-photo']}
-							src={`/images/${image}`}
+							src={`/assets/images/${image}`}
 							priority={true}
 							loading='eager'
 							width={200}

@@ -57,7 +57,7 @@ const About = ({ data }) => {
 			>
 				<section className={styles['about-section']}>
 					<div className={styles['about-img-wrapper']}>
-						{/* <Image
+						<Image
 							src='/images/about.png'
 							alt='Picture of the author'
 							priority={true}
@@ -68,11 +68,6 @@ const About = ({ data }) => {
 							sizes='(max-width: 724px) 100vw,
               (max-width: 1200px) 50vw,
               33vw'
-						/> */}
-						<img
-							src='/assets/images/about.png'
-							alt='Picture of the author'
-							className={`${styles['about-img']}`}
 						/>
 					</div>
 					<div className={styles['about-text-wrapper']}>
@@ -142,7 +137,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/html-css.png'
+									src='/assets/images/html-css.png'
 									alt='HTML5 and CSS3 responsive design'
 									priority={true}
 									loading='eager'
@@ -158,7 +153,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/javascript.png'
+									src='/assets/images/javascript.png'
 									alt='JavaScript logo'
 									priority={true}
 									loading='eager'
@@ -174,7 +169,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/react.png'
+									src='/assets/images/react.png'
 									alt='React.js'
 									priority={true}
 									loading='eager'
@@ -190,7 +185,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/material-ui.png'
+									src='/assets/images/material-ui.png'
 									alt='Material UI'
 									priority={true}
 									loading='eager'
@@ -206,7 +201,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/bootstrap.jpg'
+									src='/assets/images/bootstrap.jpg'
 									alt='Bootstrap'
 									priority={true}
 									loading='eager'
@@ -225,7 +220,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/git.png'
+									src='/assets/images/git.png'
 									alt='Git and GitHub'
 									priority={true}
 									loading='eager'
@@ -241,7 +236,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/figma.png'
+									src='/assets/images/figma.png'
 									alt='Figma'
 									priority={true}
 									loading='eager'
@@ -257,7 +252,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/trello.png'
+									src='/assets/images/trello.png'
 									alt='Trello'
 									priority={true}
 									loading='eager'
@@ -273,7 +268,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/miro.png'
+									src='/assets/images/miro.png'
 									alt='Miro logo'
 									priority={true}
 									loading='eager'
@@ -289,7 +284,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/slack.jpg'
+									src='/assets/images/slack.jpg'
 									alt='Slack logo'
 									priority={true}
 									loading='eager'
@@ -308,7 +303,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/node.png'
+									src='/assets/images/node.png'
 									alt='Node.js logo'
 									priority={true}
 									loading='eager'
@@ -324,7 +319,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/postgresql.jpg'
+									src='/assets/images/postgresql.jpg'
 									alt='PostgreSQL logo'
 									priority={true}
 									loading='eager'
@@ -340,7 +335,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/express.png'
+									src='/assets/images/express.png'
 									alt='Express.js logo'
 									priority={true}
 									loading='eager'
@@ -356,7 +351,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/next.png'
+									src='/assets/images/next.png'
 									alt='Next.js logo'
 									priority={true}
 									loading='eager'
@@ -372,7 +367,7 @@ const About = ({ data }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/images/prisma.png'
+									src='/assets/images/prisma.png'
 									alt='Prisma logo'
 									priority={true}
 									loading='eager'

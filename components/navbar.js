@@ -42,7 +42,7 @@ const Navbar = () => {
 				<Link className='navbar-brand border-0 mx-2' href='/'>
 					<Image
 						className={`${styles.logo}`}
-						src='/images/logo.png'
+						src='/assets/images/logo.png'
 						priority={true}
 						loading='eager'
 						alt='logo'
