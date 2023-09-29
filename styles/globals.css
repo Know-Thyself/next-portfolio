@@ -54,7 +54,6 @@ a {
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --buttons-hover-bg: #C1C1C1;
     --buttons-color: #FAFAFA;
-    --switch-button-bg: #EE5622;
     --read-more: #BD1A43;
 }
 
@@ -75,8 +74,9 @@ a {
     --complementary-bg: #363237;
     --complementary-bg: #4E4E5A;
     --complementary-bg: #504a52;
+    --complementary-bg: #6A626D;
     --project-container-hover: #666675;
-    --project-container-hover: #6A626D;
+    --project-container-hover: #504a52;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --skill-card-bg: #0c0c0c;
     --hero-banner-text: 'Playfair Display', serif;
@@ -91,7 +91,7 @@ a {
     --primary-text-color: #aaaaac;
     --secondary-font-weight: 300;
     --secondary-text-color: #C4C4C4;
+    --secondary-text-color: #E5E4E2;
     --helper-text-color: #b7b7d8;
-    --switch-button-bg: #7280f9;
     --read-more: #3a9bdc;
 }
