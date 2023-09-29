@@ -23,14 +23,15 @@
 }
 
 .intro h1 {
-    font-family: var(--secondary-font-family);
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color);
     font-size: 1.5rem;
     letter-spacing: 0.25px;
     margin: 0 auto 0.5rem auto;
     text-align: left;
 }
 
-.subtext {
+.intro p {
     text-align: left;
     font-family: var(--secondary-font-family);
     color: var(--secondary-text-color);
@@ -53,7 +54,7 @@
     padding-bottom: 1rem;
 }
 
-.contact-info h1 {
+.contact-info h4 {
     width: 100%;
     margin: 1rem auto;
 }
@@ -74,6 +75,7 @@
 
 .fa-brand {
     font-size: 1.35rem;
+    color: var(--secondary-text-color);
 }
 
 .box {
@@ -198,7 +200,7 @@
         margin-top: 0;
     }
 
-    .subtext {
+    .intro p {
         font-size: 1.075rem;
         line-height: 1.65rem;
         padding: 0 2.5rem;

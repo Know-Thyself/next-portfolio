@@ -38,8 +38,8 @@
 .banner {
     font-family: var(--hero-banner-text);
     font-weight: 600;
-    font-size: 2.5rem;
-    margin: 1rem 0;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
 }
 
 /* .hero-text-container h3 {
@@ -117,7 +117,8 @@
 
     .banner {
         text-align: left;
-        margin: 1.5rem 0;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
     }
 
     .profile-photo {
@@ -147,7 +148,7 @@
 
 @media screen and (min-width: 929px) {
     .home {
-        padding-bottom: 8.5rem;
+        padding-bottom: 0;
     }
 
     .hero {
@@ -162,6 +163,7 @@
 @media screen and (min-width: 1124px) {
     .home {
         background-color: var(--complementary-bg);
+        padding-bottom: 9rem;
     }
 
     .hero {
@@ -169,11 +171,17 @@
         margin: auto;
         border-radius: 20%;
         background-color: var(--primary-bg);
-        padding: 2rem 10rem;
+        padding: 0 10rem;
+        display: flex;
+        flex-direction: column;
+        /* height: 100%; */
+        /* align-items: center; */
+        justify-content: center;
     }
 
     .banner {
-        margin: 2rem 0;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
     }
 
     .profile-photo {

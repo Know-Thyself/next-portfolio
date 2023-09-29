@@ -37,7 +37,10 @@ const ProjectDetail = ({ project }) => {
 			</Head>
 			<div className={styles.container}>
 				<div>
-					<Link href='/projects' className={styles['back-btn']}>
+					<Link
+						href='/projects'
+						className={`btn btn-primary border-0 ${styles['back-btn']}`}
+					>
 						<FontAwesomeIcon className={styles['fa-left']} icon={faArrowLeft} />
 						Back To Projects
 					</Link>
@@ -101,7 +104,7 @@ const ProjectDetail = ({ project }) => {
 								href={project.repository}
 								target='_blank'
 								rel='noreferrer'
-								className={styles['github-link']}
+								className={`btn btn-primary border-0 ${styles['github-link']}`}
 								whileHover={{
 									scale: 1.1,
 								}}
@@ -117,7 +120,7 @@ const ProjectDetail = ({ project }) => {
 								href={project.url}
 								target='_blank'
 								rel='noreferrer'
-								className={styles['live-demo-link']}
+								className={`btn btn-primary border-0 ${styles['live-demo-link']}`}
 								whileHover={{
 									scale: 1.1,
 								}}

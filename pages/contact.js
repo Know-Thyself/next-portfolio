@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Head from 'next/head'
 import styles from '../styles/contact.module.css'
 import Box from '@mui/material/Box'
-import Alert from '@mui/material/Alert'
 import TextField from '@mui/material/TextField'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -150,7 +149,7 @@ const Contact = () => {
 			>
 				<section className={styles.intro}>
 					<h1>I would love to hear from you!</h1>
-					<p className={styles.subtext}>
+					<p>
 						If you are an employer or recruiter looking for a developer or if
 						you run a charity organisation and would like me to build a website
 						for your organisation which I am happy to do for free or just to get
@@ -160,7 +159,7 @@ const Contact = () => {
 				</section>
 				<div className={styles.wrapper}>
 					<aside className={styles['contact-info']}>
-						<h1>Contact Info</h1>
+						<h4>Contact Info</h4>
 						<p>
 							<FontAwesomeIcon
 								icon={faPhoneVolume}

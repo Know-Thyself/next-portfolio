@@ -85,7 +85,7 @@ function HomePage({ data }): JSX.Element {
 							href='https://github.com/Know-Thyself'
 							target='_blank'
 							rel='noreferrer'
-							className={`btn bg-dark text-light border-0 ${styles.link}`}
+							className={`btn btn-primary border-0 ${styles.link}`}
 							whileHover={{
                                 scale: 1.2,
 							}}
@@ -93,7 +93,7 @@ function HomePage({ data }): JSX.Element {
 						>
 							<FontAwesomeIcon
 								icon={faGithub}
-								className={`text-light ${styles['fa-github']}`}
+								className={`${styles['fa-github']}`}
 							/>
 							&nbsp; GitHub
 						</motion.a>
@@ -105,7 +105,7 @@ function HomePage({ data }): JSX.Element {
 						>
 							<Link
 								href='/projects'
-								className={`btn bg-dark text-light border-0 ${styles.link}`}
+								className={`btn btn-primary border-0 ${styles.link}`}
 							>
 								Projects
 							</Link>
