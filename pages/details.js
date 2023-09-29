@@ -36,18 +36,9 @@ const ProjectDetail = ({ project }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<div className={styles.container}>
-				<div>
-					<Link
-						href='/projects'
-						className={`btn btn-primary border-0 ${styles['back-btn']}`}
-					>
-						<FontAwesomeIcon className={styles['fa-left']} icon={faArrowLeft} />
-						Back To Projects
-					</Link>
-				</div>
+                <h4 className={styles['project-title']}>{project.title}</h4>
 				{descriptionLines && (
 					<div className={styles['project-wrapper']}>
-						<h4 className={styles['project-title']}>{project.title}</h4>
 						<Image
 							src={`/images/${project.image}`}
 							alt={project.title}
@@ -104,7 +95,7 @@ const ProjectDetail = ({ project }) => {
 								href={project.repository}
 								target='_blank'
 								rel='noreferrer'
-								className={`btn btn-primary border-0 ${styles['github-link']}`}
+								className={`btn btn-dark border-0 ${styles['github-link']}`}
 								whileHover={{
 									scale: 1.1,
 								}}
@@ -120,7 +111,7 @@ const ProjectDetail = ({ project }) => {
 								href={project.url}
 								target='_blank'
 								rel='noreferrer'
-								className={`btn btn-primary border-0 ${styles['live-demo-link']}`}
+								className={`btn btn-dark border-0 ${styles['live-demo-link']}`}
 								whileHover={{
 									scale: 1.1,
 								}}
@@ -131,6 +122,15 @@ const ProjectDetail = ({ project }) => {
 						</div>
 					</div>
 				)}
+				<div>
+					<Link
+						href='/projects'
+						className={`btn btn-dark border-0 ${styles['back-btn']}`}
+					>
+						<FontAwesomeIcon className={styles['fa-left']} icon={faArrowLeft} />
+						Back To Projects
+					</Link>
+				</div>
 			</div>
 		</motion.main>
 	)

@@ -85,12 +85,13 @@ a {
     --tertiary-bg: #B0B7BA;
     --tertiary-bg: #B0B6BA;
     --tertiary-bg: #DADADA;
-    --project-container-hover: #5d645a;
+    --project-container-hover: #8E8F94;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --buttons-font-family: 'Montserrat',
         sans-serif;
     --secondary-text-color: #f8f8f8;
+    --secondary-text-color: #313030;
     --secondary-font-family: 'Lato',
         sans-serif;
     --primary-text-color: #313030;
@@ -99,12 +100,7 @@ a {
     --secondary-font-weight: 300;
     --secondary-text-color: black;
     --about-image-bg: url('/images/background-destination-desktop.jpg');
-    --menu-box-bg: #962715;
-    --skill-card-bg: #cf9c26;
-    --buttons-bg-color: #14813a;
-    --buttons-hover-bg: #116f32;
-    --buttons-bg-color: #343a96;
-    --buttons-hover-bg: #2e3485;
+    --buttons-hover-bg: #C1C1C1;
     --about-page-btn: #273037;
     --buttons-color: #FAFAFA;
     --radio-btn-border: #B6B6B4;
@@ -176,7 +172,7 @@ a {
     --tertiary-bg: #32393E;
     --tertiary-bg: #2E3438;
     --tertiary-bg: #272A30;
-    --project-container-hover: #464c44;
+    --project-container-hover: #666675;
     --complementary-bg: #302830;
     --complementary-bg: #41494F;
     --complementary-bg: #727B78;
@@ -196,7 +192,7 @@ a {
     --buttons-font-family: 'Poppins', sans-serif;
     --buttons-font-weight: 100;
     --buttons-bg-color: #343a96;
-    --buttons-hover-bg: #2e3487;
+    --buttons-hover-bg: #3E434C;
     --about-page-btn: #121619;
     --buttons-color: #F8F8FC;
     --secondary-font-family: 'Lato',

@@ -116,9 +116,10 @@
     width: 25%;
 }
 
-.github-link:hover .fa-github {
+/* .github-link:hover .fa-github {
     color: var(--buttons-color);
-}
+    color: var(--primary-text-color);
+} */
 
 .github-link:hover .project-wrapper {
     box-shadow: inset 1000px 0 0 0 var(--tertiary-bg);
@@ -178,7 +179,7 @@
     .github-link:hover,
     .live-demo-link:hover {
         box-shadow: inset 200px 0 0 0 var(--buttons-hover-bg);
-        color: var(--buttons-color);
+        color: var(--primary-text-color);
     }
 
 }
