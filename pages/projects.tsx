@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Button from 'react-bootstrap/Button'
 import styles from '../styles/projects.module.css'
 import { motion, AnimatePresence } from 'framer-motion'
 import prisma from '../lib/prisma'
@@ -78,7 +77,7 @@ const Projects = ({ projectsData, project, setProject }) => {
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<div className={styles['image-tooltip-container']}>
-									<Image
+									{/* <Image
 										src={`/images/${project.image}`}
 										alt={project.title}
 										priority={true}
@@ -87,6 +86,11 @@ const Projects = ({ projectsData, project, setProject }) => {
 										width={340}
 										height={240}
 										sizes='(min-width: 300px) 100vw'
+									/> */}
+									<img
+										src={`/assets/images/${project.image}`}
+										alt={project.title}
+										className={styles['project-img']}
 									/>
 									<span className={styles.tooltip}>
 										Click to view project details

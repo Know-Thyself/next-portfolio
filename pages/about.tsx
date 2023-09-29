@@ -57,7 +57,7 @@ const About = ({ data }) => {
 			>
 				<section className={styles['about-section']}>
 					<div className={styles['about-img-wrapper']}>
-						<Image
+						{/* <Image
 							src='/images/about.png'
 							alt='Picture of the author'
 							priority={true}
@@ -68,6 +68,11 @@ const About = ({ data }) => {
 							sizes='(max-width: 724px) 100vw,
               (max-width: 1200px) 50vw,
               33vw'
+						/> */}
+						<img
+							src='/assets/images/about.png'
+							alt='Picture of the author'
+							className={`${styles['about-img']}`}
 						/>
 					</div>
 					<div className={styles['about-text-wrapper']}>
@@ -76,8 +81,8 @@ const About = ({ data }) => {
 						<div className={styles['about-section-buttons']}>
 							<motion.div
 								whileHover={{
-                                    scale: 1.1,
-                                    color: 'white',
+									scale: 1.1,
+									color: 'white',
 								}}
 								whileTap={{ scale: 0.9 }}
 							>
@@ -109,8 +114,8 @@ const About = ({ data }) => {
 							<motion.button
 								className={`btn btn-primary border-0 ${styles.download}`}
 								whileHover={{
-                                    scale: 1.1,
-                                    color: 'white',
+									scale: 1.1,
+									color: 'white',
 								}}
 								whileTap={{ scale: 0.9 }}
 								onClick={() =>

@@ -78,13 +78,13 @@ a {
     --primary-bg: #DCDCDC;
     --primary-bg: #D3D3D3;
     --primary-bg: #F5F5F5;
-    --secondary-bg: #BEC3C6;
-    --secondary-bg: #B2B1AE;
-    --secondary-bg: #B0B7BA;
-    --complementary-bg: #A8A9AD;
+    --tertiary-bg: #BEC3C6;
+    --tertiary-bg: #B2B1AE;
     --tertiary-bg: #B0B7BA;
-    --tertiary-bg: #B0B6BA;
-    --tertiary-bg: #DADADA;
+    --complementary-bg: #A8A9AD;
+    --secondary-bg: #B0B7BA;
+    --secondary-bg: #B0B6BA;
+    --secondary-bg: #DADADA;
     --project-container-hover: #8E8F94;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
@@ -158,20 +158,22 @@ a {
     --primary-bg: #1b1b1b;
     --primary-bg: #2a3132;
     --primary-bg: #1B1F22;
-    --secondary-bg: #070707;
-    --secondary-bg: #1F2428;
-    --secondary-bg: #1B1F22;
-    --secondary-bg: #1e1f26;
-    --secondary-bg: #A59E88;
-    --secondary-bg: #8E866C;
-    --secondary-bg: #30363A;
-    --tertiary-bg: #1a1a1a;
-    --tertiary-bg: #32393E;
-    --tertiary-bg: #4f554c;
+    --tertiary-bg: #070707;
+    --tertiary-bg: #1F2428;
+    --tertiary-bg: #1B1F22;
+    --tertiary-bg: #A59E88;
+    --tertiary-bg: #8E866C;
     
-    --tertiary-bg: #32393E;
-    --tertiary-bg: #2E3438;
-    --tertiary-bg: #272A30;
+    --tertiary-bg: #30363A;
+    --tertiary-bg: #393e3c;
+    /* --tertiary-bg: #3E434C; */
+    --secondary-bg: #1a1a1a;
+    --secondary-bg: #32393E;
+    --secondary-bg: #4f554c;
+
+    --secondary-bg: #32393E;
+    --secondary-bg: #2E3438;
+    --secondary-bg: #272A30;
     --project-container-hover: #666675;
     --complementary-bg: #302830;
     --complementary-bg: #41494F;

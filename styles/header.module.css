@@ -57,7 +57,7 @@
     width: 100%;
     height: 3px;
     background-color: var(--switch-button-bg);
-    background-color: var(--tertiary-bg);
+    background-color: var(--secondary-bg);
     background-color: var(--radio-btn-border);
     transition-duration: 0.25s;
 }
@@ -149,7 +149,7 @@
 @media screen and (max-width: 767px) {
     .custom-nav-item {
         border-bottom: solid 2px var(--radio-btn-bg);
-        border-bottom: solid 1px var(--tertiary-bg);
+        border-bottom: solid 1px var(--secondary-bg);
     }
 
     .menu__btn {

@@ -1,6 +1,5 @@
 .projects-main-container {
     width: 100%;
-    background-color: var(--secondary-bg);
     background-color: var(--primary-bg);
     padding-top: 84px;
     padding-bottom: 12.25rem;
@@ -65,7 +64,7 @@
 .project-title {
     width: 100%;
     background-color: var(--complementary-bg);
-    background-color: var(--tertiary-bg);
+    background-color: var(--secondary-bg);
     margin: 0 auto;
     text-align: center;
     padding: 0.5rem 0;
@@ -102,7 +101,7 @@
     align-items: center;
     text-decoration: none;
     background-color: var(--complementary-bg);
-    background-color: var(--tertiary-bg);
+    background-color: var(--secondary-bg);
     color: var(--primary-text-color);
     box-shadow: inset 0 0 0 0 var(--buttons-hover-bg);
     transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
@@ -122,8 +121,8 @@
 } */
 
 .github-link:hover .project-wrapper {
-    box-shadow: inset 1000px 0 0 0 var(--tertiary-bg);
-    background-color: var(--tertiary-bg);
+    box-shadow: inset 1000px 0 0 0 var(--secondary-bg);
+    background-color: var(--secondary-bg);
 }
 
 .fa-github {

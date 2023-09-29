@@ -8,7 +8,7 @@
     bottom: 0;
     padding-top: 84px;
     padding-bottom: 12rem;
-    background-color: var(--secondary-bg);
+    background-color: var(--tertiary-bg);
     background-color: var(--primary-bg);
     color: var(--secondary-text-color);
     display: flex;
@@ -85,8 +85,9 @@
     width: 100%;
     margin: auto;
     background-color: var(--contact-box-bg);
-    background-color: var(--secondary-bg);
     background-color: var(--primary-bg);
+    background-color: var(--secondary-bg);
+    background-color: var(--header-bg);
     background-color: var(--tertiary-bg);
     padding: 2rem 0;
 }
@@ -193,6 +194,7 @@
         background: var(--contact-section-bg);
         background-color: var(--complementary-bg);
         background-color: var(--radio-btn-bg);
+        background-color: var(--tertiary-bg);
         background-color: var(--secondary-bg);
     }
 

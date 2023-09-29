@@ -32,7 +32,7 @@
 
 .project-wrapper {
     width: 100%;
-    background-color: var(--tertiary-bg);
+    background-color: var(--secondary-bg);
     background-color: var(--complementary-bg);
     display: flex;
     flex-direction: column;
