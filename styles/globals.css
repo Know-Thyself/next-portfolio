@@ -68,19 +68,26 @@ a {
     --secondary-bg: #23272A;
     --secondary-bg: #2B2F36;
     --secondary-bg: #292C33;
-    --tertiary-bg: #393e3c;
-    --tertiary-bg: #474D4A;
-    --complementary-bg: #41494F;
-    --complementary-bg: #32393E;
-    --complementary-bg: #363237;
+    
+    --tertiary-bg: #373A43;
+    
+    /* fossil */
+    --complementary-bg: #787276;
+    /* fog */
+    --complementary-bg: #655967;
+    --complementary-bg: #5d535e;
+    
+    --complementary-bg: #706673;
     --complementary-bg: #4E4E5A;
-    --complementary-bg: #504a52;
-    --complementary-bg: #6A626D;
-    --complementary-bg: #404F43; 
-    --complementary-bg: #717184;
+    
+    --complementary-bg: #32393E;
+    
+    --complementary-bg: #41494F;
+    /* --complementary-bg: #6A626D; */
     --project-container-hover: #666675;
     --project-container-hover: #504a52;
     --project-container-hover: #686879;
+    --project-container-hover: #373D43;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --skill-card-bg: #0c0c0c;
     --hero-banner-text: 'Playfair Display', serif;

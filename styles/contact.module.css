@@ -8,7 +8,6 @@
     bottom: 0;
     padding-top: 84px;
     padding-bottom: 12rem;
-    background-color: var(--tertiary-bg);
     background-color: var(--primary-bg);
     color: var(--secondary-text-color);
     display: flex;
@@ -46,7 +45,7 @@
 }
 
 .contact-info {
-    background-color: var(--tertiary-bg);
+    background-color: var(--secondary-bg);
     display: none;
     flex-direction: column;
     padding-bottom: 1rem;
@@ -103,7 +102,7 @@
 .textField input {
     color: var(--secondary-text-color);
     border-bottom: 1px solid var(--primary-text-color);
-    background-color: var(--tertiary-bg);
+    background-color: var(--secondary-bg);
     font-family: var(--primary-font-family);
 }
 
@@ -113,7 +112,7 @@
 }
 
 .textField textarea {
-    background-color: var(--tertiary-bg);
+    background-color: var(--secondary-bg);
 }
 
 .send {
@@ -176,7 +175,7 @@
     }
 
     .intro {
-        background-color: var(--secondary-bg);
+        background-color: var(--tertiary-bg);
     }
 
     .wrapper {
