@@ -115,11 +115,6 @@
     width: 25%;
 }
 
-/* .github-link:hover .fa-github {
-    color: var(--buttons-color);
-    color: var(--primary-text-color);
-} */
-
 .github-link:hover .project-wrapper {
     box-shadow: inset 1000px 0 0 0 var(--secondary-bg);
     background-color: var(--secondary-bg);

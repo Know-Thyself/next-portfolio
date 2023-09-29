@@ -20,7 +20,6 @@
 }
 
 .back-btn {
-    background-color: var(--buttons-hover-bg);
     color: var(--buttons-color);
     display: flex;
     justify-content: center;
@@ -98,7 +97,6 @@
 .github-link {
     font-family: var(--buttons-font-family);
     color: var(--secondary-text-color);
-    background-color: var(--buttons-hover-bg);
     color: var(--buttons-color);
     text-decoration: none;
     padding: 0.65rem 1.2rem;

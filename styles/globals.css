@@ -33,59 +33,12 @@ a {
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 
 :root {
-    --header-bg: #afb3ac;
-    --header-bg: #c1c4bf;
-    --header-bg: #E5E4E2;
     --header-bg: #E8E9EB;
-    --footer-bg: #7E8189;
-    --footer-bg: #8f97a6;
-    --footer-bg: #6b8299;
-    --footer-bg: #889bad;
-
-    --footer-bg: #8093BA;
-    --footer-bg: #7384A7;
-    --footer-bg: #848482;
-    --nav-links-font-weight: 500;
-    --active-nav-link-font-weight: 500;
-    --nav-links-color: #ffffff;
-    --home-link-bg: #49529F;
-    --projects-link-bg: #4C3F4C;
-    --about-link-bg: #574646;
-    --about-link-bg: #564c4d;
-    --about-section-bg: #655967;
-    --about-section-bg: #847a7f;
-    --about-section-bg: #848482;
-    --about-section-bg: #918d8d;
-    --about-section-bg: #918c8e;
-    --contact-link-bg: #435757;
-    --contact-section-bg: #597474;
-    --contact-section-bg: #738678;
-    --contact-section-bg: #6C9883;
-
-    --contact-section-bg: #6b9999;
-    --contact-section-bg: #7f8c83;
-
-    --contact-section-bg: #468171;
-    /* --contact-section-bg: #529885; */
-    --active-nav-link: #803B3C;
-    --active-nav-link-text: #FAF9F6;
-    --home-background: url('/images/home-background.jpg');
-    --home-background: url('/images/background-home-desktop.jpg');
-    --home-bg-mobile: url('/images/home-bg-mobile.jpg');
-    --primary-bg: #CCCDC6;
-    --primary-bg: #DBD7D2;
-    --primary-bg: white;
-    --primary-bg: #DCDCDC;
-    --primary-bg: #D3D3D3;
     --primary-bg: #F5F5F5;
-    --tertiary-bg: #BEC3C6;
-    --tertiary-bg: #B2B1AE;
-    --tertiary-bg: #B0B7BA;
-    --complementary-bg: #A8A9AD;
-    --secondary-bg: #B0B7BA;
-    --secondary-bg: #B0B6BA;
-    --secondary-bg: #DADADA;
-    --project-container-hover: #8E8F94;
+    --secondary-bg: #D8D9DA;
+    --tertiary-bg: #E3E4E0;
+    --complementary-bg: #A9A2AA;
+    --project-container-hover: #9D949E;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --buttons-font-family: 'Montserrat',
@@ -95,133 +48,50 @@ a {
     --secondary-font-family: 'Lato',
         sans-serif;
     --primary-text-color: #313030;
-    --home-text-color: #c2c2c5;
     --helper-text-color: #0A0A0A;
     --secondary-font-weight: 300;
     --secondary-text-color: black;
-    --about-image-bg: url('/images/background-destination-desktop.jpg');
+    --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --buttons-hover-bg: #C1C1C1;
-    --about-page-btn: #273037;
     --buttons-color: #FAFAFA;
-    --radio-btn-border: #B6B6B4;
-    --radio-btn-border: #7a8081;
-    --radio-btn-border: #8D9293;
-    --radio-btn-bg: #565759;
-    --radio-btn-bg: #77787A;
-    --radio-btn-bg: #6B6C6D;
-    --radio-btn-bg: #8A7F8D;
-    --radio-btn-bg: #596567;
-    --contact-box-bg: #985265;
     --switch-button-bg: #EE5622;
     --read-more: #BD1A43;
-
-    --home-link-bg: #39407c;
-    --projects-link-bg: #302830;
-    --about-link-bg: #3B2F2F;
-    --contact-link-bg: #2D3A3A;
-    --contact-link-bg: #1C352E;
-    --active-nav-link: #5D2B2C;
 }
 
 [data-theme='dark'] {
-    --header-bg: #252a2d;
     --header-bg: #2a2f33;
-    --footer-bg: #161c28;
-    --footer-bg: #2a2f33;
-    --home-link-bg: #2B435B;
-    --home-link-bg: #165b7e;
-    --home-link-bg: #444c95;
-    --home-link-bg: #39407c;
-    --projects-link-bg: #373238;
-    --projects-link-bg: #302830;
-    --about-link-bg: #3B2F2F;
-    --about-section-bg: #3B2F2F;
-    --about-section-bg: #32393E;
-    --contact-link-bg: #2D3A3A;
-    --contact-link-bg: #223D43;
-    --contact-link-bg: #1b3036;
-    --contact-link-bg: #1C352E;
-    --contact-section-bg: #2D3A3A;
-    --contact-section-bg: #111e21;
-    --contact-section-bg: #223D43;
-    --contact-section-bg: #1e363c;
-    --contact-section-bg: #1b3036;
-    --contact-section-bg: #1C352E;
-    --menu-box-bg: #58111A;
-    --menu-box-bg: #962715;
-    --menu-box-bg: #444c95;
-    --menu-box-bg: #39407c;
-    --primary-bg: #0b0c0d;
-    --primary-bg: #212529;
-    --primary-bg: #212121;
-    --primary-bg: #1f2022;
-    --primary-bg: #1b1b1b;
-    --primary-bg: #2a3132;
     --primary-bg: #1B1F22;
-    --tertiary-bg: #070707;
-    --tertiary-bg: #1F2428;
-    --tertiary-bg: #1B1F22;
-    --tertiary-bg: #A59E88;
-    --tertiary-bg: #8E866C;
-    
-    --tertiary-bg: #30363A;
-    --tertiary-bg: #393e3c;
-    /* --tertiary-bg: #3E434C; */
-    --secondary-bg: #1a1a1a;
-    --secondary-bg: #32393E;
-    --secondary-bg: #4f554c;
-
-    --secondary-bg: #32393E;
-    --secondary-bg: #2E3438;
     --secondary-bg: #272A30;
-    --project-container-hover: #666675;
-    --complementary-bg: #302830;
+    --secondary-bg: #252a2e;
+    --secondary-bg: #23272A;
+    --secondary-bg: #2B2F36;
+    --secondary-bg: #292C33;
+    --tertiary-bg: #202325;
+    --tertiary-bg: #393e3c;
+    --tertiary-bg: #2f3131;
+    --tertiary-bg: #363237;
     --complementary-bg: #41494F;
-    --complementary-bg: #727B78;
     --complementary-bg: #32393E;
-    --complementary-bg: #4f554c;
-    --complementary-bg: #717184;
-    --complementary-bg: #4F4F5A;
-
+    --complementary-bg: #363237;
     --complementary-bg: #4E4E5A;
-    --home-background: url('/images/home-background.jpg');
-    --home-background: url('/images/background-home-desktop.jpg');
-    --home-bg-mobile: url('/images/home-bg-mobile.jpg');
-    --about-image-bg: url('/images/background-destination-desktop.jpg');
+    --complementary-bg: #504a52;
+    --project-container-hover: #666675;
+    --project-container-hover: #6A626D;
+    --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --skill-card-bg: #0c0c0c;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --buttons-font-family: 'Poppins', sans-serif;
     --buttons-font-weight: 100;
-    --buttons-bg-color: #343a96;
     --buttons-hover-bg: #3E434C;
-    --about-page-btn: #121619;
+    --buttons-hover-bg: #23272A;
     --buttons-color: #F8F8FC;
-    --secondary-font-family: 'Lato',
-        sans-serif;
     --secondary-font-family: 'Poppins',
         sans-serif;
-    --primary-text-color: #D7D7DF;
     --primary-text-color: #aaaaac;
-    --home-text-color: #D7D7DF;
     --secondary-font-weight: 300;
     --secondary-text-color: #C4C4C4;
-    --active-nav-link: #5D2B2C;
-    --nav-links-color: #D1D1D1;
-    --active-nav-link-text: #D1D1D1;
-    --helper-text-color: #808094;
-    --nav-links-font-weight: 300;
-    --active-nav-link-font-weight: 400;
-    --radio-btn-border: #505457;
-    /* --radio-btn-bg: #1F2022;
-	--radio-btn-bg: #1e2224;
-	--radio-btn-bg: #0f131c;
-	--radio-btn-bg: #111620;
-	--radio-btn-bg: #0f131c; */
-
-    --radio-btn-bg: #352d1c;
-    --radio-btn-bg: #30363A;
-    --contact-box-bg: #351c23;
+    --helper-text-color: #b7b7d8;
     --switch-button-bg: #7280f9;
     --read-more: #3a9bdc;
 }

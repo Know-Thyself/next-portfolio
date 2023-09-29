@@ -46,9 +46,7 @@
 }
 
 .contact-info {
-    background-color: var(--footer-bg);
-    background-color: var(--header-bg);
-    background-color: var(--complementary-bg);
+    background-color: var(--tertiary-bg);
     display: none;
     flex-direction: column;
     padding-bottom: 1rem;
@@ -84,11 +82,7 @@
     align-items: center;
     width: 100%;
     margin: auto;
-    background-color: var(--contact-box-bg);
-    background-color: var(--primary-bg);
-    background-color: var(--secondary-bg);
-    background-color: var(--header-bg);
-    background-color: var(--tertiary-bg);
+    background-color: var(--complementary-bg);
     padding: 2rem 0;
 }
 
@@ -109,9 +103,7 @@
 .textField input {
     color: var(--secondary-text-color);
     border-bottom: 1px solid var(--primary-text-color);
-    background-color: var(--header-bg);
-    background-color: var(--footer-bg);
-    background-color: var(--complementary-bg);
+    background-color: var(--tertiary-bg);
     font-family: var(--primary-font-family);
 }
 
@@ -121,13 +113,10 @@
 }
 
 .textField textarea {
-    background-color: var(--header-bg);
-    background-color: var(--footer-bg);
-    background-color: var(--complementary-bg);
+    background-color: var(--tertiary-bg);
 }
 
 .send {
-    background-color: var(--buttons-bg-color);
     color: var(--buttons-color);
     font-family: var(--buttons-font-family);
     text-transform: uppercase;
@@ -140,10 +129,6 @@
     padding: 0.75rem 1.25rem;
     cursor: pointer;
     border-radius: 4px;
-}
-
-.send:hover {
-    background-color: var(--buttons-hover-bg);
 }
 
 .fa-paper-plane {
@@ -191,10 +176,6 @@
     }
 
     .intro {
-        background: var(--contact-section-bg);
-        background-color: var(--complementary-bg);
-        background-color: var(--radio-btn-bg);
-        background-color: var(--tertiary-bg);
         background-color: var(--secondary-bg);
     }
 

@@ -58,7 +58,7 @@
     height: 3px;
     background-color: var(--switch-button-bg);
     background-color: var(--secondary-bg);
-    background-color: var(--radio-btn-border);
+    background-color: var(--complementary-bg);
     transition-duration: 0.25s;
 }
 
@@ -94,10 +94,8 @@
 .active {
     padding: 18px 24px;
     font-family: var(--primary-font-family);
-    color: var(--nav-links-color);
     border-bottom: solid 1px var(--primary-bg);
     font-size: 1rem;
-    font-weight: var(--nav-links-font-weight);
     text-decoration: none;
     transition-duration: 0.25s;
     border-bottom: 0px solid var(--header-bg);
@@ -108,16 +106,7 @@
     background-color: var(--complementary-bg);
 }
 
-/* .menu__item:hover {
-    color: var(--nav-links-color);
-    font-weight: var(--active-nav-link-font-weight);
-} */
-
 .active {
-    /* text-decoration: none;
-    font-weight: var(--active-nav-link-font-weight); */
-    /* color: var(--active-nav-link-text); */
-    background-color: var(--primary-bg) !important;
     background-color: var(--complementary-bg) !important;
 }
 
@@ -148,7 +137,6 @@
 
 @media screen and (max-width: 767px) {
     .custom-nav-item {
-        border-bottom: solid 2px var(--radio-btn-bg);
         border-bottom: solid 1px var(--secondary-bg);
     }
 
