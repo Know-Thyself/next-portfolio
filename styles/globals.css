@@ -38,7 +38,10 @@ a {
     --secondary-bg: #D8D9DA;
     --tertiary-bg: #E3E4E0;
     --complementary-bg: #A9A2AA;
+    --complementary-bg: #A8A8B3;
+    --complementary-bg: #B1B1B9;
     --project-container-hover: #9D949E;
+    --project-container-hover: #A5A5B1;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --buttons-font-family: 'Montserrat',
@@ -65,18 +68,19 @@ a {
     --secondary-bg: #23272A;
     --secondary-bg: #2B2F36;
     --secondary-bg: #292C33;
-    --tertiary-bg: #202325;
     --tertiary-bg: #393e3c;
-    --tertiary-bg: #2f3131;
-    --tertiary-bg: #363237;
+    --tertiary-bg: #474D4A;
     --complementary-bg: #41494F;
     --complementary-bg: #32393E;
     --complementary-bg: #363237;
     --complementary-bg: #4E4E5A;
     --complementary-bg: #504a52;
     --complementary-bg: #6A626D;
+    --complementary-bg: #404F43; 
+    --complementary-bg: #717184;
     --project-container-hover: #666675;
     --project-container-hover: #504a52;
+    --project-container-hover: #686879;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --skill-card-bg: #0c0c0c;
     --hero-banner-text: 'Playfair Display', serif;
