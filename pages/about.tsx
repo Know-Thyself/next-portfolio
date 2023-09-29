@@ -58,7 +58,7 @@ const About = ({ data }) => {
 				<section className={styles['about-section']}>
 					<div className={styles['about-img-wrapper']}>
 						<Image
-							src='/images/about.png'
+							src='/assets/images/about.png'
 							alt='Picture of the author'
 							priority={true}
 							loading='eager'
