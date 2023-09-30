@@ -86,10 +86,12 @@ a {
     --complementary-bg: #6d646e;
     --complementary-bg: #716D74;
     
-    /* fossil */
-    --complementary-bg: #787276;
     --complementary-bg: #706673;
     --complementary-bg: #5d535e;
+    /* fossil */
+    --complementary-bg: #787276;
+    /* fossil darker */
+    --complementary-bg: #6d646e;
     /* --complementary-bg: #6A626D; */
     --project-container-hover: #504a52;
     --project-container-hover: #686879;
@@ -110,6 +112,6 @@ a {
     --secondary-font-weight: 300;
     --secondary-text-color: #C4C4C4;
     --secondary-text-color: #E5E4E2;
-    --helper-text-color: #b7b7d8;
+    --helper-text-color: #dadaee;
     --read-more: #3a9bdc;
 }
