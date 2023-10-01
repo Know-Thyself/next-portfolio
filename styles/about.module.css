@@ -2,7 +2,7 @@
     width: 100%;
     background-color: var(--primary-bg);
     font-family: var(--primary-font-family);
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     padding-top: 84px;
     padding-bottom: 48px;
     padding-bottom: 12rem;
@@ -75,7 +75,7 @@
     text-align: left;
     margin: auto;
     color: var(--buttons-color);
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
 
 .skills-section p {
@@ -83,7 +83,8 @@
     width: 95%;
     margin: auto;
     color: var(--helper-text-color);
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
+    opacity: 0.85;
     font-family: var(--secondary-font-family);
     padding-top: 0.5rem;
 }

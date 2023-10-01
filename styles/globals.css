@@ -34,17 +34,23 @@ a {
 
 :root {
     --header-bg: #E8E9EB;
-    --header-bg: #F5F5F5;
+    /* --header-bg: #F5F5F5; */
     --primary-bg: #F5F5F5;
-    --primary-bg: #FFFFFF;
+    /* --primary-bg: #FFFFFF; */
     --secondary-bg: #D8D9DA;
     --secondary-bg: #E0E0E0;
-    --tertiary-bg: #E3E4E0;
-    --tertiary-bg: #F0F0F0;
+    --secondary-bg: #DCDCDC;
+    --secondary-bg: #DADADA;
+    --tertiary-bg: #C0C0C0;
+    --tertiary-bg: #D1D0CE;
+    --tertiary-bg: #D3D3D3;
     --complementary-bg: #A9A2AA;
     --complementary-bg: #A8A8B3;
     --complementary-bg: #B1B1B9;
     --complementary-bg: #B9B9B9;
+    --complementary-bg: #A1A29F;
+    --complementary-bg: #A6A7A4;
+    --complementary-bg: #C0C0C0;
     --project-container-hover: #9D949E;
     --project-container-hover: #A5A5B1;
     --hero-banner-text: 'Playfair Display', serif;
@@ -56,9 +62,10 @@ a {
     --secondary-font-family: 'Lato',
         sans-serif;
     --primary-text-color: #313030;
+    --primary-text-color: #17191b;
     --helper-text-color: #0A0A0A;
     --secondary-font-weight: 300;
-    --secondary-text-color: black;
+    --secondary-text-color: #313436;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --buttons-hover-bg: #C1C1C1;
     --buttons-color: #FAFAFA;
@@ -127,8 +134,8 @@ a {
     /* camouflage */
     --complementary-bg: #545851;
     
-    --complementary-bg: #686965;
     --complementary-bg: #4B4E53;
+    --complementary-bg: #686965;
 
     --project-container-hover: #504a52;
     --project-container-hover: #686879;
@@ -150,6 +157,7 @@ a {
     --secondary-font-weight: 300;
     --secondary-text-color: #C4C4C4;
     --secondary-text-color: #E5E4E2;
+    --secondary-text-color: #afb4b8;
     --helper-text-color: #dadaee;
     --radio-btn: #4B4E53;
     --read-more: #3a9bdc;

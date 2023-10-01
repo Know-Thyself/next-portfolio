@@ -3,7 +3,7 @@
     height: 100%;
     margin: 0;
     background-color: var(--primary-bg);
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     text-align: center;
     position: relative;
     top: 0;
@@ -20,6 +20,7 @@
 
 .banner {
     font-family: var(--hero-banner-text);
+    color: var(--primary-text-color);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -77,10 +78,10 @@
     .link {
         font-size: 0.85rem;
     }
-
+    
     .link .fa-github {
         font-size: 0.9rem;
-
+        
     }
 }
 
@@ -88,33 +89,33 @@
     .hero {
         width: 75%;
     }
-
+    
     .banner {
         text-align: left;
         margin-bottom: 1.5rem;
         font-size: 2rem;
     }
-
+    
     .profile-photo {
         float: left;
         shape-outside: circle();
         margin-right: 1rem;
     }
-
+    
     .intro {
         text-align: justify;
     }
-
+    
     .links-wrapper {
         gap: 2rem;
     }
-
+    
     .link {
         padding: 0.65rem 1.2rem;
         font-size: 1rem;
         font-weight: 200;
     }
-
+    
     .link .fa-github {
         font-size: 1.25rem;
     }
@@ -128,7 +129,7 @@
     .hero {
         width: 70%;
     }
-
+    
     .banner {
         font-weight: 900;
     }
@@ -137,7 +138,8 @@
 @media screen and (min-width: 1124px) {
     .home {
         background-color: var(--complementary-bg);
-        /* background-color: var(--tertiary-bg); */
+        background-color: var(--secondary-bg);
+        background-color: var(--tertiary-bg);
         padding-bottom: 9rem;
     }
 
