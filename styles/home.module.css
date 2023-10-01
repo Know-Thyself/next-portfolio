@@ -137,7 +137,7 @@
 @media screen and (min-width: 1124px) {
     .home {
         background-color: var(--complementary-bg);
-        background-color: var(--secondary-bg);
+        /* background-color: var(--tertiary-bg); */
         padding-bottom: 9rem;
     }
 

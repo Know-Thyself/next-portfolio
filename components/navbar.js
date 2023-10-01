@@ -75,7 +75,7 @@ const Navbar = () => {
 									} ${
 										theme === 'light'
 											? 'text-primary border-secondary-subtle'
-											: 'text-body-secondary border-dark'
+											: 'text-body-secondary border-dark-subtle'
 									}`}
 									onClick={screenTest}
 								>
@@ -92,7 +92,7 @@ const Navbar = () => {
 									} ${
 										theme === 'light'
 											? 'text-primary border-secondary-subtle'
-											: 'text-body-secondary border-dark'
+											: 'text-body-secondary border-dark-subtle'
 									}`}
 									onClick={screenTest}
 								>
@@ -109,7 +109,7 @@ const Navbar = () => {
 									} ${
 										theme === 'light'
 											? 'text-primary border-secondary-subtle'
-											: 'text-body-secondary border-dark'
+											: 'text-body-secondary border-dark-subtle'
 									}`}
 									onClick={screenTest}
 								>
@@ -126,7 +126,7 @@ const Navbar = () => {
 									} ${
 										theme === 'light'
 											? 'text-primary border-secondary-subtle'
-											: 'text-body-secondary border-dark'
+											: 'text-body-secondary border-dark-subtle'
 									}`}
 									onClick={screenTest}
 								>

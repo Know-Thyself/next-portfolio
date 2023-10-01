@@ -62,6 +62,7 @@ a {
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --buttons-hover-bg: #C1C1C1;
     --buttons-color: #FAFAFA;
+    --radio-btn: #606060;
     --read-more: #BD1A43;
 }
 
@@ -69,12 +70,12 @@ a {
     --header-bg: #2a2f33;
     --header-bg: #292929;
     /* dark */
-    --header-bg: #272b30;
     /* dark subtle */
     --header-bg: #1d2022;
     --header-bg: #1a1a1a;
-    --header-bg: rgb(26, 26, 26);
     --header-bg: #1E1E1E;
+    --header-bg: #1d2022;
+    --header-bg: #272b30;
 
 
     --primary-bg: #1B1F22;
@@ -82,74 +83,57 @@ a {
     /* --primary-bg: #1d2022; */
     --primary-bg: #0c0d0e;
     --primary-bg: #121212;
+    --primary-bg: #1d2022;
+    --primary-bg: #1C2021;
+
+    --primary-bg: #2a2f33;
+    --primary-bg: #1C1E21;
+    --primary-bg: #1E2024;
+
     /* --primary-bg: #181818; */
     --secondary-bg: #272A30;
-    --secondary-bg: #252a2e;
-    --secondary-bg: #23272A;
-    --secondary-bg: #2B2F36;
-    --secondary-bg: #292C33;
-    --secondary-bg: #32343c;
-
+    --secondary-bg: #2a2f33;
+    --secondary-bg: #41494F;
+    --secondary-bg: #32393e;
+    --secondary-bg: #3E424B;
+    --secondary-bg: #31353a;
     --secondary-bg: #3a3f44;
     
-    
-    --secondary-bg: #1d2022;
-    --secondary-bg: #272b30;
-    --secondary-bg: #181a1b;
-    --secondary-bg: #181818;
-    --secondary-bg: #1a1a1a;
-    --secondary-bg: #242424;
-    
-    --tertiary-bg: #373A43;
-    --tertiary-bg: #292C33;
     --tertiary-bg: #323538;
-
     --tertiary-bg: #31353a;
-    --tertiary-bg: #1a1a1a;
-    
-    /* fog */
-    --complementary-bg: #655967;
-    
-    --complementary-bg: #706673;
-    --complementary-bg: #4E4E5A;
-    
-    --complementary-bg: #32393E;
-    
-    --complementary-bg: #41494F;
-    
-    --complementary-bg: #6d646e;
-    --complementary-bg: #716D74;
-    
-    --complementary-bg: #706673;
-    --complementary-bg: #353839;
+    --complementary-bg: #3E3E3E;
+    --complementary-bg: #5d535e;
+    --complementary-bg: #464646;
     /* Quartz */
     --complementary-bg: #51484f;
+    /* fog */
+    --complementary-bg: #655967;
+    --complementary-bg: #675F51;
+    --complementary-bg: #63504B;
+    --complementary-bg: #63544B;
+    /* carbon gray */
+    --complementary-bg: #625D5D;
+    --complementary-bg: #555555;
+    
+    --complementary-bg: #5C5858;
+    
+    
+    --complementary-bg: #2a2f33;
+    --complementary-bg: #353839;
+    --complementary-bg: #313436;
+    
     
     --complementary-bg: #565051;
+    /* camouflage */
+    --complementary-bg: #545851;
     
-    /* --complementary-bg: #3498db; */
-    /* fossil */
-    --complementary-bg: #787276;
-    --complementary-bg: #717184;
-    --complementary-bg: #5d535e;
-    --complementary-bg: #31353a;
-    
-    --complementary-bg: #2C2C2C;
-    --complementary-bg: #3E3E3E;
-    --complementary-bg: #343a40;
-    --complementary-bg: #464646;
-    
-    --complementary-bg: #68606C;
-    --complementary-bg: #4E4851;
-    /* --complementary-bg: #606060; */
-    
-    /* fossil darker */
-    --complementary-bg: #6d646e;
-    --complementary-bg: #464646;
+    --complementary-bg: #686965;
+    --complementary-bg: #4B4E53;
+
     --project-container-hover: #504a52;
     --project-container-hover: #686879;
     --project-container-hover: #373D43;
-    --project-container-hover: #544b55;
+    --project-container-hover: #47494D;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --skill-card-bg: #0c0c0c;
     --hero-banner-text: 'Playfair Display', serif;
@@ -157,14 +141,16 @@ a {
     --buttons-font-family: 'Poppins', sans-serif;
     --buttons-font-weight: 100;
     --buttons-hover-bg: #3E434C;
-    --buttons-hover-bg: #292C33;
+    --buttons-hover-bg: #323739;
     --buttons-color: #F8F8FC;
     --secondary-font-family: 'Poppins',
         sans-serif;
     --primary-text-color: #aaaaac;
+    --primary-text-color: #dee2e6;
     --secondary-font-weight: 300;
     --secondary-text-color: #C4C4C4;
     --secondary-text-color: #E5E4E2;
     --helper-text-color: #dadaee;
+    --radio-btn: #4B4E53;
     --read-more: #3a9bdc;
 }
