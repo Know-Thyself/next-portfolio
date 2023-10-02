@@ -1,5 +1,6 @@
 .projects-main-container {
     width: 100%;
+    background-color: var(--tertiary-bg);
     background-color: var(--primary-bg);
     padding-top: 84px;
     padding-bottom: 12.25rem;

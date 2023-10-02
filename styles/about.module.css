@@ -214,7 +214,8 @@
 
 @media screen and (min-width: 900px) {
     .main {
-        background-color: var(--complementary-bg);
+        background-color: var(--tertiary-bg);
+        background-color: var(--primary-bg);
     }
 
     .about-section {
@@ -224,14 +225,15 @@
         margin: auto;
         gap: 3rem;
         background-color: var(--primary-bg);
+        background-color: var(--tertiary-bg);
     }
 
     .skills-section {
-        background-color: var(--complementary-bg);
+        background-color: var(--primary-bg);
     }
 
     .skill-card {
-        background-color: var(--primary-bg);
+        background-color: var(--tertiary-bg);
     }
 
     .about-img-wrapper {

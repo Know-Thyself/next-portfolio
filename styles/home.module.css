@@ -128,13 +128,16 @@
     .home {
         padding-top: 7rem;
         padding-bottom: 9rem;
+        background-color: var(--secondary-bg);
     }
     
     .hero {
         width: 80%;
         border-radius: 20%;
-        background-color: var(--primary-bg);
         background-color: var(--secondary-bg);
+        background-color: var(--header-bg);
+        background-color: var(--complementary-bg);
+        background-color: var(--primary-bg);
         background-color: var(--tertiary-bg);
         padding: 2rem 10rem;
         display: flex;

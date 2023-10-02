@@ -69,6 +69,7 @@ a {
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --buttons-hover-bg: #C1C1C1;
     --buttons-color: #FAFAFA;
+    --active-nav-link: #2f222d;
     --radio-btn: #606060;
     --read-more: #BD1A43;
 }
@@ -78,9 +79,17 @@ a {
     --header-bg: #292929;
     --header-bg: #1d2022;
     --header-bg: #1a1a1a;
-    --header-bg: #1E1E1E;
     --header-bg: #1d2022;
+    --header-bg: #1E1E1E;
+    --header-bg: #1a1a1d;
+    --header-bg: #222629;
+    --header-bg: #182628;
+    --header-bg: #2d283e;
+    --header-bg: #1a1a1d;
     --header-bg: #272b30;
+    --header-bg: #222629;
+    --header-bg: #1F1E24;
+    --header-bg: #1E2024;
 
     --primary-bg: #1B1F22;
     --primary-bg: #0c0d0e;
@@ -90,7 +99,9 @@ a {
     --primary-bg: #1C1E21;
     --primary-bg: #191A19;
     --primary-bg: #1E2024;
+    --primary-bg: #1a1a1d;
     --primary-bg: #121212;
+    --primary-bg: #0b0c10;
 
     --secondary-bg: #2a2f33;
     --secondary-bg: #272A30;
@@ -108,65 +119,52 @@ a {
     
     --tertiary-bg: #323538;
     --tertiary-bg: #31353a;
-    --tertiary-bg: #1e2024;
+    --tertiary-bg: #2a2f33;
+    --tertiary-bg: #1F1E24;
+
     
-    --complementary-bg: #5d535e;
-    --complementary-bg: #464646;
-    /* Quartz */
-    --complementary-bg: #51484f;
-    /* fog */
-    --complementary-bg: #655967;
-    --complementary-bg: #675F51;
-    --complementary-bg: #63504B;
-    --complementary-bg: #63544B;
+    
+    
+    
+    
+    --complementary-bg: #3E4035;
     /* carbon gray */
     --complementary-bg: #625D5D;
     --complementary-bg: #555555;
-    
-    --complementary-bg: #5C5858;
-    
-    --complementary-bg: #353839;
-    --complementary-bg: #313436;
+    --complementary-bg: #504A4B;
+    --complementary-bg: #343434;
     
     
-    --complementary-bg: #565051;
-    /* camouflage */
-    --complementary-bg: #545851;
-    
-    --complementary-bg: #4B4E53;
-    --complementary-bg: #686965;
-    /* light slate gray */
-    --complementary-bg: #778899;
+    --complementary-bg: #675F51;
     /* outer space */
     --complementary-bg: #414A4C;
+    --complementary-bg: #353839;
+    --complementary-bg: #63645E;
+    --complementary-bg: #545851;
     
-    --complementary-bg: #5A4C4C;
-    --complementary-bg: #98817B;
-    --complementary-bg: #996666;
-    --complementary-bg: #986960;
     
-    --complementary-bg: #584559;
-    --complementary-bg: #677484;
-    --complementary-bg: #796878;
-    /* liver */
-    --complementary-bg: #534B4F;
-    --complementary-bg: #3B444B;
+    --complementary-bg: #555555;
     
-    --complementary-bg: #848482;
-    --complementary-bg: #536872;
-    --complementary-bg: #696969;
-    /* dark electric blue */
-    --complementary-bg: #536878;
-    --complementary-bg: #6E7F80;
-    --complementary-bg: #544B45;
     
-   
+    
+    
+    
+    /* outer space */
+    --complementary-bg: #414A4C;
+    /* camouflage */
+    --complementary-bg: #545851;
+    --complementary-bg: #4B4E53;
+
+
     --complementary-bg: #3D4045;
     --complementary-bg: #3E444C;
     --complementary-bg: #3a3f44;
     --complementary-bg: #2F333C;
     --complementary-bg: #2B2F36;
-    
+    --complementary-bg: #333035;
+    --complementary-bg: #404539;
+    --complementary-bg: #394045;
+    --complementary-bg: #272B30;
     --project-container-hover: #504a52;
     --project-container-hover: #686879;
     --project-container-hover: #373D43;
@@ -182,13 +180,19 @@ a {
     --buttons-color: #F8F8FC;
     --secondary-font-family: 'Poppins',
         sans-serif;
-    --primary-text-color: #aaaaac;
+        --primary-text-color: #aaaaac;
     --primary-text-color: #dee2e6;
     --secondary-font-weight: 300;
     --secondary-text-color: #C4C4C4;
     --secondary-text-color: #E5E4E2;
     --secondary-text-color: #afb4b8;
     --helper-text-color: #dadaee;
+    --active-nav-link: #353940;
+    --active-nav-link: #414A4C;
+    --active-nav-link: #353839;
+    --active-nav-link: #63645E;
+    --active-nav-link: #3E444C;
     --radio-btn: #4B4E53;
+    --radio-btn: #353940;
     --read-more: #3a9bdc;
 }

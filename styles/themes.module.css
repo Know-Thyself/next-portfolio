@@ -34,8 +34,8 @@
     height: 30px;
     background-color: var(--primary-bg);
     border-radius: 100px;
-    border: 3px solid var(--tertiary-bg);
-    border: 3px solid var(--complementary-bg);
+    border: 3px solid var(--active-nav-link);
+    border: 3px solid var(--radio-btn);
     position: relative;
     transition: background-color 0.2s;
 }
@@ -47,7 +47,7 @@
     height: 22px;
     border-radius: 30px;
     transition: 0.2s;
-    background: var(--complementary-bg);
+    background: var(--active-nav-link);
     box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
 }
 
@@ -71,7 +71,7 @@
 .switch-checkbox:checked+.switch-label .switch-button {
     left: calc(100% - 2px);
     transform: translateX(-100%);
-    background-color: var(--complementary-bg);
+    background-color: var(--active-nav-link);
 }
 
 .switch-label:active .switch-button {
