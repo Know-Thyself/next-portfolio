@@ -49,6 +49,7 @@
     border-radius: 30px;
     transition: 0.2s;
     background: var(--active-nav-link);
+    background-color: var(--radio-btn);
     box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
 }
 

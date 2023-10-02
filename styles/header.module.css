@@ -58,7 +58,7 @@
     height: 3px;
     background-color: var(--complementary-bg);
     background-color: var(--active-nav-link);
-    background-color: var(--secondary-bg);
+    background-color: var(--toggle-btn);
     transition-duration: 0.25s;
 }
 
@@ -152,6 +152,7 @@
     .menu__box {
         background-color: var(--menu-box-bg);
         background-color: var(--active-nav-link);
+        background-color: var(--complementary-bg);
         width: 100%;
     }
 
