@@ -76,39 +76,40 @@ a {
 [data-theme='dark'] {
     --header-bg: #2a2f33;
     --header-bg: #292929;
-    /* dark */
-    /* dark subtle */
     --header-bg: #1d2022;
     --header-bg: #1a1a1a;
     --header-bg: #1E1E1E;
     --header-bg: #1d2022;
     --header-bg: #272b30;
 
-
     --primary-bg: #1B1F22;
-    --primary-bg: #181a1b;
-    /* --primary-bg: #1d2022; */
     --primary-bg: #0c0d0e;
-    --primary-bg: #121212;
     --primary-bg: #1d2022;
     --primary-bg: #1C2021;
-
     --primary-bg: #2a2f33;
     --primary-bg: #1C1E21;
+    --primary-bg: #191A19;
     --primary-bg: #1E2024;
+    --primary-bg: #121212;
 
-    /* --primary-bg: #181818; */
-    --secondary-bg: #272A30;
     --secondary-bg: #2a2f33;
+    --secondary-bg: #272A30;
     --secondary-bg: #41494F;
     --secondary-bg: #32393e;
     --secondary-bg: #3E424B;
     --secondary-bg: #31353a;
     --secondary-bg: #3a3f44;
+    --secondary-bg: #2E3438;
+    --secondary-bg: #31263e;
+    --secondary-bg: #4b485b;
+    --secondary-bg: #5d4c58;
+    --secondary-bg: #2e3547;
+    --secondary-bg: #2f222d;
     
     --tertiary-bg: #323538;
     --tertiary-bg: #31353a;
-    --complementary-bg: #3E3E3E;
+    --tertiary-bg: #1e2024;
+    
     --complementary-bg: #5d535e;
     --complementary-bg: #464646;
     /* Quartz */
@@ -124,8 +125,6 @@ a {
     
     --complementary-bg: #5C5858;
     
-    
-    --complementary-bg: #2a2f33;
     --complementary-bg: #353839;
     --complementary-bg: #313436;
     
@@ -136,7 +135,38 @@ a {
     
     --complementary-bg: #4B4E53;
     --complementary-bg: #686965;
-
+    /* light slate gray */
+    --complementary-bg: #778899;
+    /* outer space */
+    --complementary-bg: #414A4C;
+    
+    --complementary-bg: #5A4C4C;
+    --complementary-bg: #98817B;
+    --complementary-bg: #996666;
+    --complementary-bg: #986960;
+    
+    --complementary-bg: #584559;
+    --complementary-bg: #677484;
+    --complementary-bg: #796878;
+    /* liver */
+    --complementary-bg: #534B4F;
+    --complementary-bg: #3B444B;
+    
+    --complementary-bg: #848482;
+    --complementary-bg: #536872;
+    --complementary-bg: #696969;
+    /* dark electric blue */
+    --complementary-bg: #536878;
+    --complementary-bg: #6E7F80;
+    --complementary-bg: #544B45;
+    
+   
+    --complementary-bg: #3D4045;
+    --complementary-bg: #3E444C;
+    --complementary-bg: #3a3f44;
+    --complementary-bg: #2F333C;
+    --complementary-bg: #2B2F36;
+    
     --project-container-hover: #504a52;
     --project-container-hover: #686879;
     --project-container-hover: #373D43;
