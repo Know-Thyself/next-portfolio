@@ -75,47 +75,25 @@ a {
 }
 
 [data-theme='dark'] {
-    --header-bg: #2a2f33;
-    --header-bg: #292929;
-    --header-bg: #1d2022;
-    --header-bg: #1a1a1a;
-    --header-bg: #1d2022;
-    --header-bg: #1E1E1E;
-    --header-bg: #1a1a1d;
-    --header-bg: #222629;
-    --header-bg: #182628;
-    --header-bg: #2d283e;
-    --header-bg: #1a1a1d;
-    --header-bg: #272b30;
-    --header-bg: #222629;
-    --header-bg: #1F1E24;
     --header-bg: #1E2024;
+    --header-bg: #1B1F22;
+    --header-bg: #1d2022;
 
-    --primary-bg: #1B1F22;
-    --primary-bg: #0c0d0e;
-    --primary-bg: #1d2022;
-    --primary-bg: #1C2021;
-    --primary-bg: #2a2f33;
-    --primary-bg: #1C1E21;
-    --primary-bg: #191A19;
-    --primary-bg: #1E2024;
     --primary-bg: #1a1a1d;
     --primary-bg: #121212;
+    --primary-bg: #1d2022;
     --primary-bg: #0b0c10;
-
-    --secondary-bg: #2a2f33;
-    --secondary-bg: #272A30;
-    --secondary-bg: #41494F;
-    --secondary-bg: #32393e;
-    --secondary-bg: #3E424B;
-    --secondary-bg: #31353a;
-    --secondary-bg: #3a3f44;
-    --secondary-bg: #2E3438;
-    --secondary-bg: #31263e;
-    --secondary-bg: #4b485b;
-    --secondary-bg: #5d4c58;
-    --secondary-bg: #2e3547;
+    
     --secondary-bg: #2f222d;
+    --secondary-bg: #590829;
+    --secondary-bg: #422a33;
+    --secondary-bg: #4f1e2b;
+    --secondary-bg: #3e1d2e;
+    --secondary-bg: #4a0127;
+    --secondary-bg: #35121F;
+    --secondary-bg: #381523;
+    --secondary-bg: #491a2f;
+    --secondary-bg: #2f1b25;
     
     --tertiary-bg: #323538;
     --tertiary-bg: #31353a;
@@ -123,76 +101,74 @@ a {
     --tertiary-bg: #1F1E24;
 
     
-    
-    
-    
-    
-    --complementary-bg: #3E4035;
-    /* carbon gray */
-    --complementary-bg: #625D5D;
-    --complementary-bg: #555555;
-    --complementary-bg: #504A4B;
-    --complementary-bg: #343434;
-    
-    
-    --complementary-bg: #675F51;
-    /* outer space */
-    --complementary-bg: #414A4C;
-    --complementary-bg: #353839;
-    --complementary-bg: #63645E;
-    --complementary-bg: #545851;
-    
-    
-    --complementary-bg: #555555;
-    
-    
-    
-    
-    
-    /* outer space */
-    --complementary-bg: #414A4C;
-    /* camouflage */
-    --complementary-bg: #545851;
-    --complementary-bg: #4B4E53;
-
-
-    --complementary-bg: #3D4045;
-    --complementary-bg: #3E444C;
-    --complementary-bg: #3a3f44;
-    --complementary-bg: #2F333C;
     --complementary-bg: #2B2F36;
-    --complementary-bg: #333035;
-    --complementary-bg: #404539;
+    --complementary-bg: #2F333C;
+    --complementary-bg: #3a3f44;
     --complementary-bg: #394045;
     --complementary-bg: #272B30;
-    --project-container-hover: #504a52;
-    --project-container-hover: #686879;
+
+    --project-container-hover: #22252A;
     --project-container-hover: #373D43;
-    --project-container-hover: #47494D;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
-    --skill-card-bg: #0c0c0c;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --buttons-font-family: 'Poppins', sans-serif;
     --buttons-font-weight: 100;
     --buttons-hover-bg: #3E434C;
     --buttons-hover-bg: #323739;
+    --buttons-hover-bg: #590829;
+    --buttons-hover-bg: #3e1d2e;
     --buttons-color: #F8F8FC;
     --secondary-font-family: 'Poppins',
         sans-serif;
         --primary-text-color: #aaaaac;
     --primary-text-color: #dee2e6;
+
     --secondary-font-weight: 300;
     --secondary-text-color: #C4C4C4;
     --secondary-text-color: #E5E4E2;
     --secondary-text-color: #afb4b8;
     --helper-text-color: #dadaee;
-    --active-nav-link: #353940;
     --active-nav-link: #414A4C;
+    --active-nav-link: #353940;
     --active-nav-link: #353839;
-    --active-nav-link: #63645E;
     --active-nav-link: #3E444C;
-    --radio-btn: #4B4E53;
+    --active-nav-link: #394045;
+    
+    /* bluish light theme 
+        --active-nav-link: #4f4e60;
+        --active-nav-link: #64575e; */
+    
+    
+    
+    /* mixed colors 
+        --active-nav-link: #4d243d;
+        --active-nav-link: #4f3e60;
+        --active-nav-link: #644a58;
+        --active-nav-link: #7e2a39;
+        --active-nav-link: #694f4a;*/
+    
+    
+    /* maybe for the home page and hover 
+        --active-nav-link: #5e183a;
+        --active-nav-link: #4e2640;
+        --active-nav-link: #231b2a;*/
+    
+    
+    
+    /* just in case colors */
+    /* #403539;
+    #383d59;
+    #692636;
+    #7e2a39; */
+    
+    
+    
+
+
+    --radio-btn: #4C525C;
     --radio-btn: #353940;
+    --radio-btn: #7e2a39;
+    --radio-btn: #4B4E53;
     --read-more: #3a9bdc;
 }

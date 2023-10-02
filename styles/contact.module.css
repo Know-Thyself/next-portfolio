@@ -2,7 +2,7 @@
     width: 100%;
     text-align: center;
     position: relative;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     top: 0;
     left: 0;
     bottom: 0;
@@ -18,7 +18,7 @@
 .intro {
     width: 85%;
     margin: auto;
-    padding: 1rem 0;
+    padding-top: 1rem;
 }
 
 .intro h1 {
@@ -49,7 +49,7 @@
     background-color: var(--complementary-bg);
     display: none;
     flex-direction: column;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 .contact-info h4 {
@@ -84,7 +84,7 @@
     margin: auto;
     background-color: var(--complementary-bg);
     background-color: var(--secondary-bg);
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .text-fields,
@@ -165,9 +165,9 @@
 
 @media screen and (min-width: 929px) {
     .main {
-        min-height: 100%;
-        padding-top: 8rem;
-        padding-bottom: 10rem;
+        /* min-height: 100%; */
+        padding-top: 7.5rem;
+        padding-bottom: 9rem;
     }
 
     .wrapper,

@@ -85,7 +85,7 @@ function HomePage({ data }): JSX.Element {
 							href='https://github.com/Know-Thyself'
 							target='_blank'
 							rel='noreferrer'
-							className={`btn btn-primary border-0 ${styles.link}`}
+							className={`btn btn-dark border-0 ${styles.link}`}
 							whileHover={{
                                 scale: 1.2,
 							}}
@@ -105,7 +105,7 @@ function HomePage({ data }): JSX.Element {
 						>
 							<Link
 								href='/projects'
-								className={`btn btn-primary border-0 ${styles.link}`}
+								className={`btn btn-dark border-0 ${styles.link}`}
 							>
 								Projects
 							</Link>

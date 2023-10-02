@@ -26,6 +26,7 @@
     width: 100%;
     height: fit-content;
     margin-top: 0;
+    background-color: var(--tertiary-bg);
     background-color: var(--complementary-bg);
     cursor: pointer;
     display: flex;
@@ -64,7 +65,6 @@
 
 .project-title {
     width: 100%;
-    background-color: var(--complementary-bg);
     background-color: var(--secondary-bg);
     margin: 0 auto;
     text-align: center;
@@ -167,7 +167,7 @@
 
     .github-link,
     .live-demo-link {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 1.25rem;
         font-size: 1rem;
     }
 
@@ -188,13 +188,13 @@
 @media screen and (min-width: 1224px) {
     .projects-main-container {
         /* padding-top: 54px; */
-        padding-bottom: 5.75rem;
+        padding-bottom: 7rem;
     }
 
     .projects-wrapper {
         grid-template-columns: repeat(3, 1fr);
         width: 94%;
-        padding: 3% 0;
+        /* padding: 3% 0; */
     }
 
     .project-wrapper:last-child:nth-child(2n - 2) {

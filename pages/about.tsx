@@ -83,7 +83,7 @@ const About = ({ data }) => {
 							>
 								<Link
 									href='/contact'
-									className={`btn btn-primary border-0 ${styles.contact}`}
+									className={`btn btn-dark border-0 ${styles.contact}`}
 								>
 									Contact Me
 								</Link>
@@ -107,7 +107,7 @@ const About = ({ data }) => {
 								</Link>
 							</motion.div> */}
 							<motion.button
-								className={`btn btn-primary border-0 ${styles.download}`}
+								className={`btn btn-dark border-0 ${styles.download}`}
 								whileHover={{
 									scale: 1.1,
 									color: 'white',

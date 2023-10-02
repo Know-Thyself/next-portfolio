@@ -17,12 +17,12 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 const Projects = ({ projectsData, project, setProject }) => {
-	const id = projectsData.map((portfolio) => portfolio.id).pop()
+	const id = projectsData.map(portfolio => portfolio.id).pop()
 	const projects = projectsData
-		.map((portfolio) => portfolio.content.projects)
+		.map(portfolio => portfolio.content.projects)
 		.flat()
 	const router = useRouter()
-	const handleClick = (e) => {
+	const handleClick = e => {
 		if (
 			!e.target.innerText.includes('Live Demo') &&
 			!e.target.innerText.includes('GitHub')

@@ -58,6 +58,7 @@
     height: 3px;
     background-color: var(--complementary-bg);
     background-color: var(--active-nav-link);
+    background-color: var(--secondary-bg);
     transition-duration: 0.25s;
 }
 
@@ -103,11 +104,13 @@
 .menu__item:hover {
     background-color: var(--complementary-bg);
     background-color: var(--active-nav-link);
+    background-color: var(--secondary-bg);
 }
 
 .active {
     background-color: var(--complementary-bg) !important;
     background-color: var(--active-nav-link) !important;
+    background-color: var(--secondary-bg) !important;
     cursor: default;
 }
 
