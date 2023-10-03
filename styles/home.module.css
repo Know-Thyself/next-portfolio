@@ -41,6 +41,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .link {
@@ -59,7 +61,6 @@
 .link .fa-github {
     font-size: 0.9rem;
 }
-
 
 @media screen and (min-width: 667px) {
     .hero {
@@ -81,6 +82,10 @@
     
     .intro {
         text-align: justify;
+    }
+    
+    .links-wrapper {
+        gap: 2rem;
     }
     
     .link {

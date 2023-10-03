@@ -113,7 +113,6 @@
     font-size: 0.75rem;
     font-weight: var(--buttons-font-weight);
     text-rendering: optimizeLegibility;
-    /* width: 25%; */
 }
 
 .github-link:hover .project-wrapper {
@@ -128,14 +127,6 @@
     transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
 }
 
-@media screen and (max-width: 300px) {
-
-    .github-link,
-    .live-demo-link {
-        width: 40%;
-    }
-}
-
 @media screen and (min-width: 467px) {
     .project-title {
         font-size: 1rem;
@@ -146,7 +137,6 @@
     .live-demo-link {
         padding: 0.45rem 0.75rem;
         font-size: 1rem;
-        width: max-content;
     }
 
     .fa-github {
@@ -187,14 +177,12 @@
 
 @media screen and (min-width: 1224px) {
     .projects-main-container {
-        /* padding-top: 54px; */
         padding-bottom: 7rem;
     }
 
     .projects-wrapper {
         grid-template-columns: repeat(3, 1fr);
         width: 94%;
-        /* padding: 3% 0; */
     }
 
     .project-wrapper:last-child:nth-child(2n - 2) {
