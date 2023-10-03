@@ -34,25 +34,11 @@ a {
 
 :root {
     --header-bg: #E8E9EB;
-    /* --header-bg: #F5F5F5; */
     --primary-bg: #F5F5F5;
-    /* --primary-bg: #FFFFFF; */
     --secondary-bg: #D8D9DA;
-    --secondary-bg: #E0E0E0;
-    --secondary-bg: #DCDCDC;
-    --secondary-bg: #DADADA;
-    --tertiary-bg: #C0C0C0;
-    --tertiary-bg: #D1D0CE;
-    --tertiary-bg: #D3D3D3;
-    --complementary-bg: #A9A2AA;
-    --complementary-bg: #A8A8B3;
-    --complementary-bg: #B1B1B9;
-    --complementary-bg: #B9B9B9;
-    --complementary-bg: #A1A29F;
-    --complementary-bg: #A6A7A4;
-    --complementary-bg: #C0C0C0;
-    --project-container-hover: #9D949E;
-    --project-container-hover: #A5A5B1;
+    --tertiary-bg: #E5E4E2;
+    --complementary-bg: #C1C0BE;
+    --project-container-hover: #A8A7A4;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --buttons-font-family: 'Montserrat',
@@ -69,8 +55,10 @@ a {
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --buttons-hover-bg: #C1C1C1;
     --buttons-color: #FAFAFA;
-    --active-nav-link: #2f222d;
-    --radio-btn: #606060;
+    --active-nav-link: #B2B5BB;
+    --active-nav-link: #BEC0C1;
+    --toggle-btn: #A4A7A8;
+    --radio-btn: #A4A7A8;
     --read-more: #BD1A43;
 }
 
@@ -78,12 +66,19 @@ a {
     --header-bg: #1E2024;
     --header-bg: #1B1F22;
     --header-bg: #1d2022;
-
     --primary-bg: #1a1a1d;
     --primary-bg: #121212;
     --primary-bg: #1d2022;
     --primary-bg: #0b0c10;
-    
+    /* light secondary bg  
+            #4f4e60;
+            #64575e;
+            #4d243d;
+            #4f3e60;
+            #644a58;
+            #694f4a;
+    */
+
     --secondary-bg: #2f222d;
     --secondary-bg: #590829;
     --secondary-bg: #422a33;
@@ -94,20 +89,19 @@ a {
     --secondary-bg: #381523;
     --secondary-bg: #491a2f;
     --secondary-bg: #2f1b25;
-    
+
     --tertiary-bg: #323538;
     --tertiary-bg: #31353a;
     --tertiary-bg: #2a2f33;
     --tertiary-bg: #1F1E24;
 
-    
-    --complementary-bg: #2B2F36;
-    --complementary-bg: #2F333C;
+    --complementary-bg: #4D4D4D;
+    --complementary-bg: #3E3E3E;
     --complementary-bg: #3a3f44;
-    --complementary-bg: #394045;
     --complementary-bg: #272B30;
+    --complementary-bg: #2B2F36;
+    --complementary-bg: #343A3E;
 
-    --project-container-hover: #22252A;
     --project-container-hover: #373D43;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --hero-banner-text: 'Playfair Display', serif;
@@ -116,12 +110,12 @@ a {
     --buttons-font-weight: 100;
     --buttons-hover-bg: #3E434C;
     --buttons-hover-bg: #323739;
-    --buttons-hover-bg: #590829;
     --buttons-hover-bg: #3e1d2e;
+    --buttons-hover-bg: #590829;
     --buttons-color: #F8F8FC;
     --secondary-font-family: 'Poppins',
         sans-serif;
-        --primary-text-color: #aaaaac;
+    --primary-text-color: #aaaaac;
     --primary-text-color: #dee2e6;
 
     --secondary-font-weight: 300;
@@ -129,47 +123,8 @@ a {
     --secondary-text-color: #E5E4E2;
     --secondary-text-color: #afb4b8;
     --helper-text-color: #dadaee;
-    --active-nav-link: #414A4C;
-    --active-nav-link: #353940;
-    --active-nav-link: #353839;
-    --active-nav-link: #3E444C;
-    --active-nav-link: #394045;
-    --toggle-btn: #7e2a39;
-    
-    /* bluish light theme 
-        --active-nav-link: #4f4e60;
-        --active-nav-link: #64575e; */
-    
-    
-    
-    /* mixed colors 
-        --active-nav-link: #4d243d;
-        --active-nav-link: #4f3e60;
-        --active-nav-link: #644a58;
-        --active-nav-link: #7e2a39;
-        --active-nav-link: #694f4a;*/
-    
-    
-    /* maybe for the home page and hover 
-        --active-nav-link: #5e183a;
-        --active-nav-link: #4e2640;
-        --active-nav-link: #231b2a;*/
-    
-    
-    
-    /* just in case colors */
-    /* #403539;
-    #383d59;
-    #692636;
-    #7e2a39; */
-    
-    
-    
-
-
-    --radio-btn: #4C525C;
-    --radio-btn: #353940;
-    --radio-btn: #7e2a39;
+    --active-nav-link: #7e2a39;
+    --toggle-btn: #4B4E53;
     --radio-btn: #4B4E53;
     --read-more: #3a9bdc;
 }
