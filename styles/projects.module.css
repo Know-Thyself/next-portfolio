@@ -112,6 +112,7 @@
     font-size: 0.75rem;
     font-weight: var(--buttons-font-weight);
     text-rendering: optimizeLegibility;
+    width: fit-content;
     /* width: 25%; */
 }
 
