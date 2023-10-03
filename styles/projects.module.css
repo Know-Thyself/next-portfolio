@@ -112,8 +112,6 @@
     font-size: 0.75rem;
     font-weight: var(--buttons-font-weight);
     text-rendering: optimizeLegibility;
-    width: fit-content;
-    /* width: 25%; */
 }
 
 .github-link:hover .project-wrapper {
@@ -129,12 +127,12 @@
     transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
 }
 
-/* @media screen and (max-width: 300px) {
+@media screen and (max-width: 300px) {
     .github-link,
     .live-demo-link {
         width: 50%;
     }
-} */
+}
 
 @media screen and (min-width: 467px) {
     .project-title {
