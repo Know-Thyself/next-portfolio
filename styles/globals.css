@@ -98,9 +98,9 @@ a {
     --complementary-bg: #4D4D4D;
     --complementary-bg: #3E3E3E;
     --complementary-bg: #3a3f44;
-    --complementary-bg: #272B30;
     --complementary-bg: #2B2F36;
     --complementary-bg: #343A3E;
+    --complementary-bg: #272B30;
 
     --project-container-hover: #373D43;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
