@@ -96,10 +96,12 @@
 
 .menu__item:hover {
     background-color: var(--active-nav-link);
+    color: var(--primary-text-color) !important;
 }
 
-.active {
+.custom-nav-item .active {
     background-color: var(--active-nav-link) !important;
+    color: var(--primary-text-color) !important;
     cursor: default;
 }
 

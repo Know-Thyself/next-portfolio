@@ -36,8 +36,38 @@ a {
     --header-bg: #E8E9EB;
     --primary-bg: #F5F5F5;
     --secondary-bg: #D8D9DA;
-    --tertiary-bg: #E5E4E2;
+    --secondary-bg: #98AFC7;
+    --secondary-bg: #BAABDA;
+    --secondary-bg: #DBA39A;
+    --secondary-bg: #ADA2FF;
+    
+    --tertiary-bg: #D1D0CE;
+    --tertiary-bg: #BCC2C2;
+
+    --tertiary-bg: #D0BFFF;
+    --tertiary-bg: #C9CCD5;
+    --tertiary-bg: #D7D2CB;
+    --tertiary-bg: #D8D9DA;
+    --tertiary-bg: #BEC0C1;
+    --tertiary-bg: #E4E4D0;
+
+    --tertiary-bg: #D1D1B0;
+
+    --tertiary-bg: #DEDBC8;
+    --tertiary-bg: #D8D9DA;
     --complementary-bg: #C1C0BE;
+    --complementary-bg: #C7B098;
+
+    --complementary-bg: #C798AF;
+    --complementary-bg: #ACA79E;
+
+    --complementary-bg: #D77FA1;
+    --complementary-bg: #BAABDA;
+
+    --complementary-bg: #ADA2FF;
+    --complementary-bg: #DBA39A;
+    --complementary-bg: #c5ca9a;
+    --complementary-bg: #C7B098;
     --project-container-hover: #A8A7A4;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
@@ -55,10 +85,17 @@ a {
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --buttons-hover-bg: #C1C1C1;
     --buttons-color: #FAFAFA;
-    --active-nav-link: #B2B5BB;
     --active-nav-link: #BEC0C1;
-    --toggle-btn: #A4A7A8;
-    --radio-btn: #A4A7A8;
+    --active-nav-link: #BAABDA;
+    --active-nav-link: #D3D1CD;
+
+    --active-nav-link: #ADA2FF;
+    --active-nav-link: #867AE9;
+    --active-nav-link: #B8B5FF;
+    --toggle-btn: #A7727D;
+    --toggle-btn: #6E85B7;
+    --radio-btn: #A7727D;
+    --radio-btn: #6E85B7;
     --read-more: #BD1A43;
 }
 
