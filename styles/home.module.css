@@ -117,6 +117,7 @@
     .home {
         padding-top: 7rem;
         padding-bottom: 9rem;
+        background-color: var(--active-nav-link);
         background-color: var(--secondary-bg);
     }
     

@@ -38,9 +38,19 @@ a {
     --secondary-bg: #D8D9DA;
     --secondary-bg: #BAABDA;
     --secondary-bg: #ADA2FF;
-    
     --secondary-bg: #98AFC7;
     --secondary-bg: #B1B2FF;
+
+    --secondary-bg: #90AFC5;
+    --secondary-bg: #92aac7;
+    --secondary-bg: #8593ae;
+
+    --secondary-bg: #ce5a57;
+    --secondary-bg: #e05858;
+    --secondary-bg: #e99787;
+
+    --secondary-bg: #e99787;
+    --secondary-bg: #A18984;
     --tertiary-bg: #D1D0CE;
     --tertiary-bg: #BCC2C2;
 
@@ -52,9 +62,11 @@ a {
     --tertiary-bg: #E4E4D0;
 
     --tertiary-bg: #D1D1B0;
-
+    
     --tertiary-bg: #DEDBC8;
     --tertiary-bg: #D8D9DA;
+    
+    --tertiary-bg: #DBD7D2;
     
     --complementary-bg: #C798AF;
     
@@ -65,10 +77,13 @@ a {
     --complementary-bg: #DBA39A;
     --complementary-bg: #C7B098;
     --complementary-bg: #C7B098;
-    --complementary-bg: #F37878;
     --complementary-bg: #ECB390;
     --complementary-bg: #ECB390;
     --complementary-bg: #CDC2AE;
+    
+    --complementary-bg: #acbebe;
+    --complementary-bg: #849CA1;
+    --complementary-bg: #95A7AC;
     --project-container-hover: #A8A7A4;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
@@ -93,11 +108,19 @@ a {
     --active-nav-link: #D3D1CD;
 
     --active-nav-link: #ADA2FF;
-    --active-nav-link: #867AE9;
     --active-nav-link: #B8B5FF;
+    --active-nav-link: #f34a4a;
+    --active-nav-link: #e05858;
+    --active-nav-link: #d55448;
+    --active-nav-link: #896E69;
+    --active-nav-link: #ce5a57;
+    --active-nav-link: #BCC2C2;
+    --toggle-btn: #AC9A95;
     --toggle-btn: #A7727D;
     --toggle-btn: #6E85B7;
+    --radio-btn: #AC9A95;
     --radio-btn: #A7727D;
+    --radio-btn: #967F78;
     --radio-btn: #6E85B7;
     --read-more: #BD1A43;
 }
@@ -140,6 +163,7 @@ a {
     --complementary-bg: #3a3f44;
     --complementary-bg: #2B2F36;
     --complementary-bg: #343A3E;
+    --complementary-bg: #626D71;
     --complementary-bg: #272B30;
 
     --project-container-hover: #373D43;
