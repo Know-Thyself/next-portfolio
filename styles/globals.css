@@ -51,6 +51,7 @@ a {
 
     --secondary-bg: #e99787;
     --secondary-bg: #A18984;
+    --secondary-bg: #95A7AC;
     --tertiary-bg: #D1D0CE;
     --tertiary-bg: #BCC2C2;
 
@@ -84,6 +85,7 @@ a {
     --complementary-bg: #acbebe;
     --complementary-bg: #849CA1;
     --complementary-bg: #95A7AC;
+    --complementary-bg: #A18984;
     --project-container-hover: #A8A7A4;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
