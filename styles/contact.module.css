@@ -210,4 +210,8 @@
         width: 90%;
         justify-content: space-between;
     }
+
+    .fa-brand {
+        font-size: 1.65rem;
+    }
 }
