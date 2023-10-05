@@ -49,7 +49,22 @@ a {
     --secondary-bg: #A18984;
     --secondary-bg: #95A7AC;
 
-    --secondary-bg: #e27660;
+    --secondary-bg: #9c9594;
+    --secondary-bg: #ada7a6;
+
+    --secondary-bg: #bbc3c6;
+    --secondary-bg: #a49592;
+    --secondary-bg: #bfb5b3;
+
+    --secondary-bg: #C2A197;
+    --secondary-bg: #83677b;
+    --secondary-bg: #9c8595;
+    --secondary-bg: #a895a3;
+    --secondary-bg: #b19f9e;
+    --secondary-bg: #479761;
+    --secondary-bg: #77a6f7;
+    --secondary-bg: #86b3d1;
+    --secondary-bg: #aaa0a0;
 
     /* --secondary-bg: #90afc5; */
     /* --secondary-bg: #68829e; */
@@ -69,6 +84,10 @@ a {
     --tertiary-bg: #D8D9DA;
     
     --tertiary-bg: #DBD7D2;
+
+    --tertiary-bg: #dbdede;
+    --tertiary-bg: #d5d6d2;
+    --tertiary-bg: #d5d0d0;
     
     --complementary-bg: #C798AF;
     
@@ -87,6 +106,14 @@ a {
     --complementary-bg: #95A7AC;
     --complementary-bg: #A18984;
     --complementary-bg: #AC9A95;
+
+    --complementary-bg: #c1c5c6;
+    --complementary-bg: #dddede;
+    --complementary-bg: #b1b2b2;
+    --complementary-bg: #b5c2b8;
+
+    --complementary-bg: #b5b6ba;
+    --complementary-bg: #8299b8;
 
     /* --complementary-bg: #A695AC;
     --complementary-bg: #BBB6A5; */
@@ -118,18 +145,18 @@ a {
     --active-nav-link: #f34a4a;
     --active-nav-link: #e05858;
     --active-nav-link: #d55448;
-    --active-nav-link: #896E69;
     --active-nav-link: #ce5a57;
     --active-nav-link: #BCC2C2;
-
-    --active-nav-link: #f64c72;
-    --toggle-btn: #AC9A95;
-    --toggle-btn: #A7727D;
+    
+    --active-nav-link: #896E69;
+    --active-nav-link: #b19f9e;
     --toggle-btn: #6E85B7;
-    --radio-btn: #AC9A95;
-    --radio-btn: #A7727D;
+    --toggle-btn: #A7727D;
+    --toggle-btn: #AC9A95;
     --radio-btn: #967F78;
     --radio-btn: #6E85B7;
+    --radio-btn: #A7727D;
+    --radio-btn: #AC9A95;
     --read-more: #BD1A43;
 }
 
