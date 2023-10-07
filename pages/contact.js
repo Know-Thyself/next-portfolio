@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import styles from '../styles/contact.module.css'
 import Box from '@mui/material/Box'
