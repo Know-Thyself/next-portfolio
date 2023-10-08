@@ -34,12 +34,29 @@ a {
 
 :root {
     --header-bg: #E8E9EB;
+    --header-bg: #dddde1;
     --primary-bg: #F5F5F5;
+    --primary-bg: #7395ae;
+    --primary-bg: #c2cad0;
+    --primary-bg: #8C8C9C;
+    --primary-bg: #c6c6ce;
+    --primary-bg: #babac4;
+    --primary-bg: #c6c6ce;
+
     --secondary-bg: #97aabd;
+    --secondary-bg: #A5AABB;
+    --secondary-bg: #9FA4B7;
+    --secondary-bg: #A2A7B9;
     --tertiary-bg: #d6d6d7;
     --tertiary-bg: #d1d2d4;
+    --tertiary-bg: #DCDCDC;
+    --tertiary-bg: #D3D3D3;
+    --tertiary-bg: #bbb6a5;
+    --tertiary-bg: #bbb6a5;
     --complementary-bg: #8299b8;
     --complementary-bg: #BD97AA;
+    --complementary-bg: #BBB6A5;
+    --complementary-bg: #BBA5B5;
     --project-container-hover: #A8A7A4;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
@@ -61,10 +78,12 @@ a {
     --buttons-hover-bg: #C1C1C1;
     --buttons-color: #FAFAFA;
     --active-nav-link: #a1b3c4;
+    --active-nav-link: #9898a6;
+    --active-nav-link: #a3a3b0;
     --toggle-btn: #6E85B7;
-    --toggle-btn: #ADA2FF;
+    --toggle-btn: #abb0c0;
     --radio-btn: #6E85B7;
-    --radio-btn: #ADA2FF;
+    --radio-btn: #abb0c0;
     --read-more: #BD1A43;
 }
 

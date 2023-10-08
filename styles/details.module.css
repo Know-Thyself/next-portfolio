@@ -48,7 +48,6 @@
     font-family: var(--primary-font-family);
     font-size: 1.25rem;
     color: var(--secondary-text-color);
-    background-color: var(--primary-bg);
     text-align: left;
 }
 
@@ -60,7 +59,7 @@
 }
 
 .read-more-read-less-wrapper {
-    background-color: var(--primary-bg);
+    background-color: var(--secondary-bg);
     width: 90%;
     margin-top: 1rem;
     text-align: left;
