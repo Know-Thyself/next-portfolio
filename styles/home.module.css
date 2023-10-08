@@ -115,10 +115,11 @@
 
 @media screen and (min-width: 1124px) {
     .home {
-        padding-top: 7rem;
-        padding-bottom: 9rem;
+        padding-top: 7.5rem;
+        padding-bottom: 9.25rem;
         background-color: var(--active-nav-link);
         background-color: var(--secondary-bg);
+        background-color: var(--primary-bg);
     }
     
     .hero {
