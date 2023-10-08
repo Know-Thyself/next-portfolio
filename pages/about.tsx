@@ -324,13 +324,13 @@ const About = ({ summary }) => {
 								/>
 							</Link>
 							<Link
-								href='https://expressjs.com/'
+								href='https://www.djangoproject.com/'
 								className={styles.link}
 								target='_blank'
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/express.png'
+									src='/assets/images/django.jpg'
 									alt='Express.js logo'
 									priority={true}
 									loading='eager'
@@ -356,13 +356,13 @@ const About = ({ summary }) => {
 								/>
 							</Link>
 							<Link
-								href='https://www.prisma.io/'
+								href='https://flask.palletsprojects.com/en/3.0.x/'
 								className={styles.link}
 								target='_blank'
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/prisma.png'
+									src='/assets/images/flask.jpg'
 									alt='Prisma logo'
 									priority={true}
 									loading='eager'
