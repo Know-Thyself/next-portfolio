@@ -12,26 +12,12 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
 export const getStaticProps: GetStaticProps = async () => {
-	const projectsData = await prisma.portfolio.findMany()
-	return { props: { projectsData } }
+	const projects = await prisma.projects.findMany()
+	return { props: { projects } }
 }
 
-const Projects = ({ projectsData, project, setProject }) => {
-	const id = projectsData.map(portfolio => portfolio.id).pop()
-	const projects = projectsData
-		.map(portfolio => portfolio.content.projects)
-		.flat()
+const Projects = ({ projects, setProject }) => {
 	const router = useRouter()
-	const handleClick = e => {
-		if (
-			!e.target.innerText.includes('Live Demo') &&
-			!e.target.innerText.includes('GitHub')
-		) {
-			let selected = projects[e.currentTarget.id]
-			setProject(selected)
-			router.push('/details')
-		}
-	}
 
 	const springVariant = {
 		start: {
@@ -67,13 +53,15 @@ const Projects = ({ projectsData, project, setProject }) => {
 				key='projects'
 			>
 				<div className={styles['projects-wrapper']}>
-					{projects.map((project, idx) => {
+                    {projects.map((project: object | any) => {
 						return (
 							<div
-								key={project.title}
-								id={idx}
+								key={project.id}
 								className={styles['project-wrapper']}
-								onClick={handleClick}
+                                onClick={() => {
+                                    setProject(project)
+                                    router.push('/details')
+                                }}
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<div className={styles['image-tooltip-container']}>
@@ -105,7 +93,7 @@ const Projects = ({ projectsData, project, setProject }) => {
 										&nbsp; GitHub
 									</a>
 									<a
-										href={project.url}
+										href={project.demo}
 										target='_blank'
 										rel='noreferrer'
 										className={styles['live-demo-link']}

@@ -15,7 +15,7 @@ const ProjectDetail = ({ project }) => {
 	const [showMore, setShowMore] = useState(false)
 	let descriptionLines, lessText
 	if (project.description) {
-		descriptionLines = project.description.split(/\n/)
+		descriptionLines = project.description.split(/\\n/)
 		lessText = descriptionLines.join(' ').slice(0, 300)
 	}
 

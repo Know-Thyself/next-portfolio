@@ -11,28 +11,19 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 import styles from '../styles/home.module.css'
 import Image from 'next/image'
-import { Fragment } from 'react'
 import 'bootswatch/dist/slate/bootstrap.min.css'
 
 export const getStaticProps: GetStaticProps = async () => {
-	const data = await prisma.portfolio.findMany()
-	return { props: { data } }
+	const summary = await prisma.summary.findMany()
+	return { props: { summary } }
 }
 
-function HomePage({ data }): JSX.Element {
-	const id = data.map((portfolio: { id: any }) => portfolio.id).pop()
-	const about = data.map(
-		(portfolio: { content: { about: any } }) => portfolio.content.about
-	)
+function HomePage({ summary }): JSX.Element {
 
-	const str = about[0].intro
-	const image = about[0].image
-	const lines = str.split(/\n/)
-	const withBreaks = lines.flatMap((line, index) =>
-		index > 0
-			? [<br key={`br-${index}`} />, <Fragment key={index}>{line}</Fragment>]
-			: [line]
-	)
+	const str = summary[0].profile
+	const image = summary[0].image
+    const intro = str.split(/\\n/)
+
 	const variants = {
 		start: {
 			y: -100,
@@ -63,7 +54,8 @@ function HomePage({ data }): JSX.Element {
 				variants={variants}
 				initial='start'
 				animate='end'
-				exit='exit'
+                exit='exit'
+                key={'Welcome'}
 			>
 				<section className={styles.hero}>
 					<h1 className={styles.banner}>Hello & Welcome!</h1>
@@ -77,8 +69,9 @@ function HomePage({ data }): JSX.Element {
 							height={200}
 							alt='Author'
 						/>
-						{/* <h4>Thank you for visiting my portfolio website!</h4> */}
-						<h5 className={styles.intro}>{withBreaks}</h5>
+						{intro.map((paragraph: string, idx: number) => (
+							<p key={idx} className={styles.intro}>{paragraph}</p>
+						))}
 					</div>
 					<div className={styles['links-wrapper']}>
 						<motion.a
@@ -87,7 +80,7 @@ function HomePage({ data }): JSX.Element {
 							rel='noreferrer'
 							className={`btn btn-dark border-0 ${styles.link}`}
 							whileHover={{
-                                scale: 1.2,
+								scale: 1.2,
 							}}
 							whileTap={{ scale: 0.8 }}
 						>

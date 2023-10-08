@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import prisma from '../lib/prisma'
 import { GetStaticProps } from 'next'
-import { Fragment } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from '../styles/about.module.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -11,20 +10,14 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
 export const getStaticProps: GetStaticProps = async () => {
-	const data = await prisma.portfolio.findMany()
-	return { props: { data } }
+	const summary = await prisma.summary.findMany()
+	return { props: { summary } }
 }
 
-const About = ({ data }) => {
-	const about = data.map(portfolio => portfolio.content.about)
-	const str = about[0].bio
-	// const image = about[0].image
-	const lines = str.split(/\n/)
-	const withBreaks = lines.flatMap((line, index) =>
-		index > 0
-			? [<br key={`br-${index}`} />, <Fragment key={index}>{line}</Fragment>]
-			: [line]
-	)
+const About = ({ summary }) => {
+	const str = summary[0].bio
+    const bio = str.split(/\\n/)
+    
 	const springVariant = {
 		start: {
 			y: -100,
@@ -53,7 +46,7 @@ const About = ({ data }) => {
 				initial='start'
 				animate='end'
 				exit='exit'
-				key='about'
+				key={'about'}
 			>
 				<section className={styles['about-section']}>
 					<div className={styles['about-img-wrapper']}>
@@ -72,7 +65,9 @@ const About = ({ data }) => {
 					</div>
 					<div className={styles['about-text-wrapper']}>
 						<h1>About Me</h1>
-						<p>{withBreaks}</p>
+						{bio.map((paragraph: string, idx: number) => (
+							<p key={idx}>{paragraph}</p>
+						))}
 						<div className={styles['about-section-buttons']}>
 							<motion.div
 								whileHover={{
