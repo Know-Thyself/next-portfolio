@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 767px) {
     .custom-nav-item {
-        border-bottom: solid 1px var(--secondary-bg);
+        border-bottom: solid 1px var(--radio-btn);
     }
 
     .menu__btn {
