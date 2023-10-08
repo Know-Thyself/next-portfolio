@@ -36,7 +36,7 @@ const ProjectDetail = ({ project }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<div className={styles.container}>
-                <h4 className={styles['project-title']}>{project.title}</h4>
+				<h4 className={styles['project-title']}>{project.title}</h4>
 				{descriptionLines && (
 					<div className={styles['project-wrapper']}>
 						<Image

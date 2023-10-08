@@ -53,15 +53,15 @@ const Projects = ({ projects, setProject }) => {
 				key='projects'
 			>
 				<div className={styles['projects-wrapper']}>
-                    {projects.map((project: object | any) => {
+					{projects.map((project: object | any) => {
 						return (
 							<div
 								key={project.id}
 								className={styles['project-wrapper']}
-                                onClick={() => {
-                                    setProject(project)
-                                    router.push('/details')
-                                }}
+								onClick={() => {
+									setProject(project)
+									router.push('/details')
+								}}
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<div className={styles['image-tooltip-container']}>
