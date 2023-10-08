@@ -12,13 +12,11 @@ import Image from 'next/image'
 import { Fragment } from 'react'
 
 export const getStaticProps: GetStaticProps = async () => {
-	const data = await prisma.portfolio.findMany()
+	const data = await prisma.summary.findMany()
 	return { props: { data } }
 }
 
 const Home = ({ data }) => {
-	const id = data.map((portfolio) => portfolio.id).pop()
-	const about = data.map((portfolio) => portfolio.content.about)
 	const springVariant = {
 		start: {
 			y: -100,
@@ -35,9 +33,9 @@ const Home = ({ data }) => {
 		},
 	}
 
-	const str = about[0].intro
-	const image = about[0].image
-	const lines = str.split(/\n/)
+	const str = data[0].profile
+	const image = data[0].image
+	const lines = str.split(/\\n/)
 	const withBreaks = lines.flatMap((line, index) =>
 		index > 0
 			? [<br key={`br-${index}`} />, <Fragment key={index}>{line}</Fragment>]
