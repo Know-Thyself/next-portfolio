@@ -35,6 +35,7 @@
     background-color: var(--complementary-bg);
     border-radius: 100px;
     border: 3px solid var(--radio-btn);
+    border: 3px solid var(--toggle-btn);
     position: relative;
     transition: background-color 0.2s;
 }
@@ -46,8 +47,8 @@
     height: 22px;
     border-radius: 30px;
     transition: 0.2s;
-    background-color: var(--radio-btn);
     background-color: var(--active-nav-link);
+    background-color: var(--radio-btn);
     box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
 }
 
@@ -71,8 +72,8 @@
 .switch-checkbox:checked+.switch-label .switch-button {
     left: calc(100% - 2px);
     transform: translateX(-100%);
-    background-color: var(--radio-btn);
     background-color: var(--active-nav-link);
+    background-color: var(--radio-btn);
 }
 
 .switch-label:active .switch-button {

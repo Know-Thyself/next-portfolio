@@ -224,7 +224,6 @@
         gap: 3rem;
         background-color: var(--primary-bg);
         background-color: var(--tertiary-bg);
-        border-top: 2px solid var(--complementary-bg);
     }
 
     .skills-section {

@@ -140,8 +140,12 @@
     }
 
     .menu__box {
-        background-color: var(--secondary-bg);
+        background-color: var(--complementary-bg);
         width: 100%;
+    }
+
+    .custom-nav-item .active {
+        background-color: var(--secondary-bg) !important;
     }
 
     .menu__box {

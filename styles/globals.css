@@ -88,137 +88,51 @@ a {
 }
 
 [data-theme='dark'] {
-    --header-bg: #1E2024;
-    --header-bg: #1d2022;
+    --header-bg: #1A1A1D;
+    --header-bg: #1e1f26;
     --header-bg: #1B1F22;
-    --header-bg: #222629;
-    
-    --primary-bg: #1a1a1d;
-    --primary-bg: #121212;
-    --primary-bg: #1d2022;
-    --primary-bg: #0b0c10;
-    
-    --primary-bg: #15292B;
-    --primary-bg: #192734;
-    --primary-bg: #22303C;
-    --primary-bg: #404040;
-    --primary-bg: #242526;
+    --header-bg: #1d2022;
+    --header-bg: #1E2024;
+    --header-bg: #19181d;
+    --header-bg: #1F1E24;
 
-
-    --primary-bg: #2f4454;
-    --primary-bg: #2a1b3d;
-    --primary-bg: #1c3334;
-    
-    --primary-bg: #0b0c10;
+    --primary-bg: #1E1F26;
+    --primary-bg: #232738;
     --primary-bg: #182628;
-    --primary-bg: #1b1e21;
-    --primary-bg: #181b1d;
-    --primary-bg: #111315;
-    
-    --primary-bg: #312C35;
-    --primary-bg: #383238;
-    --primary-bg: #25274d;
-    
-    --primary-bg: #59253a;
-    --primary-bg: #491a2f;
-    --primary-bg: #46344e;
-    --primary-bg: #2f4454;
     --primary-bg: #1f2833;
-    --primary-bg: #242582;
-    --primary-bg: #05386b;
-    --primary-bg: #190061;
-    
-    --primary-bg: #2c3531;
-    --primary-bg: #24305e;
-    --primary-bg: #2f222d;
-    --primary-bg: #1f2833;
-    --primary-bg: #1c3334;
-    
-    
-    --secondary-bg: #2f4454;
-    --secondary-bg: #44318d;
-    --secondary-bg: #374785;
-    --secondary-bg: #46344e;
+    --primary-bg: #112d32;
+    --primary-bg: #242730;
+    --primary-bg: #20232b;
 
-    --secondary-bg: #644e5b;
-    --secondary-bg: #2e151b;
-    --secondary-bg: #2f1b25;
-    
-    --secondary-bg: #336b87;
-    --secondary-bg: #375e97;
-    --secondary-bg: #5d535e;
-    --secondary-bg: #383238;
-
-    --secondary-bg: #491a2f;
-    --secondary-bg: #4a0127;
-    --secondary-bg: #590829;
-    --secondary-bg: #35121F;
+    --secondary-bg: #192029;
     --secondary-bg: #3e1d2e;
-    --secondary-bg: #5E2430;
-    --secondary-bg: #381523;
-    --secondary-bg: #1E2024;
-    --secondary-bg: #352C30;
-    
-    
-    --secondary-bg: #1C3429;
-    --secondary-bg: #1e2025;
-    --secondary-bg: #64485c;
-    
-    --secondary-bg: #463240;
-    --secondary-bg: #242582;
-    --secondary-bg: #3a3c8f;
-    --secondary-bg: #1a1a1d;
-    --secondary-bg: #1f2833;
-    --secondary-bg: #491a2f;
-
+    --secondary-bg: #1e1f26;
+    --secondary-bg: #242730;
+    --secondary-bg: #211E26;
     --secondary-bg: #2f222d;
+    --secondary-bg: #301b28;
+    --secondary-bg: #381523;
 
     --tertiary-bg: #323538;
     --tertiary-bg: #31353a;
     --tertiary-bg: #2a2f33;
-    --tertiary-bg: #1F1E24;
-    --tertiary-bg: #1d1f23;
     --tertiary-bg: #202227;
+    --tertiary-bg: #1d1f23;
+    --tertiary-bg: #1c1b20;
+    --tertiary-bg: #1F1E24;
+    --tertiary-bg: #19181d;
+    --tertiary-bg: #17161a;
 
-
-    /* --tertiary-bg: #383238;
-    --tertiary-bg: #2a2f33;
-    --tertiary-bg: #282828; */
-
-    
-    --complementary-bg: #626D71;
-    --complementary-bg: #5a5560;
-    
-    --complementary-bg: #394045;
-    --complementary-bg: #374D3B;
-    --complementary-bg: #394045;
-    --complementary-bg: #331F32;
-    
-    --complementary-bg: #3d4049;
-    --complementary-bg: #2a3132;
-    --complementary-bg: #282a31;
-    
-    --complementary-bg: #383238;
-    --complementary-bg: #553d67;
-    --complementary-bg: #322d32;
-    --complementary-bg: #282828;
-    --complementary-bg: #2a2f33;
-    
-    --complementary-bg: #222F24;
-    /* first complementary */
-    --complementary-bg: #4D4D4D;
-    --complementary-bg: #272B30;
-    --complementary-bg: #343A3E;
-
-    /* second complementary */
-
-    --complementary-bg: #3E3E3E;
-    --complementary-bg: #381523;
-    --complementary-bg: #1E2024;
-    --complementary-bg: #2B2F36;
-    --complementary-bg: #3a3f44;
+    --complementary-bg: #1e1f26;
     --complementary-bg: #22262b;
-    
+    --complementary-bg: #0E0E10;
+    --complementary-bg: #121826;
+    --complementary-bg: #1E2024;
+    --complementary-bg: #1A1B23;
+    --complementary-bg: #2e2d31;
+    --complementary-bg: #131316;
+    --complementary-bg: #191b22;
+
     --project-container-hover: #373D43;
     --project-container-hover: #1e2025;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
@@ -234,21 +148,18 @@ a {
     --secondary-font-family: 'Poppins',
         sans-serif;
     --primary-text-color: #aaaaac;
-    --primary-text-color: #dee2e6;
+    --primary-text-color: #EBEBEB;
+    --primary-text-color: #D9D9D9;
 
     --secondary-font-weight: 300;
     --secondary-text-color: #C4C4C4;
     --secondary-text-color: #E5E4E2;
     --secondary-text-color: #afb4b8;
     --helper-text-color: #dadaee;
-    --active-nav-link: #7e2a39;
-    --active-nav-link: #9B786F;
-    --active-nav-link: #5d535e;
-    --active-nav-link: #534a53;
-
-    --active-nav-link: #443842;
-    --active-nav-link: #2E5455;
+    --active-nav-link: #363B48;
     --toggle-btn: #4B4E53;
+    --toggle-btn: #363B48;
     --radio-btn: #4B4E53;
+    --radio-btn: #4C5365;
     --read-more: #3a9bdc;
 }
