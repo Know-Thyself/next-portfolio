@@ -96,13 +96,13 @@ a {
     --header-bg: #19181d;
     --header-bg: #1F1E24;
 
-    --primary-bg: #1E1F26;
-    --primary-bg: #232738;
     --primary-bg: #182628;
     --primary-bg: #1f2833;
     --primary-bg: #112d32;
-    --primary-bg: #242730;
     --primary-bg: #20232b;
+    --primary-bg: #242730;
+    --primary-bg: #1E1F26;
+    --primary-bg: #232738;
 
     --secondary-bg: #192029;
     --secondary-bg: #3e1d2e;
@@ -156,10 +156,11 @@ a {
     --secondary-text-color: #E5E4E2;
     --secondary-text-color: #afb4b8;
     --helper-text-color: #dadaee;
-    --active-nav-link: #363B48;
-    --toggle-btn: #4B4E53;
-    --toggle-btn: #363B48;
-    --radio-btn: #4B4E53;
-    --radio-btn: #4C5365;
+    --active-nav-link: #373D57;
+    --toggle-btn: #373D57;
+    --toggle-btn: #393d4c;
+    --toggle-btn: #4f5260;
+    --radio-btn: #4B5376;
+    --radio-btn: #373D57;
     --read-more: #3a9bdc;
 }
