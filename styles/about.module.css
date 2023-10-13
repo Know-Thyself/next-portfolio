@@ -1,5 +1,6 @@
 .main {
     width: 100%;
+    background-color: var(--tertiary-bg);
     background-color: var(--primary-bg);
     font-family: var(--primary-font-family);
     color: var(--secondary-text-color);
@@ -224,6 +225,7 @@
         gap: 3rem;
         background-color: var(--primary-bg);
         background-color: var(--tertiary-bg);
+        background-color: var(--secondary-bg);
     }
 
     .skills-section {

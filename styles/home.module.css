@@ -1,4 +1,6 @@
 .home {
+    background-color: var(--tertiary-bg);
+    background-color: var(--secondary-bg);
     background-color: var(--primary-bg);
     color: var(--secondary-text-color);
     text-align: center;
