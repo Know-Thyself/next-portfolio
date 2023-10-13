@@ -33,31 +33,12 @@ a {
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 
 :root {
-    --header-bg: #E8E9EB;
-    --header-bg: #dddde1;
-    --primary-bg: #F5F5F5;
-    --primary-bg: #7395ae;
-    --primary-bg: #c2cad0;
-    --primary-bg: #8C8C9C;
-    --primary-bg: #c6c6ce;
-    --primary-bg: #babac4;
-    --primary-bg: #c6c6ce;
-
-    --secondary-bg: #97aabd;
-    --secondary-bg: #A5AABB;
-    --secondary-bg: #9FA4B7;
-    --secondary-bg: #A2A7B9;
-    --tertiary-bg: #d6d6d7;
-    --tertiary-bg: #d1d2d4;
-    --tertiary-bg: #DCDCDC;
-    --tertiary-bg: #D3D3D3;
-    --tertiary-bg: #bbb6a5;
-    --tertiary-bg: #bbb6a5;
-    --complementary-bg: #8299b8;
-    --complementary-bg: #BD97AA;
-    --complementary-bg: #BBB6A5;
-    --complementary-bg: #BBA5B5;
-    --project-container-hover: #A8A7A4;
+    --header-bg: #e0e1dc;
+    --primary-bg: #b9c5ca;
+    --secondary-bg: #A7A890;
+    --tertiary-bg: #D0D0CD;
+    --complementary-bg: #9190A8;
+    --project-container-hover: #838297;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --buttons-font-family: 'Montserrat',
@@ -75,15 +56,14 @@ a {
     --secondary-text-color: #313436;
     --secondary-text-color: #2c2f31;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
-    --buttons-hover-bg: #C1C1C1;
+    --buttons-hover-bg: #969782;
     --buttons-color: #FAFAFA;
-    --active-nav-link: #a1b3c4;
-    --active-nav-link: #9898a6;
-    --active-nav-link: #a3a3b0;
-    --toggle-btn: #6E85B7;
-    --toggle-btn: #abb0c0;
-    --radio-btn: #6E85B7;
+    --active-nav-link: #c7c8c3;
+    --toggle-btn: #959692;
+    --toggle-btn: #a7b1b6;
+    --toggle-btn: #949ea2;
     --radio-btn: #abb0c0;
+    --radio-btn: #a7b1b6;
     --read-more: #BD1A43;
 }
 

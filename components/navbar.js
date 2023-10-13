@@ -68,14 +68,14 @@ const Navbar = () => {
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/'
-									className={`nav-link px-4 ${
+									className={`nav-link px-4 border-end-0 ${
 										router.pathname === '/'
 											? styles.active
 											: styles['menu__item']
 									} ${
 										theme === 'light'
 											? 'text-primary border-secondary-subtle'
-											: 'text-body-secondary border-0'
+											: 'text-body-secondary border-dark'
 									}`}
 									onClick={screenTest}
 								>
@@ -85,14 +85,14 @@ const Navbar = () => {
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/projects'
-									className={`nav-link px-4 ${
+									className={`nav-link px-4 border-end-0 ${
 										router.pathname === '/projects'
 											? styles.active
 											: styles['menu__item']
 									} ${
 										theme === 'light'
 											? 'text-primary border-secondary-subtle'
-											: 'text-body-secondary border-0'
+											: 'text-body-secondary border-dark'
 									}`}
 									onClick={screenTest}
 								>
@@ -102,14 +102,14 @@ const Navbar = () => {
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/about'
-									className={`nav-link px-4 ${
+									className={`nav-link px-4 border-end-0 ${
 										router.pathname === '/about'
 											? styles.active
 											: styles['menu__item']
 									} ${
 										theme === 'light'
 											? 'text-primary border-secondary-subtle'
-											: 'text-body-secondary border-0'
+											: 'text-body-secondary border-dark'
 									}`}
 									onClick={screenTest}
 								>
@@ -126,7 +126,7 @@ const Navbar = () => {
 									} ${
 										theme === 'light'
 											? 'text-primary border-secondary-subtle'
-											: 'text-body-secondary border-0'
+											: 'text-body-secondary border-dark'
 									}`}
 									onClick={screenTest}
 								>
