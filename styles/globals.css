@@ -88,37 +88,37 @@ a {
 }
 
 [data-theme='dark'] {
-    --header-bg: #381523;
+    /* --header-bg: #381523;
     --header-bg: #19181d;
     --header-bg: #1E2024;
     --header-bg: #1d2022;
     --header-bg: #17171a;
     --header-bg: #1A1A1D;
-    --header-bg: #1F1E24;
+    --header-bg: #1F1E24; */
     --header-bg: #2f2e33;
 
-    --primary-bg: #191b22;
+    /* --primary-bg: #191b22;
     --primary-bg: #17171a;
     --primary-bg: #151517;
     --primary-bg: #161726;
     --primary-bg: #131422;
     --primary-bg: #211a22;
-    --primary-bg: #251e27;
+    --primary-bg: #251e27; */
     --primary-bg: #211E26;
     
-    --secondary-bg: #2f222d;
+    /* --secondary-bg: #2f222d;
     --secondary-bg: #383238;
     --secondary-bg: #252a39;
-    --secondary-bg: #22303b;
+    --secondary-bg: #22303b; */
     --secondary-bg: #262a2e;
  
-    --tertiary-bg: #383238;
+    /* --tertiary-bg: #383238;
     --tertiary-bg: #322d32;
     --tertiary-bg: #262a2e;
     --tertiary-bg: #222629;
     --tertiary-bg: #2a2f33;
     --tertiary-bg: #2f3131;
-    --tertiary-bg: #2d3033;
+    --tertiary-bg: #2d3033; */
     --tertiary-bg: #2a292e;
 
     --complementary-bg: #302f34;
