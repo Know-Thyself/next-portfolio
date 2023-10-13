@@ -1,6 +1,4 @@
 .home {
-    background-color: var(--tertiary-bg);
-    background-color: var(--secondary-bg);
     background-color: var(--primary-bg);
     color: var(--secondary-text-color);
     text-align: center;
@@ -119,18 +117,11 @@
     .home {
         padding-top: 7.5rem;
         padding-bottom: 9.25rem;
-        background-color: var(--active-nav-link);
-        background-color: var(--secondary-bg);
-        background-color: var(--primary-bg);
     }
     
     .hero {
         width: 80%;
         border-radius: 20%;
-        background-color: var(--secondary-bg);
-        background-color: var(--header-bg);
-        background-color: var(--complementary-bg);
-        background-color: var(--primary-bg);
         background-color: var(--tertiary-bg);
         padding: 2rem 10rem;
         display: flex;
