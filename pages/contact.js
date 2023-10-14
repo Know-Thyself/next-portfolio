@@ -148,7 +148,7 @@ const Contact = () => {
 				key='contact'
 			>
 				<section className={styles.intro}>
-					<h1>I would love to hear from you!</h1>
+					<h1>Contact Me</h1>
 					<p>
 						If you are an employer or recruiter looking for a developer or if
 						you run a charity organisation and would like me to build a website

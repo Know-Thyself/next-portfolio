@@ -35,35 +35,31 @@ a {
 :root {
     --header-bg: #e0e1dc;
     --primary-bg: #b9c5ca;
-    --secondary-bg: #A7A890;
+    --secondary-bg: #98a6c7;
     --tertiary-bg: #D0D0CD;
     --complementary-bg: #9190A8;
+    --complementary-bg: #c1b2b3;
     --project-container-hover: #838297;
+    --project-container-hover: #aea0a1;
     --hero-banner-text: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --buttons-font-family: 'Montserrat',
         sans-serif;
-    --secondary-text-color: #f8f8f8;
     --secondary-text-color: #313030;
     --secondary-font-family: 'Lato',
         sans-serif;
-    --primary-text-color: #313030;
-    --primary-text-color: #17191b;
-    --primary-text-color: #2b2d30;
     --primary-text-color: #1A1A1A;
     --helper-text-color: #0A0A0A;
     --secondary-font-weight: 300;
     --secondary-text-color: #313436;
     --secondary-text-color: #2c2f31;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
-    --buttons-hover-bg: #969782;
+    --buttons-hover-bg: #8995b3;
+    --buttons-hover-bg: #a2afcd;
     --buttons-color: #FAFAFA;
     --active-nav-link: #c7c8c3;
-    --toggle-btn: #959692;
-    --toggle-btn: #a7b1b6;
-    --toggle-btn: #949ea2;
-    --radio-btn: #abb0c0;
-    --radio-btn: #a7b1b6;
+    --toggle-btn: #aea0a1;
+    --radio-btn: #7e8cae;
     --read-more: #BD1A43;
 }
 
@@ -76,15 +72,14 @@ a {
     --header-bg: #1A1A1D;
     --header-bg: #1F1E24; */
     --header-bg: #2f2e33;
-
     /* --primary-bg: #191b22;
     --primary-bg: #17171a;
     --primary-bg: #151517;
     --primary-bg: #161726;
     --primary-bg: #131422;
-    --primary-bg: #211a22;
-    --primary-bg: #251e27; */
     --primary-bg: #211E26;
+    --primary-bg: #251e27; */
+    --primary-bg: #211a22;
     
     /* --secondary-bg: #2f222d;
     --secondary-bg: #383238;
@@ -109,10 +104,6 @@ a {
     --primary-font-family: 'Montserrat', sans-serif;
     --buttons-font-family: 'Poppins', sans-serif;
     --buttons-font-weight: 100;
-    --buttons-hover-bg: #3E434C;
-    --buttons-hover-bg: #323739;
-    --buttons-hover-bg: #3e1d2e;
-    --buttons-hover-bg: #3c3f43;
     --buttons-hover-bg: #222629;
     --buttons-color: #F8F8FC;
     --secondary-font-family: 'Poppins',
@@ -123,9 +114,7 @@ a {
     --helper-text-color: #dadaee;
     --helper-text-color: #8C8C8C;
     --active-nav-link: #2a292e;
-    --toggle-btn: #615E69;
-    --toggle-btn: #433f3c;
-    --toggle-btn: #1a181e;
-    --radio-btn: #3A3543;
+    --toggle-btn: #1e171f;
+    --radio-btn: #373138;
     --read-more: #3a9bdc;
 }
