@@ -27,6 +27,7 @@
     gap: 0.5rem;
     padding: 0.75rem 1rem;
     border-radius: 4px;
+    text-transform: capitalize;
 }
 
 .project-wrapper {
@@ -97,11 +98,12 @@
     font-family: var(--buttons-font-family);
     color: var(--secondary-text-color);
     color: var(--buttons-color);
-    text-decoration: none;
+    /* text-decoration: none; */
     padding: 0.65rem 1.2rem;
     border-radius: 4px;
     font-size: 1rem;
     font-weight: var(--buttons-font-weight);
+    text-transform: capitalize;
 }
 
 .fa-github {

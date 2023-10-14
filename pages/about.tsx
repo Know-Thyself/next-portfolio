@@ -102,7 +102,7 @@ const About = ({ summary }) => {
 								</Link>
 							</motion.div> */}
 							<motion.button
-								className={`btn btn-warning disabled border-0 ${styles.download}`}
+								className={`btn btn-warning border-0 ${styles.download}`}
 								whileHover={{
 									scale: 1.1,
 									color: 'white',

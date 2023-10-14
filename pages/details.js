@@ -10,6 +10,7 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 import styles from '../styles/details.module.css'
+import 'bootswatch/dist/sandstone/bootstrap.min.css'
 
 const ProjectDetail = ({ project }) => {
 	const [showMore, setShowMore] = useState(false)
@@ -95,7 +96,7 @@ const ProjectDetail = ({ project }) => {
 								href={project.repository}
 								target='_blank'
 								rel='noreferrer'
-								className={`btn btn-dark border-0 ${styles['github-link']}`}
+								className={`btn btn-primary border-0 ${styles['github-link']}`}
 								whileHover={{
 									scale: 1.1,
 								}}
@@ -111,7 +112,7 @@ const ProjectDetail = ({ project }) => {
 								href={project.url}
 								target='_blank'
 								rel='noreferrer'
-								className={`btn btn-dark border-0 ${styles['live-demo-link']}`}
+								className={`btn btn-primary border-0 ${styles['live-demo-link']}`}
 								whileHover={{
 									scale: 1.1,
 								}}
