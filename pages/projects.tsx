@@ -17,7 +17,8 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 const Projects = ({ projects, setProject }) => {
-	const router = useRouter()
+    const router = useRouter()
+    projects.sort((a: object | any, b: object | any) => a.id - b.id);
 
 	const springVariant = {
 		start: {
@@ -68,12 +69,13 @@ const Projects = ({ projects, setProject }) => {
 									<Image
 										src={`/assets/images/${project.image}`}
 										alt={project.title}
-										priority={true}
 										loading='eager'
 										className={styles['project-img']}
 										width={340}
 										height={240}
 										sizes='(min-width: 300px) 100vw'
+										placeholder='blur'
+										blurDataURL={`/assets/images/${project.image}`}
 									/>
 									<span className={styles.tooltip}>
 										Click to view project details

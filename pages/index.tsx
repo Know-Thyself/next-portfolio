@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import prisma from '../lib/prisma'
 import { GetStaticProps } from 'next'
-// import Home from './home'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -62,11 +61,12 @@ function HomePage({ summary }): JSX.Element {
 						<Image
 							className={styles['profile-photo']}
 							src={`/assets/images/${image}`}
-							priority={true}
 							loading='eager'
 							width={200}
 							height={200}
 							alt='Author'
+							placeholder='blur'
+							blurDataURL={`/assets/images/${image}`}
 						/>
 						{intro.map((paragraph: string, idx: number) => (
 							<p key={idx} className={styles.intro}>

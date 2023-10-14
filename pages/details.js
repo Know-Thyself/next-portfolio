@@ -109,7 +109,7 @@ const ProjectDetail = ({ project }) => {
 								&nbsp; GitHub
 							</motion.a>
 							<motion.a
-								href={project.url}
+								href={project.demo}
 								target='_blank'
 								rel='noreferrer'
 								className={`btn btn-primary border-0 ${styles['live-demo-link']}`}
@@ -129,7 +129,7 @@ const ProjectDetail = ({ project }) => {
 						className={`btn btn-dark border-0 ${styles['back-btn']}`}
 					>
 						<FontAwesomeIcon className={styles['fa-left']} icon={faArrowLeft} />
-						Back To Projects
+						All Projects
 					</Link>
 				</div>
 			</div>

@@ -51,13 +51,14 @@ const About = ({ summary }) => {
 				<section className={styles['about-section']}>
 					<div className={styles['about-img-wrapper']}>
 						<Image
-							src='/assets/images/about.png'
+							src={'/assets/images/about.png'}
 							alt='Picture of the author'
-							priority={true}
 							loading='eager'
 							className={`${styles['about-img']}`}
 							width={240}
 							height={340}
+							placeholder='blur'
+							blurDataURL={'/assets/images/about.png'}
 							sizes='(max-width: 724px) 100vw,
               (max-width: 1200px) 50vw,
               33vw'
@@ -132,13 +133,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/html-css.png'
+									src={'/assets/images/html-css.png'}
 									alt='HTML5 and CSS3 responsive design'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/html-css.png'}
 								/>
 							</Link>
 							<Link
@@ -148,13 +150,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/javascript.png'
+									src={'/assets/images/javascript.png'}
 									alt='JavaScript logo'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/javascript.png'}
 								/>
 							</Link>
 							<Link
@@ -164,13 +167,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/react.png'
+									src={'/assets/images/react.png'}
 									alt='React.js'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/react.png'}
 								/>
 							</Link>
 							<Link
@@ -180,13 +184,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/material-ui.png'
+									src={'/assets/images/material-ui.png'}
 									alt='Material UI'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/material-ui.png'}
 								/>
 							</Link>
 							<Link
@@ -196,13 +201,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/bootstrap.jpg'
+									src={'/assets/images/bootstrap.jpg'}
 									alt='Bootstrap'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/bootstrap.jpg'}
 								/>
 							</Link>
 						</div>
@@ -215,13 +221,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/git.png'
+									src={'/assets/images/git.png'}
 									alt='Git and GitHub'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/git.png'}
 								/>
 							</Link>
 							<Link
@@ -231,13 +238,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/figma.png'
+									src={'/assets/images/figma.png'}
 									alt='Figma'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/figma.png'}
 								/>
 							</Link>
 							<Link
@@ -247,13 +255,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/trello.png'
+									src={'/assets/images/trello.png'}
 									alt='Trello'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/trello.png'}
 								/>
 							</Link>
 							<Link
@@ -263,13 +272,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/miro.png'
+									src={'/assets/images/miro.png'}
 									alt='Miro logo'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/miro.png'}
 								/>
 							</Link>
 							<Link
@@ -279,13 +289,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/slack.jpg'
+									src={'/assets/images/slack.jpg'}
 									alt='Slack logo'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/slack.jpg'}
 								/>
 							</Link>
 						</div>
@@ -298,13 +309,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/node.png'
+									src={'/assets/images/node.png'}
 									alt='Node.js logo'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/node.png'}
 								/>
 							</Link>
 							<Link
@@ -314,13 +326,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/postgresql.jpg'
+									src={'/assets/images/postgresql.jpg'}
 									alt='PostgreSQL logo'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/postgresql.jpg'}
 								/>
 							</Link>
 							<Link
@@ -330,13 +343,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/django.jpg'
+									src={'/assets/images/django.jpg'}
 									alt='Express.js logo'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/django.jpg'}
 								/>
 							</Link>
 							<Link
@@ -346,13 +360,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/next.png'
+									src={'/assets/images/next.png'}
 									alt='Next.js logo'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/next.png'}
 								/>
 							</Link>
 							<Link
@@ -362,13 +377,14 @@ const About = ({ summary }) => {
 								rel='noopener noreferrer'
 							>
 								<Image
-									src='/assets/images/flask.jpg'
+									src={'/assets/images/flask.jpg'}
 									alt='Prisma logo'
-									priority={true}
 									loading='eager'
 									className={styles.logo}
 									width={300}
 									height={150}
+									placeholder='blur'
+									blurDataURL={'/assets/images/flask.jpg'}
 								/>
 							</Link>
 						</div>

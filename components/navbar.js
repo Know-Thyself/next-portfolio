@@ -39,15 +39,16 @@ const Navbar = () => {
 			data-bs-theme={theme}
 		>
 			<div className='container-fluid'>
-				<Link className='navbar-brand border-0 mx-2' href='/'>
+				<Link className='navbar-brand border-0 mx-4' href='/'>
 					<Image
 						className={`${styles.logo}`}
-						src='/assets/images/logo.png'
-						priority={true}
+						src={'/assets/images/logo.png'}
 						loading='eager'
 						alt='logo'
 						width={70}
 						height={70}
+						placeholder='blur'
+						blurDataURL={'/assets/images/logo.png'}
 					/>
 				</Link>
 				<input
@@ -74,8 +75,8 @@ const Navbar = () => {
 											: styles['menu__item']
 									} ${
 										theme === 'light'
-											? 'text-primary border-secondary-subtle'
-											: 'text-body-secondary border-dark'
+											? 'text-primary border-start border-primary-subtle'
+											: 'text-body-secondary border-start border-dark'
 									}`}
 									onClick={screenTest}
 								>
@@ -91,8 +92,8 @@ const Navbar = () => {
 											: styles['menu__item']
 									} ${
 										theme === 'light'
-											? 'text-primary border-secondary-subtle'
-											: 'text-body-secondary border-dark'
+											? 'text-primary border-start border-primary-subtle'
+											: 'text-body-secondary border-start border-dark'
 									}`}
 									onClick={screenTest}
 								>
@@ -108,8 +109,8 @@ const Navbar = () => {
 											: styles['menu__item']
 									} ${
 										theme === 'light'
-											? 'text-primary border-secondary-subtle'
-											: 'text-body-secondary border-dark'
+											? 'text-primary border-start border-primary-subtle'
+											: 'text-body-secondary border-start border-dark'
 									}`}
 									onClick={screenTest}
 								>
@@ -125,8 +126,8 @@ const Navbar = () => {
 											: styles['menu__item']
 									} ${
 										theme === 'light'
-											? 'text-primary border-secondary-subtle'
-											: 'text-body-secondary border-dark'
+											? 'text-primary border-primary-subtle border-start border-end'
+											: 'text-body-secondary border-start border-dark border-end'
 									}`}
 									onClick={screenTest}
 								>
