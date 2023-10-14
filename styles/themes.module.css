@@ -62,6 +62,10 @@
     height: 20px;
 }
 
+.fa-moon {
+    color: var(--helper-text-color);
+}
+
 .sun-icon {
     font-size: 1.1rem;
     position: absolute;

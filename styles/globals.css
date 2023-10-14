@@ -104,6 +104,10 @@ a {
     --primary-font-family: 'Montserrat', sans-serif;
     --buttons-font-family: 'Poppins', sans-serif;
     --buttons-font-weight: 100;
+    --btn-bg: #3e3a73;
+    --btn-bg: #4b485b;
+    --btn-bg: #403539;
+    --btn-bg: #1e171f;
     --buttons-hover-bg: #222629;
     --buttons-color: #F8F8FC;
     --secondary-font-family: 'Poppins',

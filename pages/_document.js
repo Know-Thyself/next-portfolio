@@ -10,8 +10,12 @@ export default function Document() {
 					integrity='sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65'
 					crossOrigin='anonymous'
 				/>
+				{/* <link
+					href='https://cdn.jsdelivr.net/npm/bootswatch/dist/sandstone/bootstrap.min.css'
+					rel='stylesheet'
+				/> */}
 				<link
-					href='https://cdn.jsdelivr.net/npm/bootswatch/dist/slate/bootstrap.min.css'
+					href='https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/sandstone/bootstrap.min.css'
 					rel='stylesheet'
 				/>
 			</Head>

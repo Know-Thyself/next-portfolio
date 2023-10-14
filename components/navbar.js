@@ -68,7 +68,7 @@ const Navbar = () => {
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/'
-									className={`nav-link px-4 border-end-0 ${
+									className={`nav-link p-3 border-end-0 ${
 										router.pathname === '/'
 											? styles.active
 											: styles['menu__item']
@@ -85,7 +85,7 @@ const Navbar = () => {
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/projects'
-									className={`nav-link px-4 border-end-0 ${
+									className={`nav-link p-3 border-end-0 ${
 										router.pathname === '/projects'
 											? styles.active
 											: styles['menu__item']
@@ -102,7 +102,7 @@ const Navbar = () => {
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/about'
-									className={`nav-link px-4 border-end-0 ${
+									className={`nav-link p-3 border-end-0 ${
 										router.pathname === '/about'
 											? styles.active
 											: styles['menu__item']
@@ -119,7 +119,7 @@ const Navbar = () => {
 							<li className={`nav-item ${styles['custom-nav-item']}`}>
 								<Link
 									href='/contact'
-									className={`nav-link px-4 ${
+									className={`nav-link p-3 ${
 										router.pathname === '/contact'
 											? styles.active
 											: styles['menu__item']

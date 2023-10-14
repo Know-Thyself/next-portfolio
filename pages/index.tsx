@@ -11,7 +11,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 import styles from '../styles/home.module.css'
 import Image from 'next/image'
-import 'bootswatch/dist/slate/bootstrap.min.css'
+import 'bootswatch/dist/sandstone/bootstrap.min.css'
 
 export const getStaticProps: GetStaticProps = async () => {
 	const summary = await prisma.summary.findMany()
@@ -79,9 +79,10 @@ function HomePage({ summary }): JSX.Element {
 							href='https://github.com/Know-Thyself'
 							target='_blank'
 							rel='noreferrer'
-							className={`btn btn-dark border-0 ${styles.link}`}
+							className={`btn btn-primary border-0 text-white ${styles.link}`}
 							whileHover={{
 								scale: 1.2,
+								borderRadius: '4px',
 							}}
 							whileTap={{ scale: 0.8 }}
 						>
@@ -94,12 +95,14 @@ function HomePage({ summary }): JSX.Element {
 						<motion.div
 							whileHover={{
 								scale: 1.2,
+								borderRadius: '4px',
 							}}
 							whileTap={{ scale: 0.8 }}
 						>
 							<Link
+								type='button'
 								href='/projects'
-								className={`btn btn-dark border-0 ${styles.link}`}
+								className={`btn btn-primary border-0 ${styles.link}`}
 							>
 								Projects
 							</Link>

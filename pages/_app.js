@@ -3,7 +3,7 @@ import Head from 'next/head'
 import '../styles/globals.css'
 import Layout from '../components/layout'
 import Script from 'next/script'
-import 'bootswatch/dist/slate/bootstrap.min.css'
+import 'bootswatch/dist/sandstone/bootstrap.min.css'
 
 function MyApp({ Component, pageProps }) {
 	const [project, setProject] = useState({})
