@@ -100,7 +100,6 @@ function HomePage({ summary }): JSX.Element {
 							whileTap={{ scale: 0.8 }}
 						>
 							<Link
-								type='button'
 								href='/projects'
 								className={`btn btn-primary border-0 ${styles.link}`}
 							>
