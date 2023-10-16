@@ -43,6 +43,7 @@
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
+    margin-left: 7.5%;
 }
 
 .link {
@@ -89,6 +90,7 @@
 
     .links-wrapper {
         gap: 2rem;
+        margin-left: 12.5%;
     }
 
     .link {
@@ -112,6 +114,10 @@
 
     .banner {
         font-weight: 900;
+    }
+
+    .links-wrapper {
+        margin-left: 15%;
     }
 }
 
@@ -143,6 +149,11 @@
 
     .hero-text-container h4 {
         font-size: 1.5rem;
+    }
+
+    .links-wrapper {
+        margin-left: 0%;
+        justify-content: center;
     }
 
 }

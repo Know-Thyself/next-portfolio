@@ -74,40 +74,40 @@ function HomePage({ summary }): JSX.Element {
 							</p>
 						))}
 					</div>
-					<div className={styles['links-wrapper']}>
-						<motion.a
-							href='https://github.com/Know-Thyself'
-							target='_blank'
-							rel='noreferrer'
-							className={`btn btn-primary border-0 text-white ${styles.link}`}
-							whileHover={{
-								scale: 1.2,
-								borderRadius: '4px',
-							}}
-							whileTap={{ scale: 0.8 }}
-						>
-							<FontAwesomeIcon
-								icon={faGithub}
-								className={`${styles['fa-github']}`}
-							/>
-							&nbsp; GitHub
-						</motion.a>
-						<motion.div
-							whileHover={{
-								scale: 1.2,
-								borderRadius: '4px',
-							}}
-							whileTap={{ scale: 0.8 }}
-						>
-							<Link
-								href='/projects'
-								className={`btn btn-primary border-0 ${styles.link}`}
-							>
-								Projects
-							</Link>
-						</motion.div>
-					</div>
 				</section>
+				<div className={styles['links-wrapper']}>
+					<motion.a
+						href='https://github.com/Know-Thyself'
+						target='_blank'
+						rel='noreferrer'
+						className={`btn btn-primary border-0 text-white ${styles.link}`}
+						whileHover={{
+							scale: 1.2,
+							borderRadius: '4px',
+						}}
+						whileTap={{ scale: 0.8 }}
+					>
+						<FontAwesomeIcon
+							icon={faGithub}
+							className={`${styles['fa-github']}`}
+						/>
+						&nbsp; GitHub
+					</motion.a>
+					<motion.div
+						whileHover={{
+							scale: 1.2,
+							borderRadius: '4px',
+						}}
+						whileTap={{ scale: 0.8 }}
+					>
+						<Link
+							href='/projects'
+							className={`btn btn-primary border-0 ${styles.link}`}
+						>
+							Projects
+						</Link>
+					</motion.div>
+				</div>
 			</motion.div>
 		</AnimatePresence>
 	)
