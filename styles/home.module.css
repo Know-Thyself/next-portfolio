@@ -14,7 +14,6 @@
 .banner {
     font-family: var(--secondary-font-family);
     color: var(--secondary-text-color);
-    /* font-weight: 600; */
     font-size: 1.75rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -37,13 +36,9 @@
 }
 
 .links-wrapper {
-    /* width: 100%; */
     display: flex;
-    /* justify-content: flex-start; */
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
-    margin-left: 7.5%;
 }
 
 .link {
@@ -85,7 +80,6 @@
 
     .links-wrapper {
         gap: 2rem;
-        margin-left: 12.5%;
     }
 
     .link {
@@ -111,12 +105,9 @@
         font-weight: 900;
     }
 
-    .links-wrapper {
-        margin-left: 15%;
-    }
 }
 
-@media screen and (min-width: 1124px) {
+@media screen and (min-width: 1267px) {
     .home {
         padding-top: 7.5rem;
         padding-bottom: 9.25rem;
@@ -146,9 +137,22 @@
         font-size: 1.5rem;
     }
 
-    .links-wrapper {
-        margin-left: 0%;
-        justify-content: center;
+}
+
+@media screen and (min-width: 1500px) {
+    .home {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
     }
 
+    .hero {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .hero {
+        padding: 3rem 12rem;
+    }
 }
