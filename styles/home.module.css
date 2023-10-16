@@ -37,9 +37,9 @@
 }
 
 .links-wrapper {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
