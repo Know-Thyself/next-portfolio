@@ -54,12 +54,23 @@ sans-serif;
     --header-bg: #e0e1dc;
     --primary-bg: #b9c5ca;
     --secondary-bg: #98a6c7;
+    --secondary-bg: #C9D4E4;
+    --secondary-bg: #CDC9C3;
+    --secondary-bg: #CDC9C3;
     --tertiary-bg: #D0D0CD;
-    --about-bg: #98a6c7;
-    --about-bg: #85919B;
-    --about-bg: #a8aaab;
-    --complementary-bg: #9190A8;
-    --complementary-bg: #c1b2b3;
+    
+    --about-bg: #CDC9C3;
+    --about-bg: #CDC9C3;
+    --about-bg: #E8EAE6;
+    --about-bg: #D7D6DB;
+    --about-bg: #EFE9CC;
+    --about-bg: #E0E0E0;
+    --about-bg: #D4D4D4;
+    --about-bg: #DAE2B6;
+    --about-bg: #CCD5AE;
+
+    --complementary-bg: #DAD9DE;
+    --complementary-bg: #DBDBE1;
     --project-container-hover: #838297;
     --project-container-hover: #aea0a1;
     --banner-font-family: 'Playfair Display', serif;
@@ -109,13 +120,9 @@ sans-serif;
     --secondary-bg: #383238;
     --secondary-bg: #252a39;
     --secondary-bg: #22303b; */
-    --secondary-bg: #262a2e;
-    --secondary-bg: #325d88;
-    --secondary-bg: #2d547a;
-    --secondary-bg: #284a6d;
-    --secondary-bg: #1e3852;
-    --secondary-bg: #142536;
-    --secondary-bg: #23415f;
+    --secondary-bg: #332E2F;
+    --secondary-bg: #2E3332;
+    --secondary-bg: #32332E;
 
     /* --tertiary-bg: #383238;
     --tertiary-bg: #322d32;
@@ -126,13 +133,10 @@ sans-serif;
     --tertiary-bg: #2d3033; */
     --tertiary-bg: #2a292e;
     --about-bg: #262a2e;
-
-    --complementary-bg: #302f34;
-    --complementary-bg: #522831;
-    --complementary-bg: #77522C;
-    --complementary-bg: #5F4123;
-    --complementary-bg: #433f3c;
-    --project-container-hover: #3c3936;
+    --about-bg: #2E3332;
+    --about-bg: #32332E;
+    --complementary-bg: #2F2E33;
+    --project-container-hover: #2a292e;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --banner-font-family: 'Playfair Display', serif;
     --banner-font-family: 'Poppins',
@@ -149,7 +153,7 @@ sans-serif;
     --btn-bg: #403539;
     --btn-bg: #1e171f;
     --buttons-hover-bg: #222629;
-    --buttons-hover-bg: #1e3852;
+    --buttons-hover-bg: #2d2e29;
     --buttons-color: #F8F8FC;
     --primary-text-color: #C2C2C2;
     --primary-text-color: #B5B5B5;

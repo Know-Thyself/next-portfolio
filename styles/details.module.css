@@ -68,8 +68,9 @@
 
 .read-more-read-less-wrapper {
     background-color: var(--primary-bg);
-    background-color: var(--about-bg);
     background-color: var(--header-bg);
+    background-color: var(--about-bg);
+    background-color: var(--tertiary-bg);
     width: 90%;
     margin-top: 1rem;
     text-align: left;

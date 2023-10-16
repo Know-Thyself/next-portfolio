@@ -103,12 +103,12 @@
 
 .menu__item:hover {
     background-color: var(--active-nav-link);
-    color: var(--primary-text-color) !important;
+    /* color: var(--primary-text-color) !important; */
 }
 
 .custom-nav-item .active {
     background-color: var(--active-nav-link) !important;
-    color: var(--primary-text-color) !important;
+    /* color: var(--primary-text-color) !important; */
     cursor: default;
 }
 
@@ -148,6 +148,8 @@
 
     .menu__box {
         background-color: var(--complementary-bg);
+        background-color: var(--secondary-bg);
+        background-color: var(--tertiary-bg);
         width: 100%;
     }
 

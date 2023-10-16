@@ -4,10 +4,11 @@
     left: 0;
     bottom: 0;
     height: 12rem;
-    font-family: var(--secondary-font-family);
+    font-family: var(--tertiary-font-family);
+    font-family: var(--primary-font-family);
     background-color: var(--header-bg);
     font-size: 0.87rem;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +33,7 @@
 .fa-brand {
     font-size: 1rem;
     margin-bottom: 0.75rem;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
 
 @media screen and (min-width: 929px) {

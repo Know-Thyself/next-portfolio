@@ -50,14 +50,14 @@ const Footer = () => {
 							icon={faPhoneVolume}
 							className={styles['fa-phone-volume']}
 						/>
-						&nbsp; +44 7392 976062
+						&nbsp; +44&nbsp; 7392&nbsp; 976062
 					</p>
 					<p>
 						<FontAwesomeIcon icon={faEnvelope} /> &nbsp; birukwebdev@gmail.com
 					</p>
 					<p>
-						<FontAwesomeIcon icon={faMapLocationDot} /> &nbsp; 63 Sandy Lane,
-						CV1 4EX, West Midlands, Coventry, UK
+						<FontAwesomeIcon icon={faMapLocationDot} /> &nbsp; 63 Sandy
+						Lane,&nbsp; CV1 4EX,&nbsp; West Midlands,&nbsp; Coventry,&nbsp; UK
 					</p>
 				</section>
 			</motion.div>

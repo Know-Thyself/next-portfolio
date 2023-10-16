@@ -182,6 +182,7 @@
 
     .intro {
         background-color: var(--about-bg);
+        background-color: var(--secondary-bg);
     }
 
     .wrapper {
