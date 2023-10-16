@@ -54,25 +54,20 @@ sans-serif;
     --header-bg: #e0e1dc;
     --primary-bg: #b9c5ca;
     --secondary-bg: #98a6c7;
-    --secondary-bg: #C9D4E4;
-    --secondary-bg: #CDC9C3;
-    --secondary-bg: #CDC9C3;
+    --secondary-bg: #9DBEC8;
     --tertiary-bg: #D0D0CD;
-    
-    --about-bg: #CDC9C3;
-    --about-bg: #CDC9C3;
-    --about-bg: #E8EAE6;
-    --about-bg: #D7D6DB;
-    --about-bg: #EFE9CC;
-    --about-bg: #E0E0E0;
-    --about-bg: #D4D4D4;
-    --about-bg: #DAE2B6;
-    --about-bg: #CCD5AE;
 
-    --complementary-bg: #DAD9DE;
-    --complementary-bg: #DBDBE1;
+    --about-bg: #CDC9C3;
+    --about-bg: #C3D0BD;
+    --about-bg: #D4E0C7;
+    --about-bg: #C8D4C4;
+
+    --complementary-bg: #b3b4b0;
+    --complementary-bg: #C8A79D;
+    --complementary-bg: #9d9e9a;
     --project-container-hover: #838297;
     --project-container-hover: #aea0a1;
+    --project-container-hover: #92948F;
     --banner-font-family: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --secondary-font-family: 'Courgette',
@@ -89,12 +84,16 @@ sans-serif;
     --secondary-text-color: #1b1c1d;
     --secondary-text-color: #1b1c1d;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
-    --buttons-hover-bg: #8995b3;
-    --buttons-hover-bg: #a2afcd;
+    --buttons-hover-bg: #8dabb4;
+    --buttons-hover-bg: #97BAC4;
     --buttons-color: #FAFAFA;
     --active-nav-link: #c7c8c3;
     --toggle-btn: #aea0a1;
+    --toggle-btn: #8d8b8e;
     --radio-btn: #7e8cae;
+    --radio-btn: #C6DCE4;
+    --radio-btn: #9CB4CC;
+    --radio-btn: #B2C8DF;
     --read-more: #BD1A43;
 }
 
