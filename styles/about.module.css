@@ -3,7 +3,6 @@
     background-color: var(--tertiary-bg);
     background-color: var(--primary-bg);
     font-family: var(--primary-font-family);
-    color: var(--secondary-text-color);
     padding-top: 84px;
     padding-bottom: 48px;
     padding-bottom: 12rem;
@@ -14,6 +13,7 @@
 .about-section {
     /* background-color: var(--primary-bg); */
     font-family: var(--secondary-font-family);
+    color: var(--secondary-text-color);
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -49,10 +49,11 @@
 
 .contact,
 .download {
-    font-family: var(--primary-font-family);
+    font-family: var(--buttons-font-family);
+    font-weight: var(--buttons-font-weight);
     text-decoration: none;
     text-transform: capitalize;
-    padding: 0.65rem 1.2rem;
+    padding: 0.75rem 1.2rem;
     border-radius: 4px;
     font-size: 1.12rem;
     margin-right: 1rem;
@@ -75,7 +76,6 @@
     font-size: 1.5rem;
     text-align: left;
     margin: auto;
-    color: var(--buttons-color);
     color: var(--primary-text-color);
 }
 
@@ -83,10 +83,9 @@
     text-align: left;
     width: 95%;
     margin: auto;
+    color: var(--secondary-text-color);
     color: var(--helper-text-color);
-    color: var(--primary-text-color);
     opacity: 0.85;
-    font-family: var(--secondary-font-family);
     padding-top: 0.5rem;
 }
 
@@ -114,10 +113,9 @@
 .skill-card h6 {
     font-size: 0.65rem;
     background-color: black;
-    background-color: var(--header-bg);
-    background-color: var(--tertiary-bg);
     background-color: var(--complementary-bg);
     border-bottom: 2px solid var(--complementary-bg);
+    color: var(--primary-text-color);
     margin: auto 1rem;
     height: 3rem;
     width: 100%;
@@ -226,6 +224,7 @@
         background-color: var(--primary-bg);
         background-color: var(--tertiary-bg);
         background-color: var(--secondary-bg);
+        background-color: var(--about-bg);
     }
 
     .skills-section {
@@ -235,6 +234,7 @@
     .skill-card {
         background-color: var(--tertiary-bg);
         background-color: var(--secondary-bg);
+        background-color: var(--about-bg);
     }
 
     .skill-card h6 {
@@ -255,18 +255,14 @@
         padding: 0 2rem 0 0;
     }
 
-    .about-section-buttons {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 1.5rem;
-        margin-top: 2rem;
-    }
-
+    
     .about-section-buttons {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        padding: 0.65rem 1.2rem;
     }
 
 
@@ -309,7 +305,7 @@
     }
 
     .skill-card h6 {
-        font-size: 1.075rem;
+        font-size: 1.1rem;
     }
 
     .logo {

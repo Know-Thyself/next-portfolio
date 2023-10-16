@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 4px;
     text-transform: capitalize;
 }
@@ -49,7 +49,14 @@
     font-family: var(--primary-font-family);
     font-size: 1.25rem;
     color: var(--secondary-text-color);
+    font-weight: 500;
     text-align: left;
+}
+
+.bold {
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    font-style: normal;
 }
 
 .project-img {
@@ -60,7 +67,9 @@
 }
 
 .read-more-read-less-wrapper {
-    background-color: var(--secondary-bg);
+    background-color: var(--primary-bg);
+    background-color: var(--about-bg);
+    background-color: var(--header-bg);
     width: 90%;
     margin-top: 1rem;
     text-align: left;
@@ -68,19 +77,23 @@
 }
 
 .description {
-    font-family: var(--primary-font-family);
+    font-family: var(--tertiary-font-family);
     color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     width: 90%;
     margin: 1rem auto;
-    font-weight: 300;
+    font-weight: 0, 300;
     line-height: 1.25rem;
     letter-spacing: 0.5px;
     border-radius: 4px;
+    font-style: italic;
 }
 
 .description span {
     display: inline-block;
+    font-family: var(--primary-font-family);
     color: var(--read-more);
+    font-weight: 400;
     cursor: pointer;
 }
 
@@ -99,9 +112,9 @@
     color: var(--secondary-text-color);
     color: var(--buttons-color);
     /* text-decoration: none; */
-    padding: 0.65rem 1.2rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 4px;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-weight: var(--buttons-font-weight);
     text-transform: capitalize;
 }
@@ -117,12 +130,17 @@
     }
 
     .description {
-        font-size: 1.075rem;
+        /* font-size: 1.075rem; */
+        font-weight: 300;
     }
 
     .live-demo-link,
-    .github-link {
-        font-weight: 400;
+    .github-link,
+    .back-btn {
+        font-size: 1rem;
+        font-family: var(--buttons-font-family);
+        font-weight: var(--buttons-font-weight);
+        padding: 0.65rem 1.2rem;
     }
 }
 

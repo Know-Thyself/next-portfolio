@@ -32,7 +32,7 @@
 
 .intro p {
     text-align: left;
-    font-family: var(--secondary-font-family);
+    font-family: var(--primary-font-family);
     color: var(--secondary-text-color);
     line-height: 1.5rem;
     font-size: 1rem;
@@ -181,9 +181,7 @@
     }
 
     .intro {
-        background-color: var(--tertiary-bg);
-        background-color: var(--complementary-bg);
-        background-color: var(--secondary-bg);
+        background-color: var(--about-bg);
     }
 
     .wrapper {

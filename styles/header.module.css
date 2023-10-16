@@ -94,6 +94,10 @@
 .menu__item,
 .active {
     font-family: var(--primary-font-family);
+    font-family: 'Lato',
+        sans-serif;
+    font-family: 'Montserrat',
+        sans-serif;
     transition-duration: 0.25s;
 }
 

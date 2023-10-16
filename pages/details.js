@@ -55,9 +55,7 @@ const ProjectDetail = ({ project }) => {
 								<div key='read-more'>
 									{!showMore ? (
 										<p className={styles.description}>
-											<b style={{ fontWeight: 'bold' }}>
-												{project.title}&nbsp;
-											</b>
+											<b className={styles.bold}>{project.title}&nbsp;</b>
 											{lessText.replace("''", "'")}
 											<span key='span' onClick={toggleText}>
 												{!showMore ? '...read more ▼' : 'read less ▲'}
@@ -68,9 +66,7 @@ const ProjectDetail = ({ project }) => {
 											<div key={idx}>
 												<p className={styles.description}>
 													{idx === 0 && (
-														<b style={{ fontWeight: 'bold' }}>
-															{project.title}&nbsp;
-														</b>
+														<b className={styles.bold}>{project.title}&nbsp;</b>
 													)}
 													{line.replace("''", "'")}
 													{idx === descriptionLines.length - 1 && (

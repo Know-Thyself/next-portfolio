@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@300;400;700&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600&family=Righteous&display=swap');
+
 html,
 body {
     padding: 0;
@@ -30,29 +32,51 @@ a {
     -webkit-font-smoothing: grayscale;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+/* 
+font-family: 'Courgette',
+cursive;
+font-family: 'Lato',
+sans-serif;
+font-family: 'Merriweather',
+serif;
+font-family: 'Merriweather Sans',
+sans-serif;
+font-family: 'Montserrat',
+sans-serif;
+font-family: 'Poppins',
+sans-serif;
+font-family: 'Righteous',
+sans-serif;
+*/
+
 
 :root {
     --header-bg: #e0e1dc;
     --primary-bg: #b9c5ca;
     --secondary-bg: #98a6c7;
     --tertiary-bg: #D0D0CD;
+    --about-bg: #98a6c7;
+    --about-bg: #85919B;
+    --about-bg: #a8aaab;
     --complementary-bg: #9190A8;
     --complementary-bg: #c1b2b3;
     --project-container-hover: #838297;
     --project-container-hover: #aea0a1;
-    --hero-banner-text: 'Playfair Display', serif;
+    --banner-font-family: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
-    --buttons-font-family: 'Montserrat',
-        sans-serif;
-    --secondary-text-color: #313030;
-    --secondary-font-family: 'Lato',
-        sans-serif;
+    --secondary-font-family: 'Courgette',
+        cursive;
+    --tertiary-font-family: 'Merriweather',
+        serif;
+    --buttons-font-family: 'Poppins', sans-serif;
+    --buttons-font-weight: 300;
     --primary-text-color: #1A1A1A;
+    --primary-text-color: #0A0A0A;
     --helper-text-color: #0A0A0A;
-    --secondary-font-weight: 300;
-    --secondary-text-color: #313436;
+    --secondary-font-weight: 400;
     --secondary-text-color: #2c2f31;
+    --secondary-text-color: #1b1c1d;
+    --secondary-text-color: #1b1c1d;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --buttons-hover-bg: #8995b3;
     --buttons-hover-bg: #a2afcd;
@@ -80,13 +104,19 @@ a {
     --primary-bg: #211E26;
     --primary-bg: #251e27; */
     --primary-bg: #211a22;
-    
+
     /* --secondary-bg: #2f222d;
     --secondary-bg: #383238;
     --secondary-bg: #252a39;
     --secondary-bg: #22303b; */
     --secondary-bg: #262a2e;
- 
+    --secondary-bg: #325d88;
+    --secondary-bg: #2d547a;
+    --secondary-bg: #284a6d;
+    --secondary-bg: #1e3852;
+    --secondary-bg: #142536;
+    --secondary-bg: #23415f;
+
     /* --tertiary-bg: #383238;
     --tertiary-bg: #322d32;
     --tertiary-bg: #262a2e;
@@ -95,30 +125,43 @@ a {
     --tertiary-bg: #2f3131;
     --tertiary-bg: #2d3033; */
     --tertiary-bg: #2a292e;
+    --about-bg: #262a2e;
 
     --complementary-bg: #302f34;
+    --complementary-bg: #522831;
+    --complementary-bg: #77522C;
+    --complementary-bg: #5F4123;
     --complementary-bg: #433f3c;
     --project-container-hover: #3c3936;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
-    --hero-banner-text: 'Playfair Display', serif;
+    --banner-font-family: 'Playfair Display', serif;
+    --banner-font-family: 'Poppins',
+        sans-serif;
     --primary-font-family: 'Montserrat', sans-serif;
+    --secondary-font-family: 'Courgette',
+        cursive;
+    --tertiary-font-family: 'Merriweather',
+        serif;
     --buttons-font-family: 'Poppins', sans-serif;
-    --buttons-font-weight: 100;
+    --buttons-font-weight: 300;
     --btn-bg: #3e3a73;
     --btn-bg: #4b485b;
     --btn-bg: #403539;
     --btn-bg: #1e171f;
     --buttons-hover-bg: #222629;
+    --buttons-hover-bg: #1e3852;
     --buttons-color: #F8F8FC;
-    --secondary-font-family: 'Poppins',
-        sans-serif;
     --primary-text-color: #C2C2C2;
+    --primary-text-color: #B5B5B5;
+    --primary-text-color: #E8E8E8;
+    --primary-text-color: #DEDEDE;
     --secondary-font-weight: 300;
     --secondary-text-color: #ADADAD;
+    --secondary-text-color: #B5B5B5;
     --helper-text-color: #dadaee;
     --helper-text-color: #8C8C8C;
     --active-nav-link: #2a292e;
     --toggle-btn: #1e171f;
     --radio-btn: #373138;
-    --read-more: #3a9bdc;
+    --read-more: #82BDED;
 }

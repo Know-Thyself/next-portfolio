@@ -12,9 +12,9 @@
 }
 
 .banner {
-    font-family: var(--hero-banner-text);
-    color: var(--primary-text-color);
-    font-weight: 600;
+    font-family: var(--secondary-font-family);
+    color: var(--secondary-text-color);
+    /* font-weight: 600; */
     font-size: 1.75rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -27,8 +27,8 @@
 }
 
 .intro {
-    font-family: var(--primary-font-family);
-    font-weight: var(--secondary-font-weight);
+    font-family: var(--secondary-font-family);
+    color: var(--secondary-text-color);
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: left;
@@ -49,7 +49,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--btn-bg); */
     font-family: var(--buttons-font-family);
     font-weight: var(--buttons-font-weight);
     text-decoration: none;
@@ -57,16 +56,12 @@
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
     font-size: 0.85rem;
+    font-size: 1rem;
 }
 
-/* .link:hover {
-    background-color: var(--btn-bg);
-    color: white;
-
-} */
-
 .link .fa-github {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    font-size: 1.1rem;
 }
 
 @media screen and (min-width: 667px) {
@@ -74,33 +69,33 @@
         width: 75%;
         padding-bottom: 0;
     }
-    
+
     .banner {
         text-align: left;
         margin-bottom: 1.5rem;
         font-size: 2rem;
     }
-    
+
     .profile-photo {
         float: left;
         shape-outside: circle();
         margin-right: 1rem;
     }
-    
+
     .intro {
         text-align: justify;
+        font-size: 1.05rem;
     }
-    
+
     .links-wrapper {
         gap: 2rem;
     }
-    
+
     .link {
         padding: 0.65rem 1.2rem;
-        font-size: 1rem;
-        font-weight: 200;
+        font-size: 1.1rem;
     }
-    
+
     .link .fa-github {
         font-size: 1.25rem;
     }
@@ -114,7 +109,7 @@
     .hero {
         width: 70%;
     }
-    
+
     .banner {
         font-weight: 900;
     }
@@ -125,7 +120,7 @@
         padding-top: 7.5rem;
         padding-bottom: 9.25rem;
     }
-    
+
     .hero {
         width: 80%;
         border-radius: 20%;
