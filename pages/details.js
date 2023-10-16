@@ -125,7 +125,7 @@ const ProjectDetail = ({ project }) => {
 						className={`btn btn-dark border-0 ${styles['back-btn']}`}
 					>
 						<FontAwesomeIcon className={styles['fa-left']} icon={faArrowLeft} />
-						All Projects
+						&nbsp; All Projects
 					</Link>
 				</div>
 			</div>

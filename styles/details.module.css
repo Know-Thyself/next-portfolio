@@ -21,9 +21,9 @@
 
 .back-btn {
     color: var(--buttons-color);
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     gap: 0.5rem;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
@@ -109,8 +109,8 @@
 .live-demo-link,
 .github-link {
     font-family: var(--buttons-font-family);
-    color: var(--secondary-text-color);
-    color: var(--buttons-color);
+    /* color: var(--secondary-text-color);
+    color: var(--buttons-color); */
     /* text-decoration: none; */
     padding: 0.5rem 0.75rem;
     border-radius: 4px;

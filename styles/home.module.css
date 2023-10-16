@@ -47,17 +47,18 @@
 }
 
 .link {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     font-family: var(--buttons-font-family);
     font-weight: var(--buttons-font-weight);
     text-decoration: none;
     text-transform: capitalize;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
-    font-size: 0.85rem;
-    font-size: 1rem;
+    /* font-size: 0.85rem;
+    font-size: 1rem; */
+
 }
 
 .link .fa-github {
