@@ -88,9 +88,9 @@ function HomePage({ summary }): JSX.Element {
 						>
 							<FontAwesomeIcon
 								icon={faGithub}
-								className={`${styles['fa-github']}`}
+								className={styles['fa-github']}
 							/>
-							&nbsp; GitHub
+							<span>&nbsp; GitHub</span>
 						</motion.a>
 						<motion.div
 							whileHover={{

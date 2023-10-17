@@ -63,7 +63,7 @@
 }
 
 .fa-moon {
-    color: var(--helper-text-color);
+    color: var(--secondary-text-color);
 }
 
 .sun-icon {
@@ -87,6 +87,7 @@
 .switch-checkbox:checked+.switch-label {
     background-color: var(--complementary-bg);
     background-color: var(--header-bg);
+    background-color: var(--secondary-bg);
     background-color: var(--primary-bg);
 }
 

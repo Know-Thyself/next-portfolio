@@ -48,11 +48,14 @@
     text-transform: capitalize;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
+    vertical-align: middle;
 
 }
 
+
 .link .fa-github {
     font-size: 1.1rem;
+    vertical-align: middle;
 }
 
 @media screen and (min-width: 667px) {
@@ -88,7 +91,7 @@
     }
 
     .link .fa-github {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
     }
 }
 
