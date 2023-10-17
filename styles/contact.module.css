@@ -83,8 +83,6 @@
     align-items: center;
     width: 100%;
     margin: auto;
-    background-color: var(--tertiary-bg);
-    background-color: var(--secondary-bg);
     background-color: var(--complementary-bg);
     padding: 1rem 0;
 }
@@ -106,7 +104,6 @@
 .textField input {
     color: var(--secondary-text-color);
     border-bottom: 1px solid var(--primary-text-color);
-    background-color: var(--complementary-bg);
     background-color: var(--tertiary-bg);
     font-family: var(--primary-font-family);
 }
@@ -117,7 +114,6 @@
 }
 
 .textField textarea {
-    background-color: var(--complementary-bg);
     background-color: var(--tertiary-bg);
 }
 

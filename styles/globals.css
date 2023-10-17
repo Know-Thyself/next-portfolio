@@ -123,20 +123,26 @@ sans-serif;
     --secondary-bg: #2E3332;
     --secondary-bg: #32332E;
 
-    /* --tertiary-bg: #383238;
-    --tertiary-bg: #322d32;
-    --tertiary-bg: #262a2e;
-    --tertiary-bg: #222629;
-    --tertiary-bg: #2a2f33;
-    --tertiary-bg: #2f3131;
-    --tertiary-bg: #2d3033; */
+    --secondary-bg: #222b49;
     --tertiary-bg: #2a292e;
     --about-bg: #262a2e;
     --about-bg: #2E3332;
     --about-bg: #32332E;
+
+    --about-bg: #2a292e;
+    --about-bg: #2c2b2d;
+    --about-bg: #262529;
     --complementary-bg: #2F2E33;
     --complementary-bg: #302f32;
     --complementary-bg: #312f32;
+
+    --complementary-bg: #444347;
+    --complementary-bg: #363639;
+    --complementary-bg: #343435;
+    --complementary-bg: #302f32;
+    --project-container-hover: #262529;
+    --project-container-hover: #302f32;
+    --project-container-hover: #2c2b2c;
     --project-container-hover: #2a292e;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --banner-font-family: 'Playfair Display', serif;
