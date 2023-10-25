@@ -90,6 +90,7 @@ sans-serif;
     --active-nav-link: #c7c8c3;
     --toggle-btn: #aea0a1;
     --toggle-btn: #8d8b8e;
+    --toggle-btn: #a7c5ce;
     --radio-btn: #7e8cae;
     --radio-btn: #C6DCE4;
     --radio-btn: #9CB4CC;
@@ -98,52 +99,69 @@ sans-serif;
 }
 
 [data-theme='dark'] {
-    /* --header-bg: #381523;
-    --header-bg: #19181d;
     --header-bg: #1E2024;
-    --header-bg: #1d2022;
-    --header-bg: #17171a;
-    --header-bg: #1A1A1D;
-    --header-bg: #1F1E24; */
-    --header-bg: #2f2e33;
-    /* --primary-bg: #191b22;
-    --primary-bg: #17171a;
-    --primary-bg: #151517;
-    --primary-bg: #161726;
-    --primary-bg: #131422;
-    --primary-bg: #211E26;
-    --primary-bg: #251e27; */
-    --primary-bg: #211a22;
-
-    /* --secondary-bg: #2f222d;
-    --secondary-bg: #383238;
-    --secondary-bg: #252a39;
-    --secondary-bg: #22303b; */
-    --secondary-bg: #332E2F;
-    --secondary-bg: #2E3332;
-    --secondary-bg: #32332E;
-
-    --secondary-bg: #222b49;
-    --tertiary-bg: #2a292e;
-    --about-bg: #262a2e;
+    --header-bg: #231b2a;
+    --primary-bg: #181825;
+    --secondary-bg: #1e2037;
+    /* final selection */
+    
+    --tertiary-bg: #22202b;
+    --tertiary-bg: #24232C;
+    --tertiary-bg: #2a2a35;
+    --tertiary-bg: #2b2a33;
+    
+    /* CHARLESTON GREEN */
+    --tertiary-bg: #2c2b30;
+    
     --about-bg: #2E3332;
     --about-bg: #32332E;
+    
+    --about-bg: #332d39;
+    --about-bg: #2f2f3b;
+    
+    --about-bg: #252b30;
+    --about-bg: #393832;
+    --about-bg: #253437;
+    --about-bg: #262a2e;
+    --about-bg: #2c2b27;
+    --about-bg: #32322d;
+    --about-bg: #393832;
+    --about-bg: #20282b;
 
-    --about-bg: #2a292e;
-    --about-bg: #2c2b2d;
     --about-bg: #262529;
     --complementary-bg: #2F2E33;
-    --complementary-bg: #302f32;
-    --complementary-bg: #312f32;
+    --complementary-bg: #2f2f3b;
+    --complementary-bg: #212129;
+    --complementary-bg: #2a2a35;
+    --complementary-bg: #222228;
+    --complementary-bg: #29292f;
+    --complementary-bg: #26262f;
 
-    --complementary-bg: #444347;
-    --complementary-bg: #363639;
-    --complementary-bg: #343435;
-    --complementary-bg: #302f32;
+    --complementary-bg: #28232c;
+    --complementary-bg: #34192A;
+    --complementary-bg: #201e2b;
+    
+    --complementary-bg: #312622;
+    --complementary-bg: #26262f;
+    --complementary-bg: #311934;
+    --complementary-bg: #312735;
+    --complementary-bg: #252a37;
+    --complementary-bg: #473856;
+    --complementary-bg: #371b2d;
+    --complementary-bg: #3e1e33;
+    --complementary-bg: #3f324d;
+    --complementary-bg: #393832;
+    --complementary-bg: #46223a;
+    --complementary-bg: #242730;
+    --complementary-bg: #4e2640;
+    --complementary-bg: #3f3e38;
+
     --project-container-hover: #262529;
     --project-container-hover: #302f32;
     --project-container-hover: #2c2b2c;
     --project-container-hover: #2a292e;
+    --project-container-hover: #212129;
+    --project-container-hover: #46223a;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --banner-font-family: 'Playfair Display', serif;
     --banner-font-family: 'Poppins',
@@ -171,8 +189,28 @@ sans-serif;
     --secondary-text-color: #B5B5B5;
     --helper-text-color: #dadaee;
     --helper-text-color: #8C8C8C;
-    --active-nav-link: #3c383d;
+    --active-nav-link: #4f3e60;
+    --active-nav-link: #52466c;
+    --active-nav-link: #34333b;
+    --active-nav-link: #2F3B49;
+    --active-nav-link: #2f2f3b;
+    --active-nav-link: #414045;
+    --active-nav-link: #383640;
+    --active-nav-link: #403f47;
+    --active-nav-link: #45434B;
+
+    --active-nav-link: #52514c;
+    --active-nav-link: #3F3D44;
+    --active-nav-link: #3F3D44;
     --toggle-btn: #373138;
-    --radio-btn: #443f44;
+    --toggle-btn: #2a2a35;
+    --toggle-btn: #34364b;
+    --toggle-btn: #303358;
+    --toggle-btn: #2C2C44;
+    --radio-btn: #48232D;
+    --radio-btn: #4e2640;
+    --radio-btn: #603c53;
+    --radio-btn: #3f3e38;
+    --radio-btn: #3F3D44;
     --read-more: #82BDED;
 }
