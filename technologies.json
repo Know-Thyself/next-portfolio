@@ -1,0 +1,17 @@
+[
+	{ "src": "/assets/images/html-css.png", "label": "HTML5 and CSS3" },
+	{ "src": "/assets/images/javascript.png", "label": "JavaScript" },
+	{ "src": "/assets/images/react.png", "label": "React.js" },
+	{ "src": "/assets/images/next.png", "label": "Next.js" },
+	{ "src": "/assets/images/node.png", "label": "Node.js" },
+	{ "src": "/assets/images/postgresql.jpg", "label": "PostgreSQL" },
+	{ "src": "/assets/images/django.jpg", "label": "Django" },
+	{ "src": "/assets/images/flask.jpg", "label": "Flask" },
+	{ "src": "/assets/images/git.png", "label": "Git and GitHub" },
+	{ "src": "/assets/images/material-ui.png", "label": "Material UI" },
+	{ "src": "/assets/images/bootstrap.jpg", "label": "Bootstrap" },
+	{ "src": "/assets/images/figma.png", "label": "Figma" },
+	{ "src": "/assets/images/trello.png", "label": "Trello" },
+	{ "src": "/assets/images/miro.png", "label": "Miro" },
+	{ "src": "/assets/images/slack.jpg", "label": "Slack" }
+]

@@ -2,7 +2,7 @@
     background-color: var(--primary-bg);
     color: var(--secondary-text-color);
     text-align: center;
-    padding-top: 84px;
+    /* padding-top: 84px; */
     padding-bottom: 14rem;
 }
 
@@ -112,18 +112,21 @@
 
 @media screen and (min-width: 1267px) {
     .home {
-        padding-top: 7.5rem;
+        /* padding-top: 7.5rem; */
         padding-bottom: 9.25rem;
     }
 
     .hero {
         width: 80%;
+        width: 90%;
         border-radius: 20%;
+        background-color: var(--complementary-bg);
         background-color: var(--tertiary-bg);
-        padding: 2rem 10rem;
+        padding: 2rem 6rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 0.5rem;
     }
 
     .banner {

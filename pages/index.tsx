@@ -11,13 +11,21 @@ config.autoAddCss = false
 import styles from '../styles/home.module.css'
 import Image from 'next/image'
 import 'bootswatch/dist/sandstone/bootstrap.min.css'
+import MultiCarousel from '../components/carousel'
+
+// export const getStaticProps: GetStaticProps = async () => {
+// 	const summary = await prisma.summary.findMany()
+// 	return { props: { summary } }
+// }
 
 export const getStaticProps: GetStaticProps = async () => {
+	const projects = await prisma.projects.findMany()
 	const summary = await prisma.summary.findMany()
-	return { props: { summary } }
+	return { props: { projects, summary } }
 }
 
-function HomePage({ summary }): JSX.Element {
+function HomePage({ summary, projects }): JSX.Element {
+	const images = projects.map(project => project.image)
 	const str = summary[0].profile
 	const image = summary[0].image
 	const intro = str.split(/\\n/)
@@ -55,6 +63,7 @@ function HomePage({ summary }): JSX.Element {
 				exit='exit'
 				key={'Welcome'}
 			>
+            <MultiCarousel images={images} />
 				<section className={styles.hero}>
 					<h1 className={styles.banner}>Hello & Welcome!</h1>
 					<div className={styles['hero-text-container']}>
