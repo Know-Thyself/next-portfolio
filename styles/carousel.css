@@ -1,0 +1,92 @@
+.parent {
+    background-color: var(--tertiary-bg);
+    background-color: var(--body-bg);
+    padding-top: 84px;
+}
+
+.slider {
+    overflow: 'hidden';
+    background-color: var(--tertiary-bg);
+    /* margin: 0 40px; */
+}
+
+.carousel-container {
+    width: 100% !important;
+    /* padding-left: 20px !important;
+    padding-right: 20px !important; */
+    margin: auto;
+}
+
+/* .carousel-container, */
+/* .slider {
+    background-color: var(--complementary-bg);
+    background-color: var(--tertiary-bg);
+    padding: 1rem 0;
+} */
+
+/* .carousel-container {
+    background-color: goldenrod;
+    width: 80%;
+    margin: auto;
+} */
+
+
+
+.slider img {
+    width: 160px;
+    height: 80px;
+}
+
+.react-multi-carousel-list {
+    padding: 0rem 0 2rem 0;
+}
+
+.custom-dot-list-style button {
+    height: 13px !important;
+    width: 13px !important;
+    border-radius: 50%;
+    border: 0 !important;
+    background-color: red !important;
+    background-color: var(--active-nav-link) !important;
+}
+
+
+/* .carousel-container .custom-dot-list-style button {
+    background-color: green !important;
+} */
+
+
+
+.react-multi-carousel-dot.react-multi-carousel-dot--active button {
+    background-color: var(--read-more) !important;
+}
+.react-multiple-carousel__arrow--right {
+    position: absolute !important;
+    right: 0 !important;
+    background: none !important;
+}
+
+.react-multiple-carousel__arrow--left {
+    position: absolute !important;
+    background: none !important;
+    left: 0 !important;
+}
+
+
+@media screen and (min-width: 768) {
+    .slider {
+        margin: 0 5px;
+        margin: 0;
+    }
+
+    .slider img {
+        width: 120px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 1267px) {
+    .parent {
+        padding: 84px 5% 0 5%;
+    }
+}

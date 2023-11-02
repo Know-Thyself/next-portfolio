@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import Layout from '../components/layout'
 import Script from 'next/script'
 import 'bootswatch/dist/sandstone/bootstrap.min.css'
+import '../styles/carousel.css'
 
 function MyApp({ Component, pageProps }) {
 	const [project, setProject] = useState({})

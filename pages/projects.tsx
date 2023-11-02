@@ -17,8 +17,14 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 const Projects = ({ projects, setProject }) => {
-    const router = useRouter()
-    projects.sort((a: object | any, b: object | any) => a.id - b.id);
+	const router = useRouter()
+	projects.sort((a: object | any, b: object | any) => a.id - b.id)
+	console.log(projects);
+	const images = projects.map(project => {
+		let projectsList = { title: project.title, image: project.image }
+		return projectsList
+	})
+	// console.log(images)
 
 	const springVariant = {
 		start: {
