@@ -53,6 +53,7 @@ sans-serif;
 :root {
     --header-bg: #e0e1dc;
     --primary-bg: #b9c5ca;
+    --primary-bg: white;
     --secondary-bg: #98a6c7;
     --secondary-bg: #9DBEC8;
     --tertiary-bg: #D0D0CD;
@@ -63,11 +64,12 @@ sans-serif;
     --about-bg: #C8D4C4;
 
     --complementary-bg: #b3b4b0;
-    --complementary-bg: #C8A79D;
     --complementary-bg: #9d9e9a;
+    --complementary-bg: #C8A79D;
     --project-container-hover: #838297;
-    --project-container-hover: #aea0a1;
     --project-container-hover: #92948F;
+    --project-container-hover: #aea0a1;
+    --project-container-hover: #b4968d;
     --banner-font-family: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --secondary-font-family: 'Courgette',
@@ -108,11 +110,11 @@ sans-serif;
     --primary-bg: #181825;
     --primary-bg: #1f2833;
     --primary-bg: #0b0c10;
-    
+
     --primary-bg: #242424;
-    
+
     --primary-bg: #3f3e38;
-    
+
     --primary-bg: #003152;
     --primary-bg: #0b1029;
     --primary-bg: #290B1F;
@@ -127,13 +129,13 @@ sans-serif;
     --primary-bg: #162129;
 
     --primary-bg: #272640;
-    /* selected */
+
     --primary-bg: #1e1f26;
 
     --primary-bg: #172331;
     --primary-bg: #162233;
     --primary-bg: #181633;
-    
+
     --primary-bg: #101523;
     --primary-bg: #14161d;
 
@@ -149,10 +151,10 @@ sans-serif;
     --secondary-bg: #1e2037;
     --secondary-bg: #1F1C28;
     --secondary-bg: #122624;
-    
+
     --secondary-bg: #283655;
     --secondary-bg: #26242d;
-    
+
     --secondary-bg: #212f45;
     --secondary-bg: #1e2a3e;
     --secondary-bg: #172130;
@@ -161,7 +163,7 @@ sans-serif;
     --secondary-bg: #1b254a;
     --secondary-bg: #182142;
     --secondary-bg: #151d39;
-    
+
     --secondary-bg: #1f2232;
     --secondary-bg: #231d2b;
     --secondary-bg: #1D1E2B;
@@ -171,7 +173,7 @@ sans-serif;
 
     --secondary-bg: #1d2430;
     --secondary-bg: #1c1f28;
-    
+
     --tertiary-bg: #2c2b30;
     --tertiary-bg: #1C2528;
     --tertiary-bg: #2b2a33;
@@ -180,13 +182,26 @@ sans-serif;
     --tertiary-bg: #2a2a2a;
     --tertiary-bg: #212024;
     --tertiary-bg: #262529;
-    
-    
+
+
     --tertiary-bg: #22202b;
     --tertiary-bg: #24232C;
-    
 
+    --tertiary-bg: #1d272a;
 
+    --tertiary-bg: #255944;
+    --tertiary-bg: #253A59;
+    --tertiary-bg: #221e47;
+    --tertiary-bg: #1C2528;
+    --tertiary-bg: #1F1C28;
+
+    --tertiary-bg: #281C25;
+
+    --tertiary-bg: #28251C;
+    --tertiary-bg: #232323;
+    --tertiary-bg: #2c2c2c;
+    --tertiary-bg: #1e2022;
+    --tertiary-bg: #26262a;
 
     --about-bg: #393832;
     --about-bg: #253437;
@@ -195,39 +210,48 @@ sans-serif;
     --about-bg: #32322d;
     --about-bg: #393832;
     --about-bg: #20282b;
-    
+
     --about-bg: #262529;
     --about-bg: #262529;
     --about-bg: #2E3332;
-    
+
     --about-bg: #32332E;
     --about-bg: #252b30;
 
     --about-bg: #2a292e;
-    /* --about-bg: #262529; */
-    
-    
-    
-    /* --complementary-bg: #2d2929; */
-    /* final selection */
-    --complementary-bg: #4c2428;
-    --complementary-bg: #2f222d;
-    --complementary-bg: #382e35;
-    --complementary-bg: #393832;
-    --complementary-bg: #46223a;
-    --complementary-bg: #3f3e38;
-    --complementary-bg: #2f2f3b;
-    --complementary-bg: #2F2E33;
 
+    --complementary-bg: #412234;
+    --complementary-bg: #2f222d;
+    --complementary-bg: #52093c;
+    --complementary-bg: #3D0537;
+    --complementary-bg: #46223a;
+    --complementary-bg: #5c164e;
+    --complementary-bg: #4d243d;
+    --complementary-bg: #5e183a;
+    --complementary-bg: #501537;
+    --complementary-bg: #54282c;
     
+    /* dark gray */
+    --complementary-bg: #2F2E33;
     
-   
+    --complementary-bg: #393832;
+    --complementary-bg: #382e35;
+    --complementary-bg: #403436;
+    --complementary-bg: #403734;
+    --complementary-bg: #2d2929;
+
+    --complementary-bg: #54282c;
+    --complementary-bg: #4c2428;
+    --complementary-bg: #692636;
+    --complementary-bg: #6f2232;
+    --complementary-bg: #59253a;
+
     --project-container-hover: #262529;
     --project-container-hover: #302f32;
-    --project-container-hover: #2c2b2c;
     --project-container-hover: #2a292e;
     --project-container-hover: #212129;
     --project-container-hover: #46223a;
+    --project-container-hover: #502134;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --banner-font-family: 'Playfair Display', serif;
     --banner-font-family: 'Poppins',
@@ -243,8 +267,8 @@ sans-serif;
     --btn-bg: #4b485b;
     --btn-bg: #403539;
     --btn-bg: #1e171f;
-    --buttons-hover-bg: #222629;
     --buttons-hover-bg: #2d2e29;
+    --buttons-hover-bg: #191c24;
     --buttons-color: #F8F8FC;
     --primary-text-color: #C2C2C2;
     --primary-text-color: #B5B5B5;
@@ -261,13 +285,13 @@ sans-serif;
     --active-nav-link: #383640;
     --active-nav-link: #403f47;
     --active-nav-link: #45434B;
-    
+
     --active-nav-link: #52514c;
     --active-nav-link: #3F3D44;
     --active-nav-link: #3F3D44;
-    
+
     --active-nav-link: #304858;
-    
+
     --active-nav-link: #3f1f34;
     --active-nav-link: #443842;
     --active-nav-link: #77383e;
@@ -278,7 +302,7 @@ sans-serif;
     --toggle-btn: #2a2a35;
     --toggle-btn: #303358;
     --toggle-btn: #2C2C44;
-    
+
     --toggle-btn: #323238;
     --toggle-btn: #313134;
     --radio-btn: #48232D;
@@ -293,7 +317,8 @@ sans-serif;
     --radio-btn: #443842;
     --radio-btn: #444347;
 
-    --radio-btn: #46223a;;
-    --read-more: #46223a;
+    --radio-btn: #46223a;
+    --radio-btn: #6f2232;
+    --radio-btn: #59253a;
     --read-more: #82BDED;
 }
