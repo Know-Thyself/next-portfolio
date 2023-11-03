@@ -120,6 +120,7 @@
         width: 80%;
         width: 90%;
         border-radius: 20%;
+        border-radius: 10px;
         background-color: var(--complementary-bg);
         background-color: var(--tertiary-bg);
         padding: 2rem 6rem;

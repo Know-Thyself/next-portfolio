@@ -129,12 +129,10 @@
     }
 
     .react-multiple-carousel__arrow--right {
-        background: none !important;
         background: var(--tertiary-bg) !important;
     }
 
     .react-multiple-carousel__arrow--left {
-        background: none !important;
         background: var(--tertiary-bg) !important;
     }
 }
