@@ -86,9 +86,9 @@
 
 .switch-checkbox:checked+.switch-label {
     background-color: var(--header-bg);
-    background-color: var(--primary-bg);
     background-color: var(--complementary-bg);
     background-color: var(--secondary-bg);
+    background-color: var(--primary-bg);
 }
 
 .d-none {

@@ -41,7 +41,7 @@
 }
 
 .react-multi-carousel-list {
-    padding: 0rem 0 1.35rem 0;
+    padding: 0rem 0 2rem 0;
 }
 
 .custom-dot-list-style button {
@@ -49,8 +49,8 @@
     width: 13px !important;
     border-radius: 50%;
     border: 0 !important;
-    background-color: red !important;
-    background-color: var(--complementary-bg) !important;
+    background-color: var(--tertiary-bg) !important;
+    background-color: var(--active-nav-link) !important;
 }
 
 
@@ -62,8 +62,8 @@
 
 .react-multi-carousel-dot.react-multi-carousel-dot--active button {
     background-color: var(--read-more) !important;
-    background-color: var(--header-bg) !important;
-    background-color: var(--secondary-text-color) !important;
+    background-color: var(--complementary-bg) !important;
+    background-color: var(--radio-btn) !important;
 }
 
 .react-multiple-carousel__arrow--right {
@@ -116,15 +116,26 @@
     }
 
     .slider {
+        background-color: var(--radio-btn) !important;
+        background-color: var(--secondary-bg) !important;
+        background-color: var(--complementary-bg) !important;
         background-color: var(--tertiary-bg) !important;
+        background-color: var(--primary-bg) !important;
+    }
+
+    .slider img {
+        width: 150px;
+        height: 80px;
     }
 
     .react-multiple-carousel__arrow--right {
         background: none !important;
+        background: var(--tertiary-bg) !important;
     }
 
     .react-multiple-carousel__arrow--left {
         background: none !important;
+        background: var(--tertiary-bg) !important;
     }
 }
 
