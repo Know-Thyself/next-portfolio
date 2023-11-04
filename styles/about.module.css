@@ -101,19 +101,20 @@
 }
 
 .skill-card {
-    background-color: var(--primary-bg);
+    background-color: var(--complementary-bg);
     margin: 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid var(--complementary-bg);
+    border-bottom: 2px solid var(--secondary-bg);
 }
 
 .skill-card h6 {
     font-size: 0.65rem;
     background-color: black;
     background-color: var(--complementary-bg);
+    background-color: var(--secondary-bg);
     border-bottom: 2px solid var(--complementary-bg);
     color: var(--primary-text-color);
     margin: auto 1rem;
@@ -235,10 +236,12 @@
         background-color: var(--tertiary-bg);
         background-color: var(--secondary-bg);
         background-color: var(--about-bg);
+        border-bottom: 2px solid var(--complementary-bg);
     }
 
     .skill-card h6 {
         background-color: var(--tertiary-bg);
+        background-color: var(--secondary-bg);
     }
 
     .about-img-wrapper {

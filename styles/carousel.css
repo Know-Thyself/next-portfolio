@@ -49,8 +49,8 @@
     width: 10px !important;
     border-radius: 50%;
     border: 0 !important;
-    background-color: var(--tertiary-bg) !important;
     background-color: var(--active-nav-link) !important;
+    background-color: var(--tertiary-bg) !important;
 }
 
 
@@ -62,8 +62,8 @@
 
 .react-multi-carousel-dot.react-multi-carousel-dot--active button {
     background-color: var(--read-more) !important;
-    background-color: var(--complementary-bg) !important;
     background-color: var(--radio-btn) !important;
+    background-color: var(--complementary-bg) !important;
 }
 
 .react-multiple-carousel__arrow--right {

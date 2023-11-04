@@ -308,7 +308,7 @@ const Contact = () => {
 							<br />
 							<button
 								onClick={handleSubmit}
-								className={`btn btn-primary ${styles.send}`}
+								className={`btn ${styles.send}`}
 							>
 								{buttonText} &nbsp;
 								<FontAwesomeIcon
