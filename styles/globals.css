@@ -55,6 +55,7 @@ sans-serif;
     --header-bg: #dcdcdc;
     --primary-bg: rgb(238, 237, 237);
     --secondary-bg: #a5b1e5;
+    --secondary-bg: #a5b1e5;
     --tertiary-bg: #B9BC65;
     --tertiary-bg: #C4AEAD;
     /* pure silver */
@@ -102,8 +103,27 @@ sans-serif;
     --header-bg: #1a1a1d;
     --primary-bg: #11151c;
     --secondary-bg: #1c1f28;
+    --secondary-bg: #201e2b;
+    --secondary-bg: #142334;
+    --secondary-bg: #212d40;
+    --secondary-bg: #162233;
+    --secondary-bg: #212a44;
+    --secondary-bg: #1f282f;
+    --secondary-bg: #1e2037;
+
+    --secondary-bg: #1f2232;
+    --secondary-bg: #242037;
+    --secondary-bg: #242730;
     --tertiary-bg: #26262a;
+    --tertiary-bg: #2D2430;
+    --tertiary-bg: #343434;
+    --tertiary-bg: #414A4C;
+    --tertiary-bg: #353839;
     --about-bg: #2a292e;
+    --about-bg: #40404F;
+    /* graphite */
+    --about-bg: #4B4E53;
+    --about-bg: #2a2a28;
     --complementary-bg: #59253a;
     --project-container-hover: #502134;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
