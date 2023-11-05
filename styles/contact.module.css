@@ -22,8 +22,9 @@
 }
 
 .intro h1 {
-    font-family: var(--primary-font-family);
-    color: var(--primary-text-color);
+    font-family: var(--secondary-font-family);
+    color: var(--secondary-text-color);
+    font-weight: var(--title-font-weight);
     font-size: 1.5rem;
     letter-spacing: 0.25px;
     margin: 0 auto 0.5rem auto;
@@ -32,8 +33,9 @@
 
 .intro p {
     text-align: left;
-    font-family: var(--primary-font-family);
+    font-family: var(--secondary-font-family);
     color: var(--secondary-text-color);
+    font-weight: var(--buttons-font-weight);
     line-height: 1.5rem;
     font-size: 1rem;
     letter-spacing: 0.25px;

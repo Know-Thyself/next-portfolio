@@ -141,6 +141,7 @@
     .custom-nav-item {
         border-bottom: solid 1px var(--radio-btn);
         border-bottom: solid 1px var(--active-nav-link);
+        border-bottom: solid 1px var(--toggle-btn);
     }
 
     .custom-nav-item .active,

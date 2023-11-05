@@ -53,69 +53,30 @@ sans-serif;
 :root {
     --header-bg: #e0e1dc;
     --header-bg: #dcdcdc;
-    --primary-bg: #b9c5ca;
     --primary-bg: rgb(238, 237, 237);
-    --primary-bg: antiquewhite;
-    
-    --secondary-bg: #B1A6A4;
-    --secondary-bg: #B7D6EF;
-    --secondary-bg: #687CE5;
-    --secondary-bg: #778ae8;
-    --secondary-bg: #81AD9C;
-    --secondary-bg: #778fe2;
-    
-    --secondary-bg: #98AFC7;
-    
-    --secondary-bg: #DAE1E7;
-    --secondary-bg: #BBC8D3;
+    --secondary-bg: #a5b1e5;
+    --tertiary-bg: #B9BC65;
+    --tertiary-bg: #C4AEAD;
+    /* pure silver */
+    --tertiary-bg: #C3C7C7;
+    --tertiary-bg: #D1CBC1;
+    --tertiary-bg: #BEC3C6;
 
-    --secondary-bg: #C4C3D0;
-    /* --secondary-bg: #b0b0bb; */
-    /* checked */
-    --tertiary-bg: #DBD7D2;
-    --tertiary-bg: #D3D3D3;
-    --tertiary-bg: #D1D0CE;
-    --tertiary-bg: #D0D0CD;
-    --tertiary-bg: #BBBCB6;
-
-    --tertiary-bg: #CCCDC6;
-
-
-    --tertiary-bg: #DADADA;
-
-    --about-bg: #C3D0BD;
-    --about-bg: #D4E0C7;
-    --about-bg: #C8D4C4;
-    
-    --about-bg: #B2BEB5;
-    --about-bg: #CCCDC6;
-
-    /* --about-bg: #BCC2C2; */
-
-    /* --about-bg: #C4C3D0; */
-
-    --complementary-bg: #C79998;
-    --complementary-bg: #ea7186;
-    --complementary-bg: #D3C6BB;
-    --complementary-bg: #D3BBBC;
-    
-    --complementary-bg: #D0C3CF;
-    --complementary-bg: #D0C3CF;
-    --complementary-bg: #C4AEAD;
-    --complementary-bg: #D0C3C9;
-
-    --project-container-hover: #b4968d;
-    --project-container-hover: #bbb0b5;
-    --project-container-hover: #b09d9c;
-    --project-container-hover: #c0b5b9;
+    --about-bg: #DB996C;
+    --about-bg: #BC9465;
+    --about-bg: #B5BDA5;
+    --complementary-bg: #c37499;
+    --project-container-hover: #de8c9b;
+    --project-container-hover: #bc658e;
     --banner-font-family: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
+    --title-font-weight: 600;
     --secondary-font-family: 'Courgette',
         cursive;
     --tertiary-font-family: 'Merriweather',
         serif;
     --buttons-font-family: 'Poppins', sans-serif;
-    --buttons-font-weight: 300;
+    --buttons-font-weight: 500;
     --primary-text-color: #1A1A1A;
     --primary-text-color: #0A0A0A;
     --helper-text-color: #0A0A0A;
@@ -126,243 +87,47 @@ sans-serif;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --btn-bg: #464086;
     --btn-bg: #3c3f58;
-    --buttons-hover-bg: #8dabb4;
-    --buttons-hover-bg: #b0b0bb;
+    --buttons-hover-bg: #99a6e1;
     --buttons-color: #FAFAFA;
     --active-nav-link: #D3BBBC;
-    --active-nav-link: #D0C3C9;
-    --toggle-btn: #aea0a1;
-    --toggle-btn: #8d8b8e;
-    --toggle-btn: #a7c5ce;
-    --toggle-btn: #C3C3C3;
-    --radio-btn: #7e8cae;
-    --radio-btn: #C6DCE4;
-    --radio-btn: #9CB4CC;
-    --radio-btn: #B2C8DF;
-    --radio-btn: #778ae8;
+    --active-nav-link: #c37499;
+    --toggle-btn: #AAAAAA;
+    --radio-btn: #c37499;
     --read-more: #BD1A43;
 }
 
 [data-theme='dark'] {
     --header-bg: #1E2024;
-    --header-bg: #231b2a;
-
-    --header-bg: #222629;
     --header-bg: #19181a;
     --header-bg: #1a1a1d;
-    --primary-bg: #181825;
-    --primary-bg: #1f2833;
-    --primary-bg: #0b0c10;
-
-    --primary-bg: #242424;
-
-    --primary-bg: #3f3e38;
-
-    --primary-bg: #003152;
-    --primary-bg: #0b1029;
-    --primary-bg: #290B1F;
-    --primary-bg: #3a1518;
-    --primary-bg: #060c23;
-    --primary-bg: #303c6c;
-
-    --primary-bg: #222b49;
-
-    --primary-bg: #0a0d10;
-
-    --primary-bg: #162129;
-
-    --primary-bg: #272640;
-
-    --primary-bg: #1e1f26;
-
-    --primary-bg: #172331;
-    --primary-bg: #162233;
-    --primary-bg: #181633;
-
-    --primary-bg: #101523;
-    --primary-bg: #14161d;
-
-
-
-    --primary-bg: #121214;
-    --primary-bg: #0a0d10;
-    --primary-bg: #00060e;
-
-    --primary-bg: #0e0e14;
     --primary-bg: #11151c;
-
-    --secondary-bg: #1e2037;
-    --secondary-bg: #1F1C28;
-    --secondary-bg: #122624;
-
-    --secondary-bg: #283655;
-    --secondary-bg: #26242d;
-
-    --secondary-bg: #212f45;
-    --secondary-bg: #1e2a3e;
-    --secondary-bg: #172130;
-    --secondary-bg: #1a2637;
-    --secondary-bg: #1e2952;
-    --secondary-bg: #1b254a;
-    --secondary-bg: #182142;
-    --secondary-bg: #151d39;
-
-    --secondary-bg: #1f2232;
-    --secondary-bg: #231d2b;
-    --secondary-bg: #1D1E2B;
-
-
-    --secondary-bg: #1f2232;
-
-    --secondary-bg: #1d2430;
     --secondary-bg: #1c1f28;
-
-    --tertiary-bg: #2c2b30;
-    --tertiary-bg: #1C2528;
-    --tertiary-bg: #2b2a33;
-    --tertiary-bg: #181a22;
-    --tertiary-bg: #1c1f28;
-    --tertiary-bg: #2a2a2a;
-    --tertiary-bg: #212024;
-    --tertiary-bg: #262529;
-
-
-    --tertiary-bg: #22202b;
-    --tertiary-bg: #24232C;
-
-    --tertiary-bg: #1d272a;
-
-    --tertiary-bg: #255944;
-    --tertiary-bg: #253A59;
-    --tertiary-bg: #221e47;
-    --tertiary-bg: #1C2528;
-    --tertiary-bg: #1F1C28;
-
-    --tertiary-bg: #281C25;
-
-    --tertiary-bg: #28251C;
-    --tertiary-bg: #232323;
-    --tertiary-bg: #2c2c2c;
-    --tertiary-bg: #1e2022;
     --tertiary-bg: #26262a;
-
-    --about-bg: #393832;
-    --about-bg: #253437;
-    --about-bg: #262a2e;
-    --about-bg: #2c2b27;
-    --about-bg: #32322d;
-    --about-bg: #393832;
-    --about-bg: #20282b;
-
-    --about-bg: #262529;
-    --about-bg: #262529;
-    --about-bg: #2E3332;
-
-    --about-bg: #32332E;
-    --about-bg: #252b30;
-
     --about-bg: #2a292e;
-
-    --complementary-bg: #412234;
-    --complementary-bg: #2f222d;
-    --complementary-bg: #52093c;
-    --complementary-bg: #3D0537;
-    --complementary-bg: #46223a;
-    --complementary-bg: #5c164e;
-    --complementary-bg: #4d243d;
-    --complementary-bg: #5e183a;
-    --complementary-bg: #501537;
-    --complementary-bg: #54282c;
-    
-    /* dark gray */
-    --complementary-bg: #2F2E33;
-    
-    --complementary-bg: #393832;
-    --complementary-bg: #382e35;
-    --complementary-bg: #403436;
-    --complementary-bg: #403734;
-    --complementary-bg: #2d2929;
-
-    --complementary-bg: #54282c;
-    --complementary-bg: #4c2428;
-    --complementary-bg: #692636;
-    --complementary-bg: #6f2232;
     --complementary-bg: #59253a;
-
-    --project-container-hover: #262529;
-    --project-container-hover: #302f32;
-    --project-container-hover: #2a292e;
-    --project-container-hover: #212129;
-    --project-container-hover: #46223a;
     --project-container-hover: #502134;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --banner-font-family: 'Playfair Display', serif;
     --banner-font-family: 'Poppins',
         sans-serif;
     --primary-font-family: 'Montserrat', sans-serif;
+    --title-font-weight: 500;
     --secondary-font-family: 'Courgette',
         cursive;
     --tertiary-font-family: 'Merriweather',
         serif;
     --buttons-font-family: 'Poppins', sans-serif;
-    --buttons-font-weight: 300;
-    --btn-bg: #3e3a73;
-    --btn-bg: #4b485b;
-    --btn-bg: #403539;
+    --buttons-font-weight: 400;
     --btn-bg: #1e171f;
     --buttons-hover-bg: #2d2e29;
     --buttons-hover-bg: #191c24;
     --buttons-color: #F8F8FC;
-    --primary-text-color: #C2C2C2;
-    --primary-text-color: #B5B5B5;
-    --primary-text-color: #E8E8E8;
     --primary-text-color: #DEDEDE;
     --secondary-font-weight: 300;
-    --secondary-text-color: #ADADAD;
     --secondary-text-color: #B5B5B5;
-    --helper-text-color: #dadaee;
     --helper-text-color: #8C8C8C;
-    --active-nav-link: #2F3B49;
-    --active-nav-link: #2f2f3b;
-    --active-nav-link: #414045;
-    --active-nav-link: #383640;
-    --active-nav-link: #403f47;
-    --active-nav-link: #45434B;
-
-    --active-nav-link: #52514c;
-    --active-nav-link: #3F3D44;
-    --active-nav-link: #3F3D44;
-
-    --active-nav-link: #304858;
-
-    --active-nav-link: #3f1f34;
-    --active-nav-link: #443842;
-    --active-nav-link: #77383e;
-    --active-nav-link: #324767;
-    --active-nav-link: #46223a;
-    --active-nav-link: #313134;
     --active-nav-link: #59253a;
-    --toggle-btn: #373138;
-    --toggle-btn: #2a2a35;
-    --toggle-btn: #303358;
-    --toggle-btn: #2C2C44;
-
-    --toggle-btn: #323238;
     --toggle-btn: #313134;
-    --radio-btn: #48232D;
-    --radio-btn: #4e2640;
-    --radio-btn: #603c53;
-    --radio-btn: #3f3e38;
-    --radio-btn: #77383e;
-    --radio-btn: #304858;
-    --radio-btn: #324767;
-
-    --radio-btn: #3f1f34;
-    --radio-btn: #443842;
-    --radio-btn: #444347;
-
-    --radio-btn: #46223a;
-    --radio-btn: #6f2232;
     --radio-btn: #59253a;
     --read-more: #82BDED;
 }

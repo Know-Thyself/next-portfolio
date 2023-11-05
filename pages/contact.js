@@ -150,7 +150,7 @@ const Contact = () => {
 				<section className={styles.intro}>
 					<h1>Contact Me</h1>
 					<p>
-						If you are an employer or recruiter looking for a developer or if
+						If you are an employer or a recruiter looking for a developer or if
 						you run a charity organisation and would like me to build a website
 						for your organisation which I am happy to do for free or just to get
 						to know me better, please get in touch using your preferred means of
