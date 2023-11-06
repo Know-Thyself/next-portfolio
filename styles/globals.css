@@ -55,64 +55,39 @@ sans-serif;
     --header-bg: #dcdcdc;
     --primary-bg: rgb(238, 237, 237);
     --primary-bg: #EEEEEE;
-    --secondary-bg: #a5b1e5;
-    --secondary-bg: #a5b1e5;
-    --secondary-bg: #9AB3F5;
-    --secondary-bg: #7579E7;
-    --secondary-bg: #949CDF;
-    --secondary-bg: #93B5C6;
-    --secondary-bg: #9A86A4;
-    --secondary-bg: #B1BCE6;
-    --secondary-bg: #9CB4CC;
-
-    --secondary-bg: #C0C374;
-    --secondary-bg: #C37498;
-    --secondary-bg: #C39E74;
-    --secondary-bg: #b08e68;
     
-    --secondary-bg: #B89B9C;
-    --secondary-bg: #9BABB8;
-    --secondary-bg: #9B9CB8;
-    --secondary-bg: #B2A4FF;
     
-    --secondary-bg: #9BABB8;
-    --secondary-bg: #9BB8A9;
     
-    --secondary-bg: #B89B9C;
-    
-    --secondary-bg: #7499C3;
-    --secondary-bg: #B89B9C;
-    --secondary-bg: #9bb8b7;
-    --secondary-bg: #BAABDA;
-    --secondary-bg: #7FA1D7;
-    --secondary-bg: #BEB2BB;
-    --secondary-bg: #B2BEB5;
+    /* current / bluish */
     --secondary-bg: #98AFC7;
-
-    /* --secondary-bg: #9EA3AC;
-    --secondary-bg: #A09EAC; */
-
-    --tertiary-bg: #B9BC65;
+    --secondary-bg: #9BABB8;
+    --secondary-bg: #a5b1e5;
+    /* greenish */
+    --secondary-bg: #9bb8b7;
+    --secondary-bg: #9BB8A9;
+    --secondary-bg: #9CB4CC;
+    
     --tertiary-bg: #C4AEAD;
     /* pure silver */
     --tertiary-bg: #C3C7C7;
     --tertiary-bg: #D1CBC1;
     --tertiary-bg: #BEC3C6;
-
+    
     --tertiary-bg: #BBBBBB;
-    --tertiary-bg: #AAAAAA;
     --tertiary-bg: #D0BFFF;
     --tertiary-bg: #BEBEBE;
-
-    --tertiary-bg: #C39E74;
-    --tertiary-bg: #D1D0CE;
-    --tertiary-bg: #DBD7D2;
-    --tertiary-bg: #DADBD2;
-    --tertiary-bg: #BBBCB6;
-
-    --tertiary-bg: #C7C6C1;
-    --tertiary-bg: #D5D5CD;
-
+    
+    --tertiary-bg: #9BABB8;
+    --tertiary-bg: #98AFC7;
+    --tertiary-bg: #BEBEBE;
+    --tertiary-bg: #BEBEBE;
+    --gradient-bg: #ACA79E;
+    --gradient-comp: #54626F;
+    --gradient-comp: #666A6D;
+    --gradient-comp: #414A4C;
+    --gradient-comp: #353839;
+    --gradient-comp: #40404F;
+    
     --about-bg: #DB996C;
     --about-bg: #D1D1CE;
     --about-bg: #B5BDA5;
@@ -120,42 +95,31 @@ sans-serif;
     --about-bg: #d0b393;
     --about-bg: #CCC7B9;
     --about-bg: #A8A9AD;
-
+    
     --about-bg: #B4B19A;
-
+    
     --about-bg: #B4AFA9;
+    --about-bg: #9BABB8;
     /* --about-bg: #CAD4D1; */
- 
-    --complementary-bg: #C37774;
-    --complementary-bg: #C37499;
-    --complementary-bg: #C37774;
-    --complementary-bg: #C37498;
-    --complementary-bg: #C39E74;
-    --complementary-bg: #BFB29E;
-    --complementary-bg: #B3A492;
-    --complementary-bg: #B39492;
-    --complementary-bg: #7499C3;
-    --complementary-bg: #9BABB8;
-    --complementary-bg: #9bb8b7;
-    --complementary-bg: #B89B9C;
-    --complementary-bg: #B89B9C;
-    --complementary-bg: #ABB89B;
-    --complementary-bg: #E97777;
     --complementary-bg: #9A86A4;
-
-    --complementary-bg: #FF6363;
+    
     /* pinkish */
-    --complementary-bg: #D77FA1;
     --complementary-bg: #B2BEB5;
     --complementary-bg: #C7B098;
-    --complementary-bg: #C79998;
-
+    
+    --complementary-bg: #C0C374;
+    --complementary-bg: #B8B79B;
     --complementary-bg: #ACA09E;
     --complementary-bg: #D7D2CB;
+    --complementary-bg: #B89B9C;
+    --complementary-bg: #C39E74;
+    --complementary-bg: #b08e68;
+    /* current */
     --complementary-bg: #ACA79E;
-    --project-container-hover: #688ab0;
+
     --project-container-hover: #bc658e;
     --project-container-hover: #a19483;
+    --project-container-hover: #9b968e;
     --banner-font-family: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --title-font-weight: 600;
@@ -215,6 +179,9 @@ sans-serif;
 
     --tertiary-bg: #333434;
     --tertiary-bg: #2c2c2c;
+    --gradient-bg: #502134;
+    --gradient-bg: #401a2a;
+    --gradient-comp: #11151c;
 
     --about-bg: #2a292e;
     --about-bg: #40404F;

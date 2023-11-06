@@ -23,6 +23,10 @@
     height: 200px;
     width: auto;
     border-radius: 50%;
+    /* background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient(to bottom right, var(--complementary-bg), var(--secondary-bg)); */
+    background-image: linear-gradient(var(--gradient-comp), var(--gradient-bg));
+    /* background-color: var(--tertiary-bg); */
 }
 
 .intro {
