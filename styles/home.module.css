@@ -25,7 +25,7 @@
     border-radius: 50%;
     /* background-image: linear-gradient(red, yellow);
     background-image: linear-gradient(to bottom right, var(--complementary-bg), var(--secondary-bg)); */
-    background-image: linear-gradient(var(--gradient-comp), var(--gradient-bg));
+    background-image: linear-gradient(var(--gradient-bg), var(--gradient-comp));
     /* background-color: var(--tertiary-bg); */
 }
 

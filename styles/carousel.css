@@ -128,10 +128,16 @@
     .slider {
         background-color: var(--radio-btn) !important;
         background-color: var(--secondary-bg) !important;
-        background-color: var(--complementary-bg) !important;
         background-color: var(--tertiary-bg) !important;
+        background-color: var(--complementary-bg) !important;
         background-color: var(--primary-bg) !important;
+        
     }
+
+    /* .carousel-container {
+        border: 2px solid var(--complementary-bg);
+
+    } */
 
     .slider img {
         width: 150px;
