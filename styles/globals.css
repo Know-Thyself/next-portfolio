@@ -64,6 +64,34 @@ sans-serif;
     --secondary-bg: #9A86A4;
     --secondary-bg: #B1BCE6;
     --secondary-bg: #9CB4CC;
+
+    --secondary-bg: #C0C374;
+    --secondary-bg: #C37498;
+    --secondary-bg: #C39E74;
+    --secondary-bg: #b08e68;
+    
+    --secondary-bg: #B89B9C;
+    --secondary-bg: #9BABB8;
+    --secondary-bg: #9B9CB8;
+    --secondary-bg: #B2A4FF;
+    
+    --secondary-bg: #9BABB8;
+    --secondary-bg: #9BB8A9;
+    
+    --secondary-bg: #B89B9C;
+    
+    --secondary-bg: #7499C3;
+    --secondary-bg: #B89B9C;
+    --secondary-bg: #9bb8b7;
+    --secondary-bg: #BAABDA;
+    --secondary-bg: #7FA1D7;
+    --secondary-bg: #BEB2BB;
+    --secondary-bg: #B2BEB5;
+    --secondary-bg: #98AFC7;
+
+    /* --secondary-bg: #9EA3AC;
+    --secondary-bg: #A09EAC; */
+
     --tertiary-bg: #B9BC65;
     --tertiary-bg: #C4AEAD;
     /* pure silver */
@@ -76,12 +104,58 @@ sans-serif;
     --tertiary-bg: #D0BFFF;
     --tertiary-bg: #BEBEBE;
 
+    --tertiary-bg: #C39E74;
+    --tertiary-bg: #D1D0CE;
+    --tertiary-bg: #DBD7D2;
+    --tertiary-bg: #DADBD2;
+    --tertiary-bg: #BBBCB6;
+
+    --tertiary-bg: #C7C6C1;
+    --tertiary-bg: #D5D5CD;
+
     --about-bg: #DB996C;
-    --about-bg: #BC9465;
+    --about-bg: #D1D1CE;
     --about-bg: #B5BDA5;
-    --complementary-bg: #c37499;
-    --project-container-hover: #de8c9b;
+    --about-bg: #BC9465;
+    --about-bg: #d0b393;
+    --about-bg: #CCC7B9;
+    --about-bg: #A8A9AD;
+
+    --about-bg: #B4B19A;
+
+    --about-bg: #B4AFA9;
+    /* --about-bg: #CAD4D1; */
+ 
+    --complementary-bg: #C37774;
+    --complementary-bg: #C37499;
+    --complementary-bg: #C37774;
+    --complementary-bg: #C37498;
+    --complementary-bg: #C39E74;
+    --complementary-bg: #BFB29E;
+    --complementary-bg: #B3A492;
+    --complementary-bg: #B39492;
+    --complementary-bg: #7499C3;
+    --complementary-bg: #9BABB8;
+    --complementary-bg: #9bb8b7;
+    --complementary-bg: #B89B9C;
+    --complementary-bg: #B89B9C;
+    --complementary-bg: #ABB89B;
+    --complementary-bg: #E97777;
+    --complementary-bg: #9A86A4;
+
+    --complementary-bg: #FF6363;
+    /* pinkish */
+    --complementary-bg: #D77FA1;
+    --complementary-bg: #B2BEB5;
+    --complementary-bg: #C7B098;
+    --complementary-bg: #C79998;
+
+    --complementary-bg: #ACA09E;
+    --complementary-bg: #D7D2CB;
+    --complementary-bg: #ACA79E;
+    --project-container-hover: #688ab0;
     --project-container-hover: #bc658e;
+    --project-container-hover: #a19483;
     --banner-font-family: 'Playfair Display', serif;
     --primary-font-family: 'Montserrat', sans-serif;
     --title-font-weight: 600;
@@ -101,12 +175,19 @@ sans-serif;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --btn-bg: #464086;
     --btn-bg: #3c3f58;
+    --buttons-hover-bg: #b08e68;
     --buttons-hover-bg: #99a6e1;
+    --buttons-hover-bg: #688ab0;
     --buttons-color: #FAFAFA;
-    --active-nav-link: #D3BBBC;
-    --active-nav-link: #c37499;
+    --active-nav-link: #bbad9d;
+    --active-nav-link: #dbacc2;
+    --active-nav-link: #C7B098;
+    --active-nav-link: #ACA79E;
     --toggle-btn: #AAAAAA;
-    --radio-btn: #c37499;
+    --radio-btn: #C37499;
+    --radio-btn: #B3A492;
+    --radio-btn: #C7B098;
+    --radio-btn: #ACA79E;
     --read-more: #BD1A43;
 }
 
