@@ -112,6 +112,7 @@
 
 .skill-card h6 {
     font-size: 0.65rem;
+    font-weight: 600;
     background-color: black;
     background-color: var(--complementary-bg);
     background-color: var(--secondary-bg);
