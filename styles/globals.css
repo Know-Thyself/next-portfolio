@@ -117,7 +117,9 @@ sans-serif;
     --header-bg: #1E2024;
     --header-bg: #19181a;
     --header-bg: #1a1a1d;
+    --primary-bg: #10161d;
     --primary-bg: #11151c;
+    --primary-bg: #0e1319;
     --secondary-bg: #242730;
     --secondary-bg: #1f2833;
     --secondary-bg: #222228;
@@ -130,6 +132,8 @@ sans-serif;
     --tertiary-bg: #26262c;
 
     --gradient-bg: #11151c;
+    --gradient-bg: #0e1319;
+    --gradient-bg: #020304;
     /* --gradient-bg: #111A1C; */
     --gradient-comp: #401a2a;
     --gradient-comp: #381724;

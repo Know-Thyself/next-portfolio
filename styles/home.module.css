@@ -1,6 +1,6 @@
 .home {
     background-color: var(--primary-bg);
-    background-color: var(--tertiary-bg);
+    /* background-color: var(--tertiary-bg); */
     color: var(--secondary-text-color);
     text-align: center;
     /* padding-top: 84px; */
@@ -116,7 +116,7 @@
     .home {
         /* padding-top: 7.5rem; */
         padding-bottom: 9.25rem;
-        background-color: var(--primary-bg);
+        /* background-color: var(--primary-bg); */
     }
 
     .hero {
