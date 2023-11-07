@@ -63,20 +63,22 @@ function HomePage({ summary, projects }): JSX.Element {
 				exit='exit'
 				key={'Welcome'}
 			>
-            <MultiCarousel images={images} />
+				<MultiCarousel images={images} />
 				<section className={styles.hero}>
 					<h1 className={styles.banner}>Hello & Welcome!</h1>
 					<div className={styles['hero-text-container']}>
-						<Image
-							className={styles['profile-photo']}
-							src={`/assets/images/${image}`}
-							loading='eager'
-							width={200}
-							height={200}
-							alt='Author'
-							placeholder='blur'
-							blurDataURL={`/assets/images/${image}`}
-						/>
+						<div className={styles['image-wrapper']}>
+							<Image
+								className={styles['profile-photo']}
+								src={`/assets/images/${image}`}
+								loading='eager'
+								width={200}
+								height={200}
+								alt='Author'
+								placeholder='blur'
+								blurDataURL={`/assets/images/${image}`}
+							/>
+						</div>
 						{intro.map((paragraph: string, idx: number) => (
 							<p key={idx} className={styles.intro}>
 								{paragraph}

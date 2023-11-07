@@ -1,5 +1,6 @@
 .home {
     background-color: var(--primary-bg);
+    background-color: var(--tertiary-bg);
     color: var(--secondary-text-color);
     text-align: center;
     /* padding-top: 84px; */
@@ -23,10 +24,7 @@
     height: 200px;
     width: auto;
     border-radius: 50%;
-    /* background-image: linear-gradient(red, yellow);
-    background-image: linear-gradient(to bottom right, var(--complementary-bg), var(--secondary-bg)); */
     background-image: linear-gradient(var(--gradient-bg), var(--gradient-comp));
-    /* background-color: var(--tertiary-bg); */
 }
 
 .intro {
@@ -118,6 +116,7 @@
     .home {
         /* padding-top: 7.5rem; */
         padding-bottom: 9.25rem;
+        background-color: var(--primary-bg);
     }
 
     .hero {

@@ -41,6 +41,10 @@
     border-radius: 8px;
 }
 
+/* .project-wrapper:hover {
+    transform: scale(0.9);
+} */
+
 .tooltip {
     visibility: hidden;
     width: max-content;
@@ -141,9 +145,12 @@
 }
 
 @media screen and (min-width: 467px) {
+    .projects-wrapper {
+        width: 80%;
+    }
+
     .project-title {
         font-size: 1rem;
-        /* font-weight: 400; */
     }
 
     .github-link,
@@ -184,6 +191,11 @@
 }
 
 @media screen and (min-width: 929px) {
+    .projects-wrapper {
+        width: 80%;
+        gap: 3rem;
+    }
+
     .projects-main-container {
         padding-bottom: 7rem;
     }
@@ -192,8 +204,9 @@
 @media screen and (min-width: 1224px) {
     .projects-wrapper {
         grid-template-columns: repeat(3, 1fr);
-        width: 94%;
+        width: 92%;
         padding: 3% 0;
+        gap: 3rem;
     }
 
     .project-wrapper:last-child:nth-child(2n - 2) {

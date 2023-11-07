@@ -118,37 +118,29 @@ sans-serif;
     --header-bg: #19181a;
     --header-bg: #1a1a1d;
     --primary-bg: #11151c;
-    
-    --secondary-bg: #1e2037;
-    --secondary-bg: #212d40;
-    --secondary-bg: #201e2b;
-    
-    --secondary-bg: #201e2b;
-    --secondary-bg: #1c1f28;
-    --secondary-bg: #1f2232;
-    
-    /* pushed */
     --secondary-bg: #242730;
-    
-    /* purplish */
-    --tertiary-bg: #2D2430;
-    --tertiary-bg: #353839;
-    --tertiary-bg: #343434;
+    --secondary-bg: #1f2833;
+    --secondary-bg: #222228;
 
     --tertiary-bg: #333434;
     --tertiary-bg: #2c2c2c;
-    --gradient-bg: #502134;
-    --gradient-bg: #11151c;
-    --gradient-comp: rgb(75, 17, 17);
-    --gradient-comp: #401a2a;
+    --tertiary-bg: #343434;
+    --tertiary-bg: #353839;
+    --tertiary-bg: #333333;
+    --tertiary-bg: #26262c;
 
+    --gradient-bg: #11151c;
+    /* --gradient-bg: #111A1C; */
+    --gradient-comp: #401a2a;
+    --gradient-comp: #381724;
     --about-bg: #2a292e;
     --about-bg: #40404F;
     /* graphite */
     --about-bg: #4B4E53;
     --about-bg: #2a2a28;
     --complementary-bg: #59253a;
-    --project-container-hover: #502134;
+    --complementary-bg: #502134;
+    --project-container-hover: #471e2e;
     --about-image-bg: url('/assets/images/background-destination-desktop.jpg');
     --banner-font-family: 'Playfair Display', serif;
     --banner-font-family: 'Poppins',
@@ -164,13 +156,14 @@ sans-serif;
     --btn-bg: #1e171f;
     --buttons-hover-bg: #2d2e29;
     --buttons-hover-bg: #191c24;
+    --buttons-hover-bg: #1f1f24;
     --buttons-color: #F8F8FC;
     --primary-text-color: #DEDEDE;
     --secondary-font-weight: 300;
     --secondary-text-color: #B5B5B5;
     --helper-text-color: #8C8C8C;
-    --active-nav-link: #59253a;
+    --active-nav-link: #502134;
     --toggle-btn: #313134;
-    --radio-btn: #59253a;
+    --radio-btn: #502134;
     --read-more: #82BDED;
 }

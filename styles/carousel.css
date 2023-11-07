@@ -51,6 +51,7 @@
     border: 0 !important;
     background-color: var(--active-nav-link) !important;
     background-color: var(--tertiary-bg) !important;
+    background-color: var(--primary-bg) !important;
 }
 
 
@@ -131,7 +132,11 @@
         background-color: var(--tertiary-bg) !important;
         background-color: var(--complementary-bg) !important;
         background-color: var(--primary-bg) !important;
-        
+
+    }
+
+    .custom-dot-list-style button {
+        background-color: var(--tertiary-bg) !important;
     }
 
     /* .carousel-container {
