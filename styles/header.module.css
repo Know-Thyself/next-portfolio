@@ -147,6 +147,7 @@
     .custom-nav-item .active,
     .menu__item:hover {
         background-color: var(--radio-btn) !important;
+        background-color: var(--active-nav-link) !important;
     }
 
 

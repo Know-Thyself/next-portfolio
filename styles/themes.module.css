@@ -77,9 +77,9 @@
 .switch-checkbox:checked+.switch-label .switch-button {
     left: calc(100% - 2px);
     transform: translateX(-100%);
+    background-color: var(--complementary-bg);
     background-color: var(--active-nav-link);
     background-color: var(--radio-btn);
-    background-color: var(--complementary-bg);
 }
 
 .switch-label:active .switch-button {
