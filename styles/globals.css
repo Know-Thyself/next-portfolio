@@ -81,8 +81,9 @@ sans-serif;
     --active-nav-link: #CCB49C;
     --active-nav-link: #9CB4CC;
     --toggle-btn: #AAAAAA;
+    --toggle-btn: #9CB4CC;
     --radio-btn: #CCB49C;
-    --radio-btn: #9CB4CC;
+    /* --radio-btn: #9CB4CC; */
     --read-more: #BD1A43;
 }
 
@@ -92,13 +93,22 @@ sans-serif;
     --primary-bg: #1f1f24;
     --secondary-bg: #2c2c32;
     --tertiary-bg: #2a2a2e;
+    --tertiary-bg: #363237;
+    --tertiary-bg: #552836;
+    --tertiary-bg: #222629;
+    --tertiary-bg: #272727;
+    --about-bg: #33332d;
+    --about-bg: #2d4262;
+    --about-bg: #282828;
+    --about-bg: #283655;
     --gradient-bg: #242037;
     --gradient-bg: #070708;
     --gradient-comp: #2d4262;
     --gradient-comp: #AA4B41;
-    --about-bg: #33332d;
     --complementary-bg: #37373F;
     --complementary-bg: #393932;
+
+    --complementary-bg: #303c6c;
     --project-container-hover: #474b4f;
     --project-container-hover: #464648;
     --project-container-hover: #33332d;
@@ -126,6 +136,8 @@ sans-serif;
     --helper-text-color: #adacac;
     --active-nav-link: #4e4e50;
     --active-nav-link: #3f3f37;
+    --active-nav-link: #45507b;
+    --toggle-btn: #45507b;
     --toggle-btn: #3f3f37;
     --radio-btn: #99443b;
     --read-more: #82BDED;
