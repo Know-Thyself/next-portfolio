@@ -8,34 +8,13 @@
 
 .slider {
     overflow: 'hidden';
-    background-color: var(--header-bg) !important;
-    background-color: var(--tertiary-bg) !important;
-    background-color: var(--secondary-bg) !important;
-    background-color: var(--complementary-bg) !important;
-    /* margin: 0 40px; */
+    background-image: linear-gradient(180deg, var(--complementary-bg), var(--project-container-hover), var(--tertiary-bg)) !important;
 }
 
 .carousel-container {
     width: 100% !important;
-    /* padding-left: 20px !important;
-    padding-right: 20px !important; */
     margin: auto;
 }
-
-/* .carousel-container, */
-/* .slider {
-    background-color: var(--complementary-bg);
-    background-color: var(--tertiary-bg);
-    padding: 1rem 0;
-} */
-
-/* .carousel-container {
-    background-color: goldenrod;
-    width: 80%;
-    margin: auto;
-} */
-
-
 
 .slider img {
     width: 160px;
@@ -54,15 +33,7 @@
     background-color: var(--active-nav-link) !important;
     background-color: var(--complementary-bg) !important;
     background-color: var(--tertiary-bg) !important;
-    /* background-color: var(--primary-bg) !important; */
 }
-
-
-/* .carousel-container .custom-dot-list-style button {
-    background-color: green !important;
-} */
-
-
 
 .react-multi-carousel-dot.react-multi-carousel-dot--active button {
     background-color: var(--read-more) !important;
@@ -126,50 +97,15 @@
 
 @media screen and (min-width: 1267px) {
     .parent {
-        /* padding: 84px 5% 0 5%; */
         width: 90%;
     }
 
-    .slider {
-        background-color: var(--radio-btn) !important;
-        background-color: var(--secondary-bg) !important;
-        background-color: var(--tertiary-bg) !important;
-        background-color: var(--complementary-bg) !important;
-        background-color: var(--primary-bg) !important;
-
-    }
-
-    /* .custom-dot-list-style button {
-        background-color: var(--tertiary-bg) !important;
-    } */
-
-    /* .carousel-container {
-        border: 2px solid var(--complementary-bg);
-
+    /* .slider {
+        background-image: linear-gradient(180deg, var(--project-container-hover), var(--gradient-comp), var(--tertiary-bg)) !important;
     } */
 
     .slider img {
         width: 150px;
         height: 80px;
     }
-
-    .react-multiple-carousel__arrow--right {
-        background: var(--tertiary-bg) !important;
-    }
-
-    .react-multiple-carousel__arrow--left {
-        background: var(--tertiary-bg) !important;
-    }
 }
-
-/* @media screen and (max-width: 1266px) {
-    .parent {
-        width: 80%;
-        margin: auto;
-    }
-
-    .slider {
-        background-color: var(--body-bg);
-        margin: 0 40px;
-    }
-} */
