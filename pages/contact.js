@@ -232,6 +232,8 @@ const Contact = () => {
 									sx={{
 										'& .MuiFormHelperText-root': {
 											color: 'var(--helper-text-color)',
+											fontSize: '14px',
+											fontWeight: '400',
 										},
 									}}
 								/>
@@ -253,6 +255,8 @@ const Contact = () => {
 									sx={{
 										'& .MuiFormHelperText-root': {
 											color: 'var(--helper-text-color)',
+											fontSize: '14px',
+											fontWeight: '400',
 										},
 									}}
 								/>
@@ -268,6 +272,8 @@ const Contact = () => {
 									sx={{
 										'& .MuiFormHelperText-root': {
 											color: 'var(--helper-text-color)',
+											fontSize: '14px',
+											fontWeight: '400',
 										},
 									}}
 								/>
@@ -294,6 +300,8 @@ const Contact = () => {
 									sx={{
 										'& .MuiFormHelperText-root': {
 											color: 'var(--helper-text-color)',
+											fontSize: '14px',
+											fontWeight: '400',
 										},
 										'& .Mui-error': {
 											color: '#f44336',
@@ -307,10 +315,7 @@ const Contact = () => {
 								/>
 							</div>
 							<br />
-							<button
-								onClick={handleSubmit}
-								className={`btn ${styles.send}`}
-							>
+							<button onClick={handleSubmit} className={`btn ${styles.send}`}>
 								{buttonText} &nbsp;
 								<FontAwesomeIcon
 									icon={faPaperPlane}

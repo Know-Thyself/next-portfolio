@@ -83,9 +83,9 @@
     text-align: left;
     width: 95%;
     margin: auto;
-    color: var(--secondary-text-color);
     color: var(--helper-text-color);
-    opacity: 0.85;
+    color: var(--secondary-text-color);
+    font-weight: 500;
     padding-top: 0.5rem;
 }
 
