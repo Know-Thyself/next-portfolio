@@ -20,7 +20,8 @@
 }
 
 .back-btn {
-    color: var(--buttons-color);
+    background-color: var(--custom-btn-bg);
+    color: var(--custom-btn-color);
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -28,11 +29,12 @@
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
     text-transform: capitalize;
-    background-color: var(--radio-btn);
 }
 
 .back-btn:hover {
-    background-color: var(--secondary-bg);
+    background-color: var(--github-btn-bg);
+    color: var(--custom-btn-color);
+
 }
 
 .project-wrapper {
@@ -123,11 +125,21 @@
     /* font-size: 1rem; */
     font-weight: var(--buttons-font-weight);
     text-transform: capitalize;
+    color: var(--custom-btn-color);
+}
+
+/* .live-demo-link {
+    background-color: var(--custom-btn-bg);
+} */
+
+.github-link,
+.live-demo-link {
+    background-color: var(--github-btn-bg);
 }
 
 .fa-github {
     font-size: 1.12rem;
-    color: var(--buttons-color);
+    color: var(--custom-btn-color);;
 }
 
 @media screen and (min-width: 667px) {

@@ -16,8 +16,8 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const About = ({ summary }) => {
 	const str = summary[0].bio
-    const bio = str.split(/\\n/)
-    
+	const bio = str.split(/\\n/)
+
 	const springVariant = {
 		start: {
 			y: -100,
@@ -73,13 +73,15 @@ const About = ({ summary }) => {
 							<motion.div
 								whileHover={{
 									scale: 1.1,
-									color: 'white',
+									backgroundColor: 'var(--github-btn-bg)',
+									color: 'var(--custom-btn-color)',
+									borderRadius: '4px',
 								}}
 								whileTap={{ scale: 0.9 }}
 							>
 								<Link
 									href='/contact'
-									className={`btn btn-primary border-0 ${styles.contact}`}
+									className={`btn border-0 ${styles.contact}`}
 								>
 									Contact Me
 								</Link>
@@ -102,19 +104,24 @@ const About = ({ summary }) => {
 									Resume Download
 								</Link>
 							</motion.div> */}
-							<motion.button
-								className={`btn btn-primary border-0 ${styles.download}`}
+							<motion.div
 								whileHover={{
 									scale: 1.1,
-									color: 'white',
+									backgroundColor: 'var(--github-btn-bg)',
+									color: 'var(--custom-btn-color)',
+									borderRadius: '4px',
 								}}
 								whileTap={{ scale: 0.9 }}
-								onClick={() =>
-									alert('Resume download is currently unavailable.')
-								}
 							>
-								Resume Download
-							</motion.button>
+								<button
+									onClick={() =>
+										alert('Resume download is currently unavailable.')
+									}
+									className={`btn border-0 ${styles.download}`}
+								>
+									Resume Download
+								</button>
+							</motion.div>
 						</div>
 					</div>
 				</section>

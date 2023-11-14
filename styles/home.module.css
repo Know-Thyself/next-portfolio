@@ -13,9 +13,12 @@
 }
 
 .banner {
-    font-family: var(--secondary-font-family);
-    color: var(--secondary-text-color);
-    font-size: 1.75rem;
+    /* font-family: var(--secondary-font-family);
+    font-size: 1.75rem; */
+    font: var(--hero-font);
+    /* font-size: 1.75rem; */
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-text-color);
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -29,8 +32,11 @@
 
 .intro {
     font-family: var(--secondary-font-family);
+    font-family: var(--primary-font-family);
     color: var(--secondary-text-color);
-    font-size: 1rem;
+    color: var(--primary-text-color);
+    font-weight: var(--secondary-font-weight);
+    /* font-size: 1rem; */
     line-height: 1.5rem;
     text-align: left;
     letter-spacing: 0.25px;
@@ -43,7 +49,8 @@
     gap: 1rem;
 }
 
-.link {
+.github-link,
+.projects-link {
     font-family: var(--buttons-font-family);
     font-weight: var(--buttons-font-weight);
     text-decoration: none;
@@ -54,11 +61,24 @@
 
 }
 
+.projects-link {
+    background-color: var(--custom-btn-bg);
+    color: var(--custom-btn-color);
+}
 
-.link .fa-github {
+.github-link {
+    background-color: var(--github-btn-bg);
+    color: var(--custom-btn-color);
+}
+
+.github-link .fa-github {
     font-size: 1.1rem;
     vertical-align: middle;
 }
+
+/* .custom-btn {
+    background-color: var(--custom-btn-bg);
+} */
 
 @media screen and (min-width: 667px) {
     .hero {
@@ -87,12 +107,13 @@
         gap: 2rem;
     }
 
-    .link {
+    .github-link,
+    .projects-link {
         padding: 0.65rem 1.2rem;
         font-size: 1.1rem;
     }
 
-    .link .fa-github {
+    .github-link .fa-github {
         font-size: 1.3rem;
     }
 }
@@ -136,6 +157,8 @@
     .banner {
         margin-top: 0;
         font-size: 2.5rem;
+        background-color: var(--hero-bg);
+        text-align: center;
     }
 
     .profile-photo {

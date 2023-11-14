@@ -86,14 +86,31 @@ function HomePage({ summary, projects }): JSX.Element {
 						))}
 					</div>
 					<div className={styles['links-wrapper']}>
+						<motion.div
+							whileHover={{
+								scale: 1.2,
+								borderRadius: '4px',
+								backgroundColor: 'var(--custom-btn-bg)',
+								color: 'var(--custom-btn-color)',
+							}}
+							whileTap={{ scale: 0.8 }}
+						>
+							<Link
+								href='/projects'
+								className={`btn border-0 ${styles['projects-link']}`}
+							>
+								Projects
+							</Link>
+						</motion.div>
 						<motion.a
 							href='https://github.com/Know-Thyself'
 							target='_blank'
 							rel='noreferrer'
-							className={`btn btn-primary border-0 text-white ${styles.link}`}
+							className={`btn border-0 ${styles['github-link']}`}
 							whileHover={{
 								scale: 1.2,
-								borderRadius: '4px',
+								backgroundColor: 'var(--github-btn-bg)',
+								color: 'var(--custom-btn-color)',
 							}}
 							whileTap={{ scale: 0.8 }}
 						>
@@ -103,20 +120,6 @@ function HomePage({ summary, projects }): JSX.Element {
 							/>
 							<span>&nbsp; GitHub</span>
 						</motion.a>
-						<motion.div
-							whileHover={{
-								scale: 1.2,
-								borderRadius: '4px',
-							}}
-							whileTap={{ scale: 0.8 }}
-						>
-							<Link
-								href='/projects'
-								className={`btn btn-primary border-0 ${styles.link}`}
-							>
-								Projects
-							</Link>
-						</motion.div>
 					</div>
 				</section>
 			</motion.div>

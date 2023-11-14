@@ -9,6 +9,7 @@
 .slider {
     overflow: 'hidden';
     background-image: linear-gradient(180deg, var(--complementary-bg), var(--project-container-hover), var(--tertiary-bg)) !important;
+    background-image: linear-gradient(180deg, var(--active-nav-link), var(--tertiary-bg), var(--tertiary-bg)) !important;
 }
 
 .carousel-container {

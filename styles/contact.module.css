@@ -120,9 +120,9 @@
 }
 
 .send {
-    color: var(--buttons-color);
+    color: var(--custom-btn-color);
     background-color: var(--secondary-bg);
-    background-color: var(--btn-bg);
+    background-color: var(--custom-btn-bg);
     transition: transform 0.2s;
     font-family: var(--buttons-font-family);
     text-transform: uppercase;
@@ -139,8 +139,8 @@
 
 .send:hover {
     background-color: var(--secondary-bg);
-    background-color: var(--btn-bg);
-    color: var(--buttons-color);
+    background-color: var(--custom-btn-bg);
+    color: var(--custom-btn-color);
     transform: scale(1.2);
 }
 

@@ -89,12 +89,28 @@ const ProjectDetail = ({ project }) => {
 						</div>
 						<div className={styles['project-links-wrapper']}>
 							<motion.a
+								href={project.demo}
+								target='_blank'
+								rel='noreferrer'
+								className={`btn border-0 ${styles['live-demo-link']}`}
+								whileHover={{
+									scale: 1.1,
+									backgroundColor: 'var(--github-btn-bg)',
+									color: 'var(--custom-btn-color)',
+								}}
+								whileTap={{ scale: 0.9 }}
+							>
+								Live Demo
+							</motion.a>
+							<motion.a
 								href={project.repository}
 								target='_blank'
 								rel='noreferrer'
-								className={`btn btn-primary border-0 ${styles['github-link']}`}
+								className={`btn border-0 ${styles['github-link']}`}
 								whileHover={{
 									scale: 1.1,
+									backgroundColor: 'var(--github-btn-bg)',
+									color: 'var(--custom-btn-color)',
 								}}
 								whileTap={{ scale: 0.9 }}
 							>
@@ -104,25 +120,13 @@ const ProjectDetail = ({ project }) => {
 								/>
 								&nbsp; GitHub
 							</motion.a>
-							<motion.a
-								href={project.demo}
-								target='_blank'
-								rel='noreferrer'
-								className={`btn btn-primary border-0 ${styles['live-demo-link']}`}
-								whileHover={{
-									scale: 1.1,
-								}}
-								whileTap={{ scale: 0.9 }}
-							>
-								Live Demo
-							</motion.a>
 						</div>
 					</div>
 				)}
 				<div>
 					<Link
 						href='/projects'
-						className={`btn btn-dark border-0 ${styles['back-btn']}`}
+						className={`btn border-0 ${styles['back-btn']}`}
 					>
 						<FontAwesomeIcon className={styles['fa-left']} icon={faArrowLeft} />
 						&nbsp; All Projects

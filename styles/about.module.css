@@ -51,6 +51,8 @@
 .download {
     font-family: var(--buttons-font-family);
     font-weight: var(--buttons-font-weight);
+    background-color: var(--github-btn-bg);
+    color: var(--custom-btn-color);
     text-decoration: none;
     text-transform: capitalize;
     padding: 0.75rem 1.2rem;
@@ -59,8 +61,8 @@
     margin-right: 1rem;
     border: none;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 var(--buttons-hover-bg);
-    transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    /* box-shadow: inset 0 0 0 0 var(--buttons-hover-bg);
+    transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out; */
 }
 
 .skills-section {
