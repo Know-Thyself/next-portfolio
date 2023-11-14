@@ -13,11 +13,10 @@
 }
 
 .banner {
-    /* font-family: var(--secondary-font-family);
-    font-size: 1.75rem; */
+    font-family: var(--secondary-font-family);
     font: var(--hero-font);
-    /* font-size: 1.75rem; */
     font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
     color: var(--primary-text-color);
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -89,7 +88,7 @@
     .banner {
         text-align: left;
         margin-bottom: 1.5rem;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .profile-photo {
@@ -129,6 +128,9 @@
 
     .banner {
         font-weight: 900;
+        font-size: 4rem;
+        /* font: var(--hero-font);
+        font-family: 'Montserrat', sans-serif; */
     }
 
 }
