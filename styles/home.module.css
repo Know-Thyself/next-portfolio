@@ -59,7 +59,7 @@
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
     vertical-align: middle;
-    font-size: 1.1rem;
+    font-size: 1rem;
 
 }
 
@@ -69,12 +69,12 @@
 }
 
 .github-link {
-    background-color: var(--github-btn-bg);
+    background-color: var(--github-btn-mobile);
     color: var(--custom-btn-color);
 }
 
 .github-link .fa-github {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     vertical-align: middle;
 }
 
@@ -117,7 +117,7 @@
     }
 
     .github-link .fa-github {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -174,6 +174,11 @@
 
     .hero-text-container h4 {
         font-size: 1.5rem;
+    }
+
+    .github-link {
+        background-color: var(--github-btn-bg);
+        color: var(--custom-btn-color);
     }
 
 }
