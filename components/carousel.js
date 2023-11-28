@@ -9,17 +9,22 @@ import technologies from '../technologies.json'
 const MultiCarousel = ({ images }) => {
 	const responsive = {
 		desktop: {
-			breakpoint: { max: 3000, min: 1324 },
+			breakpoint: { max: 4000, min: 1348 },
 			items: 5,
 			slidesToSlide: 4,
 		},
 		laptop: {
-			breakpoint: { max: 1323, min: 1068 },
+			breakpoint: { max: 1347, min: 1298 },
+			items: 4,
+			slidesToSlide: 3,
+		},
+		laptop: {
+			breakpoint: { max: 1297, min: 1064 },
 			items: 3,
 			slidesToSlide: 2,
 		},
 		tablet: {
-			breakpoint: { max: 1067, min: 545 },
+			breakpoint: { max: 1063, min: 545 },
 			items: 2,
 			slidesToSlide: 1,
 		},
