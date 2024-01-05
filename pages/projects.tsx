@@ -70,9 +70,7 @@ const Projects = ({ projects, setProject }) => {
 				initial='start'
 				animate='end'
 				exit='exit'
-				// initial={{ opacity: 0, transition: { duration: 1 } }}
-				// animate={{ opacity: 1 }}
-				
+				key='projects'
 			>
 				<h4 className={styles['page-title']}>CHECK OUT MY PROJECTS</h4>
 				<div className={styles['projects-wrapper']}>
@@ -90,7 +88,6 @@ const Projects = ({ projects, setProject }) => {
 								initial='hidden'
 								animate={control}
 								whileInView='visible'
-								key='projects'
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<div className={styles['image-tooltip-container']}>
