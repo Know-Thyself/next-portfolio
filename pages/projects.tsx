@@ -58,6 +58,7 @@ const Projects = ({ projects, setProject }) => {
 				exit='exit'
 				key='projects'
 			>
+            <h4 className={styles['page-title']}>CHECK OUT MY PROJECTS</h4>
 				<div className={styles['projects-wrapper']}>
 					{projects.map((project: object | any) => {
 						return (

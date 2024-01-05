@@ -7,9 +7,58 @@
     padding-bottom: 14rem;
 }
 
+.top-left-bracket {
+    margin-top: 1rem;
+}
+
+.horizontal-bar {
+    width: 240px;
+    height: 20px;
+    background: linear-gradient(to right, var(--complementary-bg), var(--gradient-comp));
+    background-image: linear-gradient(to right, var(--gradient-bg),
+            var(--complementary-bg));
+}
+
+.horizontal-bar:after {
+    content: "";
+    position: absolute;
+    left: 220px;
+    width: 40px;
+    height: 40px;
+    top: 216px;
+    transform: rotate(45deg);
+    background-color: yellow;
+    background-color: var(--primary-bg);
+    overflow: hidden;
+}
+
+.vertical-bar {
+    width: 20px;
+    height: 220px;
+    background: linear-gradient(to bottom, #125059, #591b12);
+    background-image: linear-gradient(to bottom, var(--gradient-bg),
+            var(--complementary-bg));
+}
+
+.vertical-bar:after {
+    content: "";
+    position: absolute;
+    margin-top: 200px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    background-color: var(--primary-bg);
+    overflow: hidden;
+}
+
+
+
 .hero {
     width: 85%;
     margin: auto;
+    margin-top: -220px;
+    position: relative;
+    z-index: 4;
 }
 
 .banner {
@@ -60,6 +109,7 @@
     border-radius: 4px;
     vertical-align: middle;
     font-size: 1rem;
+    z-index: 2;
 
 }
 
@@ -78,6 +128,55 @@
     vertical-align: middle;
 }
 
+.right-bottom-bracket {
+    position: absolute;
+    bottom: 12rem;
+    right: 0;
+}
+
+.bottom-horizontal-bar {
+    width: 240px;
+    height: 20px;
+    background: linear-gradient(to left, var(--gradient-bg),
+            var(--complementary-bg));
+
+}
+
+.bottom-horizontal-bar:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 220px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    background-color: var(--primary-bg);
+    overflow: hidden;
+    /* to see where it is */
+}
+
+.bottom-vertical-bar {
+    width: 20px;
+    height: 220px;
+    background: linear-gradient(to top, var(--gradient-bg),
+            var(--complementary-bg));
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+.bottom-vertical-bar:after {
+    content: "";
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    background-color: var(--primary-bg);
+    overflow: hidden;
+}
+
 /* .custom-btn {
     background-color: var(--custom-btn-bg);
 } */
@@ -86,6 +185,20 @@
     .hero {
         width: 75%;
         padding-bottom: 0;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .top-left-bracket {
+        margin-left: 12.5%;
+    }
+
+    .right-bottom-bracket {
+        right: 12.5%;
+    }
+
+    .horizontal-bar:after {
+        left: calc(220px + 12.5%);
     }
 
     .banner {
@@ -126,6 +239,18 @@
         padding-bottom: 10rem;
     }
 
+    .top-left-bracket {
+        margin-left: 15%;
+    }
+
+    .right-bottom-bracket {
+        right: 15%;
+    }
+
+    .horizontal-bar:after {
+        left: calc(220px + 15%);
+    }
+
     .hero {
         width: 70%;
     }
@@ -137,6 +262,10 @@
         font-family: 'Montserrat', sans-serif; */
     }
 
+    .right-bottom-bracket {
+        bottom: 7rem;
+    }
+
 }
 
 @media screen and (min-width: 1267px) {
@@ -146,18 +275,32 @@
         /* background-color: var(--primary-bg); */
     }
 
+    .top-left-bracket {
+        margin-left: 5%;
+    }
+
+    .right-bottom-bracket {
+        right: 5%;
+    }
+
+    .horizontal-bar:after {
+        left: calc(220px + 5%);
+    }
+
     .hero {
-        width: 80%;
-        width: 90%;
+        width: calc(90% - 60px);
         border-radius: 20%;
         border-radius: 10px;
         background-color: var(--complementary-bg);
         background-color: var(--tertiary-bg);
         padding: 2rem 6rem;
+        margin-top: -210px;
+        margin-bottom: -6px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 0.5rem;
+        /* margin-top: 0.5rem; */
+        /* margin-top: -174px; */
     }
 
     .banner {
@@ -184,15 +327,28 @@
 }
 
 @media screen and (min-width: 1500px) {
-    .home {
+
+    /* .home {
         min-height: 100%;
         display: flex;
         align-items: center;
+    } */
+    .hero {
+        width: calc(80% - 60px);
     }
 
-    .hero {
-        width: 70%;
+    .top-left-bracket {
+        margin-left: 10%;
     }
+
+    .right-bottom-bracket {
+        right: 10%;
+    }
+
+    .horizontal-bar:after {
+        left: calc(220px + 10%);
+    }
+
 }
 
 @media screen and (min-width: 1700px) {

@@ -64,6 +64,10 @@ function HomePage({ summary, projects }): JSX.Element {
 				key={'Welcome'}
 			>
 				<MultiCarousel images={images} />
+				<div className={styles['top-left-bracket']}>
+					<div className={styles['horizontal-bar']}></div>
+					<div className={styles['vertical-bar']}></div>
+				</div>
 				<section className={styles.hero}>
 					<h1 className={styles.banner}>Hello & Welcome!</h1>
 					<div className={styles['hero-text-container']}>
@@ -122,6 +126,10 @@ function HomePage({ summary, projects }): JSX.Element {
 						</motion.a>
 					</div>
 				</section>
+				<div className={styles['right-bottom-bracket']}>
+					<div className={styles['bottom-vertical-bar']}></div>
+					<div className={styles['bottom-horizontal-bar']}></div>
+				</div>
 			</motion.div>
 		</AnimatePresence>
 	)
