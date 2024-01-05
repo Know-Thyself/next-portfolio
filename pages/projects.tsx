@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/projects.module.css'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, useAnimation } from 'framer-motion'
 import prisma from '../lib/prisma'
 import Image from 'next/image'
 import { GetStaticProps } from 'next'
@@ -10,6 +10,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
+import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react'
 
 export const getStaticProps: GetStaticProps = async () => {
 	const projects = await prisma.projects.findMany()
@@ -23,7 +25,8 @@ const Projects = ({ projects, setProject }) => {
 		let projectsList = { title: project.title, image: project.image }
 		return projectsList
 	})
-	// console.log(images)
+	const control = useAnimation()
+	const [ref, inView] = useInView()
 
 	const springVariant = {
 		start: {
@@ -44,6 +47,17 @@ const Projects = ({ projects, setProject }) => {
 		},
 	}
 
+	const boxVariant = {
+		visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+		hidden: { opacity: 0, scale: 0 },
+	}
+
+	useEffect(() => {
+		if (inView) {
+			control.start('visible')
+		}
+	}, [control, inView])
+
 	return (
 		<AnimatePresence>
 			<Head>
@@ -56,19 +70,27 @@ const Projects = ({ projects, setProject }) => {
 				initial='start'
 				animate='end'
 				exit='exit'
-				key='projects'
+				// initial={{ opacity: 0, transition: { duration: 1 } }}
+				// animate={{ opacity: 1 }}
+				
 			>
-            <h4 className={styles['page-title']}>CHECK OUT MY PROJECTS</h4>
+				<h4 className={styles['page-title']}>CHECK OUT MY PROJECTS</h4>
 				<div className={styles['projects-wrapper']}>
 					{projects.map((project: object | any) => {
 						return (
-							<div
+							<motion.div
 								key={project.id}
 								className={styles['project-wrapper']}
 								onClick={() => {
 									setProject(project)
 									router.push('/details')
 								}}
+								ref={ref}
+								variants={boxVariant}
+								initial='hidden'
+								animate={control}
+								whileInView='visible'
+								key='projects'
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<div className={styles['image-tooltip-container']}>
@@ -109,7 +131,7 @@ const Projects = ({ projects, setProject }) => {
 										Live Demo
 									</a>
 								</div>
-							</div>
+							</motion.div>
 						)
 					})}
 				</div>
