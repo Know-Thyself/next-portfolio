@@ -130,8 +130,10 @@
 
 .right-bottom-bracket {
     position: absolute;
-    bottom: 12rem;
+    /* bottom: 12rem; */
+    /* bottom: 84px; */
     right: 0;
+    margin-top: 0.75rem;
 }
 
 .bottom-horizontal-bar {
