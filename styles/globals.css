@@ -16,6 +16,7 @@ body {
     bottom: 0;
     width: 100%;
     background-color: var(--primary-bg);
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;

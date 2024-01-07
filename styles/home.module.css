@@ -176,7 +176,6 @@
     height: 40px;
     transform: rotate(45deg);
     background-color: var(--primary-bg);
-    /* overflow: hidden; */
 }
 
 /* .custom-btn {
