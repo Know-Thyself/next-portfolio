@@ -151,7 +151,7 @@
     height: 40px;
     transform: rotate(45deg);
     background-color: var(--primary-bg);
-    overflow: hidden;
+    /* overflow: hidden; */
     /* to see where it is */
 }
 
@@ -174,7 +174,7 @@
     height: 40px;
     transform: rotate(45deg);
     background-color: var(--primary-bg);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* .custom-btn {
