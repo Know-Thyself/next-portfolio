@@ -175,16 +175,16 @@ function HomePage({ summary, projects }): JSX.Element {
 						</motion.a>
 					</div>
 				</motion.section>
-				<motion.div
+				<div
 					className={styles['right-bottom-bracket']}
-					variants={bracketVariant}
-					initial='hidden'
-					animate='visible'
-					exit='exit'
+					// variants={bracketVariant}
+					// initial='hidden'
+					// animate='visible'
+					// exit='exit'
 				>
 					<div className={styles['bottom-vertical-bar']}></div>
 					<div className={styles['bottom-horizontal-bar']}></div>
-				</motion.div>
+				</div>
 			</motion.div>
 		</AnimatePresence>
 	)
