@@ -95,8 +95,8 @@ const Projects = ({ projects, setProject }) => {
 								initial='hidden'
 								// animate={control}
 								whileInView='visible'
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 1.2 }}
+								whileHover={{ scale: 0.9 }}
+								whileTap={{ scale: 1.1 }}
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<div className={styles['image-tooltip-container']}>
