@@ -49,6 +49,16 @@ function HomePage({ summary, projects }): JSX.Element {
 		},
 	}
 
+	const scrollVariant = {
+		visible: {
+			opacity: 1,
+			scale: 1,
+			y: 0,
+			transition: { duration: 2, delay: 0.3, type: 'spring', stiffness: 30 },
+		},
+		hidden: { opacity: 0, scale: 0, y: "30%" },
+	}
+
 	return (
 		<AnimatePresence>
 			<Head>
@@ -61,6 +71,9 @@ function HomePage({ summary, projects }): JSX.Element {
 				initial='start'
 				animate='end'
 				exit='exit'
+				// variants={scrollVariant}
+				// initial='hidden'
+				// whileInView='visible'
 				key={'Welcome'}
 			>
 				<MultiCarousel images={images} />
@@ -68,7 +81,12 @@ function HomePage({ summary, projects }): JSX.Element {
 					<div className={styles['horizontal-bar']}></div>
 					<div className={styles['vertical-bar']}></div>
 				</div>
-				<section className={styles.hero}>
+				<motion.section
+					className={styles.hero}
+					variants={scrollVariant}
+					initial='hidden'
+					whileInView='visible'
+				>
 					<h1 className={styles.banner}>Hello & Welcome!</h1>
 					<div className={styles['hero-text-container']}>
 						<div className={styles['image-wrapper']}>
@@ -125,7 +143,7 @@ function HomePage({ summary, projects }): JSX.Element {
 							<span>&nbsp; GitHub</span>
 						</motion.a>
 					</div>
-				</section>
+				</motion.section>
 				<div className={styles['right-bottom-bracket']}>
 					<div className={styles['bottom-vertical-bar']}></div>
 					<div className={styles['bottom-horizontal-bar']}></div>

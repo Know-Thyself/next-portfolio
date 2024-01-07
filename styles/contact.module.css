@@ -15,6 +15,11 @@
 
 }
 
+.scroll {
+    display: flex;
+    flex-direction: column;
+}
+
 .intro {
     width: 85%;
     margin: auto;

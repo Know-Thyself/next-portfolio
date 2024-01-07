@@ -34,6 +34,36 @@ const About = ({ summary }) => {
 		},
 	}
 
+	const scrollVariant = {
+		visible: {
+            y: 0,
+			opacity: 1,
+			scale: 1,
+			transition: { duration: 1, staggerChildren: 1 },
+		},
+		hidden: {y: 100, opacity: 0, scale: 0 },
+	}
+
+	const leftVariant = {
+		visible: {
+			opacity: 1,
+			scale: 1,
+			x: 0,
+			transition: { duration: 3 },
+		},
+		hidden: { x: '-200%' },
+	}
+
+	const rightVariant = {
+		visible: {
+			opacity: 1,
+			scale: 1,
+			x: 0,
+			transition: { duration: 3 },
+		},
+		hidden: { x: '200%' },
+	}
+
 	return (
 		<AnimatePresence>
 			<Head>
@@ -48,8 +78,20 @@ const About = ({ summary }) => {
 				exit='exit'
 				key={'about'}
 			>
-				<section className={styles['about-section']}>
-					<div className={styles['about-img-wrapper']}>
+				<motion.section
+					className={styles['about-section']}
+					variants={scrollVariant}
+					initial='hidden'
+					whileInView='visible'
+					viewport={{ once: true }}
+				>
+					<motion.div
+						className={styles['about-img-wrapper']}
+						variants={leftVariant}
+						initial='hidden'
+						whileInView='visible'
+						viewport={{ once: true }}
+					>
 						<Image
 							src={'/assets/images/about.png'}
 							alt='Picture of the author'
@@ -63,8 +105,14 @@ const About = ({ summary }) => {
               (max-width: 1200px) 50vw,
               33vw'
 						/>
-					</div>
-					<div className={styles['about-text-wrapper']}>
+					</motion.div>
+					<motion.div
+						className={styles['about-text-wrapper']}
+						variants={rightVariant}
+						initial='hidden'
+						whileInView='visible'
+						viewport={{ once: true }}
+					>
 						<h1>About Me</h1>
 						{bio.map((paragraph: string, idx: number) => (
 							<p key={idx}>{paragraph}</p>
@@ -123,15 +171,25 @@ const About = ({ summary }) => {
 								</button>
 							</motion.div>
 						</div>
-					</div>
-				</section>
-				<section className={styles['skills-section']}>
+					</motion.div>
+				</motion.section>
+				<motion.section
+					className={styles['skills-section']}
+					variants={scrollVariant}
+					initial='hidden'
+					whileInView='visible'
+				>
 					<div>
 						<h1>Technology Stacks & Skill Sets</h1>
 						<p>Technologies I love and use proficiently</p>
 					</div>
 					<div className={styles['tech-stacks']}>
-						<div className={styles['skill-card']}>
+						<motion.div
+							className={styles['skill-card']}
+							variants={leftVariant}
+							initial='hidden'
+							whileInView='visible'
+						>
 							<h6>Frontend Technologies</h6>
 							<Link
 								href='https://www.w3.org/standards/webdesign/htmlcss'
@@ -218,8 +276,13 @@ const About = ({ summary }) => {
 									blurDataURL={'/assets/images/bootstrap.jpg'}
 								/>
 							</Link>
-						</div>
-						<div className={styles['skill-card']}>
+						</motion.div>
+						<motion.div
+							className={styles['skill-card']}
+							variants={scrollVariant}
+							initial='hidden'
+							whileInView='visible'
+						>
 							<h6>Collaboration & Design Tools</h6>
 							<Link
 								href='https://github.com/'
@@ -306,8 +369,13 @@ const About = ({ summary }) => {
 									blurDataURL={'/assets/images/slack.jpg'}
 								/>
 							</Link>
-						</div>
-						<div className={styles['skill-card']}>
+						</motion.div>
+						<motion.div
+							className={styles['skill-card']}
+							variants={rightVariant}
+							initial='hidden'
+							whileInView='visible'
+						>
 							<h6>Backend & Full-Stack Technologies</h6>
 							<Link
 								href='https://nodejs.org/en/'
@@ -394,9 +462,9 @@ const About = ({ summary }) => {
 									blurDataURL={'/assets/images/flask.jpg'}
 								/>
 							</Link>
-						</div>
+						</motion.div>
 					</div>
-				</section>
+				</motion.section>
 			</motion.main>
 		</AnimatePresence>
 	)

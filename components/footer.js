@@ -1,5 +1,6 @@
-import styles from '../styles/footer.module.css'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faPhoneVolume,
@@ -11,16 +12,37 @@ import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
+import styles from '../styles/footer.module.css'
 
 const Footer = () => {
+	const control = useAnimation()
+	const [ref, inView] = useInView()
+	const scrollVariant = {
+		visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+		hidden: { opacity: 0, scale: 0 },
+	}
+
+	useEffect(() => {
+		if (inView) {
+			control.start('visible')
+		} else {
+			control.start('hidden')
+		}
+	}, [control, inView])
+
 	return (
 		<AnimatePresence>
 			<motion.div
 				className={styles.footer}
-				initial={{ y: 10, opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
-				exit={{ y: -10, opacity: 0 }}
-				transition={{ duration: 0.2 }}
+				// initial={{ y: 10, opacity: 0 }}
+				// animate={{ y: 0, opacity: 1 }}
+				// exit={{ y: -10, opacity: 0 }}
+				// transition={{ duration: 0.2 }}
+				ref={ref}
+				variants={scrollVariant}
+				initial='hidden'
+				// animate={control}
+				whileInView='visible'
 			>
 				<div className={styles.anchors}>
 					<p>

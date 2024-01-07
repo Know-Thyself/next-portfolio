@@ -48,8 +48,13 @@ const Projects = ({ projects, setProject }) => {
 	}
 
 	const scrollVariant = {
-		visible: { opacity: 1, scale: 1, transition: { duration: 0.75 } },
-		hidden: { opacity: 0, scale: 0 },
+		visible: {
+			opacity: 1,
+			scale: 1,
+			y: 0,
+			transition: { duration: 1, delay: 0.3, type: 'spring', stiffness: 30 },
+		},
+		hidden: { opacity: 0, scale: 0, y: -20 },
 	}
 
 	useEffect(() => {
@@ -90,6 +95,8 @@ const Projects = ({ projects, setProject }) => {
 								initial='hidden'
 								// animate={control}
 								whileInView='visible'
+								whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 1.2 }}
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<div className={styles['image-tooltip-container']}>

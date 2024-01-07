@@ -2,7 +2,7 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
-
+import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import technologies from '../technologies.json'
 
@@ -35,8 +35,23 @@ const MultiCarousel = ({ images }) => {
 		},
 	}
 
+	const scrollVariant = {
+		visible: {
+			opacity: 1,
+			scale: 1,
+			y: 0,
+			transition: { duration: 2, delay: 0.3, type: 'spring', stiffness: 30 },
+		},
+		hidden: { opacity: 0, scale: 0, y: '30%' },
+	}
+
 	return (
-		<div className='parent'>
+		<motion.div
+			className='parent'
+			variants={scrollVariant}
+			initial='hidden'
+			whileInView='visible'
+		>
 			<Carousel
 				responsive={responsive}
 				autoPlay={true}
@@ -67,7 +82,7 @@ const MultiCarousel = ({ images }) => {
 					)
 				})}
 			</Carousel>
-		</div>
+		</motion.div>
 	)
 }
 export default MultiCarousel

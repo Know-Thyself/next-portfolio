@@ -134,6 +134,16 @@ const Contact = () => {
 		},
 	}
 
+	const scrollVariant = {
+		visible: {
+			opacity: 1,
+			scale: 1,
+			y: 0,
+			transition: { duration: 1, delay: 0.3, type: 'spring', stiffness: 40 },
+		},
+		hidden: { opacity: 0, scale: 0, y: -20 },
+	}
+
 	return (
 		<AnimatePresence>
 			<Head>
@@ -148,183 +158,191 @@ const Contact = () => {
 				exit='exit'
 				key='contact'
 			>
-				<section className={styles.intro}>
-					<h1>Contact Me</h1>
-					<p>
-						If you are an employer or a recruiter looking for a developer or if
-						you run a charity organisation and would like me to build a website
-						for your organisation which I am happy to do for free or just to get
-						to know me better, please get in touch using your preferred means of
-						communication from the options provided below.
-					</p>
-				</section>
-				<div className={styles.wrapper}>
-					<aside className={styles['contact-info']}>
-						<h4>Contact Info</h4>
+				<motion.div
+					className={styles.scroll}
+					variants={scrollVariant}
+					initial='hidden'
+					whileInView='visible'
+				>
+					<section className={styles.intro}>
+						<h1>Contact Me</h1>
 						<p>
-							<FontAwesomeIcon
-								icon={faPhoneVolume}
-								className={styles['fa-phone-volume']}
-							/>
-							&nbsp; +44 7392 976062
+							If you are an employer or a recruiter looking for a developer or
+							if you run a charity organisation and would like me to build a
+							website for your organisation which I am happy to do for free or
+							just to get to know me better, please get in touch using your
+							preferred means of communication from the options provided below.
 						</p>
-						<p>
-							<FontAwesomeIcon icon={faEnvelope} /> &nbsp; birukwebdev@gmail.com
-						</p>
-						<p>
-							<FontAwesomeIcon icon={faMapLocationDot} /> &nbsp; 63 Sandy Lane,
-							CV1 4EX, West Midlands, Coventry, UK
-						</p>
-						<div className={styles.anchors}>
-							<a
-								href='https://github.com/Know-Thyself'
-								target='_blank'
-								rel='noreferrer'
-								className={styles.link}
-							>
+					</section>
+					<div className={styles.wrapper}>
+						<aside className={styles['contact-info']}>
+							<h4>Contact Info</h4>
+							<p>
 								<FontAwesomeIcon
-									icon={faGithub}
-									className={styles['fa-brand']}
+									icon={faPhoneVolume}
+									className={styles['fa-phone-volume']}
 								/>
-							</a>
-							<a
-								href='https://www.linkedin.com/in/biruk-kebede-8b44b7209/'
-								target='_blank'
-								rel='noreferrer'
-								className={styles.link}
-							>
-								<FontAwesomeIcon
-									icon={faLinkedin}
-									className={styles['fa-brand']}
-								/>
-							</a>
-						</div>
-					</aside>
-					<ThemeProvider theme={theme}>
-						<Box
-							className={styles.box}
-							component='form'
-							sx={{
-								'& .MuiTextField-root': {
-									m: 1,
-									width: '100%',
-								},
-							}}
-							noValidate
-							autoComplete='off'
-						>
-							<div className={styles['text-fields']}>
-								<TextField
-									className={styles.textField}
-									required
-									label='Name'
-									variant='filled'
-									name='name'
-									value={formInputs.name}
-									onChange={handleChange}
-									error={errors.name}
-									helperText={
-										errors['name']
-											? 'Name is required'
-											: 'Please enter your name'
-									}
-									InputProps={{ disableUnderline: true }}
-									sx={{
-										'& .MuiFormHelperText-root': {
-											color: 'var(--helper-text-color)',
-											fontSize: '14px',
-											fontWeight: '400',
-										},
-									}}
-								/>
-								<TextField
-									className={styles.textField}
-									required
-									label='Email'
-									variant='filled'
-									name='email'
-									value={formInputs.email}
-									onChange={handleChange}
-									error={errors.email}
-									helperText={
-										errors['email']
-											? errors.email.errorMessage
-											: 'Please enter your email'
-									}
-									InputProps={{ disableUnderline: true }}
-									sx={{
-										'& .MuiFormHelperText-root': {
-											color: 'var(--helper-text-color)',
-											fontSize: '14px',
-											fontWeight: '400',
-										},
-									}}
-								/>
-								<TextField
-									className={styles.textField}
-									label='Subject'
-									variant='filled'
-									name='subject'
-									value={formInputs.subject}
-									onChange={handleChange}
-									helperText='Please enter the subject'
-									InputProps={{ disableUnderline: true }}
-									sx={{
-										'& .MuiFormHelperText-root': {
-											color: 'var(--helper-text-color)',
-											fontSize: '14px',
-											fontWeight: '400',
-										},
-									}}
-								/>
+								&nbsp; +44 7392 976062
+							</p>
+							<p>
+								<FontAwesomeIcon icon={faEnvelope} /> &nbsp;
+								birukwebdev@gmail.com
+							</p>
+							<p>
+								<FontAwesomeIcon icon={faMapLocationDot} /> &nbsp; 63 Sandy
+								Lane, CV1 4EX, West Midlands, Coventry, UK
+							</p>
+							<div className={styles.anchors}>
+								<a
+									href='https://github.com/Know-Thyself'
+									target='_blank'
+									rel='noreferrer'
+									className={styles.link}
+								>
+									<FontAwesomeIcon
+										icon={faGithub}
+										className={styles['fa-brand']}
+									/>
+								</a>
+								<a
+									href='https://www.linkedin.com/in/biruk-kebede-8b44b7209/'
+									target='_blank'
+									rel='noreferrer'
+									className={styles.link}
+								>
+									<FontAwesomeIcon
+										icon={faLinkedin}
+										className={styles['fa-brand']}
+									/>
+								</a>
 							</div>
-							<div className={styles['message-wrapper']}>
-								<TextField
-									required
-									className={`${styles.message} ${styles.textField}`}
-									label='Message'
-									variant='filled'
-									multiline
-									minRows={5}
-									maxRows={10}
-									name='message'
-									value={formInputs.message}
-									onChange={handleChange}
-									error={errors.message}
-									helperText={
-										errors['message']
-											? 'Message is required'
-											: 'Please enter your message'
-									}
-									InputProps={{ disableUnderline: true }}
-									sx={{
-										'& .MuiFormHelperText-root': {
-											color: 'var(--helper-text-color)',
-											fontSize: '14px',
-											fontWeight: '400',
-										},
-										'& .Mui-error': {
-											color: '#f44336',
-										},
-										'& .MuiInputBase-root': {
-											color: 'var(--primary-text-color)',
-											borderBottom: '1px solid var(--primary-text-color)',
-											backgroundColor: 'var(--tertiary-bg)',
-										},
-									}}
-								/>
-							</div>
-							<br />
-							<button onClick={handleSubmit} className={`btn ${styles.send}`}>
-								{buttonText} &nbsp;
-								<FontAwesomeIcon
-									icon={faPaperPlane}
-									className={styles['fa-paper-plane']}
-								/>
-							</button>
-						</Box>
-					</ThemeProvider>
-				</div>
+						</aside>
+						<ThemeProvider theme={theme}>
+							<Box
+								className={styles.box}
+								component='form'
+								sx={{
+									'& .MuiTextField-root': {
+										m: 1,
+										width: '100%',
+									},
+								}}
+								noValidate
+								autoComplete='off'
+							>
+								<div className={styles['text-fields']}>
+									<TextField
+										className={styles.textField}
+										required
+										label='Name'
+										variant='filled'
+										name='name'
+										value={formInputs.name}
+										onChange={handleChange}
+										error={errors.name}
+										helperText={
+											errors['name']
+												? 'Name is required'
+												: 'Please enter your name'
+										}
+										InputProps={{ disableUnderline: true }}
+										sx={{
+											'& .MuiFormHelperText-root': {
+												color: 'var(--helper-text-color)',
+												fontSize: '14px',
+												fontWeight: '400',
+											},
+										}}
+									/>
+									<TextField
+										className={styles.textField}
+										required
+										label='Email'
+										variant='filled'
+										name='email'
+										value={formInputs.email}
+										onChange={handleChange}
+										error={errors.email}
+										helperText={
+											errors['email']
+												? errors.email.errorMessage
+												: 'Please enter your email'
+										}
+										InputProps={{ disableUnderline: true }}
+										sx={{
+											'& .MuiFormHelperText-root': {
+												color: 'var(--helper-text-color)',
+												fontSize: '14px',
+												fontWeight: '400',
+											},
+										}}
+									/>
+									<TextField
+										className={styles.textField}
+										label='Subject'
+										variant='filled'
+										name='subject'
+										value={formInputs.subject}
+										onChange={handleChange}
+										helperText='Please enter the subject'
+										InputProps={{ disableUnderline: true }}
+										sx={{
+											'& .MuiFormHelperText-root': {
+												color: 'var(--helper-text-color)',
+												fontSize: '14px',
+												fontWeight: '400',
+											},
+										}}
+									/>
+								</div>
+								<div className={styles['message-wrapper']}>
+									<TextField
+										required
+										className={`${styles.message} ${styles.textField}`}
+										label='Message'
+										variant='filled'
+										multiline
+										minRows={5}
+										maxRows={10}
+										name='message'
+										value={formInputs.message}
+										onChange={handleChange}
+										error={errors.message}
+										helperText={
+											errors['message']
+												? 'Message is required'
+												: 'Please enter your message'
+										}
+										InputProps={{ disableUnderline: true }}
+										sx={{
+											'& .MuiFormHelperText-root': {
+												color: 'var(--helper-text-color)',
+												fontSize: '14px',
+												fontWeight: '400',
+											},
+											'& .Mui-error': {
+												color: '#f44336',
+											},
+											'& .MuiInputBase-root': {
+												color: 'var(--primary-text-color)',
+												borderBottom: '1px solid var(--primary-text-color)',
+												backgroundColor: 'var(--tertiary-bg)',
+											},
+										}}
+									/>
+								</div>
+								<br />
+								<button onClick={handleSubmit} className={`btn ${styles.send}`}>
+									{buttonText} &nbsp;
+									<FontAwesomeIcon
+										icon={faPaperPlane}
+										className={styles['fa-paper-plane']}
+									/>
+								</button>
+							</Box>
+						</ThemeProvider>
+					</div>
+				</motion.div>
 			</motion.main>
 		</AnimatePresence>
 	)
