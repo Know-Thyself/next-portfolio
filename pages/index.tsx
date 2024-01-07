@@ -12,6 +12,7 @@ import styles from '../styles/home.module.css'
 import Image from 'next/image'
 import 'bootswatch/dist/sandstone/bootstrap.min.css'
 import MultiCarousel from '../components/carousel'
+import TextAnim from '../components/TextAnim.js'
 
 // export const getStaticProps: GetStaticProps = async () => {
 // 	const summary = await prisma.summary.findMany()
@@ -49,14 +50,34 @@ function HomePage({ summary, projects }): JSX.Element {
 		},
 	}
 
-	const scrollVariant = {
+	const variant = {
 		visible: {
 			opacity: 1,
 			scale: 1,
 			y: 0,
 			transition: { duration: 2, delay: 0.3, type: 'spring', stiffness: 30 },
 		},
-		hidden: { opacity: 0, scale: 0, y: "30%" },
+		hidden: { opacity: 0, scale: 0, y: 30 },
+		exit: {
+			opacity: 0,
+			scale: 0,
+			y: 30,
+		},
+	}
+
+	const bracketVariant = {
+		visible: {
+			opacity: 1,
+			scale: 1,
+			y: 0,
+			transition: { duration: 2, delay: 0.3, type: 'spring', stiffness: 30 },
+		},
+		hidden: { opacity: 0, scale: 0, y: 30 },
+		exit: {
+			opacity: 0,
+			scale: 0,
+			y: 30,
+		},
 	}
 
 	return (
@@ -71,23 +92,33 @@ function HomePage({ summary, projects }): JSX.Element {
 				initial='start'
 				animate='end'
 				exit='exit'
-				// variants={scrollVariant}
+				// variants={variant}
 				// initial='hidden'
 				// whileInView='visible'
 				key={'Welcome'}
 			>
 				<MultiCarousel images={images} />
-				<div className={styles['top-left-bracket']}>
+				<motion.div
+					className={styles['top-left-bracket']}
+					variants={bracketVariant}
+					initial='hidden'
+					animate='visible'
+					exit='exit'
+				>
 					<div className={styles['horizontal-bar']}></div>
 					<div className={styles['vertical-bar']}></div>
-				</div>
+				</motion.div>
 				<motion.section
 					className={styles.hero}
-					variants={scrollVariant}
+					variants={variant}
 					initial='hidden'
-					whileInView='visible'
+					animate='visible'
+					exit='exit'
+					// whileInView='visible'
 				>
-					<h1 className={styles.banner}>Hello & Welcome!</h1>
+					<h1 className={styles.banner}>
+						<TextAnim text={'Hello & Welcome!'} />
+					</h1>
 					<div className={styles['hero-text-container']}>
 						<div className={styles['image-wrapper']}>
 							<Image
@@ -144,10 +175,16 @@ function HomePage({ summary, projects }): JSX.Element {
 						</motion.a>
 					</div>
 				</motion.section>
-				<div className={styles['right-bottom-bracket']}>
+				<motion.div
+					className={styles['right-bottom-bracket']}
+					variants={bracketVariant}
+					initial='hidden'
+					animate='visible'
+					exit='exit'
+				>
 					<div className={styles['bottom-vertical-bar']}></div>
 					<div className={styles['bottom-horizontal-bar']}></div>
-				</div>
+				</motion.div>
 			</motion.div>
 		</AnimatePresence>
 	)

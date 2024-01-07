@@ -18,6 +18,21 @@ const About = ({ summary }) => {
 	const str = summary[0].bio
 	const bio = str.split(/\\n/)
 
+	const variant = {
+		visible: {
+			opacity: 1,
+			scale: 1,
+			y: 0,
+			transition: { duration: 2, delay: 0.3, type: 'spring', stiffness: 30 },
+		},
+		hidden: { opacity: 0, scale: 0, y: 30 },
+		exit: {
+			opacity: 0,
+			scale: 0,
+			y: 30,
+		},
+	}
+
 	const springVariant = {
 		start: {
 			y: -100,
@@ -36,12 +51,12 @@ const About = ({ summary }) => {
 
 	const scrollVariant = {
 		visible: {
-            y: 0,
+			y: 0,
 			opacity: 1,
 			scale: 1,
-			transition: { duration: 1, staggerChildren: 1 },
+			transition: { duration: 1 },
 		},
-		hidden: {y: 100, opacity: 0, scale: 0 },
+		hidden: { y: 100, opacity: 0, scale: 0 },
 	}
 
 	const leftVariant = {
@@ -51,7 +66,7 @@ const About = ({ summary }) => {
 			x: 0,
 			transition: { duration: 3 },
 		},
-		hidden: { x: '-200%' },
+		hidden: { x: '-100%' },
 	}
 
 	const rightVariant = {
@@ -61,7 +76,7 @@ const About = ({ summary }) => {
 			x: 0,
 			transition: { duration: 3 },
 		},
-		hidden: { x: '200%' },
+		hidden: { x: '100%' },
 	}
 
 	return (
@@ -78,16 +93,16 @@ const About = ({ summary }) => {
 				exit='exit'
 				key={'about'}
 			>
-				<motion.section
+				<section
 					className={styles['about-section']}
-					variants={scrollVariant}
-					initial='hidden'
-					whileInView='visible'
-					viewport={{ once: true }}
+					// variants={scrollVariant}
+					// initial='hidden'
+					// whileInView='visible'
+					// viewport={{ once: true }}
 				>
 					<motion.div
 						className={styles['about-img-wrapper']}
-						variants={leftVariant}
+						variants={scrollVariant}
 						initial='hidden'
 						whileInView='visible'
 						viewport={{ once: true }}
@@ -108,10 +123,14 @@ const About = ({ summary }) => {
 					</motion.div>
 					<motion.div
 						className={styles['about-text-wrapper']}
-						variants={rightVariant}
+						// variants={scrollVariant}
+						// initial='hidden'
+						// whileInView='visible'
+						// viewport={{ once: true }}
+						variants={variant}
 						initial='hidden'
-						whileInView='visible'
-						viewport={{ once: true }}
+						animate='visible'
+						exit='exit'
 					>
 						<h1>About Me</h1>
 						{bio.map((paragraph: string, idx: number) => (
@@ -172,12 +191,16 @@ const About = ({ summary }) => {
 							</motion.div>
 						</div>
 					</motion.div>
-				</motion.section>
+				</section>
 				<motion.section
 					className={styles['skills-section']}
-					variants={scrollVariant}
+					// variants={scrollVariant}
+					// initial='hidden'
+					// whileInView='visible'
+					variants={variant}
 					initial='hidden'
-					whileInView='visible'
+					animate='visible'
+					exit='exit'
 				>
 					<div>
 						<h1>Technology Stacks & Skill Sets</h1>
