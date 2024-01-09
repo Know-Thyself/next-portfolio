@@ -52,9 +52,9 @@ const Projects = ({ projects, setProject }) => {
 			opacity: 1,
 			scale: 1,
 			y: 0,
-			transition: { duration: 1, delay: 0.3, type: 'spring', stiffness: 30 },
+			transition: { duration: 1, delay: 0.3, type: 'spring', stiffness: 40 },
 		},
-		hidden: { opacity: 0, scale: 0, y: -20 },
+		hidden: { opacity: 0, scale: 0, y: 100 },
 	}
 
 	useEffect(() => {
@@ -71,12 +71,12 @@ const Projects = ({ projects, setProject }) => {
 				<title>Projects</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<motion.div
+			<div
 				className={`${styles['projects-main-container']}`}
-				variants={springVariant}
-				initial='start'
-				animate='end'
-				exit='exit'
+				// variants={springVariant}
+				// initial='start'
+				// animate='end'
+				// exit='exit'
 				key='projects'
 			>
 				<h4 className={styles['page-title']}>CHECK OUT MY PROJECTS</h4>
@@ -97,6 +97,7 @@ const Projects = ({ projects, setProject }) => {
 								whileInView='visible'
 								whileHover={{ scale: 0.9 }}
 								whileTap={{ scale: 1.1 }}
+								viewport={{ amount: 0.5 }}
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<div className={styles['image-tooltip-container']}>
@@ -141,7 +142,7 @@ const Projects = ({ projects, setProject }) => {
 						)
 					})}
 				</div>
-			</motion.div>
+			</div>
 		</AnimatePresence>
 	)
 }

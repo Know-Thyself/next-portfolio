@@ -21,7 +21,7 @@ const AnimatedText = ({
 	const isInView = useInView(ref, { amount: 0.5, once: true })
 
 	return (
-		<Wrapper className={className}>
+		<Wrapper className={className} key='animated-text'>
 			<span className='sr-only'>{text}</span>
 			<motion.span
 				aria-hidden
