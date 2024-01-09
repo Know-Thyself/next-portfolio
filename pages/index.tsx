@@ -13,6 +13,7 @@ import Image from 'next/image'
 import 'bootswatch/dist/sandstone/bootstrap.min.css'
 import MultiCarousel from '../components/carousel'
 import TextAnim from '../components/TextAnim.js'
+import AnimatedText from '../components/AnimatedText'
 
 // export const getStaticProps: GetStaticProps = async () => {
 // 	const summary = await prisma.summary.findMany()
@@ -116,9 +117,10 @@ function HomePage({ summary, projects }): JSX.Element {
 					exit='exit'
 					// whileInView='visible'
 				>
-					<h1 className={styles.banner}>
-						<TextAnim text={'Hello & Welcome!'} />
-					</h1>
+					{/* <h1 className={styles.banner}> */}
+						{/* <TextAnim text={'Hello & Welcome!'} /> */}
+						<AnimatedText text={'Hello & Welcome!'} className={styles.banner} />
+					{/* </h1> */}
 					<div className={styles['hero-text-container']}>
 						<div className={styles['image-wrapper']}>
 							<Image

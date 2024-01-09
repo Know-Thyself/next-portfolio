@@ -2,12 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import prisma from '../lib/prisma'
+import { useRef } from 'react'
 import { GetStaticProps } from 'next'
-import { motion, AnimatePresence } from 'framer-motion'
-import styles from '../styles/about.module.css'
+import { motion, AnimatePresence, useInView } from 'framer-motion'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
+import styles from '../styles/about.module.css'
 
 export const getStaticProps: GetStaticProps = async () => {
 	const summary = await prisma.summary.findMany()
@@ -15,68 +16,70 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 const About = ({ summary }) => {
+	const ref = useRef(null)
+	const isInView = useInView(ref, { amount: 0.3 })
 	const str = summary[0].bio
 	const bio = str.split(/\\n/)
-
-	const variant = {
-		visible: {
-			opacity: 1,
-			scale: 1,
-			y: 0,
-			transition: { duration: 2, delay: 0.3, type: 'spring', stiffness: 30 },
-		},
-		hidden: { opacity: 0, scale: 0, y: 30 },
-		exit: {
-			opacity: 0,
-			scale: 0,
-			y: 30,
-		},
-	}
-
-	const springVariant = {
-		start: {
-			y: -100,
-		},
-		end: {
-			y: 0,
-			transition: {
-				type: 'spring',
-				stiffness: 60,
-			},
-		},
-		exit: {
-			y: 100,
-		},
-	}
 
 	const scrollVariant = {
 		visible: {
 			y: 0,
 			opacity: 1,
 			scale: 1,
-			transition: { duration: 1 },
+			transition: { duration: 1, delay: 0.5 },
 		},
 		hidden: { y: 100, opacity: 0, scale: 0 },
+	}
+
+	const parentVariant = {
+		visible: {
+			opacity: 1,
+			transition: {
+				duration: 3,
+				staggerChildren: 1,
+				delay: 1,
+			},
+		},
+		hidden: { opacity: 0 },
 	}
 
 	const leftVariant = {
 		visible: {
 			opacity: 1,
-			scale: 1,
 			x: 0,
-			transition: { duration: 3 },
+			transition: {
+				duration: 1,
+				type: 'spring',
+				stiffness: 40,
+			},
 		},
-		hidden: { x: '-100%' },
+		hidden: { opacity: 0, x: -1000 },
+	}
+
+	const centerVariant = {
+		visible: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1,
+				type: 'spring',
+				stiffness: 40,
+			},
+		},
+		hidden: { opacity: 0, y: 100 },
 	}
 
 	const rightVariant = {
 		visible: {
 			opacity: 1,
-			scale: 1,
 			x: 0,
-			transition: { duration: 3 },
+			transition: {
+				duration: 1,
+				type: 'spring',
+				stiffness: 40,
+			},
 		},
-		hidden: { x: '100%' },
+		hidden: { opacity: 0, x: 1000 },
 	}
 
 	return (
@@ -87,25 +90,21 @@ const About = ({ summary }) => {
 			</Head>
 			<motion.main
 				className={styles.main}
-				variants={springVariant}
-				initial='start'
-				animate='end'
-				exit='exit'
+				// variants={springVariant}
+				// initial='start'
+				// animate='end'
+				// exit='exit'
 				key={'about'}
 			>
 				<section
 					className={styles['about-section']}
-					// variants={scrollVariant}
-					// initial='hidden'
-					// whileInView='visible'
-					// viewport={{ once: true }}
 				>
 					<motion.div
 						className={styles['about-img-wrapper']}
 						variants={scrollVariant}
 						initial='hidden'
 						whileInView='visible'
-						viewport={{ once: true }}
+						viewport={{ once: true, amount: 0.5 }}
 					>
 						<Image
 							src={'/assets/images/about.png'}
@@ -123,14 +122,15 @@ const About = ({ summary }) => {
 					</motion.div>
 					<motion.div
 						className={styles['about-text-wrapper']}
-						// variants={scrollVariant}
-						// initial='hidden'
-						// whileInView='visible'
-						// viewport={{ once: true }}
-						variants={variant}
+						variants={scrollVariant}
 						initial='hidden'
-						animate='visible'
-						exit='exit'
+						// whileInView='visible'
+                        animate='visible'
+						// viewport={{ once: true, amount: 0.1 }}
+						// variants={variant}
+						// initial='hidden'
+						// animate='visible'
+						// exit='exit'
 					>
 						<h1>About Me</h1>
 						{bio.map((paragraph: string, idx: number) => (
@@ -192,26 +192,61 @@ const About = ({ summary }) => {
 						</div>
 					</motion.div>
 				</section>
-				<motion.section
+				<section
 					className={styles['skills-section']}
 					// variants={scrollVariant}
 					// initial='hidden'
 					// whileInView='visible'
-					variants={variant}
-					initial='hidden'
-					animate='visible'
-					exit='exit'
+					// variants={variant}
+					// initial='hidden'
+					// animate='visible'
+					// exit='exit'
 				>
-					<div>
-						<h1>Technology Stacks & Skill Sets</h1>
-						<p>Technologies I love and use proficiently</p>
-					</div>
-					<div className={styles['tech-stacks']}>
+					<motion.div
+						ref={ref}
+						initial='hidden'
+						animate={isInView ? 'visible' : 'hidden'}
+						transition={{
+							staggerChildren: 0.5,
+							duration: 1,
+							delay: 0.5,
+							type: 'spring',
+							stiffness: 100,
+							// delayChildren: 0.5,
+						}}
+					>
+						<motion.h1 variants={leftVariant}>
+							Technology Stacks & Skill Sets
+						</motion.h1>
+						<motion.p variants={rightVariant}>
+							Technologies I love and use proficiently
+						</motion.p>
+					</motion.div>
+					<motion.div
+						className={styles['tech-stacks']}
+						// variants={parentVariant}
+						// whileInView='visible'
+						ref={ref}
+						initial='hidden'
+						animate={isInView ? 'visible' : 'hidden'}
+						transition={{
+							staggerChildren: 1,
+							duration: 1,
+							delay: 1,
+							type: 'spring',
+							stiffness: 100,
+							// delayChildren: 0.5,
+						}}
+						// variants={variant}
+						// initial='hidden'
+						// animate='visible'
+						// exit='exit'
+					>
 						<motion.div
 							className={styles['skill-card']}
-							variants={leftVariant}
-							initial='hidden'
-							whileInView='visible'
+							variants={centerVariant}
+							// initial='hidden'
+							// whileInView='visible'
 						>
 							<h6>Frontend Technologies</h6>
 							<Link
@@ -302,9 +337,9 @@ const About = ({ summary }) => {
 						</motion.div>
 						<motion.div
 							className={styles['skill-card']}
-							variants={scrollVariant}
-							initial='hidden'
-							whileInView='visible'
+							variants={centerVariant}
+							// initial='hidden'
+							// whileInView='visible'
 						>
 							<h6>Collaboration & Design Tools</h6>
 							<Link
@@ -395,9 +430,9 @@ const About = ({ summary }) => {
 						</motion.div>
 						<motion.div
 							className={styles['skill-card']}
-							variants={rightVariant}
-							initial='hidden'
-							whileInView='visible'
+							variants={centerVariant}
+							// initial='hidden'
+							// whileInView='visible'
 						>
 							<h6>Backend & Full-Stack Technologies</h6>
 							<Link
@@ -486,8 +521,8 @@ const About = ({ summary }) => {
 								/>
 							</Link>
 						</motion.div>
-					</div>
-				</motion.section>
+					</motion.div>
+				</section>
 			</motion.main>
 		</AnimatePresence>
 	)
