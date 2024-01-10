@@ -30,8 +30,8 @@ const AnimatedText = ({
 				animate={isInView ? 'visible' : 'hidden'}
 				transition={{ staggerChildren: 0.15 }}
 			>
-				{text.split('').map(char => (
-					<motion.span className='' variants={defaultAnimations}>
+				{text.split('').map((char, idx) => (
+					<motion.span className='' variants={defaultAnimations} key={idx}>
 						{char}
 					</motion.span>
 				))}
