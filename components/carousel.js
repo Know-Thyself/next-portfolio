@@ -46,11 +46,11 @@ const MultiCarousel = ({ images }) => {
 	}
 
 	return (
-		<motion.div
+		<div
 			className='parent'
-			variants={scrollVariant}
-			initial='hidden'
-			whileInView='visible'
+			// variants={scrollVariant}
+			// initial='hidden'
+			// whileInView='visible'
 		>
 			<Carousel
 				responsive={responsive}
@@ -82,7 +82,7 @@ const MultiCarousel = ({ images }) => {
 					)
 				})}
 			</Carousel>
-		</motion.div>
+		</div>
 	)
 }
 export default MultiCarousel

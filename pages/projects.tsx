@@ -54,7 +54,7 @@ const Projects = ({ projects, setProject }) => {
 								whileInView='visible'
 								whileHover={{ scale: 0.9 }}
 								whileTap={{ scale: 1.1 }}
-								viewport={{ amount: 0.1 }}
+								viewport={{ amount: 0.5 }}
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<div className={styles['image-tooltip-container']}>

@@ -163,6 +163,7 @@ const Contact = () => {
 					variants={scrollVariant}
 					initial='hidden'
 					whileInView='visible'
+					viewport={{ amount: 0.2 }}
 				>
 					<section className={styles.intro}>
 						<h1>Contact Me</h1>

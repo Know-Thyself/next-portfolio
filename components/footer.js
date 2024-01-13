@@ -34,15 +34,12 @@ const Footer = () => {
 		<AnimatePresence>
 			<motion.div
 				className={styles.footer}
-				// initial={{ y: 10, opacity: 0 }}
-				// animate={{ y: 0, opacity: 1 }}
-				// exit={{ y: -10, opacity: 0 }}
-				// transition={{ duration: 0.2 }}
 				ref={ref}
 				variants={scrollVariant}
 				initial='hidden'
 				// animate={control}
 				whileInView='visible'
+				viewport={{ amount: 0.1, once: true }}
 			>
 				<div className={styles.anchors}>
 					<p>
