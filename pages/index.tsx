@@ -73,8 +73,9 @@ function HomePage({ summary, projects }): JSX.Element {
 				key={'Welcome'}
 				ref={ref}
 				initial='hidden'
-				animate={isInView ? 'visible' : 'hidden'}
-				transition={{ staggerChildren: 1.5, delay: 1 }}
+                // animate={isInView ? 'visible' : 'hidden'}
+                whileInView='visible'
+				// transition={{ staggerChildren: 1.5, delay: 1 }}
 			>
 				<motion.div variants={variant}>
 					<MultiCarousel images={images} />
@@ -102,14 +103,14 @@ function HomePage({ summary, projects }): JSX.Element {
 							/>
 						</div>
 						{intro.map((paragraph: string, idx: number) => (
-							// <p key={idx} className={styles.intro}>
-							// 	{paragraph}
-							// </p>
-							<AnimatedText
-								key={idx}
-								text={paragraph}
-								className={styles.intro}
-							/>
+							<p key={idx} className={styles.intro}>
+								{paragraph}
+							</p>
+							// <AnimatedText
+							// 	key={idx}
+							// 	text={paragraph}
+							// 	className={styles.intro}
+							// />
 						))}
 					</div>
 					<div className={styles['links-wrapper']}>

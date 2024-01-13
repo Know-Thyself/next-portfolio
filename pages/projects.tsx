@@ -21,13 +21,14 @@ const Projects = ({ projects, setProject }) => {
 	projects.sort((a: object | any, b: object | any) => a.id - b.id)
 
 	const scrollVariant = {
-		visible: {
+		visible: (index: number) => ({
 			opacity: 1,
 			scale: 1,
 			transition: {
-				duration: 1,
+                duration: 1,
+                delay: 0.3 * index
 			},
-		},
+		}),
 		hidden: { opacity: 0, scale: 0 },
 	}
 
@@ -40,7 +41,7 @@ const Projects = ({ projects, setProject }) => {
 			<div className={`${styles['projects-main-container']}`} key='projects'>
 				<h4 className={styles['page-title']}>CHECK OUT MY PROJECTS</h4>
 				<div className={styles['projects-wrapper']}>
-					{projects.map((project: object | any) => {
+					{projects.map((project: object | any, index: number) => {
 						return (
 							<motion.div
 								key={project.id}
@@ -54,7 +55,8 @@ const Projects = ({ projects, setProject }) => {
 								whileInView='visible'
 								whileHover={{ scale: 0.9 }}
 								whileTap={{ scale: 1.1 }}
-								viewport={{ amount: 0.5 }}
+								viewport={{ amount: 0.1 }}
+								custom={index}
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<div className={styles['image-tooltip-container']}>

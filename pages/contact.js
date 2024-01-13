@@ -118,22 +118,6 @@ const Contact = () => {
 		setButtonText('Send')
 	}
 
-	const springVariant = {
-		start: {
-			y: -100,
-		},
-		end: {
-			y: 0,
-			transition: {
-				type: 'spring',
-				stiffness: 50,
-			},
-		},
-		exit: {
-			y: 100,
-		},
-	}
-
 	const scrollVariant = {
 		visible: {
 			opacity: 1,
@@ -152,10 +136,6 @@ const Contact = () => {
 			</Head>
 			<main
 				className={styles.main}
-				// variants={springVariant}
-				// initial='start'
-				// animate='end'
-				// exit='exit'
 				key='contact'
 			>
 				<motion.div
