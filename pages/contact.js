@@ -118,7 +118,7 @@ const Contact = () => {
 		setButtonText('Send')
 	}
 
-	const scrollVariant = {
+	const scaleVariant = {
 		visible: {
 			opacity: 1,
 			scale: 1,
@@ -140,10 +140,9 @@ const Contact = () => {
 			>
 				<motion.div
 					className={styles.scroll}
-					variants={scrollVariant}
+                    variants={scaleVariant}
 					initial='hidden'
-					whileInView='visible'
-					viewport={{ amount: 0.2 }}
+                    animate='visible'
 				>
 					<section className={styles.intro}>
 						<h1>Contact Me</h1>
