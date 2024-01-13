@@ -87,12 +87,12 @@ function HomePage({ summary, projects }): JSX.Element {
 				<title>Biruk | Full-Stack Developer</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<motion.div
+			<div
 				className={styles.home}
-				variants={variants}
-				initial='start'
-				animate='end'
-				exit='exit'
+				// variants={variants}
+				// initial='start'
+				// animate='end'
+				// exit='exit'
 				// variants={variant}
 				// initial='hidden'
 				// whileInView='visible'
@@ -187,7 +187,7 @@ function HomePage({ summary, projects }): JSX.Element {
 					<div className={styles['bottom-vertical-bar']}></div>
 					<div className={styles['bottom-horizontal-bar']}></div>
 				</motion.div>
-			</motion.div>
+			</div>
 		</AnimatePresence>
 	)
 }

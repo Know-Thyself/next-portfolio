@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/projects.module.css'
-import { motion, AnimatePresence, useAnimation } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import prisma from '../lib/prisma'
 import Image from 'next/image'
 import { GetStaticProps } from 'next'
@@ -10,8 +10,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
-import { useInView } from 'react-intersection-observer'
-import { useEffect } from 'react'
 
 export const getStaticProps: GetStaticProps = async () => {
 	const projects = await prisma.projects.findMany()
@@ -21,49 +19,17 @@ export const getStaticProps: GetStaticProps = async () => {
 const Projects = ({ projects, setProject }) => {
 	const router = useRouter()
 	projects.sort((a: object | any, b: object | any) => a.id - b.id)
-	const images = projects.map(project => {
-		let projectsList = { title: project.title, image: project.image }
-		return projectsList
-	})
-	const control = useAnimation()
-	const [ref, inView] = useInView()
-
-	const springVariant = {
-		start: {
-			y: -100,
-			opacity: 0,
-		},
-		end: {
-			y: 0,
-			opacity: 1,
-			transition: {
-				type: 'spring',
-				stiffness: 60,
-			},
-		},
-		exit: {
-			y: 100,
-			opacity: 0,
-		},
-	}
 
 	const scrollVariant = {
 		visible: {
 			opacity: 1,
 			scale: 1,
-			y: 0,
-			transition: { duration: 1, delay: 0.3, type: 'spring', stiffness: 40 },
+			transition: {
+				duration: 1,
+			},
 		},
-		hidden: { opacity: 0, scale: 0, y: 100 },
+		hidden: { opacity: 0, scale: 0 },
 	}
-
-	useEffect(() => {
-		if (inView) {
-			control.start('visible')
-		} else {
-			control.start('hidden')
-		}
-	}, [control, inView])
 
 	return (
 		<AnimatePresence>
@@ -71,14 +37,7 @@ const Projects = ({ projects, setProject }) => {
 				<title>Projects</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<div
-				className={`${styles['projects-main-container']}`}
-				// variants={springVariant}
-				// initial='start'
-				// animate='end'
-				// exit='exit'
-				key='projects'
-			>
+			<div className={`${styles['projects-main-container']}`} key='projects'>
 				<h4 className={styles['page-title']}>CHECK OUT MY PROJECTS</h4>
 				<div className={styles['projects-wrapper']}>
 					{projects.map((project: object | any) => {
@@ -90,14 +49,12 @@ const Projects = ({ projects, setProject }) => {
 									setProject(project)
 									router.push('/details')
 								}}
-								ref={ref}
 								variants={scrollVariant}
 								initial='hidden'
-								// animate={control}
 								whileInView='visible'
 								whileHover={{ scale: 0.9 }}
 								whileTap={{ scale: 1.1 }}
-								viewport={{ amount: 0.5 }}
+								viewport={{ amount: 0.1 }}
 							>
 								<h4 className={styles['project-title']}>{project.title}</h4>
 								<div className={styles['image-tooltip-container']}>

@@ -139,9 +139,9 @@ const Contact = () => {
 			opacity: 1,
 			scale: 1,
 			y: 0,
-			transition: { duration: 1, delay: 0.3, type: 'spring', stiffness: 40 },
+			transition: { duration: 1, delay: 0.5 },
 		},
-		hidden: { opacity: 0, scale: 0, y: -20 },
+		hidden: { opacity: 0, scale: 0, y: 100 },
 	}
 
 	return (
@@ -150,12 +150,12 @@ const Contact = () => {
 				<title>Contact Me</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<motion.main
+			<main
 				className={styles.main}
-				variants={springVariant}
-				initial='start'
-				animate='end'
-				exit='exit'
+				// variants={springVariant}
+				// initial='start'
+				// animate='end'
+				// exit='exit'
 				key='contact'
 			>
 				<motion.div
@@ -343,7 +343,7 @@ const Contact = () => {
 						</ThemeProvider>
 					</div>
 				</motion.div>
-			</motion.main>
+			</main>
 		</AnimatePresence>
 	)
 }
