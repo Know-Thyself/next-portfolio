@@ -27,7 +27,6 @@ function HomePage({ summary, projects }): JSX.Element {
 	const image = summary[0].image
 	const intro = str.split(/\\n/)
 	const ref = useRef(null)
-	const isInView = useInView(ref, { amount: 0.5, once: true })
 
 	const variant = {
 		visible: {
@@ -42,6 +41,19 @@ function HomePage({ summary, projects }): JSX.Element {
 			scale: 0,
 			y: 30,
 		},
+	}
+
+	const textContainer = {
+		visible: (index: number = 1) => ({
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 2,
+				staggerChildren: 100,
+				delay: 1.5 * index,
+			},
+		}),
+		hidden: { opacity: 0, y: 100 },
 	}
 
 	const leftBracket = {
@@ -73,9 +85,7 @@ function HomePage({ summary, projects }): JSX.Element {
 				key={'Welcome'}
 				ref={ref}
 				initial='hidden'
-                // animate={isInView ? 'visible' : 'hidden'}
-                whileInView='visible'
-				// transition={{ staggerChildren: 1.5, delay: 1 }}
+				whileInView='visible'
 			>
 				<motion.div variants={variant}>
 					<MultiCarousel images={images} />
@@ -102,15 +112,18 @@ function HomePage({ summary, projects }): JSX.Element {
 								blurDataURL={`/assets/images/${image}`}
 							/>
 						</div>
-						{intro.map((paragraph: string, idx: number) => (
-							<p key={idx} className={styles.intro}>
-								{paragraph}
-							</p>
-							// <AnimatedText
-							// 	key={idx}
-							// 	text={paragraph}
-							// 	className={styles.intro}
-							// />
+						{intro.map((paragraph: string, index: number) => (
+							<motion.p
+								key={index}
+								className={styles.intro}
+								variants={textContainer}
+								initial='hidden'
+								whileInView='visible'
+								viewport={{ amount: 0.1 }}
+								custom={index + 1}
+                            >
+                                {paragraph}
+							</motion.p>
 						))}
 					</div>
 					<div className={styles['links-wrapper']}>
