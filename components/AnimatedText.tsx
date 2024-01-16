@@ -10,8 +10,8 @@ type AnimatedTextProps = {
 }
 
 const defaultAnimations = {
-	hidden: { opacity: 0, x: 200 },
-	visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+	hidden: { opacity: 0, scale: 2 },
+	visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
 }
 
 const AnimatedText = ({
@@ -21,6 +21,7 @@ const AnimatedText = ({
 	className,
 	once,
 }: AnimatedTextProps) => {
+	const textArray = Array.isArray(text) ? text : [text]
 	const ref = useRef(null)
 	const isInView = useInView(ref, { amount: 0.5, once })
 
@@ -35,7 +36,24 @@ const AnimatedText = ({
 				transition={{ staggerChildren: 0.15, delayChildren: 0.5 }}
 				// style={{ display: 'flex', flexWrap: 'wrap' }}
 			>
-				{!longText
+				{textArray.map(line => (
+					<span className='d-block'>
+						{line.split(' ').map(word => (
+							<span className='d-inline-block'>
+								{word.split('').map(char => (
+									<motion.span
+										className='d-inline-block'
+										variants={defaultAnimations}
+									>
+										{char}
+									</motion.span>
+                                ))}
+                                <span className='d-inline-block'>&nbsp;</span>
+							</span>
+						))}
+					</span>
+				))}
+				{/* {!longText
 					? text.split('').map((char, idx) => (
 							<motion.span
 								className='d-inline-block'
@@ -55,7 +73,7 @@ const AnimatedText = ({
 							>
 								{word}
 							</motion.span>
-					  ))}
+					  ))} */}
 			</motion.span>
 		</Wrapper>
 	)

@@ -98,7 +98,7 @@ function HomePage({ summary, projects }): JSX.Element {
 					<div className={styles['vertical-bar']}></div>
 				</motion.div>
 				<motion.section className={styles.hero} variants={variant}>
-					<AnimatedText text={'Hello & Welcome!'} className={styles.banner} />
+					<AnimatedText text={'Hello & Welcome!'} el='h1' className={styles.banner} />
 					<div className={styles['hero-text-container']}>
 						<div className={styles['image-wrapper']}>
 							<Image
@@ -121,8 +121,8 @@ function HomePage({ summary, projects }): JSX.Element {
 								whileInView='visible'
 								viewport={{ amount: 0.1 }}
 								custom={index + 1}
-                            >
-                                {paragraph}
+							>
+								{paragraph}
 							</motion.p>
 						))}
 					</div>

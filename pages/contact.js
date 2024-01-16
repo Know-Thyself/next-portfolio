@@ -6,6 +6,7 @@ import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion, AnimatePresence } from 'framer-motion'
+import AnimatedText from '../components/AnimatedText'
 import {
 	faPaperPlane,
 	faPhoneVolume,
@@ -145,7 +146,7 @@ const Contact = () => {
                     animate='visible'
 				>
 					<section className={styles.intro}>
-						<h1>Contact Me</h1>
+                        <AnimatedText text='Contact Me' el='h1' />
 						<p>
 							If you are an employer or a recruiter looking for a developer or
 							if you run a charity organisation and would like me to build a

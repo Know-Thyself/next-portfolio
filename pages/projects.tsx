@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/projects.module.css'
 import { motion, AnimatePresence } from 'framer-motion'
+import AnimatedText from '../components/AnimatedText'
 import prisma from '../lib/prisma'
 import Image from 'next/image'
 import { GetStaticProps } from 'next'
@@ -25,8 +26,8 @@ const Projects = ({ projects, setProject }) => {
 			opacity: 1,
 			scale: 1,
 			transition: {
-                duration: 1,
-                delay: 0.3 * index
+				duration: 1,
+				delay: 0.3 * index,
 			},
 		}),
 		hidden: { opacity: 0, scale: 0 },
@@ -39,7 +40,11 @@ const Projects = ({ projects, setProject }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<div className={`${styles['projects-main-container']}`} key='projects'>
-				<h4 className={styles['page-title']}>CHECK OUT MY PROJECTS</h4>
+				<AnimatedText
+					text='CHECK OUT MY PROJECTS'
+					el='h4'
+					className={styles['page-title']}
+				/>
 				<div className={styles['projects-wrapper']}>
 					{projects.map((project: object | any, index: number) => {
 						return (

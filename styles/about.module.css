@@ -24,6 +24,11 @@
     /* padding-bottom: 2rem; */
 }
 
+.about-text-wrapper h1 {
+    font-weight: 900;
+    color: var(--radio-btn);
+}
+
 .about-img-wrapper {
     width: fit-content;
     height: fit-content;
@@ -75,9 +80,11 @@
 .skills-section h1 {
     width: 95%;
     font-size: 1.5rem;
+    font-weight: 700;
     text-align: left;
     margin: auto;
     color: var(--primary-text-color);
+    color: var(--radio-btn);
 }
 
 .skills-section p {
@@ -86,6 +93,7 @@
     margin: auto;
     color: var(--helper-text-color);
     color: var(--secondary-text-color);
+    color: var(--radio-btn);
     font-weight: 500;
     padding-top: 0.5rem;
 }

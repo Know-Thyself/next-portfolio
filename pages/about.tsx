@@ -5,6 +5,7 @@ import prisma from '../lib/prisma'
 import { useRef } from 'react'
 import { GetStaticProps } from 'next'
 import { motion, AnimatePresence, useInView } from 'framer-motion'
+import AnimatedText from '../components/AnimatedText'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
@@ -96,9 +97,7 @@ const About = ({ summary }) => {
 				// exit='exit'
 				key={'about'}
 			>
-				<section
-					className={styles['about-section']}
-				>
+				<section className={styles['about-section']}>
 					<motion.div
 						className={styles['about-img-wrapper']}
 						variants={scrollVariant}
@@ -125,14 +124,14 @@ const About = ({ summary }) => {
 						variants={scrollVariant}
 						initial='hidden'
 						// whileInView='visible'
-                        animate='visible'
+						animate='visible'
 						// viewport={{ once: true, amount: 0.1 }}
 						// variants={variant}
 						// initial='hidden'
 						// animate='visible'
 						// exit='exit'
 					>
-						<h1>About Me</h1>
+						<AnimatedText text='About Me' el='h1' />
 						{bio.map((paragraph: string, idx: number) => (
 							<p key={idx}>{paragraph}</p>
 						))}
