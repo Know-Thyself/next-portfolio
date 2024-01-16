@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { motion, spring, useInView } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 
 type AnimatedTextProps = {
 	text?: string
@@ -34,46 +34,25 @@ const AnimatedText = ({
 				initial='hidden'
 				animate={isInView ? 'visible' : 'hidden'}
 				transition={{ staggerChildren: 0.15, delayChildren: 0.5 }}
-				// style={{ display: 'flex', flexWrap: 'wrap' }}
 			>
-				{textArray.map(line => (
-					<span className='d-block'>
-						{line.split(' ').map(word => (
-							<span className='d-inline-block'>
-								{word.split('').map(char => (
+				{textArray.map((line, index) => (
+					<span className='d-block' key={index}>
+						{line.split(' ').map((word, index) => (
+							<span className='d-inline-block' key={index}>
+								{word.split('').map((char, index) => (
 									<motion.span
 										className='d-inline-block'
 										variants={defaultAnimations}
+										key={index}
 									>
 										{char}
 									</motion.span>
-                                ))}
-                                <span className='d-inline-block'>&nbsp;</span>
+								))}
+								<span className='d-inline-block'>&nbsp;</span>
 							</span>
 						))}
 					</span>
 				))}
-				{/* {!longText
-					? text.split('').map((char, idx) => (
-							<motion.span
-								className='d-inline-block'
-								variants={defaultAnimations}
-								key={idx}
-							>
-								{char === ' ' ? '\u00a0' : char}
-							</motion.span>
-					  ))
-					: longText.split(' ').map((word, idx) => (
-							<motion.span
-								className='d-inline-block mr-4'
-								variants={defaultAnimations}
-								key={idx}
-								style={{ marginRight: '5px' }}
-								// className={styles.intro}
-							>
-								{word}
-							</motion.span>
-					  ))} */}
 			</motion.span>
 		</Wrapper>
 	)
