@@ -44,16 +44,15 @@ function HomePage({ summary, projects }): JSX.Element {
 	}
 
 	const textContainer = {
-		visible: (index: number = 1) => ({
+		visible: (index: number) => ({
 			opacity: 1,
 			y: 0,
 			transition: {
-				duration: 2,
-				staggerChildren: 100,
-				delay: 1.5 * index,
+				duration: 1.5,
+				delay: 1 * index,
 			},
 		}),
-		hidden: { opacity: 0, y: 100 },
+		hidden: { opacity: 0, y: 60 },
 	}
 
 	const leftBracket = {
@@ -98,7 +97,11 @@ function HomePage({ summary, projects }): JSX.Element {
 					<div className={styles['vertical-bar']}></div>
 				</motion.div>
 				<motion.section className={styles.hero} variants={variant}>
-					<AnimatedText text={'Hello & Welcome!'} el='h1' className={styles.banner} />
+					<AnimatedText
+						text={'Hello & Welcome!'}
+						el='h1'
+						className={styles.banner}
+					/>
 					<div className={styles['hero-text-container']}>
 						<div className={styles['image-wrapper']}>
 							<Image

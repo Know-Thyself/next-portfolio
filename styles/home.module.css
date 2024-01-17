@@ -51,8 +51,6 @@
     overflow: hidden;
 }
 
-
-
 .hero {
     width: 85%;
     margin: auto;
@@ -67,6 +65,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     color: var(--primary-text-color);
+    color: var(--radio-btn);
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
