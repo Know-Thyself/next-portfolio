@@ -6,7 +6,7 @@ import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion, AnimatePresence } from 'framer-motion'
-import AnimatedText from '../components/AnimatedText'
+import AnimatedText from '../components/text-animation'
 import {
 	faPaperPlane,
 	faPhoneVolume,

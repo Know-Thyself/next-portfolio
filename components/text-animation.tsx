@@ -11,7 +11,7 @@ type AnimatedTextProps = {
 
 const defaultAnimations = {
 	hidden: { opacity: 0, scale: 2 },
-	visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
+	visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
 }
 
 const AnimatedText = ({
@@ -33,7 +33,7 @@ const AnimatedText = ({
 				ref={ref}
 				initial='hidden'
 				animate={isInView ? 'visible' : 'hidden'}
-				transition={{ staggerChildren: 0.15, delayChildren: 0.5 }}
+				transition={{ staggerChildren: 0.15, delayChildren: 1.5 }}
 			>
 				{textArray.map((line, index) => (
 					<span className='d-block' key={index}>

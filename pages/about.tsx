@@ -5,7 +5,7 @@ import prisma from '../lib/prisma'
 import { useRef } from 'react'
 import { GetStaticProps } from 'next'
 import { motion, AnimatePresence, useInView } from 'framer-motion'
-import AnimatedText from '../components/AnimatedText'
+import AnimatedText from '../components/text-animation'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false

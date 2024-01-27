@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/projects.module.css'
 import { motion, AnimatePresence } from 'framer-motion'
-import AnimatedText from '../components/AnimatedText'
+import AnimatedText from '../components/text-animation'
 import prisma from '../lib/prisma'
 import Image from 'next/image'
 import { GetStaticProps } from 'next'
@@ -58,8 +58,8 @@ const Projects = ({ projects, setProject }) => {
 								variants={scrollVariant}
 								initial='hidden'
 								whileInView='visible'
-								whileHover={{ scale: 0.9 }}
-								whileTap={{ scale: 1.1 }}
+								whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }}
 								viewport={{ amount: 0.1 }}
 								custom={index}
 							>
@@ -72,6 +72,7 @@ const Projects = ({ projects, setProject }) => {
 										className={styles['project-img']}
 										width={340}
 										height={240}
+										priority={true}
 										sizes='(min-width: 300px) 100vw'
 										placeholder='blur'
 										blurDataURL={`/assets/images/${project.image}`}
